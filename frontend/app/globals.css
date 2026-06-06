@@ -1,0 +1,223 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #020617;
+  --color-foreground: #e2e8f0;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, monospace;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(56, 189, 248, 0.15) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(56, 189, 248, 0.15);
+  border-radius: 999px;
+}
+
+body {
+  background: #020617;
+  color: #e2e8f0;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(2, 6, 23, 0.8);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Glow effect for selected/highlighted nodes in Sigma canvas */
+.sigma-scene circle.highlighted,
+.sigma-scene rect.highlighted {
+  filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.6));
+}
+
+/* Smooth transitions for all interactive elements */
+button, a, input, textarea {
+  transition: all 0.2s ease;
+}
+
+/* ── Obsidian-style content rendering for RightPanel ── */
+.obsidian-content {
+  line-height: 1.75;
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+/* Headings */
+.obsidian-content h1 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #e2e8f0;
+  margin: 1.5em 0 0.75em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  line-height: 1.4;
+}
+.obsidian-content h2 {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #cbd5e1;
+  margin: 1.25em 0 0.5em;
+  line-height: 1.4;
+}
+.obsidian-content h3 {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #cbd5e1;
+  margin: 1em 0 0.4em;
+  line-height: 1.4;
+}
+.obsidian-content h4, .obsidian-content h5, .obsidian-content h6 {
+  font-size: 12px;
+  font-weight: 500;
+  color: #94a3b8;
+  margin: 0.75em 0 0.3em;
+}
+
+/* Paragraphs & text */
+.obsidian-content p {
+  margin: 0.6em 0;
+  color: #94a3b8;
+  line-height: 1.75;
+}
+.obsidian-content strong {
+  color: #e2e8f0;
+  font-weight: 600;
+}
+.obsidian-content a {
+  color: #38BDF8;
+  text-decoration: none;
+}
+.obsidian-content a:hover {
+  text-decoration: underline;
+}
+
+/* Inline code */
+.obsidian-content code {
+  color: #38BDF8;
+  background: rgba(56,189,248,0.08);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-family: var(--font-mono), monospace;
+}
+
+/* Code blocks */
+.obsidian-content pre {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin: 1em 0;
+  overflow-x: auto;
+  font-size: 12px;
+}
+.obsidian-content pre code {
+  background: none;
+  padding: 0;
+  color: #cbd5e1;
+}
+
+/* Tables — Obsidian-like */
+.obsidian-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+  font-size: 12px;
+}
+.obsidian-content thead {
+  background: rgba(255,255,255,0.04);
+}
+.obsidian-content th {
+  color: #cbd5e1;
+  font-weight: 600;
+  padding: 8px 12px;
+  text-align: left;
+  border-bottom: 2px solid rgba(255,255,255,0.08);
+  white-space: nowrap;
+}
+.obsidian-content td {
+  color: #94a3b8;
+  padding: 7px 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  vertical-align: top;
+}
+.obsidian-content tbody tr:hover {
+  background: rgba(255,255,255,0.02);
+}
+
+/* Blockquotes — styled callouts */
+.obsidian-content blockquote {
+  border-left: 3px solid rgba(56,189,248,0.3);
+  background: rgba(56,189,248,0.04);
+  border-radius: 0 8px 8px 0;
+  padding: 10px 14px;
+  margin: 1em 0;
+  color: #94a3b8;
+  font-size: 12.5px;
+}
+
+/* Lists */
+.obsidian-content ul, .obsidian-content ol {
+  margin: 0.5em 0;
+  padding-left: 1.5em;
+}
+.obsidian-content li {
+  margin: 0.3em 0;
+  color: #94a3b8;
+  line-height: 1.65;
+}
+
+/* Horizontal rules */
+.obsidian-content hr {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  margin: 1.5em 0;
+}
+
+/* KaTeX formula tweaks */
+.obsidian-content .katex {
+  font-size: 1.05em;
+}
+.obsidian-content .katex-display {
+  margin: 0.8em 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* Images / diagrams placeholder */
+.obsidian-content img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 0.5em 0;
+}
+
+/* Scrollbar within content */
+.obsidian-content::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* ── Prose fallback (Tailwind prose base) ── */
+.prose-invert {
+  --tw-prose-body: #94a3b8;
+  --tw-prose-headings: #e2e8f0;
+  --tw-prose-links: #38BDF8;
+  --tw-prose-bold: #e2e8f0;
+  --tw-prose-code: #38BDF8;
+  --tw-prose-pre-bg: rgba(255, 255, 255, 0.03);
+  --tw-prose-pre-border: rgba(255, 255, 255, 0.06);
+}

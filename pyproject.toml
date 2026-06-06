@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alpnet"
+version = "0.1.0"
+description = "A-Level Physics Knowledge Graph RAG System"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.110.0",
+    "uvicorn[standard]>=0.27.0",
+    "pydantic>=2.6.0",
+    "pydantic-settings>=2.1.0",
+    "networkx>=3.2",
+    "chromadb>=0.4.22",
+    "openai>=1.12.0",
+    "python-frontmatter>=1.0.0",
+    "markdown>=3.5",
+    "beautifulsoup4>=4.12",
+    "httpx>=0.26.0",
+    "python-dotenv>=1.0.0",
+    "typer>=0.9.0",
+    "rich>=13.7.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+    "black>=24.0.0",
+    "mypy>=1.8.0",
+    "ruff>=0.1.0",
+]
+
+[project.scripts]
+alpnet = "alpnet.cli.main:app"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["alpnet*"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

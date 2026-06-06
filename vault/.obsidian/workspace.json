@@ -1,0 +1,211 @@
+{
+  "main": {
+    "id": "8b73eeda1a0bcae3",
+    "type": "split",
+    "children": [
+      {
+        "id": "652f3f34115924d7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "aaa18e46bddd0967",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01-Mechanics/01-Kinematics/Displacement, Velocity and Acceleration/Displacement, Velocity and Acceleration.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Displacement, Velocity and Acceleration"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "cdd80f4fc100d0d9",
+    "type": "split",
+    "children": [
+      {
+        "id": "f94e23f41c96723b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cad0644d1f75563c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "fedcf8a015a84e24",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "37bc3ec48c1ee0bc",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7cff419f3a3c8157",
+    "type": "split",
+    "children": [
+      {
+        "id": "a062793147a9990b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c2138306afc914d4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "01-Mechanics/01-Kinematics/Displacement, Velocity and Acceleration/Speed and Velocity.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Speed and Velocity 的反向链接列表"
+            }
+          },
+          {
+            "id": "0aaa994fddca3454",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "01-Mechanics/01-Kinematics/Displacement, Velocity and Acceleration/Speed and Velocity.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Speed and Velocity 的出链列表"
+            }
+          },
+          {
+            "id": "f9549c75e12c9712",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "a629427ed23a5cc0",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "01-Mechanics/01-Kinematics/Displacement, Velocity and Acceleration/Speed and Velocity.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Speed and Velocity 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "aaa18e46bddd0967",
+  "lastOpenFiles": [
+    "01-Mechanics/01-Kinematics/Displacement, Velocity and Acceleration/Speed and Velocity.md",
+    "01-Mechanics/01-Kinematics/Displacement, Velocity and Acceleration/Displacement, Velocity and Acceleration.md",
+    "01-Mechanics/03-Work-Energy-Power/Kinetic Energy and Potential Energy/Elastic Potential Energy.md",
+    "01-Mechanics/06-Oscillations/Simple Harmonic Motion/Conditions for SHM.md",
+    "01-Mechanics/06-Oscillations/Damped and Forced Oscillations - Resonance/Damped and Forced Oscillations - Resonance.md",
+    "01-Mechanics/06-Oscillations/Energy in SHM/Energy in SHM.md",
+    "01-Mechanics/06-Oscillations/Simple Harmonic Motion/Simple Harmonic Motion.md",
+    "01-Mechanics/05-Gravitational-Fields/Circular Orbits/Circular Orbits.md",
+    "01-Mechanics/05-Gravitational-Fields/Gravitational Potential/Gravitational Potential.md",
+    "01-Mechanics/05-Gravitational-Fields/Gravitational Force and Field/Gravitational Force and Field.md",
+    "01-Mechanics/04-Circular-Motion/Centripetal Acceleration and Force/Centripetal Acceleration and Force.md",
+    "01-Mechanics/04-Circular-Motion/Angular Measures/Angular Measures.md",
+    "01-Mechanics/03-Work-Energy-Power/Power and Efficiency/Power and Efficiency.md",
+    "01-Mechanics/03-Work-Energy-Power/Conservation of Energy/Conservation of Energy.md",
+    "01-Mechanics/03-Work-Energy-Power/Kinetic Energy and Potential Energy/Kinetic Energy and Potential Energy.md",
+    "01-Mechanics/03-Work-Energy-Power/Work Done by a Force/Work Done by a Force.md",
+    "01-Mechanics/02-Forces/Forces in Fluids (Upthrust and Viscous Force)/Forces in Fluids (Upthrust and Viscous Force).md",
+    "01-Mechanics/06-Oscillations/Energy in SHM/KE and PE in SHM.md",
+    "01-Mechanics/06-Oscillations/Energy in SHM/Energy-Displacement Graphs for SHM.md",
+    "01-Mechanics/06-Oscillations/Damped and Forced Oscillations - Resonance/Resonance and the Barton Pendulum.md",
+    "01-Mechanics/06-Oscillations/Damped and Forced Oscillations - Resonance/Light, Critical and Heavy Damping.md",
+    "01-Mechanics/06-Oscillations/Simple Harmonic Motion/The Simple Pendulum.md",
+    "01-Mechanics/06-Oscillations/Damped and Forced Oscillations - Resonance/Forced Oscillations.md",
+    "01-Mechanics/01-Kinematics/Motion Graphs/Velocity-Time Graphs.md",
+    "01-Mechanics/01-Kinematics/Motion Graphs/Motion Graphs.md",
+    "01-Mechanics/01-Kinematics/Motion Graphs/Interpreting Gradient and Area.md",
+    "01-Mechanics/06-Oscillations/Damped and Forced Oscillations - Resonance",
+    "01-Mechanics/06-Oscillations/Damped and Forced Oscillations / Resonance",
+    "01-Mechanics/06-Oscillations/Damped and Forced Oscillations ",
+    "01-Mechanics/06-Oscillations/Energy in SHM",
+    "01-Mechanics/06-Oscillations/Simple Harmonic Motion",
+    "01-Mechanics/06-Oscillations",
+    "01-Mechanics/05-Gravitational-Fields/Circular Orbits",
+    "01-Mechanics/05-Gravitational-Fields/Gravitational Potential",
+    "01-Mechanics/05-Gravitational-Fields/Gravitational Force and Field",
+    "01-Mechanics/04-Circular-Motion/Centripetal Acceleration and Force",
+    "attachments/Pasted image 20260605010703.png"
+  ]
+}
