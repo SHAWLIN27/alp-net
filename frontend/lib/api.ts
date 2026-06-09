@@ -1,8 +1,12 @@
 import axios from 'axios';
 import type { ApiGraphData, SearchResult } from '@/types';
 
+const API_BASE = typeof window !== 'undefined'
+  ? process.env.NEXT_PUBLIC_API_URL || '/api/v1'
+  : '/api/v1';
+
 const api = axios.create({
-  baseURL: '/api/v1',
+  baseURL: API_BASE,
   timeout: 30_000,
 });
 

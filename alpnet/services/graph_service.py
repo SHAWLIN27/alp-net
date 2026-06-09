@@ -58,6 +58,18 @@ class GraphService:
             return GraphResponse()
         return self._subgraph_response(self.graph.subgraph(path))
 
+    def _subgraph_response(self, graph: nx.MultiDiGraph, exclude_content: bool = False) -> GraphResponse:
+        nodes: list[KnowledgeNode] = []
+        for _, data in graph.nodes(data=True):
+            node_data = dict(data)
+            if exclude_content:
+                node_data.pop("content_md", None)
+            nodes.append(KnowledgeNode(**node_data))
+        edges: list[KnowledgeEdge] = []
+        for source, target, data in graph.edges(data=True):
+            edges.append(KnowledgeEdge(**data))
+        return GraphResponse(nodes=nodes, edges=edges)
+
     def topic_tree(self) -> GraphResponse:
         topic_nodes = [
             node_id
@@ -67,11 +79,4 @@ class GraphService:
         expanded = set(topic_nodes)
         for topic_id in topic_nodes:
             expanded.update(self.graph.predecessors(topic_id))
-        return self._subgraph_response(self.graph.subgraph(expanded))
-
-    def _subgraph_response(self, graph: nx.MultiDiGraph) -> GraphResponse:
-        nodes = [KnowledgeNode(**data) for _, data in graph.nodes(data=True)]
-        edges: list[KnowledgeEdge] = []
-        for source, target, data in graph.edges(data=True):
-            edges.append(KnowledgeEdge(**data))
-        return GraphResponse(nodes=nodes, edges=edges)
+        return self._subgraph_response(self.graph.subgraph(expanded), exclude_content=True)

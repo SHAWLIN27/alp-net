@@ -136,28 +136,33 @@ button, a, input, textarea {
 .obsidian-content table {
   width: 100%;
   border-collapse: collapse;
+  border-spacing: 0;
   margin: 1em 0;
   font-size: 12px;
+  border: 1px solid rgba(255,255,255,0.08);
 }
 .obsidian-content thead {
   background: rgba(255,255,255,0.04);
+  border-bottom: 2px solid rgba(255,255,255,0.12);
 }
 .obsidian-content th {
   color: #cbd5e1;
   font-weight: 600;
   padding: 8px 12px;
   text-align: left;
-  border-bottom: 2px solid rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-bottom-width: 2px;
+  border-bottom-color: rgba(255,255,255,0.12);
   white-space: nowrap;
 }
 .obsidian-content td {
   color: #94a3b8;
   padding: 7px 12px;
-  border-bottom: 1px solid rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.04);
   vertical-align: top;
 }
 .obsidian-content tbody tr:hover {
-  background: rgba(255,255,255,0.02);
+  background: rgba(255,255,255,0.03);
 }
 
 /* Blockquotes — styled callouts */

@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import remarkMath from 'remark-math';
+import remarkGfm from 'remark-gfm';
 import rehypeKatex from 'rehype-katex';
 import { useEffect, useState, useMemo, useRef } from 'react';
 import { fetchConcept } from '@/lib/api';
@@ -199,7 +200,7 @@ export default function RightPanel() {
                   >
                     <div className="obsidian-content">
                       <ReactMarkdown
-                        remarkPlugins={[remarkMath]}
+                        remarkPlugins={[remarkMath, remarkGfm]}
                         rehypePlugins={[rehypeKatex]}
                       >
                         {section.content}
@@ -212,7 +213,7 @@ export default function RightPanel() {
               <div className="px-5 py-4">
                 <div className="obsidian-content">
                   <ReactMarkdown
-                    remarkPlugins={[remarkMath]}
+                    remarkPlugins={[remarkMath, remarkGfm]}
                     rehypePlugins={[rehypeKatex]}
                   >
                     {detailContent}
