@@ -1,336 +1,411 @@
+---
 # Displacement and Distance / 位移与路程
 
 ---
 
-## 1. Overview / 概述
+# 1. Overview / 概述
 
 **English:**
-Displacement and distance are two fundamental concepts in kinematics that describe "how far" an object has moved, but they do so in fundamentally different ways. Distance is a scalar quantity that measures the total length of the path traveled, regardless of direction. Displacement is a vector quantity that measures the straight-line change in position from the starting point to the ending point, including direction. Understanding the distinction between these two concepts is essential for mastering [[Displacement, Velocity and Acceleration]] and forms the foundation for [[Speed and Velocity]], [[Acceleration]], and eventually [[Equations of Motion (SUVAT)]]. This distinction relies heavily on the prerequisite understanding of [[Scalars and Vectors]].
+This sub-topic introduces the fundamental distinction between **distance** and **displacement** — two of the most important concepts in kinematics. Distance is a scalar quantity that measures the total path length traveled, while displacement is a vector quantity that measures the straight-line change in position from start to finish, including direction. Understanding this difference is essential for all subsequent work in [[Displacement, Velocity and Acceleration]], including [[Speed and Velocity]], [[Acceleration]], and [[Equations of Motion (SUVAT)]]. This sub-topic builds directly on the prerequisite concept of [[Scalars and Vectors]].
 
 **中文:**
-位移和路程是运动学中描述物体"移动了多远"的两个基本概念，但它们的含义有本质区别。路程是标量，测量的是物体实际经过的路径总长度，不考虑方向。位移是矢量，测量的是从起点到终点的直线位置变化，包含方向信息。理解这两个概念的区别对于掌握[[Displacement, Velocity and Acceleration]]至关重要，也是学习[[Speed and Velocity]]、[[Acceleration]]以及[[Equations of Motion (SUVAT)]]的基础。这一区分依赖于对[[Scalars and Vectors]]的先修理解。
+本子知识点介绍运动学中最基本的概念之一——**路程**与**位移**的区别。路程是标量，测量物体运动路径的总长度；位移是矢量，测量物体从起点到终点的直线位置变化，包括方向。理解这一区别对于后续学习[[Displacement, Velocity and Acceleration]]中的[[Speed and Velocity]]、[[Acceleration]]以及[[Equations of Motion (SUVAT)]]至关重要。本子知识点直接建立在[[Scalars and Vectors]]的基础上。
 
 ---
 
-## 2. Core Definition / 核心定义
+# 2. Syllabus Learning Objectives / 考纲学习目标
 
-| Term (EN/CN) | Definition (EN) | Definition (CN) |
-| ------------ | --------------- | --------------- |
-| **Distance** / 路程 | The total length of the path traveled by an object, irrespective of direction. It is a scalar quantity. | 物体运动路径的总长度，与方向无关。是一个标量。 |
-| **Displacement** / 位移 | The straight-line distance from the starting point to the ending point, measured in a specific direction. It is a vector quantity. | 从起点到终点的直线距离，沿特定方向测量。是一个矢量。 |
-| **Magnitude of Displacement** / 位移大小 | The numerical value of displacement, equal to the shortest distance between start and end points. | 位移的数值，等于起点和终点之间的最短距离。 |
-| **Path** / 路径 | The actual route taken by an object as it moves from one position to another. | 物体从一个位置移动到另一个位置时实际经过的路线。 |
-| **Position** / 位置 | The location of an object relative to a chosen reference point or origin. | 物体相对于所选参考点或原点的位置。 |
+| CAIE 9702 (3.1 d-f) | Edexcel IAL (WPH11 U1: 1.4-1.8) |
+|-----------|-------------|
+| Define and distinguish between distance and displacement | Understand the difference between scalar and vector quantities, including distance and displacement |
+| Use vector addition to find resultant displacement | Use vector addition to determine the resultant displacement of an object |
+| Solve problems involving displacement in one and two dimensions | Solve problems involving displacement in one and two dimensions |
+
+**Examiner Expectations / 考官期望:**
+- **English:** You must be able to clearly state whether a quantity is scalar or vector, calculate displacement from position vectors, and use vector addition (including Pythagoras and trigonometry) to find resultant displacement.
+- **中文:** 你必须能够清楚说明一个量是标量还是矢量，从位置矢量计算位移，并使用矢量加法（包括勾股定理和三角函数）求合位移。
 
 ---
 
-## 3. Key Concepts / 关键概念
+# 3. Core Definitions / 核心定义
 
+| Term (EN/CN) | Definition (EN) | Definition (CN) | Common Mistakes / 常见错误 |
+|--------------|-----------------|-----------------|---------------------------|
+| **Distance** / 路程 | The total length of the path traveled by an object, irrespective of direction. A scalar quantity. | 物体运动路径的总长度，与方向无关。标量。 | ❌ Confusing distance with displacement when direction matters. |
+| **Displacement** / 位移 | The straight-line distance from the starting point to the finishing point, in a specified direction. A vector quantity. | 从起点到终点的直线距离，并指明方向。矢量。 | ❌ Forgetting to state the direction; giving only magnitude. |
+| **Position Vector** / 位置矢量 | A vector that specifies the location of a point relative to a fixed origin. | 相对于固定原点确定一点位置的矢量。 | ❌ Confusing position with displacement. |
+| **Resultant Displacement** / 合位移 | The single displacement that has the same effect as two or more successive displacements. | 与两个或多个连续位移具有相同效果的单一位移。 | ❌ Adding magnitudes directly without considering direction. |
+| **Scalar** / 标量 | A physical quantity that has magnitude only, with no direction. | 只有大小、没有方向的物理量。 | ❌ Treating a vector as a scalar. |
+| **Vector** / 矢量 | A physical quantity that has both magnitude and direction. | 既有大小又有方向的物理量。 | ❌ Forgetting to specify direction in the answer. |
+
+---
+
+# 4. Key Concepts Explained / 关键概念详解
+
+## 4.1 Distance vs. Displacement / 路程与位移
+
+### Explanation / 解释
 **English:**
-
-### The Fundamental Distinction
-
-The key difference between distance and displacement lies in whether direction matters. Distance is a [[Scalars and Vectors|scalar]] — it only has magnitude. Displacement is a [[Scalars and Vectors|vector]] — it has both magnitude and direction.
-
-Consider a student walking from their classroom to the library:
-- If they walk 200 m east, then 100 m west to get a book, then 50 m east again to reach the library:
-  - **Distance** = 200 + 100 + 50 = 350 m (total path length)
-  - **Displacement** = 200 - 100 + 50 = 150 m east (net change in position)
-
-### Why This Matters
-
-This distinction is crucial because:
-1. **Velocity** is derived from displacement (not distance) — see [[Speed and Velocity]]
-2. **Acceleration** depends on changes in velocity — see [[Acceleration]]
-3. [[Motion Graphs]] use displacement-time graphs, not distance-time graphs
-4. [[Equations of Motion (SUVAT)]] use displacement ($s$), not distance
-
-### Common Pitfalls
-
-1. **Confusing "distance traveled" with "displacement"** — Always check if direction matters in the problem.
-2. **Assuming displacement equals distance** — This is only true for straight-line motion in one direction without changing direction.
-3. **Forgetting the direction** — Displacement must include a direction (e.g., "50 m north" not just "50 m").
-4. **Adding distances as vectors** — Distance is always added as positive numbers; displacement uses vector addition with signs.
-
-### Physical Interpretation
-
-- **Distance** tells you "how much ground was covered" — useful for fuel consumption, wear and tear, etc.
-- **Displacement** tells you "how far and in what direction from the start" — useful for navigation, final position, etc.
+Imagine a student walking from their classroom (point A) to the library (point B) via a winding corridor. The **distance** is the total length of the corridor they walked — say 200 m. The **displacement**, however, is the straight-line distance from A to B — say 80 m due east. The displacement is a vector; it has both magnitude (80 m) and direction (east). The distance is a scalar; it has only magnitude (200 m). This distinction is crucial because [[Speed and Velocity]] are defined using distance and displacement respectively. For more on vector vs. scalar, see [[Scalars and Vectors]].
 
 **中文:**
+想象一名学生从教室（A点）沿着弯曲的走廊走到图书馆（B点）。**路程**是他们走过的走廊总长度——比如200米。而**位移**是从A到B的直线距离——比如80米，方向朝东。位移是矢量，既有大小（80米）又有方向（东）。路程是标量，只有大小（200米）。这一区别至关重要，因为[[Speed and Velocity]]分别基于路程和位移定义。关于矢量与标量的更多内容，请参见[[Scalars and Vectors]]。
 
-### 基本区别
+### Physical Meaning / 物理意义
+**English:**
+- **Distance** tells you "how much ground was covered" — useful for fuel consumption, wear and tear.
+- **Displacement** tells you "how far and in what direction you ended up from where you started" — essential for determining final position, velocity, and work done.
 
-路程和位移的关键区别在于方向是否重要。路程是[[Scalars and Vectors|标量]]——只有大小。位移是[[Scalars and Vectors|矢量]]——既有大小又有方向。
+**中文:**
+- **路程**告诉你“覆盖了多少地面”——用于油耗、磨损等。
+- **位移**告诉你“从起点到终点有多远、方向如何”——对于确定最终位置、速度和做功至关重要。
 
-考虑一个学生从教室走到图书馆：
-- 如果他们先向东走200米，然后向西走100米取书，再向东走50米到达图书馆：
-  - **路程** = 200 + 100 + 50 = 350米（路径总长度）
-  - **位移** = 200 - 100 + 50 = 150米向东（位置净变化）
+### Common Misconceptions / 常见误区
+- ❌ **"Distance and displacement are the same thing."** — They are only equal if the path is a straight line in one direction.
+- ❌ **"Displacement is always positive."** — Displacement can be negative depending on the chosen direction (e.g., moving left relative to a positive right direction).
+- ❌ **"Distance has direction."** — Distance is a scalar; it has no direction.
 
-### 为什么这很重要
+### Exam Tips / 考试提示
+- ✅ **Always state the direction** when giving displacement (e.g., "50 m north" not just "50 m").
+- ✅ **Use a sign convention** (e.g., east = positive, west = negative) for one-dimensional problems.
+- ✅ **Draw a diagram** for two-dimensional displacement problems — it helps visualize vector addition.
 
-这一区别至关重要，因为：
-1. **速度**由位移（而非路程）导出——参见[[Speed and Velocity]]
-2. **加速度**取决于速度的变化——参见[[Acceleration]]
-3. [[Motion Graphs]]使用位移-时间图，而非路程-时间图
-4. [[Equations of Motion (SUVAT)]]使用位移（$s$），而非路程
-
-### 常见错误
-
-1. **混淆"走过的距离"和"位移"**——始终检查问题中方向是否重要。
-2. **假设位移等于路程**——这仅适用于不改变方向的直线运动。
-3. **忘记方向**——位移必须包含方向（例如"向北50米"而非仅"50米"）。
-4. **将路程作为矢量相加**——路程总是作为正数相加；位移使用带符号的矢量加法。
-
-### 物理解释
-
-- **路程**告诉你"覆盖了多少地面"——适用于燃料消耗、磨损等。
-- **位移**告诉你"离起点多远以及什么方向"——适用于导航、最终位置等。
+> 📷 **IMAGE PROMPT — DIA-01: Distance vs. Displacement Diagram**
+> A simple diagram showing a curved path (distance) from point A to point B, with a straight arrow (displacement) directly from A to B. Label the curved path "Distance = 200 m" and the straight arrow "Displacement = 80 m East". Include a compass rose for direction.
 
 ---
 
-## 4. Formulas / 公式
+## 4.2 Position Vectors and Displacement / 位置矢量与位移
 
-### Displacement Formula / 位移公式
+### Explanation / 解释
+**English:**
+The **position vector** $\vec{r}$ of a point describes its location relative to a fixed origin O. If an object moves from point A (position $\vec{r}_A$) to point B (position $\vec{r}_B$), the **displacement** $\vec{s}$ is given by:
+$$ \vec{s} = \vec{r}_B - \vec{r}_A $$
+This is a vector subtraction. The magnitude of $\vec{s}$ is the straight-line distance between A and B; its direction is from A to B.
 
-$$ \vec{s} = \vec{r}_f - \vec{r}_i $$
+**中文:**
+一点的**位置矢量** $\vec{r}$ 描述其相对于固定原点O的位置。如果物体从A点（位置 $\vec{r}_A$）运动到B点（位置 $\vec{r}_B$），则**位移** $\vec{s}$ 为：
+$$ \vec{s} = \vec{r}_B - \vec{r}_A $$
+这是矢量减法。$\vec{s}$ 的大小是A和B之间的直线距离；其方向从A指向B。
 
-Where $\vec{r}_f$ is the final position vector and $\vec{r}_i$ is the initial position vector.
+### Physical Meaning / 物理意义
+**English:**
+Position vectors tell you *where* something is; displacement tells you *how it moved*. This is the foundation for defining [[Velocity]] as the rate of change of displacement.
+
+**中文:**
+位置矢量告诉你物体*在哪里*；位移告诉你它*如何运动*。这是将[[Velocity]]定义为位移变化率的基础。
+
+### Common Misconceptions / 常见误区
+- ❌ **"Displacement equals final position minus initial position only if the path is straight."** — No, this is always true regardless of the path taken.
+- ❌ **"Position and displacement are the same."** — Position is a location; displacement is a change in location.
+
+### Exam Tips / 考试提示
+- ✅ **Use vector notation** (e.g., $\vec{r}$ or bold $\mathbf{r}$) in your working.
+- ✅ **For 2D problems**, express position vectors in component form: $\vec{r} = x\hat{i} + y\hat{j}$.
+
+---
+
+## 4.3 Vector Addition of Displacements / 位移的矢量加法
+
+### Explanation / 解释
+**English:**
+When an object undergoes two or more successive displacements, the **resultant displacement** is the vector sum. For example, if a hiker walks 3 km east then 4 km north, the resultant displacement is found by adding the two displacement vectors:
+- **Graphically:** Draw the vectors head-to-tail. The resultant is the vector from the tail of the first to the head of the last.
+- **Mathematically:** Use Pythagoras for magnitude and trigonometry for direction.
+$$ \text{Magnitude: } s = \sqrt{3^2 + 4^2} = 5 \text{ km} $$
+$$ \text{Direction: } \theta = \tan^{-1}\left(\frac{4}{3}\right) = 53.1^\circ \text{ north of east} $$
+
+**中文:**
+当物体经历两个或多个连续位移时，**合位移**是它们的矢量和。例如，如果一名徒步者向东走3公里，然后向北走4公里，则合位移通过将两个位移矢量相加得到：
+- **图解法：** 将矢量首尾相连。合矢量是从第一个矢量的尾端指向最后一个矢量的头端。
+- **数学法：** 使用勾股定理求大小，使用三角函数求方向。
+$$ \text{大小：} s = \sqrt{3^2 + 4^2} = 5 \text{ km} $$
+$$ \text{方向：} \theta = \tan^{-1}\left(\frac{4}{3}\right) = 53.1^\circ \text{ 北偏东} $$
+
+### Physical Meaning / 物理意义
+**English:**
+Vector addition of displacements reflects the fact that the net effect of multiple movements is equivalent to a single straight-line movement from start to finish. This principle extends to all vector quantities in physics, including [[Velocity]] and [[Acceleration]].
+
+**中文:**
+位移的矢量加法反映了这样一个事实：多次运动的净效果等同于从起点到终点的单一直线运动。这一原理适用于物理学中所有矢量量，包括[[Velocity]]和[[Acceleration]]。
+
+### Common Misconceptions / 常见误区
+- ❌ **"Just add the magnitudes: 3 + 4 = 7 km."** — This is wrong because displacement vectors are not collinear.
+- ❌ **"The direction is always north of east."** — The direction depends on the specific vectors; always calculate using trigonometry.
+
+### Exam Tips / 考试提示
+- ✅ **Always draw a vector diagram** for 2D problems — it helps avoid mistakes.
+- ✅ **Use Pythagoras** only when the vectors are perpendicular.
+- ✅ **State the direction clearly** (e.g., "53.1° north of east" or "bearing 053°").
+
+> 📷 **IMAGE PROMPT — DIA-02: Vector Addition of Displacements**
+> A diagram showing two displacement vectors: one horizontal arrow labeled "3 km East" and one vertical arrow labeled "4 km North" placed head-to-tail. A dashed arrow from the start to the end is labeled "Resultant displacement = 5 km at 53.1° north of east". Include a right-angle triangle with labels.
+
+---
+
+# 5. Essential Equations / 核心公式
+
+## 5.1 Displacement from Position Vectors / 由位置矢量求位移
+
+$$ \vec{s} = \vec{r}_B - \vec{r}_A $$
 
 | Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
-| ------------- | ------------ | ------------ | ----------- |
-| $\vec{s}$ | Displacement vector | 位移矢量 | m (米) |
-| $\vec{r}_f$ | Final position vector | 最终位置矢量 | m (米) |
-| $\vec{r}_i$ | Initial position vector | 初始位置矢量 | m (米) |
+|--------------|-------------|-------------|------------|
+| $\vec{s}$ | Displacement vector | 位移矢量 | m |
+| $\vec{r}_B$ | Final position vector | 最终位置矢量 | m |
+| $\vec{r}_A$ | Initial position vector | 初始位置矢量 | m |
 
-### Distance Formula / 路程公式
+**Derivation / 推导:** This is the definition of displacement as the change in position.
+**Conditions / 适用条件:** Always true for any motion.
+**Limitations / 局限性:** None — this is a fundamental definition.
 
-For a path consisting of $n$ straight segments:
+---
 
-$$ d = \sum_{k=1}^{n} |\Delta \vec{r}_k| = |\Delta \vec{r}_1| + |\Delta \vec{r}_2| + ... + |\Delta \vec{r}_n| $$
+## 5.2 Resultant Displacement (2D, Perpendicular) / 合位移（二维，垂直）
 
-Where $|\Delta \vec{r}_k|$ is the magnitude of each displacement segment.
+$$ s = \sqrt{s_x^2 + s_y^2} $$
+
+$$ \theta = \tan^{-1}\left(\frac{s_y}{s_x}\right) $$
 
 | Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
-| ------------- | ------------ | ------------ | ----------- |
-| $d$ | Total distance | 总路程 | m (米) |
-| $|\Delta \vec{r}_k|$ | Magnitude of k-th segment | 第k段位移的大小 | m (米) |
+|--------------|-------------|-------------|------------|
+| $s$ | Magnitude of resultant displacement | 合位移的大小 | m |
+| $s_x$ | Displacement in x-direction | x方向位移 | m |
+| $s_y$ | Displacement in y-direction | y方向位移 | m |
+| $\theta$ | Direction angle (relative to x-axis) | 方向角（相对于x轴） | ° or rad |
 
-### Relationship / 关系
+**Derivation / 推导:** From Pythagoras' theorem and trigonometry.
+**Conditions / 适用条件:** Only when the two displacement components are perpendicular.
+**Limitations / 局限性:** For non-perpendicular vectors, use the cosine rule or component addition.
 
-For any motion:
-$$ |\vec{s}| \leq d $$
-
-The magnitude of displacement is always less than or equal to the distance traveled. Equality holds only for straight-line motion in one direction without changing direction.
-
-**中文：**
-
-对于任何运动：
-$$ |\vec{s}| \leq d $$
-
-位移的大小总是小于或等于路程。等号仅在不改变方向的直线运动中成立。
-
-> 📷 **IMAGE PROMPT — D&D-01: Displacement vs Distance Diagram**
->
-> **English Prompt:**
-> A clear textbook-style vector diagram showing a curved path (dashed line) from point A to point B, with a straight arrow (solid, red) labeled "Displacement" connecting A to B. The curved path is labeled "Distance" in blue. Include a coordinate system (x-y axes) with origin O. Points A and B are marked with coordinates. The diagram should be clean, minimal, with clear labels in English. White background, suitable for A-Level physics textbook.
->
-> **中文描述:**
-> 清晰的教科书风格矢量图，显示从A点到B点的弯曲路径（虚线），以及连接A和B的直线箭头（实线，红色），标注为"位移"。弯曲路径用蓝色标注为"路程"。包含坐标系（x-y轴）和原点O。A点和B点标有坐标。图表应简洁、清晰，带有英文标签。白色背景，适合A-Level物理教科书。
->
-> **Labels Required / 需要标注:**
-> * "Displacement $\vec{s}$" (red arrow)
-> * "Distance $d$" (blue dashed curve)
-> * Point A (initial position)
-> * Point B (final position)
-> * x-axis, y-axis, origin O
->
-> **Style / 风格:** Textbook vector diagram
->
-> **Exam Relevance / 考试关联:**
-> This diagram is frequently used in exam questions to test the distinction between distance and displacement, especially in multiple-choice questions.
+> 📋 **CIE Only:** CIE often asks for displacement in terms of magnitude and direction (e.g., "5.0 m at 30° to the horizontal").
+> 📋 **Edexcel Only:** Edexcel may use bearing notation (e.g., "5.0 m on a bearing of 060°").
 
 ---
 
-## 5. Image Prompt / 图片提示
+# 6. Graphs and Relationships / 图表与关系
 
-> 📷 **IMAGE PROMPT — D&D-02: Real-World Example - Walking Path**
->
-> **English Prompt:**
-> A top-down view of a city block with a person walking along a path (dotted line) from a school (point A) to a library (point B). The path goes: east 2 blocks, north 1 block, east 1 block. Show the total path as a blue dotted line labeled "Distance = 4 blocks". Show a straight red arrow from school to library labeled "Displacement = 3.2 blocks NE". Include street names, buildings, and a compass rose. Clean, colorful, educational illustration style.
->
-> **中文描述:**
-> 城市街区的俯视图，一个人沿着路径（虚线）从学校（A点）走到图书馆（B点）。路径为：向东2个街区，向北1个街区，向东1个街区。用蓝色虚线显示总路径，标注"路程 = 4个街区"。用红色直线箭头从学校指向图书馆，标注"位移 = 3.2个街区 东北方向"。包含街道名称、建筑物和指南针。干净、彩色、教育插画风格。
->
-> **Labels Required / 需要标注:**
-> * "Distance = 4 blocks" (blue dotted path)
-> * "Displacement = 3.2 blocks NE" (red arrow)
-> * School (point A), Library (point B)
-> * Compass rose (N, S, E, W)
-> * Street names
->
-> **Style / 风格:** Educational illustration, top-down view
->
-> **Exam Relevance / 考试关联:**
-> Real-world context questions often use city block or walking path scenarios to test the distance vs displacement concept.
+## 6.1 Position-Time Graph / 位置-时间图
+
+### Axes / 坐标轴
+- **x-axis:** Time / 时间 (t / s)
+- **y-axis:** Position / 位置 (x / m)
+
+### Shape / 形状
+- **Stationary object:** Horizontal line (position constant).
+- **Constant velocity:** Straight line with constant slope.
+- **Accelerating object:** Curved line.
+
+### Gradient Meaning / 斜率含义
+- The gradient of a position-time graph gives the **velocity** (rate of change of displacement).
+
+### Area Meaning / 面积含义
+- The area under a position-time graph has **no physical meaning**.
+
+### Exam Interpretation / 考试解读
+- **English:** The change in position (vertical difference between two points) gives the displacement over that time interval. The total path length (distance) cannot be read directly from a position-time graph if the object changes direction — you must sum the absolute changes in position.
+- **中文:** 位置的变化（两点之间的垂直差）给出该时间间隔内的位移。如果物体改变方向，则无法直接从位置-时间图中读取总路径长度（路程）——你必须对位置变化的绝对值求和。
+
+> 📷 **IMAGE PROMPT — GRAPH-01: Position-Time Graph**
+> A position-time graph showing an object moving forward (positive slope), then stationary (horizontal), then moving backward (negative slope). Label the vertical difference between start and end as "Displacement" and the total path length as "Distance = sum of absolute changes".
 
 ---
 
-## 6. Worked Example / 典型例题
+# 7. Required Diagrams / 必备图表
 
-### Example 1: Walking Path / 例题1：行走路径
+## 7.1 Distance vs. Displacement Illustration / 路程与位移示意图
 
-#### Question / 题目
+### Description / 描述
+**English:** A diagram showing a curved path (distance) and a straight arrow (displacement) between two points A and B. This visually demonstrates the key difference between the two quantities.
 
+**中文:** 显示两点A和B之间弯曲路径（路程）和直线箭头（位移）的示意图。直观展示两个量之间的关键区别。
+
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — DIA-01: Distance vs. Displacement**
+> A clear educational diagram for A-Level physics. Point A (start) and Point B (end) are marked. A winding, dashed line connects A to B, labeled "Distance = 200 m". A straight, solid arrow with a bold head connects A to B, labeled "Displacement = 80 m East". A compass rose in the corner shows North, South, East, West. Clean, minimal style with a white background. Suitable for a textbook.
+
+### Labels Required / 需要标注
+- Point A (起点)
+- Point B (终点)
+- Curved path: "Distance = 200 m" (路程 = 200 米)
+- Straight arrow: "Displacement = 80 m East" (位移 = 80 米 向东)
+- Compass rose (方向标)
+
+### Exam Importance / 考试重要性
+- **English:** This diagram is frequently used in exam questions to test the conceptual understanding of distance vs. displacement.
+- **中文:** 该图常用于考试题中，测试对路程与位移的概念理解。
+
+---
+
+## 7.2 Vector Addition Diagram / 矢量加法图
+
+### Description / 描述
+**English:** A head-to-tail vector addition diagram showing two perpendicular displacements and their resultant.
+
+**中文:** 首尾相连的矢量加法图，显示两个垂直位移及其合位移。
+
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — DIA-02: Vector Addition of Displacements**
+> A diagram for A-Level physics showing vector addition. A horizontal arrow of length 3 units labeled "3 km East" starts at origin O. From its head, a vertical arrow of length 4 units labeled "4 km North" extends upward. A dashed arrow from O to the head of the vertical arrow is labeled "Resultant = 5 km at 53.1° N of E". A right-angle triangle is faintly drawn. Clean, white background.
+
+### Labels Required / 需要标注
+- 3 km East (3 公里 向东)
+- 4 km North (4 公里 向北)
+- Resultant = 5 km at 53.1° N of E (合位移 = 5 公里，北偏东 53.1°)
+- Angle θ (角度 θ)
+
+### Exam Importance / 考试重要性
+- **English:** Essential for solving 2D displacement problems. Many exam questions require you to draw or interpret such a diagram.
+- **中文:** 解决二维位移问题所必需。许多考试题要求你绘制或解读此类图。
+
+---
+
+# 8. Worked Examples / 典型例题
+
+## Example 1: Distance vs. Displacement in One Dimension / 一维路程与位移
+
+### Question / 题目
 **English:**
-A student walks 300 m east from home to school, then 400 m north to the library. Calculate:
-(a) The total distance traveled.
-(b) The magnitude of the displacement from home to the library.
-(c) The direction of the displacement.
+A car drives 5 km east, then 3 km west. What is (a) the total distance traveled, and (b) the displacement of the car from its starting point?
 
 **中文:**
-一名学生从家向东走300米到学校，然后向北走400米到图书馆。计算：
-(a) 总路程。
-(b) 从家到图书馆的位移大小。
-(c) 位移的方向。
+一辆汽车向东行驶5公里，然后向西行驶3公里。求：(a) 总路程，(b) 汽车相对于起点的位移。
 
-#### Solution / 解答
+### Solution / 解答
+**Step 1: Calculate distance.**
+Distance is the total path length:
+$$ \text{Distance} = 5 \text{ km} + 3 \text{ km} = 8 \text{ km} $$
 
-**Step 1: Identify the path segments**
-- Segment 1: 300 m east
-- Segment 2: 400 m north
+**Step 2: Calculate displacement.**
+Choose east as positive direction.
+Displacement = final position − initial position.
+$$ \vec{s} = (+5 \text{ km}) + (-3 \text{ km}) = +2 \text{ km} $$
+So displacement is 2 km east.
 
-**Step 2: Calculate distance (a)**
-$$ d = 300 + 400 = 700 \text{ m} $$
+### Final Answer / 最终答案
+**Answer:** (a) 8 km, (b) 2 km east | **答案：** (a) 8 公里, (b) 2 公里 向东
 
-**Step 3: Calculate displacement magnitude (b)**
-Using Pythagoras' theorem:
-$$ |\vec{s}| = \sqrt{300^2 + 400^2} = \sqrt{90,000 + 160,000} = \sqrt{250,000} = 500 \text{ m} $$
-
-**Step 4: Calculate displacement direction (c)**
-$$ \theta = \tan^{-1}\left(\frac{400}{300}\right) = \tan^{-1}\left(\frac{4}{3}\right) \approx 53.1^\circ \text{ north of east} $$
-
-#### Final Answer / 最终答案
-
-**Answer:**
-(a) Distance = 700 m
-(b) Displacement magnitude = 500 m
-(c) Direction = 53.1° north of east (or 036.9° on a bearing)
-
-**答案:**
-(a) 路程 = 700米
-(b) 位移大小 = 500米
-(c) 方向 = 东偏北53.1°（或方位角036.9°）
-
-#### Quick Tip / 提示
-
-**English:** When calculating displacement, always draw a vector diagram first. Use Pythagoras for perpendicular components and trigonometry for direction. Remember that distance is always the sum of absolute values, while displacement uses vector addition.
-
-**中文:** 计算位移时，先画矢量图。垂直分量用勾股定理，方向用三角函数。记住路程是绝对值的和，而位移使用矢量加法。
+### Quick Tip / 提示
+- **English:** For one-dimensional problems, always choose a sign convention (e.g., east = +, west = −) and stick to it.
+- **中文:** 对于一维问题，始终选择一个符号约定（例如，东 = +，西 = −）并保持一致。
 
 ---
 
-### Example 2: Round Trip / 例题2：往返行程
+## Example 2: Resultant Displacement in Two Dimensions / 二维合位移
 
-#### Question / 题目
-
+### Question / 题目
 **English:**
-A cyclist rides 5 km east from town A to town B, then immediately rides 5 km west back to town A. Calculate:
-(a) The total distance traveled.
-(b) The displacement at the end of the journey.
+A hiker walks 4.0 km north, then 3.0 km east. Calculate the magnitude and direction of the resultant displacement.
 
 **中文:**
-一名骑行者从A镇向东骑行5公里到B镇，然后立即向西骑行5公里返回A镇。计算：
-(a) 总路程。
-(b) 行程结束时的位移。
+一名徒步者向北走4.0公里，然后向东走3.0公里。计算合位移的大小和方向。
 
-#### Solution / 解答
+### Solution / 解答
+**Step 1: Draw a vector diagram.**
+Draw a vertical arrow (4.0 km north) and from its head a horizontal arrow (3.0 km east). The resultant is the arrow from start to finish.
 
-**Step 1: Identify the path segments**
-- Segment 1: 5 km east
-- Segment 2: 5 km west
+**Step 2: Calculate magnitude using Pythagoras.**
+$$ s = \sqrt{(4.0)^2 + (3.0)^2} = \sqrt{16 + 9} = \sqrt{25} = 5.0 \text{ km} $$
 
-**Step 2: Calculate distance (a)**
-$$ d = 5 + 5 = 10 \text{ km} $$
+**Step 3: Calculate direction using trigonometry.**
+$$ \theta = \tan^{-1}\left(\frac{\text{east}}{\text{north}}\right) = \tan^{-1}\left(\frac{3.0}{4.0}\right) = \tan^{-1}(0.75) = 36.9^\circ $$
+The direction is 36.9° east of north (or bearing 036.9°).
 
-**Step 3: Calculate displacement (b)**
-$$ \vec{s} = 5 \text{ km east} + 5 \text{ km west} = 5 \text{ km east} - 5 \text{ km east} = 0 \text{ km} $$
+### Final Answer / 最终答案
+**Answer:** 5.0 km at 36.9° east of north | **答案：** 5.0 公里，北偏东 36.9°
 
-#### Final Answer / 最终答案
-
-**Answer:**
-(a) Distance = 10 km
-(b) Displacement = 0 km (the cyclist returns to the starting point)
-
-**答案:**
-(a) 路程 = 10公里
-(b) 位移 = 0公里（骑行者返回起点）
-
-#### Quick Tip / 提示
-
-**English:** A round trip always results in zero displacement (if you return to the start), but the distance traveled is never zero. This is a classic exam question to test understanding of the scalar vs vector distinction.
-
-**中文:** 往返行程的位移总是零（如果返回起点），但路程永远不会是零。这是测试标量与矢量区别的经典考题。
+### Quick Tip / 提示
+- **English:** Always state the direction clearly. "36.9° east of north" is different from "36.9° north of east".
+- **中文:** 始终清楚说明方向。"北偏东36.9°"与"东偏北36.9°"不同。
 
 ---
 
-## 7. Flashcards / 闪卡
+# 9. Past Paper Question Types / 历年真题题型
 
-**Flashcard 1:**
-- Q (EN): What is the difference between distance and displacement?
-- Q (CN): 路程和位移有什么区别？
-- A (EN): Distance is a scalar quantity measuring the total path length traveled. Displacement is a vector quantity measuring the straight-line change in position from start to end, including direction.
-- A (CN): 路程是标量，测量运动路径的总长度。位移是矢量，测量从起点到终点的直线位置变化，包含方向。
+| Question Type / 题型 | Frequency / 频率 | Difficulty / 难度 | Past Paper References / 真题索引 |
+|----------------------|------------------|------------------|-------------------------------|
+| Distinguish distance vs. displacement in a given scenario | High | Easy | 📝 *待填入* |
+| Calculate resultant displacement from two perpendicular vectors | High | Medium | 📝 *待填入* |
+| Interpret position-time graph to find displacement | Medium | Medium | 📝 *待填入* |
+| Vector addition of non-perpendicular displacements | Low | Hard | 📝 *待填入* |
 
-**Flashcard 2:**
-- Q (EN): Is distance always greater than or equal to the magnitude of displacement?
-- Q (CN): 路程总是大于或等于位移的大小吗？
-- A (EN): Yes. The magnitude of displacement is always less than or equal to the distance traveled. Equality holds only for straight-line motion in one direction without changing direction.
-- A (CN): 是的。位移的大小总是小于或等于路程。仅在不改变方向的直线运动中相等。
-
-**Flashcard 3:**
-- Q (EN): A person walks 3 m east, then 4 m north. What is the distance traveled and the magnitude of displacement?
-- Q (CN): 一个人向东走3米，然后向北走4米。路程和位移大小各是多少？
-- A (EN): Distance = 7 m. Displacement magnitude = 5 m (using Pythagoras: √(3² + 4²) = 5).
-- A (CN): 路程 = 7米。位移大小 = 5米（使用勾股定理：√(3² + 4²) = 5）。
-
-**Flashcard 4:**
-- Q (EN): What is the displacement after a complete round trip?
-- Q (CN): 完成一次完整的往返行程后，位移是多少？
-- A (EN): Zero. Because the final position is the same as the initial position.
-- A (CN): 零。因为最终位置与初始位置相同。
-
-**Flashcard 5:**
-- Q (EN): Which quantity is used to calculate average velocity: distance or displacement?
-- Q (CN): 计算平均速度使用哪个量：路程还是位移？
-- A (EN): Displacement. Average velocity = displacement / time. Distance is used for average speed.
-- A (CN): 位移。平均速度 = 位移 / 时间。路程用于计算平均速率。
+**Common Command Words / 常见指令词:**
+- **English:** "State", "Calculate", "Determine", "Find", "Sketch", "Explain the difference between"
+- **中文:** "说明"、"计算"、"确定"、"求"、"画出"、"解释...之间的区别"
 
 ---
 
-## 8. Metadata / 元数据
+# 10. Practical Skills Connections / 实验技能链接
 
-```yaml
-title:
-  en: Displacement and Distance
-  cn: 位移与路程
-parent_topic: Displacement, Velocity and Acceleration
-parent_hub: "[[Displacement, Velocity and Acceleration]]"
-subject: Physics
-syllabus:
-  - CAIE 9702
-  - Edexcel IAL
-level: AS
-node_type: leaf_concept
-difficulty: foundation
-related_leaf_nodes:
-  - "[[Speed and Velocity]]"
-  - "[[Acceleration]]"
-  - "[[Terminal Velocity]]"
-prerequisites:
-  - "[[Scalars and Vectors]]"
-related_topics:
-  - "[[Motion Graphs]]"
-  - "[[Equations of Motion (SUVAT)]]"
-language: bilingual_en_cn
+**English:**
+This sub-topic connects to practical work in the following ways:
+- **Measuring displacement:** Using a ruler, tape measure, or motion sensor to measure the straight-line distance between two points.
+- **Uncertainties:** When measuring displacement, the uncertainty depends on the instrument used (e.g., ±1 mm for a ruler, ±0.1 m for a tape measure).
+- **Vector addition in experiments:** In force tables or vector addition experiments, displacements are used to represent forces (scaled).
+- **Graph plotting:** Plotting position against time and interpreting the graph to find displacement.
+- **Experimental design:** Designing an experiment to measure the displacement of a moving object (e.g., a trolley on a track).
+
+**中文:**
+本子知识点与实验考试的联系如下：
+- **测量位移：** 使用尺子、卷尺或运动传感器测量两点之间的直线距离。
+- **不确定度：** 测量位移时，不确定度取决于所用仪器（例如，尺子为±1 mm，卷尺为±0.1 m）。
+- **实验中的矢量加法：** 在力台或矢量加法实验中，位移用于表示力（按比例缩放）。
+- **绘图：** 绘制位置随时间变化的图，并解读以找到位移。
+- **实验设计：** 设计实验测量运动物体（例如轨道上的小车）的位移。
+
+---
+
+# 11. Concept Map / 概念图谱
+
+```mermaid
+graph TD
+    %% Core concept
+    Displacement["Displacement / 位移"] -->|is a| Vector["Vector / 矢量"]
+    Distance["Distance / 路程"] -->|is a| Scalar["Scalar / 标量"]
+    
+    %% Relationships
+    Displacement -->|defined by| PositionVector["Position Vector / 位置矢量"]
+    Displacement -->|calculated via| VectorAddition["Vector Addition / 矢量加法"]
+    Displacement -->|used to define| Velocity["Speed and Velocity / 速度与速率"]
+    
+    %% Connections to other topics
+    Vector -->|prerequisite| ScalarsVectors["Scalars and Vectors / 标量与矢量"]
+    Velocity -->|leads to| Acceleration["Acceleration / 加速度"]
+    Velocity -->|used in| MotionGraphs["Motion Graphs / 运动图"]
+    Velocity -->|used in| SUVAT["Equations of Motion (SUVAT) / 运动学方程"]
+    
+    %% Practical
+    Displacement -->|measured in| Practical["Practical Skills / 实验技能"]
+    
+    %% Styling
+    classDef core fill:#f9f,stroke:#333,stroke-width:2px;
+    classDef vector fill:#bbf,stroke:#333;
+    classDef scalar fill:#bfb,stroke:#333;
+    classDef related fill:#ddd,stroke:#333;
+    
+    class Displacement core;
+    class Vector vector;
+    class Scalar scalar;
+    class PositionVector,VectorAddition vector;
+    class Velocity,Acceleration,MotionGraphs,SUVAT related;
+```
+
+---
+
+# 12. Quick Revision Sheet / 速查表
+
+| Category / 类别 | Key Points / 要点 |
+|----------------|------------------|
+| **Definition / 定义** | **Distance:** Total path length (scalar). **Displacement:** Straight-line change in position with direction (vector). |
+| **Key Formula / 核心公式** | $\vec{s} = \vec{r}_B - \vec{r}_A$; For perpendicular vectors: $s = \sqrt{s_x^2 + s_y^2}$, $\theta = \tan^{-1}(s_y/s_x)$ |
+| **Key Graph / 核心图表** | Position-time graph: vertical difference = displacement; gradient = velocity |
+| **Common Mistake / 常见错误** | ❌ Adding displacement magnitudes directly without considering direction. ❌ Forgetting to state direction for displacement. |
+| **Exam Tip / 考试提示** | ✅ Always draw a vector diagram for 2D problems. ✅ Use a sign convention for 1D problems. ✅ State direction clearly (e.g., "30° north of east"). |
+| **Practical Link / 实验联系** | Measure displacement with ruler/tape measure; account for uncertainty; use vector addition in force experiments. |
+
+---
+
+> **Parent Hub:** [[Displacement, Velocity and Acceleration]]
+> **Sibling Sub-topics:** [[Speed and Velocity]], [[Acceleration]], [[Terminal Velocity]]
+> **Prerequisites:** [[Scalars and Vectors]]
+> **Related Topics:** [[Motion Graphs]], [[Equations of Motion (SUVAT)]]

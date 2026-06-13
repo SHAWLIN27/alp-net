@@ -84,12 +84,20 @@ class WikilinkResolver:
                     continue
                 seen_edges.add(edge_key)
 
+                # Assign weight based on edge type for force layout
+                weight_map = {
+                    EdgeType.subtopic_of: 3.0,
+                    EdgeType.prerequisite_of: 2.0,
+                    EdgeType.related_to: 1.0,
+                }
+                edge_weight = weight_map.get(edge_type, 1.0)
+
                 edges.append(KnowledgeEdge(
                     source=source_id,
                     target=target_id,
                     edge_type=edge_type,
                     label=wl.get("alias", wl["target"]),
-                    weight=1.0,
+                    weight=edge_weight,
                     metadata={
                         "wikilink_target": wl["target"],
                         "section": wl.get("section", 0),
@@ -108,7 +116,7 @@ class WikilinkResolver:
                             target=hub_id,
                             edge_type=EdgeType.subtopic_of,
                             label=f"Sub-topic of {pf.topic_folder}",
-                            weight=1.0,
+                            weight=3.0,  # SUBTOPIC_OF edges have strongest pull
                         ))
 
         return edges

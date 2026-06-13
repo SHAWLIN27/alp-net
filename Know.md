@@ -282,18 +282,7 @@ Collision --> Conservation
 
 ---
 
-# 12. Examiner Insights
-
-Summarise:
-
-* most tested ideas
-* common mark scheme wording
-* frequently lost marks
-* high-scoring answer structures
-
----
-
-# 13. Quick Revision Sheet
+# 12. Quick Revision Sheet
 
 Create one-page summary.
 
@@ -304,25 +293,6 @@ Include:
 * graphs
 * key facts
 * exam reminders
-
----
-
-# 14. Metadata
-
-```yaml
-topic:
-subject: Physics
-syllabus: CAIE 9702
-level:
-tags:
-difficulty:
-prerequisites:
-related_topics:
-formula_count:
-diagram_count:
-exam_frequency:
-last_updated:
-```
 
 ---
 

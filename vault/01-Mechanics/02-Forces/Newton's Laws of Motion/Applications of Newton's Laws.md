@@ -1,320 +1,460 @@
-# Applications of Newton's Laws / 牛顿定律的应用
-
----
-
-## 1. Overview / 概述
+# 1. Overview / 概述
 
 **English:**
-This sub-topic explores how Newton's three laws of motion are applied to solve real-world physics problems. Building on [[Newton's Second Law (F=ma)]] and [[Newton's Third Law (Action-Reaction)]], we examine systems involving connected bodies, pulleys, inclined planes, and tension forces. Understanding these applications is essential for analyzing dynamics problems in mechanics — from simple lifts to complex Atwood machines. The key skill is translating physical situations into mathematical equations using [[Free-body Diagrams]].
+This sub-topic explores the practical applications of [[Newton's Laws of Motion]] in real-world and examination contexts. Building upon the foundational understanding of [[Newton's First Law (Inertia)]], [[Newton's Second Law (F=ma)]], and [[Newton's Third Law (Action-Reaction)]], we now focus on how these laws are combined to solve problems involving multiple forces, connected bodies, and systems in equilibrium or accelerated motion. Key skills include constructing [[Free-body Diagrams]], resolving forces into components, and applying Newton's Second Law to each body in a system. This is essential for understanding [[Linear Momentum and Impulse]] and [[Conservation of Momentum]].
 
 **中文:**
-本子知识点探讨如何将牛顿三定律应用于解决实际物理问题。基于[[牛顿第二定律 (F=ma)]]和[[牛顿第三定律 (作用力与反作用力)]]，我们研究涉及连接体、滑轮、斜面和张力力的系统。理解这些应用对于分析力学中的动力学问题至关重要——从简单的电梯到复杂的阿特伍德机。关键技能是使用[[受力分析图]]将物理情境转化为数学方程。
+本子知识点探讨[[牛顿运动定律]]在现实世界和考试情境中的实际应用。在理解[[牛顿第一定律（惯性）]]、[[牛顿第二定律（F=ma）]]和[[牛顿第三定律（作用力与反作用力）]]的基础上，我们重点学习如何结合这些定律来解决涉及多个力、连接体以及处于平衡或加速运动状态的系统问题。关键技能包括绘制[[受力分析图]]、将力分解为分量，以及对系统中的每个物体应用牛顿第二定律。这对于理解[[动量和冲量]]以及[[动量守恒]]至关重要。
 
 ---
 
-## 2. Core Definition / 核心定义
+# 2. Syllabus Learning Objectives / 考纲学习目标
 
-| Term (EN/CN) | Definition (EN) | Definition (CN) |
-| ------------ | --------------- | --------------- |
-| **Connected Bodies** / 连接体 | Two or more objects linked by strings, rods, or direct contact, moving together as a system. | 两个或多个通过绳子、杆或直接接触连接的物体，作为一个系统一起运动。 |
-| **Tension** / 张力 | The pulling force transmitted through a string, cable, or chain when it is taut. | 绳子、缆绳或链条拉紧时传递的拉力。 |
-| **Normal Reaction** / 法向反作用力 | The perpendicular contact force exerted by a surface on an object resting on it. | 表面对放置在其上的物体施加的垂直接触力。 |
-| **Resultant Force** / 合力 | The single force that produces the same effect as all forces acting on an object combined. | 与作用在物体上的所有力组合效果相同的单一力。 |
-| **System Approach** / 系统方法 | Treating multiple connected objects as a single entity to simplify force analysis. | 将多个连接物体视为一个整体以简化受力分析。 |
+| CAIE 9702 | Edexcel IAL |
+|-----------|-------------|
+| 3.2(d) Apply Newton's laws to problems involving forces and motion | 2.7 Apply Newton's laws to systems of connected bodies |
+| 3.2(e) Solve problems involving connected bodies (e.g., pulleys, tow bars) | 2.8 Analyse motion of objects on inclined planes |
+| - | 2.9 Solve problems involving friction (static and kinetic) |
+| - | 2.10 Apply Newton's laws to objects in equilibrium |
 
----
-
-## 3. Key Concepts / 关键概念
-
-**English:**
-
-### 3.1 The System Approach
-When analyzing connected bodies, we can either:
-- **Treat the whole system**: Apply $F = ma$ to all objects together, ignoring internal forces (like tension between them).
-- **Analyze individual objects**: Apply $F = ma$ to each object separately, including internal forces.
-
-The choice depends on what we need to find. For acceleration of the whole system, use the system approach. For tension or contact forces, analyze individual objects.
-
-### 3.2 Common Scenarios
-
-**Scenario A: Two masses connected by a string over a pulley (Atwood machine)**
-- The lighter mass accelerates upward, the heavier mass accelerates downward.
-- Tension is the same throughout the string (assuming massless, inextensible string).
-- Acceleration is the same magnitude for both masses.
-
-**Scenario B: Object on a rough inclined plane**
-- Resolve weight into components parallel ($mg\sin\theta$) and perpendicular ($mg\cos\theta$) to the plane.
-- Friction opposes motion: $F_f = \mu R$ where $R = mg\cos\theta$.
-- Net force down the plane: $F_{net} = mg\sin\theta - F_f$.
-
-**Scenario C: Lift (elevator) problems**
-- Apparent weight = normal reaction force.
-- When accelerating upward: $R - mg = ma$ → $R = m(g+a)$ (heavier feeling).
-- When accelerating downward: $mg - R = ma$ → $R = m(g-a)$ (lighter feeling).
-- In free fall ($a=g$): $R=0$ → weightlessness.
-
-### 3.3 Common Pitfalls
-- **Forgetting direction**: Always define a positive direction and stick to it.
-- **Mixing up action-reaction pairs**: Tension on mass A and tension on mass B are NOT an action-reaction pair — they are the same force transmitted through the string.
-- **Ignoring friction**: On inclined planes, always check if friction is present.
-- **Assuming massless strings**: In A-Level problems, strings are usually assumed massless and inextensible.
-
-**中文:**
-
-### 3.1 系统方法
-分析连接体时，我们可以：
-- **整体分析**：对所有物体一起应用 $F = ma$，忽略内力（如它们之间的张力）。
-- **逐个分析**：对每个物体分别应用 $F = ma$，包括内力。
-
-选择取决于我们需要求什么。求整个系统的加速度时使用系统方法。求张力或接触力时，逐个分析物体。
-
-### 3.2 常见场景
-
-**场景A：通过滑轮用绳子连接的两个质量（阿特伍德机）**
-- 较轻的质量向上加速，较重的质量向下加速。
-- 绳子中的张力处处相等（假设绳子无质量、不可伸长）。
-- 两个质量的加速度大小相等。
-
-**场景B：粗糙斜面上的物体**
-- 将重力分解为平行于斜面（$mg\sin\theta$）和垂直于斜面（$mg\cos\theta$）的分量。
-- 摩擦力阻碍运动：$F_f = \mu R$，其中 $R = mg\cos\theta$。
-- 沿斜面向下的合力：$F_{net} = mg\sin\theta - F_f$。
-
-**场景C：电梯问题**
-- 表观重量 = 法向反作用力。
-- 向上加速时：$R - mg = ma$ → $R = m(g+a)$（感觉更重）。
-- 向下加速时：$mg - R = ma$ → $R = m(g-a)$（感觉更轻）。
-- 自由落体时（$a=g$）：$R=0$ → 失重。
-
-### 3.3 常见错误
-- **忘记方向**：始终定义正方向并保持一致。
-- **混淆作用力与反作用力对**：质量A上的张力和质量B上的张力不是作用力与反作用力对——它们是通过绳子传递的同一个力。
-- **忽略摩擦力**：在斜面上，始终检查是否存在摩擦力。
-- **假设绳子无质量**：在A-Level问题中，通常假设绳子无质量且不可伸长。
+**Examiner Expectations / 考官期望:**
+- **English:** Students must be able to draw and label free-body diagrams correctly, resolve forces into perpendicular components, and apply Newton's Second Law ($F = ma$) to each body in a system. For connected bodies, they must recognise that tension is the same throughout a light, inextensible string, and that acceleration is the same for all connected bodies.
+- **中文:** 学生必须能够正确绘制并标注受力分析图，将力分解为垂直分量，并对系统中的每个物体应用牛顿第二定律（$F = ma$）。对于连接体，他们必须认识到在轻质、不可伸长的绳索中张力处处相等，并且所有连接体的加速度相同。
 
 ---
 
-## 4. Formulas / 公式
+# 3. Core Definitions / 核心定义
 
-### Key Formula 1: Newton's Second Law for a System
+| Term (EN/CN) | Definition (EN) | Definition (CN) | Common Mistakes / 常见错误 |
+|--------------|-----------------|-----------------|---------------------------|
+| **Connected Bodies** / 连接体 | Two or more objects linked by a string, rod, or direct contact, moving with the same acceleration. | 两个或多个通过绳索、杆或直接接触连接的物体，以相同的加速度运动。 | Forgetting that acceleration is the same for all bodies in the system. |
+| **Tension** / 张力 | The pulling force transmitted through a string, rope, or cable when it is taut. | 当绳索、绳子或缆绳拉紧时，通过其传递的拉力。 | Assuming tension is different at different points in a light string (it is constant). |
+| **Normal Reaction Force** / 法向反作用力 | The perpendicular contact force exerted by a surface on an object resting on it. | 表面对其上静止物体施加的垂直接触力。 | Confusing normal reaction with weight; they are only equal on horizontal surfaces with no vertical acceleration. |
+| **Friction** / 摩擦力 | A force that opposes relative motion between two surfaces in contact. | 阻碍两个接触表面之间相对运动的力。 | Forgetting that friction always opposes motion or attempted motion. |
+| **Resultant Force** / 合力 | The single force that has the same effect as all the forces acting on an object combined. | 与作用在物体上的所有力的组合效果相同的单一力。 | Not resolving forces into components before finding the resultant. |
+| **Equilibrium** / 平衡 | A state where the net force on an object is zero, resulting in zero acceleration (either at rest or moving at constant velocity). | 物体所受合力为零的状态，导致加速度为零（静止或匀速运动）。 | Thinking equilibrium only means stationary (it includes constant velocity). |
 
-$$ F_{net} = m_{total} \times a $$
+---
+
+# 4. Key Concepts Explained / 关键概念详解
+
+## 4.1 Connected Bodies (Pulley Systems) / 连接体（滑轮系统）
+
+### Explanation / 解释
+**English:** A classic application involves two masses connected by a light, inextensible string passing over a frictionless pulley. The key assumptions are: (1) the string is light (massless), so tension is the same throughout; (2) the string is inextensible, so both masses have the same magnitude of acceleration; (3) the pulley is frictionless, so it does not affect the tension. To solve, draw separate [[Free-body Diagrams]] for each mass, apply [[Newton's Second Law (F=ma)]] to each, and solve the simultaneous equations.
+
+**中文:** 一个经典应用是两个质量通过一根轻质、不可伸长的绳索连接，绳索绕过无摩擦的滑轮。关键假设是：(1) 绳索很轻（无质量），因此张力处处相等；(2) 绳索不可伸长，因此两个质量具有相同大小的加速度；(3) 滑轮无摩擦，因此不影响张力。解题时，为每个质量绘制单独的[[受力分析图]]，对每个质量应用[[牛顿第二定律（F=ma）]]，然后解联立方程。
+
+### Physical Meaning / 物理意义
+**English:** The system's acceleration is determined by the net force (difference in weights) divided by the total mass. Tension is the force that transmits the interaction between the two masses.
+
+**中文:** 系统的加速度由净力（重量差）除以总质量决定。张力是传递两个质量之间相互作用的力。
+
+### Common Misconceptions / 常见误区
+- **English:** Thinking tension equals the weight of the hanging mass. (It doesn't — tension is less than the weight of the heavier mass when the system accelerates.)
+- **中文:** 认为张力等于悬挂质量的重量。（实际上并非如此——当系统加速时，张力小于较重质量的重量。）
+- **English:** Forgetting to assign consistent sign conventions (e.g., clockwise positive).
+- **中文:** 忘记分配一致的符号约定（例如，顺时针方向为正）。
+
+### Exam Tips / 考试提示
+- **English:** Always define a positive direction for the whole system before writing equations.
+- **中文:** 在写方程之前，始终为整个系统定义一个正方向。
+- **English:** For a simple Atwood machine (two masses over a pulley), acceleration $a = \frac{(m_1 - m_2)g}{m_1 + m_2}$ and tension $T = \frac{2m_1m_2g}{m_1 + m_2}$.
+- **中文:** 对于简单的阿特伍德机（两个质量跨过滑轮），加速度 $a = \frac{(m_1 - m_2)g}{m_1 + m_2}$，张力 $T = \frac{2m_1m_2g}{m_1 + m_2}$。
+
+> 📷 **IMAGE PROMPT — CP01: Atwood Machine Free-Body Diagrams**
+> A diagram showing two masses (m1 and m2) connected by a string over a frictionless pulley. Below each mass, a separate free-body diagram: for m1, weight (m1g) downward and tension (T) upward; for m2, weight (m2g) downward and tension (T) upward. Arrows indicate direction of acceleration (m1 upward, m2 downward). Clean, educational style with labels.
+
+## 4.2 Connected Bodies (Towed Systems) / 连接体（牵引系统）
+
+### Explanation / 解释
+**English:** Another common scenario is a car towing a trailer, or a train engine pulling carriages. The connecting force (tension in a tow bar or coupling) is the same throughout if the connecting rod is light and rigid. The entire system accelerates together. To find the acceleration, treat the whole system as one object (total mass = sum of masses, net force = driving force - total resistance). To find the tension in the tow bar, isolate one body and apply $F = ma$.
+
+**中文:** 另一个常见场景是汽车拖曳拖车，或火车头拉动车厢。如果连接杆是轻质且刚性的，则连接力（牵引杆或车钩中的张力）处处相等。整个系统一起加速。要找到加速度，将整个系统视为一个物体（总质量 = 质量之和，净力 = 驱动力 - 总阻力）。要找到牵引杆中的张力，隔离一个物体并应用 $F = ma$。
+
+### Physical Meaning / 物理意义
+**English:** The tension in the tow bar is the force required to accelerate the trailer alone (or the car alone, depending on which body you isolate).
+
+**中文:** 牵引杆中的张力是单独加速拖车（或单独加速汽车，取决于你隔离哪个物体）所需的力。
+
+### Common Misconceptions / 常见误区
+- **English:** Thinking the tension equals the driving force of the engine. (It doesn't — some of the driving force accelerates the engine/car itself.)
+- **中文:** 认为张力等于发动机的驱动力。（实际上并非如此——部分驱动力用于加速发动机/汽车本身。）
+
+### Exam Tips / 考试提示
+- **English:** For a car towing a trailer: $a = \frac{F_{drive} - F_{resistance(total)}}{m_{car} + m_{trailer}}$, then isolate trailer: $T - F_{resistance(trailer)} = m_{trailer}a$.
+- **中文:** 对于汽车拖曳拖车：$a = \frac{F_{驱动} - F_{阻力(总)}}{m_{汽车} + m_{拖车}}$，然后隔离拖车：$T - F_{阻力(拖车)} = m_{拖车}a$。
+
+> 📷 **IMAGE PROMPT — CP02: Car Towing Trailer Free-Body Diagrams**
+> A diagram showing a car towing a trailer on a horizontal road. Below, two free-body diagrams: (1) Car: driving force (F) forward, friction (f_car) backward, tension (T) backward from tow bar, normal reaction (N_car) upward, weight (m_car g) downward. (2) Trailer: tension (T) forward, friction (f_trailer) backward, normal reaction (N_trailer) upward, weight (m_trailer g) downward. Arrows show acceleration direction (forward). Clean educational style.
+
+## 4.3 Objects on Inclined Planes / 斜面上的物体
+
+### Explanation / 解释
+**English:** When an object rests on a smooth inclined plane, its weight must be resolved into two components: one parallel to the plane ($mg\sin\theta$) and one perpendicular to the plane ($mg\cos\theta$). The normal reaction force equals $mg\cos\theta$ (perpendicular to the plane). The net force down the plane is $mg\sin\theta$, giving acceleration $a = g\sin\theta$ (if no friction). If friction is present, the net force is $mg\sin\theta - F_{friction}$.
+
+**中文:** 当物体静止在光滑斜面上时，其重量必须分解为两个分量：平行于斜面的分量（$mg\sin\theta$）和垂直于斜面的分量（$mg\cos\theta$）。法向反作用力等于 $mg\cos\theta$（垂直于斜面）。沿斜面向下的净力为 $mg\sin\theta$，加速度为 $a = g\sin\theta$（若无摩擦）。若有摩擦，净力为 $mg\sin\theta - F_{摩擦}$。
+
+### Physical Meaning / 物理意义
+**English:** The steeper the incline (larger $\theta$), the larger the component of weight down the plane, and the greater the acceleration. The normal reaction decreases as the angle increases.
+
+**中文:** 斜面越陡（$\theta$ 越大），沿斜面向下的重量分量越大，加速度越大。法向反作用力随角度增大而减小。
+
+### Common Misconceptions / 常见误区
+- **English:** Using $mg$ as the normal reaction force. (The normal reaction is $mg\cos\theta$, not $mg$.)
+- **中文:** 将 $mg$ 用作法向反作用力。（法向反作用力是 $mg\cos\theta$，而不是 $mg$。）
+- **English:** Confusing which component is parallel vs perpendicular.
+- **中文:** 混淆哪个分量是平行分量，哪个是垂直分量。
+
+### Exam Tips / 考试提示
+- **English:** Always draw the incline with the angle clearly marked. Resolve weight, not the normal reaction.
+- **中文:** 始终绘制斜面并清晰标记角度。分解重量，而不是法向反作用力。
+- **English:** For an object on a rough incline, remember $F_{friction} = \mu N = \mu mg\cos\theta$.
+- **中文:** 对于粗糙斜面上的物体，记住 $F_{摩擦} = \mu N = \mu mg\cos\theta$。
+
+> 📷 **IMAGE PROMPT — CP03: Forces on an Inclined Plane**
+> A diagram showing a block on a smooth inclined plane at angle θ to the horizontal. The weight (mg) is shown as a vertical downward arrow. Two dashed lines show the resolution: mg sinθ parallel to the plane (downward), and mg cosθ perpendicular to the plane. The normal reaction (N) is shown perpendicular to the plane, equal and opposite to mg cosθ. Clean educational style with labels.
+
+## 4.4 Equilibrium Problems / 平衡问题
+
+### Explanation / 解释
+**English:** When an object is in equilibrium (stationary or moving at constant velocity), the net force in any direction is zero. This means the vector sum of all forces is zero. For problems involving three forces, Lami's Theorem can be used: $\frac{F_1}{\sin\alpha} = \frac{F_2}{\sin\beta} = \frac{F_3}{\sin\gamma}$, where $\alpha, \beta, \gamma$ are the angles opposite to forces $F_1, F_2, F_3$ respectively. Alternatively, resolve all forces into horizontal and vertical components and set each sum to zero.
+
+**中文:** 当物体处于平衡状态（静止或匀速运动）时，任何方向上的净力为零。这意味着所有力的矢量和为零。对于涉及三个力的问题，可以使用拉密定理：$\frac{F_1}{\sin\alpha} = \frac{F_2}{\sin\beta} = \frac{F_3}{\sin\gamma}$，其中 $\alpha, \beta, \gamma$ 分别是力 $F_1, F_2, F_3$ 所对的角。或者，将所有力分解为水平和垂直分量，并将每个分量的和设为零。
+
+### Physical Meaning / 物理意义
+**English:** Equilibrium means balanced forces — no change in velocity. This is a direct application of [[Newton's First Law (Inertia)]].
+
+**中文:** 平衡意味着力平衡——速度没有变化。这是[[牛顿第一定律（惯性）]]的直接应用。
+
+### Common Misconceptions / 常见误区
+- **English:** Thinking equilibrium only applies to stationary objects. (It also applies to objects moving at constant velocity.)
+- **中文:** 认为平衡只适用于静止物体。（它也适用于匀速运动的物体。）
+
+### Exam Tips / 考试提示
+- **English:** For three-force equilibrium problems, Lami's Theorem is often faster than resolving components.
+- **中文:** 对于三力平衡问题，拉密定理通常比分解分量更快。
+
+---
+
+# 5. Essential Equations / 核心公式
+
+## 5.1 Newton's Second Law / 牛顿第二定律
+
+$$ F_{\text{net}} = ma $$
 
 | Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
-| ------------- | ------------ | ------------ | ----------- |
-| $F_{net}$ | Net external force on the system | 系统所受合外力 | N |
-| $m_{total}$ | Total mass of all objects | 所有物体的总质量 | kg |
-| $a$ | Acceleration of the system | 系统的加速度 | m/s² |
+|--------------|-------------|-------------|------------|
+| $F_{\text{net}}$ | Net (resultant) force | 净力（合力） | N (newton) |
+| $m$ | Mass | 质量 | kg |
+| $a$ | Acceleration | 加速度 | m s⁻² |
 
-### Key Formula 2: Object on an Inclined Plane
+**Conditions / 适用条件:** The net force is the vector sum of all forces acting on the object. This law applies in inertial reference frames. | 净力是作用在物体上所有力的矢量和。该定律适用于惯性参考系。
 
-$$ F_{parallel} = mg\sin\theta $$
-$$ F_{perpendicular} = mg\cos\theta $$
-$$ F_{friction} = \mu R = \mu mg\cos\theta $$
+## 5.2 Atwood Machine / 阿特伍德机
+
+$$ a = \frac{(m_1 - m_2)g}{m_1 + m_2} $$
+
+$$ T = \frac{2m_1m_2g}{m_1 + m_2} $$
 
 | Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
-| ------------- | ------------ | ------------ | ----------- |
-| $\theta$ | Angle of incline | 斜面角度 | ° or rad |
+|--------------|-------------|-------------|------------|
+| $a$ | Acceleration of system | 系统加速度 | m s⁻² |
+| $m_1, m_2$ | Masses (m₁ > m₂) | 质量（m₁ > m₂） | kg |
+| $g$ | Acceleration due to gravity | 重力加速度 | m s⁻² |
+| $T$ | Tension in string | 绳索中的张力 | N |
+
+**Derivation / 推导:** For m₁ (downward positive): $m_1g - T = m_1a$. For m₂ (upward positive): $T - m_2g = m_2a$. Add equations: $(m_1 - m_2)g = (m_1 + m_2)a$, so $a = \frac{(m_1 - m_2)g}{m_1 + m_2}$. Substitute back to find $T$.
+
+## 5.3 Object on Inclined Plane / 斜面上的物体
+
+$$ a = g\sin\theta - \mu g\cos\theta $$
+
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| $a$ | Acceleration down the plane | 沿斜面向下的加速度 | m s⁻² |
+| $\theta$ | Angle of incline | 斜面倾角 | ° or rad |
 | $\mu$ | Coefficient of friction | 摩擦系数 | dimensionless |
-| $R$ | Normal reaction force | 法向反作用力 | N |
+| $g$ | Acceleration due to gravity | 重力加速度 | m s⁻² |
 
-### Key Formula 3: Lift (Elevator) Problems
+**Conditions / 适用条件:** For a rough incline with friction. If smooth ($\mu = 0$), $a = g\sin\theta$. | 适用于有摩擦的粗糙斜面。若光滑（$\mu = 0$），则 $a = g\sin\theta$。
 
-$$ R = m(g \pm a) $$
+## 5.4 Lami's Theorem / 拉密定理
+
+$$ \frac{F_1}{\sin\alpha} = \frac{F_2}{\sin\beta} = \frac{F_3}{\sin\gamma} $$
 
 | Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
-| ------------- | ------------ | ------------ | ----------- |
-| $R$ | Apparent weight (normal reaction) | 表观重量（法向反作用力） | N |
-| $g$ | Acceleration due to gravity | 重力加速度 | m/s² |
-| $a$ | Acceleration of lift | 电梯的加速度 | m/s² |
+|--------------|-------------|-------------|------------|
+| $F_1, F_2, F_3$ | Three forces in equilibrium | 处于平衡的三个力 | N |
+| $\alpha, \beta, \gamma$ | Angles opposite to $F_1, F_2, F_3$ respectively | 分别与 $F_1, F_2, F_3$ 相对的角 | ° or rad |
 
-**Derivation / 推导:**
-For upward acceleration: $R - mg = ma$ → $R = m(g + a)$
-For downward acceleration: $mg - R = ma$ → $R = m(g - a)$
+**Conditions / 适用条件:** Only applies when exactly three forces act on a body in equilibrium. | 仅适用于恰好三个力作用在平衡物体上的情况。
 
-**Conditions / 适用条件:**
-- Strings are massless and inextensible
-- Pulleys are frictionless and massless
-- Air resistance is neglected unless stated
-
-> 📷 **IMAGE PROMPT — F01: Atwood Machine Free-Body Diagram**
->
-> **English Prompt:**
-> A clean textbook-style vector diagram showing an Atwood machine: two masses (m₁ and m₂, with m₂ > m₁) connected by a string passing over a frictionless pulley at the top. Include free-body diagrams for each mass: m₁ has upward tension T and downward weight m₁g; m₂ has upward tension T and downward weight m₂g. Arrows should be labeled with force names and magnitudes. The acceleration direction should be indicated: m₁ upward, m₂ downward. Use a white background with blue and red arrows. Include a small note: "Tension T is the same throughout the string."
->
-> **中文描述:**
-> 一个干净的教科书式矢量图，展示阿特伍德机：两个质量（m₁和m₂，m₂ > m₁）通过绳子连接，绳子绕过顶部的无摩擦滑轮。包括每个质量的受力分析图：m₁受到向上的张力T和向下的重力m₁g；m₂受到向上的张力T和向下的重力m₂g。箭头应标注力名称和大小。应标明加速度方向：m₁向上，m₂向下。使用白色背景，蓝色和红色箭头。包含小注："张力T在绳子中处处相等。"
->
-> **Labels Required / 需要标注:**
-> * m₁, m₂ (masses)
-> * T (tension arrows on both masses)
-> * m₁g, m₂g (weight arrows)
-> * a (acceleration direction for each mass)
-> * "Frictionless pulley" label
->
-> **Style / 风格:** Textbook vector / clean diagram
->
-> **Exam Relevance / 考试关联:**
-> This is the most common setup for connected bodies problems in A-Level exams. Understanding the free-body diagrams is essential for writing correct equations.
+> 📷 **IMAGE PROMPT — CP04: Lami's Theorem Diagram**
+> A diagram showing three forces (F1, F2, F3) acting on a point, with angles α, β, γ marked opposite to each force respectively. The forces form a closed triangle. Clean educational style with labels.
 
 ---
 
-## 5. Image Prompt / 图片提示
+# 6. Graphs and Relationships / 图表与关系
 
-> 📷 **IMAGE PROMPT — F02: Inclined Plane with Connected Masses**
->
-> **English Prompt:**
-> A detailed 3D-rendered diagram showing a physics setup: a mass m₁ on a rough inclined plane (angle θ = 30°) connected by a string over a pulley at the top of the incline to a hanging mass m₂. Include force arrows on m₁: weight mg resolved into components mg sinθ (parallel, down the plane) and mg cosθ (perpendicular, into the plane), normal reaction R (perpendicular, out of the plane), tension T (up the plane), and friction F_f (down the plane, opposing motion). On m₂: tension T (upward) and weight m₂g (downward). Use a warm color palette with clear labels. The background should be a simple classroom or lab setting.
->
-> **中文描述:**
-> 一个详细的3D渲染图，展示物理设置：粗糙斜面上的质量m₁（角度θ = 30°）通过绳子连接，绳子绕过斜面顶部的滑轮连接到悬挂的质量m₂。在m₁上包含力箭头：重力mg分解为平行分量mg sinθ（沿斜面向下）和垂直分量mg cosθ（垂直进入斜面），法向反作用力R（垂直离开斜面），张力T（沿斜面向上），摩擦力F_f（沿斜面向下，阻碍运动）。在m₂上：张力T（向上）和重力m₂g（向下）。使用暖色调，清晰标注。背景为简单的教室或实验室环境。
->
-> **Labels Required / 需要标注:**
-> * m₁, m₂
-> * θ = 30°
-> * mg sinθ, mg cosθ, R, T, F_f on m₁
-> * T, m₂g on m₂
-> * Direction of acceleration a
->
-> **Style / 风格:** 3D render / educational illustration
->
-> **Exam Relevance / 考试关联:**
-> This combined inclined-plane-and-pulley setup appears frequently in exam questions testing both resolution of forces and connected bodies analysis.
+## 6.1 Acceleration vs. Angle for Inclined Plane / 斜面加速度与角度的关系
+
+### Axes / 坐标轴
+- **x-axis:** Angle of incline $\theta$ / 斜面倾角 $\theta$
+- **y-axis:** Acceleration $a$ / 加速度 $a$
+
+### Shape / 形状
+- **English:** A sine curve: $a = g\sin\theta$. Starts at 0 when $\theta = 0^\circ$, increases to $g$ when $\theta = 90^\circ$.
+- **中文:** 正弦曲线：$a = g\sin\theta$。当 $\theta = 0^\circ$ 时从 0 开始，当 $\theta = 90^\circ$ 时增加到 $g$。
+
+### Gradient Meaning / 斜率含义
+- **English:** The gradient is $g\cos\theta$, which decreases as $\theta$ increases.
+- **中文:** 斜率为 $g\cos\theta$，随 $\theta$ 增大而减小。
+
+### Area Meaning / 面积含义
+- **English:** Not applicable for this graph.
+- **中文:** 此图不适用。
+
+### Exam Interpretation / 考试解读
+- **English:** Be able to sketch this graph and explain why acceleration increases with angle.
+- **中文:** 能够绘制此图并解释为什么加速度随角度增大而增大。
+
+## 6.2 Tension vs. Mass Ratio for Atwood Machine / 阿特伍德机张力与质量比的关系
+
+### Axes / 坐标轴
+- **x-axis:** Mass ratio $m_2/m_1$ / 质量比 $m_2/m_1$
+- **y-axis:** Tension $T$ / 张力 $T$
+
+### Shape / 形状
+- **English:** For fixed $m_1$, as $m_2$ increases, tension increases. The relationship is $T = \frac{2m_1m_2g}{m_1 + m_2}$.
+- **中文:** 对于固定的 $m_1$，随着 $m_2$ 增大，张力增大。关系为 $T = \frac{2m_1m_2g}{m_1 + m_2}$。
+
+### Gradient Meaning / 斜率含义
+- **English:** The gradient changes; the curve approaches $2m_1g$ as $m_2 \to \infty$.
+- **中文:** 斜率变化；当 $m_2 \to \infty$ 时，曲线趋近于 $2m_1g$。
+
+### Area Meaning / 面积含义
+- **English:** Not applicable.
+- **中文:** 不适用。
+
+### Exam Interpretation / 考试解读
+- **English:** Understand that tension is always less than the weight of the heavier mass when the system accelerates.
+- **中文:** 理解当系统加速时，张力总是小于较重质量的重量。
 
 ---
 
-## 6. Worked Example / 典型例题
+# 7. Required Diagrams / 必备图表
 
-### Example 1: Atwood Machine
+## 7.1 Free-Body Diagram for Connected Bodies (Pulley) / 连接体（滑轮）受力分析图
+
+### Description / 描述
+**English:** Two masses (m₁ and m₂) connected by a string over a frictionless pulley. Separate free-body diagrams for each mass showing weight (mg) and tension (T). Arrows indicate direction of acceleration.
+
+**中文:** 两个质量（m₁ 和 m₂）通过绳索连接，绕过无摩擦滑轮。每个质量的单独受力分析图，显示重量（mg）和张力（T）。箭头表示加速度方向。
+
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — CP05: Pulley System Free-Body Diagrams**
+> A diagram showing two masses (m1 and m2) connected by a string over a frictionless pulley. Below each mass, a separate free-body diagram: for m1, weight (m1g) downward and tension (T) upward; for m2, weight (m2g) downward and tension (T) upward. Arrows indicate direction of acceleration (m1 upward, m2 downward). Clean, educational style with labels.
+
+### Labels Required / 需要标注
+- **English:** m₁, m₂, T, m₁g, m₂g, a (acceleration direction)
+- **中文:** m₁, m₂, T, m₁g, m₂g, a（加速度方向）
+
+### Exam Importance / 考试重要性
+- **English:** Essential for solving connected bodies problems. Marks are often awarded for correctly drawn and labelled free-body diagrams.
+- **中文:** 解决连接体问题所必需。正确绘制和标注受力分析图通常可以获得分数。
+
+## 7.2 Forces on an Inclined Plane / 斜面上的力
+
+### Description / 描述
+**English:** A block on an inclined plane showing weight resolved into components parallel and perpendicular to the plane. Normal reaction and friction (if present) are also shown.
+
+**中文:** 斜面上的物块，显示重量分解为平行和垂直于斜面的分量。还显示法向反作用力和摩擦力（如果有）。
+
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — CP06: Inclined Plane Force Resolution**
+> A diagram showing a block on a rough inclined plane at angle θ to the horizontal. The weight (mg) is shown as a vertical downward arrow. Two dashed lines show the resolution: mg sinθ parallel to the plane (downward), and mg cosθ perpendicular to the plane. The normal reaction (N) is shown perpendicular to the plane, equal and opposite to mg cosθ. Friction (F) is shown parallel to the plane, opposing motion. Clean educational style with labels.
+
+### Labels Required / 需要标注
+- **English:** θ, mg, mg sinθ, mg cosθ, N, F (friction), a (if accelerating)
+- **中文:** θ, mg, mg sinθ, mg cosθ, N, F（摩擦力）, a（如果加速）
+
+### Exam Importance / 考试重要性
+- **English:** Frequently tested in both CAIE and Edexcel exams. Understanding force resolution on inclines is fundamental.
+- **中文:** 在 CAIE 和 Edexcel 考试中经常出现。理解斜面上的力分解是基础。
+
+---
+
+# 8. Worked Examples / 典型例题
+
+## Example 1: Connected Bodies (Pulley) / 连接体（滑轮）
 
 ### Question / 题目
-**English:**
-Two masses, 3.0 kg and 5.0 kg, are connected by a light inextensible string passing over a frictionless pulley. The system is released from rest. Calculate:
-(a) The acceleration of the system.
-(b) The tension in the string.
-Take $g = 9.81 \text{ m/s}^2$.
+**English:** Two masses, 3.0 kg and 5.0 kg, are connected by a light inextensible string passing over a frictionless pulley. The 5.0 kg mass hangs vertically, and the 3.0 kg mass rests on a smooth horizontal table. Calculate: (a) the acceleration of the system, (b) the tension in the string. (Take $g = 9.81 \text{ m s}^{-2}$)
 
-**中文:**
-两个质量分别为3.0 kg和5.0 kg的物体，通过一根轻质不可伸长的绳子连接，绳子绕过无摩擦滑轮。系统从静止释放。计算：
-(a) 系统的加速度。
-(b) 绳子中的张力。
-取 $g = 9.81 \text{ m/s}^2$。
+**中文:** 两个质量分别为 3.0 kg 和 5.0 kg 的物体，通过一根轻质不可伸长的绳索连接，绳索绕过无摩擦滑轮。5.0 kg 的物体垂直悬挂，3.0 kg 的物体静止在光滑水平桌面上。计算：(a) 系统的加速度，(b) 绳索中的张力。（取 $g = 9.81 \text{ m s}^{-2}$）
 
 ### Solution / 解答
 
-**Step 1: Define positive direction**
-Let positive direction be the direction of motion: 5.0 kg mass moving downward, 3.0 kg mass moving upward.
+**Step 1: Draw free-body diagrams / 绘制受力分析图**
+- For 5.0 kg (hanging): Weight $5g$ downward, Tension $T$ upward. Net force: $5g - T = 5a$ (downward positive).
+- For 3.0 kg (on table): Tension $T$ to the right, no friction (smooth table). Net force: $T = 3a$ (rightward positive).
 
-**Step 2: System approach for acceleration**
-For the whole system:
-- Net force = weight of 5.0 kg - weight of 3.0 kg
-- $F_{net} = m_2g - m_1g = (5.0 - 3.0) \times 9.81 = 19.62 \text{ N}$
-- Total mass = $5.0 + 3.0 = 8.0 \text{ kg}$
-- Using $F_{net} = m_{total}a$:
-  $$ a = \frac{F_{net}}{m_{total}} = \frac{19.62}{8.0} = 2.45 \text{ m/s}^2 $$
+**Step 2: Write equations / 写出方程**
+$$ 5g - T = 5a \quad \text{(1)} $$
+$$ T = 3a \quad \text{(2)} $$
 
-**Step 3: Individual analysis for tension**
-Consider the 3.0 kg mass (moving upward):
-$$ T - m_1g = m_1a $$
-$$ T = m_1(g + a) = 3.0 \times (9.81 + 2.45) = 36.78 \text{ N} $$
+**Step 3: Solve for acceleration / 求解加速度**
+Substitute (2) into (1):
+$$ 5g - 3a = 5a $$
+$$ 5g = 8a $$
+$$ a = \frac{5g}{8} = \frac{5 \times 9.81}{8} = 6.13 \text{ m s}^{-2} $$
 
-Check with the 5.0 kg mass (moving downward):
-$$ m_2g - T = m_2a $$
-$$ T = m_2(g - a) = 5.0 \times (9.81 - 2.45) = 36.80 \text{ N} $$
-(Slight rounding difference — consistent.)
+**Step 4: Solve for tension / 求解张力**
+From (2): $T = 3a = 3 \times 6.13 = 18.4 \text{ N}$
 
 ### Final Answer / 最终答案
-**Answer:** (a) $a = 2.45 \text{ m/s}^2$ (b) $T = 36.8 \text{ N}$
-**答案:** (a) $a = 2.45 \text{ m/s}^2$ (b) $T = 36.8 \text{ N}$
+**Answer:** (a) $a = 6.13 \text{ m s}^{-2}$, (b) $T = 18.4 \text{ N}$ | **答案：** (a) $a = 6.13 \text{ m s}^{-2}$, (b) $T = 18.4 \text{ N}$
 
 ### Quick Tip / 提示
-Always check your tension by using the other mass — if they don't match, you've made an error. The system approach gives acceleration quickly, but you must analyze individual objects to find tension.
+**English:** Always check that the tension is less than the weight of the hanging mass ($T = 18.4 \text{ N} < 5g = 49.05 \text{ N}$). This confirms your answer is physically reasonable.
 
----
+**中文:** 始终检查张力是否小于悬挂质量的重量（$T = 18.4 \text{ N} < 5g = 49.05 \text{ N}$）。这确认你的答案在物理上是合理的。
 
-### Example 2: Object on an Inclined Plane
+## Example 2: Object on Inclined Plane / 斜面上的物体
 
 ### Question / 题目
-**English:**
-A 2.0 kg block is placed on a rough plane inclined at 25° to the horizontal. The coefficient of friction between the block and the plane is 0.30. The block is released from rest. Calculate the acceleration of the block down the plane. Take $g = 9.81 \text{ m/s}^2$.
+**English:** A block of mass 2.0 kg slides down a rough plane inclined at $30^\circ$ to the horizontal. The coefficient of kinetic friction between the block and the plane is 0.20. Calculate the acceleration of the block. (Take $g = 9.81 \text{ m s}^{-2}$)
 
-**中文:**
-一个2.0 kg的物块放置在粗糙斜面上，斜面与水平面成25°角。物块与斜面之间的摩擦系数为0.30。物块从静止释放。计算物块沿斜面下滑的加速度。取 $g = 9.81 \text{ m/s}^2$。
+**中文:** 一个质量为 2.0 kg 的物块沿与水平面成 $30^\circ$ 角的粗糙斜面下滑。物块与斜面之间的动摩擦系数为 0.20。计算物块的加速度。（取 $g = 9.81 \text{ m s}^{-2}$）
 
 ### Solution / 解答
 
-**Step 1: Resolve forces**
-Weight component down the plane: $mg\sin\theta = 2.0 \times 9.81 \times \sin 25° = 8.29 \text{ N}$
-Normal reaction: $R = mg\cos\theta = 2.0 \times 9.81 \times \cos 25° = 17.78 \text{ N}$
-Friction force: $F_f = \mu R = 0.30 \times 17.78 = 5.33 \text{ N}$
+**Step 1: Resolve forces / 分解力**
+- Component of weight down the plane: $mg\sin\theta = 2 \times 9.81 \times \sin 30^\circ = 2 \times 9.81 \times 0.5 = 9.81 \text{ N}$
+- Normal reaction: $N = mg\cos\theta = 2 \times 9.81 \times \cos 30^\circ = 2 \times 9.81 \times 0.866 = 17.0 \text{ N}$
+- Friction force: $F_f = \mu N = 0.20 \times 17.0 = 3.40 \text{ N}$
 
-**Step 2: Apply Newton's Second Law**
-Net force down the plane: $F_{net} = mg\sin\theta - F_f = 8.29 - 5.33 = 2.96 \text{ N}$
-$$ a = \frac{F_{net}}{m} = \frac{2.96}{2.0} = 1.48 \text{ m/s}^2 $$
+**Step 2: Apply Newton's Second Law / 应用牛顿第二定律**
+Net force down the plane: $F_{\text{net}} = mg\sin\theta - F_f = 9.81 - 3.40 = 6.41 \text{ N}$
+
+$$ F_{\text{net}} = ma $$
+$$ 6.41 = 2.0 \times a $$
+$$ a = \frac{6.41}{2.0} = 3.21 \text{ m s}^{-2} $$
 
 ### Final Answer / 最终答案
-**Answer:** $a = 1.48 \text{ m/s}^2$ down the plane
-**答案:** $a = 1.48 \text{ m/s}^2$ 沿斜面向下
+**Answer:** $a = 3.21 \text{ m s}^{-2}$ | **答案：** $a = 3.21 \text{ m s}^{-2}$
 
 ### Quick Tip / 提示
-Always resolve weight into components parallel and perpendicular to the plane. The normal reaction is $mg\cos\theta$, not $mg$ — a common mistake!
+**English:** Remember that the mass cancels out in the final expression: $a = g(\sin\theta - \mu\cos\theta)$. So the acceleration is independent of mass!
+
+**中文:** 记住质量在最终表达式中会消去：$a = g(\sin\theta - \mu\cos\theta)$。所以加速度与质量无关！
 
 ---
 
-## 7. Flashcards / 闪卡
+# 9. Past Paper Question Types / 历年真题题型
 
-**Flashcard 1**
-Q (EN): What is the system approach in connected bodies problems?
-Q (CN): 连接体问题中的系统方法是什么？
-A (EN): Treating all connected objects as a single system, applying F = ma to the total mass with only external forces, ignoring internal forces like tension.
-A (CN): 将所有连接物体视为一个系统，对总质量应用F = ma，只考虑外力，忽略张力等内力。
+| Question Type / 题型 | Frequency / 频率 | Difficulty / 难度 | Past Paper References / 真题索引 |
+|----------------------|------------------|------------------|-------------------------------|
+| Connected bodies (pulley) — find acceleration and tension | High | Medium | 📝 *待填入* |
+| Connected bodies (towing) — find acceleration and tension in tow bar | High | Medium | 📝 *待填入* |
+| Object on inclined plane — find acceleration (smooth or rough) | High | Medium | 📝 *待填入* |
+| Equilibrium problems using Lami's Theorem or resolution | Medium | Medium-Hard | 📝 *待填入* |
+| Multi-stage motion (e.g., object on incline then horizontal surface) | Low | Hard | 📝 *待填入* |
 
-**Flashcard 2**
-Q (EN): How do you find tension in a string connecting two masses over a pulley?
-Q (CN): 如何求通过滑轮连接两个质量的绳子中的张力？
-A (EN): Analyze one mass individually using F = ma. For the lighter mass moving up: T - mg = ma. For the heavier mass moving down: mg - T = ma. Solve for T.
-A (CN): 对其中一个质量单独应用F = ma。对于向上运动的较轻质量：T - mg = ma。对于向下运动的较重质量：mg - T = ma。解出T。
-
-**Flashcard 3**
-Q (EN): What is the apparent weight of a person in a lift accelerating upward?
-Q (CN): 在向上加速的电梯中，人的表观重量是多少？
-A (EN): R = m(g + a), where R is the normal reaction (apparent weight), m is mass, g is gravity, a is upward acceleration. The person feels heavier.
-A (CN): R = m(g + a)，其中R是法向反作用力（表观重量），m是质量，g是重力加速度，a是向上加速度。人感觉更重。
-
-**Flashcard 4**
-Q (EN): How do you resolve weight on an inclined plane?
-Q (CN): 如何在斜面上分解重力？
-A (EN): Weight mg is resolved into: mg sinθ parallel to the plane (downward) and mg cosθ perpendicular to the plane (into the plane). The normal reaction R = mg cosθ.
-A (CN): 重力mg分解为：平行于斜面的mg sinθ（向下）和垂直于斜面的mg cosθ（进入斜面）。法向反作用力R = mg cosθ。
-
-**Flashcard 5**
-Q (EN): What happens to apparent weight in a freely falling lift?
-Q (CN): 在自由落体的电梯中，表观重量会发生什么变化？
-A (EN): R = m(g - a) = m(g - g) = 0. The person experiences weightlessness because the normal reaction is zero.
-A (CN): R = m(g - a) = m(g - g) = 0。人经历失重，因为法向反作用力为零。
+**Common Command Words / 常见指令词:**
+- **English:** Calculate, Determine, Find, Show that, Sketch, Explain
+- **中文:** 计算，确定，求，证明，画出，解释
 
 ---
 
-## 8. Metadata / 元数据
+# 10. Practical Skills Connections / 实验技能链接
 
-```yaml
-title:
-  en: Applications of Newton's Laws
-  cn: 牛顿定律的应用
-parent_topic: Newton's Laws of Motion
-parent_hub: "[[Newton's Laws of Motion]]"
-subject: Physics
-syllabus:
-  - CAIE 9702
-  - Edexcel IAL
-level: AS
-node_type: leaf_concept
-difficulty: intermediate
-related_leaf_nodes:
-  - "[[Newton's First Law (Inertia)]]"
-  - "[[Newton's Second Law (F=ma)]]"
-  - "[[Newton's Third Law (Action-Reaction)]]"
-  - "[[Free-body Diagrams]]"
-  - "[[Linear Momentum and Impulse]]"
-  - "[[Conservation of Momentum]]"
-language: bilingual_en_cn
+**English:**
+This sub-topic connects to practical work in several ways:
+1. **Measuring acceleration:** Use light gates and data loggers to measure the acceleration of a trolley on an inclined plane or in a pulley system. This links to [[Kinematics]] practical skills.
+2. **Verifying Newton's Second Law:** Use a dynamics trolley with a hanging mass over a pulley to investigate the relationship between force, mass, and acceleration. Plot $a$ vs $F$ to obtain a straight line through the origin.
+3. **Determining $\mu$ (coefficient of friction):** Measure the angle at which an object just begins to slide down an incline ($\mu = \tan\theta$). Alternatively, measure acceleration down a rough incline and use $a = g(\sin\theta - \mu\cos\theta)$.
+4. **Uncertainties:** When using light gates, consider the uncertainty in distance and time measurements. When using a protractor to measure the angle of incline, the uncertainty is typically $\pm 0.5^\circ$.
+5. **Graph plotting:** Plot $a$ vs $\sin\theta$ for an inclined plane experiment. The gradient should be $g$ (for a smooth plane).
+
+**中文:**
+本子知识点通过多种方式与实验工作联系：
+1. **测量加速度：** 使用光门和数据记录器测量斜面上或滑轮系统中小车的加速度。这与[[运动学]]实验技能相关。
+2. **验证牛顿第二定律：** 使用带有悬挂质量跨过滑轮的动力学小车，研究力、质量和加速度之间的关系。绘制 $a$ 与 $F$ 的关系图，得到一条通过原点的直线。
+3. **确定 $\mu$（摩擦系数）：** 测量物体刚好开始沿斜面下滑的角度（$\mu = \tan\theta$）。或者，测量沿粗糙斜面下滑的加速度，并使用 $a = g(\sin\theta - \mu\cos\theta)$。
+4. **不确定度：** 使用光门时，考虑距离和时间测量的不确定度。使用量角器测量斜面倾角时，不确定度通常为 $\pm 0.5^\circ$。
+5. **绘图：** 为斜面实验绘制 $a$ 与 $\sin\theta$ 的关系图。斜率应为 $g$（对于光滑平面）。
+
+---
+
+# 11. Concept Map / 概念图谱
+
+```mermaid
+graph TD
+    %% Core concept
+    A[Applications of Newton's Laws] --> B[Connected Bodies]
+    A --> C[Inclined Planes]
+    A --> D[Equilibrium Problems]
+    
+    %% Connected Bodies sub-types
+    B --> B1[Pulley Systems]
+    B --> B2[Towed Systems]
+    B1 --> B1a[Atwood Machine]
+    B1 --> B1a_eq[Equations: a = (m1-m2)g/(m1+m2), T = 2m1m2g/(m1+m2)]
+    B2 --> B2a[Car towing trailer]
+    B2 --> B2a_eq[Method: Treat system as whole, then isolate]
+    
+    %% Inclined Planes
+    C --> C1[Force Resolution]
+    C1 --> C1a[Parallel: mg sinθ]
+    C1 --> C1b[Perpendicular: mg cosθ]
+    C --> C2[With Friction]
+    C2 --> C2a[F = μN = μmg cosθ]
+    C2 --> C2b[a = g(sinθ - μ cosθ)]
+    C --> C3[Without Friction]
+    C3 --> C3a[a = g sinθ]
+    
+    %% Equilibrium
+    D --> D1[Lami's Theorem]
+    D1 --> D1a[F1/sinα = F2/sinβ = F3/sinγ]
+    D --> D2[Component Resolution]
+    D2 --> D2a[ΣFx = 0, ΣFy = 0]
+    
+    %% Prerequisites
+    A --> P1[Free-body Diagrams]
+    A --> P2[Newton's Laws of Motion]
+    P2 --> P2a[Newton's First Law (Inertia)]
+    P2 --> P2b[Newton's Second Law (F=ma)]
+    P2 --> P2c[Newton's Third Law (Action-Reaction)]
+    
+    %% Related Topics
+    A --> R1[Linear Momentum and Impulse]
+    A --> R2[Conservation of Momentum]
+    
+    %% Styling
+    classDef core fill:#f9f,stroke:#333,stroke-width:2px
+    classDef sub fill:#bbf,stroke:#333,stroke-width:1px
+    classDef eq fill:#bfb,stroke:#333,stroke-width:1px
+    classDef pre fill:#fbb,stroke:#333,stroke-width:1px
+    classDef rel fill:#ffb,stroke:#333,stroke-width:1px
+    
+    class A core
+    class B,C,D sub
+    class B1a_eq,B2a_eq,C2b,C3a,D1a,D2a eq
+    class P1,P2,P2a,P2b,P2c pre
+    class R1,R2 rel
+```
+
+---
+
+# 12. Quick Revision Sheet / 速查表
+
+| Category / 类别 | Key Points / 要点 |
+|----------------|------------------|
+| **Definition / 定义** | Applications of Newton's Laws involve using $F = ma$ to solve problems with connected bodies, inclined planes, and equilibrium. |
+| **Key Formula / 核心公式** | $F_{\text{net}} = ma$; Atwood: $a = \frac{(m_1 - m_2)g}{m_1 + m_2}$, $T = \frac{2m_1m_2g}{m_1 + m_2}$; Incline: $a = g(\sin\theta - \mu\cos\theta)$; Lami: $\frac{F_1}{\sin\alpha} = \frac{F_2}{\sin\beta} = \frac{F_3}{\sin\gamma}$ |
+| **Key Graph / 核心图表** | $a$ vs $\theta$ for inclined plane: $a = g\sin\theta$ (sine curve); $a$ vs $F$ for Newton's Second Law verification: straight line through origin |
+| **Exam Tip / 考试提示** | 1. Always draw free-body diagrams. 2. Define a positive direction. 3. For connected bodies, acceleration is the same for all. 4. Tension is constant in a light string. 5. Resolve weight (not normal reaction) on inclines. 6. For equilibrium, net force = 0 in all directions. |
+| **Common Mistake / 常见错误** | Using $mg$ as normal reaction on incline (should be $mg\cos\theta$); thinking tension equals weight of hanging mass; forgetting friction opposes motion; not checking if system is in equilibrium or accelerating. |
+| **Practical Link / 实验联系** | Light gates to measure acceleration; dynamics trolleys to verify $F = ma$; inclined plane to determine $\mu$; graph plotting ($a$ vs $\sin\theta$). |

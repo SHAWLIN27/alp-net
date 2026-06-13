@@ -1,794 +1,1000 @@
 # 1. Overview / 概述
 
-**English:** This topic explores the physics of objects moving in circular paths. When an object moves in a circle at constant speed, its velocity is constantly changing direction, meaning it is accelerating. This acceleration, called [[Centripetal Acceleration Formula|centripetal acceleration]], is always directed towards the centre of the circle. The force causing this acceleration, [[Centripetal Force|centripetal force]], is not a new type of force but the net force required to maintain circular motion. This topic is fundamental to understanding [[Circular Orbits|orbits]], [[Banked Tracks and Conical Pendulum|banked tracks]], and many real-world applications from car cornering to particle accelerators. In both CAIE 9702 and Edexcel IAL, this is a high-weightage A2 topic, frequently tested in multiple-choice, structured questions, and practical contexts.
+**English:**
+This topic explores the physics of objects moving in circular paths. When an object travels along a circular path at constant speed, its velocity is constantly changing direction. This change in velocity means the object is accelerating, even though its speed remains constant. This acceleration is called **centripetal acceleration**, and it is always directed towards the centre of the circle. The force causing this acceleration is the **centripetal force**, which is not a new type of force but rather the net force acting towards the centre. This topic is fundamental to understanding [[Newton's Laws of Motion]] in two dimensions and forms the basis for analysing [[Circular Orbits]], [[Gravitational Force and Field]], and the motion of charged particles in magnetic fields.
 
-**中文:** 本主题探讨物体沿圆周路径运动的物理原理。当物体以恒定速度做圆周运动时，其速度方向不断变化，这意味着它在加速。这种加速度称为[[Centripetal Acceleration Formula|向心加速度]]，始终指向圆心。引起这种加速度的力称为[[Centripetal Force|向心力]]，它不是一种新的力，而是维持圆周运动所需的合力。本主题是理解[[Circular Orbits|轨道]]、[[Banked Tracks and Conical Pendulum|倾斜轨道和圆锥摆]]以及从汽车转弯到粒子加速器等许多实际应用的基础。在CAIE 9702和Edexcel IAL中，这是一个高权重的A2主题，经常在选择题、结构化问题和实验背景中出现。
+In real-world applications, centripetal force explains why cars can turn corners, how satellites stay in orbit, how a centrifuge separates mixtures, and why rollercoasters can loop-the-loop. It is also crucial in engineering design for roads, railways, and amusement park rides.
+
+For Cambridge 9702 (Topic 14.2 a-d) and Edexcel IAL (WPH14 U4: 5.5-5.9), this is a core A2 topic. Students must be able to derive the formula for centripetal acceleration, apply Newton's Second Law to circular motion, and solve problems involving banked tracks, conical pendulums, and vertical circles. The topic is heavily examined in both multiple-choice and structured questions, often combined with [[Gravitational Force and Field]] for orbital mechanics.
+
+**中文：**
+本主题探讨物体沿圆周路径运动的物理学原理。当物体以恒定速度沿圆周路径运动时，其速度方向不断变化。这种速度变化意味着物体在加速，即使其速率保持不变。这种加速度称为**向心加速度**，它始终指向圆心。引起这种加速度的力是**向心力**，它不是一种新型的力，而是指向圆心的合力。本主题是理解二维空间中[[牛顿运动定律]]的基础，也是分析[[圆周轨道]]、[[引力场与引力]]以及带电粒子在磁场中运动的基础。
+
+在实际应用中，向心力解释了汽车如何转弯、卫星如何保持轨道、离心机如何分离混合物以及过山车如何完成回环。它在道路、铁路和游乐园设施的工程设计中至关重要。
+
+对于剑桥 9702（主题 14.2 a-d）和爱德思 IAL（WPH14 U4: 5.5-5.9），这是一个核心的 A2 主题。学生必须能够推导向心加速度公式，将牛顿第二定律应用于圆周运动，并解决涉及倾斜轨道、圆锥摆和竖直圆的问题。该主题在选择题和结构化问题中均有大量考查，通常与[[引力场与引力]]结合用于轨道力学问题。
+
+---
 
 # 2. Syllabus Learning Objectives / 考纲学习目标
 
-| CAIE 9702 (14.2 a-d) | Edexcel IAL (WPH14 U4: 5.5-5.9) |
-|---|---|
-| (a) Define radian and express angular displacement in radians | 5.5 Understand the concept of angular speed for circular motion |
-| (b) Understand and use the concept of angular speed | 5.6 Understand that a resultant force (centripetal force) is required to maintain circular motion |
-| (c) Recall and use equations $a = v^2/r$ and $a = \omega^2 r$ | 5.7 Derive and use equations for centripetal acceleration: $a = v^2/r$ and $a = \omega^2 r$ |
-| (d) Recall and use equations $F = mv^2/r$ and $F = m\omega^2 r$ | 5.8 Derive and use equations for centripetal force: $F = mv^2/r$ and $F = m\omega^2 r$ |
-| | 5.9 Solve problems involving centripetal force in various contexts (e.g., banked tracks, conical pendulum) |
+**English:**
+The following table maps the specific learning objectives from both exam boards. Students should be able to perform all listed tasks.
+
+**中文：**
+下表列出了两个考试局的具体学习目标。学生应能完成所有列出的任务。
+
+| CAIE 9702 (Topic 14.2 a-d) | Edexcel IAL (WPH14 U4: 5.5-5.9) |
+|----------------------------|----------------------------------|
+| (a) Define the radian and express angular displacement in radians. | 5.5 Understand the concept of centripetal acceleration. |
+| (b) Understand and use the concept of angular speed. | 5.6 Use the equations for centripetal acceleration: $a = \frac{v^2}{r}$ and $a = \omega^2 r$. |
+| (c) Recall and use centripetal acceleration equations $a = \frac{v^2}{r}$ and $a = \omega^2 r$. | 5.7 Understand that a centripetal force is required to maintain circular motion and that it is directed towards the centre of the circle. |
+| (d) Recall and use centripetal force equations $F = \frac{mv^2}{r}$ and $F = m\omega^2 r$. | 5.8 Use the equations for centripetal force: $F = \frac{mv^2}{r}$ and $F = m\omega^2 r$. |
+| (e) Solve problems involving centripetal force, including banked tracks and conical pendulums. | 5.9 Solve problems involving circular motion, including banked tracks and conical pendulums. |
+
+> 📋 **CIE Only:** CIE explicitly requires defining the radian and angular displacement as part of this topic. Edexcel assumes this knowledge from prior learning.
+>
+> 📋 **Edexcel Only:** Edexcel explicitly lists "understand the concept of centripetal acceleration" as a separate objective, placing more emphasis on conceptual understanding before formula application.
 
 **Examiner Expectations / 考官期望:**
-- **English:** Candidates must be able to derive $a = v^2/r$ from velocity vector diagrams. They must identify the source of centripetal force in different scenarios (e.g., tension, friction, gravity, normal reaction). For [[Banked Tracks and Conical Pendulum|banked tracks]], candidates should resolve forces horizontally and vertically.
-- **中文:** 考生必须能够从速度矢量图推导出 $a = v^2/r$。他们必须能够识别不同场景中向心力的来源（例如张力、摩擦力、重力、法向反作用力）。对于[[Banked Tracks and Conical Pendulum|倾斜轨道和圆锥摆]]，考生应在水平和垂直方向上分解力。
+- **English:** You must be able to derive $a = v^2/r$ from first principles using vector diagrams. You must be able to identify the source of centripetal force in any given scenario (e.g., friction for a car turning, tension for a conical pendulum, gravity for an orbit). You must be able to resolve forces in banked track problems.
+- **中文：** 你必须能够使用矢量图从基本原理推导出 $a = v^2/r$。你必须能够在任何给定场景中识别向心力的来源（例如，汽车转弯时的摩擦力、圆锥摆中的张力、轨道中的重力）。你必须能够在倾斜轨道问题中分解力。
 
-> 📋 **CIE Only:** CAIE requires explicit definition of the radian and conversion between degrees and radians.
-> 📋 **Edexcel Only:** Edexcel places greater emphasis on deriving centripetal acceleration using calculus (differentiation of position vectors) and solving problems involving variable speed circular motion.
+---
 
 # 3. Core Definitions / 核心定义
 
+**English:**
+The following table provides the official definitions required for both exam boards, along with common student mistakes.
+
+**中文：**
+下表提供了两个考试局要求的官方定义，以及学生常见的错误。
+
 | Term (EN/CN) | Definition (EN) | Definition (CN) | Common Mistakes / 常见错误 |
-|---|---|---|---|
-| [[Angular Measures|Angular Displacement]] / 角位移 | The angle swept out by the radius vector as an object moves along a circular path, measured in radians. | 物体沿圆周路径运动时，半径矢量扫过的角度，以弧度为单位。 | Confusing with linear displacement; forgetting to use radians in equations |
-| [[Angular Measures|Angular Speed]] ($\omega$) / 角速度 | The rate of change of angular displacement: $\omega = \Delta\theta / \Delta t$, measured in rad s⁻¹. | 角位移的变化率：$\omega = \Delta\theta / \Delta t$，单位为 rad s⁻¹。 | Confusing with linear speed; forgetting that $\omega$ is constant for uniform circular motion |
-| [[Centripetal Acceleration Formula|Centripetal Acceleration]] ($a$) / 向心加速度 | The acceleration of an object moving in a circle at constant speed, always directed towards the centre of the circle. | 物体以恒定速度做圆周运动时的加速度，始终指向圆心。 | Thinking acceleration is zero because speed is constant; confusing direction |
-| [[Centripetal Force|Centripetal Force]] ($F$) / 向心力 | The net force required to keep an object moving in a circular path, directed towards the centre of the circle. | 使物体保持圆周运动所需的合力，方向指向圆心。 | Calling it a "new" force; forgetting it is the resultant of real forces |
-| Period ($T$) / 周期 | The time taken for one complete revolution: $T = 2\pi/\omega$. | 完成一次完整旋转所需的时间：$T = 2\pi/\omega$。 | Confusing with frequency; using wrong units |
-| Frequency ($f$) / 频率 | The number of complete revolutions per second: $f = 1/T = \omega/2\pi$, measured in Hz. | 每秒完成的完整旋转次数：$f = 1/T = \omega/2\pi$，单位为 Hz。 | Confusing with angular speed; forgetting $f = 1/T$ |
+|--------------|-----------------|-----------------|---------------------------|
+| **Centripetal Acceleration / 向心加速度** | The acceleration of an object moving in a circle at constant speed. It is always directed towards the centre of the circle. | 物体以恒定速度沿圆周运动时的加速度。它始终指向圆心。 | Confusing it with tangential acceleration. Centripetal acceleration changes only the *direction* of velocity, not its magnitude. |
+| **Centripetal Force / 向心力** | The net force acting on an object moving in a circle, directed towards the centre of the circle. It is not a separate force but the resultant of other forces. | 作用在圆周运动物体上的合力，指向圆心。它不是一种独立的力，而是其他力的合力。 | Thinking it is a "new" force like gravity or friction. It is always provided by an existing force (tension, friction, gravity, normal reaction, etc.). |
+| **Angular Speed ($\omega$) / 角速度** | The rate of change of angular displacement. $\omega = \frac{\Delta \theta}{\Delta t}$. | 角位移的变化率。$\omega = \frac{\Delta \theta}{\Delta t}$。 | Confusing angular speed with linear speed. They are related by $v = \omega r$. |
+| **Radian (rad) / 弧度** | The angle subtended at the centre of a circle by an arc equal in length to the radius. | 在圆心处由长度等于半径的弧所对的角。 | Forgetting that $2\pi$ radians = $360^\circ$. Using degrees in angular speed calculations without converting. |
+| **Period ($T$) / 周期** | The time taken for one complete revolution. | 完成一次完整旋转所需的时间。 | Confusing period with frequency ($f = 1/T$). |
+| **Frequency ($f$) / 频率** | The number of complete revolutions per unit time. | 单位时间内完成的完整旋转次数。 | Confusing frequency with angular speed ($\omega = 2\pi f$). |
+
+---
 
 # 4. Key Concepts Explained / 关键概念详解
 
 ## 4.1 Centripetal Acceleration / 向心加速度
 
 ### Explanation / 解释
-**English:** [[Centripetal Acceleration Formula|Centripetal acceleration]] arises because velocity is a vector quantity. Even when an object moves at constant speed $v$ around a circle of radius $r$, its direction changes continuously. Over a small time interval $\Delta t$, the velocity vector rotates by an angle $\Delta\theta$. Using vector subtraction, the change in velocity $\Delta v$ points towards the centre of the circle. The magnitude of centripetal acceleration is given by $a = v^2/r = \omega^2 r$. This is derived from the geometry of velocity vectors: for small angles, $\Delta v \approx v\Delta\theta$, and since $\Delta\theta = \omega\Delta t$, we get $a = \Delta v/\Delta t = v\omega = v^2/r$.
+**English:**
+Consider an object moving in a circle of radius $r$ with constant speed $v$. At any instant, its velocity vector is tangential to the circle. After a small time interval $\Delta t$, the object has moved through a small angle $\Delta \theta$, and its velocity vector has rotated by the same angle. The change in velocity $\Delta \vec{v}$ is found by vector subtraction: $\Delta \vec{v} = \vec{v}_2 - \vec{v}_1$. For small angles, the magnitude of $\Delta \vec{v}$ is approximately $v \Delta \theta$. The acceleration is $a = \frac{\Delta v}{\Delta t} = \frac{v \Delta \theta}{\Delta t} = v \omega$. Since $\omega = v/r$, we get $a = v^2/r$. The direction of $\Delta \vec{v}$ (and hence the acceleration) is towards the centre of the circle. This is [[Centripetal Acceleration Formula]].
 
-**中文:** [[Centripetal Acceleration Formula|向心加速度]]的产生是因为速度是矢量。即使物体以恒定速度 $v$ 绕半径为 $r$ 的圆运动，其方向也在不断变化。在微小时间间隔 $\Delta t$ 内，速度矢量旋转了角度 $\Delta\theta$。通过矢量减法，速度变化量 $\Delta v$ 指向圆心。向心加速度的大小由 $a = v^2/r = \omega^2 r$ 给出。这是从速度矢量的几何推导得出的：对于小角度，$\Delta v \approx v\Delta\theta$，且由于 $\Delta\theta = \omega\Delta t$，我们得到 $a = \Delta v/\Delta t = v\omega = v^2/r$。
+**中文：**
+考虑一个以恒定速率 $v$ 在半径为 $r$ 的圆周上运动的物体。在任何瞬间，其速度矢量与圆相切。经过一小段时间 $\Delta t$ 后，物体移动了一个小角度 $\Delta \theta$，其速度矢量也旋转了相同的角度。速度的变化 $\Delta \vec{v}$ 通过矢量减法求得：$\Delta \vec{v} = \vec{v}_2 - \vec{v}_1$。对于小角度，$\Delta \vec{v}$ 的大小近似为 $v \Delta \theta$。加速度为 $a = \frac{\Delta v}{\Delta t} = \frac{v \Delta \theta}{\Delta t} = v \omega$。由于 $\omega = v/r$，我们得到 $a = v^2/r$。$\Delta \vec{v}$ 的方向（因此也是加速度的方向）指向圆心。这就是[[向心加速度公式]]。
 
 ### Physical Meaning / 物理意义
-**English:** The centripetal acceleration is the rate of change of the velocity vector's direction, not its magnitude. It quantifies how "tightly" the object is turning: for a given speed, a smaller radius means larger acceleration (sharper turn). For a given radius, higher speed means larger acceleration. The direction is always perpendicular to the instantaneous velocity, towards the centre.
+**English:**
+Centripetal acceleration is the rate at which the velocity vector changes direction. It does not change the object's speed. A larger centripetal acceleration means the direction is changing more rapidly (tighter turn). For a given speed, a smaller radius requires a larger centripetal acceleration.
 
-**中文:** 向心加速度是速度矢量方向的变化率，而不是其大小的变化率。它量化了物体转弯的"紧密程度"：对于给定速度，半径越小，加速度越大（转弯越急）。对于给定半径，速度越高，加速度越大。方向始终垂直于瞬时速度，指向圆心。
+**中文：**
+向心加速度是速度矢量方向变化的速率。它不改变物体的速率。向心加速度越大，意味着方向变化越快（转弯越急）。对于给定的速率，半径越小，所需的向心加速度越大。
 
 ### Common Misconceptions / 常见误区
-- Thinking that constant speed means zero acceleration
-- Believing centripetal acceleration is a force itself
-- Confusing centripetal acceleration with tangential acceleration (which changes speed magnitude)
-- Forgetting that $a = \omega^2 r$ applies only when $\omega$ is constant
+- **English:** "The object is accelerating, so its speed must be increasing." → No, acceleration can change direction without changing speed.
+- **English:** "Centripetal acceleration is a force." → No, it is an acceleration. The force causing it is centripetal force.
+- **中文：** "物体在加速，所以它的速率一定在增加。" → 不对，加速度可以改变方向而不改变速率。
+- **中文：** "向心加速度是一种力。" → 不对，它是一种加速度。引起它的力是向心力。
 
 ### Exam Tips / 考试提示
-**English:** Always draw a velocity vector diagram when deriving $a = v^2/r$. Remember that centripetal acceleration is always perpendicular to velocity. In exam questions, identify whether you are given $v$ or $\omega$ and use the appropriate formula.
-**中文:** 在推导 $a = v^2/r$ 时，务必画出速度矢量图。记住向心加速度始终垂直于速度。在考试题目中，确定题目给出的是 $v$ 还是 $\omega$，并使用相应的公式。
+**English:**
+- Always draw a vector diagram to derive $a = v^2/r$ if asked.
+- Remember that centripetal acceleration is always perpendicular to the velocity.
+- For vertical circles, the centripetal acceleration is not constant because the speed changes due to gravity.
 
-> 📷 **IMAGE PROMPT — [CA-01]: Velocity Vector Diagram for Centripetal Acceleration Derivation**
-> **English:** A diagram showing an object moving in a circle of radius r. Two velocity vectors v1 and v2 at two nearby points, separated by angle Δθ. Show Δv = v2 - v1 pointing towards the centre. Labels: r, v1, v2, Δθ, Δv. Style: clear vector arrows, geometric, exam-style. Importance: HIGH - essential for derivation.
-> **中文:** 显示物体在半径为r的圆上运动的示意图。两个相邻点处的速度矢量v1和v2，夹角为Δθ。显示Δv = v2 - v1指向圆心。标签：r, v1, v2, Δθ, Δv。风格：清晰的矢量箭头，几何风格，考试风格。重要性：高 - 推导必备。
+**中文：**
+- 如果被要求，务必画矢量图来推导 $a = v^2/r$。
+- 记住向心加速度始终垂直于速度。
+- 对于竖直圆，向心加速度不是恒定的，因为重力会改变速率。
+
+> 📷 **IMAGE PROMPT — CP01: Vector Diagram for Centripetal Acceleration Derivation**
+>
+> A diagram showing a circle of radius r. Two velocity vectors v1 and v2 are drawn tangential to the circle at two nearby points separated by angle Δθ. The vector difference Δv = v2 - v1 is shown pointing towards the centre of the circle. Labels: r, v1, v2, Δθ, Δv. Clean white background, educational style, 2D vector diagram.
+
+---
 
 ## 4.2 Centripetal Force / 向心力
 
 ### Explanation / 解释
-**English:** [[Centripetal Force|Centripetal force]] is not a new fundamental force. It is the net force (resultant force) that must act on an object to keep it moving in a circle. According to [[Newton's Laws of Motion|Newton's Second Law]], $F = ma$, so $F = mv^2/r = m\omega^2 r$. The centripetal force is always directed towards the centre of the circle. In different scenarios, different real forces provide the centripetal force:
-- **Car on a flat road:** Friction between tyres and road
-- **Satellite in orbit:** Gravitational force
-- **Object on a string:** Tension in the string
-- **Car on a banked track:** Component of normal reaction (and possibly friction)
-- **Conical pendulum:** Horizontal component of tension
+**English:**
+From [[Newton's Laws of Motion|Newton's Second Law]], if an object has centripetal acceleration $a$, there must be a net force $F = ma$ acting in the same direction. This net force is the centripetal force $F = \frac{mv^2}{r} = m\omega^2 r$. The centripetal force is always directed towards the centre of the circle. It is not a new force; it is the resultant of real forces such as tension, friction, gravity, or the normal reaction. For example:
+- A car turning on a flat road: friction provides the centripetal force.
+- A satellite in orbit: gravity provides the centripetal force.
+- A ball on a string: tension provides the centripetal force.
+- A car on a banked track: the horizontal component of the normal reaction provides the centripetal force.
 
-**中文:** [[Centripetal Force|向心力]]不是一种新的基本力。它是使物体保持圆周运动所需的合力（净力）。根据[[Newton's Laws of Motion|牛顿第二定律]]，$F = ma$，所以 $F = mv^2/r = m\omega^2 r$。向心力始终指向圆心。在不同场景中，不同的真实力提供向心力：
-- **平路上的汽车：** 轮胎与路面之间的摩擦力
-- **轨道上的卫星：** 引力
-- **绳子上的物体：** 绳子中的张力
-- **倾斜轨道上的汽车：** 法向反作用力的分量（可能还有摩擦力）
-- **圆锥摆：** 张力的水平分量
+This is the core of [[Centripetal Force]].
+
+**中文：**
+根据[[牛顿运动定律|牛顿第二定律]]，如果物体具有向心加速度 $a$，则必须有一个合力 $F = ma$ 作用在同一方向上。这个合力就是向心力 $F = \frac{mv^2}{r} = m\omega^2 r$。向心力始终指向圆心。它不是一种新的力；它是真实力（如张力、摩擦力、重力或法向反作用力）的合力。例如：
+- 在平直道路上转弯的汽车：摩擦力提供向心力。
+- 轨道上的卫星：重力提供向心力。
+- 绳子上的球：张力提供向心力。
+- 倾斜轨道上的汽车：法向反作用力的水平分量提供向心力。
+
+这是[[向心力]]的核心。
 
 ### Physical Meaning / 物理意义
-**English:** Centripetal force is the "centre-seeking" force. It does no work on the object because it is always perpendicular to the displacement (velocity). Therefore, the kinetic energy and speed of the object remain constant in uniform circular motion. The magnitude of centripetal force required increases with mass, with the square of speed, and decreases with radius.
+**English:**
+Centripetal force is what "pulls" an object into a circular path. Without it, the object would continue in a straight line ([[Newton's Laws of Motion|Newton's First Law]]). The larger the centripetal force, the tighter the turn (smaller radius) for a given speed.
 
-**中文:** 向心力是"向心"力。它不对物体做功，因为它始终垂直于位移（速度）。因此，在匀速圆周运动中，物体的动能和速度保持不变。所需的向心力大小随质量增加、随速度的平方增加、随半径减小而减小。
+**中文：**
+向心力是将物体"拉"入圆周路径的力。没有它，物体会沿直线运动（[[牛顿运动定律|牛顿第一定律]]）。对于给定的速率，向心力越大，转弯越急（半径越小）。
 
 ### Common Misconceptions / 常见误区
-- Thinking centripetal force is an outward force (that's centrifugal, which is a fictitious force in the rotating frame)
-- Believing that centripetal force is an additional force rather than the resultant of existing forces
-- Forgetting to identify the real physical force providing the centripetal force in a given scenario
-- Using $F = mv^2/r$ when the motion is not uniform circular motion
+- **English:** "Centrifugal force pulls the object outward." → No, centrifugal force is a fictitious force experienced in a rotating reference frame. In an inertial frame, only centripetal force exists.
+- **English:** "The centripetal force is an extra force added to the system." → No, it is the net force from existing forces.
+- **中文：** "离心力将物体向外拉。" → 不对，离心力是在旋转参考系中感受到的假想力。在惯性系中，只存在向心力。
+- **中文：** "向心力是系统额外增加的一种力。" → 不对，它是现有力的合力。
 
 ### Exam Tips / 考试提示
-**English:** Always start by drawing a free-body diagram. Identify ALL forces acting on the object. The vector sum of these forces (resultant) must equal $mv^2/r$ towards the centre. For vertical circles, remember that speed may not be constant, so use energy conservation to find speed at different points.
-**中文:** 始终从画受力分析图开始。识别作用在物体上的所有力。这些力的矢量和（合力）必须等于指向圆心的 $mv^2/r$。对于竖直圆，记住速度可能不是恒定的，因此使用能量守恒来找到不同点的速度。
+**English:**
+- Always identify the source of centripetal force before writing equations.
+- For banked tracks, resolve the normal reaction into horizontal and vertical components. The horizontal component provides the centripetal force.
+- For conical pendulums, resolve tension into horizontal and vertical components. The horizontal component provides the centripetal force.
+
+**中文：**
+- 在写方程之前，务必先确定向心力的来源。
+- 对于倾斜轨道，将法向反作用力分解为水平和竖直分量。水平分量提供向心力。
+- 对于圆锥摆，将张力分解为水平和竖直分量。水平分量提供向心力。
+
+> 📷 **IMAGE PROMPT — CP02: Sources of Centripetal Force**
+>
+> A split diagram showing four scenarios: (1) Car turning on flat road with friction arrow pointing to centre, (2) Satellite orbiting Earth with gravity arrow pointing to centre, (3) Ball on string with tension arrow pointing to centre, (4) Car on banked track with normal reaction arrow resolved into horizontal component pointing to centre. Each scenario labelled. Clean educational style, 2D.
+
+---
 
 ## 4.3 Banked Tracks / 倾斜轨道
 
 ### Explanation / 解释
-**English:** A [[Banked Tracks and Conical Pendulum|banked track]] is curved road or track that is tilted at an angle $\theta$ to the horizontal. The banking allows vehicles to travel at higher speeds around the curve without relying solely on friction. The normal reaction force $N$ has a horizontal component $N\sin\theta$ that provides the centripetal force. For the ideal banking angle (no friction needed), the horizontal component of the normal reaction provides exactly the required centripetal force: $N\sin\theta = mv^2/r$. The vertical forces balance: $N\cos\theta = mg$. Combining these gives $\tan\theta = v^2/(rg)$.
+**English:**
+A banked track is a curved road or railway track that is tilted at an angle $\theta$ to the horizontal. The banking allows vehicles to turn at higher speeds without relying solely on friction. The centripetal force is provided by the horizontal component of the normal reaction force $N$. For a vehicle moving at the "design speed" $v_0$, no friction is needed. The vertical component of $N$ balances the weight $mg$, and the horizontal component provides the centripetal force:
+$$N \cos \theta = mg$$
+$$N \sin \theta = \frac{mv_0^2}{r}$$
+Dividing gives: $\tan \theta = \frac{v_0^2}{rg}$.
+This is a key application in [[Banked Tracks and Conical Pendulum]].
 
-**中文:** [[Banked Tracks and Conical Pendulum|倾斜轨道]]是与水平面成角度 $\theta$ 倾斜的弯曲道路或轨道。倾斜使车辆能够在不完全依赖摩擦力的情况下以更高的速度通过弯道。法向反作用力 $N$ 的水平分量 $N\sin\theta$ 提供向心力。对于理想倾斜角（无需摩擦力），法向反作用力的水平分量恰好提供所需的向心力：$N\sin\theta = mv^2/r$。竖直方向力平衡：$N\cos\theta = mg$。结合这两个方程得到 $\tan\theta = v^2/(rg)$。
+**中文：**
+倾斜轨道是弯曲的道路或铁路轨道，与水平面倾斜一个角度 $\theta$。倾斜允许车辆以更高的速度转弯，而不必完全依赖摩擦力。向心力由法向反作用力 $N$ 的水平分量提供。对于以"设计速度" $v_0$ 行驶的车辆，不需要摩擦力。$N$ 的竖直分量平衡重力 $mg$，水平分量提供向心力：
+$$N \cos \theta = mg$$
+$$N \sin \theta = \frac{mv_0^2}{r}$$
+相除得：$\tan \theta = \frac{v_0^2}{rg}$。
+这是[[倾斜轨道与圆锥摆]]中的一个关键应用。
 
 ### Physical Meaning / 物理意义
-**English:** The banking angle is designed for a specific "design speed". At this speed, no friction is needed. If the vehicle travels faster than the design speed, friction (acting down the slope) provides additional centripetal force. If slower, friction acts up the slope to prevent sliding down.
+**English:**
+Banking allows a component of the normal reaction to contribute to the centripetal force, reducing the reliance on friction. This is why race tracks and high-speed railway curves are banked.
 
-**中文:** 倾斜角是针对特定的"设计速度"设计的。在此速度下，不需要摩擦力。如果车辆行驶速度超过设计速度，摩擦力（沿斜坡向下作用）提供额外的向心力。如果速度较慢，摩擦力沿斜坡向上作用，以防止向下滑动。
+**中文：**
+倾斜使得法向反作用力的一个分量能够贡献给向心力，从而减少对摩擦力的依赖。这就是为什么赛道和高速铁路弯道是倾斜的。
 
 ### Common Misconceptions / 常见误区
-- Thinking the normal reaction is vertical (it is perpendicular to the surface)
-- Forgetting to resolve forces into horizontal and vertical components
-- Confusing the direction of friction when speed is above or below design speed
-- Using $N = mg$ directly without considering the banking angle
+- **English:** "The centripetal force is provided by the normal reaction alone." → Only at the design speed. At other speeds, friction also contributes.
+- **English:** "The banking angle depends on the mass of the vehicle." → No, $\tan \theta = v^2/(rg)$ is independent of mass.
+- **中文：** "向心力仅由法向反作用力提供。" → 仅在设计速度下如此。在其他速度下，摩擦力也会贡献。
+- **中文：** "倾斜角度取决于车辆的质量。" → 不对，$\tan \theta = v^2/(rg)$ 与质量无关。
 
 ### Exam Tips / 考试提示
-**English:** Draw a clear free-body diagram showing the banked surface at angle $\theta$. Resolve forces horizontally (for centripetal force) and vertically (for equilibrium). Remember that for the ideal case (no friction), $\tan\theta = v^2/(rg)$. For problems with friction, consider both cases: friction acting down or up the slope.
-**中文:** 画出清晰的受力分析图，显示与水平面成角度 $\theta$ 的倾斜表面。在水平方向（向心力）和竖直方向（平衡）分解力。记住对于理想情况（无摩擦），$\tan\theta = v^2/(rg)$。对于有摩擦的问题，考虑两种情况：摩擦力沿斜坡向下或向上作用。
+**English:**
+- Always draw a free-body diagram showing the normal reaction, weight, and (if applicable) friction.
+- Resolve forces horizontally and vertically. The horizontal resultant is the centripetal force.
+- If friction is involved, remember that friction can act up or down the slope depending on whether the speed is above or below the design speed.
 
-> 📷 **IMAGE PROMPT — [CA-02]: Banked Track Force Diagram**
-> **English:** A car on a banked track at angle θ. Show forces: weight mg (down), normal reaction N (perpendicular to surface). Resolve N into Ncosθ (vertical) and Nsinθ (horizontal). Show centripetal force direction towards centre of circular path. Labels: θ, mg, N, Ncosθ, Nsinθ, r. Style: clear vector diagram, exam-style. Importance: HIGH - frequently tested.
-> **中文:** 倾斜角度为θ的轨道上的汽车。显示力：重力mg（向下），法向反作用力N（垂直于表面）。将N分解为Ncosθ（竖直）和Nsinθ（水平）。显示向心力方向指向圆周路径中心。标签：θ, mg, N, Ncosθ, Nsinθ, r。风格：清晰的矢量图，考试风格。重要性：高 - 经常考查。
+**中文：**
+- 务必画出受力图，显示法向反作用力、重力以及（如果适用）摩擦力。
+- 水平和竖直分解力。水平合力就是向心力。
+- 如果涉及摩擦力，记住摩擦力可以沿斜面向上或向下作用，具体取决于速度是高于还是低于设计速度。
+
+> 📷 **IMAGE PROMPT — CP03: Banked Track Free-Body Diagram**
+>
+> A car on a banked track inclined at angle θ. Three forces shown: weight mg vertically downward, normal reaction N perpendicular to the track surface, friction f parallel to the track surface (optional). N is resolved into Ncosθ (vertical) and Nsinθ (horizontal towards centre). Labels: θ, mg, N, Ncosθ, Nsinθ, r (radius of curvature). Clean 2D educational diagram.
+
+---
 
 ## 4.4 Conical Pendulum / 圆锥摆
 
 ### Explanation / 解释
-**English:** A [[Banked Tracks and Conical Pendulum|conical pendulum]] consists of a mass attached to a string that moves in a horizontal circle while the string traces out a cone. The string makes an angle $\theta$ with the vertical. The tension $T$ in the string has two components: $T\cos\theta$ balances the weight $mg$, and $T\sin\theta$ provides the centripetal force $mv^2/r$. The radius of the circular path is $r = L\sin\theta$, where $L$ is the string length. Combining these gives $\tan\theta = v^2/(rg)$ or $\omega^2 = g/(L\cos\theta)$.
+**English:**
+A conical pendulum consists of a mass $m$ attached to a string of length $L$, moving in a horizontal circle of radius $r$ such that the string traces out a cone. The string makes an angle $\theta$ with the vertical. The tension $T$ in the string has two components:
+- Vertical: $T \cos \theta = mg$ (balances weight)
+- Horizontal: $T \sin \theta = \frac{mv^2}{r} = m\omega^2 r$ (provides centripetal force)
+Dividing gives: $\tan \theta = \frac{v^2}{rg} = \frac{\omega^2 r}{g}$.
+The period $T$ of the conical pendulum is $T = 2\pi \sqrt{\frac{L \cos \theta}{g}}$.
+This is another key application in [[Banked Tracks and Conical Pendulum]].
 
-**中文:** [[Banked Tracks and Conical Pendulum|圆锥摆]]由一个系在绳子上的质量组成，该质量在水平面内做圆周运动，同时绳子描绘出一个圆锥。绳子与竖直方向成角度 $\theta$。绳子中的张力 $T$ 有两个分量：$T\cos\theta$ 平衡重力 $mg$，$T\sin\theta$ 提供向心力 $mv^2/r$。圆周路径的半径为 $r = L\sin\theta$，其中 $L$ 是绳长。结合这些方程得到 $\tan\theta = v^2/(rg)$ 或 $\omega^2 = g/(L\cos\theta)$。
+**中文：**
+圆锥摆由一个质量为 $m$ 的物体组成，该物体连接在一根长度为 $L$ 的绳子上，在半径为 $r$ 的水平圆周上运动，使得绳子描绘出一个圆锥。绳子与竖直方向成 $\theta$ 角。绳子中的张力 $T$ 有两个分量：
+- 竖直方向：$T \cos \theta = mg$（平衡重力）
+- 水平方向：$T \sin \theta = \frac{mv^2}{r} = m\omega^2 r$（提供向心力）
+相除得：$\tan \theta = \frac{v^2}{rg} = \frac{\omega^2 r}{g}$。
+圆锥摆的周期 $T$ 为 $T = 2\pi \sqrt{\frac{L \cos \theta}{g}}$。
+这是[[倾斜轨道与圆锥摆]]中的另一个关键应用。
 
 ### Physical Meaning / 物理意义
-**English:** The conical pendulum demonstrates that the period of rotation depends on the vertical height $h = L\cos\theta$: $T = 2\pi\sqrt{h/g}$. This is independent of the mass and the string length, depending only on the vertical distance from the point of suspension to the plane of rotation.
+**English:**
+The conical pendulum demonstrates how a single force (tension) can be resolved to provide both a balancing force (against weight) and a centripetal force. It is a classic demonstration of circular motion in the laboratory.
 
-**中文:** 圆锥摆表明旋转周期取决于竖直高度 $h = L\cos\theta$：$T = 2\pi\sqrt{h/g}$。这与质量和绳长无关，仅取决于悬挂点到旋转平面的竖直距离。
+**中文：**
+圆锥摆展示了单个力（张力）如何被分解，以同时提供平衡力（对抗重力）和向心力。这是实验室中圆周运动的经典演示。
 
 ### Common Misconceptions / 常见误区
-- Thinking the tension equals $mg$ (it is greater than $mg$ because it has a horizontal component)
-- Confusing the radius $r$ with the string length $L$
-- Forgetting that the centripetal force is horizontal, not along the string
-- Using $v$ when $\omega$ is more convenient
+- **English:** "The centripetal force is the tension in the string." → No, only the horizontal component of tension provides the centripetal force.
+- **English:** "The radius of the circle is the length of the string." → No, $r = L \sin \theta$.
+- **中文：** "向心力是绳子中的张力。" → 不对，只有张力的水平分量提供向心力。
+- **中文：** "圆的半径是绳子的长度。" → 不对，$r = L \sin \theta$。
 
 ### Exam Tips / 考试提示
-**English:** Draw the force diagram showing tension components. Remember $r = L\sin\theta$. The centripetal force is horizontal, so resolve forces horizontally. The vertical equilibrium gives $T\cos\theta = mg$. Combine with $T\sin\theta = mv^2/r$ to eliminate $T$.
-**中文:** 画出显示张力分量的力图。记住 $r = L\sin\theta$。向心力是水平的，因此在水平方向分解力。竖直平衡给出 $T\cos\theta = mg$。与 $T\sin\theta = mv^2/r$ 结合以消去 $T$。
+**English:**
+- Draw a clear diagram showing the string, the mass, the angle $\theta$, and the radius $r$.
+- Resolve tension into components.
+- Remember that the vertical acceleration is zero, so $T \cos \theta = mg$.
+- The period is independent of the mass.
 
-> 📷 **IMAGE PROMPT — [CA-03]: Conical Pendulum Force Diagram**
-> **English:** A mass m on a string of length L moving in a horizontal circle of radius r. String makes angle θ with vertical. Show forces: weight mg (down), tension T (along string). Resolve T into Tcosθ (vertical, balancing mg) and Tsinθ (horizontal, providing centripetal force). Show radius r = Lsinθ. Labels: L, θ, r, m, mg, T, Tcosθ, Tsinθ. Style: clear diagram, exam-style. Importance: HIGH - frequently tested.
-> **中文:** 质量为m的物体在长度为L的绳子上，在半径为r的水平圆内运动。绳子与竖直方向成角度θ。显示力：重力mg（向下），张力T（沿绳子方向）。将T分解为Tcosθ（竖直，平衡mg）和Tsinθ（水平，提供向心力）。显示半径r = Lsinθ。标签：L, θ, r, m, mg, T, Tcosθ, Tsinθ。风格：清晰的图，考试风格。重要性：高 - 经常考查。
+**中文：**
+- 画一个清晰的图，显示绳子、物体、角度 $\theta$ 和半径 $r$。
+- 将张力分解为分量。
+- 记住竖直加速度为零，所以 $T \cos \theta = mg$。
+- 周期与质量无关。
+
+> 📷 **IMAGE PROMPT — CP04: Conical Pendulum Diagram**
+>
+> A mass m attached to a string of length L, moving in a horizontal circle of radius r. The string makes angle θ with the vertical. Tension T is shown along the string, resolved into Tcosθ (vertical upward) and Tsinθ (horizontal towards centre). Labels: L, r, θ, m, T, Tcosθ, Tsinθ, mg (downward). Clean 2D educational diagram.
+
+---
 
 # 5. Essential Equations / 核心公式
 
-## 5.1 Angular Speed / 角速度
+## 5.1 Centripetal Acceleration / 向心加速度
 
-$$ \omega = \frac{\Delta\theta}{\Delta t} = \frac{2\pi}{T} = 2\pi f $$
+**Equation / 公式:**
+$$a = \frac{v^2}{r} = \omega^2 r$$
 
-| Symbol (符号) | Meaning (EN/CN) | Unit (单位) |
-|---|---|---|
-| $\omega$ | Angular speed / 角速度 | rad s⁻¹ |
-| $\Delta\theta$ | Angular displacement / 角位移 | rad |
-| $\Delta t$ | Time interval / 时间间隔 | s |
-| $T$ | Period / 周期 | s |
-| $f$ | Frequency / 频率 | Hz |
-
-## 5.2 Relationship between Linear and Angular Speed / 线速度与角速度的关系
-
-$$ v = \omega r $$
-
-| Symbol (符号) | Meaning (EN/CN) | Unit (单位) |
-|---|---|---|
-| $v$ | Linear (tangential) speed / 线（切向）速度 | m s⁻¹ |
-| $\omega$ | Angular speed / 角速度 | rad s⁻¹ |
-| $r$ | Radius of circular path / 圆周路径半径 | m |
-
-## 5.3 Centripetal Acceleration / 向心加速度
-
-$$ a = \frac{v^2}{r} = \omega^2 r = v\omega $$
-
-| Symbol (符号) | Meaning (EN/CN) | Unit (单位) |
-|---|---|---|
-| $a$ | Centripetal acceleration / 向心加速度 | m s⁻² |
-| $v$ | Linear speed / 线速度 | m s⁻¹ |
-| $\omega$ | Angular speed / 角速度 | rad s⁻¹ |
-| $r$ | Radius / 半径 | m |
+**Variables / 变量:**
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| $a$ | Centripetal acceleration | 向心加速度 | m s$^{-2}$ |
+| $v$ | Linear speed | 线速度 | m s$^{-1}$ |
+| $r$ | Radius of circular path | 圆周路径半径 | m |
+| $\omega$ | Angular speed | 角速度 | rad s$^{-1}$ |
 
 **Derivation / 推导:**
-From velocity vector diagram: $\Delta v \approx v\Delta\theta$ for small $\Delta\theta$. Since $\Delta\theta = \omega\Delta t$, $\Delta v = v\omega\Delta t$. Therefore $a = \Delta v/\Delta t = v\omega = v^2/r = \omega^2 r$.
+**English:**
+Consider an object moving in a circle of radius $r$ with constant speed $v$. In a small time $\Delta t$, it moves through an angle $\Delta \theta = \omega \Delta t$. The arc length travelled is $s = r \Delta \theta = r \omega \Delta t = v \Delta t$. The velocity vectors $\vec{v}_1$ and $\vec{v}_2$ at the start and end of $\Delta t$ have the same magnitude $v$ but different directions. The change in velocity $\Delta \vec{v} = \vec{v}_2 - \vec{v}_1$ has magnitude $\Delta v \approx v \Delta \theta$ for small $\Delta \theta$. Therefore:
+$$a = \frac{\Delta v}{\Delta t} = \frac{v \Delta \theta}{\Delta t} = v \omega = \frac{v^2}{r}$$
+The direction of $\Delta \vec{v}$ is towards the centre of the circle.
+
+**中文：**
+考虑一个以恒定速率 $v$ 在半径为 $r$ 的圆周上运动的物体。在短时间内 $\Delta t$，它移动了一个角度 $\Delta \theta = \omega \Delta t$。经过的弧长为 $s = r \Delta \theta = r \omega \Delta t = v \Delta t$。在 $\Delta t$ 开始和结束时的速度矢量 $\vec{v}_1$ 和 $\vec{v}_2$ 大小相同 $v$ 但方向不同。速度的变化 $\Delta \vec{v} = \vec{v}_2 - \vec{v}_1$ 的大小，对于小 $\Delta \theta$，近似为 $\Delta v \approx v \Delta \theta$。因此：
+$$a = \frac{\Delta v}{\Delta t} = \frac{v \Delta \theta}{\Delta t} = v \omega = \frac{v^2}{r}$$
+$\Delta \vec{v}$ 的方向指向圆心。
 
 **Conditions / 适用条件:**
-- Uniform circular motion (constant speed)
-- Object moving in a perfect circle
+**English:** Object must be moving in a circular path with constant speed. The acceleration is always perpendicular to the velocity.
+**中文：** 物体必须以恒定速率沿圆周路径运动。加速度始终垂直于速度。
 
 **Limitations / 局限性:**
-- Does not apply to non-circular curved paths (use radius of curvature instead)
-- Does not account for tangential acceleration (changing speed)
+**English:** Does not apply to non-uniform circular motion where speed changes (e.g., vertical circles). In such cases, there is also a tangential acceleration component.
+**中文：** 不适用于速率变化的非匀速圆周运动（例如，竖直圆）。在这种情况下，还存在切向加速度分量。
 
-## 5.4 Centripetal Force / 向心力
+**Rearrangements / 变形:**
+$$v = \sqrt{ar}$$
+$$\omega = \sqrt{\frac{a}{r}}$$
+$$r = \frac{v^2}{a}$$
 
-$$ F = \frac{mv^2}{r} = m\omega^2 r = mv\omega $$
+---
 
-| Symbol (符号) | Meaning (EN/CN) | Unit (单位) |
-|---|---|---|
-| $F$ | Centripetal force / 向心力 | N |
-| $m$ | Mass of object / 物体质量 | kg |
-| $v$ | Linear speed / 线速度 | m s⁻¹ |
-| $\omega$ | Angular speed / 角速度 | rad s⁻¹ |
-| $r$ | Radius / 半径 | m |
+## 5.2 Centripetal Force / 向心力
+
+**Equation / 公式:**
+$$F = \frac{mv^2}{r} = m\omega^2 r$$
+
+**Variables / 变量:**
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| $F$ | Centripetal force | 向心力 | N |
+| $m$ | Mass of object | 物体质量 | kg |
+| $v$ | Linear speed | 线速度 | m s$^{-1}$ |
+| $r$ | Radius of circular path | 圆周路径半径 | m |
+| $\omega$ | Angular speed | 角速度 | rad s$^{-1}$ |
 
 **Derivation / 推导:**
-From [[Newton's Laws of Motion|Newton's Second Law]]: $F = ma$. Substituting $a = v^2/r$ gives $F = mv^2/r$.
+**English:** Directly from [[Newton's Laws of Motion|Newton's Second Law]]: $F = ma$. Substituting $a = v^2/r$ gives $F = mv^2/r$.
+**中文：** 直接来自[[牛顿运动定律|牛顿第二定律]]：$F = ma$。代入 $a = v^2/r$ 得 $F = mv^2/r$。
 
 **Conditions / 适用条件:**
-- Uniform circular motion
-- Net force (resultant) towards centre
+**English:** The net force must be directed towards the centre of the circle. The object must be moving in uniform circular motion.
+**中文：** 合力必须指向圆心。物体必须做匀速圆周运动。
 
 **Limitations / 局限性:**
-- $F$ is the resultant force, not a separate force
-- For non-uniform circular motion, there is also a tangential component
+**English:** The equation gives the magnitude of the net force required for circular motion. It does not identify the source of that force (e.g., friction, tension, gravity).
+**中文：** 该公式给出了圆周运动所需的合力大小。它不指明该力的来源（例如，摩擦力、张力、重力）。
 
-## 5.5 Banked Track (Ideal, No Friction) / 倾斜轨道（理想，无摩擦）
+**Rearrangements / 变形:**
+$$m = \frac{Fr}{v^2}$$
+$$v = \sqrt{\frac{Fr}{m}}$$
+$$r = \frac{mv^2}{F}$$
 
-$$ \tan\theta = \frac{v^2}{rg} $$
+---
 
-| Symbol (符号) | Meaning (EN/CN) | Unit (单位) |
-|---|---|---|
-| $\theta$ | Banking angle / 倾斜角 | ° or rad |
-| $v$ | Design speed / 设计速度 | m s⁻¹ |
-| $r$ | Radius of curve / 弯道半径 | m |
-| $g$ | Acceleration due to gravity / 重力加速度 | m s⁻² |
+## 5.3 Banked Track (Design Speed) / 倾斜轨道（设计速度）
 
-**Derivation / 推导:**
-Horizontal: $N\sin\theta = mv^2/r$
-Vertical: $N\cos\theta = mg$
-Dividing: $\tan\theta = v^2/(rg)$
+**Equation / 公式:**
+$$\tan \theta = \frac{v^2}{rg}$$
 
-## 5.6 Conical Pendulum / 圆锥摆
-
-$$ \tan\theta = \frac{v^2}{rg} \quad \text{or} \quad \omega^2 = \frac{g}{L\cos\theta} $$
-
-$$ T = 2\pi\sqrt{\frac{L\cos\theta}{g}} = 2\pi\sqrt{\frac{h}{g}} $$
-
-| Symbol (符号) | Meaning (EN/CN) | Unit (单位) |
-|---|---|---|
-| $\theta$ | Angle with vertical / 与竖直方向夹角 | ° or rad |
-| $v$ | Linear speed / 线速度 | m s⁻¹ |
-| $r$ | Radius of horizontal circle / 水平圆半径 | m |
-| $L$ | String length / 绳长 | m |
-| $h$ | Vertical height ($L\cos\theta$) / 竖直高度 | m |
-| $T$ | Period / 周期 | s |
+**Variables / 变量:**
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| $\theta$ | Banking angle | 倾斜角度 | degrees or rad |
+| $v$ | Design speed | 设计速度 | m s$^{-1}$ |
+| $r$ | Radius of curvature | 曲率半径 | m |
+| $g$ | Acceleration due to gravity | 重力加速度 | m s$^{-2}$ |
 
 **Derivation / 推导:**
-Horizontal: $T\sin\theta = mv^2/r$
-Vertical: $T\cos\theta = mg$
-Dividing: $\tan\theta = v^2/(rg)$
-Since $r = L\sin\theta$: $\tan\theta = v^2/(L\sin\theta \cdot g)$ → $v^2 = gL\sin\theta\tan\theta$
-Using $v = \omega r = \omega L\sin\theta$: $\omega^2 L^2\sin^2\theta = gL\sin\theta\tan\theta$ → $\omega^2 = g/(L\cos\theta)$
-Period: $T = 2\pi/\omega = 2\pi\sqrt{L\cos\theta/g} = 2\pi\sqrt{h/g}$
+**English:**
+For a vehicle on a banked track at the design speed, no friction is needed. Resolving forces:
+Vertical: $N \cos \theta = mg$
+Horizontal: $N \sin \theta = \frac{mv^2}{r}$
+Dividing the horizontal equation by the vertical equation gives $\tan \theta = \frac{v^2}{rg}$.
+
+**中文：**
+对于以设计速度在倾斜轨道上行驶的车辆，不需要摩擦力。分解力：
+竖直方向：$N \cos \theta = mg$
+水平方向：$N \sin \theta = \frac{mv^2}{r}$
+将水平方程除以竖直方程得 $\tan \theta = \frac{v^2}{rg}$。
+
+**Conditions / 适用条件:**
+**English:** Only applies at the design speed where no friction is required. The track is frictionless (or friction is not needed).
+**中文：** 仅适用于不需要摩擦力的设计速度。轨道是无摩擦的（或不需要摩擦力）。
+
+**Limitations / 局限性:**
+**English:** At speeds other than the design speed, friction is required to maintain circular motion. The equation does not account for friction.
+**中文：** 在非设计速度下，需要摩擦力来维持圆周运动。该公式不考虑摩擦力。
+
+**Rearrangements / 变形:**
+$$v = \sqrt{rg \tan \theta}$$
+$$r = \frac{v^2}{g \tan \theta}$$
+
+---
+
+## 5.4 Conical Pendulum Period / 圆锥摆周期
+
+**Equation / 公式:**
+$$T = 2\pi \sqrt{\frac{L \cos \theta}{g}}$$
+
+**Variables / 变量:**
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| $T$ | Period of rotation | 旋转周期 | s |
+| $L$ | Length of string | 绳子长度 | m |
+| $\theta$ | Angle with vertical | 与竖直方向的夹角 | degrees or rad |
+| $g$ | Acceleration due to gravity | 重力加速度 | m s$^{-2}$ |
+
+**Derivation / 推导:**
+**English:**
+From the conical pendulum analysis:
+$T \sin \theta = m\omega^2 r$ and $T \cos \theta = mg$.
+Dividing: $\tan \theta = \frac{\omega^2 r}{g}$.
+But $r = L \sin \theta$, so $\tan \theta = \frac{\omega^2 L \sin \theta}{g}$.
+Simplifying: $\frac{1}{\cos \theta} = \frac{\omega^2 L}{g}$, so $\omega^2 = \frac{g}{L \cos \theta}$.
+Since $\omega = \frac{2\pi}{T}$, we get $T = 2\pi \sqrt{\frac{L \cos \theta}{g}}$.
+
+**中文：**
+从圆锥摆分析：
+$T \sin \theta = m\omega^2 r$ 且 $T \cos \theta = mg$。
+相除：$\tan \theta = \frac{\omega^2 r}{g}$。
+但 $r = L \sin \theta$，所以 $\tan \theta = \frac{\omega^2 L \sin \theta}{g}$。
+简化：$\frac{1}{\cos \theta} = \frac{\omega^2 L}{g}$，所以 $\omega^2 = \frac{g}{L \cos \theta}$。
+由于 $\omega = \frac{2\pi}{T}$，我们得到 $T = 2\pi \sqrt{\frac{L \cos \theta}{g}}$。
+
+**Conditions / 适用条件:**
+**English:** The string is light and inextensible. Air resistance is negligible. The motion is uniform circular motion in a horizontal plane.
+**中文：** 绳子是轻质且不可伸长的。空气阻力可忽略。运动是水平面内的匀速圆周运动。
+
+**Limitations / 局限性:**
+**English:** Does not account for air resistance or the mass of the string. Assumes the bob is a point mass.
+**中文：** 不考虑空气阻力或绳子的质量。假设摆锤是质点。
+
+**Rearrangements / 变形:**
+$$L = \frac{gT^2}{4\pi^2 \cos \theta}$$
+$$\cos \theta = \frac{gT^2}{4\pi^2 L}$$
+
+---
 
 # 6. Graphs and Relationships / 图表与关系
 
-## 6.1 Centripetal Acceleration vs Radius (Constant Speed) / 向心加速度与半径的关系（恒定速度）
+## 6.1 Centripetal Acceleration vs. Speed / 向心加速度与速度的关系
 
-$$ a = \frac{v^2}{r} $$
+### Axes / 坐标轴
+**English:** x-axis: Speed $v$ (m s$^{-1}$); y-axis: Centripetal acceleration $a$ (m s$^{-2}$)
+**中文：** x轴：速度 $v$ (m s$^{-1}$)；y轴：向心加速度 $a$ (m s$^{-2}$)
 
-**Axes / 坐标轴:**
-- x-axis: Radius $r$ / 半径 $r$ (m)
-- y-axis: Centripetal acceleration $a$ / 向心加速度 $a$ (m s⁻²)
+### Shape / 形状
+**English:** Parabolic curve ($a \propto v^2$) for a fixed radius $r$.
+**中文：** 对于固定半径 $r$，为抛物线曲线 ($a \propto v^2$)。
 
-**Shape / 形状:**
-- Inverse relationship: $a \propto 1/r$ (hyperbola)
-- As $r$ increases, $a$ decreases
+### Gradient Meaning / 斜率含义
+**English:** The gradient is not constant. The gradient at any point is $\frac{da}{dv} = \frac{2v}{r}$.
+**中文：** 斜率不是常数。任意点的斜率为 $\frac{da}{dv} = \frac{2v}{r}$。
 
-**Gradient Meaning / 斜率意义:**
-- Gradient = $da/dr = -v^2/r^2$
-- Not constant; steeper at small $r$
+### Area Meaning / 面积含义
+**English:** The area under the graph has no direct physical meaning.
+**中文：** 图线下的面积没有直接的物理意义。
 
-**Area Meaning / 面积意义:**
-- Area under $a$ vs $1/r$ graph = $v^2$ (constant)
-- Area under $a$ vs $r$ graph has no direct physical meaning
+### Exam Interpretation / 考试解读
+**English:** A straight line through the origin when plotting $a$ against $v^2$ confirms the relationship $a = v^2/r$. The gradient is $1/r$.
+**中文：** 绘制 $a$ 对 $v^2$ 的图线时，通过原点的直线确认了关系 $a = v^2/r$。斜率为 $1/r$。
 
-**Exam Interpretation / 考试解读:**
-- For constant $v$, smaller radius means much larger acceleration
-- Used to explain why tight turns require more centripetal force
+### Common Questions / 常见问题
+**English:** "Plot a graph of $a$ against $v^2$ and determine the radius of the circle." → Gradient = $1/r$, so $r = 1/\text{gradient}$.
+**中文：** "绘制 $a$ 对 $v^2$ 的图线并确定圆的半径。" → 斜率 = $1/r$，所以 $r = 1/\text{斜率}$。
 
-## 6.2 Centripetal Acceleration vs Angular Speed (Constant Radius) / 向心加速度与角速度的关系（恒定半径）
+---
 
-$$ a = \omega^2 r $$
+## 6.2 Centripetal Force vs. Radius / 向心力与半径的关系
 
-**Axes / 坐标轴:**
-- x-axis: Angular speed $\omega$ / 角速度 $\omega$ (rad s⁻¹)
-- y-axis: Centripetal acceleration $a$ / 向心加速度 $a$ (m s⁻²)
+### Axes / 坐标轴
+**English:** x-axis: Radius $r$ (m); y-axis: Centripetal force $F$ (N)
+**中文：** x轴：半径 $r$ (m)；y轴：向心力 $F$ (N)
 
-**Shape / 形状:**
-- Quadratic relationship: $a \propto \omega^2$ (parabola)
-- If plotting $a$ vs $\omega^2$, it is a straight line through origin
+### Shape / 形状
+**English:** Inverse curve ($F \propto 1/r$) for a fixed speed $v$ and mass $m$.
+**中文：** 对于固定速度 $v$ 和质量 $m$，为反比曲线 ($F \propto 1/r$)。
 
-**Gradient Meaning / 斜率意义:**
-- Gradient of $a$ vs $\omega^2$ graph = $r$ (radius)
-- Gradient of $a$ vs $\omega$ graph = $2\omega r$ (not constant)
+### Gradient Meaning / 斜率含义
+**English:** The gradient is negative and not constant. The gradient at any point is $\frac{dF}{dr} = -\frac{mv^2}{r^2}$.
+**中文：** 斜率为负且不是常数。任意点的斜率为 $\frac{dF}{dr} = -\frac{mv^2}{r^2}$。
 
-**Area Meaning / 面积意义:**
-- Area under $a$ vs $\omega$ graph has no direct physical meaning
+### Area Meaning / 面积含义
+**English:** The area under the graph has no direct physical meaning.
+**中文：** 图线下的面积没有直接的物理意义。
 
-**Exam Interpretation / 考试解读:**
-- Doubling $\omega$ quadruples $a$
-- Straight line through origin for $a$ vs $\omega^2$ confirms relationship
+### Exam Interpretation / 考试解读
+**English:** A straight line through the origin when plotting $F$ against $1/r$ confirms the relationship $F = mv^2/r$. The gradient is $mv^2$.
+**中文：** 绘制 $F$ 对 $1/r$ 的图线时，通过原点的直线确认了关系 $F = mv^2/r$。斜率为 $mv^2$。
 
-## 6.3 Centripetal Force vs Speed (Constant Radius) / 向心力与速度的关系（恒定半径）
+### Common Questions / 常见问题
+**English:** "Explain why the graph of $F$ against $r$ is a curve." → Because $F \propto 1/r$, so as $r$ decreases, $F$ increases rapidly.
+**中文：** "解释为什么 $F$ 对 $r$ 的图线是曲线。" → 因为 $F \propto 1/r$，所以随着 $r$ 减小，$F$ 迅速增加。
 
-$$ F = \frac{mv^2}{r} $$
+---
 
-**Axes / 坐标轴:**
-- x-axis: Speed $v$ / 速度 $v$ (m s⁻¹)
-- y-axis: Centripetal force $F$ / 向心力 $F$ (N)
+## 6.3 Angular Speed vs. Period / 角速度与周期的关系
 
-**Shape / 形状:**
-- Quadratic relationship: $F \propto v^2$ (parabola)
-- If plotting $F$ vs $v^2$, it is a straight line through origin
+### Axes / 坐标轴
+**English:** x-axis: Period $T$ (s); y-axis: Angular speed $\omega$ (rad s$^{-1}$)
+**中文：** x轴：周期 $T$ (s)；y轴：角速度 $\omega$ (rad s$^{-1}$)
 
-**Gradient Meaning / 斜率意义:**
-- Gradient of $F$ vs $v^2$ graph = $m/r$
-- Can be used to determine mass or radius experimentally
+### Shape / 形状
+**English:** Inverse curve ($\omega \propto 1/T$).
+**中文：** 反比曲线 ($\omega \propto 1/T$)。
 
-**Area Meaning / 面积意义:**
-- Area under $F$ vs $v$ graph has no direct physical meaning
+### Gradient Meaning / 斜率含义
+**English:** The gradient is negative and not constant. The gradient at any point is $\frac{d\omega}{dT} = -\frac{2\pi}{T^2}$.
+**中文：** 斜率为负且不是常数。任意点的斜率为 $\frac{d\omega}{dT} = -\frac{2\pi}{T^2}$。
 
-**Exam Interpretation / 考试解读:**
-- Doubling speed quadruples required centripetal force
-- Explains why high-speed cornering is dangerous
+### Area Meaning / 面积含义
+**English:** The area under the graph has no direct physical meaning.
+**中文：** 图线下的面积没有直接的物理意义。
 
-> 📷 **IMAGE PROMPT — [CA-04]: Graphs of Centripetal Relationships**
-> **English:** Three graphs side by side: (1) a vs r showing hyperbola, (2) a vs ω² showing straight line through origin, (3) F vs v² showing straight line through origin. All with labelled axes and units. Style: clear, exam-style graphs. Importance: MEDIUM - helps visual understanding.
-> **中文:** 并排的三个图：(1) a vs r 显示双曲线，(2) a vs ω² 显示通过原点的直线，(3) F vs v² 显示通过原点的直线。所有图都有标注的坐标轴和单位。风格：清晰，考试风格。重要性：中 - 有助于视觉理解。
+### Exam Interpretation / 考试解读
+**English:** A straight line through the origin when plotting $\omega$ against $1/T$ confirms $\omega = 2\pi/T$. The gradient is $2\pi$.
+**中文：** 绘制 $\omega$ 对 $1/T$ 的图线时，通过原点的直线确认了 $\omega = 2\pi/T$。斜率为 $2\pi$。
+
+### Common Questions / 常见问题
+**English:** "Determine the period when $\omega = 5$ rad s$^{-1}$." → $T = 2\pi/\omega = 2\pi/5 = 1.26$ s.
+**中文：** "当 $\omega = 5$ rad s$^{-1}$ 时，确定周期。" → $T = 2\pi/\omega = 2\pi/5 = 1.26$ s。
+
+---
 
 # 7. Required Diagrams / 必备图表
 
-## 7.1 Velocity Vector Diagram for Centripetal Acceleration Derivation / 向心加速度推导的速度矢量图
+## 7.1 Vector Diagram for Centripetal Acceleration Derivation / 向心加速度推导的矢量图
 
-> 📷 **IMAGE PROMPT — [CA-05]: Velocity Vector Derivation Diagram**
-> **English:** A circle of radius r with an object at two nearby positions P and Q separated by angle Δθ. At P, velocity vector v₁ (tangent to circle). At Q, velocity vector v₂ (tangent to circle). Show Δv = v₂ - v₁ by placing vectors tail-to-tail: v₂ and -v₁, with Δv pointing towards centre. Labels: r, v₁, v₂, Δθ, Δv, centre O. Style: geometric, clear vector arrows, exam-style. Importance: HIGH - essential for derivation in both boards.
-> **中文:** 半径为r的圆，物体在两个相邻位置P和Q，夹角为Δθ。在P处，速度矢量v₁（与圆相切）。在Q处，速度矢量v₂（与圆相切）。通过将矢量尾对尾放置来显示Δv = v₂ - v₁：v₂和-v₁，Δv指向圆心。标签：r, v₁, v₂, Δθ, Δv, 圆心O。风格：几何风格，清晰的矢量箭头，考试风格。重要性：高 - 两个考试局推导必备。
+### Description / 描述
+**English:** A diagram showing a circle of radius $r$. Two velocity vectors $\vec{v}_1$ and $\vec{v}_2$ are drawn tangential to the circle at two nearby points separated by a small angle $\Delta \theta$. The vector difference $\Delta \vec{v} = \vec{v}_2 - \vec{v}_1$ is shown pointing towards the centre of the circle. Labels include $r$, $\vec{v}_1$, $\vec{v}_2$, $\Delta \theta$, and $\Delta \vec{v}$.
 
-## 7.2 Free-Body Diagram for Car on Banked Track / 倾斜轨道上汽车的受力分析图
+**中文：** 一个显示半径为 $r$ 的圆的图。两个速度矢量 $\vec{v}_1$ 和 $\vec{v}_2$ 在由小角度 $\Delta \theta$ 分隔的两个邻近点处与圆相切。矢量差 $\Delta \vec{v} = \vec{v}_2 - \vec{v}_1$ 显示指向圆心。标签包括 $r$、$\vec{v}_1$、$\vec{v}_2$、$\Delta \theta$ 和 $\Delta \vec{v}$。
 
-> 📷 **IMAGE PROMPT — [CA-06]: Banked Track Free-Body Diagram**
-> **English:** A car (simplified as a block) on a banked track inclined at angle θ to horizontal. Show three forces: weight mg (vertically downward), normal reaction N (perpendicular to track surface), friction f (parallel to track surface, direction depends on speed relative to design speed). Show the horizontal component Nsinθ providing centripetal force towards centre of circular path (radius r). Labels: θ, mg, N, Nsinθ, Ncosθ, f, r, centre. Style: clear vector diagram, exam-style. Importance: HIGH - frequently tested.
-> **中文:** 倾斜角度为θ的轨道上的汽车（简化为方块）。显示三个力：重力mg（竖直向下），法向反作用力N（垂直于轨道表面），摩擦力f（平行于轨道表面，方向取决于速度相对于设计速度）。显示水平分量Nsinθ提供指向圆周路径中心（半径r）的向心力。标签：θ, mg, N, Nsinθ, Ncosθ, f, r, 中心。风格：清晰的矢量图，考试风格。重要性：高 - 经常考查。
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — CP05: Vector Diagram for Centripetal Acceleration**
+>
+> A 2D vector diagram on a clean white background. A circle of radius r is drawn. Two velocity vectors v1 and v2 are shown as arrows tangential to the circle at two points separated by angle Δθ. The vector difference Δv = v2 - v1 is shown as an arrow pointing towards the centre of the circle. All vectors are labelled. The angle Δθ is marked at the centre. Educational style, clear labels, no shadows.
 
-## 7.3 Conical Pendulum Force Diagram / 圆锥摆受力分析图
+### Labels Required / 需要标注
+- $r$ (radius)
+- $\vec{v}_1$ (initial velocity)
+- $\vec{v}_2$ (final velocity)
+- $\Delta \theta$ (angular displacement)
+- $\Delta \vec{v}$ (change in velocity)
+- Centre of circle
 
-> 📷 **IMAGE PROMPT — [CA-07]: Conical Pendulum Diagram**
-> **English:** A mass m attached to a string of length L, moving in a horizontal circle of radius r. The string makes angle θ with vertical. Show: weight mg (down), tension T (along string towards suspension point). Resolve T into Tcosθ (vertical, balancing mg) and Tsinθ (horizontal, providing centripetal force). Show radius r = Lsinθ and vertical height h = Lcosθ. Labels: L, θ, r, h, m, mg, T, Tcosθ, Tsinθ, centre of circle. Style: clear diagram, exam-style. Importance: HIGH - frequently tested.
-> **中文:** 质量为m的物体系在长度为L的绳子上，在半径为r的水平圆内运动。绳子与竖直方向成角度θ。显示：重力mg（向下），张力T（沿绳子指向悬挂点）。将T分解为Tcosθ（竖直，平衡mg）和Tsinθ（水平，提供向心力）。显示半径r = Lsinθ和竖直高度h = Lcosθ。标签：L, θ, r, h, m, mg, T, Tcosθ, Tsinθ, 圆心。风格：清晰的图，考试风格。重要性：高 - 经常考查。
+### Exam Importance / 考试重要性
+**English:** This diagram is essential for deriving the formula $a = v^2/r$ from first principles. Both CIE and Edexcel may ask students to draw or interpret this diagram.
+**中文：** 该图对于从基本原理推导公式 $a = v^2/r$ 至关重要。CIE 和 Edexcel 都可能要求学生绘制或解释此图。
 
-## 7.4 Forces on a Mass in Vertical Circular Motion / 竖直圆周运动中物体上的力
+---
 
-> 📷 **IMAGE PROMPT — [CA-08]: Vertical Circular Motion Force Diagram**
-> **English:** A mass m on a string moving in a vertical circle of radius r. Show the mass at four positions: top, bottom, left, right. At each position, show forces: weight mg (down) and tension T (along string towards centre). At top: T + mg = mv²/r (both down). At bottom: T - mg = mv²/r (T up, mg down). At sides: T = mv²/r (horizontal), mg vertical. Labels: r, m, mg, T, v at each position. Style: clear diagram, exam-style. Importance: MEDIUM - tested in both boards.
-> **中文:** 质量为m的物体在绳子上做竖直圆周运动，半径为r。显示物体在四个位置：顶部、底部、左侧、右侧。在每个位置显示力：重力mg（向下）和张力T（沿绳子指向圆心）。在顶部：T + mg = mv²/r（都向下）。在底部：T - mg = mv²/r（T向上，mg向下）。在侧面：T = mv²/r（水平），mg竖直。标签：r, m, mg, T, 每个位置的v。风格：清晰的图，考试风格。重要性：中 - 两个考试局都考查。
+## 7.2 Free-Body Diagram for a Banked Track / 倾斜轨道的受力图
+
+### Description / 描述
+**English:** A diagram showing a car (or block) on a banked track inclined at angle $\theta$ to the horizontal. Forces shown include: weight $mg$ acting vertically downward, normal reaction $N$ acting perpendicular to the track surface, and optionally friction $f$ acting parallel to the track surface. The normal reaction is resolved into vertical component $N \cos \theta$ and horizontal component $N \sin \theta$ (pointing towards the centre of the circle).
+
+**中文：** 一个显示汽车（或物块）在与水平面成 $\theta$ 角倾斜的轨道上的图。显示的力包括：重力 $mg$ 竖直向下，法向反作用力 $N$ 垂直于轨道表面，以及可选的摩擦力 $f$ 平行于轨道表面。法向反作用力被分解为竖直分量 $N \cos \theta$ 和水平分量 $N \sin \theta$（指向圆心）。
+
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — CP06: Banked Track Free-Body Diagram**
+>
+> A 2D educational diagram. A car is shown on a banked track inclined at angle θ. Three force arrows: mg (downward), N (perpendicular to track surface), f (parallel to track surface, optional). N is resolved into Ncosθ (vertical) and Nsinθ (horizontal towards centre). All forces and components are labelled. Clean white background, clear arrows, educational style.
+
+### Labels Required / 需要标注
+- $\theta$ (banking angle)
+- $mg$ (weight)
+- $N$ (normal reaction)
+- $N \cos \theta$ (vertical component)
+- $N \sin \theta$ (horizontal component)
+- $f$ (friction, optional)
+- Centre of circle direction
+
+### Exam Importance / 考试重要性
+**English:** This diagram is essential for solving banked track problems. Students must be able to draw and resolve forces correctly.
+**中文：** 该图对于解决倾斜轨道问题至关重要。学生必须能够正确绘制和分解力。
+
+---
+
+## 7.3 Conical Pendulum Diagram / 圆锥摆图
+
+### Description / 描述
+**English:** A diagram showing a mass $m$ attached to a string of length $L$, moving in a horizontal circle of radius $r$. The string makes an angle $\theta$ with the vertical. The tension $T$ in the string is shown, resolved into vertical component $T \cos \theta$ and horizontal component $T \sin \theta$ (pointing towards the centre of the circle). The weight $mg$ is shown acting downward.
+
+**中文：** 一个显示质量为 $m$ 的物体连接在长度为 $L$ 的绳子上，在半径为 $r$ 的水平圆周上运动的图。绳子与竖直方向成 $\theta$ 角。显示绳子中的张力 $T$，分解为竖直分量 $T \cos \theta$ 和水平分量 $T \sin \theta$（指向圆心）。重力 $mg$ 显示向下作用。
+
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — CP07: Conical Pendulum Diagram**
+>
+> A 2D educational diagram. A mass m is attached to a string of length L, moving in a horizontal circle of radius r. The string makes angle θ with the vertical. Tension T is shown along the string, resolved into Tcosθ (vertical upward) and Tsinθ (horizontal towards centre). Weight mg is shown downward. Labels: L, r, θ, m, T, Tcosθ, Tsinθ, mg. Clean white background, clear arrows, educational style.
+
+### Labels Required / 需要标注
+- $L$ (string length)
+- $r$ (radius of circle)
+- $\theta$ (angle with vertical)
+- $m$ (mass)
+- $T$ (tension)
+- $T \cos \theta$ (vertical component)
+- $T \sin \theta$ (horizontal component)
+- $mg$ (weight)
+
+### Exam Importance / 考试重要性
+**English:** This diagram is essential for solving conical pendulum problems. Students must be able to resolve tension and apply Newton's Second Law.
+**中文：** 该图对于解决圆锥摆问题至关重要。学生必须能够分解张力并应用牛顿第二定律。
+
+---
 
 # 8. Worked Examples / 典型例题
 
-## Example 1: Car on a Banked Track / 倾斜轨道上的汽车
+## Example 1: Car on a Banked Track / 汽车在倾斜轨道上
 
 ### Question / 题目
-**English:** A car of mass 1200 kg travels around a circular track of radius 80 m. The track is banked at an angle of 15° to the horizontal. Calculate:
+**English:**
+A car of mass 1200 kg travels around a banked track of radius 50 m. The track is banked at an angle of 15° to the horizontal. Calculate:
 (a) The design speed at which no friction is required.
-(b) The normal reaction force on the car at this speed.
-(c) The maximum speed at which the car can travel without slipping if the coefficient of friction between the tyres and the track is 0.30.
+(b) The centripetal force acting on the car at this speed.
+(c) The normal reaction force on the car.
 
-**中文:** 一辆质量为1200 kg的汽车在半径为80 m的圆形轨道上行驶。轨道与水平面成15°角倾斜。计算：
-(a) 不需要摩擦力的设计速度。
-(b) 在此速度下汽车受到的法向反作用力。
-(c) 如果轮胎与轨道之间的摩擦系数为0.30，汽车在不打滑的情况下可以行驶的最大速度。
+**中文：**
+一辆质量为 1200 kg 的汽车在半径为 50 m 的倾斜轨道上行驶。轨道与水平面成 15° 角倾斜。计算：
+(a) 不需要摩擦力时的设计速度。
+(b) 在此速度下作用在汽车上的向心力。
+(c) 作用在汽车上的法向反作用力。
 
 ### Image Prompt / 图片提示
-> 📷 **IMAGE PROMPT — [CA-09]: Banked Track Example Diagram**
-> **English:** A car on a banked track at 15° with radius 80 m. Show forces: weight mg, normal N, friction f (acting down the slope for part c). Labels: 15°, 80 m, 1200 kg. Style: clear diagram for exam question. Importance: HIGH - typical exam question.
-> **中文:** 倾斜角度为15°、半径为80 m的轨道上的汽车。显示力：重力mg，法向反作用力N，摩擦力f（在部分c中沿斜坡向下作用）。标签：15°, 80 m, 1200 kg。风格：考试题目用的清晰图。重要性：高 - 典型考试题。
+> 📷 **IMAGE PROMPT — CP08: Car on Banked Track Question Diagram**
+>
+> A car on a banked track inclined at 15°. Radius r = 50 m is shown. Forces: mg, N. Clean 2D educational diagram.
 
 ### Solution / 解答
 
 **Part (a): Design speed / 设计速度**
 
-For ideal banking (no friction):
-$$\tan\theta = \frac{v^2}{rg}$$
+**English:**
+Using the banked track formula:
+$$\tan \theta = \frac{v^2}{rg}$$
+$$v = \sqrt{rg \tan \theta}$$
+$$v = \sqrt{50 \times 9.81 \times \tan 15^\circ}$$
+$$v = \sqrt{50 \times 9.81 \times 0.2679}$$
+$$v = \sqrt{131.4}$$
+$$v = 11.5 \text{ m s}^{-1}$$
 
-$$v^2 = rg\tan\theta = 80 \times 9.81 \times \tan(15^\circ)$$
+**中文：**
+使用倾斜轨道公式：
+$$\tan \theta = \frac{v^2}{rg}$$
+$$v = \sqrt{rg \tan \theta}$$
+$$v = \sqrt{50 \times 9.81 \times \tan 15^\circ}$$
+$$v = \sqrt{50 \times 9.81 \times 0.2679}$$
+$$v = \sqrt{131.4}$$
+$$v = 11.5 \text{ m s}^{-1}$$
 
-$$v^2 = 80 \times 9.81 \times 0.2679 = 210.3$$
+**Part (b): Centripetal force / 向心力**
 
-$$v = \sqrt{210.3} = 14.5 \text{ m s}^{-1}$$
+**English:**
+$$F = \frac{mv^2}{r}$$
+$$F = \frac{1200 \times (11.5)^2}{50}$$
+$$F = \frac{1200 \times 132.25}{50}$$
+$$F = \frac{158700}{50}$$
+$$F = 3174 \text{ N}$$
 
-**Part (b): Normal reaction / 法向反作用力**
+**中文：**
+$$F = \frac{mv^2}{r}$$
+$$F = \frac{1200 \times (11.5)^2}{50}$$
+$$F = \frac{1200 \times 132.25}{50}$$
+$$F = \frac{158700}{50}$$
+$$F = 3174 \text{ N}$$
 
+**Part (c): Normal reaction / 法向反作用力**
+
+**English:**
 From vertical equilibrium:
-$$N\cos\theta = mg$$
+$$N \cos \theta = mg$$
+$$N = \frac{mg}{\cos \theta}$$
+$$N = \frac{1200 \times 9.81}{\cos 15^\circ}$$
+$$N = \frac{11772}{0.9659}$$
+$$N = 12187 \text{ N}$$
 
-$$N = \frac{mg}{\cos\theta} = \frac{1200 \times 9.81}{\cos(15^\circ)}$$
-
-$$N = \frac{11772}{0.9659} = 12187 \text{ N} \approx 1.22 \times 10^4 \text{ N}$$
-
-**Part (c): Maximum speed with friction / 有摩擦时的最大速度**
-
-At maximum speed, friction acts down the slope (to provide additional centripetal force). The maximum friction force is $f = \mu N$.
-
-Horizontal components provide centripetal force:
-$$N\sin\theta + f\cos\theta = \frac{mv^2}{r}$$
-
-Vertical equilibrium:
-$$N\cos\theta = mg + f\sin\theta$$
-
-Substituting $f = \mu N$:
-$$N\cos\theta = mg + \mu N\sin\theta$$
-$$N(\cos\theta - \mu\sin\theta) = mg$$
-$$N = \frac{mg}{\cos\theta - \mu\sin\theta}$$
-
-$$N = \frac{1200 \times 9.81}{\cos(15^\circ) - 0.30 \times \sin(15^\circ)}$$
-$$N = \frac{11772}{0.9659 - 0.30 \times 0.2588}$$
-$$N = \frac{11772}{0.9659 - 0.0776} = \frac{11772}{0.8883} = 13252 \text{ N}$$
-
-Now using the horizontal equation:
-$$N\sin\theta + \mu N\cos\theta = \frac{mv^2}{r}$$
-$$N(\sin\theta + \mu\cos\theta) = \frac{mv^2}{r}$$
-$$v^2 = \frac{rN(\sin\theta + \mu\cos\theta)}{m}$$
-
-$$v^2 = \frac{80 \times 13252 \times (\sin(15^\circ) + 0.30 \times \cos(15^\circ))}{1200}$$
-$$v^2 = \frac{80 \times 13252 \times (0.2588 + 0.30 \times 0.9659)}{1200}$$
-$$v^2 = \frac{80 \times 13252 \times (0.2588 + 0.2898)}{1200}$$
-$$v^2 = \frac{80 \times 13252 \times 0.5486}{1200}$$
-$$v^2 = \frac{581,600}{1200} = 484.7$$
-$$v = \sqrt{484.7} = 22.0 \text{ m s}^{-1}$$
+**中文：**
+从竖直方向平衡：
+$$N \cos \theta = mg$$
+$$N = \frac{mg}{\cos \theta}$$
+$$N = \frac{1200 \times 9.81}{\cos 15^\circ}$$
+$$N = \frac{11772}{0.9659}$$
+$$N = 12187 \text{ N}$$
 
 ### Final Answer / 最终答案
-(a) Design speed = 14.5 m s⁻¹
-(b) Normal reaction = 1.22 × 10⁴ N
-(c) Maximum speed with friction = 22.0 m s⁻¹
+**Answer:** (a) $v = 11.5$ m s$^{-1}$ | **答案：** (a) $v = 11.5$ m s$^{-1}$
+**Answer:** (b) $F = 3174$ N | **答案：** (b) $F = 3174$ N
+**Answer:** (c) $N = 12187$ N | **答案：** (c) $N = 12187$ N
 
 ### Examiner Notes / 考官点评
-**English:** 
-- Part (a) is straightforward using $\tan\theta = v^2/(rg)$. Many candidates forget to use radians or degrees correctly.
-- Part (b) requires recognising that $N\cos\theta = mg$, not $N = mg$.
-- Part (c) is challenging. Candidates must correctly identify that friction acts down the slope at maximum speed. The two equations (horizontal and vertical) must be solved simultaneously. Common mistakes include using $N = mg$ directly or getting the direction of friction wrong.
+**English:**
+- Common mistake: Forgetting to convert degrees to radians when using trigonometric functions in calculators. Ensure calculator is in degree mode.
+- Common mistake: Using $N = mg$ instead of $N = mg/\cos \theta$. The normal reaction is larger than the weight because it has to provide both the vertical support and the horizontal centripetal force.
+- Always check that the centripetal force equals the horizontal component of $N$: $N \sin \theta = 12187 \times \sin 15^\circ = 12187 \times 0.2588 = 3154$ N (close to 3174 N, small rounding difference).
 
-**中文:**
-- 部分(a)直接使用 $\tan\theta = v^2/(rg)$。许多考生忘记正确使用弧度或角度。
-- 部分(b)需要认识到 $N\cos\theta = mg$，而不是 $N = mg$。
-- 部分(c)具有挑战性。考生必须正确识别出在最大速度时摩擦力沿斜坡向下作用。必须同时求解两个方程（水平和竖直）。常见错误包括直接使用 $N = mg$ 或弄错摩擦力的方向。
+**中文：**
+- 常见错误：在使用计算器进行三角函数计算时，忘记将度数转换为弧度。确保计算器处于度数模式。
+- 常见错误：使用 $N = mg$ 而不是 $N = mg/\cos \theta$。法向反作用力大于重力，因为它必须同时提供竖直支撑和水平向心力。
+- 始终检查向心力是否等于 $N$ 的水平分量：$N \sin \theta = 12187 \times \sin 15^\circ = 12187 \times 0.2588 = 3154$ N（接近 3174 N，存在小的舍入差异）。
+
+### Alternative Method / 替代方法
+**English:**
+For part (b), the centripetal force can also be found from the horizontal component of the normal reaction:
+$$F = N \sin \theta = 12187 \times \sin 15^\circ = 3154 \text{ N}$$
+This provides a useful check.
+
+**中文：**
+对于部分 (b)，向心力也可以从法向反作用力的水平分量求得：
+$$F = N \sin \theta = 12187 \times \sin 15^\circ = 3154 \text{ N}$$
+这提供了一个有用的检查。
+
+---
 
 ## Example 2: Conical Pendulum / 圆锥摆
 
 ### Question / 题目
-**English:** A conical pendulum consists of a mass of 0.50 kg attached to a light string of length 1.2 m. The mass rotates in a horizontal circle with the string making an angle of 30° with the vertical. Calculate:
+**English:**
+A conical pendulum consists of a mass of 0.50 kg attached to a string of length 1.2 m. The mass rotates in a horizontal circle such that the string makes an angle of 30° with the vertical. Calculate:
 (a) The tension in the string.
-(b) The linear speed of the mass.
+(b) The speed of the mass.
 (c) The period of rotation.
 
-**中文:** 一个圆锥摆由一个质量为0.50 kg的物体和一根长度为1.2 m的轻绳组成。物体在水平面内旋转，绳子与竖直方向成30°角。计算：
+**中文：**
+一个圆锥摆由一个质量为 0.50 kg 的物体组成，连接在一根长度为 1.2 m 的绳子上。物体在水平圆周内旋转，使得绳子与竖直方向成 30° 角。计算：
 (a) 绳子中的张力。
-(b) 物体的线速度。
+(b) 物体的速度。
 (c) 旋转周期。
-
-### Image Prompt / 图片提示
-> 📷 **IMAGE PROMPT — [CA-10]: Conical Pendulum Example Diagram**
-> **English:** A conical pendulum with string length 1.2 m, angle 30° with vertical, mass 0.50 kg. Show forces: weight mg, tension T. Show radius r = Lsin30° = 0.6 m, height h = Lcos30° = 1.04 m. Labels: 1.2 m, 30°, 0.50 kg, r, h. Style: clear diagram for exam question. Importance: HIGH - typical exam question.
-> **中文:** 圆锥摆，绳长1.2 m，与竖直方向夹角30°，质量0.50 kg。显示力：重力mg，张力T。显示半径r = Lsin30° = 0.6 m，高度h = Lcos30° = 1.04 m。标签：1.2 m, 30°, 0.50 kg, r, h。风格：考试题目用的清晰图。重要性：高 - 典型考试题。
 
 ### Solution / 解答
 
-**Part (a): Tension in the string / 绳子中的张力**
+**Part (a): Tension / 张力**
 
-Vertical equilibrium:
-$$T\cos\theta = mg$$
+**English:**
+From vertical equilibrium:
+$$T \cos \theta = mg$$
+$$T = \frac{mg}{\cos \theta}$$
+$$T = \frac{0.50 \times 9.81}{\cos 30^\circ}$$
+$$T = \frac{4.905}{0.8660}$$
+$$T = 5.66 \text{ N}$$
 
-$$T = \frac{mg}{\cos\theta} = \frac{0.50 \times 9.81}{\cos(30^\circ)}$$
+**中文：**
+从竖直方向平衡：
+$$T \cos \theta = mg$$
+$$T = \frac{mg}{\cos \theta}$$
+$$T = \frac{0.50 \times 9.81}{\cos 30^\circ}$$
+$$T = \frac{4.905}{0.8660}$$
+$$T = 5.66 \text{ N}$$
 
-$$T = \frac{4.905}{0.8660} = 5.66 \text{ N}$$
+**Part (b): Speed / 速度**
 
-**Part (b): Linear speed / 线速度**
+**English:**
+First, find the radius of the circle:
+$$r = L \sin \theta = 1.2 \times \sin 30^\circ = 1.2 \times 0.5 = 0.60 \text{ m}$$
 
-The radius of the horizontal circle:
-$$r = L\sin\theta = 1.2 \times \sin(30^\circ) = 1.2 \times 0.50 = 0.60 \text{ m}$$
-
-Horizontal component of tension provides centripetal force:
-$$T\sin\theta = \frac{mv^2}{r}$$
-
-$$v^2 = \frac{rT\sin\theta}{m} = \frac{0.60 \times 5.66 \times \sin(30^\circ)}{0.50}$$
-
-$$v^2 = \frac{0.60 \times 5.66 \times 0.50}{0.50} = 0.60 \times 5.66 = 3.40$$
-
-$$v = \sqrt{3.40} = 1.84 \text{ m s}^{-1}$$
-
-**Alternative method using $\tan\theta$:**
-$$\tan\theta = \frac{v^2}{rg}$$
-
-$$v^2 = rg\tan\theta = 0.60 \times 9.81 \times \tan(30^\circ)$$
-
-$$v^2 = 0.60 \times 9.81 \times 0.5774 = 3.40$$
-
+The horizontal component of tension provides the centripetal force:
+$$T \sin \theta = \frac{mv^2}{r}$$
+$$v^2 = \frac{T \sin \theta \times r}{m}$$
+$$v^2 = \frac{5.66 \times \sin 30^\circ \times 0.60}{0.50}$$
+$$v^2 = \frac{5.66 \times 0.5 \times 0.60}{0.50}$$
+$$v^2 = \frac{1.698}{0.50}$$
+$$v^2 = 3.396$$
 $$v = 1.84 \text{ m s}^{-1}$$
 
-**Part (c): Period of rotation / 旋转周期**
+**中文：**
+首先，求圆的半径：
+$$r = L \sin \theta = 1.2 \times \sin 30^\circ = 1.2 \times 0.5 = 0.60 \text{ m}$$
 
+张力的水平分量提供向心力：
+$$T \sin \theta = \frac{mv^2}{r}$$
+$$v^2 = \frac{T \sin \theta \times r}{m}$$
+$$v^2 = \frac{5.66 \times \sin 30^\circ \times 0.60}{0.50}$$
+$$v^2 = \frac{5.66 \times 0.5 \times 0.60}{0.50}$$
+$$v^2 = \frac{1.698}{0.50}$$
+$$v^2 = 3.396$$
+$$v = 1.84 \text{ m s}^{-1}$$
+
+**Part (c): Period / 周期**
+
+**English:**
+Using the period formula:
+$$T = 2\pi \sqrt{\frac{L \cos \theta}{g}}$$
+$$T = 2\pi \sqrt{\frac{1.2 \times \cos 30^\circ}{9.81}}$$
+$$T = 2\pi \sqrt{\frac{1.2 \times 0.8660}{9.81}}$$
+$$T = 2\pi \sqrt{\frac{1.039}{9.81}}$$
+$$T = 2\pi \sqrt{0.1059}$$
+$$T = 2\pi \times 0.3255$$
+$$T = 2.04 \text{ s}$$
+
+Alternatively, using $v = 2\pi r / T$:
 $$T = \frac{2\pi r}{v} = \frac{2\pi \times 0.60}{1.84} = \frac{3.77}{1.84} = 2.05 \text{ s}$$
 
-**Alternative method:**
-$$T = 2\pi\sqrt{\frac{L\cos\theta}{g}} = 2\pi\sqrt{\frac{1.2 \times \cos(30^\circ)}{9.81}}$$
+**中文：**
+使用周期公式：
+$$T = 2\pi \sqrt{\frac{L \cos \theta}{g}}$$
+$$T = 2\pi \sqrt{\frac{1.2 \times \cos 30^\circ}{9.81}}$$
+$$T = 2\pi \sqrt{\frac{1.2 \times 0.8660}{9.81}}$$
+$$T = 2\pi \sqrt{\frac{1.039}{9.81}}$$
+$$T = 2\pi \sqrt{0.1059}$$
+$$T = 2\pi \times 0.3255$$
+$$T = 2.04 \text{ s}$$
 
-$$T = 2\pi\sqrt{\frac{1.2 \times 0.8660}{9.81}} = 2\pi\sqrt{\frac{1.039}{9.81}}$$
-
-$$T = 2\pi\sqrt{0.1059} = 2\pi \times 0.3255 = 2.05 \text{ s}$$
+或者，使用 $v = 2\pi r / T$：
+$$T = \frac{2\pi r}{v} = \frac{2\pi \times 0.60}{1.84} = \frac{3.77}{1.84} = 2.05 \text{ s}$$
 
 ### Final Answer / 最终答案
-(a) Tension = 5.66 N
-(b) Linear speed = 1.84 m s⁻¹
-(c) Period = 2.05 s
+**Answer:** (a) $T = 5.66$ N | **答案：** (a) $T = 5.66$ N
+**Answer:** (b) $v = 1.84$ m s$^{-1}$ | **答案：** (b) $v = 1.84$ m s$^{-1}$
+**Answer:** (c) $T = 2.04$ s | **答案：** (c) $T = 2.04$ s
 
 ### Examiner Notes / 考官点评
 **English:**
-- Part (a) is straightforward using vertical equilibrium. Common mistake: thinking $T = mg$.
-- Part (b) can be solved using either $T\sin\theta = mv^2/r$ or $\tan\theta = v^2/(rg)$. Both methods are acceptable.
-- Part (c) can be solved using $T = 2\pi r/v$ or the derived formula $T = 2\pi\sqrt{h/g}$. The derived formula is quicker and shows understanding.
-- The period is independent of mass - a key insight for conical pendulums.
+- Common mistake: Using the string length $L$ as the radius $r$. Remember $r = L \sin \theta$.
+- Common mistake: Forgetting that the centripetal force is only the horizontal component of tension, not the full tension.
+- The period is independent of the mass of the bob. This is a common exam question.
+- Always check consistency: The two methods for period should give the same answer (within rounding).
 
-**中文:**
-- 部分(a)直接使用竖直平衡。常见错误：认为 $T = mg$。
-- 部分(b)可以使用 $T\sin\theta = mv^2/r$ 或 $\tan\theta = v^2/(rg)$ 求解。两种方法都可以接受。
-- 部分(c)可以使用 $T = 2\pi r/v$ 或推导公式 $T = 2\pi\sqrt{h/g}$ 求解。推导公式更快，并能显示理解程度。
-- 周期与质量无关——这是圆锥摆的一个关键见解。
+**中文：**
+- 常见错误：将绳子长度 $L$ 用作半径 $r$。记住 $r = L \sin \theta$。
+- 常见错误：忘记向心力只是张力的水平分量，而不是整个张力。
+- 周期与摆锤的质量无关。这是一个常见的考试问题。
+- 始终检查一致性：两种求周期的方法应给出相同的答案（在舍入范围内）。
+
+### Alternative Method / 替代方法
+**English:**
+For part (b), we can also use the relationship derived from dividing the force equations:
+$$\tan \theta = \frac{v^2}{rg}$$
+$$v = \sqrt{rg \tan \theta} = \sqrt{0.60 \times 9.81 \times \tan 30^\circ} = \sqrt{0.60 \times 9.81 \times 0.5774} = \sqrt{3.398} = 1.84 \text{ m s}^{-1}$$
+
+**中文：**
+对于部分 (b)，我们也可以使用从力方程相除推导出的关系：
+$$\tan \theta = \frac{v^2}{rg}$$
+$$v = \sqrt{rg \tan \theta} = \sqrt{0.60 \times 9.81 \times \tan 30^\circ} = \sqrt{0.60 \times 9.81 \times 0.5774} = \sqrt{3.398} = 1.84 \text{ m s}^{-1}$$
+
+---
 
 # 9. Past Paper Question Types / 历年真题题型
 
-| Question Type / 题型 | Frequency / 频率 | Difficulty / 难度 | Past Paper References / 真题索引 |
-|---|---|---|---|
-| Derivation of $a = v^2/r$ using velocity vectors | High / 高 | Medium / 中 | 📝 *待填入* |
-| Calculation of centripetal acceleration/force (direct substitution) | Very High / 非常高 | Easy / 易 | 📝 *待填入* |
-| Identifying source of centripetal force in different scenarios | High / 高 | Medium / 中 | 📝 *待填入* |
-| Banked track problems (ideal and with friction) | High / 高 | Hard / 难 | 📝 *待填入* |
-| Conical pendulum calculations | Medium / 中 | Medium-Hard / 中难 | 📝 *待填入* |
-| Vertical circular motion (tension at top/bottom) | Medium / 中 | Hard / 难 | 📝 *待填入* |
-| Multiple choice on angular/linear relationships | Very High / 非常高 | Easy-Medium / 易中 | 📝 *待填入* |
-| Graph interpretation ($a$ vs $r$, $F$ vs $v^2$) | Medium / 中 | Medium / 中 | 📝 *待填入* |
-| Practical: measuring centripetal force with whirling bung | Low-Medium / 低中 | Medium / 中 | 📝 *待填入* |
+**English:**
+The following table summarises the types of questions that appear in both CIE and Edexcel examinations for this topic. Specific past paper references will be added as the question bank is compiled.
 
-> 📝 **题库整理中 / Question Bank Under Construction:** 本表格中的真题索引（Past Paper References）正在整理中。我们将逐步添加CAIE 9702和Edexcel IAL的具体年份和题号。请定期查看更新。如需特定年份的真题，请参考官方试卷或联系您的老师。
+**中文：**
+下表总结了 CIE 和 Edexcel 考试中本主题出现的题型。具体试卷编号将在题库整理后填入。
+
+| Question Type / 题型 | Frequency / 频率 | Difficulty / 难度 | Past Paper References / 真题索引 |
+|----------------------|------------------|------------------|-------------------------------|
+| Calculation of centripetal acceleration/force / 计算向心加速度/力 | High | Medium | 📝 *待填入* |
+| Derivation of $a = v^2/r$ / 推导 $a = v^2/r$ | Medium | High | 📝 *待填入* |
+| Banked track problems / 倾斜轨道问题 | High | High | 📝 *待填入* |
+| Conical pendulum problems / 圆锥摆问题 | Medium | High | 📝 *待填入* |
+| Vertical circle problems / 竖直圆问题 | Medium | High | 📝 *待填入* |
+| Graph interpretation / 图表解读 | Low | Medium | 📝 *待填入* |
+| Practical design / 实验设计 | Low | High | 📝 *待填入* |
+
+> 📝 **题库整理中 / Question Bank Under Construction:** 具体试卷编号（如 9702/23/M/J/24 Q3）将在后续整理真题后填入上表。
 
 **Common Command Words / 常见指令词:**
-- **Define / 定义:** Give the precise meaning (e.g., "Define angular speed")
-- **Derive / 推导:** Show the steps to obtain an equation (e.g., "Derive $a = v^2/r$")
-- **Calculate / 计算:** Use given data to find a numerical answer
-- **Explain / 解释:** Give reasons or causes (e.g., "Explain why centripetal force does no work")
-- **State / 陈述:** Give a brief answer without explanation
-- **Sketch / 画草图:** Draw a graph or diagram showing key features
-- **Determine / 确定:** Find a value using given information
+
+| English | 中文 | Meaning / 含义 |
+|---------|------|----------------|
+| State | 陈述 | Give a brief answer without explanation. |
+| Define | 定义 | Give the precise meaning of a term. |
+| Explain | 解释 | Give reasons or causes for a phenomenon. |
+| Describe | 描述 | Give a detailed account of a process or diagram. |
+| Calculate | 计算 | Use mathematical operations to find a numerical answer. |
+| Determine | 确定 | Find a value using given data or a graph. |
+| Suggest | 建议 | Propose a possible explanation or method. |
+| Derive | 推导 | Show the steps to obtain a formula from first principles. |
+| Sketch | 草图 | Draw a graph or diagram showing the main features. |
+
+---
 
 # 10. Practical Skills Connections / 实验技能链接
 
-**English:** The topic of centripetal acceleration and force connects to practical work in several ways:
+**English:**
+This topic connects to practical work in both CIE and Edexcel specifications.
 
-1. **Whirling Bung Experiment (CAIE Paper 3/5, Edexcel Unit 3/6):**
-   - A rubber bung is whirled in a horizontal circle on a string
-   - The tension is provided by hanging masses
-   - Measure: radius $r$, time for $N$ revolutions, mass of bung $m$, hanging mass $M$
-   - Verify $F = mv^2/r$ by comparing calculated centripetal force with weight of hanging masses
-   - **Uncertainties:** Timing errors (±0.1 s for 20 revolutions → ±0.005 s per revolution), radius measurement (±0.5 cm), mass measurement (±0.1 g)
-   - **Graph:** Plot $F$ vs $v^2$ (should be straight line through origin with gradient $m/r$)
+**CIE Practical Connections:**
+- **Paper 3 (AS):** While centripetal force is an A2 topic, the practical skills of measuring time periods, using stopwatches, and analysing circular motion are developed at AS level through experiments like the "whirling bung" or "conical pendulum."
+- **Paper 5 (A2):** Students may be asked to design an experiment to investigate the relationship between centripetal force and radius, speed, or mass. This could involve:
+  - Using a variable speed motor to rotate a mass on a string.
+  - Measuring the radius of the circular path using a ruler or marker.
+  - Measuring the period using a light gate or stopwatch.
+  - Varying the mass, radius, or speed systematically.
+  - Plotting graphs (e.g., $F$ against $v^2$, $F$ against $1/r$) to verify the relationship.
+  - Calculating uncertainties in measurements of $r$, $T$, and $m$.
+  - Evaluating the effectiveness of the experimental setup (e.g., air resistance, friction, string elasticity).
 
-2. **Centripetal Force Apparatus:**
-   - Rotating platform with spring balance
-   - Measure force required for different speeds and radii
-   - Verify $F \propto v^2$ and $F \propto 1/r$
+**Edexcel Practical Connections:**
+- **Unit 3 (AS):** Practical skills for measuring time periods and using data loggers.
+- **Unit 6 (A2):** Students may be required to:
+  - Investigate the factors affecting centripetal force using a rotating platform or "whirling bung."
+  - Use a force sensor to measure tension in the string.
+  - Use a motion sensor or video analysis to determine speed.
+  - Analyse the conical pendulum to determine $g$.
+  - Evaluate the uncertainties in the experiment.
 
-3. **Banked Track Simulation:**
-   - Use a marble on a curved track
-   - Measure speed and radius to verify $\tan\theta = v^2/(rg)$
+**Key Measurements / 关键测量:**
+- **Radius ($r$):** Measure using a ruler. Uncertainty: ±1 mm.
+- **Period ($T$):** Measure time for 10 or 20 revolutions using a stopwatch. Uncertainty: ±0.1 s for total time, ±0.01 s per revolution.
+- **Mass ($m$):** Measure using a balance. Uncertainty: ±0.1 g.
+- **Speed ($v$):** Calculate from $v = 2\pi r / T$. Uncertainty propagated from $r$ and $T$.
+- **Force ($F$):** Measure using a force sensor or spring balance. Uncertainty: ±0.01 N.
 
-4. **Key Measurements and Uncertainties / 关键测量与不确定度:**
-   - **Time period:** Use a stopwatch to measure time for multiple revolutions to reduce percentage uncertainty
-   - **Radius:** Measure from centre of circle to centre of mass of bung
-   - **Speed:** Calculate from $v = 2\pi r/T$ (indirect measurement)
-   - **Force:** For whirling bung, $F = Mg$ (weight of hanging masses)
+**Common Experimental Errors / 常见实验误差:**
+- **English:** Air resistance causes the speed to decrease over time. Use a motor to maintain constant speed.
+- **English:** Friction in the pulley or bearing affects the tension. Use a smooth bearing.
+- **English:** The string may stretch, changing the radius. Use an inextensible string.
+- **English:** Parallax error when measuring the radius. Use a marker on the string.
+- **中文：** 空气阻力导致速度随时间减小。使用电机保持恒定速度。
+- **中文：** 滑轮或轴承中的摩擦力影响张力。使用光滑轴承。
+- **中文：** 绳子可能拉伸，改变半径。使用不可伸长的绳子。
+- **中文：** 测量半径时的视差误差。在绳子上使用标记。
 
-**中文:** 向心加速度和力的主题在多个方面与实验工作相关：
+> 📋 **CIE Only:** CIE Paper 5 often asks students to design an experiment to investigate the relationship between centripetal force and one variable (e.g., radius). Students must include a labelled diagram, a list of equipment, a step-by-step procedure, a table for data, and an analysis method (graph plotting).
+>
+> 📋 **Edexcel Only:** Edexcel Unit 6 may include a practical question on the conical pendulum, asking students to determine the acceleration due to gravity $g$ from measurements of $L$, $\theta$, and $T$.
 
-1. **旋转塞子实验（CAIE Paper 3/5, Edexcel Unit 3/6）：**
-   - 橡胶塞子在绳子上做水平圆周运动
-   - 张力由悬挂的质量提供
-   - 测量：半径 $r$，N次旋转的时间，塞子质量 $m$，悬挂质量 $M$
-   - 通过比较计算出的向心力与悬挂质量的重量来验证 $F = mv^2/r$
-   - **不确定度：** 计时误差（20次旋转±0.1秒 → 每次旋转±0.005秒），半径测量（±0.5 cm），质量测量（±0.1 g）
-   - **图表：** 绘制 $F$ vs $v^2$（应为通过原点的直线，斜率为 $m/r$）
+**中文：**
+本主题与 CIE 和 Edexcel 考试局中的实验工作相关联。
 
-2. **向心力装置：**
-   - 带弹簧秤的旋转平台
-   - 测量不同速度和半径所需的力
-   - 验证 $F \propto v^2$ 和 $F \propto 1/r$
+**CIE 实验联系：**
+- **试卷 3（AS）：** 虽然向心力是 A2 主题，但测量周期、使用秒表和分析圆周运动的实验技能在 AS 阶段通过"旋转塞子"或"圆锥摆"等实验得到培养。
+- **试卷 5（A2）：** 学生可能被要求设计一个实验来研究向心力与半径、速度或质量之间的关系。这可能涉及：
+  - 使用变速电机旋转绳子上的质量。
+  - 使用尺子或标记测量圆周路径的半径。
+  - 使用光门或秒表测量周期。
+  - 系统地改变质量、半径或速度。
+  - 绘制图表（例如，$F$ 对 $v^2$，$F$ 对 $1/r$）以验证关系。
+  - 计算 $r$、$T$ 和 $m$ 测量的不确定度。
+  - 评估实验装置的有效性（例如，空气阻力、摩擦力、绳子弹性）。
 
-3. **倾斜轨道模拟：**
-   - 在弯曲轨道上使用弹珠
-   - 测量速度和半径以验证 $\tan\theta = v^2/(rg)$
+**Edexcel 实验联系：**
+- **单元 3（AS）：** 测量周期和使用数据记录器的实验技能。
+- **单元 6（A2）：** 学生可能需要：
+  - 使用旋转平台或"旋转塞子"研究影响向心力的因素。
+  - 使用力传感器测量绳子中的张力。
+  - 使用运动传感器或视频分析确定速度。
+  - 分析圆锥摆以确定 $g$。
+  - 评估实验中的不确定度。
 
-4. **关键测量与不确定度：**
-   - **周期：** 使用秒表测量多次旋转的时间，以减少百分比不确定度
-   - **半径：** 从圆心测量到塞子质心
-   - **速度：** 从 $v = 2\pi r/T$ 计算（间接测量）
-   - **力：** 对于旋转塞子，$F = Mg$（悬挂质量的重量）
+**关键测量：**
+- **半径 ($r$)：** 使用尺子测量。不确定度：±1 mm。
+- **周期 ($T$)：** 使用秒表测量 10 或 20 次旋转的时间。不确定度：总时间 ±0.1 s，每次旋转 ±0.01 s。
+- **质量 ($m$)：** 使用天平测量。不确定度：±0.1 g。
+- **速度 ($v$)：** 从 $v = 2\pi r / T$ 计算。不确定度从 $r$ 和 $T$ 传播。
+- **力 ($F$)：** 使用力传感器或弹簧秤测量。不确定度：±0.01 N。
 
-> 📋 **CIE Only:** CAIE Paper 3 (Practical) may require plotting $T^2$ vs $m$ or $v^2$ vs $F$ and calculating gradient. Paper 5 (Planning) may ask for experimental design to verify centripetal force equations.
-> 📋 **Edexcel Only:** Edexcel Unit 3/6 may include questions on the whirling bung experiment with error analysis and improvements. Core Practical 13 (Edexcel) involves investigating circular motion.
+**常见实验误差：**
+- **English:** 空气阻力导致速度随时间减小。使用电机保持恒定速度。
+- **English:** 滑轮或轴承中的摩擦力影响张力。使用光滑轴承。
+- **English:** 绳子可能拉伸，改变半径。使用不可伸长的绳子。
+- **English:** 测量半径时的视差误差。在绳子上使用标记。
+
+> 📋 **CIE 专属：** CIE 试卷 5 经常要求学生设计一个实验来研究向心力与一个变量（例如半径）之间的关系。学生必须包括标注的图表、设备清单、分步程序、数据表格和分析方法（图表绘制）。
+>
+> 📋 **Edexcel 专属：** Edexcel 单元 6 可能包括一个关于圆锥摆的实验问题，要求学生从 $L$、$\theta$ 和 $T$ 的测量中确定重力加速度 $g$。
+
+---
 
 # 11. Concept Map / 概念图谱
 
+**English:**
+The following concept map shows the relationships between this topic (Centripetal Acceleration and Force), its prerequisites, related topics, and sub-topics.
+
+**中文：**
+以下概念图显示了本主题（向心加速度与向心力）、其先决条件、相关主题和子主题之间的关系。
+
 ```mermaid
 graph TD
-    A[Circular Motion / 圆周运动] --> B[Angular Measures / 角度测量]
-    A --> C[Centripetal Acceleration / 向心加速度]
-    A --> D[Centripetal Force / 向心力]
-    
-    B --> B1[Angular Displacement θ / 角位移]
-    B --> B2[Angular Speed ω / 角速度]
-    B --> B3[Period T & Frequency f / 周期与频率]
-    
-    C --> C1[a = v²/r = ω²r]
-    C --> C2[Derivation from velocity vectors / 从速度矢量推导]
-    C --> C3[Direction: towards centre / 方向：指向圆心]
-    
-    D --> D1[F = mv²/r = mω²r]
-    D --> D2[Source identification / 来源识别]
-    D --> D3[Applications / 应用]
-    
-    D2 --> D2a[Tension / 张力]
-    D2 --> D2b[Friction / 摩擦力]
-    D2 --> D2c[Gravity / 重力]
-    D2 --> D2d[Normal Reaction / 法向反作用力]
-    
-    D3 --> D3a[Banked Tracks / 倾斜轨道]
-    D3 --> D3b[Conical Pendulum / 圆锥摆]
-    D3 --> D3c[Vertical Circles / 竖直圆]
-    D3 --> D3d[Orbits / 轨道]
-    
-    D3a --> D3a1[Ideal: tanθ = v²/rg]
-    D3a --> D3a2[With friction]
-    
-    D3b --> D3b1[T = 2π√(h/g)]
-    D3b --> D3b2[Independent of mass]
-    
+    %% Central Topic
+    CAF[Centripetal Acceleration and Force] --> CA[Centripetal Acceleration Formula]
+    CAF --> CF[Centripetal Force]
+    CAF --> BTCP[Banked Tracks and Conical Pendulum]
+
     %% Prerequisites
-    E[Newton's Laws of Motion / 牛顿运动定律] --> D
-    F[Kinematics / 运动学] --> C
-    
+    AM[Angular Measures] --> CAF
+    NLM[Newton's Laws of Motion] --> CAF
+
     %% Related Topics
-    D3d --> G[Gravitational Force and Field / 引力与场]
-    G --> H[Circular Orbits / 圆形轨道]
-    
+    GFF[Gravitational Force and Field] --> CO[Circular Orbits]
+    CAF --> CO
+    CAF --> GFF
+
+    %% Sub-topics details
+    CA --> a_eq[a = v²/r = ω²r]
+    CF --> F_eq[F = mv²/r = mω²r]
+    BTCP --> BT[Banked Tracks]
+    BTCP --> CP[Conical Pendulum]
+    BT --> tan_eq[tanθ = v²/rg]
+    CP --> T_eq[T = 2π√(Lcosθ/g)]
+
+    %% Connections
+    AM --> radian[Radian Definition]
+    AM --> omega[Angular Speed ω]
+    NLM --> F_ma[F = ma]
+    GFF --> gravity[Gravity as Centripetal Force]
+
     %% Styling
-    classDef core fill:#f9f,stroke:#333,stroke-width:2px
-    classDef formula fill:#bbf,stroke:#333,stroke-width:1px
-    classDef app fill:#bfb,stroke:#333,stroke-width:1px
-    class A,B,C,D core
-    class C1,D1 formula
-    class D3a,D3b,D3c,D3d app
-```
+    classDef central fill:#f9f,stroke:#333,stroke-width:4px;
+    classDef sub fill:#bbf,stroke:#333,stroke-width:2px;
+    classDef pre fill:#bfb,stroke:#333,stroke-width:2px;
+    classDef related fill:#fbb,stroke:#333,stroke-width:2px;
 
-# 12. Examiner Insights / 考官洞察
-
-**English:**
-
-**Most Tested Ideas (CAIE 9702):**
-1. **Derivation of $a = v^2/r$** — Appears in almost every exam cycle. Candidates must draw velocity vectors and show $\Delta v$ pointing towards centre.
-2. **Identifying centripetal force source** — Common in multiple choice. E.g., "What provides the centripetal force for a car on a banked track?"
-3. **Banked track calculations** — Both ideal (no friction) and with friction. The friction direction is a common trap.
-4. **Conical pendulum** — Period formula $T = 2\pi\sqrt{h/g}$ is frequently tested.
-5. **Vertical circular motion** — Finding tension at top and bottom of a vertical circle.
-
-**Most Tested Ideas (Edexcel IAL):**
-1. **Derivation using calculus** — Edexcel may require differentiation of position vectors $r = (r\cos\omega t, r\sin\omega t)$.
-2. **Banked tracks with friction** — More emphasis on maximum/minimum speeds.
-3. **Conical pendulum** — Often combined with energy considerations.
-4. **Practical: whirling bung** — Error analysis and improvements.
-
-**Mark Scheme Wording / 评分方案措辞:**
-- "The centripetal force is the **resultant** force towards the centre" — NOT "a force towards the centre"
-- "The acceleration is **directed towards** the centre" — NOT "the acceleration is towards the centre"
-- For derivations: "Correct vector diagram" + "$\Delta v = v\Delta\theta$" + "$a = \Delta v/\Delta t = v\omega = v^2/r$"
-
-**Common Lost Marks / 常见失分点:**
-1. Forgetting to state direction of centripetal acceleration/force
-2. Using $v = \omega r$ incorrectly (mixing $v$ and $\omega$)
-3. Not resolving forces correctly on banked tracks
-4. Confusing centripetal force with centrifugal force
-5. Using $F = mv^2/r$ when the motion is not uniform circular motion
-6. Not converting degrees to radians when required
-
-**High-Scoring Structures / 高分答题结构:**
-- **Derivation questions:** Draw diagram → Label vectors → Show $\Delta v$ → Write $\Delta v = v\Delta\theta$ → Substitute $\Delta\theta = \omega\Delta t$ → Get $a = v\omega = v^2/r$
-- **Calculation questions:** State formula → Substitute values → Calculate → State answer with units
-- **Explanation questions:** Identify force → State direction → Write equation → Explain physical meaning
-
-**中文:**
-
-**最常考的概念（CAIE 9702）：**
-1. **推导 $a = v^2/r$** — 几乎每个考试周期都会出现。考生必须画出速度矢量并显示 $\Delta v$ 指向圆心。
-2. **识别向心力来源** — 常见于选择题。例如："什么为倾斜轨道上的汽车提供向心力？"
-3. **倾斜轨道计算** — 包括理想情况（无摩擦）和有摩擦的情况。摩擦力方向是常见的陷阱。
-4. **圆锥摆** — 周期公式 $T = 2\pi\sqrt{h/g}$ 经常被考查。
-5. **竖直圆周运动** — 求竖直圆顶部和底部的张力。
-
-**最常考的概念（Edexcel IAL）：**
-1. **使用微积分推导** — Edexcel 可能要求对位置矢量 $r = (r\cos\omega t, r\sin\omega t)$ 进行微分。
-2. **有摩擦的倾斜轨道** — 更强调最大/最小速度。
-3. **圆锥摆** — 常与能量考虑结合。
-4. **实验：旋转塞子** — 误差分析和改进。
-
-**评分方案措辞：**
-- "向心力是**指向圆心的合力**" — 不是"指向圆心的力"
-- "加速度**方向指向**圆心" — 不是"加速度指向圆心"
-- 对于推导："正确的矢量图" + "$\Delta v = v\Delta\theta$" + "$a = \Delta v/\Delta t = v\omega = v^2/r$"
-
-**常见失分点：**
-1. 忘记说明向心加速度/力的方向
-2. 错误使用 $v = \omega r$（混淆 $v$ 和 $\omega$）
-3. 在倾斜轨道上未正确分解力
-4. 混淆向心力与离心力
-5. 在非匀速圆周运动中使用 $F = mv^2/r$
-6. 需要时未将角度转换为弧度
-
-**高分答题结构：**
-- **推导题：** 画图 → 标注矢量 → 显示 $\Delta v$ → 写出 $\Delta v = v\Delta\theta$ → 代入 $\Delta\theta = \omega\Delta t$ → 得到 $a = v\omega = v^2/r$
-- **计算题：** 写出公式 → 代入数值 → 计算 → 写出带单位的答案
-- **解释题：** 识别力 → 说明方向 → 写出方程 → 解释物理意义
-
-# 13. Quick Revision Sheet / 速查表
-
-| Category / 类别 | Key Points / 要点 |
-|---|---|
-| **Key Definitions / 关键定义** | **Angular speed:** $\omega = \Delta\theta/\Delta t$ (rad s⁻¹) / 角速度 |
-| | **Centripetal acceleration:** Acceleration towards centre, magnitude $a = v^2/r$ / 向心加速度 |
-| | **Centripetal force:** Resultant force towards centre, $F = mv^2/r$ / 向心力 |
-| **Essential Equations / 核心公式** | $v = \omega r$ |
-| | $a = v^2/r = \omega^2 r$ |
-| | $F = mv^2/r = m\omega^2 r$ |
-| | $\tan\theta = v^2/(rg)$ (banked track, ideal) / 倾斜轨道（理想） |
-| | $T = 2\pi\sqrt{h/g}$ (conical pendulum) / 圆锥摆周期 |
-| **Key Relationships / 关键关系** | $a \propto v^2$ (constant $r$) / 加速度与速度平方成正比 |
-| | $a \propto 1/r$ (constant $v$) / 加速度与半径成反比 |
-| | $F \propto v^2$ (constant $r$) / 向心力与速度平方成正比 |
-| **Common Force Sources / 常见力来源** | **Car on flat road:** Friction / 平路汽车：摩擦力 |
-| | **Satellite:** Gravity / 卫星：重力 |
-| | **Object on string:** Tension / 绳子上的物体：张力 |
-| | **Car on banked track:** Normal reaction component / 倾斜轨道汽车：法向反作用力分量 |
-| | **Conical pendulum:** Tension horizontal component / 圆锥摆：张力水平分量 |
-| **Key Directions / 关键方向** | Velocity: Tangent to circle / 速度：与圆相切 |
-| | Acceleration: Towards centre / 加速度：指向圆心 |
-| | Force: Towards centre / 力：指向圆心 |
-| **Common Mistakes / 常见错误** | Thinking constant speed = zero acceleration / 认为恒定速度 = 零加速度 |
-| | Calling centripetal force a "new" force / 称向心力为"新"力 |
-| | Using $N = mg$ on banked tracks / 在倾斜轨道上使用 $N = mg$ |
-| | Confusing $v$ and $\omega$ / 混淆 $v$ 和 $\omega$ |
-| **Exam Tips / 考试提示** | Always draw free-body diagram / 始终画受力分析图 |
-| | Identify ALL forces, then find resultant towards centre / 识别所有力，然后求指向圆心的合力 |
-| | For banked tracks, resolve horizontally and vertically / 对于倾斜轨道，水平和竖直分解 |
-| | For vertical circles, use energy conservation for speed / 对于竖直圆，使用能量守恒求速度 |
-| **Practical / 实验** | Whirling bung: $F = Mg$ vs $mv^2/r$ / 旋转塞子 |
-| | Measure $T$ for multiple revolutions / 测量多次旋转的周期 |
-| | Plot $F$ vs $v^2$: straight line through origin / 绘制 $F$ vs $v^2$：通过原点的直线 |
-
-# 14. Metadata / 元数据
-
-```yaml
-title:
-  en: "Centripetal Acceleration and Force"
-  cn: "向心加速度与向心力"
-subject: Physics
-syllabus: [CAIE 9702, Edexcel IAL]
-cie_ref: "14.2 (a-d)"
-edexcel_ref: "WPH14 U4: 5.5-5.9"
-level: A2
-node_type: topic_hub
-difficulty: advanced
-prerequisites:
-  - "[[Angular Measures]]"
-  - "[[Newton's Laws of Motion]]"
-related_topics:
-  - "[[Gravitational Force and Field]]"
-  - "[[Circular Orbits]]"
-sub_topics:
-  - "[[Centripetal Acceleration Formula]]"
-  - "[[Centripetal Force]]"
-  - "[[Banked Tracks and Conical Pendulum]]"
-formula_count: 6
-diagram_count: 10
-exam_frequency: very_high
-language: bilingual_en_cn
-last_updated: 2024-01
+    class CAF central;
+    class CA,CF,BTCP sub;
+    class AM,NLM pre;
+    class GFF,CO related;
 ```
 
 ---
-*This note is part of the Obsidian Physics Knowledge Graph. Link to parent: [[04-Circular-Motion]]*
+
+# 12. Quick Revision Sheet / 速查表
+
+**English:**
+This one-page summary provides all key points for quick revision before exams.
+
+**中文：**
+此一页摘要提供了考试前快速复习的所有要点。
+
+| Category / 类别 | Key Points / 要点 |
+|----------------|------------------|
+| **Definitions / 定义** | **Centripetal Acceleration:** Acceleration towards centre of circle, changes direction only. $a = v^2/r = \omega^2 r$. <br> **Centripetal Force:** Net force towards centre. $F = mv^2/r = m\omega^2 r$. Not a new force. <br> **Angular Speed:** $\omega = \Delta \theta / \Delta t = 2\pi/T = 2\pi f$. <br> **Radian:** Angle when arc length = radius. $2\pi$ rad = $360^\circ$. |
+| **Equations / 公式** | $a = \frac{v^2}{r} = \omega^2 r$ <br> $F = \frac{mv^2}{r} = m\omega^2 r$ <br> $v = \omega r$ <br> $\omega = \frac{2\pi}{T} = 2\pi f$ <br> **Banked Track (design speed):** $\tan \theta = \frac{v^2}{rg}$ <br> **Conical Pendulum:** $T = 2\pi \sqrt{\frac{L \cos \theta}{g}}$ |
+| **Graphs / 图表** | $a$ vs $v$: Parabola ($a \propto v^2$). <br> $a$ vs $v^2$: Straight line through origin, gradient $= 1/r$. <br> $F$ vs $r$: Inverse curve ($F \propto 1/r$). <br> $F$ vs $1/r$: Straight line through origin, gradient $= mv^2$. <br> $\omega$ vs $T$: Inverse curve ($\omega \propto 1/T$). |
+| **Key Facts / 关键事实** | 1. Centripetal force is always perpendicular to velocity. <br> 2. Centripetal force does no work (no change in kinetic energy). <br> 3. For banked tracks, design speed is independent of mass. <br> 4. For conical pendulum, period is independent of mass. <br> 5. In vertical circles, speed is not constant; use energy conservation. |
+| **Exam Reminders / 考试提醒** | 1. Always identify the source of centripetal force. <br> 2. Draw free-body diagrams for banked tracks and conical pendulums. <br> 3. Resolve forces into horizontal (centripetal) and vertical (equilibrium) components. <br> 4. Check units: $v$ in m s$^{-1}$, $r$ in m, $\omega$ in rad s$^{-1}$. <br> 5. For derivation of $a = v^2/r$, use vector diagram with $\Delta \vec{v}$. <br> 6. Remember: $F = ma$ applies to circular motion too! |

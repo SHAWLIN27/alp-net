@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-Mechanics/01-Kinematics/Displacement, Velocity and Acceleration/Displacement, Velocity and Acceleration.md",
+                "file": "03-Electricity/01-DC-Circuits/Kirchhoff's Laws/Kirchhoff's Laws.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Displacement, Velocity and Acceleration"
+              "title": "Kirchhoff's Laws"
             }
           }
         ]
@@ -160,6 +160,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:新建数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -170,8 +171,11 @@
   },
   "active": "aaa18e46bddd0967",
   "lastOpenFiles": [
-    "01-Mechanics/01-Kinematics/Displacement, Velocity and Acceleration/Speed and Velocity.md",
+    "03-Electricity/01-DC-Circuits/Potential Difference and EMF/Potential Difference (PD).md",
+    "03-Electricity/01-DC-Circuits/Potential Difference and EMF/Electromotive Force (EMF).md",
+    "01-Mechanics/01-Kinematics/Equations of Motion (SUVAT)/The Five SUVAT Equations.md",
     "01-Mechanics/01-Kinematics/Displacement, Velocity and Acceleration/Displacement, Velocity and Acceleration.md",
+    "01-Mechanics/01-Kinematics/Displacement, Velocity and Acceleration/Speed and Velocity.md",
     "01-Mechanics/03-Work-Energy-Power/Kinetic Energy and Potential Energy/Elastic Potential Energy.md",
     "01-Mechanics/06-Oscillations/Simple Harmonic Motion/Conditions for SHM.md",
     "01-Mechanics/06-Oscillations/Damped and Forced Oscillations - Resonance/Damped and Forced Oscillations - Resonance.md",
@@ -193,9 +197,6 @@
     "01-Mechanics/06-Oscillations/Damped and Forced Oscillations - Resonance/Light, Critical and Heavy Damping.md",
     "01-Mechanics/06-Oscillations/Simple Harmonic Motion/The Simple Pendulum.md",
     "01-Mechanics/06-Oscillations/Damped and Forced Oscillations - Resonance/Forced Oscillations.md",
-    "01-Mechanics/01-Kinematics/Motion Graphs/Velocity-Time Graphs.md",
-    "01-Mechanics/01-Kinematics/Motion Graphs/Motion Graphs.md",
-    "01-Mechanics/01-Kinematics/Motion Graphs/Interpreting Gradient and Area.md",
     "01-Mechanics/06-Oscillations/Damped and Forced Oscillations - Resonance",
     "01-Mechanics/06-Oscillations/Damped and Forced Oscillations / Resonance",
     "01-Mechanics/06-Oscillations/Damped and Forced Oscillations ",

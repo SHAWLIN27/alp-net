@@ -17,6 +17,7 @@ interface GraphState {
   rightPanelOpen: boolean;
   isLoading: boolean;
   focusNodeId: string | null;   // external trigger for 3D camera focus
+  graphCommand: { action: 'reset' | 'center' | 'fit'; timestamp: number } | null;
 
   // Actions
   setGraphData: (nodes: GraphNode[], edges: GraphEdge[]) => void;
@@ -27,6 +28,7 @@ interface GraphState {
   toggleDomain: (domain: string) => void;
   setRightPanelOpen: (open: boolean) => void;
   setLoading: (loading: boolean) => void;
+  triggerGraphCommand: (action: 'reset' | 'center' | 'fit') => void;
   computeDomainStats: () => void;
   getFilteredGraph: () => { nodes: GraphNode[]; edges: GraphEdge[] };
 }
@@ -43,6 +45,7 @@ export const useGraphStore = create<GraphState>((set, get) => ({
   rightPanelOpen: false,
   isLoading: true,
   focusNodeId: null,
+  graphCommand: null,
 
   setGraphData: (nodes, edges) => {
     set({ nodes, edges });
@@ -67,6 +70,9 @@ export const useGraphStore = create<GraphState>((set, get) => ({
   setRightPanelOpen: (open) => set({ rightPanelOpen: open }),
 
   setLoading: (loading) => set({ isLoading: loading }),
+
+  triggerGraphCommand: (action) =>
+    set({ graphCommand: { action, timestamp: Date.now() } }),
 
   computeDomainStats: () => {
     const { nodes } = get();

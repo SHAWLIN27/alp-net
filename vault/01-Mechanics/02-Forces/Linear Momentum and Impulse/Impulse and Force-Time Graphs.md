@@ -1,308 +1,412 @@
 # 1. Overview / 概述
 
 **English:**
-Impulse and Force-Time Graphs form a crucial bridge between [[Newton's Laws of Motion]] and [[Linear Momentum and Impulse]]. This sub-topic explores how the **impulse** delivered to an object relates to the **area under a force-time graph**, providing a powerful graphical method for analysing collisions and impacts. Understanding this connection allows physicists to calculate changes in momentum without needing to know the exact details of how forces vary during an interaction. This is particularly valuable in real-world scenarios like car crashes, sports impacts, and rocket propulsion, where forces often change rapidly over short time intervals. The concept directly supports the [[Impulse-Momentum Theorem]] and lays the groundwork for understanding [[Conservation of Momentum]] in more complex systems.
+This sub-topic explores the concept of **impulse** and its graphical representation through **force-time graphs**. Impulse is defined as the product of force and the time interval over which it acts, and it is directly linked to the change in momentum of an object via the [[Impulse-Momentum Theorem]]. Understanding force-time graphs is crucial because they allow us to visualize and calculate impulse, especially when forces are not constant (e.g., in collisions, impacts, or sports). This sub-topic builds directly on [[Newton's Laws of Motion]] and provides the foundation for analyzing real-world scenarios where forces vary with time, such as car crashes, ball kicks, and hammer strikes. It is a key component of the broader [[Linear Momentum and Impulse]] topic.
 
 **中文:**
-冲量和力-时间图构成了[[牛顿运动定律]]与[[线性动量和冲量]]之间的重要桥梁。本子知识点探讨了施加在物体上的**冲量**如何与**力-时间图下的面积**相关联，为分析碰撞和冲击提供了一种强大的图形方法。理解这种联系使物理学家能够计算动量变化，而无需知道相互作用过程中力的具体变化细节。这在现实场景中尤其有价值，例如车祸、体育碰撞和火箭推进，在这些场景中，力通常在短时间内迅速变化。这个概念直接支持[[冲量-动量定理]]，并为理解更复杂系统中的[[动量守恒]]奠定了基础。
+本子知识点探讨了**冲量**的概念及其通过**力-时间图像**的图形表示。冲量定义为力与其作用时间间隔的乘积，并且通过[[冲量-动量定理]]直接与物体的动量变化相关联。理解力-时间图像至关重要，因为它们使我们能够可视化和计算冲量，特别是在力不是恒定的情况下（例如，在碰撞、冲击或体育运动中）。本子知识点直接建立在[[牛顿运动定律]]之上，并为分析力随时间变化的现实世界场景（如车祸、踢球和锤击）提供了基础。它是更广泛的[[线性动量与冲量]]主题的关键组成部分。
 
 ---
 
-# 2. Core Definition / 核心定义
+# 2. Syllabus Learning Objectives / 考纲学习目标
 
-| Term (EN/CN) | Definition (EN) | Definition (CN) |
-| ------------ | --------------- | --------------- |
-| **Impulse** / 冲量 | The product of the average force acting on an object and the time for which it acts. It is equal to the change in momentum of the object. | 作用在物体上的平均力与其作用时间的乘积。它等于物体动量的变化量。 |
-| **Force-Time Graph** / 力-时间图 | A graph showing how the force acting on an object varies with time during an interaction. | 显示相互作用过程中作用在物体上的力随时间变化的图表。 |
-| **Area Under F-t Graph** / F-t图下的面积 | The area between the force-time curve and the time axis, which represents the impulse delivered to the object. | 力-时间曲线与时间轴之间的面积，表示传递给物体的冲量。 |
-| **Average Force** / 平均力 | The constant force that would deliver the same impulse over the same time interval as the actual varying force. | 在相同时间间隔内传递与实际变化力相同冲量的恒定力。 |
-| **Impact Time** / 冲击时间 | The duration over which a collision or interaction occurs, typically very short for hard objects. | 碰撞或相互作用发生的持续时间，对于硬物体通常非常短。 |
-| **Impulsive Force** / 冲击力 | A large force acting over a very short time interval, such as during a collision. | 在非常短的时间间隔内作用的大力，例如碰撞过程中。 |
+| CAIE 9702 | Edexcel IAL |
+|-----------|-------------|
+| 3.2(f): Define impulse as force × time for a constant force, or as the area under a force-time graph. | 2.11: Define impulse. |
+| 3.2(g): Recall and use the equation impulse = change in momentum. | 2.12: Use the equation $F \Delta t = \Delta p$. |
+| 3.2(h): Interpret and use force-time graphs, including calculating the area under the graph to find the impulse. | 2.13: Interpret force-time graphs. |
+| - | 2.14: Calculate impulse from the area under a force-time graph. |
+
+**Examiner Expectations / 考官期望:**
+- **CAIE:** Students must be able to define impulse for both constant and varying forces. They must be able to calculate the area under a force-time graph (using counting squares or geometric shapes) and relate it to the change in momentum. Questions often involve interpreting graphs from collisions or explosions.
+- **Edexcel:** Students must be able to define impulse, use the impulse-momentum equation, and interpret force-time graphs. They are expected to calculate impulse from the area under the graph, often in the context of sports or vehicle safety.
+
+**中文:**
+- **CAIE:** 学生必须能够定义恒定力和变力情况下的冲量。他们必须能够计算力-时间图像下的面积（使用数方格或几何形状）并将其与动量变化联系起来。题目通常涉及解释来自碰撞或爆炸的图像。
+- **Edexcel:** 学生必须能够定义冲量，使用冲量-动量方程，并解释力-时间图像。他们需要从图像下的面积计算冲量，通常是在体育或车辆安全的背景下。
 
 ---
 
-# 3. Key Concepts / 关键概念
+# 3. Core Definitions / 核心定义
 
+| Term (EN/CN) | Definition (EN) | Definition (CN) | Common Mistakes / 常见错误 |
+|--------------|-----------------|-----------------|---------------------------|
+| **Impulse** / 冲量 | The product of the force acting on an object and the time for which it acts. For a constant force, $I = F \Delta t$. For a varying force, it is the area under a force-time graph. | 作用在物体上的力与其作用时间的乘积。对于恒力，$I = F \Delta t$。对于变力，它是力-时间图像下的面积。 | Confusing impulse with momentum. Impulse is the *change* in momentum, not the momentum itself. / 将冲量与动量混淆。冲量是动量的*变化*，而不是动量本身。 |
+| **Force-Time Graph** / 力-时间图像 | A graph with force on the y-axis and time on the x-axis, used to represent how a force varies over time. | 以力为y轴、时间为x轴的图像，用于表示力随时间的变化情况。 | Forgetting that the area under the graph represents impulse, not the gradient. / 忘记图像下的面积代表冲量，而不是斜率。 |
+| **Average Force** / 平均力 | A constant force that would produce the same impulse as the actual varying force over the same time interval. | 在相同的时间间隔内，能产生与实际变力相同冲量的恒定力。 | Using the average of the maximum and minimum forces incorrectly. The average force is found by dividing the impulse by the time interval. / 错误地使用最大力和最小力的平均值。平均力是通过将冲量除以时间间隔得到的。 |
+| **Contact Time** / 接触时间 | The duration over which two objects are in contact during a collision or interaction. | 在碰撞或相互作用过程中，两个物体接触的持续时间。 | Assuming contact time is always very small; it can vary significantly (e.g., a bouncy ball vs. a lump of clay). / 假设接触时间总是非常小；它可能有很大变化（例如，弹力球与一块黏土）。 |
+
+---
+
+# 4. Key Concepts Explained / 关键概念详解
+
+## 4.1 Impulse from a Varying Force / 变力产生的冲量
+
+### Explanation / 解释
+**English:** In real-world collisions, the force is rarely constant. For example, when a tennis racket hits a ball, the force starts at zero, increases to a maximum, and then decreases back to zero. To find the impulse from such a varying force, we cannot simply use $I = F \Delta t$ because $F$ changes. Instead, we use a [[Force-Time Graph]]. The impulse is equal to the **area under the force-time graph**. This is derived from the fact that impulse is the integral of force with respect to time: $I = \int F \, dt$. For A-Level purposes, this area is calculated by counting squares or using geometric shapes (triangles, rectangles, trapeziums).
+
+**中文:** 在现实世界的碰撞中，力很少是恒定的。例如，当网球拍击球时，力从零开始，增加到最大值，然后减小回零。要找到这种变力产生的冲量，我们不能简单地使用 $I = F \Delta t$，因为 $F$ 在变化。相反，我们使用[[力-时间图像]]。冲量等于**力-时间图像下的面积**。这是从冲量是力对时间的积分这一事实推导出来的：$I = \int F \, dt$。对于A-Level考试，这个面积是通过数方格或使用几何形状（三角形、矩形、梯形）来计算的。
+
+### Physical Meaning / 物理意义
+**English:** The area under the force-time graph physically represents the total "push" or "kick" delivered to an object over the entire duration of the interaction. A larger area means a greater change in momentum for the object.
+
+**中文:** 力-时间图像下的面积在物理上代表了在整个相互作用过程中传递给物体的总“推力”或“冲击力”。面积越大，意味着物体的动量变化越大。
+
+### Common Misconceptions / 常见误区
+- **Misconception:** The peak force is the most important factor in determining the impulse.
+  **Correction:** The impulse depends on the *entire area* under the graph, not just the peak force. A large force acting for a very short time can produce the same impulse as a smaller force acting for a longer time.
+- **Misconception:** The gradient of the force-time graph represents impulse.
+  **Correction:** The gradient represents the rate of change of force with respect to time ($dF/dt$), which is not a standard quantity in this context. The *area* represents impulse.
+- **Misconception:** The impulse is zero if the net force is zero.
+  **Correction:** If the net force is zero over a time interval, the impulse is zero, meaning the momentum is constant. However, individual forces within a system can still produce impulses (e.g., action-reaction pairs).
+
+**中文:**
+- **误区:** 峰值力是决定冲量的最重要因素。
+  **纠正:** 冲量取决于图像下的*整个面积*，而不仅仅是峰值力。一个很大的力作用很短的时间可以产生与一个较小的力作用较长时间相同的冲量。
+- **误区:** 力-时间图像的斜率代表冲量。
+  **纠正:** 斜率代表力随时间的变化率 ($dF/dt$)，这不是此上下文中的标准量。*面积*代表冲量。
+- **误区:** 如果合力为零，则冲量为零。
+  **纠正:** 如果在一个时间间隔内合力为零，则冲量为零，这意味着动量是恒定的。然而，系统内的单个力仍然可以产生冲量（例如，作用力与反作用力对）。
+
+### Exam Tips / 考试提示
 **English:**
-The fundamental relationship is that **impulse equals the area under a force-time graph**. This graphical interpretation is powerful because real-world forces during collisions are rarely constant — they typically rise rapidly to a peak and then decay. The area under the curve captures the total effect of this varying force.
-
-**Step-by-step reasoning:**
-1. From [[Newton's Laws of Motion]], we know $F = ma = m\frac{dv}{dt} = \frac{d(mv)}{dt} = \frac{dp}{dt}$
-2. Rearranging: $F \cdot dt = dp$
-3. Integrating over time: $\int_{t_1}^{t_2} F \, dt = \Delta p = \text{Impulse}$
-4. The integral $\int F \, dt$ is precisely the area under the F-t graph
-
-**Physical interpretation:**
-- A **large area** under the F-t graph means a large impulse, hence a large change in momentum
-- For a given impulse, a **shorter impact time** requires a **larger average force** (this explains why airbags save lives — they increase impact time, reducing force)
-- The **shape** of the F-t curve tells us about the nature of the collision (e.g., elastic vs inelastic)
-
-**Common pitfalls:**
-- ❌ Confusing impulse with force — impulse is force × time, not just force
-- ❌ Forgetting that the area can be negative if force acts in the opposite direction
-- ❌ Assuming force is constant during a collision — in reality, it varies
-- ❌ Using the peak force instead of the average force for calculations
+- Always state that impulse = area under the force-time graph.
+- When calculating the area, clearly show your method (e.g., "Area = area of triangle + area of rectangle").
+- Be careful with units: Force in Newtons (N), time in seconds (s), impulse in Newton-seconds (N s) or kg m/s.
+- If the graph is a curve, you may need to estimate the area by counting squares.
 
 **中文:**
-基本关系是**冲量等于力-时间图下的面积**。这种图形解释非常强大，因为碰撞过程中的真实力很少是恒定的——它们通常迅速上升到峰值然后衰减。曲线下的面积捕捉了这种变化力的总效果。
+- 始终说明冲量 = 力-时间图像下的面积。
+- 计算面积时，清晰地展示你的方法（例如，“面积 = 三角形面积 + 矩形面积”）。
+- 注意单位：力用牛顿 (N)，时间用秒 (s)，冲量用牛顿秒 (N s) 或 kg m/s。
+- 如果图像是曲线，你可能需要通过数方格来估算面积。
 
-**逐步推理：**
-1. 从[[牛顿运动定律]]，我们知道 $F = ma = m\frac{dv}{dt} = \frac{d(mv)}{dt} = \frac{dp}{dt}$
-2. 重新排列：$F \cdot dt = dp$
-3. 对时间积分：$\int_{t_1}^{t_2} F \, dt = \Delta p = \text{冲量}$
-4. 积分 $\int F \, dt$ 正是F-t图下的面积
-
-**物理解释：**
-- F-t图下的**大面积**意味着大冲量，因此动量变化大
-- 对于给定的冲量，**更短的冲击时间**需要**更大的平均力**（这解释了为什么安全气囊能拯救生命——它们增加冲击时间，减少力）
-- F-t曲线的**形状**告诉我们碰撞的性质（例如，弹性与非弹性）
-
-**常见错误：**
-- ❌ 混淆冲量和力——冲量是力×时间，而不仅仅是力
-- ❌ 忘记如果力在相反方向作用，面积可能为负
-- ❌ 假设碰撞过程中力是恒定的——实际上它是变化的
-- ❌ 使用峰值力而不是平均力进行计算
+> 📷 **IMAGE PROMPT — GRAPH: Force-Time Graph for a Varying Force**
+> A force-time graph showing a curved line starting at (0,0), rising to a peak at (t1, Fmax), and then falling back to (t2, 0). The area under the curve is shaded. Labels: "Force (N)" on y-axis, "Time (s)" on x-axis, "Impulse = Area under graph" as a label.
 
 ---
 
-# 4. Formulas / 公式
+# 5. Essential Equations / 核心公式
 
-## Primary Formula: Impulse from Force-Time Graph
+## Equation 1: Impulse (Constant Force) / 冲量 (恒力)
 
-$$ I = \int_{t_1}^{t_2} F(t) \, dt = \text{Area under F-t graph} $$
-
-| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
-| ------------- | ------------ | ------------ | ----------- |
-| $I$ | Impulse | 冲量 | N·s (or kg·m/s) |
-| $F(t)$ | Force as a function of time | 作为时间函数的力 | N |
-| $t_1, t_2$ | Start and end times of interaction | 相互作用的开始和结束时间 | s |
-| $\int F(t) \, dt$ | Area under the force-time curve | 力-时间曲线下的面积 | N·s |
-
-## Secondary Formula: Average Force
-
-$$ F_{\text{avg}} = \frac{\text{Impulse}}{\Delta t} = \frac{\text{Area under F-t graph}}{\Delta t} $$
+$$ I = F \Delta t $$
 
 | Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
-| ------------- | ------------ | ------------ | ----------- |
-| $F_{\text{avg}}$ | Average force | 平均力 | N |
+|--------------|-------------|-------------|------------|
+| $I$ | Impulse | 冲量 | N s (or kg m/s) |
+| $F$ | Constant force | 恒力 | N |
 | $\Delta t$ | Time interval | 时间间隔 | s |
 
-## Connection to Momentum Change
+**Derivation / 推导:** This is the definition of impulse for a constant force.
+**Conditions / 适用条件:** The force $F$ must be constant over the time interval $\Delta t$.
+**Limitations / 局限性:** Cannot be used directly if the force varies with time.
 
-$$ \text{Impulse} = \Delta p = m \Delta v = m(v_f - v_i) $$
+## Equation 2: Impulse-Momentum Theorem / 冲量-动量定理
 
-**Derivation / 推导:**
-Starting from Newton's Second Law:
-$$ F = \frac{dp}{dt} $$
-$$ F \, dt = dp $$
-Integrating both sides:
-$$ \int_{t_1}^{t_2} F \, dt = \int_{p_1}^{p_2} dp = p_2 - p_1 = \Delta p $$
-The left side is the area under the F-t graph, which equals the impulse.
+$$ I = \Delta p = m \Delta v = m(v - u) $$
 
-**Conditions / 适用条件:**
-- The force-time graph must be for the net force acting on the object
-- The area calculation accounts for direction (positive area = force in positive direction)
-- For non-constant forces, integration or graphical area calculation is required
-- The relationship holds for any type of force variation (linear, exponential, etc.)
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| $I$ | Impulse | 冲量 | N s (or kg m/s) |
+| $\Delta p$ | Change in momentum | 动量变化 | kg m/s |
+| $m$ | Mass | 质量 | kg |
+| $v$ | Final velocity | 末速度 | m/s |
+| $u$ | Initial velocity | 初速度 | m/s |
 
-> 📷 **IMAGE PROMPT — F01: Force-Time Graph with Shaded Area**
->
-> **English Prompt:**
-> A clean, textbook-style vector diagram showing a force-time (F-t) graph. The x-axis is labeled "Time / s" and the y-axis is labeled "Force / N". The graph shows a curved line representing a typical collision force: rising sharply from zero to a peak, then decaying back to zero. The area under the curve is shaded in light blue with a pattern. A horizontal dashed line shows the average force level. Labels indicate: "Peak Force", "Average Force", "Area = Impulse", and "Impact Time Δt". The graph has a grid background in light gray. Professional physics textbook style with clear sans-serif fonts.
->
-> **中文描述:**
-> 一个干净、教科书风格的矢量图，显示力-时间（F-t）图。x轴标记为"时间/s"，y轴标记为"力/N"。图表显示一条代表典型碰撞力的曲线：从零急剧上升到峰值，然后衰减回零。曲线下的区域用浅蓝色阴影和图案填充。一条水平虚线显示平均力水平。标签指示："峰值力"、"平均力"、"面积 = 冲量"和"冲击时间Δt"。图表有浅灰色网格背景。专业物理教科书风格，清晰的无衬线字体。
->
-> **Labels Required / 需要标注:**
-> * Peak Force (峰值力)
-> * Average Force (平均力)
-> * Area = Impulse (面积 = 冲量)
-> * Impact Time Δt (冲击时间Δt)
-> * Force / N (力/N)
-> * Time / s (时间/s)
->
-> **Style / 风格:** Textbook vector / 教科书矢量图
->
-> **Exam Relevance / 考试关联:**
-> This diagram is essential for understanding how to extract impulse from F-t graphs, a common exam question type. Students must be able to calculate area under various graph shapes (rectangles, triangles, trapeziums, or irregular curves).
+**Derivation / 推导:** From Newton's Second Law: $F = ma = m \frac{\Delta v}{\Delta t}$. Rearranging: $F \Delta t = m \Delta v = \Delta p$.
+**Conditions / 适用条件:** Valid for both constant and varying forces (using average force). The mass $m$ must be constant.
+**Limitations / 局限性:** Does not apply to systems where mass changes (e.g., rockets).
+
+## Equation 3: Impulse from Force-Time Graph / 从力-时间图像求冲量
+
+$$ I = \text{Area under } F \text{-} t \text{ graph} $$
+
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| $I$ | Impulse | 冲量 | N s |
+| Area | Area under the graph | 图像下的面积 | N s |
+
+**Derivation / 推导:** $I = \int F \, dt$, which is the definition of the area under the curve.
+**Conditions / 适用条件:** Always valid for any force-time graph.
+**Limitations / 局限性:** Requires accurate calculation or estimation of the area.
+
+> 📷 **IMAGE PROMPT — DIAGRAM: Impulse-Momentum Theorem**
+> A diagram showing a ball of mass m moving with initial velocity u towards a wall. The wall exerts a force F on the ball for a time Δt. The ball then moves away with final velocity v. Labels: "m", "u", "v", "F", "Δt". An equation box shows: "FΔt = m(v - u)".
 
 ---
 
-# 5. Image Prompt / 图片提示
+# 6. Graphs and Relationships / 图表与关系
 
-> 📷 **IMAGE PROMPT — F02: Real-World Impact Scenarios Comparison**
->
-> **English Prompt:**
-> A split-screen 3D rendered illustration comparing two impact scenarios. Left side: A car crash without airbag showing a driver hitting the steering wheel, with a small F-t graph below showing a tall, narrow spike (large force, short time). Right side: A car crash with airbag showing the driver hitting an inflated airbag, with a larger F-t graph below showing a shorter, wider curve (smaller force, longer time). Both graphs have the same area (same impulse = same momentum change). The scene is photorealistic with dramatic lighting, slow-motion effect particles, and clear labels: "Without Airbag: Large Force, Short Time" and "With Airbag: Smaller Force, Longer Time". Educational infographic style with physics annotations.
->
-> **中文描述:**
-> 分屏3D渲染插图，比较两种冲击场景。左侧：没有安全气囊的车祸，显示驾驶员撞向方向盘，下方有一个小的F-t图，显示一个高而窄的尖峰（大力，短时间）。右侧：有安全气囊的车祸，显示驾驶员撞向充气安全气囊，下方有一个较大的F-t图，显示一个更短更宽的曲线（较小的力，更长时间）。两个图具有相同的面积（相同的冲量=相同的动量变化）。场景是照片级真实的，具有戏剧性照明、慢动作效果粒子和清晰的标签："无安全气囊：大力，短时间"和"有安全气囊：较小的力，更长时间"。教育信息图表风格，带有物理注释。
->
-> **Labels Required / 需要标注:**
-> * Without Airbag (无安全气囊)
-> * With Airbag (有安全气囊)
-> * Large Force, Short Time (大力，短时间)
-> * Smaller Force, Longer Time (较小的力，更长时间)
-> * Same Area = Same Impulse (相同面积 = 相同冲量)
->
-> **Style / 风格:** 3D render with photorealistic elements / 3D渲染，照片级真实元素
->
-> **Exam Relevance / 考试关联:**
-> This visual comparison directly addresses the common exam question: "Explain how airbags reduce injury during collisions." Students must understand that increasing impact time reduces average force for the same impulse.
+## 6.1 Force-Time Graph for a Constant Force / 恒力的力-时间图像
+
+### Axes / 坐标轴
+- **X-axis:** Time (s) / 时间 (s)
+- **Y-axis:** Force (N) / 力 (N)
+
+### Shape / 形状
+A horizontal straight line at $F = \text{constant}$.
+
+### Gradient Meaning / 斜率含义
+Zero gradient. The force is constant, so its rate of change is zero.
+
+### Area Meaning / 面积含义
+The area under the graph is a rectangle: $\text{Area} = F \times \Delta t = \text{Impulse}$.
+
+### Exam Interpretation / 考试解读
+This is the simplest case. Students should be able to calculate the impulse by multiplying the force by the time interval.
+
+## 6.2 Force-Time Graph for a Varying Force (e.g., Collision) / 变力的力-时间图像 (例如，碰撞)
+
+### Axes / 坐标轴
+- **X-axis:** Time (s) / 时间 (s)
+- **Y-axis:** Force (N) / 力 (N)
+
+### Shape / 形状
+A curve that starts at zero, rises to a peak, and then falls back to zero. The shape can be symmetrical or asymmetrical.
+
+### Gradient Meaning / 斜率含义
+The gradient at any point represents the rate of change of force with respect to time ($dF/dt$). This is not typically examined directly.
+
+### Area Meaning / 面积含义
+The total area under the curve represents the impulse delivered during the collision.
+
+### Exam Interpretation / 考试解读
+- **Peak Force:** The maximum force experienced during the collision.
+- **Contact Time:** The total time duration of the collision (from start to end of force application).
+- **Average Force:** The height of a rectangle with the same base (contact time) and the same area (impulse) as the curve. $F_{\text{avg}} = \frac{\text{Area}}{\Delta t}$.
+- **Impulse:** The area under the curve. This can be found by counting squares or approximating the shape with triangles and rectangles.
+
+> 📷 **IMAGE PROMPT — GRAPH: Force-Time Graph for a Collision**
+> A force-time graph showing a smooth, bell-shaped curve. The area under the curve is shaded. A dashed horizontal line is drawn at the average force level. Labels: "Peak Force", "Contact Time (Δt)", "Average Force (F_avg)", "Impulse = Area under curve".
 
 ---
 
-# 6. Worked Example / 典型例题
+# 7. Required Diagrams / 必备图表
 
-### Example 1: Calculating Impulse from a Force-Time Graph
+## 7.1 Force-Time Graph for a Collision / 碰撞的力-时间图像
+
+### Description / 描述
+**English:** A graph showing how the force between two colliding objects varies with time. The force starts at zero, increases to a maximum (peak force), and then decreases back to zero over the contact time. The area under the graph represents the impulse.
+
+**中文:** 一张显示两个碰撞物体之间的力如何随时间变化的图像。力从零开始，增加到最大值（峰值力），然后在接触时间内减小回零。图像下的面积代表冲量。
+
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — DIAGRAM: Force-Time Graph for Collision**
+> A clear, labeled force-time graph for a collision. The y-axis is labeled "Force / N" and the x-axis is labeled "Time / s". The curve is a smooth, bell-shaped curve starting at (0,0), peaking at (t1, Fmax), and ending at (t2, 0). The area under the curve is shaded in light blue. A dashed horizontal line is drawn at the average force level, labeled "Average Force". The time interval from t=0 to t=t2 is labeled "Contact Time". A text box reads: "Impulse = Area under graph = Change in momentum".
+
+### Labels Required / 需要标注
+- **Force (N)** on y-axis / y轴上的力 (N)
+- **Time (s)** on x-axis / x轴上的时间 (s)
+- **Peak Force** / 峰值力
+- **Contact Time** / 接触时间
+- **Average Force** / 平均力
+- **Area = Impulse** / 面积 = 冲量
+
+### Exam Importance / 考试重要性
+**English:** This diagram is essential for understanding how to calculate impulse from a force-time graph. It is frequently tested in both CAIE and Edexcel exams, often in the context of collisions, sports, or vehicle safety features (e.g., airbags, crumple zones).
+
+**中文:** 这个图表对于理解如何从力-时间图像计算冲量至关重要。在CAIE和Edexcel考试中经常被测试，通常是在碰撞、体育或车辆安全功能（例如，安全气囊、溃缩区）的背景下。
+
+---
+
+# 8. Worked Examples / 典型例题
+
+## Example 1: Calculating Impulse from a Force-Time Graph / 从力-时间图像计算冲量
 
 ### Question / 题目
 **English:**
-A tennis ball is struck by a racket. The force-time graph for the impact is shown below. The force rises linearly from 0 to 80 N in 0.01 s, then drops linearly back to 0 in another 0.01 s.
-
-(a) Calculate the impulse delivered to the ball.
-(b) If the ball has mass 0.058 kg and was initially at rest, find its final velocity.
+A force-time graph for a collision between a tennis racket and a ball is shown. The graph can be approximated as a triangle with a base of 0.05 s and a height of 200 N. Calculate:
+(a) The impulse delivered to the ball.
+(b) The average force during the collision.
+(c) If the ball has a mass of 0.058 kg and was initially at rest, what is its final velocity?
 
 **中文:**
-一个网球被球拍击打。冲击的力-时间图如下所示。力在0.01秒内从0线性上升到80 N，然后在另外0.01秒内线性下降回0。
-
-(a) 计算传递给球的冲量。
-(b) 如果球的质量为0.058 kg且最初静止，求其最终速度。
+一个网球拍与球碰撞的力-时间图像如图所示。该图像可以近似为一个底为0.05秒、高为200牛的三角形。计算：
+(a) 传递给球的冲量。
+(b) 碰撞过程中的平均力。
+(c) 如果球的质量为0.058千克且最初静止，其末速度是多少？
 
 ### Solution / 解答
+**Step 1: Calculate the impulse.**
+The impulse is the area under the force-time graph. The shape is a triangle.
+$$ I = \text{Area} = \frac{1}{2} \times \text{base} \times \text{height} = \frac{1}{2} \times (0.05 \, \text{s}) \times (200 \, \text{N}) = 5 \, \text{N s} $$
 
-**Part (a):**
-The force-time graph forms a triangle.
-Area of triangle = $\frac{1}{2} \times \text{base} \times \text{height}$
+**Step 2: Calculate the average force.**
+The average force is the impulse divided by the contact time.
+$$ F_{\text{avg}} = \frac{I}{\Delta t} = \frac{5 \, \text{N s}}{0.05 \, \text{s}} = 100 \, \text{N} $$
 
-$$ \text{Area} = \frac{1}{2} \times (0.02 \, \text{s}) \times (80 \, \text{N}) $$
-
-$$ \text{Area} = \frac{1}{2} \times 0.02 \times 80 = 0.8 \, \text{N·s} $$
-
-Therefore, impulse = 0.8 N·s
-
-**Part (b):**
-Using the [[Impulse-Momentum Theorem]]:
-$$ \text{Impulse} = \Delta p = m(v_f - v_i) $$
-
-$$ 0.8 = 0.058(v_f - 0) $$
-
-$$ v_f = \frac{0.8}{0.058} = 13.8 \, \text{m/s} $$
+**Step 3: Calculate the final velocity.**
+Using the impulse-momentum theorem: $I = m(v - u)$.
+Since the ball is initially at rest, $u = 0$.
+$$ 5 = 0.058 \times (v - 0) $$
+$$ v = \frac{5}{0.058} \approx 86.2 \, \text{m/s} $$
 
 ### Final Answer / 最终答案
-**Answer:** (a) Impulse = 0.8 N·s (b) Final velocity = 13.8 m/s
-**答案:** (a) 冲量 = 0.8 N·s (b) 最终速度 = 13.8 m/s
+**Answer:**
+(a) Impulse = 5 N s
+(b) Average force = 100 N
+(c) Final velocity = 86.2 m/s
+
+**答案：**
+(a) 冲量 = 5 牛秒
+(b) 平均力 = 100 牛
+(c) 末速度 = 86.2 米/秒
 
 ### Quick Tip / 提示
-For triangular force-time graphs, remember that the area is $\frac{1}{2} \times \text{base} \times \text{height}$. For rectangular graphs, it's simply $\text{force} \times \text{time}$. Always check the units: N·s is equivalent to kg·m/s.
+**English:** Always check the shape of the graph before calculating the area. For a triangle, use $\frac{1}{2} \times \text{base} \times \text{height}$. For a rectangle, use $\text{length} \times \text{width}$. For a complex shape, break it down into simpler shapes.
 
-对于三角形力-时间图，记住面积是$\frac{1}{2} \times \text{底} \times \text{高}$。对于矩形图，就是$\text{力} \times \text{时间}$。始终检查单位：N·s等同于kg·m/s。
+**中文:** 在计算面积之前，始终检查图像的形状。对于三角形，使用 $\frac{1}{2} \times \text{底} \times \text{高}$。对于矩形，使用 $\text{长} \times \text{宽}$。对于复杂形状，将其分解为更简单的形状。
 
 ---
 
-### Example 2: Finding Average Force from Impulse
+## Example 2: Interpreting a Force-Time Graph for Safety Features / 解释安全功能的力-时间图像
 
 ### Question / 题目
 **English:**
-A 0.15 kg baseball moving at 40 m/s is caught by a player. The ball comes to rest in 0.025 s. The force-time graph during the catch is approximately a triangle.
-
-(a) Calculate the impulse required to stop the ball.
-(b) Determine the average force exerted on the ball during the catch.
+A car of mass 1200 kg crashes into a wall at 15 m/s and comes to rest. The force-time graph for the collision is shown. The area under the graph is 18,000 N s.
+(a) Calculate the impulse on the car.
+(b) The car is fitted with a crumple zone that increases the collision time to 0.6 s. Calculate the average force on the car.
+(c) Explain how the crumple zone reduces the risk of injury to the driver.
 
 **中文:**
-一个0.15 kg的棒球以40 m/s的速度移动，被一名球员接住。球在0.025秒内停止。接球过程中的力-时间图近似为三角形。
-
-(a) 计算停止球所需的冲量。
-(b) 确定接球过程中施加在球上的平均力。
+一辆质量为1200千克的汽车以15米/秒的速度撞上一堵墙并停下来。碰撞的力-时间图像如图所示。图像下的面积为18,000牛秒。
+(a) 计算汽车受到的冲量。
+(b) 汽车配备了溃缩区，将碰撞时间增加到0.6秒。计算汽车受到的平均力。
+(c) 解释溃缩区如何降低对驾驶员造成伤害的风险。
 
 ### Solution / 解答
+**Step 1: Calculate the impulse.**
+The impulse is equal to the change in momentum.
+$$ I = \Delta p = m(v - u) = 1200 \times (0 - 15) = -18,000 \, \text{N s} $$
+The magnitude of the impulse is 18,000 N s (the negative sign indicates direction).
 
-**Part (a):**
-Initial momentum: $p_i = mv_i = 0.15 \times 40 = 6.0 \, \text{kg·m/s}$
-Final momentum: $p_f = 0$ (ball comes to rest)
-Impulse = change in momentum:
-$$ I = \Delta p = p_f - p_i = 0 - 6.0 = -6.0 \, \text{N·s} $$
+**Step 2: Calculate the average force.**
+Using $I = F_{\text{avg}} \times \Delta t$:
+$$ F_{\text{avg}} = \frac{I}{\Delta t} = \frac{18,000}{0.6} = 30,000 \, \text{N} $$
 
-The negative sign indicates the force acts opposite to the ball's initial direction.
-
-**Part (b):**
-For a triangular force-time graph:
-$$ \text{Area} = \frac{1}{2} \times F_{\text{peak}} \times \Delta t = \text{Impulse} $$
-
-$$ \frac{1}{2} \times F_{\text{peak}} \times 0.025 = 6.0 $$
-
-$$ F_{\text{peak}} = \frac{2 \times 6.0}{0.025} = 480 \, \text{N} $$
-
-Average force for a triangle:
-$$ F_{\text{avg}} = \frac{F_{\text{peak}}}{2} = \frac{480}{2} = 240 \, \text{N} $$
-
-Alternatively: $F_{\text{avg}} = \frac{\text{Impulse}}{\Delta t} = \frac{6.0}{0.025} = 240 \, \text{N}$
+**Step 3: Explain the safety benefit.**
+Without the crumple zone, the collision time would be much shorter (e.g., 0.1 s), resulting in a much larger average force ($F = 18,000 / 0.1 = 180,000 \, \text{N}$). The crumple zone increases the collision time, which reduces the average force for the same change in momentum. A smaller force means less deceleration, reducing the risk of injury to the driver.
 
 ### Final Answer / 最终答案
-**Answer:** (a) Impulse = 6.0 N·s (opposite to motion) (b) Average force = 240 N
-**答案:** (a) 冲量 = 6.0 N·s（与运动方向相反）(b) 平均力 = 240 N
+**Answer:**
+(a) Impulse = 18,000 N s
+(b) Average force = 30,000 N
+(c) The crumple zone increases the collision time, reducing the average force and deceleration, thus reducing injury risk.
+
+**答案：**
+(a) 冲量 = 18,000 牛秒
+(b) 平均力 = 30,000 牛
+(c) 溃缩区增加了碰撞时间，降低了平均力和减速度，从而降低了受伤风险。
 
 ### Quick Tip / 提示
-For triangular force-time graphs, the average force is half the peak force. This is a useful shortcut for exam calculations. Remember that impulse is a vector — always consider direction!
+**English:** In safety feature questions, always link the increase in collision time to the decrease in average force (for the same impulse/change in momentum).
 
-对于三角形力-时间图，平均力是峰值力的一半。这是考试计算中有用的捷径。记住冲量是矢量——始终考虑方向！
-
----
-
-# 7. Flashcards / 闪卡
-
-**Flashcard 1:**
-Q (EN): What does the area under a force-time graph represent?
-Q (CN): 力-时间图下的面积代表什么？
-A (EN): The area under a force-time graph represents the impulse delivered to the object, which equals the change in momentum.
-A (CN): 力-时间图下的面积代表传递给物体的冲量，等于动量的变化量。
-
-**Flashcard 2:**
-Q (EN): How do you calculate the average force from a force-time graph?
-Q (CN): 如何从力-时间图计算平均力？
-A (EN): Average force = Impulse / Time interval = (Area under F-t graph) / Δt
-A (CN): 平均力 = 冲量 / 时间间隔 = (F-t图下的面积) / Δt
-
-**Flashcard 3:**
-Q (EN): For a given impulse, what happens to the force if the impact time is increased?
-Q (CN): 对于给定的冲量，如果冲击时间增加，力会发生什么变化？
-A (EN): The force decreases. This is why airbags, crumple zones, and soft surfaces reduce injury — they increase impact time, reducing the average force.
-A (CN): 力减小。这就是为什么安全气囊、溃缩区和柔软表面能减少伤害——它们增加冲击时间，减少平均力。
-
-**Flashcard 4:**
-Q (EN): What is the relationship between impulse and momentum change?
-Q (CN): 冲量和动量变化之间有什么关系？
-A (EN): Impulse = Change in momentum = m(v_f - v_i). This is the Impulse-Momentum Theorem.
-A (CN): 冲量 = 动量变化 = m(v_f - v_i)。这就是冲量-动量定理。
-
-**Flashcard 5:**
-Q (EN): How do you find the impulse from a non-uniform force-time graph?
-Q (CN): 如何从非均匀的力-时间图找到冲量？
-A (EN): Calculate the area under the curve using graphical methods (counting squares, dividing into shapes, or integration if the function is known).
-A (CN): 使用图形方法计算曲线下的面积（数方格、分割成形状，或者如果知道函数则进行积分）。
+**中文:** 在安全功能问题中，始终将碰撞时间的增加与平均力的减小联系起来（对于相同的冲量/动量变化）。
 
 ---
 
-# 8. Metadata / 元数据
+# 9. Past Paper Question Types / 历年真题题型
 
-```yaml
-title:
-  en: "Impulse and Force-Time Graphs"
-  cn: "冲量和力-时间图"
-parent_topic: "Linear Momentum and Impulse"
-parent_hub: "[[Linear Momentum and Impulse]]"
-subject: Physics
-syllabus:
-  - CAIE 9702: 3.2 (f-h)
-  - Edexcel IAL: WPH11 U1: 2.11-2.14
-level: AS
-node_type: leaf_concept
-difficulty: intermediate
-related_leaf_nodes:
-  - "[[Definition of Linear Momentum]]"
-  - "[[Impulse-Momentum Theorem]]"
-prerequisites:
-  - "[[Newton's Laws of Motion]]"
-related_topics:
-  - "[[Conservation of Momentum]]"
-language: bilingual_en_cn
+| Question Type / 题型 | Frequency / 频率 | Difficulty / 难度 | Past Paper References / 真题索引 |
+|----------------------|------------------|------------------|-------------------------------|
+| Calculate impulse from a force-time graph (triangle/rectangle) | High | Easy | 📝 *待填入* |
+| Calculate average force from impulse and time | High | Easy | 📝 *待填入* |
+| Interpret force-time graph for collisions | Medium | Medium | 📝 *待填入* |
+| Explain safety features using impulse (airbags, crumple zones) | Medium | Medium | 📝 *待填入* |
+| Estimate area under a curved force-time graph | Low | Hard | 📝 *待填入* |
+
+**Common Command Words / 常见指令词:**
+- **Calculate / 计算:** Use the formula $I = F \Delta t$ or find the area under the graph.
+- **Determine / 确定:** Find a value from the graph or using given data.
+- **Explain / 解释:** Describe the relationship between force, time, and impulse, especially in safety contexts.
+- **Sketch / 画出:** Draw a force-time graph for a given scenario (e.g., a bouncy ball vs. a lump of clay).
+- **Estimate / 估算:** Approximate the area under a curved graph by counting squares.
+
+---
+
+# 10. Practical Skills Connections / 实验技能链接
+
+**English:**
+This sub-topic connects to practical work in several ways:
+1. **Measuring Impulse:** In a lab, you can measure the impulse during a collision using a force sensor connected to a data logger. The force sensor records force against time, and the software can calculate the area under the graph (impulse).
+2. **Investigating Momentum Change:** You can use a motion sensor to measure the velocity of a trolley before and after a collision. By knowing the mass, you can calculate the change in momentum and compare it to the impulse measured by the force sensor.
+3. **Graph Plotting and Analysis:** You will need to plot force-time graphs from experimental data and calculate the area under them. This involves skills in choosing appropriate scales, drawing curves of best fit, and estimating areas by counting squares.
+4. **Uncertainties:** When estimating the area under a curved graph, there is an uncertainty due to the estimation method. You should be able to discuss this uncertainty and how it affects the final result.
+
+**中文:**
+本子知识点通过以下几种方式与实验工作相联系：
+1. **测量冲量：** 在实验室中，你可以使用连接到数据记录器的力传感器来测量碰撞过程中的冲量。力传感器记录力随时间的变化，软件可以计算图像下的面积（冲量）。
+2. **研究动量变化：** 你可以使用运动传感器来测量碰撞前后小车的速度。通过知道质量，你可以计算动量变化，并将其与力传感器测量的冲量进行比较。
+3. **绘图和分析：** 你需要根据实验数据绘制力-时间图像，并计算其下的面积。这涉及到选择合适比例、绘制最佳拟合曲线以及通过数方格估算面积的技能。
+4. **不确定度：** 在估算曲线下的面积时，由于估算方法会存在不确定度。你应该能够讨论这种不确定度以及它如何影响最终结果。
+
+---
+
+# 11. Concept Map / 概念图谱
+
+```mermaid
+graph TD
+    %% Core Concept
+    Impulse["Impulse (I) / 冲量 (I)"]
+    
+    %% Definitions
+    Def1["I = F × Δt (Constant Force) / 恒力"]
+    Def2["I = Area under F-t graph (Varying Force) / 变力"]
+    
+    %% Connections to other concepts
+    ForceTimeGraph["Force-Time Graph / 力-时间图像"]
+    ImpulseMomentumTheorem["Impulse-Momentum Theorem / 冲量-动量定理"]
+    ChangeInMomentum["Change in Momentum (Δp) / 动量变化 (Δp)"]
+    AverageForce["Average Force (F_avg) / 平均力 (F_avg)"]
+    ContactTime["Contact Time (Δt) / 接触时间 (Δt)"]
+    
+    %% Safety Features
+    SafetyFeatures["Safety Features / 安全功能"]
+    Airbags["Airbags / 安全气囊"]
+    CrumpleZones["Crumple Zones / 溃缩区"]
+    
+    %% Prerequisites
+    NewtonsLaws["Newton's Laws of Motion / 牛顿运动定律"]
+    
+    %% Sibling Topics
+    DefinitionOfMomentum["Definition of Linear Momentum / 线性动量的定义"]
+    ConservationOfMomentum["Conservation of Momentum / 动量守恒"]
+    
+    %% Relationships
+    Impulse --> Def1
+    Impulse --> Def2
+    Def2 --> ForceTimeGraph
+    ForceTimeGraph --> AverageForce
+    ForceTimeGraph --> ContactTime
+    Impulse --> ImpulseMomentumTheorem
+    ImpulseMomentumTheorem --> ChangeInMomentum
+    ImpulseMomentumTheorem --> NewtonsLaws
+    Impulse --> SafetyFeatures
+    SafetyFeatures --> Airbags
+    SafetyFeatures --> CrumpleZones
+    Impulse --> DefinitionOfMomentum
+    Impulse --> ConservationOfMomentum
+    
+    %% Styling
+    classDef core fill:#f9f,stroke:#333,stroke-width:2px;
+    classDef related fill:#bbf,stroke:#333,stroke-width:1px;
+    classDef practical fill:#bfb,stroke:#333,stroke-width:1px;
+    class Impulse core;
+    class ForceTimeGraph,ImpulseMomentumTheorem,ChangeInMomentum related;
+    class SafetyFeatures,Airbags,CrumpleZones practical;
+```
+
+---
+
+# 12. Quick Revision Sheet / 速查表
+
+| Category / 类别 | Key Points / 要点 |
+|----------------|------------------|
+| **Definition / 定义** | Impulse = force × time (constant force) OR area under force-time graph (varying force). / 冲量 = 力 × 时间（恒力）或力-时间图像下的面积（变力）。 |
+| **Key Formula / 核心公式** | $I = F \Delta t$ (constant force) / $I = \Delta p = m(v - u)$ (impulse-momentum theorem) / $I = \text{Area under } F\text{-}t \text{ graph}$ |
+| **Key Graph / 核心图表** | Force-Time Graph: Area = Impulse. Gradient = rate of change of force. / 力-时间图像：面积 = 冲量。斜率 = 力的变化率。 |
+| **Average Force / 平均力** | $F_{\text{avg}} = \frac{I}{\Delta t} = \frac{\text{Area}}{\Delta t}$ |
+| **Safety Features / 安全功能** | Increasing contact time (Δt) reduces average force (F_avg) for the same impulse (I). Examples: airbags, crumple zones, seat belts. / 增加接触时间 (Δt) 可以在相同冲量 (I) 下减小平均力 (F_avg)。例子：安全气囊、溃缩区、安全带。 |
+| **Common Units / 常用单位** | Impulse: N s or kg m/s. Force: N. Time: s. Mass: kg. Velocity: m/s. / 冲量：牛秒 或 千克米/秒。力：牛。时间：秒。质量：千克。速度：米/秒。 |
+| **Exam Tip / 考试提示** | Always calculate the area under the force-time graph to find impulse. For curved graphs, estimate by counting squares. / 始终计算力-时间图像下的面积来求冲量。对于曲线图，通过数方格来估算。 |

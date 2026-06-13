@@ -1,317 +1,574 @@
 # 1. Overview / 概述
 
 **English:**
-The mass-spring system is one of the two classic examples of Simple Harmonic Motion (SHM) studied at A-Level, alongside the [[The Simple Pendulum]]. This sub-topic focuses on a mass attached to a spring that obeys Hooke's Law, oscillating horizontally on a frictionless surface or vertically under gravity. Understanding this system is crucial because it provides a clean, mathematical model for SHM where the restoring force is directly proportional to displacement. The mass-spring system is the foundation for understanding [[Energy in SHM]], as it clearly demonstrates the continuous exchange between kinetic and elastic potential energy. It also introduces the concept of angular frequency ($\omega$) in terms of the system's physical properties — mass ($m$) and spring constant ($k$) — which is a key distinction from the [[The Simple Pendulum]].
+The mass-spring system is a classic example of [[Simple Harmonic Motion]] (SHM) that demonstrates the fundamental relationship between [[Hooke's Law]] and oscillatory motion. When a mass attached to a spring is displaced from its equilibrium position, the restoring force provided by the spring causes the system to oscillate. This sub-topic covers the derivation of the period of oscillation, the relationship between spring constant and angular frequency, and the analysis of energy transformations within the system. Understanding the mass-spring system is crucial for grasping the mathematical foundations of SHM and serves as a bridge to more complex oscillatory systems in physics and engineering.
 
 **中文:**
-质量-弹簧系统是A-Level学习的两个经典简谐运动（SHM）例子之一，与[[The Simple Pendulum]]并列。本子知识点研究一个遵循胡克定律的弹簧上连接的质量块，在无摩擦水平面上或重力作用下垂直振荡。理解这个系统至关重要，因为它提供了一个清晰的SHM数学模型，其中恢复力与位移成正比。质量-弹簧系统是理解[[Energy in SHM]]的基础，因为它清楚地展示了动能和弹性势能之间的持续转换。它还引入了用系统物理属性（质量$m$和弹簧常数$k$）表示的角频率（$\omega$）概念，这是与[[The Simple Pendulum]]的关键区别。
+质量-弹簧系统是[[简谐运动]]（SHM）的经典实例，展示了[[胡克定律]]与振荡运动之间的基本关系。当连接在弹簧上的质量块偏离平衡位置时，弹簧提供的恢复力使系统产生振荡。本子知识点涵盖振荡周期的推导、弹簧常数与角频率之间的关系，以及系统内能量转换的分析。理解质量-弹簧系统对于掌握SHM的数学基础至关重要，并且是连接物理和工程中更复杂振荡系统的桥梁。
 
 ---
 
-# 2. Core Definition / 核心定义
+# 2. Syllabus Learning Objectives / 考纲学习目标
 
-| Term (EN/CN) | Definition (EN) | Definition (CN) |
-| ------------ | --------------- | --------------- |
-| **Mass-Spring System** / 质量-弹簧系统 | A system consisting of a mass attached to a spring that obeys Hooke's Law, where the restoring force is proportional to the displacement from equilibrium, leading to SHM. | 一个由连接在遵循胡克定律的弹簧上的质量块组成的系统，其中恢复力与距平衡位置的位移成正比，从而产生简谐运动。 |
-| **Spring Constant ($k$)** / 弹簧常数 | A measure of the stiffness of a spring, defined as the force required per unit extension or compression. | 弹簧刚度的度量，定义为单位伸长或压缩所需的力。 |
-| **Equilibrium Position** / 平衡位置 | The position where the net force on the mass is zero; for a horizontal system, this is the natural length of the spring; for a vertical system, it is where the spring force balances weight. | 质量块所受合力为零的位置；对于水平系统，这是弹簧的自然长度；对于垂直系统，这是弹簧力平衡重力的位置。 |
-| **Restoring Force** / 恢复力 | The force that acts to return the mass to its equilibrium position; in a mass-spring system, $F = -kx$. | 使质量块返回平衡位置的力；在质量-弹簧系统中，$F = -kx$。 |
-| **Angular Frequency ($\omega$)** / 角频率 | The rate of change of angular displacement in SHM, related to the period by $\omega = 2\pi/T$; for a mass-spring system, $\omega = \sqrt{k/m}$. | 简谐运动中角位移的变化率，与周期的关系为$\omega = 2\pi/T$；对于质量-弹簧系统，$\omega = \sqrt{k/m}$。 |
-| **Natural Frequency ($f_0$)** / 固有频率 | The frequency at which a system oscillates when not subjected to a continuous or repeated external force; for a mass-spring system, $f_0 = \frac{1}{2\pi}\sqrt{k/m}$. | 系统在不受连续或重复外力作用时振荡的频率；对于质量-弹簧系统，$f_0 = \frac{1}{2\pi}\sqrt{k/m}$。 |
+| CAIE 9702 | Edexcel IAL |
+|-----------|-------------|
+| 17.1(a) Describe simple examples of free oscillations | 7.1 Understand the conditions for simple harmonic motion |
+| 17.1(b) Define and use the terms displacement, amplitude, period, frequency, angular frequency and phase difference | 7.2 Understand and use the equation $a = -\omega^2 x$ |
+| 17.1(c) Derive and use the equation $T = 2\pi \sqrt{\frac{m}{k}}$ for a mass-spring system | 7.3 Derive and use the period equations for a mass-spring system |
+| 17.1(d) Investigate the motion of a mass-spring system experimentally | 7.4 Understand energy changes in SHM |
+| | 7.5 Solve problems involving SHM |
+
+**Examiner Expectations / 考官期望:**
+- **CAIE:** Students must be able to derive the period formula from first principles using Hooke's Law and Newton's Second Law. Experimental skills including measurement of $T$ for different masses and springs are essential.
+- **Edexcel:** Focus on applying the period equation to solve problems, understanding the relationship between $a$, $x$, and $\omega$, and analyzing energy transformations.
 
 ---
 
-# 3. Key Concepts / 关键概念
+# 3. Core Definitions / 核心定义
 
+| Term (EN/CN) | Definition (EN) | Definition (CN) | Common Mistakes / 常见错误 |
+|--------------|-----------------|-----------------|---------------------------|
+| **Spring Constant** $k$ / 弹簧常数 $k$ | The force required to produce unit extension of the spring, measured in N/m | 使弹簧产生单位伸长所需的力，单位为N/m | Confusing $k$ with stiffness; $k$ is constant for a given spring only within elastic limit |
+| **Restoring Force** / 恢复力 | The force that acts to return the mass to its equilibrium position, proportional to displacement | 使质量块返回平衡位置的力，与位移成正比 | Forgetting the negative sign in $F = -kx$ |
+| **Equilibrium Position** / 平衡位置 | The position where the net force on the mass is zero | 质量块所受合力为零的位置 | Confusing with amplitude position |
+| **Angular Frequency** $\omega$ / 角频率 $\omega$ | The rate of change of phase angle, $\omega = 2\pi f = \sqrt{\frac{k}{m}}$ | 相位角的变化率，$\omega = 2\pi f = \sqrt{\frac{k}{m}}$ | Using $\omega$ in rad/s but forgetting to convert to Hz |
+| **Natural Frequency** $f_0$ / 固有频率 $f_0$ | The frequency at which the system oscillates when undisturbed, $f_0 = \frac{1}{2\pi}\sqrt{\frac{k}{m}}$ | 系统在不受干扰时振荡的频率，$f_0 = \frac{1}{2\pi}\sqrt{\frac{k}{m}}$ | Confusing with driving frequency in forced oscillations |
+
+---
+
+# 4. Key Concepts Explained / 关键概念详解
+
+## 4.1 Hooke's Law and Restoring Force / 胡克定律与恢复力
+
+### Explanation / 解释
 **English:**
-
-### The Restoring Force and Hooke's Law
-The fundamental principle behind the mass-spring system is **Hooke's Law**, which states that the force exerted by a spring is proportional to its extension or compression from its natural length:
-$$ F = -kx $$
-where $k$ is the spring constant and $x$ is the displacement from equilibrium. The negative sign indicates that the force is always directed **towards** the equilibrium position — this is the restoring force.
-
-### Why It Exhibits SHM
-For SHM, we need two conditions (see [[Conditions for SHM]]):
-1. The acceleration is proportional to the displacement ($a \propto -x$)
-2. The acceleration is directed towards the equilibrium position
-
-From Newton's Second Law: $F = ma = -kx$
-Therefore: $a = -\frac{k}{m}x$
-
-Since $k$ and $m$ are constants, $a \propto -x$, satisfying both conditions. The constant of proportionality gives us the angular frequency:
-$$ \omega^2 = \frac{k}{m} $$
-
-### Horizontal vs. Vertical Mass-Spring Systems
-**Horizontal System:** The equilibrium position is at the spring's natural length. Gravity is perpendicular to motion and does not affect the oscillation.
-
-**Vertical System:** The equilibrium position is **not** at the natural length — the spring stretches by $\Delta x = mg/k$ to balance weight. However, if you measure displacement from this new equilibrium, the same SHM equations apply with the same $\omega = \sqrt{k/m}$. Gravity simply shifts the equilibrium point but does not change the frequency.
-
-### Common Pitfalls
-- **Confusing extension with displacement:** In a vertical system, the total extension is $x_{eq} + x$, but the restoring force depends only on the displacement $x$ from the equilibrium position.
-- **Forgetting the negative sign:** The restoring force always opposes displacement.
-- **Assuming frequency depends on amplitude:** For an ideal spring obeying Hooke's Law, the frequency is independent of amplitude (isochronous oscillation).
+For an ideal spring, [[Hooke's Law]] states that the restoring force $F$ is directly proportional to the displacement $x$ from the equilibrium position, but in the opposite direction:
+$$F = -kx$$
+where $k$ is the [[Spring Constant]]. The negative sign indicates that the force always acts towards the equilibrium position. This linear relationship is what makes the mass-spring system exhibit [[Simple Harmonic Motion]].
 
 **中文:**
+对于理想弹簧，[[胡克定律]]指出恢复力 $F$ 与偏离平衡位置的位移 $x$ 成正比，但方向相反：
+$$F = -kx$$
+其中 $k$ 是[[弹簧常数]]。负号表示力始终指向平衡位置。这种线性关系使质量-弹簧系统表现出[[简谐运动]]。
 
-### 恢复力和胡克定律
-质量-弹簧系统的基本原理是**胡克定律**，它指出弹簧施加的力与其从自然长度的伸长或压缩成正比：
-$$ F = -kx $$
-其中$k$是弹簧常数，$x$是距平衡位置的位移。负号表示力始终指向平衡位置——这就是恢复力。
+### Physical Meaning / 物理意义
+**English:**
+The restoring force is the "memory" of the spring — it remembers where equilibrium is and pulls the mass back. The larger the spring constant $k$, the "stiffer" the spring and the stronger the restoring force for a given displacement.
 
-### 为什么它表现出简谐运动
-简谐运动需要两个条件（参见[[Conditions for SHM]]）：
-1. 加速度与位移成正比（$a \propto -x$）
-2. 加速度指向平衡位置
+**中文:**
+恢复力是弹簧的"记忆"——它记住平衡位置在哪里，并将质量块拉回。弹簧常数 $k$ 越大，弹簧越"硬"，对于给定的位移，恢复力越强。
 
-根据牛顿第二定律：$F = ma = -kx$
-因此：$a = -\frac{k}{m}x$
+### Common Misconceptions / 常见误区
+- ❌ **Mistake:** Thinking $F = kx$ without the negative sign
+  **Correction:** The negative sign is crucial — it shows the force is restoring
+- ❌ **Mistake:** Assuming $k$ changes with displacement
+  **Correction:** $k$ is constant within the elastic limit
+- ❌ **Mistake:** Confusing extension with displacement
+  **Correction:** Extension is measured from natural length; displacement from equilibrium
 
-由于$k$和$m$是常数，$a \propto -x$，满足两个条件。比例常数给出了角频率：
-$$ \omega^2 = \frac{k}{m} $$
+### Exam Tips / 考试提示
+- **EN:** Always include the negative sign when writing Hooke's Law in vector form. When using magnitudes, write $F = kx$ but state direction separately.
+- **中文:** 在矢量形式中始终包含负号。使用标量形式时，写 $F = kx$ 但需单独说明方向。
 
-### 水平与垂直质量-弹簧系统
-**水平系统：** 平衡位置在弹簧的自然长度处。重力垂直于运动方向，不影响振荡。
+> 📷 **IMAGE PROMPT — DIAGRAM-01: Mass-Spring System Forces**
+> A clear diagram showing a mass attached to a spring on a horizontal frictionless surface. Label the equilibrium position (x=0), displacement (x), and show the restoring force vector (F) pointing back toward equilibrium. Include arrows indicating direction of motion.
 
-**垂直系统：** 平衡位置**不在**自然长度处——弹簧会伸长$\Delta x = mg/k$以平衡重力。但是，如果从这个新平衡位置测量位移，相同的SHM方程适用，且$\omega = \sqrt{k/m}$相同。重力只是移动了平衡点，但不会改变频率。
+## 4.2 Derivation of Period / 周期推导
 
-### 常见错误
-- **混淆伸长和位移：** 在垂直系统中，总伸长是$x_{eq} + x$，但恢复力只取决于距平衡位置的位移$x$。
-- **忘记负号：** 恢复力始终与位移方向相反。
-- **假设频率取决于振幅：** 对于遵循胡克定律的理想弹簧，频率与振幅无关（等时振荡）。
+### Explanation / 解释
+**English:**
+Using [[Newton's Second Law]] ($F = ma$) and Hooke's Law ($F = -kx$):
+$$ma = -kx$$
+$$a = -\frac{k}{m}x$$
+
+Comparing with the SHM condition $a = -\omega^2 x$:
+$$\omega^2 = \frac{k}{m}$$
+$$\omega = \sqrt{\frac{k}{m}}$$
+
+Since $\omega = \frac{2\pi}{T}$:
+$$T = 2\pi \sqrt{\frac{m}{k}}$$
+
+**中文:**
+利用[[牛顿第二定律]]（$F = ma$）和胡克定律（$F = -kx$）：
+$$ma = -kx$$
+$$a = -\frac{k}{m}x$$
+
+与SHM条件 $a = -\omega^2 x$ 比较：
+$$\omega^2 = \frac{k}{m}$$
+$$\omega = \sqrt{\frac{k}{m}}$$
+
+由于 $\omega = \frac{2\pi}{T}$：
+$$T = 2\pi \sqrt{\frac{m}{k}}$$
+
+### Physical Meaning / 物理意义
+**English:**
+The period depends only on the mass and spring constant — not on amplitude. A larger mass increases inertia, making the system oscillate more slowly (longer $T$). A stiffer spring (larger $k$) provides stronger restoring force, making the system oscillate faster (shorter $T$).
+
+**中文:**
+周期仅取决于质量和弹簧常数——与振幅无关。质量越大，惯性越大，系统振荡越慢（$T$ 越大）。弹簧越硬（$k$ 越大），恢复力越强，系统振荡越快（$T$ 越小）。
+
+### Common Misconceptions / 常见误区
+- ❌ **Mistake:** Thinking $T$ depends on amplitude
+  **Correction:** For ideal springs, $T$ is independent of amplitude (isochronous)
+- ❌ **Mistake:** Using $m$ as the mass of the spring
+  **Correction:** $m$ is the oscillating mass; spring mass is negligible unless specified
+- ❌ **Mistake:** Confusing $T$ with $f$ in calculations
+  **Correction:** $T = 1/f$, always check units
+
+### Exam Tips / 考试提示
+- **EN:** Memorize the derivation steps — examiners often ask for the derivation of $T = 2\pi\sqrt{m/k}$
+- **中文:** 记住推导步骤——考官经常要求推导 $T = 2\pi\sqrt{m/k}$
 
 ---
 
-# 4. Formulas / 公式
+# 5. Essential Equations / 核心公式
 
-## Formula 1: Restoring Force / 恢复力公式
+## Equation 1: Period of Mass-Spring System / 质量-弹簧系统周期
 
-$$ F = -kx $$
+$$T = 2\pi \sqrt{\frac{m}{k}}$$
 
 | Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
-| ------------- | ------------ | ------------ | ----------- |
-| $F$ | Restoring force | 恢复力 | N |
+|--------------|-------------|-------------|------------|
+| $T$ | Period of oscillation | 振荡周期 | s |
+| $m$ | Mass attached to spring | 连接在弹簧上的质量 | kg |
 | $k$ | Spring constant | 弹簧常数 | N/m |
-| $x$ | Displacement from equilibrium | 距平衡位置的位移 | m |
 
-## Formula 2: Angular Frequency / 角频率公式
+**Derivation / 推导:**
+$$F = -kx \quad \text{(Hooke's Law)}$$
+$$F = ma \quad \text{(Newton's Second Law)}$$
+$$ma = -kx$$
+$$a = -\frac{k}{m}x$$
+Comparing with $a = -\omega^2 x$:
+$$\omega^2 = \frac{k}{m}$$
+$$\omega = \sqrt{\frac{k}{m}}$$
+Since $\omega = \frac{2\pi}{T}$:
+$$\frac{2\pi}{T} = \sqrt{\frac{k}{m}}$$
+$$T = 2\pi \sqrt{\frac{m}{k}}$$
 
-$$ \omega = \sqrt{\frac{k}{m}} $$
+**Conditions / 适用条件:**
+- **EN:** Ideal spring (massless, obeys Hooke's Law within elastic limit), small oscillations, no damping
+- **中文:** 理想弹簧（无质量，在弹性限度内遵守胡克定律），小振幅振荡，无阻尼
+
+**Limitations / 局限性:**
+- **EN:** Real springs have mass, which affects period; large amplitudes may cause non-linear behavior; damping reduces amplitude over time
+- **中文:** 实际弹簧有质量，会影响周期；大振幅可能导致非线性行为；阻尼会随时间减小振幅
+
+## Equation 2: Angular Frequency / 角频率
+
+$$\omega = \sqrt{\frac{k}{m}}$$
 
 | Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
-| ------------- | ------------ | ------------ | ----------- |
+|--------------|-------------|-------------|------------|
 | $\omega$ | Angular frequency | 角频率 | rad/s |
 | $k$ | Spring constant | 弹簧常数 | N/m |
 | $m$ | Mass | 质量 | kg |
 
-## Formula 3: Period of Oscillation / 振荡周期公式
+**Conditions / 适用条件:**
+- **EN:** Same as period equation; $\omega$ is independent of amplitude
+- **中文:** 与周期方程相同；$\omega$ 与振幅无关
 
-$$ T = 2\pi\sqrt{\frac{m}{k}} $$
+## Equation 3: Displacement as Function of Time / 位移随时间变化
 
-| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
-| ------------- | ------------ | ------------ | ----------- |
-| $T$ | Period | 周期 | s |
-| $m$ | Mass | 质量 | kg |
-| $k$ | Spring constant | 弹簧常数 | N/m |
-
-## Formula 4: Frequency / 频率公式
-
-$$ f = \frac{1}{T} = \frac{1}{2\pi}\sqrt{\frac{k}{m}} $$
+$$x(t) = A\cos(\omega t + \phi)$$
 
 | Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
-| ------------- | ------------ | ------------ | ----------- |
-| $f$ | Frequency | 频率 | Hz |
-
-**Derivation / 推导:**
-From $F = ma = -kx$, we get $a = -\frac{k}{m}x$. Comparing with the SHM condition $a = -\omega^2 x$, we identify $\omega^2 = \frac{k}{m}$, so $\omega = \sqrt{k/m}$. Since $T = 2\pi/\omega$, we get $T = 2\pi\sqrt{m/k}$.
+|--------------|-------------|-------------|------------|
+| $x(t)$ | Displacement at time $t$ | 时刻 $t$ 的位移 | m |
+| $A$ | Amplitude | 振幅 | m |
+| $\omega$ | Angular frequency | 角频率 | rad/s |
+| $\phi$ | Phase constant | 相位常数 | rad |
 
 **Conditions / 适用条件:**
-- Spring obeys Hooke's Law (elastic limit not exceeded)
-- No damping (frictionless surface or negligible air resistance)
-- Small oscillations (for ideal spring, amplitude-independent)
+- **EN:** For SHM starting from maximum displacement ($\phi = 0$); use $x = A\sin(\omega t)$ if starting from equilibrium
+- **中文:** 从最大位移开始（$\phi = 0$）；如果从平衡位置开始，使用 $x = A\sin(\omega t)$
 
-> 📷 **IMAGE PROMPT — MSS-01: Mass-Spring System Diagram**
->
-> **English Prompt:**
-> A clean, textbook-style vector diagram showing a horizontal mass-spring system. A block of mass m sits on a frictionless surface, attached to a spring on the left wall. The equilibrium position is marked with a dashed vertical line labeled "x=0". The block is shown displaced to the right by distance x, with an arrow labeled "F = -kx" pointing left towards equilibrium. Labels: "Spring constant k", "Mass m", "Displacement x". Clean white background, professional physics textbook style, blue and black lines, sans-serif font.
->
-> **中文描述:**
-> 一个清晰、教科书风格的矢量图，显示水平质量-弹簧系统。一个质量为m的块体位于无摩擦表面上，连接到左侧墙壁的弹簧上。平衡位置用虚线垂直线标记，标注"x=0"。块体显示向右位移距离x，有一个箭头标注"F = -kx"指向左侧朝向平衡位置。标签："弹簧常数k"、"质量m"、"位移x"。干净的白色背景，专业物理教科书风格，蓝色和黑色线条，无衬线字体。
->
-> **Labels Required / 需要标注:**
-> * Spring constant $k$
-> * Mass $m$
-> * Displacement $x$
-> * Restoring force $F = -kx$
-> * Equilibrium position $x = 0$
->
-> **Style / 风格:** Textbook vector diagram
->
-> **Exam Relevance / 考试关联:**
-> This diagram is essential for understanding the restoring force concept and is frequently used in exam questions to set up the problem.
+> 📷 **IMAGE PROMPT — DIAGRAM-02: Period vs Mass Graph**
+> A graph showing period squared ($T^2$) on the y-axis vs mass ($m$) on the x-axis. The graph should be a straight line through the origin with gradient $4\pi^2/k$. Label axes and include data points with error bars.
 
 ---
 
-# 5. Image Prompt / 图片提示
+# 6. Graphs and Relationships / 图表与关系
 
-> 📷 **IMAGE PROMPT — MSS-02: Vertical Mass-Spring System**
->
-> **English Prompt:**
-> A detailed 3D-rendered diagram of a vertical mass-spring system. A spring hangs from a fixed support at the top. A mass m is attached to the bottom. Three positions are shown: (1) The natural length of the spring (no mass) shown as a faint ghost spring, (2) The equilibrium position with the mass hanging stationary, marked with a dashed line labeled "Equilibrium", showing extension Δx = mg/k, (3) The mass pulled down further by amplitude A, with arrows showing the restoring force upward. Labels: "Natural length", "Equilibrium (x=0)", "Amplitude A", "Extension Δx = mg/k". Soft blue gradient background, realistic spring coils, professional 3D render style.
->
-> **中文描述:**
-> 一个详细的3D渲染图，显示垂直质量-弹簧系统。一个弹簧从顶部的固定支架悬挂下来。一个质量为m的块体连接在底部。显示三个位置：(1)弹簧的自然长度（无质量）显示为淡色幽灵弹簧，(2)质量块静止悬挂时的平衡位置，用虚线标记标注"平衡"，显示伸长Δx = mg/k，(3)质量块被进一步向下拉振幅A，箭头显示向上的恢复力。标签："自然长度"、"平衡位置(x=0)"、"振幅A"、"伸长Δx = mg/k"。柔和的蓝色渐变背景，逼真的弹簧线圈，专业3D渲染风格。
->
-> **Labels Required / 需要标注:**
-> * Natural length
-> * Equilibrium position
-> * Extension at equilibrium $\Delta x = mg/k$
-> * Amplitude $A$
-> * Restoring force direction
->
-> **Style / 风格:** 3D render
->
-> **Exam Relevance / 考试关联:**
-> Vertical mass-spring systems are common in exam questions. Understanding that gravity shifts the equilibrium but doesn't change the frequency is a key exam concept.
+## 6.1 Displacement-Time Graph / 位移-时间图
+
+### Axes / 坐标轴
+- **X-axis:** Time $t$ (s) / 时间 $t$ (s)
+- **Y-axis:** Displacement $x$ (m) / 位移 $x$ (m)
+
+### Shape / 形状
+- **EN:** Cosine curve (starting from maximum displacement) or sine curve (starting from equilibrium)
+- **中文:** 余弦曲线（从最大位移开始）或正弦曲线（从平衡位置开始）
+
+### Gradient Meaning / 斜率含义
+- **EN:** Gradient = velocity $v$; zero at maximum displacement, maximum at equilibrium
+- **中文:** 斜率 = 速度 $v$；在最大位移处为零，在平衡位置处最大
+
+### Area Meaning / 面积含义
+- **EN:** No direct physical meaning for displacement-time graph
+- **中文:** 位移-时间图没有直接的物理意义
+
+### Exam Interpretation / 考试解读
+- **EN:** Read period $T$ from one complete cycle; amplitude $A$ from maximum displacement
+- **中文:** 从一个完整周期读取周期 $T$；从最大位移读取振幅 $A$
+
+## 6.2 Acceleration-Displacement Graph / 加速度-位移图
+
+### Axes / 坐标轴
+- **X-axis:** Displacement $x$ (m) / 位移 $x$ (m)
+- **Y-axis:** Acceleration $a$ (m/s²) / 加速度 $a$ (m/s²)
+
+### Shape / 形状
+- **EN:** Straight line through origin with negative gradient
+- **中文:** 通过原点的直线，斜率为负
+
+### Gradient Meaning / 斜率含义
+- **EN:** Gradient = $-\omega^2 = -\frac{k}{m}$
+- **中文:** 斜率 = $-\omega^2 = -\frac{k}{m}$
+
+### Area Meaning / 面积含义
+- **EN:** No direct physical meaning
+- **中文:** 没有直接的物理意义
+
+### Exam Interpretation / 考试解读
+- **EN:** The straight line confirms SHM; gradient gives $\omega^2$; intercept at $x = A$ gives $a_{\text{max}} = -\omega^2 A$
+- **中文:** 直线确认SHM；斜率给出 $\omega^2$；在 $x = A$ 处的截距给出 $a_{\text{max}} = -\omega^2 A$
+
+## 6.3 Period² vs Mass Graph / 周期平方-质量图
+
+### Axes / 坐标轴
+- **X-axis:** Mass $m$ (kg) / 质量 $m$ (kg)
+- **Y-axis:** Period squared $T^2$ (s²) / 周期平方 $T^2$ (s²)
+
+### Shape / 形状
+- **EN:** Straight line through origin
+- **中文:** 通过原点的直线
+
+### Gradient Meaning / 斜率含义
+- **EN:** Gradient = $\frac{4\pi^2}{k}$
+- **中文:** 斜率 = $\frac{4\pi^2}{k}$
+
+### Area Meaning / 面积含义
+- **EN:** No direct physical meaning
+- **中文:** 没有直接的物理意义
+
+### Exam Interpretation / 考试解读
+- **EN:** Used to determine spring constant $k$ experimentally; gradient $= 4\pi^2/k$, so $k = 4\pi^2/\text{gradient}$
+- **中文:** 用于实验确定弹簧常数 $k$；斜率 $= 4\pi^2/k$，所以 $k = 4\pi^2/\text{斜率}$
+
+> 📷 **IMAGE PROMPT — DIAGRAM-03: Acceleration vs Displacement Graph**
+> A graph showing acceleration (a) on y-axis vs displacement (x) on x-axis. Draw a straight line through origin with negative slope. Label the gradient as -ω². Mark points at x = A (maximum displacement) showing a = -ω²A, and at x = -A showing a = ω²A.
 
 ---
 
-# 6. Worked Example / 典型例题
+# 7. Required Diagrams / 必备图表
 
-### Example 1: Finding Period and Frequency / 例题1：求周期和频率
+## 7.1 Mass-Spring System Setup / 质量-弹簧系统装置图
+
+### Description / 描述
+**English:**
+A diagram showing a mass attached to a spring on a horizontal frictionless surface (or vertical setup with spring hanging from a support). Label the equilibrium position, displacement, amplitude, and direction of motion.
+
+**中文:**
+显示质量块连接在弹簧上的示意图，弹簧置于水平无摩擦表面（或垂直设置，弹簧悬挂在支架上）。标注平衡位置、位移、振幅和运动方向。
+
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — DIAGRAM-04: Mass-Spring System Setup**
+> A detailed physics diagram of a mass-spring system. Show a horizontal frictionless surface with a block of mass m attached to a spring fixed at one end. The spring is shown at three positions: compressed (left of equilibrium), at equilibrium (middle), and extended (right of equilibrium). Label: equilibrium position (x=0), displacement (x), amplitude (A), spring constant (k), and restoring force vector (F) pointing toward equilibrium. Use clear arrows and professional physics diagram style.
+
+### Labels Required / 需要标注
+- **EN:** Equilibrium position ($x = 0$), displacement ($x$), amplitude ($A$), spring constant ($k$), mass ($m$), restoring force ($F$)
+- **中文:** 平衡位置（$x = 0$）、位移（$x$）、振幅（$A$）、弹簧常数（$k$）、质量（$m$）、恢复力（$F$）
+
+### Exam Importance / 考试重要性
+- **EN:** Essential for understanding the physical setup; often used in experimental questions
+- **中文:** 对理解物理装置至关重要；常用于实验题
+
+## 7.2 Energy Changes Diagram / 能量变化图
+
+### Description / 描述
+**English:**
+A diagram showing the energy transformations in a mass-spring system at different positions during oscillation. Include kinetic energy (KE), elastic potential energy (EPE), and total mechanical energy.
+
+**中文:**
+显示质量-弹簧系统在振荡过程中不同位置的能量转换图。包括动能（KE）、弹性势能（EPE）和总机械能。
+
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — DIAGRAM-05: Energy Changes in Mass-Spring System**
+> A diagram showing a mass-spring system at four positions: (1) maximum compression - all EPE, zero KE; (2) passing through equilibrium - maximum KE, zero EPE; (3) maximum extension - all EPE, zero KE; (4) again at equilibrium - maximum KE. Below each position, show bar charts representing KE (blue) and EPE (red) with total energy (green dashed line) constant. Include energy equations: EPE = ½kx², KE = ½mv², Total = ½kA².
+
+### Labels Required / 需要标注
+- **EN:** Kinetic energy ($KE = \frac{1}{2}mv^2$), elastic potential energy ($EPE = \frac{1}{2}kx^2$), total energy ($E_{\text{total}} = \frac{1}{2}kA^2$)
+- **中文:** 动能（$KE = \frac{1}{2}mv^2$）、弹性势能（$EPE = \frac{1}{2}kx^2$）、总能量（$E_{\text{total}} = \frac{1}{2}kA^2$）
+
+### Exam Importance / 考试重要性
+- **EN:** Frequently tested in energy conservation questions; understanding energy conversion is key to solving problems
+- **中文:** 常在能量守恒问题中考查；理解能量转换是解题的关键
+
+---
+
+# 8. Worked Examples / 典型例题
+
+## Example 1: Finding Period and Frequency / 求周期和频率
 
 ### Question / 题目
 **English:**
-A mass of 0.50 kg is attached to a spring with spring constant $k = 80 \text{ N/m}$. The mass is displaced 0.10 m from equilibrium and released on a frictionless horizontal surface. Calculate:
-(a) The angular frequency of oscillation
-(b) The period of oscillation
-(c) The frequency of oscillation
+A 0.50 kg mass is attached to a spring with spring constant $k = 80$ N/m. The mass is displaced 0.10 m from equilibrium and released. Calculate:
+(a) The period of oscillation
+(b) The frequency of oscillation
+(c) The angular frequency
 
 **中文:**
-一个0.50 kg的质量块连接到弹簧常数为$k = 80 \text{ N/m}$的弹簧上。质量块从平衡位置位移0.10 m后，在无摩擦水平面上释放。计算：
-(a) 振荡的角频率
-(b) 振荡的周期
-(c) 振荡的频率
+一个 0.50 kg 的质量块连接在弹簧常数为 $k = 80$ N/m 的弹簧上。将质量块从平衡位置拉开 0.10 m 后释放。计算：
+(a) 振荡周期
+(b) 振荡频率
+(c) 角频率
 
 ### Solution / 解答
 
-**(a) Angular frequency / 角频率:**
-$$ \omega = \sqrt{\frac{k}{m}} = \sqrt{\frac{80}{0.50}} = \sqrt{160} = 12.65 \text{ rad/s} $$
+**Step 1: Identify known values / 确定已知量**
+- $m = 0.50$ kg
+- $k = 80$ N/m
+- $A = 0.10$ m (amplitude, not needed for period)
 
-**(b) Period / 周期:**
-$$ T = \frac{2\pi}{\omega} = \frac{2\pi}{12.65} = 0.497 \text{ s} $$
-Alternatively: $T = 2\pi\sqrt{\frac{m}{k}} = 2\pi\sqrt{\frac{0.50}{80}} = 2\pi\sqrt{0.00625} = 2\pi(0.0791) = 0.497 \text{ s}$
+**Step 2: Calculate period / 计算周期**
+$$T = 2\pi \sqrt{\frac{m}{k}}$$
+$$T = 2\pi \sqrt{\frac{0.50}{80}}$$
+$$T = 2\pi \sqrt{0.00625}$$
+$$T = 2\pi \times 0.0791$$
+$$T = 0.497 \text{ s}$$
 
-**(c) Frequency / 频率:**
-$$ f = \frac{1}{T} = \frac{1}{0.497} = 2.01 \text{ Hz} $$
-Alternatively: $f = \frac{1}{2\pi}\sqrt{\frac{k}{m}} = \frac{1}{2\pi}\sqrt{160} = \frac{12.65}{6.283} = 2.01 \text{ Hz}$
+**Step 3: Calculate frequency / 计算频率**
+$$f = \frac{1}{T} = \frac{1}{0.497} = 2.01 \text{ Hz}$$
+
+**Step 4: Calculate angular frequency / 计算角频率**
+$$\omega = 2\pi f = 2\pi \times 2.01 = 12.6 \text{ rad/s}$$
+Alternatively:
+$$\omega = \sqrt{\frac{k}{m}} = \sqrt{\frac{80}{0.50}} = \sqrt{160} = 12.6 \text{ rad/s}$$
 
 ### Final Answer / 最终答案
-**Answer:** (a) $\omega = 12.7 \text{ rad/s}$, (b) $T = 0.497 \text{ s}$, (c) $f = 2.01 \text{ Hz}$
-**答案:** (a) $\omega = 12.7 \text{ rad/s}$，(b) $T = 0.497 \text{ s}$，(c) $f = 2.01 \text{ Hz}$
+**Answer:** $T = 0.50$ s, $f = 2.0$ Hz, $\omega = 13$ rad/s | **答案：** $T = 0.50$ s，$f = 2.0$ Hz，$\omega = 13$ rad/s
 
 ### Quick Tip / 提示
-Notice that the amplitude (0.10 m) was **not needed** to calculate the period or frequency. For an ideal mass-spring system, the period is independent of amplitude. This is a common exam trick — don't be fooled into using amplitude in period calculations!
+- **EN:** Notice that amplitude does NOT affect period — this is a key property of SHM
+- **中文:** 注意振幅不影响周期——这是SHM的关键特性
 
-注意振幅（0.10 m）**不需要**用来计算周期或频率。对于理想的质量-弹簧系统，周期与振幅无关。这是一个常见的考试陷阱——不要被误导在周期计算中使用振幅！
-
----
-
-### Example 2: Vertical Mass-Spring System / 例题2：垂直质量-弹簧系统
+## Example 2: Finding Spring Constant from Experimental Data / 从实验数据求弹簧常数
 
 ### Question / 题目
 **English:**
-A 0.20 kg mass is hung from a vertical spring of spring constant $k = 50 \text{ N/m}$. The mass is pulled down an additional 0.050 m from its equilibrium position and released.
-(a) Calculate the period of oscillation.
-(b) Calculate the maximum acceleration of the mass.
-(c) State how the period would change if the experiment were performed on the Moon (where $g = 1.62 \text{ m/s}^2$).
+In an experiment, a student measures the period of oscillation for different masses attached to the same spring. The results are:
+
+| Mass $m$ (kg) | Period $T$ (s) |
+|---------------|----------------|
+| 0.20 | 0.63 |
+| 0.40 | 0.89 |
+| 0.60 | 1.09 |
+| 0.80 | 1.26 |
+
+Plot a suitable graph to determine the spring constant $k$.
 
 **中文:**
-一个0.20 kg的质量块挂在弹簧常数为$k = 50 \text{ N/m}$的垂直弹簧上。质量块从其平衡位置再向下拉0.050 m后释放。
-(a) 计算振荡周期。
-(b) 计算质量块的最大加速度。
-(c) 说明如果在月球上进行实验（$g = 1.62 \text{ m/s}^2$），周期会如何变化。
+在实验中，学生测量了不同质量块连接在同一弹簧上的振荡周期。结果如下：
+
+| 质量 $m$ (kg) | 周期 $T$ (s) |
+|---------------|----------------|
+| 0.20 | 0.63 |
+| 0.40 | 0.89 |
+| 0.60 | 1.09 |
+| 0.80 | 1.26 |
+
+绘制合适的图表以确定弹簧常数 $k$。
 
 ### Solution / 解答
 
-**(a) Period / 周期:**
-$$ T = 2\pi\sqrt{\frac{m}{k}} = 2\pi\sqrt{\frac{0.20}{50}} = 2\pi\sqrt{0.004} = 2\pi(0.0632) = 0.397 \text{ s} $$
+**Step 1: Linearize the equation / 线性化方程**
+From $T = 2\pi \sqrt{\frac{m}{k}}$, square both sides:
+$$T^2 = \frac{4\pi^2}{k} m$$
 
-**(b) Maximum acceleration / 最大加速度:**
-In SHM, $a_{\text{max}} = \omega^2 A$
-$$ \omega = \sqrt{\frac{k}{m}} = \sqrt{\frac{50}{0.20}} = \sqrt{250} = 15.81 \text{ rad/s} $$
-$$ a_{\text{max}} = \omega^2 A = (15.81)^2 \times 0.050 = 250 \times 0.050 = 12.5 \text{ m/s}^2 $$
+This is of the form $y = mx + c$ where:
+- $y = T^2$
+- $x = m$
+- Gradient $= \frac{4\pi^2}{k}$
+- $c = 0$ (through origin)
 
-**(c) On the Moon / 在月球上:**
-The period would **remain the same**. The period depends only on $m$ and $k$, not on $g$. Gravity only shifts the equilibrium position but does not affect the oscillation frequency.
+**Step 2: Calculate $T^2$ values / 计算 $T^2$ 值**
 
-周期**保持不变**。周期只取决于$m$和$k$，与$g$无关。重力只移动平衡位置，但不影响振荡频率。
+| $m$ (kg) | $T$ (s) | $T^2$ (s²) |
+|----------|---------|------------|
+| 0.20 | 0.63 | 0.397 |
+| 0.40 | 0.89 | 0.792 |
+| 0.60 | 1.09 | 1.188 |
+| 0.80 | 1.26 | 1.588 |
+
+**Step 3: Plot graph and find gradient / 绘制图表并求斜率**
+Plot $T^2$ on y-axis vs $m$ on x-axis.
+Gradient $= \frac{\Delta T^2}{\Delta m} = \frac{1.588 - 0.397}{0.80 - 0.20} = \frac{1.191}{0.60} = 1.985$ s²/kg
+
+**Step 4: Calculate $k$ / 计算 $k$**
+$$\text{Gradient} = \frac{4\pi^2}{k}$$
+$$k = \frac{4\pi^2}{\text{Gradient}} = \frac{4\pi^2}{1.985} = 19.9 \text{ N/m}$$
 
 ### Final Answer / 最终答案
-**Answer:** (a) $T = 0.397 \text{ s}$, (b) $a_{\text{max}} = 12.5 \text{ m/s}^2$, (c) Period unchanged
-**答案:** (a) $T = 0.397 \text{ s}$，(b) $a_{\text{max}} = 12.5 \text{ m/s}^2$，(c) 周期不变
+**Answer:** $k = 20$ N/m | **答案：** $k = 20$ N/m
 
 ### Quick Tip / 提示
-For vertical mass-spring systems, always remember: **$g$ does not appear in the period formula!** The equilibrium extension $\Delta x = mg/k$ tells you where the mass hangs, but the oscillation frequency is the same as if it were horizontal.
-
-对于垂直质量-弹簧系统，始终记住：**$g$不会出现在周期公式中！** 平衡伸长$\Delta x = mg/k$告诉你质量块悬挂的位置，但振荡频率与水平系统相同。
-
----
-
-# 7. Flashcards / 闪卡
-
-**Flashcard 1:**
-Q (EN): What is the condition for a mass-spring system to exhibit SHM?
-Q (CN): 质量-弹簧系统表现出简谐运动的条件是什么？
-A (EN): The spring must obey Hooke's Law ($F = -kx$), and there must be no damping. The restoring force must be proportional to displacement and directed towards equilibrium.
-A (CN): 弹簧必须遵循胡克定律（$F = -kx$），且必须无阻尼。恢复力必须与位移成正比并指向平衡位置。
-
-**Flashcard 2:**
-Q (EN): What is the formula for the period of a mass-spring system?
-Q (CN): 质量-弹簧系统的周期公式是什么？
-A (EN): $T = 2\pi\sqrt{m/k}$, where $m$ is the mass and $k$ is the spring constant.
-A (CN): $T = 2\pi\sqrt{m/k}$，其中$m$是质量，$k$是弹簧常数。
-
-**Flashcard 3:**
-Q (EN): How does gravity affect the oscillation of a vertical mass-spring system?
-Q (CN): 重力如何影响垂直质量-弹簧系统的振荡？
-A (EN): Gravity shifts the equilibrium position but does NOT affect the period or frequency. The period depends only on $m$ and $k$.
-A (CN): 重力移动平衡位置，但**不**影响周期或频率。周期只取决于$m$和$k$。
-
-**Flashcard 4:**
-Q (EN): What happens to the period if the amplitude of a mass-spring system is doubled?
-Q (CN): 如果质量-弹簧系统的振幅加倍，周期会发生什么变化？
-A (EN): The period remains unchanged. For an ideal spring obeying Hooke's Law, the period is independent of amplitude (isochronous oscillation).
-A (CN): 周期保持不变。对于遵循胡克定律的理想弹簧，周期与振幅无关（等时振荡）。
-
-**Flashcard 5:**
-Q (EN): A mass-spring system has period $T$. If the mass is quadrupled, what is the new period?
-Q (CN): 一个质量-弹簧系统的周期为$T$。如果质量变为四倍，新周期是多少？
-A (EN): $T_{\text{new}} = 2T$. Since $T \propto \sqrt{m}$, quadrupling $m$ doubles $T$.
-A (CN): $T_{\text{new}} = 2T$。由于$T \propto \sqrt{m}$，质量变为四倍使周期加倍。
+- **EN:** Always plot $T^2$ vs $m$ to get a straight line — this linearizes the relationship
+- **中文:** 始终绘制 $T^2$ 与 $m$ 的关系图以获得直线——这使关系线性化
 
 ---
 
-# 8. Metadata / 元数据
+# 9. Past Paper Question Types / 历年真题题型
 
-```yaml
-title:
-  en: Mass-Spring System
-  cn: 质量-弹簧系统
-parent_topic: Simple Harmonic Motion
-parent_hub: "[[Simple Harmonic Motion]]"
-subject: Physics
-syllabus:
-  - CAIE 9702 (17.1 a-d)
-  - Edexcel IAL (WPH14 U4: 7.1-7.5)
-level: A2
-node_type: leaf_concept
-difficulty: intermediate
-related_leaf_nodes:
-  - "[[Conditions for SHM]]"
-  - "[[Displacement, Velocity and Acceleration in SHM]]"
-  - "[[The Simple Pendulum]]"
-  - "[[Energy in SHM]]"
-prerequisites:
-  - "[[Equations of Motion (SUVAT)]]"
-  - "[[Angular Measures]]"
-language: bilingual_en_cn
+| Question Type / 题型 | Frequency / 频率 | Difficulty / 难度 | Past Paper References / 真题索引 |
+|----------------------|------------------|------------------|-------------------------------|
+| Derivation of $T = 2\pi\sqrt{m/k}$ | High | Medium | 📝 *待填入* |
+| Calculation of period/frequency/$\omega$ | Very High | Easy | 📝 *待填入* |
+| Experimental determination of $k$ | High | Medium | 📝 *待填入* |
+| Energy calculations in mass-spring system | Medium | Medium | 📝 *待填入* |
+| Graph interpretation ($a$-$x$, $x$-$t$) | High | Medium | 📝 *待填入* |
+| Comparison with simple pendulum | Low | Hard | 📝 *待填入* |
+
+**Common Command Words / 常见指令词:**
+- **EN:** Derive, Calculate, Determine, Sketch, Explain, Compare
+- **中文:** 推导、计算、确定、画出、解释、比较
+
+---
+
+# 10. Practical Skills Connections / 实验技能链接
+
+**English:**
+The mass-spring system is a common experiment in both CAIE and Edexcel practical papers. Key practical skills include:
+
+1. **Measurement Techniques:**
+   - Use a stopwatch to measure time for 10-20 oscillations to reduce uncertainty
+   - Measure amplitude using a ruler or meter rule
+   - Use a motion sensor or data logger for precise measurements
+
+2. **Uncertainty Analysis:**
+   - Calculate percentage uncertainty in $T$ from timing errors
+   - Propagate uncertainties to find uncertainty in $k$
+   - Use error bars on $T^2$ vs $m$ graphs
+
+3. **Graph Plotting:**
+   - Plot $T^2$ vs $m$ to obtain a straight line
+   - Determine gradient and intercept
+   - Use the gradient to calculate $k$
+
+4. **Experimental Design:**
+   - Vary mass while keeping spring constant fixed
+   - Ensure small oscillations to maintain SHM conditions
+   - Minimize damping (use light masses, smooth surfaces)
+
+5. **Common Errors to Avoid:**
+   - Timing from release point instead of equilibrium position
+   - Not allowing enough oscillations for accurate timing
+   - Using masses that cause spring to exceed elastic limit
+
+**中文:**
+质量-弹簧系统是CAIE和Edexcel实验考试中的常见实验。关键实验技能包括：
+
+1. **测量技术：**
+   - 使用秒表测量10-20次振荡的时间以减少不确定度
+   - 使用尺子或米尺测量振幅
+   - 使用运动传感器或数据记录器进行精确测量
+
+2. **不确定度分析：**
+   - 从计时误差计算 $T$ 的百分比不确定度
+   - 传播不确定度以找到 $k$ 的不确定度
+   - 在 $T^2$ 与 $m$ 的图表上添加误差棒
+
+3. **图表绘制：**
+   - 绘制 $T^2$ 与 $m$ 的关系图以获得直线
+   - 确定斜率和截距
+   - 使用斜率计算 $k$
+
+4. **实验设计：**
+   - 在保持弹簧常数固定的情况下改变质量
+   - 确保小振幅以维持SHM条件
+   - 最小化阻尼（使用轻质量、光滑表面）
+
+5. **常见错误：**
+   - 从释放点而不是平衡位置开始计时
+   - 没有足够的振荡次数以获得精确计时
+   - 使用导致弹簧超过弹性限度的质量
+
+---
+
+# 11. Concept Map / 概念图谱
+
+```mermaid
+graph TD
+    %% Main node
+    MS["Mass-Spring System<br/>质量-弹簧系统"]
+    
+    %% Prerequisites
+    P1["[[Hooke's Law]]<br/>胡克定律"]
+    P2["[[Newton's Second Law]]<br/>牛顿第二定律"]
+    P3["[[Equations of Motion (SUVAT)]]<br/>运动方程"]
+    
+    %% Core concepts
+    C1["Restoring Force<br/>恢复力 F = -kx"]
+    C2["Angular Frequency<br/>角频率 ω = √(k/m)"]
+    C3["Period<br/>周期 T = 2π√(m/k)"]
+    C4["Energy in SHM<br/>SHM中的能量"]
+    
+    %% Related topics
+    R1["[[Conditions for SHM]]<br/>SHM条件"]
+    R2["[[Displacement, Velocity and Acceleration in SHM]]<br/>SHM中的位移、速度和加速度"]
+    R3["[[The Simple Pendulum]]<br/>单摆"]
+    R4["[[Energy in SHM]]<br/>SHM中的能量"]
+    
+    %% Parent
+    HUB["[[Simple Harmonic Motion]]<br/>简谐运动"]
+    
+    %% Connections
+    MS --> P1
+    MS --> P2
+    MS --> P3
+    
+    MS --> C1
+    C1 --> C2
+    C2 --> C3
+    C3 --> C4
+    
+    MS --> R1
+    MS --> R2
+    MS --> R3
+    MS --> R4
+    
+    MS --> HUB
+    
+    %% Styling
+    classDef main fill:#f9f,stroke:#333,stroke-width:4px
+    classDef concept fill:#bbf,stroke:#333,stroke-width:2px
+    classDef related fill:#bfb,stroke:#333,stroke-width:2px
+    classDef hub fill:#ffb,stroke:#333,stroke-width:3px
+    
+    class MS main
+    class C1,C2,C3,C4 concept
+    class R1,R2,R3,R4 related
+    class HUB hub
+```
+
+---
+
+# 12. Quick Revision Sheet / 速查表
+
+| Category / 类别 | Key Points / 要点 |
+|----------------|------------------|
+| **Definition / 定义** | Mass-spring system: mass $m$ attached to spring with constant $k$; exhibits SHM due to restoring force $F = -kx$ |
+| **Key Formula / 核心公式** | $T = 2\pi\sqrt{\frac{m}{k}}$, $\omega = \sqrt{\frac{k}{m}}$, $F = -kx$, $a = -\omega^2 x$ |
+| **Key Graph / 核心图表** | $a$-$x$: straight line through origin, gradient $= -\omega^2$; $T^2$-$m$: straight line through origin, gradient $= 4\pi^2/k$ |
+| **Energy / 能量** | $KE = \frac{1}{2}mv^2$, $EPE = \frac{1}{2}kx^2$, $E_{\text{total}} = \frac{1}{2}kA^2$; energy conserved |
+| **Key Property / 关键特性** | Period is independent of amplitude (isochronous) — unique to ideal SHM |
+| **Experimental / 实验** | Measure $T$ for different $m$; plot $T^2$ vs $m$; gradient gives $k = 4\pi^2/\text{gradient}$ |
+| **Common Mistake / 常见错误** | Forgetting negative sign in $F = -kx$; thinking $T$ depends on $A$; using wrong mass |
+| **Exam Tip / 考试提示** | Memorize derivation of $T = 2\pi\sqrt{m/k}$; always check units; use $T^2$ vs $m$ for linear graphs |
+| **Comparison / 比较** | Mass-spring: $T$ depends on $m$ and $k$; Simple pendulum: $T$ depends on $l$ and $g$ |
+| **Limitations / 局限性** | Real springs have mass; damping reduces amplitude; large amplitudes cause non-linear behavior |
+
+---
+
+> 📋 **CIE Only:** CAIE 9702 specifically requires students to derive the period equation from first principles using Hooke's Law and Newton's Second Law. Experimental determination of $k$ using $T^2$ vs $m$ graphs is a common practical question.
+
+> 📋 **Edexcel Only:** Edexcel IAL places more emphasis on energy transformations and the relationship between $a$, $x$, and $\omega$. Students should be comfortable with phase differences and the general SHM equation $x = A\cos(\omega t + \phi)$.

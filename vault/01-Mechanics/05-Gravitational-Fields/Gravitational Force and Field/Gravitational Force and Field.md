@@ -1,844 +1,948 @@
+# Gravitational Force and Field / 引力与引力场
+
+---
+
 # 1. Overview / 概述
 
-**English:** Gravitational force and field is a fundamental topic in A2 Physics that explores the universal attraction between masses. This topic builds directly on [[Newton's Laws of Motion]] and [[Centripetal Acceleration and Force]], extending Newtonian mechanics to celestial scales. Gravitational fields explain planetary orbits, tides, satellite motion, and the structure of the universe. In both CAIE 9702 and Edexcel IAL, this forms the foundation for [[Gravitational Potential]] and [[Circular Orbits]]. Real-world applications include satellite communications, GPS technology, space exploration, and understanding black holes. The concept of field (region of influence) is a key unifying idea in physics, reappearing in electric and magnetic fields.
+**English:**
+This topic explores the fundamental force that governs the motion of celestial bodies, keeps planets in orbit, and determines the weight we feel on Earth. Gravitational force is one of the four fundamental forces of nature, and at A-Level, we focus on Newton's law of universal gravitation and the concept of gravitational fields. This topic bridges classical mechanics with astrophysics, providing the foundation for understanding planetary motion, satellite orbits, and the structure of the universe.
 
-**中文:** 引力与引力场是A2物理学的核心课题，研究质量之间的普遍吸引力。本课题建立在[[牛顿运动定律]]和[[向心加速度与力]]的基础上，将牛顿力学扩展到天体尺度。引力场解释了行星轨道、潮汐、卫星运动以及宇宙结构。在CAIE 9702和Edexcel IAL中，这是学习[[引力势]]和[[圆周轨道]]的基础。实际应用包括卫星通信、GPS技术、太空探索和理解黑洞。场的概念（影响区域）是物理学中关键的统一思想，在电场和磁场中再次出现。
+In both Cambridge 9702 and Edexcel IAL syllabuses, gravitational fields are a core A2 topic. You will learn to calculate gravitational forces between masses, define and measure gravitational field strength, and distinguish between radial and uniform fields. This knowledge is essential for later topics such as [[Gravitational Potential]], [[Circular Orbits]], and [[Simple Harmonic Motion]].
 
-> 📷 **IMAGE PROMPT — [OV-01]: Gravitational Field Overview**
-> **English:** A split diagram showing: Left side - Earth with field lines (arrows pointing inward) and a small mass m experiencing force F = mg; Right side - Two masses M and m with Newton's law of gravitation F = GMm/r². Include labels: gravitational field strength g, radial field, force direction. Style: clean educational diagram, blue and orange color scheme, vector arrows in red. Exam importance: HIGH - foundational visual.
-> **中文:** 分屏示意图：左侧显示地球及其向内指向的引力场线，小质量m受力F=mg；右侧显示两个质量M和m，标注万有引力定律F=GMm/r²。标注：引力场强度g、径向场、力的方向。风格：清晰教育图示，蓝橙配色，红色矢量箭头。考试重要性：高——基础视觉图。
+Real-world applications include satellite communication, GPS technology, space exploration, and understanding tides. In examinations, this topic frequently appears in structured questions requiring calculations, graph analysis, and explanations of field concepts. Mastery of this topic is crucial for achieving high grades in A-Level Physics.
+
+**中文：**
+本主题研究支配天体运动、维持行星轨道并决定地球重力的基本力。引力是自然界四种基本力之一，在A-Level阶段，我们重点学习牛顿万有引力定律和引力场的概念。本主题将经典力学与天体物理学联系起来，为理解行星运动、卫星轨道和宇宙结构奠定基础。
+
+在剑桥9702和爱德思IAL考试大纲中，引力场是A2阶段的核心主题。你将学习计算质量之间的引力，定义和测量引力场强度，并区分径向场和均匀场。这些知识对于后续学习[[引力势]]、[[圆周轨道]]和[[简谐运动]]等主题至关重要。
+
+实际应用包括卫星通信、GPS技术、太空探索和理解潮汐现象。在考试中，本主题经常出现在需要计算、图表分析和场概念解释的结构化问题中。掌握本主题对于在A-Level物理中取得高分至关重要。
+
+---
 
 # 2. Syllabus Learning Objectives / 考纲学习目标
 
-| CAIE 9702 (15.1 a-d) | Edexcel IAL (WPH14 U4: 6.1-6.5) |
-|---|---|
-| (a) State Newton's law of universal gravitation | 6.1 Understand the concept of a gravitational field as a region where a mass experiences a force |
-| (b) Define gravitational field strength g = F/m | 6.2 Understand that gravitational fields are radial around point masses and uniform near Earth's surface |
-| (c) Derive g = GM/r² from Newton's law | 6.3 Use Newton's law of universal gravitation F = -GMm/r² |
-| (d) Distinguish between gravitational mass and inertial mass | 6.4 Calculate gravitational field strength g = GM/r² |
-| — | 6.5 Understand the relationship between g and the acceleration of free fall |
+| CAIE 9702 | Edexcel IAL |
+|-----------|-------------|
+| 15.1(a) State Newton's law of universal gravitation | 6.1 Understand the concept of a gravitational field as a region where a mass experiences a force |
+| 15.1(b) Use the equation $F = \frac{Gm_1 m_2}{r^2}$ | 6.2 Use the equation $F = \frac{Gm_1 m_2}{r^2}$ |
+| 15.1(c) Define gravitational field strength $g = \frac{F}{m}$ | 6.3 Define gravitational field strength $g = \frac{F}{m}$ |
+| 15.1(d) Use $g = \frac{GM}{r^2}$ for point masses | 6.4 Use $g = \frac{GM}{r^2}$ for point and spherical masses |
+| — | 6.5 Understand the concept of uniform gravitational fields near Earth's surface |
 
 **Examiner Expectations / 考官期望:**
-- **English:** Students must be able to state Newton's law in words AND formula. Derivation of g = GM/r² is frequently examined. Understanding the vector nature of gravitational force (attractive, along line joining centers) is crucial. Distinguishing between gravitational and inertial mass is a common theory question.
-- **中文:** 学生必须能用文字和公式表述牛顿万有引力定律。g = GM/r²的推导经常被考查。理解引力矢量的性质（吸引力，沿连线方向）至关重要。区分引力质量和惯性质量是常见的理论题。
 
-> 📋 **CIE Only:** CAIE explicitly requires distinguishing gravitational mass vs inertial mass (15.1d). This is a theory question topic.
-> 📋 **Edexcel Only:** Edexcel explicitly requires understanding that gravitational fields are radial around point masses and uniform near Earth's surface (6.2). The negative sign in F = -GMm/r² is used in Edexcel to indicate attractive force direction.
+**English:**
+- Candidates must be able to state Newton's law of universal gravitation in words and equation form.
+- Candidates must understand that gravitational force is always attractive and acts along the line joining the centres of masses.
+- Candidates must distinguish between gravitational field strength ($g$) and gravitational force ($F$).
+- Candidates must be able to derive $g = \frac{GM}{r^2}$ from $F = \frac{Gm_1 m_2}{r^2}$ and $F = mg$.
+- Candidates must recognise that for a uniform field, $g$ is constant (e.g., near Earth's surface).
+- Candidates must be able to calculate gravitational force between spherical objects using centre-to-centre distance.
+
+**中文：**
+- 考生必须能够用文字和公式形式陈述牛顿万有引力定律。
+- 考生必须理解引力总是吸引力，并沿质量中心连线方向作用。
+- 考生必须区分引力场强度（$g$）和引力（$F$）。
+- 考生必须能够从 $F = \frac{Gm_1 m_2}{r^2}$ 和 $F = mg$ 推导出 $g = \frac{GM}{r^2}$。
+- 考生必须认识到在均匀场中，$g$ 是常数（例如地球表面附近）。
+- 考生必须能够使用中心到中心的距离计算球形物体之间的引力。
+
+> 📋 **CIE Only:** CIE requires explicit statement of Newton's law of universal gravitation in words. The constant $G = 6.67 \times 10^{-11} \, \text{N m}^2 \text{kg}^{-2}$ is provided in data booklet. CIE also expects candidates to understand that gravitational field strength is a vector quantity.
+
+> 📋 **Edexcel Only:** Edexcel explicitly requires understanding of uniform gravitational fields near Earth's surface. Edexcel also expects candidates to apply the inverse square law to gravitational fields and compare with electric fields. The concept of gravitational field lines is assessed in Edexcel but not explicitly in CIE.
+
+---
 
 # 3. Core Definitions / 核心定义
 
 | Term (EN/CN) | Definition (EN) | Definition (CN) | Common Mistakes / 常见错误 |
-|---|---|---|---|
-| [[Newton's Law of Universal Gravitation]] / 万有引力定律 | Every point mass attracts every other point mass with a force directly proportional to the product of their masses and inversely proportional to the square of their separation | 任何两个质点之间都存在相互吸引力，力的大小与两质量的乘积成正比，与距离的平方成反比 | Forgetting the force acts along the line joining centers; using r as diameter instead of radius |
-| [[Gravitational Field Strength]] (g) / 引力场强度 | The gravitational force per unit mass experienced by a small test mass placed at that point | 单位质量在引力场中某点所受的引力 | Confusing g with G (gravitational constant); forgetting g is a vector |
-| [[Gravitational Field]] / 引力场 | A region of space where a mass experiences a gravitational force | 一个质量在其中会受到引力作用的区域 | Thinking fields only exist near planets; fields exist around ALL masses |
-| [[Gravitational Mass]] / 引力质量 | The mass that determines the gravitational force experienced by an object in a gravitational field | 决定物体在引力场中受到引力大小的质量 | Confusing with inertial mass (resistance to acceleration) |
-| [[Inertial Mass]] / 惯性质量 | The mass that determines the resistance of an object to acceleration when a force is applied | 决定物体在外力作用下抵抗加速度能力的质量 | Thinking they are always equal (they are experimentally equal but conceptually different) |
-| [[Radial Field]] / 径向场 | A gravitational field where field lines radiate from a point mass, with g ∝ 1/r² | 场线从点质量向外辐射的引力场，g ∝ 1/r² | Assuming field lines are parallel in radial fields |
-| [[Uniform Field]] / 均匀场 | A gravitational field where field lines are parallel and g is constant in magnitude and direction | 场线平行且g的大小和方向恒定的引力场 | Forgetting uniform field is an approximation near Earth's surface |
+|--------------|-----------------|-----------------|---------------------------|
+| **Gravitational Force / 引力** | The attractive force between any two objects with mass, proportional to the product of their masses and inversely proportional to the square of the distance between their centres. | 任何两个有质量的物体之间的吸引力，与它们质量的乘积成正比，与它们中心之间距离的平方成反比。 | Confusing gravitational force with weight; forgetting that force is always attractive |
+| **Newton's Law of Universal Gravitation / 牛顿万有引力定律** | Every particle of matter in the universe attracts every other particle with a force that is directly proportional to the product of their masses and inversely proportional to the square of the distance between their centres. | 宇宙中每个物质粒子都吸引其他每个粒子，力与它们质量的乘积成正比，与它们中心之间距离的平方成反比。 | Omitting "centre-to-centre" distance; using diameter instead of radius |
+| **Gravitational Field / 引力场** | A region of space in which a mass experiences a gravitational force. | 一个质量在其中会受到引力作用的空间区域。 | Thinking field is a force rather than a region |
+| **Gravitational Field Strength ($g$) / 引力场强度** | The gravitational force per unit mass experienced by a small test mass placed at a point in the field. | 放置在场中某点的测试质量所受到的每单位质量的引力。 | Confusing $g$ with $G$; forgetting $g$ is a vector |
+| **Point Mass / 质点** | An idealised mass concentrated at a single point in space. | 理想化的质量集中在空间中的一个点上。 | Applying point mass equations to extended objects without checking |
+| **Inverse Square Law / 平方反比定律** | A physical law stating that a specified physical quantity is inversely proportional to the square of the distance from the source. | 物理定律，规定特定物理量与距源距离的平方成反比。 | Forgetting the square; using linear inverse relationship |
+| **Radial Field / 径向场** | A field where field lines radiate from a central point, with strength decreasing as $1/r^2$. | 场线从中心点辐射的场，强度按 $1/r^2$ 减小。 | Confusing with uniform field; thinking field lines are parallel |
+| **Uniform Field / 均匀场** | A field where the field strength is constant in magnitude and direction throughout the region. | 在整个区域内场强大小和方向都恒定的场。 | Applying uniform field equations to radial fields |
 
-> 📷 **IMAGE PROMPT — [DEF-01]: Radial vs Uniform Gravitational Fields**
-> **English:** Side-by-side comparison: Left - Radial field around a spherical mass (Earth) with arrows pointing inward, spacing increases with distance (showing 1/r²). Right - Uniform field near Earth's surface with parallel downward arrows of equal length. Labels: "Radial Field: g ∝ 1/r²", "Uniform Field: g = constant". Style: clear vector diagram, blue arrows on white background. Exam importance: VERY HIGH - frequently tested distinction.
-> **中文:** 并排对比：左侧——球形质量（地球）周围的径向场，箭头向内指向，间距随距离增大（显示1/r²）。右侧——地球表面附近的均匀场，平行等长向下箭头。标注："径向场：g ∝ 1/r²"，"均匀场：g = 常数"。风格：清晰矢量图，白色背景蓝色箭头。考试重要性：非常高——经常考查的区别。
+---
 
 # 4. Key Concepts Explained / 关键概念详解
 
-## 4.1 Newton's Law of Universal Gravitation / 万有引力定律
+## 4.1 Newton's Law of Universal Gravitation / 牛顿万有引力定律
 
-### Explanation / 解释:
-**English:** [[Newton's Law of Universal Gravitation]] states that every point mass attracts every other point mass with a force that is:
-- Directly proportional to the product of their masses ($F \propto m_1 m_2$)
-- Inversely proportional to the square of their separation ($F \propto 1/r^2$)
-- Always attractive (pulling masses together)
-- Acting along the line joining the centers of the masses
+### Explanation / 解释
+**English:**
+Newton's law of universal gravitation states that every particle in the universe attracts every other particle with a force that is directly proportional to the product of their masses and inversely proportional to the square of the distance between their centres. Mathematically:
 
-The constant of proportionality is the [[Gravitational Constant]] $G = 6.67 \times 10^{-11} \, \text{N m}^2 \text{kg}^{-2}$.
+$$F = \frac{G m_1 m_2}{r^2}$$
 
-$$F = G\frac{m_1 m_2}{r^2}$$
+where $G = 6.67 \times 10^{-11} \, \text{N m}^2 \text{kg}^{-2}$ is the universal gravitational constant, $m_1$ and $m_2$ are the masses, and $r$ is the centre-to-centre distance.
 
-**中文:** [[牛顿万有引力定律]]指出，任何两个质点之间都存在相互吸引力：
-- 力的大小与两质量的乘积成正比（$F \propto m_1 m_2$）
-- 力的大小与距离的平方成反比（$F \propto 1/r^2$）
-- 始终为吸引力（将质量拉向一起）
-- 沿两质量中心的连线方向
+This law is fundamental to understanding [[Newton's Laws of Motion]] applied to celestial bodies. The force is always attractive, acting along the line joining the centres of the two masses. For spherical objects, the distance $r$ is measured from centre to centre, not from surface to surface.
 
-比例常数是[[引力常数]] $G = 6.67 \times 10^{-11} \, \text{N m}^2 \text{kg}^{-2}$。
+**中文：**
+牛顿万有引力定律指出，宇宙中每个粒子都吸引其他每个粒子，力与它们质量的乘积成正比，与它们中心之间距离的平方成反比。数学表达式为：
 
-### Physical Meaning / 物理意义:
-**English:** This law is universal — it applies to all masses, from subatomic particles to galaxies. The inverse square relationship means that doubling the distance reduces the force to 1/4. The force is extremely weak for small masses (e.g., two people) but becomes enormous for astronomical bodies (e.g., Earth and Moon). This law explains why planets orbit the Sun, why objects fall to Earth, and why tides occur.
+$$F = \frac{G m_1 m_2}{r^2}$$
 
-**中文:** 该定律具有普遍性——适用于所有质量，从亚原子粒子到星系。平方反比关系意味着距离加倍，力减小到1/4。对于小质量（如两个人），力极其微弱，但对于天体（如地球和月球），力变得巨大。该定律解释了行星绕太阳运行、物体落向地球以及潮汐产生的原因。
+其中 $G = 6.67 \times 10^{-11} \, \text{N m}^2 \text{kg}^{-2}$ 是万有引力常数，$m_1$ 和 $m_2$ 是质量，$r$ 是中心到中心的距离。
 
-### Common Misconceptions / 常见误区:
-- ❌ **"Gravitational force requires contact"** — Gravitational force is a non-contact (action-at-a-distance) force
-- ❌ **"Gravitational force only acts on Earth"** — It acts between ALL masses everywhere
-- ❌ **"r is the distance from the surface"** — r is the distance between CENTERS of masses
-- ❌ **"G is the same as g"** — G is a universal constant; g varies with location
-- ❌ **"The force on m₁ is different from the force on m₂"** — Newton's Third Law: forces are equal and opposite
+这一定律是理解[[牛顿运动定律]]应用于天体的基础。引力总是吸引力，沿两个质量中心连线方向作用。对于球形物体，距离 $r$ 是从中心到中心测量的，而不是从表面到表面。
 
-### Exam Tips / 考试提示:
-**English:** Always write the formula with G explicitly. When calculating force between Earth and an object, remember r = Earth's radius + height above surface. For spherical objects, treat them as point masses at their centers. The force is ALWAYS attractive — never repulsive. In vector form, use the negative sign to indicate direction (Edexcel emphasis).
+### Physical Meaning / 物理意义
+**English:**
+The law explains why planets orbit the Sun, why the Moon orbits Earth, and why we feel weight. The gravitational force between two objects is extremely small unless at least one of the masses is very large (like a planet). This is why we don't feel gravitational attraction between everyday objects.
 
-**中文:** 始终明确写出G的公式。计算地球与物体之间的力时，记住r = 地球半径 + 距地表高度。对于球形物体，将其视为质量集中在球心的质点。力始终为吸引力——绝无排斥力。在矢量形式中，使用负号表示方向（Edexcel重点）。
+**中文：**
+该定律解释了行星为什么绕太阳运行，月球为什么绕地球运行，以及我们为什么感到重量。两个物体之间的引力非常小，除非至少其中一个质量非常大（如行星）。这就是为什么我们感觉不到日常物体之间的引力。
 
-## 4.2 Gravitational Field Strength (g) / 引力场强度
+### Common Misconceptions / 常见误区
+1. **Confusing $G$ and $g$:** $G$ is a universal constant ($6.67 \times 10^{-11} \, \text{N m}^2 \text{kg}^{-2}$), while $g$ is gravitational field strength ($9.81 \, \text{N kg}^{-1}$ on Earth). They are completely different quantities.
+2. **Using surface-to-surface distance:** For spherical objects, always use centre-to-centre distance.
+3. **Forgetting the inverse square:** The force decreases with $r^2$, not $r$.
+4. **Thinking gravitational force can be repulsive:** Gravitational force is always attractive.
 
-### Explanation / 解释:
-**English:** [[Gravitational Field Strength]] (g) is defined as the gravitational force per unit mass experienced by a small test mass placed at that point in the field.
+### Exam Tips / 考试提示
+**English:**
+- Always state the law in words before writing the equation.
+- When calculating force between Earth and a satellite, remember $r$ is the distance from Earth's centre to the satellite.
+- Pay attention to units: masses in kg, distance in m, force in N.
+- CIE often asks to "state" the law (1-2 marks) and then "use" it in calculations.
 
-$$g = \frac{F}{m}$$
+**中文：**
+- 在写方程之前，始终用文字陈述定律。
+- 计算地球与卫星之间的力时，记住 $r$ 是从地球中心到卫星的距离。
+- 注意单位：质量用kg，距离用m，力用N。
+- CIE常要求"陈述"定律（1-2分），然后在计算中"使用"它。
 
-Where:
-- $g$ = gravitational field strength (N kg⁻¹)
-- $F$ = gravitational force on the test mass (N)
-- $m$ = mass of the test object (kg)
+---
 
-For a point mass M, the field strength at distance r is:
+## 4.2 Gravitational Field Strength / 引力场强度
 
-$$g = \frac{GM}{r^2}$$
-
-This is derived by combining $F = GMm/r^2$ with $g = F/m$.
-
-**中文:** [[引力场强度]] (g) 定义为放置在引力场中某点的单位质量所受的引力。
+### Explanation / 解释
+**English:**
+Gravitational field strength ($g$) at a point is defined as the gravitational force per unit mass experienced by a small test mass placed at that point:
 
 $$g = \frac{F}{m}$$
 
-其中：
-- $g$ = 引力场强度 (N kg⁻¹)
-- $F$ = 测试质量所受的引力 (N)
-- $m$ = 测试物体的质量 (kg)
+where $F$ is the gravitational force on the test mass $m$. The unit of $g$ is $\text{N kg}^{-1}$ (equivalent to $\text{m s}^{-2}$).
 
-对于点质量M，距离r处的场强为：
+For a point mass $M$, the gravitational field strength at a distance $r$ from its centre is:
 
 $$g = \frac{GM}{r^2}$$
 
-这是通过结合 $F = GMm/r^2$ 和 $g = F/m$ 推导得出的。
+This equation is derived by combining $F = \frac{GMm}{r^2}$ with $F = mg$. The field strength is a vector quantity, always directed towards the centre of the mass creating the field.
 
-### Physical Meaning / 物理意义:
-**English:** g is a VECTOR quantity — it points toward the center of the mass creating the field. Near Earth's surface, g ≈ 9.81 N kg⁻¹ (or m s⁻²). Note that g has the same units as acceleration (N kg⁻¹ = m s⁻²), which is why the acceleration of free fall equals g. The value of g decreases with height and varies slightly over Earth's surface due to its non-spherical shape and density variations.
+**中文：**
+引力场强度（$g$）定义为放置在场中某点的测试质量所受到的每单位质量的引力：
 
-**中文:** g是矢量——指向产生场的质量中心。在地球表面附近，g ≈ 9.81 N kg⁻¹（或 m s⁻²）。注意g与加速度单位相同（N kg⁻¹ = m s⁻²），这就是自由落体加速度等于g的原因。g的值随高度减小，并因地球非球形和密度变化而在地表略有变化。
+$$g = \frac{F}{m}$$
 
-### Common Misconceptions / 常见误区:
-- ❌ **"g is the same everywhere on Earth"** — g varies with latitude, altitude, and local geology
-- ❌ **"g = 9.81 m/s² is a universal constant"** — g = 9.81 only near Earth's surface; it changes with r
-- ❌ **"g depends on the test mass"** — g is a property of the FIELD, not the test mass
-- ❌ **"g and G are the same thing"** — g is field strength (varies), G is universal constant (fixed)
+其中 $F$ 是测试质量 $m$ 受到的引力。$g$ 的单位是 $\text{N kg}^{-1}$（等同于 $\text{m s}^{-2}$）。
 
-### Exam Tips / 考试提示:
-**English:** The derivation of g = GM/r² from F = GMm/r² and g = F/m is a standard exam question. Remember g ∝ 1/r² — doubling distance reduces g to 1/4. For Earth, g at surface = GM_E/R_E². At height h above surface, g = GM_E/(R_E + h)². The units N kg⁻¹ and m s⁻² are interchangeable.
+对于质点 $M$，距离其中心 $r$ 处的引力场强度为：
 
-**中文:** 从F = GMm/r²和g = F/m推导g = GM/r²是标准考题。记住g ∝ 1/r²——距离加倍，g减小到1/4。对于地球，地表g = GM_E/R_E²。在距地表高度h处，g = GM_E/(R_E + h)²。单位N kg⁻¹和m s⁻²可互换。
+$$g = \frac{GM}{r^2}$$
+
+该方程通过结合 $F = \frac{GMm}{r^2}$ 和 $F = mg$ 推导得出。场强是矢量，始终指向产生场的质量中心。
+
+### Physical Meaning / 物理意义
+**English:**
+Gravitational field strength tells us how strong gravity is at a particular location. On Earth's surface, $g \approx 9.81 \, \text{N kg}^{-1}$, meaning each kilogram of mass experiences about 9.81 N of gravitational force. As you move away from Earth, $g$ decreases according to the inverse square law.
+
+**中文：**
+引力场强度告诉我们特定位置的引力有多强。在地球表面，$g \approx 9.81 \, \text{N kg}^{-1}$，意味着每千克质量受到约9.81 N的引力。随着远离地球，$g$ 按照平方反比定律减小。
+
+### Common Misconceptions / 常见误区
+1. **Confusing $g$ with $G$:** $g$ varies with location; $G$ is constant everywhere.
+2. **Forgetting $g$ is a vector:** $g$ has both magnitude and direction.
+3. **Using $g = \frac{GM}{r^2}$ for non-point masses:** This equation only applies to point masses or spherical objects where $r$ is measured from the centre.
+4. **Thinking $g$ is constant everywhere:** $g$ decreases with height above Earth's surface.
+
+### Exam Tips / 考试提示
+**English:**
+- Derive $g = \frac{GM}{r^2}$ from $F = \frac{GMm}{r^2}$ and $F = mg$ — this is a common exam question.
+- Remember that $g$ on Earth's surface is approximately $9.81 \, \text{N kg}^{-1}$.
+- For questions about gravitational field strength inside a planet, the field strength decreases linearly to zero at the centre.
+- Edexcel often asks to compare gravitational field strength at different distances.
+
+**中文：**
+- 从 $F = \frac{GMm}{r^2}$ 和 $F = mg$ 推导 $g = \frac{GM}{r^2}$ — 这是常见的考试题目。
+- 记住地球表面的 $g$ 约为 $9.81 \, \text{N kg}^{-1}$。
+- 关于行星内部引力场强度的问题，场强线性减小，在中心处为零。
+- 爱德思常要求比较不同距离处的引力场强度。
+
+---
 
 ## 4.3 Radial vs Uniform Gravitational Fields / 径向场与均匀场
 
-### Explanation / 解释:
-**English:** Gravitational fields can be classified into two types:
+### Explanation / 解释
+**English:**
+Gravitational fields can be classified into two types:
 
-**Radial Field:**
-- Field lines radiate from a point mass (or spherical mass)
-- g ∝ 1/r² — field strength decreases with distance
-- Field lines are not parallel; they converge at the center
-- Example: Field around a planet, star, or any isolated mass
+**Radial Field:** Created by a point mass or spherical object. Field lines radiate from the centre of mass. The field strength decreases with distance according to $g \propto \frac{1}{r^2}$. Field lines are directed towards the centre of mass. This is the general case for all gravitational fields.
 
-**Uniform Field:**
-- Field lines are parallel and equally spaced
-- g is constant in both magnitude and direction
-- This is an APPROXIMATION valid near the surface of a large body
-- Example: Near Earth's surface (g ≈ 9.81 N kg⁻¹, direction vertically downward)
+**Uniform Field:** An approximation used near the surface of a large spherical object (like Earth). Over small distances compared to Earth's radius, the field lines are approximately parallel and equally spaced. The field strength $g$ is approximately constant. This is why we use $g = 9.81 \, \text{N kg}^{-1}$ for objects near Earth's surface.
 
-**中文:** 引力场可分为两种类型：
+**中文：**
+引力场可分为两种类型：
 
-**径向场：**
-- 场线从点质量（或球形质量）向外辐射
-- g ∝ 1/r²——场强随距离减小
-- 场线不平行；汇聚于中心
-- 示例：行星、恒星或任何孤立质量周围的场
+**径向场：** 由质点或球形物体产生。场线从质量中心辐射。场强随距离按 $g \propto \frac{1}{r^2}$ 减小。场线指向质量中心。这是所有引力场的一般情况。
 
-**均匀场：**
-- 场线平行且等距
-- g的大小和方向恒定
-- 这是大质量体表面附近的近似
-- 示例：地球表面附近（g ≈ 9.81 N kg⁻¹，方向垂直向下）
+**均匀场：** 在大球形物体（如地球）表面附近使用的近似。与地球半径相比，在小距离上，场线近似平行且等间距。场强 $g$ 近似恒定。这就是为什么对地球表面附近的物体使用 $g = 9.81 \, \text{N kg}^{-1}$。
 
-### Physical Meaning / 物理意义:
-**English:** The distinction is important because calculations differ. In a uniform field, gravitational force on a mass is constant (F = mg). In a radial field, force varies with position (F = GMm/r²). The uniform field approximation is valid when the height above the surface is much smaller than the radius of the body (h << R). For Earth, this works well for heights up to a few kilometers.
+### Physical Meaning / 物理意义
+**English:**
+The distinction between radial and uniform fields is important for problem-solving. For satellite orbits (large distances), use the radial field equations. For objects falling near Earth's surface (small distances), use the uniform field approximation with constant $g$.
 
-**中文:** 这种区别很重要，因为计算方法不同。在均匀场中，质量所受引力恒定（F = mg）。在径向场中，力随位置变化（F = GMm/r²）。均匀场近似在距地表高度远小于天体半径时有效（h << R）。对于地球，这适用于高达几公里的高度。
+**中文：**
+径向场和均匀场之间的区别对于解题很重要。对于卫星轨道（大距离），使用径向场方程。对于地球表面附近下落的物体（小距离），使用恒定 $g$ 的均匀场近似。
 
-### Common Misconceptions / 常见误区:
-- ❌ **"Earth's gravitational field is uniform everywhere"** — Only approximately uniform near the surface
-- ❌ **"Radial fields have parallel field lines"** — Radial field lines diverge from the center
-- ❌ **"g is constant in a radial field"** — g decreases with distance in a radial field
+### Common Misconceptions / 常见误区
+1. **Thinking Earth's field is truly uniform:** It's only an approximation for small distances.
+2. **Applying uniform field equations to orbital problems:** For orbits, always use radial field equations.
+3. **Confusing field line patterns:** Radial fields have converging lines; uniform fields have parallel lines.
 
-### Exam Tips / 考试提示:
-**English:** Be able to sketch both field patterns. For radial fields, show arrows pointing inward (attractive). For uniform fields, show parallel downward arrows. Questions often ask: "State and explain why the gravitational field near Earth's surface can be considered uniform." Answer: Because Earth's radius (6400 km) is much larger than typical heights, so g changes negligibly.
+### Exam Tips / 考试提示
+**English:**
+- CIE expects you to know that near Earth's surface, $g$ is approximately constant.
+- Edexcel explicitly tests the concept of uniform fields and may ask you to sketch field lines.
+- When a question mentions "near Earth's surface," assume uniform field unless stated otherwise.
+- For questions about satellites or planets, assume radial field.
 
-**中文:** 能够画出两种场图。对于径向场，箭头指向内（吸引力）。对于均匀场，平行向下箭头。问题常问："说明并解释为什么地球表面附近的引力场可视为均匀。"答案：因为地球半径（6400 km）远大于典型高度，所以g变化可忽略。
+**中文：**
+- CIE要求你知道地球表面附近 $g$ 近似恒定。
+- 爱德思明确测试均匀场的概念，可能要求你画出场线。
+- 当问题提到"地球表面附近"时，除非另有说明，假设为均匀场。
+- 对于卫星或行星的问题，假设为径向场。
 
-## 4.4 Gravitational Mass vs Inertial Mass / 引力质量与惯性质量
+> 📷 **IMAGE PROMPT — GF-01: Comparison of Radial and Uniform Gravitational Fields**
+>
+> A side-by-side comparison diagram. Left side: Radial field showing a central sphere (Earth) with arrowed field lines radiating outward from the centre, converging towards the sphere. Right side: Uniform field showing parallel, equally spaced vertical arrowed field lines near a flat surface. Labels in English and Chinese. Clean white background, educational style, vector graphics aesthetic.
 
-### Explanation / 解释:
-**English:** [[Gravitational Mass]] and [[Inertial Mass]] are conceptually different but experimentally equivalent:
-
-**Gravitational Mass (m_g):**
-- Determines the gravitational force experienced: $F = m_g g$
-- Measured using a balance (comparing with standard masses)
-- Relates to the "amount of matter" that responds to gravity
-
-**Inertial Mass (m_i):**
-- Determines resistance to acceleration: $F = m_i a$
-- Measured using an inertial balance or by applying a known force and measuring acceleration
-- Relates to the "amount of matter" that resists motion changes
-
-**Equivalence Principle:** Experimentally, $m_g = m_i$ to high precision. This is why all objects fall with the same acceleration in a gravitational field (Galileo's experiment).
-
-**中文:** [[引力质量]]和[[惯性质量]]概念上不同，但实验上等价：
-
-**引力质量 (m_g)：**
-- 决定所受引力：$F = m_g g$
-- 用天平测量（与标准质量比较）
-- 与"对引力响应的物质数量"相关
-
-**惯性质量 (m_i)：**
-- 决定对加速度的抵抗：$F = m_i a$
-- 用惯性秤或施加已知力测量加速度来测量
-- 与"抵抗运动变化的物质数量"相关
-
-**等效原理：** 实验上，$m_g = m_i$ 达到高精度。这就是为什么所有物体在引力场中以相同加速度下落（伽利略实验）。
-
-### Common Misconceptions / 常见误区:
-- ❌ **"They are the same thing"** — Conceptually different; only experimentally equal
-- ❌ **"Inertial mass is measured by weighing"** — Weighing measures gravitational mass
-- ❌ **"The equivalence principle is obvious"** — It's a profound experimental fact, not a logical necessity
-
-### Exam Tips / 考试提示:
-**English:** CAIE specifically requires this distinction (15.1d). Know the experimental methods: gravitational mass uses a balance (compare with known masses); inertial mass uses F = ma (apply known force, measure acceleration). The equivalence principle is the foundation of Einstein's General Relativity.
-
-**中文:** CAIE明确要求区分这两者（15.1d）。了解实验方法：引力质量用天平（与已知质量比较）；惯性质量用F = ma（施加已知力，测量加速度）。等效原理是爱因斯坦广义相对论的基础。
+---
 
 # 5. Essential Equations / 核心公式
 
-## 5.1 Newton's Law of Universal Gravitation / 万有引力定律
+## 5.1 Newton's Law of Universal Gravitation / 牛顿万有引力定律
 
-$$F = G\frac{m_1 m_2}{r^2}$$
+**Equation / 公式:**
+$$F = \frac{G m_1 m_2}{r^2}$$
 
-| Symbol (符号) | Meaning (EN/CN) | Unit (单位) |
-|---|---|---|
-| $F$ | Gravitational force between masses / 质量之间的引力 | N |
-| $G$ | Universal gravitational constant / 万有引力常数 | N m² kg⁻² |
-| $m_1, m_2$ | Masses of the two objects / 两个物体的质量 | kg |
-| $r$ | Distance between centers of masses / 两质量中心之间的距离 | m |
+**Variables / 变量:**
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| $F$ | Gravitational force between two masses | 两个质量之间的引力 | N |
+| $G$ | Universal gravitational constant ($6.67 \times 10^{-11}$) | 万有引力常数 | $\text{N m}^2 \text{kg}^{-2}$ |
+| $m_1, m_2$ | Masses of the two objects | 两个物体的质量 | kg |
+| $r$ | Distance between centres of masses | 质量中心之间的距离 | m |
 
-**Derivation / 推导:** Not required (it's an empirical law). But know the proportionalities: $F \propto m_1 m_2$ and $F \propto 1/r^2$.
+**Derivation / 推导:**
+**English:**
+Newton proposed that gravitational force is proportional to the product of masses and inversely proportional to the square of distance:
+$$F \propto \frac{m_1 m_2}{r^2}$$
+Introducing the constant of proportionality $G$:
+$$F = \frac{G m_1 m_2}{r^2}$$
+
+**中文：**
+牛顿提出引力与质量的乘积成正比，与距离的平方成反比：
+$$F \propto \frac{m_1 m_2}{r^2}$$
+引入比例常数 $G$：
+$$F = \frac{G m_1 m_2}{r^2}$$
 
 **Conditions / 适用条件:**
-- Point masses OR spherical masses (treat as point masses at centers)
-- Masses are stationary or moving slowly compared to speed of light
-- Non-relativistic regime
+**English:**
+- Applies to point masses or spherical objects (where $r$ is centre-to-centre distance)
+- Valid for any two masses in the universe
+- Assumes no other forces are acting
+
+**中文：**
+- 适用于质点或球形物体（其中 $r$ 是中心到中心的距离）
+- 对宇宙中任意两个质量都有效
+- 假设没有其他力作用
 
 **Limitations / 局限性:**
-- Does not apply at very small distances (quantum effects)
-- Does not apply at very high speeds or strong fields (General Relativity needed)
-- Does not explain WHY gravity exists — only describes it
+**English:**
+- Does not apply at very small distances (quantum scale) where quantum gravity is needed
+- Does not apply at very high speeds (relativistic effects)
+- Not valid for non-spherical objects unless using integration
+
+**中文：**
+- 不适用于非常小的距离（量子尺度），需要量子引力
+- 不适用于非常高的速度（相对论效应）
+- 不适用于非球形物体，除非使用积分
 
 **Rearrangements / 变形:**
-$$m_1 = \frac{F r^2}{G m_2}, \quad r = \sqrt{\frac{G m_1 m_2}{F}}, \quad G = \frac{F r^2}{m_1 m_2}$$
+**English:**
+1. To find one mass: $m_1 = \frac{F r^2}{G m_2}$
+2. To find distance: $r = \sqrt{\frac{G m_1 m_2}{F}}$
+3. To find $G$: $G = \frac{F r^2}{m_1 m_2}$
 
-> 📋 **Edexcel Only:** Edexcel uses the vector form $F = -\frac{GMm}{r^2}\hat{r}$ where the negative sign indicates attractive force (toward the center).
+**中文：**
+1. 求一个质量：$m_1 = \frac{F r^2}{G m_2}$
+2. 求距离：$r = \sqrt{\frac{G m_1 m_2}{F}}$
+3. 求 $G$：$G = \frac{F r^2}{m_1 m_2}$
+
+---
 
 ## 5.2 Gravitational Field Strength / 引力场强度
 
+**Equation / 公式:**
 $$g = \frac{F}{m}$$
 
-| Symbol (符号) | Meaning (EN/CN) | Unit (单位) |
-|---|---|---|
-| $g$ | Gravitational field strength / 引力场强度 | N kg⁻¹ (or m s⁻²) |
-| $F$ | Gravitational force on test mass / 测试质量所受引力 | N |
-| $m$ | Mass of test object / 测试物体的质量 | kg |
+**Variables / 变量:**
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| $g$ | Gravitational field strength | 引力场强度 | $\text{N kg}^{-1}$ or $\text{m s}^{-2}$ |
+| $F$ | Gravitational force on test mass | 测试质量受到的引力 | N |
+| $m$ | Test mass | 测试质量 | kg |
 
-**Derivation / 推导:** Definition — no derivation needed.
+**Derivation / 推导:**
+**English:**
+By definition, gravitational field strength is force per unit mass:
+$$g = \frac{F}{m}$$
+This is a definition, not derived from other equations.
 
-**Conditions / 适用条件:** Valid for any point in any gravitational field.
-
-## 5.3 Gravitational Field Strength for a Point Mass / 点质量的引力场强度
-
-$$g = \frac{GM}{r^2}$$
-
-| Symbol (符号) | Meaning (EN/CN) | Unit (单位) |
-|---|---|---|
-| $g$ | Gravitational field strength at distance r / 距离r处的引力场强度 | N kg⁻¹ |
-| $G$ | Universal gravitational constant / 万有引力常数 | N m² kg⁻² |
-| $M$ | Mass creating the field / 产生场的质量 | kg |
-| $r$ | Distance from center of mass M / 距质量M中心的距离 | m |
-
-**Derivation / 推导 (EXAMINABLE):**
-1. Start with Newton's law: $F = GMm/r^2$
-2. Definition of g: $g = F/m$
-3. Substitute: $g = (GMm/r^2)/m = GM/r^2$
+**中文：**
+根据定义，引力场强度是单位质量所受的力：
+$$g = \frac{F}{m}$$
+这是一个定义，不是从其他方程推导出来的。
 
 **Conditions / 适用条件:**
-- M is a point mass or spherical mass
-- r is measured from the CENTER of M
-- Outside the mass (for r ≥ R, where R is radius of M)
+**English:**
+- The test mass must be small enough not to disturb the field
+- Valid for any point in any gravitational field
+
+**中文：**
+- 测试质量必须足够小，以免干扰场
+- 对任何引力场中的任何点都有效
 
 **Limitations / 局限性:**
-- Inside a spherical mass, g ∝ r (linear relationship, not 1/r²)
-- Does not apply inside black holes (General Relativity required)
+**English:**
+- The test mass must be small compared to the mass creating the field
+- Does not account for relativistic effects
+
+**中文：**
+- 测试质量必须远小于产生场的质量
+- 不考虑相对论效应
 
 **Rearrangements / 变形:**
-$$M = \frac{g r^2}{G}, \quad r = \sqrt{\frac{GM}{g}}, \quad G = \frac{g r^2}{M}$$
+**English:**
+1. To find force: $F = mg$
+2. To find mass: $m = \frac{F}{g}$
 
-## 5.4 Relationship Between g and Height / g与高度的关系
+**中文：**
+1. 求力：$F = mg$
+2. 求质量：$m = \frac{F}{g}$
 
-$$g_h = \frac{GM}{(R + h)^2}$$
+---
 
-| Symbol (符号) | Meaning (EN/CN) | Unit (单位) |
-|---|---|---|
-| $g_h$ | Gravitational field strength at height h / 高度h处的引力场强度 | N kg⁻¹ |
-| $G$ | Universal gravitational constant / 万有引力常数 | N m² kg⁻² |
-| $M$ | Mass of planet (e.g., Earth) / 行星质量（如地球） | kg |
-| $R$ | Radius of planet / 行星半径 | m |
-| $h$ | Height above surface / 距地表高度 | m |
+## 5.3 Gravitational Field Strength for a Point Mass / 质点的引力场强度
 
-**Derivation / 推导:** Substitute $r = R + h$ into $g = GM/r^2$.
+**Equation / 公式:**
+$$g = \frac{GM}{r^2}$$
 
-**Approximation for small h (h << R):**
-$$g_h \approx g_0 \left(1 - \frac{2h}{R}\right)$$
-Where $g_0 = GM/R^2$ is the surface value.
+**Variables / 变量:**
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| $g$ | Gravitational field strength at distance $r$ | 距离 $r$ 处的引力场强度 | $\text{N kg}^{-1}$ |
+| $G$ | Universal gravitational constant | 万有引力常数 | $\text{N m}^2 \text{kg}^{-2}$ |
+| $M$ | Mass creating the field | 产生场的质量 | kg |
+| $r$ | Distance from centre of mass | 距质量中心的距离 | m |
 
-> 📋 **CIE Only:** The approximation formula is more commonly tested in CIE.
-> 📋 **Edexcel Only:** Edexcel emphasizes the exact formula and may ask students to derive the approximation.
+**Derivation / 推导:**
+**English:**
+Start with Newton's law of universal gravitation:
+$$F = \frac{GMm}{r^2}$$
+where $m$ is a test mass. By definition, $g = \frac{F}{m}$:
+$$g = \frac{F}{m} = \frac{GMm}{r^2} \cdot \frac{1}{m} = \frac{GM}{r^2}$$
 
-## 5.5 Summary Table of Key Equations / 关键公式汇总表
+**中文：**
+从牛顿万有引力定律开始：
+$$F = \frac{GMm}{r^2}$$
+其中 $m$ 是测试质量。根据定义，$g = \frac{F}{m}$：
+$$g = \frac{F}{m} = \frac{GMm}{r^2} \cdot \frac{1}{m} = \frac{GM}{r^2}$$
 
-| Equation / 公式 | Name / 名称 | Variables / 变量 | Exam Frequency / 考试频率 |
-|---|---|---|---|
-| $F = G\frac{m_1 m_2}{r^2}$ | Newton's Law / 牛顿定律 | F, G, m₁, m₂, r | ★★★★★ (Every paper) |
-| $g = \frac{F}{m}$ | Definition of g / g的定义 | g, F, m | ★★★★★ (Every paper) |
-| $g = \frac{GM}{r^2}$ | g for point mass / 点质量的g | g, G, M, r | ★★★★★ (Every paper) |
-| $g_h = \frac{GM}{(R+h)^2}$ | g at height h / 高度h处的g | g_h, G, M, R, h | ★★★★☆ (Common) |
-| $g_h \approx g_0(1 - \frac{2h}{R})$ | Approximation / 近似公式 | g_h, g_0, h, R | ★★★☆☆ (Occasional) |
+**Conditions / 适用条件:**
+**English:**
+- Applies to point masses or spherical objects
+- $r$ must be measured from the centre of mass
+- Valid for points outside the mass ($r \geq R$, where $R$ is radius of the mass)
+
+**中文：**
+- 适用于质点或球形物体
+- $r$ 必须从质量中心测量
+- 适用于质量外部的点（$r \geq R$，其中 $R$ 是质量的半径）
+
+**Limitations / 局限性:**
+**English:**
+- Does not apply inside the mass (for $r < R$, a different relationship applies)
+- Assumes the mass is spherically symmetric
+
+**中文：**
+- 不适用于质量内部（对于 $r < R$，适用不同的关系）
+- 假设质量是球对称的
+
+**Rearrangements / 变形:**
+**English:**
+1. To find mass: $M = \frac{g r^2}{G}$
+2. To find distance: $r = \sqrt{\frac{GM}{g}}$
+
+**中文：**
+1. 求质量：$M = \frac{g r^2}{G}$
+2. 求距离：$r = \sqrt{\frac{GM}{g}}$
+
+---
 
 # 6. Graphs and Relationships / 图表与关系
 
-## 6.1 Gravitational Force vs Distance (F vs r) / 引力与距离关系图
+## 6.1 Gravitational Force vs Distance / 引力与距离的关系
 
-**Axes / 坐标轴:**
-- x-axis: Distance r (m) — from center of mass M
-- y-axis: Gravitational force F (N)
+### Axes / 坐标轴
+**English:** x-axis: Distance $r$ (m); y-axis: Gravitational force $F$ (N)
+**中文：** x轴：距离 $r$ (m)；y轴：引力 $F$ (N)
 
-**Shape / 形状:**
-- Inverse square curve: $F \propto 1/r^2$
-- As r increases, F decreases rapidly
-- As r → 0, F → ∞ (theoretically)
-- As r → ∞, F → 0
+### Shape / 形状
+**English:** A curve showing $F \propto \frac{1}{r^2}$. The force decreases rapidly as distance increases. The curve approaches zero as $r \to \infty$ and approaches infinity as $r \to 0$.
+**中文：** 显示 $F \propto \frac{1}{r^2}$ 的曲线。力随着距离增加而迅速减小。当 $r \to \infty$ 时曲线趋近于零，当 $r \to 0$ 时趋近于无穷大。
 
-**Gradient Meaning / 斜率意义:**
-- Gradient = dF/dr = $-2GMm/r^3$
-- The gradient is always negative (force decreases with distance)
-- The magnitude of gradient decreases as r increases
+### Gradient Meaning / 斜率含义
+**English:** The gradient of $F$ vs $r$ is $\frac{dF}{dr} = -\frac{2Gm_1 m_2}{r^3}$, which represents the rate of change of force with distance. The negative sign indicates force decreases as distance increases.
+**中文：** $F$ 对 $r$ 的梯度是 $\frac{dF}{dr} = -\frac{2Gm_1 m_2}{r^3}$，表示力随距离的变化率。负号表示力随距离增加而减小。
 
-**Area Meaning / 面积意义:**
-- Area under F-r graph = Work done against gravitational force = Change in [[Gravitational Potential Energy]]
-- $\Delta U = \int_{r_1}^{r_2} F \, dr = \int_{r_1}^{r_2} \frac{GMm}{r^2} \, dr = GMm\left(\frac{1}{r_1} - \frac{1}{r_2}\right)$
+### Area Meaning / 面积含义
+**English:** The area under the $F$ vs $r$ graph represents work done against gravitational force, which relates to [[Gravitational Potential]].
+**中文：** $F$ 对 $r$ 图下的面积表示克服引力所做的功，与[[引力势]]相关。
 
-**Exam Interpretation / 考试解读:**
-- Steeper curve at small r means force changes rapidly with distance
-- Flatter curve at large r means force changes slowly
-- The graph never touches either axis (asymptotic behavior)
+### Exam Interpretation / 考试解读
+**English:**
+- CIE may ask to sketch this graph and explain its shape.
+- Edexcel may ask to compare this with electric force graphs.
+- Common question: "Explain why the force approaches zero at large distances."
 
-**Common Questions / 常见问题:**
-- "Sketch the graph of F against r for two masses"
-- "Explain why the force approaches zero at large distances"
-- "Use the graph to find the work done moving a mass from r₁ to r₂"
+**中文：**
+- CIE可能要求画出此图并解释其形状。
+- 爱德思可能要求将其与电力图进行比较。
+- 常见问题："解释为什么在大距离处力趋近于零。"
 
-> 📷 **IMAGE PROMPT — [GR-01]: F vs r Inverse Square Graph**
-> **English:** Graph showing F on y-axis vs r on x-axis. Inverse square curve: steep near origin, flattening as r increases. Label key points: F ∝ 1/r², asymptotic to both axes. Show shaded area under curve between r₁ and r₂ labeled "Work done = ΔGPE". Include axes labels with units. Style: clear mathematical graph, grid lines, blue curve. Exam importance: HIGH.
-> **中文:** F-y轴对r-x轴图。平方反比曲线：靠近原点陡峭，随r增大变平。标注关键点：F ∝ 1/r²，渐近于两轴。显示r₁到r₂间曲线下阴影区域，标注"做功 = ΔGPE"。包含带单位的坐标轴标签。风格：清晰数学图，网格线，蓝色曲线。考试重要性：高。
+### Common Questions / 常见问题
+**English:**
+1. "Sketch a graph showing how gravitational force varies with distance between two masses."
+2. "Use the graph to determine the force at a specific distance."
+3. "Explain the significance of the inverse square relationship."
 
-## 6.2 Gravitational Field Strength vs Distance (g vs r) / 引力场强度与距离关系图
+**中文：**
+1. "画出引力随两个质量之间距离变化的图。"
+2. "使用图表确定特定距离处的力。"
+3. "解释平方反比关系的意义。"
 
-**Axes / 坐标轴:**
-- x-axis: Distance r (m) — from center of mass M
-- y-axis: Gravitational field strength g (N kg⁻¹)
+---
 
-**Shape / 形状:**
-- Outside mass (r ≥ R): $g \propto 1/r^2$ — inverse square curve
-- Inside mass (r < R): $g \propto r$ — linear increase (for uniform density sphere)
-- At r = R: g is maximum (surface value)
+## 6.2 Gravitational Field Strength vs Distance / 引力场强度与距离的关系
 
-**Gradient Meaning / 斜率意义:**
-- Outside (r > R): Negative gradient, magnitude decreases with r
-- Inside (r < R): Positive gradient (g increases with r)
-- At r = R: Discontinuity in gradient (cusp)
+### Axes / 坐标轴
+**English:** x-axis: Distance $r$ (m); y-axis: Gravitational field strength $g$ (N kg⁻¹)
+**中文：** x轴：距离 $r$ (m)；y轴：引力场强度 $g$ (N kg⁻¹)
 
-**Area Meaning / 面积意义:**
-- Area under g-r graph = Change in [[Gravitational Potential]] (V)
-- $\Delta V = \int_{r_1}^{r_2} g \, dr$
+### Shape / 形状
+**English:** For $r \geq R$ (outside the mass): $g \propto \frac{1}{r^2}$, a decreasing curve. For $r < R$ (inside the mass): $g \propto r$, a linear increase from zero at the centre to maximum at the surface.
+**中文：** 对于 $r \geq R$（质量外部）：$g \propto \frac{1}{r^2}$，递减曲线。对于 $r < R$（质量内部）：$g \propto r$，从中心为零线性增加到表面最大。
 
-**Exam Interpretation / 考试解读:**
-- Maximum g at surface (r = R)
-- g decreases rapidly outside the mass
-- g increases linearly inside (toward center)
-- At center (r = 0), g = 0 (forces cancel)
+### Gradient Meaning / 斜率含义
+**English:** Outside: $\frac{dg}{dr} = -\frac{2GM}{r^3}$. Inside: $\frac{dg}{dr} = \frac{GM}{R^3}$ (constant for uniform density).
+**中文：** 外部：$\frac{dg}{dr} = -\frac{2GM}{r^3}$。内部：$\frac{dg}{dr} = \frac{GM}{R^3}$（均匀密度时为常数）。
 
-**Common Questions / 常见问题:**
-- "Sketch g against r for a planet of radius R"
-- "Explain why g is zero at the center of Earth"
-- "Calculate g at a given height above Earth's surface"
+### Area Meaning / 面积含义
+**English:** The area under the $g$ vs $r$ graph relates to gravitational potential difference.
+**中文：** $g$ 对 $r$ 图下的面积与引力势差相关。
 
-> 📷 **IMAGE PROMPT — [GR-02]: g vs r for a Planet**
-> **English:** Graph showing g on y-axis vs r on x-axis for a spherical planet of radius R. For r < R: linear increase from 0 at center to g₀ at surface. For r ≥ R: inverse square decrease (g ∝ 1/r²). Label: r = R (surface), g = g₀ (surface value), g = 0 at center. Include Earth values if possible. Style: clear graph with two distinct regions, red for inside, blue for outside. Exam importance: VERY HIGH.
-> **中文:** 半径为R的球形行星的g-y轴对r-x轴图。r < R：从中心0线性增加到地表g₀。r ≥ R：平方反比减小（g ∝ 1/r²）。标注：r = R（地表），g = g₀（地表值），中心g = 0。如可能包含地球数值。风格：清晰图，两个不同区域，内部红色，外部蓝色。考试重要性：非常高。
+### Exam Interpretation / 考试解读
+**English:**
+- CIE may ask to sketch $g$ vs $r$ for a planet.
+- Edexcel may ask to explain why $g$ is maximum at the surface.
+- Common question: "Explain the shape of the graph inside and outside the planet."
 
-## 6.3 Mermaid Relationship Diagram / 关系图
+**中文：**
+- CIE可能要求画出行星的 $g$ 对 $r$ 图。
+- 爱德思可能要求解释为什么 $g$ 在表面最大。
+- 常见问题："解释行星内部和外部图形的形状。"
 
-```mermaid
-graph TD
-    A["Newton's Law of Universal Gravitation<br/>F = GMm/r²"] --> B["Definition of g<br/>g = F/m"]
-    B --> C["g for Point Mass<br/>g = GM/r²"]
-    C --> D["g at Height h<br/>g = GM/(R+h)²"]
-    C --> E["g Inside Planet<br/>g ∝ r"]
-    A --> F["Gravitational Force<br/>is ALWAYS attractive"]
-    B --> G["g is a VECTOR<br/>points toward center"]
-    C --> H["Inverse Square Law<br/>g ∝ 1/r²"]
-    H --> I["Radial Field"]
-    D --> J["Uniform Field<br/>Approximation"]
-    J --> K["g ≈ constant<br/>near surface"]
-    
-    style A fill:#e1f5fe,stroke:#01579b
-    style C fill:#fff3e0,stroke:#e65100
-    style H fill:#f3e5f5,stroke:#7b1fa2
-    style I fill:#e8f5e9,stroke:#1b5e20
-    style J fill:#e8f5e9,stroke:#1b5e20
-```
+### Common Questions / 常见问题
+**English:**
+1. "Sketch a graph of gravitational field strength against distance from the centre of a planet."
+2. "Calculate the value of $g$ at a given height above Earth's surface."
+3. "Explain why $g$ decreases linearly inside a uniform planet."
+
+**中文：**
+1. "画出引力场强度随距行星中心距离变化的图。"
+2. "计算地球表面上方给定高度处的 $g$ 值。"
+3. "解释为什么在均匀行星内部 $g$ 线性减小。"
+
+> 📷 **IMAGE PROMPT — GF-02: Gravitational Field Strength vs Distance from Centre of Planet**
+>
+> A graph showing gravitational field strength $g$ on the y-axis against distance $r$ from centre on the x-axis. For $r < R$ (inside planet): linear increase from (0,0) to (R, g_surface). For $r > R$ (outside): inverse square decrease from (R, g_surface) approaching zero as $r \to \infty$. Labels: "Inside planet" and "Outside planet" in English and Chinese. Clean graph paper background, educational style.
+
+---
 
 # 7. Required Diagrams / 必备图表
 
-## 7.1 Radial Gravitational Field Around a Point Mass / 点质量周围的径向引力场
+## 7.1 Gravitational Field Lines Around a Point Mass / 质点周围的引力场线
 
-> 📷 **IMAGE PROMPT — [DG-01]: Radial Gravitational Field**
-> **English:** A central spherical mass (labeled M) with radial field lines emanating outward. Arrows point INWARD toward the center (attractive force). Field lines are closer together near the mass (stronger field) and spread out with distance (weaker field). Label: "Radial Field: g ∝ 1/r²", "Field lines converge at center", "Arrow direction = direction of force on test mass". Include a small test mass m at one point with force vector F pointing toward center. Style: clean vector diagram, black background with white/blue lines, or white background with blue/black lines. Exam importance: VERY HIGH - must be able to sketch.
-> **中文:** 中心球形质量（标注M），径向场线向外辐射。箭头指向内（吸引力）。场线在质量附近较密（场强），随距离增大而分散（场弱）。标注："径向场：g ∝ 1/r²"，"场线汇聚于中心"，"箭头方向 = 测试质量受力方向"。包含一个小测试质量m，受力矢量F指向中心。风格：清晰矢量图，黑色背景白/蓝线，或白色背景蓝/黑线。考试重要性：非常高——必须能画出。
+### Description / 描述
+**English:**
+A diagram showing a central point mass with arrowed lines radiating outward in all directions. The lines are closer together near the mass (indicating stronger field) and spread out further away (indicating weaker field). Arrows point towards the centre of mass, showing the direction of gravitational force on a test mass.
+
+**中文：**
+显示中心质点带有向所有方向辐射的箭头线的图。线在质量附近更密集（表示更强的场），在远处更分散（表示更弱的场）。箭头指向质量中心，显示测试质量所受引力的方向。
+
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — GF-03: Gravitational Field Lines Around a Point Mass**
+>
+> A clean educational diagram showing a central sphere (labelled "Mass M / 质量 M") with arrowed field lines radiating outward in all directions. Lines are closer together near the sphere and spread out further away. Arrows point towards the centre. Labels: "Radial field / 径向场", "Stronger field / 较强场" near sphere, "Weaker field / 较弱场" far from sphere. White background, vector graphics, professional textbook style.
+
+### Labels Required / 需要标注
+| English | 中文 |
+|---------|------|
+| Mass M | 质量 M |
+| Radial field | 径向场 |
+| Stronger field | 较强场 |
+| Weaker field | 较弱场 |
+| Direction of force on test mass | 测试质量受力方向 |
+
+### Exam Importance / 考试重要性
+**English:**
+This diagram is essential for understanding the concept of gravitational fields. CIE may ask to sketch field lines for a point mass. Edexcel may ask to compare gravitational field lines with electric field lines.
+
+**中文：**
+此图对于理解引力场概念至关重要。CIE可能要求画出质点的场线。爱德思可能要求比较引力场线和电场线。
+
+---
 
 ## 7.2 Uniform Gravitational Field Near Earth's Surface / 地球表面附近的均匀引力场
 
-> 📷 **IMAGE PROMPT — [DG-02]: Uniform Gravitational Field**
-> **English:** A flat horizontal line representing Earth's surface. Above it, parallel vertical arrows of equal length pointing downward. Arrows are equally spaced (constant field strength). Label: "Uniform Field: g = constant", "g ≈ 9.81 N kg⁻¹", "Parallel field lines", "Equal spacing = constant field strength". Include a small mass m with force vector F = mg pointing down. Show height h above surface. Style: clean diagram, Earth surface in brown/green, arrows in blue. Exam importance: HIGH - compare with radial field.
-> **中文:** 代表地球表面的水平线。上方平行等长垂直向下箭头。箭头等距（恒定场强）。标注："均匀场：g = 常数"，"g ≈ 9.81 N kg⁻¹"，"平行场线"，"等距 = 恒定场强"。包含小质量m，受力矢量F = mg向下。显示距地表高度h。风格：清晰图，地表棕色/绿色，箭头蓝色。考试重要性：高——与径向场比较。
+### Description / 描述
+**English:**
+A diagram showing a flat section of Earth's surface with parallel, equally spaced vertical arrowed lines pointing downward. The lines are all the same length and spacing, indicating constant field strength. A small test mass is shown near the surface.
 
-## 7.3 Gravitational Force Between Two Masses / 两质量之间的引力
+**中文：**
+显示地球表面平坦部分的图，带有平行、等间距的垂直箭头线指向下方。所有线的长度和间距相同，表示恒定的场强。表面附近显示一个小测试质量。
 
-> 📷 **IMAGE PROMPT — [DG-03]: Newton's Law of Gravitation Diagram**
-> **English:** Two spherical masses m₁ and m₂ separated by distance r (measured center to center). Draw a double-headed arrow between centers labeled "r". Show force vectors: F₁₂ on m₁ pointing toward m₂, and F₂₁ on m₂ pointing toward m₁. Both vectors are equal in length (Newton's Third Law). Label: "F₁₂ = F₂₁ = GMm/r²", "Attractive force along line joining centers". Include dimensions: r = distance between centers. Style: clear physics diagram, masses in blue/gray, force arrows in red, distance arrow in black. Exam importance: VERY HIGH - fundamental diagram.
-> **中文:** 两个球形质量m₁和m₂，中心间距为r。在中心之间画双向箭头标注"r"。显示力矢量：m₁上的F₁₂指向m₂，m₂上的F₂₁指向m₁。两矢量等长（牛顿第三定律）。标注："F₁₂ = F₂₁ = GMm/r²"，"吸引力沿中心连线"。包含尺寸：r = 中心间距离。风格：清晰物理图，质量蓝色/灰色，力矢量红色，距离箭头黑色。考试重要性：非常高——基础图。
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — GF-04: Uniform Gravitational Field Near Earth's Surface**
+>
+> A diagram showing a flat horizontal line representing Earth's surface. Above it, parallel vertical arrowed lines of equal length and equal spacing, all pointing downward. Labels: "Uniform field / 均匀场", "Constant g / 恒定 g", "Earth's surface / 地球表面". A small sphere labelled "Test mass m / 测试质量 m" is shown. Clean educational style, white background.
 
-## 7.4 g vs r Graph for a Planet / 行星的g-r图
+### Labels Required / 需要标注
+| English | 中文 |
+|---------|------|
+| Earth's surface | 地球表面 |
+| Uniform field | 均匀场 |
+| Constant g | 恒定 g |
+| Test mass m | 测试质量 m |
+| Direction of gravitational force | 引力方向 |
 
-> 📷 **IMAGE PROMPT — [DG-04]: g vs r Complete Graph**
-> **English:** Full graph of gravitational field strength g against distance r from center of a uniform spherical planet of radius R. Region 1 (r < R): straight line from origin (0,0) to (R, g₀) showing g ∝ r. Region 2 (r ≥ R): inverse square curve from (R, g₀) approaching zero as r → ∞. Label key points: r = 0, g = 0 (center); r = R, g = g₀ (surface); r > R, g ∝ 1/r². Include dashed vertical line at r = R. Style: mathematical graph with grid, two distinct colored regions. Exam importance: HIGH - tests understanding of field inside vs outside.
-> **中文:** 均匀球形行星（半径R）的引力场强度g对距中心距离r的完整图。区域1（r < R）：从原点(0,0)到(R, g₀)的直线，显示g ∝ r。区域2（r ≥ R）：从(R, g₀)开始的平方反比曲线，r → ∞时趋近于零。标注关键点：r = 0, g = 0（中心）；r = R, g = g₀（地表）；r > R, g ∝ 1/r²。在r = R处画虚线。风格：带网格的数学图，两个不同颜色区域。考试重要性：高——考查对场内部与外部的理解。
+### Exam Importance / 考试重要性
+**English:**
+This diagram is used to illustrate the approximation of uniform fields near Earth's surface. Edexcel explicitly tests this concept. It helps explain why we can use $g = 9.81 \, \text{N kg}^{-1}$ for objects near Earth.
+
+**中文：**
+此图用于说明地球表面附近均匀场的近似。爱德思明确测试此概念。它有助于解释为什么对地球附近的物体可以使用 $g = 9.81 \, \text{N kg}^{-1}$。
+
+---
+
+## 7.3 Gravitational Force Between Two Spherical Masses / 两个球形质量之间的引力
+
+### Description / 描述
+**English:**
+A diagram showing two spherical masses (e.g., Earth and Moon) with their centres marked. A double-headed arrow between the centres is labelled $r$ (centre-to-centre distance). Arrows on each sphere show the attractive force acting along the line joining centres.
+
+**中文：**
+显示两个球形质量（例如地球和月球）的图，标出它们的中心。中心之间的双箭头标为 $r$（中心到中心距离）。每个球体上的箭头显示沿中心连线作用的吸引力。
+
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — GF-05: Gravitational Force Between Two Spherical Masses**
+>
+> A diagram showing two spheres (Earth and Moon) separated by distance. Centres marked with dots. A double-headed arrow between centres labelled "r / 距离 (centre-to-centre / 中心到中心)". Arrows on each sphere pointing towards the other, labelled "F / 引力". Labels: "Mass M₁ / 质量 M₁" (Earth), "Mass M₂ / 质量 M₂" (Moon). Clean educational style, space background optional.
+
+### Labels Required / 需要标注
+| English | 中文 |
+|---------|------|
+| Mass M₁ | 质量 M₁ |
+| Mass M₂ | 质量 M₂ |
+| r (centre-to-centre distance) | r（中心到中心距离）|
+| Gravitational force F | 引力 F |
+| Direction of force | 力的方向 |
+
+### Exam Importance / 考试重要性
+**English:**
+This diagram is crucial for understanding how to apply Newton's law of universal gravitation to real objects. It emphasises that distance is measured centre-to-centre, not surface-to-surface.
+
+**中文：**
+此图对于理解如何将牛顿万有引力定律应用于实际物体至关重要。它强调距离是从中心到中心测量的，而不是从表面到表面。
+
+---
 
 # 8. Worked Examples / 典型例题
 
 ## Example 1: Gravitational Force Between Earth and Moon / 地球与月球之间的引力
 
 ### Question / 题目
-**English:** The mass of Earth is $M_E = 5.97 \times 10^{24}$ kg, the mass of the Moon is $M_M = 7.35 \times 10^{22}$ kg, and the mean distance between their centers is $r = 3.84 \times 10^8$ m. The gravitational constant is $G = 6.67 \times 10^{-11}$ N m² kg⁻².
+**English:**
+Earth has mass $M_E = 5.97 \times 10^{24} \, \text{kg}$ and the Moon has mass $M_M = 7.35 \times 10^{22} \, \text{kg}$. The mean distance between their centres is $3.84 \times 10^8 \, \text{m}$. Calculate:
+(a) The gravitational force between Earth and the Moon.
+(b) The gravitational field strength at the Moon's position due to Earth alone.
+(c) The gravitational field strength at Earth's surface due to Earth alone (Earth's radius = $6.37 \times 10^6 \, \text{m}$).
 
-(a) Calculate the gravitational force between Earth and the Moon.
-(b) Calculate the gravitational field strength at the Moon's position due to Earth's gravity.
-(c) Explain why the Moon does not fall into Earth despite this large force.
-
-**中文:** 地球质量 $M_E = 5.97 \times 10^{24}$ kg，月球质量 $M_M = 7.35 \times 10^{22}$ kg，两中心平均距离 $r = 3.84 \times 10^8$ m。引力常数 $G = 6.67 \times 10^{-11}$ N m² kg⁻²。
-
-(a) 计算地球与月球之间的引力。
-(b) 计算月球位置处由地球引力产生的引力场强度。
-(c) 解释为什么月球尽管受到如此大的力却不会坠向地球。
+**中文：**
+地球质量 $M_E = 5.97 \times 10^{24} \, \text{kg}$，月球质量 $M_M = 7.35 \times 10^{22} \, \text{kg}$。它们中心之间的平均距离为 $3.84 \times 10^8 \, \text{m}$。计算：
+(a) 地球与月球之间的引力。
+(b) 仅由地球在月球位置产生的引力场强度。
+(c) 仅由地球在地球表面产生的引力场强度（地球半径 = $6.37 \times 10^6 \, \text{m}$）。
 
 ### Image Prompt / 图片提示
-> 📷 **IMAGE PROMPT — [EX-01]: Earth-Moon System**
-> **English:** Diagram showing Earth (large blue sphere) and Moon (smaller gray sphere) with distance r = 3.84 × 10⁸ m between centers. Force arrows F_Earth→Moon and F_Moon→Earth shown as equal and opposite. Include Moon's orbital path (dashed circle) around Earth. Label: "Centripetal force provided by gravity", "Moon's orbital velocity v". Style: clear astronomical diagram, not to scale. Exam importance: HIGH.
-> **中文:** 地球（大蓝色球体）和月球（较小灰色球体）示意图，中心间距r = 3.84 × 10⁸ m。力箭头F_地→月和F_月→地等大反向。包含月球绕地球的轨道路径（虚线圆）。标注："向心力由引力提供"，"月球轨道速度v"。风格：清晰天文图，不按比例。考试重要性：高。
+> 📷 **IMAGE PROMPT — GF-06: Earth-Moon System Diagram for Example 1**
+>
+> A diagram showing Earth (large sphere) and Moon (smaller sphere) separated by distance. Centres marked. Distance labelled "r = 3.84 × 10⁸ m". Earth radius labelled "R_E = 6.37 × 10⁶ m". Labels in English and Chinese. Clean educational style.
 
 ### Solution / 解答
 
-**(a) Gravitational force / 引力:**
+**Part (a): Gravitational force**
 
-$$F = G\frac{M_E M_M}{r^2}$$
+**English:**
+Use Newton's law of universal gravitation:
+$$F = \frac{G M_E M_M}{r^2}$$
 
+Substitute values:
 $$F = \frac{(6.67 \times 10^{-11})(5.97 \times 10^{24})(7.35 \times 10^{22})}{(3.84 \times 10^8)^2}$$
 
-$$F = \frac{(6.67 \times 10^{-11})(4.39 \times 10^{47})}{1.47 \times 10^{17}}$$
+Calculate numerator:
+$$(6.67 \times 10^{-11})(5.97 \times 10^{24})(7.35 \times 10^{22}) = 2.93 \times 10^{37}$$
 
-$$F = \frac{2.93 \times 10^{37}}{1.47 \times 10^{17}}$$
+Calculate denominator:
+$$(3.84 \times 10^8)^2 = 1.47 \times 10^{17}$$
 
-$$F = 1.99 \times 10^{20} \text{ N}$$
+$$F = \frac{2.93 \times 10^{37}}{1.47 \times 10^{17}} = 1.99 \times 10^{20} \, \text{N}$$
 
-**(b) Gravitational field strength at Moon's position / 月球位置处的引力场强度:**
+**中文：**
+使用牛顿万有引力定律：
+$$F = \frac{G M_E M_M}{r^2}$$
 
-$$g = \frac{GM_E}{r^2}$$
+代入数值：
+$$F = \frac{(6.67 \times 10^{-11})(5.97 \times 10^{24})(7.35 \times 10^{22})}{(3.84 \times 10^8)^2}$$
 
+计算分子：
+$$(6.67 \times 10^{-11})(5.97 \times 10^{24})(7.35 \times 10^{22}) = 2.93 \times 10^{37}$$
+
+计算分母：
+$$(3.84 \times 10^8)^2 = 1.47 \times 10^{17}$$
+
+$$F = \frac{2.93 \times 10^{37}}{1.47 \times 10^{17}} = 1.99 \times 10^{20} \, \text{N}$$
+
+**Part (b): Gravitational field strength at Moon's position**
+
+**English:**
+Use $g = \frac{GM}{r^2}$ where $M = M_E$ and $r$ is Earth-Moon distance:
 $$g = \frac{(6.67 \times 10^{-11})(5.97 \times 10^{24})}{(3.84 \times 10^8)^2}$$
 
-$$g = \frac{3.98 \times 10^{14}}{1.47 \times 10^{17}}$$
+$$g = \frac{3.98 \times 10^{14}}{1.47 \times 10^{17}} = 2.71 \times 10^{-3} \, \text{N kg}^{-1}$$
 
-$$g = 2.71 \times 10^{-3} \text{ N kg}^{-1}$$
+**中文：**
+使用 $g = \frac{GM}{r^2}$，其中 $M = M_E$，$r$ 是地月距离：
+$$g = \frac{(6.67 \times 10^{-11})(5.97 \times 10^{24})}{(3.84 \times 10^8)^2}$$
 
-**(c) Explanation / 解释:**
-**English:** The Moon is in [[Circular Orbits|circular orbit]] around Earth. The gravitational force provides the [[Centripetal Acceleration and Force|centripetal force]] required for circular motion. The Moon has a tangential orbital velocity (about 1 km/s) that is perpendicular to the gravitational force. As the Moon "falls" toward Earth due to gravity, its tangential velocity carries it sideways, resulting in a curved path. The Moon is constantly falling toward Earth but keeps missing it because of its sideways motion. This is why it remains in a stable orbit rather than crashing into Earth.
+$$g = \frac{3.98 \times 10^{14}}{1.47 \times 10^{17}} = 2.71 \times 10^{-3} \, \text{N kg}^{-1}$$
 
-**中文:** 月球绕地球做[[圆周轨道|圆周运动]]。引力提供了圆周运动所需的[[向心加速度与力|向心力]]。月球具有垂直于引力方向的切向轨道速度（约1 km/s）。当月球因引力"坠向"地球时，其切向速度使其侧向移动，形成弯曲路径。月球不断坠向地球，但因侧向运动而不断"错过"地球。这就是它保持稳定轨道而非撞向地球的原因。
+**Part (c): Gravitational field strength at Earth's surface**
 
-### Final Answer / 最终答案
-(a) $F = 1.99 \times 10^{20}$ N
-(b) $g = 2.71 \times 10^{-3}$ N kg⁻¹
-(c) Gravitational force provides centripetal force for orbital motion / 引力提供轨道运动的向心力
+**English:**
+Use $g = \frac{GM_E}{R_E^2}$:
+$$g = \frac{(6.67 \times 10^{-11})(5.97 \times 10^{24})}{(6.37 \times 10^6)^2}$$
 
-### Examiner Notes / 考官点评
-**English:** 
-- Part (a): Common mistake is forgetting to square r. Always check units — force should be in N.
-- Part (b): Note that g at Moon's distance is much smaller than Earth's surface g (9.81). This shows the inverse square effect.
-- Part (c): Must mention BOTH gravitational force providing centripetal force AND tangential velocity. Simply saying "centripetal force" without explaining the velocity component loses marks.
+$$g = \frac{3.98 \times 10^{14}}{4.06 \times 10^{13}} = 9.80 \, \text{N kg}^{-1}$$
 
-**中文:**
-- 第(a)部分：常见错误是忘记对r平方。始终检查单位——力应为N。
-- 第(b)部分：注意月球距离处的g远小于地球表面g（9.81）。这显示了平方反比效应。
-- 第(c)部分：必须同时提到引力提供向心力和切向速度。仅说"向心力"而不解释速度分量会失分。
+**中文：**
+使用 $g = \frac{GM_E}{R_E^2}$：
+$$g = \frac{(6.67 \times 10^{-11})(5.97 \times 10^{24})}{(6.37 \times 10^6)^2}$$
 
-## Example 2: Gravitational Field Strength at Height / 高度处的引力场强度
-
-### Question / 题目
-**English:** A satellite orbits Earth at a height of 400 km above the surface. Given:
-- Earth's mass $M_E = 5.97 \times 10^{24}$ kg
-- Earth's radius $R_E = 6.37 \times 10^6$ m
-- $G = 6.67 \times 10^{-11}$ N m² kg⁻²
-
-(a) Calculate the gravitational field strength at the satellite's position.
-(b) Calculate the percentage decrease in g compared to the surface value.
-(c) State one reason why the uniform field approximation is NOT valid at this height.
-
-**中文:** 一颗卫星在距地表400 km的高度绕地球运行。已知：
-- 地球质量 $M_E = 5.97 \times 10^{24}$ kg
-- 地球半径 $R_E = 6.37 \times 10^6$ m
-- $G = 6.67 \times 10^{-11}$ N m² kg⁻²
-
-(a) 计算卫星位置处的引力场强度。
-(b) 计算与地表值相比g的下降百分比。
-(c) 说明一个为什么在此高度均匀场近似不成立的原因。
-
-### Image Prompt / 图片提示
-> 📷 **IMAGE PROMPT — [EX-02]: Satellite at Height h**
-> **English:** Cross-section of Earth showing center, radius R_E = 6370 km, and a satellite at height h = 400 km above surface. Label total distance from center: r = R_E + h. Show g vector at surface (g₀ = 9.81) and at satellite (g_h < g₀). Include formula: g_h = GM/(R+h)². Style: clear diagram, Earth in blue/green, satellite as small box with solar panels. Exam importance: HIGH.
-> **中文:** 地球剖面图，显示中心、半径R_E = 6370 km，以及距地表高度h = 400 km的卫星。标注距中心总距离：r = R_E + h。显示地表g矢量（g₀ = 9.81）和卫星处g矢量（g_h < g₀）。包含公式：g_h = GM/(R+h)²。风格：清晰图，地球蓝/绿色，卫星为带太阳能板的小盒子。考试重要性：高。
-
-### Solution / 解答
-
-**(a) Gravitational field strength at satellite height / 卫星高度处的引力场强度:**
-
-$$r = R_E + h = 6.37 \times 10^6 + 4.00 \times 10^5 = 6.77 \times 10^6 \text{ m}$$
-
-$$g_h = \frac{GM_E}{r^2} = \frac{(6.67 \times 10^{-11})(5.97 \times 10^{24})}{(6.77 \times 10^6)^2}$$
-
-$$g_h = \frac{3.98 \times 10^{14}}{4.58 \times 10^{13}}$$
-
-$$g_h = 8.69 \text{ N kg}^{-1}$$
-
-**(b) Percentage decrease / 下降百分比:**
-
-Surface value: $g_0 = \frac{GM_E}{R_E^2} = \frac{3.98 \times 10^{14}}{(6.37 \times 10^6)^2} = \frac{3.98 \times 10^{14}}{4.06 \times 10^{13}} = 9.81 \text{ N kg}^{-1}$
-
-$$\text{Percentage decrease} = \frac{g_0 - g_h}{g_0} \times 100\% = \frac{9.81 - 8.69}{9.81} \times 100\%$$
-
-$$\text{Percentage decrease} = \frac{1.12}{9.81} \times 100\% = 11.4\%$$
-
-**(c) Reason / 原因:**
-**English:** The uniform field approximation assumes g is constant. At h = 400 km, g has decreased by 11.4% from the surface value. This is a significant change, so the field cannot be considered uniform. The uniform approximation is only valid when h << R_E (typically h < 10 km for Earth), where the change in g is negligible.
-
-**中文:** 均匀场近似假设g为常数。在h = 400 km处，g比地表值下降了11.4%。这是显著变化，因此场不能视为均匀。均匀近似仅在h << R_E时有效（对地球通常h < 10 km），此时g的变化可忽略。
+$$g = \frac{3.98 \times 10^{14}}{4.06 \times 10^{13}} = 9.80 \, \text{N kg}^{-1}$$
 
 ### Final Answer / 最终答案
-(a) $g_h = 8.69$ N kg⁻¹
-(b) 11.4% decrease / 下降11.4%
-(c) g changes significantly (11.4%) — uniform field requires g ≈ constant / g显著变化（11.4%）——均匀场要求g ≈ 常数
+**Answer:**
+(a) $F = 1.99 \times 10^{20} \, \text{N}$
+(b) $g = 2.71 \times 10^{-3} \, \text{N kg}^{-1}$
+(c) $g = 9.80 \, \text{N kg}^{-1}$
+
+**答案：**
+(a) $F = 1.99 \times 10^{20} \, \text{N}$
+(b) $g = 2.71 \times 10^{-3} \, \text{N kg}^{-1}$
+(c) $g = 9.80 \, \text{N kg}^{-1}$
 
 ### Examiner Notes / 考官点评
 **English:**
-- Part (a): Common error — using R_E instead of (R_E + h). Always add height to radius!
-- Part (b): Can also calculate using ratio: g_h/g_0 = (R_E/r)² = (6.37/6.77)² = 0.886, so 11.4% decrease.
-- Part (c): Must quantify "significant" — mention the 11.4% change. Vague answers like "g changes" without numbers lose marks.
+- Part (a) tests direct application of Newton's law. Common mistake: forgetting to square $r$.
+- Part (b) tests understanding that $g$ depends only on the mass creating the field, not the test mass.
+- Part (c) confirms the familiar value of $g = 9.81 \, \text{N kg}^{-1}$. Note the slight difference due to rounding.
+- Always check units: masses in kg, distances in m.
 
-**中文:**
-- 第(a)部分：常见错误——使用R_E而非(R_E + h)。始终将高度加到半径上！
-- 第(b)部分：也可用比值计算：g_h/g_0 = (R_E/r)² = (6.37/6.77)² = 0.886，所以下降11.4%。
-- 第(c)部分：必须量化"显著"——提及11.4%的变化。没有数字的模糊答案如"g变化"会失分。
+**中文：**
+- 第(a)部分测试牛顿定律的直接应用。常见错误：忘记对 $r$ 平方。
+- 第(b)部分测试理解 $g$ 仅取决于产生场的质量，而不是测试质量。
+- 第(c)部分确认熟悉的 $g = 9.81 \, \text{N kg}^{-1}$ 值。注意由于四舍五入的微小差异。
+- 始终检查单位：质量用kg，距离用m。
+
+---
+
+## Example 2: Gravitational Field Strength at Different Heights / 不同高度处的引力场强度
+
+### Question / 题目
+**English:**
+A satellite orbits Earth at a height of $200 \, \text{km}$ above Earth's surface. Earth's radius is $6.37 \times 10^6 \, \text{m}$ and its mass is $5.97 \times 10^{24} \, \text{kg}$.
+(a) Calculate the gravitational field strength at the satellite's position.
+(b) Calculate the percentage decrease in $g$ compared to Earth's surface.
+(c) Explain why the satellite still experiences Earth's gravity despite being above the atmosphere.
+
+**中文：**
+一颗卫星在地球表面上方 $200 \, \text{km}$ 的高度绕地球运行。地球半径为 $6.37 \times 10^6 \, \text{m}$，质量为 $5.97 \times 10^{24} \, \text{kg}$。
+(a) 计算卫星位置处的引力场强度。
+(b) 计算与地球表面相比 $g$ 的百分比减少。
+(c) 解释为什么卫星尽管在大气层上方，仍然受到地球引力。
+
+### Solution / 解答
+
+**Part (a): Gravitational field strength at satellite's position**
+
+**English:**
+First, find the distance from Earth's centre to the satellite:
+$$r = R_E + h = 6.37 \times 10^6 + 200 \times 10^3 = 6.57 \times 10^6 \, \text{m}$$
+
+Use $g = \frac{GM_E}{r^2}$:
+$$g = \frac{(6.67 \times 10^{-11})(5.97 \times 10^{24})}{(6.57 \times 10^6)^2}$$
+
+$$g = \frac{3.98 \times 10^{14}}{4.32 \times 10^{13}} = 9.21 \, \text{N kg}^{-1}$$
+
+**中文：**
+首先，求从地球中心到卫星的距离：
+$$r = R_E + h = 6.37 \times 10^6 + 200 \times 10^3 = 6.57 \times 10^6 \, \text{m}$$
+
+使用 $g = \frac{GM_E}{r^2}$：
+$$g = \frac{(6.67 \times 10^{-11})(5.97 \times 10^{24})}{(6.57 \times 10^6)^2}$$
+
+$$g = \frac{3.98 \times 10^{14}}{4.32 \times 10^{13}} = 9.21 \, \text{N kg}^{-1}$$
+
+**Part (b): Percentage decrease**
+
+**English:**
+At Earth's surface: $g_0 = 9.80 \, \text{N kg}^{-1}$
+At satellite: $g = 9.21 \, \text{N kg}^{-1}$
+
+Percentage decrease:
+$$\frac{g_0 - g}{g_0} \times 100\% = \frac{9.80 - 9.21}{9.80} \times 100\% = 6.02\%$$
+
+**中文：**
+地球表面：$g_0 = 9.80 \, \text{N kg}^{-1}$
+卫星处：$g = 9.21 \, \text{N kg}^{-1}$
+
+百分比减少：
+$$\frac{g_0 - g}{g_0} \times 100\% = \frac{9.80 - 9.21}{9.80} \times 100\% = 6.02\%$$
+
+**Part (c): Explanation**
+
+**English:**
+Gravitational force is a fundamental force that acts over infinite distance. The satellite is still within Earth's gravitational field, even though it is above the atmosphere. The gravitational field strength decreases with distance according to the inverse square law, but never reaches zero. The satellite remains in orbit because it has sufficient tangential velocity to "fall around" Earth rather than falling straight down.
+
+**中文：**
+引力是一种基本力，作用距离无限远。卫星仍然在地球的引力场内，即使它在大气层上方。引力场强度根据平方反比定律随距离减小，但永远不会达到零。卫星保持在轨道上是因为它有足够的切向速度"绕地球下落"，而不是直接下落。
+
+### Final Answer / 最终答案
+**Answer:**
+(a) $g = 9.21 \, \text{N kg}^{-1}$
+(b) $6.02\%$ decrease
+(c) Gravity acts over infinite distance; satellite has sufficient tangential velocity for orbit.
+
+**答案：**
+(a) $g = 9.21 \, \text{N kg}^{-1}$
+(b) 减少 $6.02\%$
+(c) 引力作用距离无限；卫星有足够的切向速度维持轨道。
+
+### Examiner Notes / 考官点评
+**English:**
+- Part (a): Common mistake is using height instead of centre-to-centre distance. Always add Earth's radius.
+- Part (b): Show working clearly. Use $g_0$ for surface value.
+- Part (c): This is a common explanation question. Mention both the nature of gravity and orbital mechanics.
+- Edexcel often asks "explain why" questions worth 2-3 marks.
+
+**中文：**
+- 第(a)部分：常见错误是使用高度而不是中心到中心的距离。始终加上地球半径。
+- 第(b)部分：清晰展示计算过程。使用 $g_0$ 表示表面值。
+- 第(c)部分：这是常见的解释题。同时提到引力的性质和轨道力学。
+- 爱德思常问"解释为什么"的问题，值2-3分。
+
+---
 
 # 9. Past Paper Question Types / 历年真题题型
 
 | Question Type / 题型 | Frequency / 频率 | Difficulty / 难度 | Past Paper References / 真题索引 |
-|---|---|---|---|
-| State Newton's law of universal gravitation in words and formula / 用文字和公式表述万有引力定律 | ★★★★★ (Every paper) | ★☆☆☆☆ (Easy) | 📝 *待填入* |
-| Derive g = GM/r² from F = GMm/r² / 推导g = GM/r² | ★★★★★ (Every paper) | ★★☆☆☆ (Medium) | 📝 *待填入* |
-| Calculate gravitational force between two masses / 计算两质量之间的引力 | ★★★★★ (Every paper) | ★★☆☆☆ (Medium) | 📝 *待填入* |
-| Calculate g at a given height above Earth's surface / 计算地表某高度处的g | ★★★★☆ (Very Common) | ★★★☆☆ (Medium) | 📝 *待填入* |
-| Sketch and interpret g vs r graph for a planet / 画出并解释行星的g-r图 | ★★★★☆ (Very Common) | ★★★★☆ (Hard) | 📝 *待填入* |
-| Distinguish between gravitational mass and inertial mass / 区分引力质量和惯性质量 | ★★★☆☆ (Common - CIE) | ★★☆☆☆ (Medium) | 📝 *待填入* |
-| Explain why Moon doesn't fall into Earth / 解释月球为何不坠向地球 | ★★★☆☆ (Common) | ★★★☆☆ (Medium) | 📝 *待填入* |
-| Compare radial and uniform gravitational fields / 比较径向场与均匀场 | ★★★☆☆ (Common) | ★★☆☆☆ (Medium) | 📝 *待填入* |
-| Calculate percentage change in g with height / 计算g随高度的百分比变化 | ★★☆☆☆ (Occasional) | ★★★☆☆ (Medium) | 📝 *待填入* |
-| Vector nature of gravitational force (Edexcel negative sign) / 引力的矢量性质（Edexcel负号） | ★★☆☆☆ (Occasional - Edexcel) | ★★★☆☆ (Medium) | 📝 *待填入* |
+|----------------------|------------------|------------------|-------------------------------|
+| Calculation of gravitational force / 引力计算 | High | Medium | 📝 *待填入* |
+| Calculation of gravitational field strength / 引力场强度计算 | High | Medium | 📝 *待填入* |
+| Derivation of $g = GM/r^2$ / 推导 $g = GM/r^2$ | Medium | Medium | 📝 *待填入* |
+| Graph sketching and interpretation / 图表绘制与解读 | Medium | High | 📝 *待填入* |
+| Explanation of field concepts / 场概念解释 | Medium | Low-Medium | 📝 *待填入* |
+| Comparison of radial and uniform fields / 径向场与均匀场比较 | Low | Medium | 📝 *待填入* |
+| Practical design: measuring $G$ / 实验设计：测量 $G$ | Low | High | 📝 *待填入* |
 
-> 📝 **题库整理中 / Question Bank Under Construction:**
-> **English:** Specific past paper references (e.g., CAIE 9702/22/M/J/19, Edexcel WPH14/01) will be added as they are identified. Students should practice all question types above using their syllabus's past papers. Focus on derivation questions (g = GM/r²) and calculation questions — these appear most frequently.
-> **中文:** 具体真题索引（如CAIE 9702/22/M/J/19, Edexcel WPH14/01）将在确定后添加。学生应使用对应考纲的真题练习上述所有题型。重点关注推导题（g = GM/r²）和计算题——这些出现最频繁。
+> 📝 **题库整理中 / Question Bank Under Construction:** 具体试卷编号（如 9702/23/M/J/24 Q3）将在后续整理真题后填入上表。
 
 **Common Command Words / 常见指令词:**
-- **State / 写出:** Give a definition or formula without explanation / 给出定义或公式，无需解释
-- **Define / 定义:** Give the precise meaning / 给出精确含义
-- **Derive / 推导:** Show step-by-step mathematical development / 展示逐步数学推导
-- **Calculate / 计算:** Use numbers to find a numerical answer / 用数字求出数值答案
-- **Sketch / 画出:** Draw a graph showing shape and key features (no precise plotting) / 画图显示形状和关键特征（无需精确描点）
-- **Explain / 解释:** Give reasons or causes / 给出原因或理由
-- **Distinguish / 区分:** State differences between two concepts / 说明两个概念的区别
-- **Compare / 比较:** State similarities AND differences / 说明相同点和不同点
+
+| English | 中文 | Expected Response / 预期回答 |
+|---------|------|---------------------------|
+| State | 陈述 | Write the law or definition without derivation |
+| Define | 定义 | Give the precise meaning with equation |
+| Calculate | 计算 | Show all working with correct units |
+| Derive | 推导 | Show step-by-step algebraic manipulation |
+| Explain | 解释 | Give reasons with physics principles |
+| Sketch | 画出 | Draw approximate shape with labelled axes |
+| Determine | 确定 | Calculate or find from given data |
+| Suggest | 建议 | Propose a reasonable idea (may have multiple answers) |
+
+---
 
 # 10. Practical Skills Connections / 实验技能链接
 
-**English:** The gravitational force and field topic connects to practical skills in several ways:
+**English:**
+This topic connects to practical skills in several ways:
 
-1. **Measurement of g (Free Fall Method):** 
-   - CAIE Paper 3/5 and Edexcel Unit 3/6
-   - Use light gates or ticker timer to measure acceleration of falling object
-   - g = 2s/t² for object falling from rest
-   - Uncertainties: timing errors, release mechanism, air resistance
-   - Graph: s vs t² gives gradient = g/2
+**CAIE Paper 3 (AS) / Paper 5 (A2):**
+- **Measurement of $g$ using a pendulum:** This is a classic AS experiment where $g$ is determined from the period of a simple pendulum. The equation $T = 2\pi\sqrt{\frac{l}{g}}$ is used, and uncertainties in $l$ and $T$ are analysed.
+- **Measurement of $g$ using free fall:** Using light gates or a ticker timer to measure acceleration due to gravity. Uncertainties in distance and time measurements are evaluated.
+- **Graphical analysis:** Plotting $T^2$ against $l$ gives a straight line with gradient $\frac{4\pi^2}{g}$, allowing $g$ to be determined from the gradient.
+- **Uncertainties:** Percentage uncertainties in $g$ are calculated from uncertainties in measured quantities. Systematic errors (e.g., reaction time, parallax) must be identified and minimised.
 
-2. **Measurement of G (Cavendish Experiment):**
-   - Historical experiment — not typically performed in school labs
-   - Know the principle: torsion balance measures tiny gravitational forces between lead spheres
-   - G = 6.67 × 10⁻¹¹ N m² kg⁻²
+**Edexcel Unit 3 (AS) / Unit 6 (A2):**
+- **Determination of $g$:** Similar experiments using free fall apparatus or a pendulum.
+- **Investigation of inverse square law:** Using a gravitational field simulation or data analysis to verify $g \propto \frac{1}{r^2}$.
+- **Log-log graphs:** Plotting $\log g$ against $\log r$ gives a straight line with gradient $-2$, confirming the inverse square relationship.
+- **Error analysis:** Identifying random and systematic errors, calculating percentage uncertainties, and suggesting improvements.
 
-3. **Inertial vs Gravitational Mass:**
-   - Gravitational mass: use a balance (compare with standard masses)
-   - Inertial mass: use F = ma (apply known force, measure acceleration with light gates)
-   - Compare results to verify equivalence principle
+**Common Practical Skills:**
+- Using measuring instruments (metre rule, stopwatch, light gates)
+- Recording data in tables with correct significant figures
+- Plotting graphs with appropriate scales and error bars
+- Calculating gradients and intercepts
+- Evaluating uncertainties and drawing conclusions
 
-4. **Graph Plotting and Analysis:**
-   - Plot g vs 1/r² to obtain straight line through origin (gradient = GM)
-   - Plot F vs 1/r² for gravitational force
-   - Calculate gradient, intercept, and uncertainties
+**中文：**
+本主题通过多种方式与实验技能相关联：
 
-5. **Uncertainties:**
-   - In g measurement: Δg/g = Δs/s + 2Δt/t (for g = 2s/t²)
-   - Systematic errors: air resistance, reaction time
-   - Random errors: multiple readings, use of averages
+**CAIE Paper 3 (AS) / Paper 5 (A2)：**
+- **使用单摆测量 $g$：** 这是经典的AS实验，通过单摆周期确定 $g$。使用方程 $T = 2\pi\sqrt{\frac{l}{g}}$，分析 $l$ 和 $T$ 的不确定度。
+- **使用自由落体测量 $g$：** 使用光门或打点计时器测量重力加速度。评估距离和时间测量的不确定度。
+- **图形分析：** 绘制 $T^2$ 对 $l$ 的图得到直线，斜率为 $\frac{4\pi^2}{g}$，可从斜率确定 $g$。
+- **不确定度：** 从测量量的不确定度计算 $g$ 的百分比不确定度。必须识别并最小化系统误差（如反应时间、视差）。
 
-**中文:** 引力与引力场课题通过以下方式与实验技能联系：
+**Edexcel Unit 3 (AS) / Unit 6 (A2)：**
+- **确定 $g$：** 使用自由落体装置或单摆的类似实验。
+- **平方反比定律的探究：** 使用引力场模拟或数据分析验证 $g \propto \frac{1}{r^2}$。
+- **对数-对数图：** 绘制 $\log g$ 对 $\log r$ 的图得到斜率为 $-2$ 的直线，确认平方反比关系。
+- **误差分析：** 识别随机误差和系统误差，计算百分比不确定度，提出改进建议。
 
-1. **测量g（自由落体法）：**
-   - CAIE Paper 3/5 和 Edexcel Unit 3/6
-   - 使用光门或计时器测量下落物体的加速度
-   - 从静止下落的物体：g = 2s/t²
-   - 不确定度：计时误差、释放装置、空气阻力
-   - 图表：s对t²图，斜率 = g/2
+**常见实验技能：**
+- 使用测量仪器（米尺、秒表、光门）
+- 以正确的有效数字在表格中记录数据
+- 使用适当的刻度和误差棒绘制图表
+- 计算斜率和截距
+- 评估不确定度并得出结论
 
-2. **测量G（卡文迪许实验）：**
-   - 历史实验——通常不在学校实验室进行
-   - 了解原理：扭秤测量铅球之间的微小引力
-   - G = 6.67 × 10⁻¹¹ N m² kg⁻²
+> 📋 **CIE Only:** CIE Paper 5 often includes questions on experimental design for measuring $g$ or $G$. Candidates should be able to describe apparatus, procedure, and error analysis.
 
-3. **惯性质量与引力质量：**
-   - 引力质量：使用天平（与标准质量比较）
-   - 惯性质量：使用F = ma（施加已知力，用光门测量加速度）
-   - 比较结果以验证等效原理
+> 📋 **Edexcel Only:** Edexcel Unit 6 may include a practical investigation of gravitational fields using simulations or data analysis. Log-log graphs are a key skill.
 
-4. **图表绘制与分析：**
-   - 绘制g对1/r²图，得到通过原点的直线（斜率 = GM）
-   - 绘制F对1/r²图
-   - 计算斜率、截距和不确定度
-
-5. **不确定度：**
-   - g测量中：Δg/g = Δs/s + 2Δt/t（对于g = 2s/t²）
-   - 系统误差：空气阻力、反应时间
-   - 随机误差：多次读数，使用平均值
-
-> 📋 **CIE Only:** CAIE Paper 3 (AS) and Paper 5 (A2) may include experiments related to g measurement. The Cavendish experiment is more likely to appear as a theory question.
-> 📋 **Edexcel Only:** Edexcel Unit 3 (AS) and Unit 6 (A2) practical exams may include determination of g using free fall apparatus. Core Practical 13 (Edexcel) involves investigating the relationship between force and extension — not directly related but similar graph analysis skills apply.
+---
 
 # 11. Concept Map / 概念图谱
 
 ```mermaid
 graph TD
-    %% Prerequisites
-    PR1["[[Newton's Laws of Motion]]"] --> GF
-    PR2["[[Centripetal Acceleration and Force]]"] --> CO
-    
     %% Main Topic
-    GF["Gravitational Force and Field"] --> NL["[[Newton's Law of Universal Gravitation]]<br/>F = GMm/r²"]
-    GF --> GS["[[Gravitational Field Strength]]<br/>g = F/m = GM/r²"]
-    GF --> RF["[[Radial vs Uniform Gravitational Fields]]"]
+    GF[Gravitational Force and Field / 引力与引力场]
     
-    %% Sub-topics
-    NL --> F_calc["Force Calculations"]
-    NL --> G_const["Gravitational Constant G"]
+    %% Prerequisites
+    NL[Newton's Laws of Motion / 牛顿运动定律]
+    CA[Centripetal Acceleration and Force / 向心加速度与向心力]
     
-    GS --> g_surface["g at Surface<br/>g₀ = GM/R²"]
-    GS --> g_height["g at Height<br/>g = GM/(R+h)²"]
-    GS --> g_inside["g Inside Planet<br/>g ∝ r"]
-    
-    RF --> Radial["Radial Field<br/>g ∝ 1/r²"]
-    RF --> Uniform["Uniform Field<br/>g ≈ constant"]
+    %% Sub-topics (Leaf Nodes)
+    NLUG[Newton's Law of Universal Gravitation / 牛顿万有引力定律]
+    GFS[Gravitational Field Strength / 引力场强度]
+    RVUF[Radial vs Uniform Gravitational Fields / 径向场与均匀场]
     
     %% Related Topics
-    GF --> GP["[[Gravitational Potential]]<br/>V = -GM/r"]
-    GF --> CO["[[Circular Orbits]]<br/>GMm/r² = mv²/r"]
+    GP[Gravitational Potential / 引力势]
+    CO[Circular Orbits / 圆周轨道]
+    SHM[Simple Harmonic Motion / 简谐运动]
+    EF[Electric Fields / 电场]
     
-    %% Connections
-    NL --> GS
-    GS --> RF
-    Radial --> GP
-    Uniform --> g_surface
-    CO --> F_calc
+    %% Connections - Prerequisites
+    NL --> GF
+    CA --> GF
     
-    %% Practical
-    GF --> Practical["Practical: Measure g<br/>Free Fall Method"]
-    GF --> Cavendish["Practical: Cavendish Experiment<br/>Measure G"]
+    %% Connections - Sub-topics
+    GF --> NLUG
+    GF --> GFS
+    GF --> RVUF
+    
+    %% Connections - Between Sub-topics
+    NLUG --> GFS
+    GFS --> RVUF
+    
+    %% Connections - Related Topics
+    GFS --> GP
+    NLUG --> CO
+    CO --> CA
+    GF --> SHM
+    RVUF --> EF
     
     %% Styling
-    style GF fill:#e1f5fe,stroke:#01579b,stroke-width:3px
-    style NL fill:#fff3e0,stroke:#e65100
-    style GS fill:#fff3e0,stroke:#e65100
-    style RF fill:#fff3e0,stroke:#e65100
-    style GP fill:#f3e5f5,stroke:#7b1fa2
-    style CO fill:#f3e5f5,stroke:#7b1fa2
-    style PR1 fill:#e8f5e9,stroke:#1b5e20
-    style PR2 fill:#e8f5e9,stroke:#1b5e20
-    style Practical fill:#fce4ec,stroke:#c62828
-    style Cavendish fill:#fce4ec,stroke:#c62828
+    classDef main fill:#f9f,stroke:#333,stroke-width:4px
+    classDef sub fill:#bbf,stroke:#333,stroke-width:2px
+    classDef related fill:#bfb,stroke:#333,stroke-width:2px
+    classDef prereq fill:#fbb,stroke:#333,stroke-width:2px
+    
+    class GF main
+    class NLUG,GFS,RVUF sub
+    class GP,CO,SHM,EF related
+    class NL,CA prereq
 ```
 
-# 12. Examiner Insights / 考官洞察
+**Concept Map Explanation / 概念图说明:**
 
 **English:**
+The concept map shows how Gravitational Force and Field connects to:
+- **Prerequisites (red):** [[Newton's Laws of Motion]] provide the foundation for understanding forces, while [[Centripetal Acceleration and Force]] is essential for orbital motion.
+- **Sub-topics (blue):** [[Newton's Law of Universal Gravitation]] is the fundamental law; [[Gravitational Field Strength]] is derived from it; [[Radial vs Uniform Gravitational Fields]] describes the two types of fields.
+- **Related Topics (green):** [[Gravitational Potential]] extends the concept of fields to energy; [[Circular Orbits]] applies gravitational force to orbital mechanics; [[Simple Harmonic Motion]] connects to gravitational oscillations; [[Electric Fields]] have analogous equations and concepts.
 
-**Most Tested Ideas (CAIE 9702):**
-1. **Derivation of g = GM/r²** — Appears in nearly every exam. Must show: F = GMm/r², then g = F/m = GM/r².
-2. **Newton's Law in words** — "Every point mass attracts every other point mass with a force directly proportional to the product of their masses and inversely proportional to the square of their separation."
-3. **g at height calculations** — Common in Section B questions. Remember r = R + h.
-4. **Distinguishing gravitational vs inertial mass** — Theory question (15.1d). Know experimental methods.
-5. **Sketching g vs r graphs** — Must show linear inside, inverse square outside.
+**中文：**
+概念图显示引力与引力场如何连接：
+- **先修知识（红色）：** [[牛顿运动定律]]为理解力提供基础，而[[向心加速度与向心力]]对轨道运动至关重要。
+- **子主题（蓝色）：** [[牛顿万有引力定律]]是基本定律；[[引力场强度]]由其推导；[[径向场与均匀场]]描述两种类型的场。
+- **相关主题（绿色）：** [[引力势]]将场的概念扩展到能量；[[圆周轨道]]将引力应用于轨道力学；[[简谐运动]]连接到引力振荡；[[电场]]有类似的方程和概念。
 
-**Most Tested Ideas (Edexcel IAL):**
-1. **Newton's Law with negative sign** — F = -GMm/r² (vector form indicating attraction).
-2. **Radial vs uniform fields** — Sketch and compare field patterns.
-3. **g = GM/r² calculations** — Similar to CIE but with more emphasis on percentage changes.
-4. **Relationship between g and free fall acceleration** — g = acceleration of free fall (same units).
-5. **Orbital motion link** — Gravitational force provides centripetal force.
+---
 
-**Mark Scheme Wording / 评分标准措辞:**
-- "State Newton's law" — Must mention: (1) every mass attracts every other mass, (2) force ∝ product of masses, (3) force ∝ 1/r², (4) along line joining centers. Missing any one loses the mark.
-- "Define gravitational field strength" — Must say "force per unit mass" (not just "force divided by mass").
-- "Derive g = GM/r²" — Must show BOTH equations (F = GMm/r² AND g = F/m) before substitution.
-
-**Common Lost Marks / 常见失分点:**
-1. ❌ Using r as diameter instead of radius (distance between centers)
-2. ❌ Forgetting to square r in F = GMm/r²
-3. ❌ Confusing G (6.67 × 10⁻¹¹) with g (9.81)
-4. ❌ Not adding height to Earth's radius (using R instead of R + h)
-5. ❌ Stating gravitational force is repulsive (it's ALWAYS attractive)
-6. ❌ Not specifying "along the line joining centers" when stating Newton's law
-7. ❌ Using g = 9.81 for calculations at height (g changes with height!)
-
-**High-Scoring Structures / 高分答题结构:**
-- **Definition questions:** Start with "The gravitational force/field strength is..." then give formula with symbols defined.
-- **Derivation questions:** Write F = GMm/r², then g = F/m, then substitute to get g = GM/r². State "where M is the mass creating the field, r is the distance from its center."
-- **Calculation questions:** Write formula, substitute values with units, show working, give answer with units and significant figures.
-- **Explanation questions:** Use bullet points or numbered steps. Define key terms. Give physical reasoning.
-
-**中文:**
-
-**最常考内容（CAIE 9702）：**
-1. **推导g = GM/r²** — 几乎每场考试都出现。必须展示：F = GMm/r²，然后g = F/m = GM/r²。
-2. **用文字表述牛顿定律** — "任何两个质点之间都存在相互吸引力，力的大小与两质量的乘积成正比，与距离的平方成反比。"
-3. **高度处的g计算** — 常见于B部分问题。记住r = R + h。
-4. **区分引力质量与惯性质量** — 理论题（15.1d）。了解实验方法。
-5. **画出g-r图** — 必须显示内部线性，外部平方反比。
-
-**最常考内容（Edexcel IAL）：**
-1. **带负号的牛顿定律** — F = -GMm/r²（矢量形式表示吸引）。
-2. **径向场与均匀场** — 画出并比较场模式。
-3. **g = GM/r²计算** — 与CIE类似，但更强调百分比变化。
-4. **g与自由落体加速度的关系** — g = 自由落体加速度（单位相同）。
-5. **轨道运动联系** — 引力提供向心力。
-
-**评分标准措辞：**
-- "表述牛顿定律" — 必须提到：(1) 每个质量吸引其他质量，(2) 力 ∝ 质量乘积，(3) 力 ∝ 1/r²，(4) 沿中心连线。遗漏任何一点都会失分。
-- "定义引力场强度" — 必须说"单位质量的力"（不仅仅是"力除以质量"）。
-- "推导g = GM/r²" — 在代入前必须展示两个方程（F = GMm/r² 和 g = F/m）。
-
-**常见失分点：**
-1. ❌ 将r用作直径而非半径（中心间距离）
-2. ❌ 忘记对F = GMm/r²中的r平方
-3. ❌ 混淆G（6.67 × 10⁻¹¹）和g（9.81）
-4. ❌ 未将高度加到地球半径上（使用R而非R + h）
-5. ❌ 说引力是排斥力（始终为吸引力）
-6. ❌ 表述牛顿定律时未说明"沿中心连线"
-7. ❌ 在高度计算中使用g = 9.81（g随高度变化！）
-
-**高分答题结构：**
-- **定义题：** 以"引力/引力场强度是……"开头，然后给出公式并定义符号。
-- **推导题：** 写出F = GMm/r²，然后g = F/m，代入得到g = GM/r²。说明"其中M是产生场的质量，r是距其中心的距离。"
-- **计算题：** 写出公式，代入带单位的数值，展示计算过程，给出带单位和有效数字的答案。
-- **解释题：** 使用要点或编号步骤。定义关键术语。给出物理论证。
-
-# 13. Quick Revision Sheet / 速查表
+# 12. Quick Revision Sheet / 速查表
 
 | Category / 类别 | Key Points / 要点 |
-|---|---|
-| **Newton's Law / 牛顿定律** | $F = G\frac{m_1 m_2}{r^2}$ — Always attractive / 始终为吸引力; $G = 6.67 \times 10^{-11}$ N m² kg⁻²; r = distance between CENTERS / 中心间距离 |
-| **Field Strength Definition / 场强定义** | $g = \frac{F}{m}$ — Force per unit mass / 单位质量的力; Vector toward center / 矢量指向中心; Units: N kg⁻¹ = m s⁻² |
-| **g for Point Mass / 点质量的g** | $g = \frac{GM}{r^2}$ — Derived from F = GMm/r² and g = F/m / 由F = GMm/r²和g = F/m推导; g ∝ 1/r² |
-| **g at Height / 高度处的g** | $g_h = \frac{GM}{(R+h)^2}$ — Use r = R + h / 使用r = R + h; NOT R alone / 不是仅用R |
-| **Radial Field / 径向场** | Field lines converge at center / 场线汇聚于中心; g ∝ 1/r²; Arrows point INWARD / 箭头指向内 |
-| **Uniform Field / 均匀场** | Parallel field lines / 平行场线; g = constant; Valid when h << R / 当h << R时有效 |
-| **Gravitational Mass / 引力质量** | Measured by balance / 用天平测量; $F = m_g g$; Responds to gravity / 对引力响应 |
-| **Inertial Mass / 惯性质量** | Measured by F = ma / 用F = ma测量; $F = m_i a$; Resists acceleration / 抵抗加速度 |
-| **Equivalence Principle / 等效原理** | $m_g = m_i$ experimentally / 实验上相等; All objects fall at same rate / 所有物体以相同速率下落 |
-| **Key Proportionalities / 关键比例关系** | $F \propto m_1 m_2$; $F \propto 1/r^2$; $g \propto M$; $g \propto 1/r^2$ |
-| **Common Values / 常用值** | $G = 6.67 \times 10^{-11}$; Earth: $M_E = 5.97 \times 10^{24}$ kg, $R_E = 6.37 \times 10^6$ m; $g_0 = 9.81$ N kg⁻¹ |
-| **Common Mistakes / 常见错误** | Using r as diameter / 用r作直径; Forgetting to square r / 忘记对r平方; Confusing G and g / 混淆G和g; Not adding h to R / 未将h加到R上 |
+|----------------|------------------|
+| **Definitions / 定义** | • **Gravitational Force:** Attractive force between masses, $F = \frac{Gm_1 m_2}{r^2}$ / 质量之间的吸引力<br>• **Gravitational Field:** Region where mass experiences force / 质量受力的区域<br>• **Gravitational Field Strength:** Force per unit mass, $g = \frac{F}{m}$ / 单位质量的力<br>• **Point Mass:** Mass concentrated at a point / 集中在一点的质点 |
+| **Equations / 公式** | • $F = \frac{Gm_1 m_2}{r^2}$ — Newton's law / 牛顿定律<br>• $g = \frac{F}{m}$ — Field strength definition / 场强定义<br>• $g = \frac{GM}{r^2}$ — Field strength for point mass / 质点场强<br>• $G = 6.67 \times 10^{-11} \, \text{N m}^2 \text{kg}^{-2}$ — Universal constant / 万有引力常数 |
+| **Graphs / 图表** | • $F$ vs $r$: Inverse square curve ($F \propto 1/r^2$) / 平方反比曲线<br>• $g$ vs $r$: Outside: $1/r^2$; Inside: linear increase / 外部：$1/r^2$；内部：线性增加<br>• $\log g$ vs $\log r$: Straight line, gradient $-2$ / 直线，斜率 $-2$ |
+| **Key Facts / 关键事实** | • Gravitational force is always attractive / 引力总是吸引力<br>• $r$ is centre-to-centre distance / $r$ 是中心到中心距离<br>• $g$ on Earth's surface ≈ $9.81 \, \text{N kg}^{-1}$ / 地球表面 $g$ ≈ $9.81 \, \text{N kg}^{-1}$<br>• $g$ decreases with height: $g \propto 1/r^2$ / $g$ 随高度减小：$g \propto 1/r^2$<br>• Uniform field approximation near Earth's surface / 地球表面附近的均匀场近似 |
+| **Exam Reminders / 考试提醒** | • State law in words before equation / 在方程前用文字陈述定律<br>• Always use centre-to-centre distance / 始终使用中心到中心距离<br>• Don't confuse $G$ (constant) with $g$ (field strength) / 不要混淆 $G$（常数）和 $g$（场强）<br>• Show derivation of $g = GM/r^2$ clearly / 清晰展示 $g = GM/r^2$ 的推导<br>• Check units: kg, m, N / 检查单位：kg, m, N<br>• For satellites: $r = R_E + h$ / 对于卫星：$r = R_E + h$<br>• Edexcel: Know uniform field concept / 爱德思：了解均匀场概念 |
 
-# 14. Metadata / 元数据
+---
 
-```yaml
-title:
-  en: "Gravitational Force and Field"
-  cn: "引力与引力场"
-subject: Physics
-syllabus:
-  - CAIE 9702
-  - Edexcel IAL
-cie_ref: "15.1 (a-d)"
-edexcel_ref: "WPH14 U4: 6.1-6.5"
-level: A2
-node_type: topic_hub
-difficulty: intermediate
-prerequisites:
-  - "Newton's Laws of Motion"
-  - "Centripetal Acceleration and Force"
-related_topics:
-  - "Gravitational Potential"
-  - "Circular Orbits"
-sub_topics:
-  - "Newton's Law of Universal Gravitation"
-  - "Gravitational Field Strength"
-  - "Radial vs Uniform Gravitational Fields"
-formula_count: 6
-diagram_count: 8
-exam_frequency: "★★★★★ (Every paper - core topic)"
-language: bilingual_en_cn
-last_updated: "2025-01"
-```
-
-> 📝 **Note / 备注:** This is the HUB file for "Gravitational Force and Field." Leaf nodes ([[Newton's Law of Universal Gravitation]], [[Gravitational Field Strength]], [[Radial vs Uniform Gravitational Fields]]) contain more detailed, focused content. Use [[wikilinks]] to navigate between files in the Obsidian knowledge graph.
+> 📝 **Note / 备注:** This knowledge graph node is designed to be the HUB file for the "Gravitational Force and Field" topic. It links to leaf nodes [[Newton's Law of Universal Gravitation]], [[Gravitational Field Strength]], and [[Radial vs Uniform Gravitational Fields]] for more detailed exploration of each sub-topic. Related topics [[Gravitational Potential]] and [[Circular Orbits]] should be studied after mastering this node.

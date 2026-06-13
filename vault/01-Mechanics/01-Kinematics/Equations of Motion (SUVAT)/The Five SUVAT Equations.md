@@ -1,294 +1,393 @@
+# The Five SUVAT Equations / 五大SUVAT方程
+
+---
+
 # 1. Overview / 概述
 
 **English:**
-The five SUVAT equations form the mathematical backbone of [[Equations of Motion (SUVAT)]]. These equations describe the motion of objects moving with **constant acceleration** in a straight line. Each equation relates a different combination of the five kinematic variables: displacement ($s$), initial velocity ($u$), final velocity ($v$), acceleration ($a$), and time ($t$). Mastering these equations is essential for solving problems in [[Free Fall Under Gravity]], [[Two-Stage Motion Problems]], and eventually [[Projectile Motion]].
-
-The power of the SUVAT equations lies in their ability to predict unknown quantities when three or more variables are known. They are derived from the fundamental definitions of [[Displacement, Velocity and Acceleration]] and are applicable only under conditions of uniform acceleration. Understanding when and how to apply each equation is a critical skill for A-Level Physics.
+The five SUVAT equations form the mathematical foundation of [[Equations of Motion (SUVAT)]] for objects moving with **constant acceleration** in a straight line. These equations relate five kinematic variables: displacement ($s$), initial velocity ($u$), final velocity ($v$), acceleration ($a$), and time ($t$). Each equation omits one variable, allowing you to solve for any unknown when given three known quantities. Mastering these equations is essential for solving problems in [[Free Fall Under Gravity]], [[Two-Stage Motion Problems]], and eventually [[Projectile Motion]].
 
 **中文:**
-五个SUVAT方程构成了[[Equations of Motion (SUVAT)]]的数学基础。这些方程描述了物体在直线上以**恒定加速度**运动的情况。每个方程关联了五个运动学变量中的不同组合：位移($s$)、初速度($u$)、末速度($v$)、加速度($a$)和时间($t$)。掌握这些方程对于解决[[Free Fall Under Gravity]]、[[Two-Stage Motion Problems]]以及最终的[[Projectile Motion]]问题至关重要。
-
-SUVAT方程的强大之处在于，当已知三个或更多变量时，它们能够预测未知量。这些方程源自[[Displacement, Velocity and Acceleration]]的基本定义，并且仅在匀加速条件下适用。理解何时以及如何应用每个方程是A-Level物理的关键技能。
+五大SUVAT方程构成了[[Equations of Motion (SUVAT)]]的数学基础，适用于**匀加速直线运动**的物体。这些方程关联了五个运动学变量：位移($s$)、初速度($u$)、末速度($v$)、加速度($a$)和时间($t$)。每个方程省略一个变量，使得在已知三个量的情况下可以求解任意未知量。掌握这些方程对于解决[[Free Fall Under Gravity]]、[[Two-Stage Motion Problems]]以及后续的[[Projectile Motion]]问题至关重要。
 
 ---
 
-# 2. Core Definition / 核心定义
+# 2. Syllabus Learning Objectives / 考纲学习目标
 
-| Term (EN/CN) | Definition (EN) | Definition (CN) |
-| ------------ | --------------- | --------------- |
-| **SUVAT Equations** / SUVAT方程 | A set of five kinematic equations that describe the motion of an object moving with constant acceleration in a straight line, relating displacement ($s$), initial velocity ($u$), final velocity ($v$), acceleration ($a$), and time ($t$). | 一组五个运动学方程，描述物体在直线上以恒定加速度运动的情况，关联位移($s$)、初速度($u$)、末速度($v$)、加速度($a$)和时间($t$)。 |
-| **Constant Acceleration** / 恒定加速度 | A motion condition where the rate of change of velocity remains uniform over time; the acceleration does not vary. | 速度随时间的变化率保持均匀的运动条件；加速度不变化。 |
-| **Initial Velocity ($u$)** / 初速度 | The velocity of an object at the start of the time interval under consideration. | 物体在考虑的时间间隔开始时的速度。 |
-| **Final Velocity ($v$)** / 末速度 | The velocity of an object at the end of the time interval under consideration. | 物体在考虑的时间间隔结束时的速度。 |
-| **Displacement ($s$)** / 位移 | The straight-line distance from the starting point to the finishing point, with direction considered. | 从起点到终点的直线距离，考虑方向。 |
-| **Acceleration ($a$)** / 加速度 | The rate of change of velocity; a vector quantity measured in $m/s^2$. | 速度的变化率；矢量量，单位为$m/s^2$。 |
+| CAIE 9702 | Edexcel IAL |
+|-----------|-------------|
+| 3.1(g) Derive and apply the equations of motion for constant acceleration | 1.9 Use equations of motion for constant acceleration |
+| 3.1(h) Solve problems using equations of motion | 1.10 Apply SUVAT equations to vertical motion under gravity |
+| 3.1(k) Recognise and use the independence of vertical and horizontal motion | 1.12 Solve problems involving motion with constant acceleration |
+
+**Examiner Expectations / 考官期望:**
+- **English:** You must be able to derive each equation from definitions of acceleration and velocity, select the correct equation for a given problem, and apply it correctly with appropriate sign conventions.
+- **中文:** 你必须能够从加速度和速度的定义推导每个方程，为给定问题选择正确的方程，并正确应用适当的符号约定。
 
 ---
 
-# 3. Key Concepts / 关键概念
+# 3. Core Definitions / 核心定义
 
+| Term (EN/CN) | Definition (EN) | Definition (CN) | Common Mistakes / 常见错误 |
+|--------------|-----------------|-----------------|---------------------------|
+| **Displacement ($s$)** / 位移 | The straight-line distance from start to finish in a specified direction (vector) | 从起点到终点的直线距离，有指定方向（矢量） | Confusing with distance (scalar) — displacement can be negative |
+| **Initial Velocity ($u$)** / 初速度 | Velocity at time $t=0$ (vector) | 在$t=0$时刻的速度（矢量） | Forgetting direction — sign matters |
+| **Final Velocity ($v$)** / 末速度 | Velocity at time $t$ (vector) | 在$t$时刻的速度（矢量） | Confusing with average velocity |
+| **Acceleration ($a$)** / 加速度 | Rate of change of velocity (vector) | 速度的变化率（矢量） | Forgetting it must be CONSTANT for SUVAT |
+| **Time ($t$)** / 时间 | Time elapsed during motion (scalar) | 运动经过的时间（标量） | Using clock time instead of elapsed time |
+
+> 📋 **CIE Only:** CAIE expects you to derive the equations from first principles using velocity-time graphs.
+> 
+> 📋 **Edexcel Only:** Edexcel provides the equations in the formula booklet — focus on application and selection.
+
+---
+
+# 4. Key Concepts Explained / 关键概念详解
+
+## 4.1 Derivation of the Five Equations / 五个方程的推导
+
+### Explanation / 解释
 **English:**
-The five SUVAT equations are derived from the fundamental definitions of [[Displacement, Velocity and Acceleration]]. Each equation omits one of the five variables, making it useful when that variable is unknown or irrelevant.
-
-**Equation 1** ($v = u + at$) omits displacement ($s$). It is the most direct equation, derived from the definition of acceleration: $a = \frac{v-u}{t}$.
-
-**Equation 2** ($s = \frac{u+v}{2}t$) omits acceleration ($a$). It uses the average velocity $\frac{u+v}{2}$ multiplied by time to find displacement.
-
-**Equation 3** ($s = ut + \frac{1}{2}at^2$) omits final velocity ($v$). This is one of the most commonly used equations, especially in [[Free Fall Under Gravity]] problems.
-
-**Equation 4** ($s = vt - \frac{1}{2}at^2$) omits initial velocity ($u$). It is less commonly used but valuable when $u$ is unknown.
-
-**Equation 5** ($v^2 = u^2 + 2as$) omits time ($t$). This is extremely useful when time is not given or not needed, such as in [[Projectile Motion]] problems.
-
-**Common Pitfalls:**
-- Forgetting that these equations only apply to **constant acceleration** — they cannot be used for variable acceleration.
-- Mixing up **displacement** and **distance** — displacement is a vector, distance is a scalar.
-- Using the wrong sign for acceleration — deceleration means negative acceleration.
-- Forgetting to convert units (e.g., km/h to m/s).
+The five SUVAT equations are derived from the fundamental definitions of acceleration and average velocity. Starting from $a = \frac{v-u}{t}$, we rearrange to get $v = u + at$ (Equation 1). The displacement is the area under a velocity-time graph: for constant acceleration, this is a trapezium, giving $s = \frac{1}{2}(u+v)t$ (Equation 2). Substituting Equation 1 into Equation 2 eliminates $v$ to give $s = ut + \frac{1}{2}at^2$ (Equation 3). Substituting Equation 1 into Equation 2 eliminating $t$ gives $s = vt - \frac{1}{2}at^2$ (Equation 4). Finally, eliminating $t$ from Equations 1 and 2 gives $v^2 = u^2 + 2as$ (Equation 5).
 
 **中文:**
-五个SUVAT方程源自[[Displacement, Velocity and Acceleration]]的基本定义。每个方程省略了五个变量中的一个，使得当该变量未知或不相关时非常有用。
+五个SUVAT方程是从加速度和平均速度的基本定义推导出来的。从$a = \frac{v-u}{t}$开始，整理得到$v = u + at$（方程1）。位移是速度-时间图下的面积：对于匀加速运动，这是一个梯形，得到$s = \frac{1}{2}(u+v)t$（方程2）。将方程1代入方程2消去$v$得到$s = ut + \frac{1}{2}at^2$（方程3）。将方程1代入方程2消去$t$得到$s = vt - \frac{1}{2}at^2$（方程4）。最后，从方程1和2消去$t$得到$v^2 = u^2 + 2as$（方程5）。
 
-**方程1** ($v = u + at$) 省略了位移($s$)。它是最直接的方程，由加速度定义推导得出：$a = \frac{v-u}{t}$。
+### Physical Meaning / 物理意义
+**English:** Each equation represents a different relationship between the five variables, with one variable omitted. This allows you to solve problems regardless of which variable is unknown.
+**中文:** 每个方程代表了五个变量之间的不同关系，省略了一个变量。这使得无论哪个变量未知，你都能解决问题。
 
-**方程2** ($s = \frac{u+v}{2}t$) 省略了加速度($a$)。它使用平均速度$\frac{u+v}{2}$乘以时间来求位移。
+### Common Misconceptions / 常见误区
+- **English:** 
+  - These equations ONLY work for constant acceleration
+  - $s$ is displacement, NOT distance
+  - Signs (positive/negative) must be consistent
+- **中文:**
+  - 这些方程只适用于匀加速运动
+  - $s$是位移，不是路程
+  - 正负号必须一致
 
-**方程3** ($s = ut + \frac{1}{2}at^2$) 省略了末速度($v$)。这是最常用的方程之一，特别是在[[Free Fall Under Gravity]]问题中。
+### Exam Tips / 考试提示
+- **English:** Always list $u, v, a, s, t$ and identify which three are known before choosing an equation
+- **中文:** 始终列出$u, v, a, s, t$，在选方程前先确定哪三个是已知的
 
-**方程4** ($s = vt - \frac{1}{2}at^2$) 省略了初速度($u$)。它不太常用，但在$u$未知时很有价值。
-
-**方程5** ($v^2 = u^2 + 2as$) 省略了时间($t$)。当时间未给出或不需要时非常有用，例如在[[Projectile Motion]]问题中。
-
-**常见陷阱：**
-- 忘记这些方程仅适用于**恒定加速度**——不能用于变加速运动。
-- 混淆**位移**和**距离**——位移是矢量，距离是标量。
-- 使用错误的加速度符号——减速意味着负加速度。
-- 忘记转换单位（例如，km/h 转换为 m/s）。
+> 📷 **IMAGE PROMPT — SUVAT-DERIVATION: Derivation of SUVAT Equations from Velocity-Time Graph**
+> A velocity-time graph showing a straight line from (0,u) to (t,v). The area under the line is shaded as a trapezium, with labels showing the rectangular area (u×t) and triangular area (½×(v-u)×t). Arrows indicate how the area formula gives s = ut + ½at². Clean, educational diagram with clear labels.
 
 ---
 
-# 4. Formulas / 公式
+# 5. Essential Equations / 核心公式
 
-## The Five SUVAT Equations / 五个SUVAT方程
-
-$$v = u + at$$
-
-$$s = \frac{u+v}{2}t$$
-
-$$s = ut + \frac{1}{2}at^2$$
-
-$$s = vt - \frac{1}{2}at^2$$
-
-$$v^2 = u^2 + 2as$$
+## Equation 1: $v = u + at$
 
 | Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
-| ------------- | ------------ | ------------ | ----------- |
-| $s$ | Displacement | 位移 | m |
-| $u$ | Initial velocity | 初速度 | m/s |
-| $v$ | Final velocity | 末速度 | m/s |
-| $a$ | Acceleration | 加速度 | m/s² |
+|--------------|-------------|-------------|------------|
+| $v$ | Final velocity | 末速度 | m s⁻¹ |
+| $u$ | Initial velocity | 初速度 | m s⁻¹ |
+| $a$ | Acceleration | 加速度 | m s⁻² |
 | $t$ | Time | 时间 | s |
 
-**Derivation / 推导:**
+**Derivation / 推导:** From $a = \frac{v-u}{t}$, multiply both sides by $t$: $at = v-u$, then $v = u + at$
 
-**Equation 1:** From the definition of acceleration:
-$$a = \frac{v-u}{t} \implies v = u + at$$
+**Conditions / 适用条件:** Constant acceleration only / 仅适用于匀加速运动
 
-**Equation 2:** Displacement = average velocity × time:
-$$s = \frac{u+v}{2} \times t$$
-
-**Equation 3:** Substitute $v$ from Eq. 1 into Eq. 2:
-$$s = \frac{u+(u+at)}{2}t = \frac{2u+at}{2}t = ut + \frac{1}{2}at^2$$
-
-**Equation 4:** Substitute $u$ from Eq. 1 ($u = v - at$) into Eq. 2:
-$$s = \frac{(v-at)+v}{2}t = \frac{2v-at}{2}t = vt - \frac{1}{2}at^2$$
-
-**Equation 5:** Eliminate $t$ from Eq. 1 and Eq. 3:
-From Eq. 1: $t = \frac{v-u}{a}$
-Substitute into Eq. 3: $s = u(\frac{v-u}{a}) + \frac{1}{2}a(\frac{v-u}{a})^2$
-Simplify: $v^2 = u^2 + 2as$
-
-**Conditions / 适用条件:**
-- Constant acceleration only (匀加速运动)
-- Motion in a straight line (直线运动)
-- All quantities are vectors — direction matters (所有量均为矢量——方向重要)
-
-> 📷 **IMAGE PROMPT — SUVAT-01: The Five SUVAT Equations Summary**
->
-> **English Prompt:**
-> A clean, textbook-style infographic showing all five SUVAT equations arranged in a pentagon shape. Each equation is in a separate colored box (blue, green, yellow, orange, red). Arrows connect the equations showing which variable each omits. At the center, a small diagram of a car accelerating along a straight road with labeled variables: u (initial velocity), v (final velocity), a (acceleration), s (displacement), t (time). The background is white with subtle grid lines. Professional, educational style suitable for an A-Level physics textbook.
->
-> **中文描述:**
-> 一个干净、教科书风格的信息图，显示所有五个SUVAT方程排列成五边形形状。每个方程在单独的颜色框中（蓝色、绿色、黄色、橙色、红色）。箭头连接方程，显示每个方程省略了哪个变量。中心是一个小图，显示一辆汽车沿直线道路加速，标有变量：u（初速度）、v（末速度）、a（加速度）、s（位移）、t（时间）。背景为白色，带有微妙的网格线。专业、教育风格，适合A-Level物理教科书。
->
-> **Labels Required / 需要标注:**
-> * Each equation with its number (1-5)
-> * Omitted variable label for each equation
-> * Central diagram with u, v, a, s, t labels
->
-> **Style / 风格:** Textbook vector infographic
->
-> **Exam Relevance / 考试关联:**
-> Students need to memorize all five equations and know which variable each omits for efficient problem-solving.
+**Limitations / 局限性:** Does not involve displacement $s$ / 不涉及位移$s$
 
 ---
 
-# 5. Image Prompt / 图片提示
+## Equation 2: $s = \frac{1}{2}(u+v)t$
 
-> 📷 **IMAGE PROMPT — SUVAT-02: SUVAT Variables on a Motion Diagram**
->
-> **English Prompt:**
-> A side-view diagram of a ball being thrown upward from ground level. The trajectory is shown as a dashed parabolic curve (though motion is vertical). Five key points are marked along the path: start (u = 10 m/s upward), midpoint (v = 0 m/s at peak), and end (v = -10 m/s at ground). Arrows show displacement (s) from start to end as a vertical arrow. Acceleration (a = -9.81 m/s²) is shown as a downward arrow at all points. Time intervals (t) are marked between points. Clean vector style with blue background, white labels, and red arrows for vectors. Educational diagram for A-Level physics.
->
-> **中文描述:**
-> 一个从地面向上抛出的球的侧视图。轨迹显示为虚线抛物线曲线（尽管运动是垂直的）。沿路径标记了五个关键点：起点（u = 10 m/s 向上）、中点（v = 0 m/s 在最高点）和终点（v = -10 m/s 在地面）。箭头显示从起点到终点的位移（s）为垂直箭头。加速度（a = -9.81 m/s²）在所有点显示为向下的箭头。时间间隔（t）在点之间标记。干净的矢量风格，蓝色背景，白色标签，红色箭头表示矢量。适合A-Level物理的教育图表。
->
-> **Labels Required / 需要标注:**
-> * Initial velocity (u) at start
-> * Final velocity (v) at end
-> * Acceleration (a) downward
-> * Displacement (s) vertical arrow
-> * Time (t) between points
->
-> **Style / 风格:** Clean vector educational diagram
->
-> **Exam Relevance / 考试关联:**
-> Helps students visualize how SUVAT variables apply to real motion, especially in [[Free Fall Under Gravity]].
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| $s$ | Displacement | 位移 | m |
+| $u$ | Initial velocity | 初速度 | m s⁻¹ |
+| $v$ | Final velocity | 末速度 | m s⁻¹ |
+| $t$ | Time | 时间 | s |
+
+**Derivation / 推导:** Area under $v-t$ graph = area of trapezium = $\frac{1}{2}(u+v)t$
+
+**Conditions / 适用条件:** Constant acceleration only / 仅适用于匀加速运动
+
+**Limitations / 局限性:** Does not involve acceleration $a$ / 不涉及加速度$a$
 
 ---
 
-# 6. Worked Example / 典型例题
+## Equation 3: $s = ut + \frac{1}{2}at^2$
 
-### Example 1: Finding Final Velocity / 例1：求末速度
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| $s$ | Displacement | 位移 | m |
+| $u$ | Initial velocity | 初速度 | m s⁻¹ |
+| $a$ | Acceleration | 加速度 | m s⁻² |
+| $t$ | Time | 时间 | s |
 
-**English:**
-A car accelerates uniformly from rest at $2.5 \, m/s^2$ over a distance of $45 \, m$. Calculate the final velocity of the car.
+**Derivation / 推导:** Substitute $v = u+at$ into $s = \frac{1}{2}(u+v)t$: $s = \frac{1}{2}(u+u+at)t = ut + \frac{1}{2}at^2$
 
-**中文:**
-一辆汽车从静止开始以$2.5 \, m/s^2$的加速度匀加速行驶了$45 \, m$。计算汽车的末速度。
+**Conditions / 适用条件:** Constant acceleration only / 仅适用于匀加速运动
+
+**Limitations / 局限性:** Does not involve final velocity $v$ / 不涉及末速度$v$
+
+---
+
+## Equation 4: $s = vt - \frac{1}{2}at^2$
+
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| $s$ | Displacement | 位移 | m |
+| $v$ | Final velocity | 末速度 | m s⁻¹ |
+| $a$ | Acceleration | 加速度 | m s⁻² |
+| $t$ | Time | 时间 | s |
+
+**Derivation / 推导:** Substitute $u = v-at$ into $s = \frac{1}{2}(u+v)t$: $s = \frac{1}{2}(v-at+v)t = vt - \frac{1}{2}at^2$
+
+**Conditions / 适用条件:** Constant acceleration only / 仅适用于匀加速运动
+
+**Limitations / 局限性:** Does not involve initial velocity $u$ / 不涉及初速度$u$
+
+---
+
+## Equation 5: $v^2 = u^2 + 2as$
+
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| $v$ | Final velocity | 末速度 | m s⁻¹ |
+| $u$ | Initial velocity | 初速度 | m s⁻¹ |
+| $a$ | Acceleration | 加速度 | m s⁻² |
+| $s$ | Displacement | 位移 | m |
+
+**Derivation / 推导:** From $v = u+at$, $t = \frac{v-u}{a}$. Substitute into $s = \frac{1}{2}(u+v)t$: $s = \frac{1}{2}(u+v)\frac{v-u}{a} = \frac{v^2-u^2}{2a}$, so $v^2 = u^2 + 2as$
+
+**Conditions / 适用条件:** Constant acceleration only / 仅适用于匀加速运动
+
+**Limitations / 局限性:** Does not involve time $t$ / 不涉及时间$t$
+
+> 📷 **IMAGE PROMPT — SUVAT-EQUATIONS: The Five SUVAT Equations Summary Card**
+> A clean, organized summary card showing all five SUVAT equations in a grid layout. Each equation is boxed with the omitted variable clearly marked. Color-coded: Equation 1 (blue, omits s), Equation 2 (green, omits a), Equation 3 (yellow, omits v), Equation 4 (orange, omits u), Equation 5 (red, omits t). Professional textbook style.
+
+---
+
+# 6. Graphs and Relationships / 图表与关系
+
+## 6.1 Velocity-Time Graph for Constant Acceleration / 匀加速运动的速度-时间图
+
+### Axes / 坐标轴
+- **x-axis:** Time ($t$) / 时间($t$)
+- **y-axis:** Velocity ($v$) / 速度($v$)
+
+### Shape / 形状
+- **English:** A straight line with gradient equal to acceleration $a$
+- **中文:** 一条直线，斜率等于加速度$a$
+
+### Gradient Meaning / 斜率含义
+- **English:** Gradient = acceleration ($a = \frac{\Delta v}{\Delta t}$)
+- **中文:** 斜率 = 加速度 ($a = \frac{\Delta v}{\Delta t}$)
+
+### Area Meaning / 面积含义
+- **English:** Area under graph = displacement ($s$)
+- **中文:** 图下面积 = 位移($s$)
+
+### Exam Interpretation / 考试解读
+- **English:** The trapezium area gives $s = \frac{1}{2}(u+v)t$ — this is the derivation of Equation 2
+- **中文:** 梯形面积给出$s = \frac{1}{2}(u+v)t$ — 这是方程2的推导
+
+```mermaid
+graph LR
+    A[Velocity-Time Graph] --> B[Gradient = Acceleration]
+    A --> C[Area = Displacement]
+    B --> D[Equation 1: v = u + at]
+    C --> E[Equation 2: s = ½(u+v)t]
+    E --> F[Equation 3: s = ut + ½at²]
+    E --> G[Equation 4: s = vt - ½at²]
+    D --> H[Equation 5: v² = u² + 2as]
+```
+
+---
+
+# 7. Required Diagrams / 必备图表
+
+## 7.1 Velocity-Time Graph for SUVAT Derivation / SUVAT推导的速度-时间图
+
+### Description / 描述
+**English:** A velocity-time graph showing constant acceleration from initial velocity $u$ to final velocity $v$ over time $t$. The graph is a straight line. The area under the graph is divided into a rectangle (area $ut$) and a triangle (area $\frac{1}{2}(v-u)t$).
+
+**中文:** 一个速度-时间图，显示从初速度$u$到末速度$v$在时间$t$内的匀加速运动。图形是一条直线。图下面积被分为一个矩形（面积$ut$）和一个三角形（面积$\frac{1}{2}(v-u)t$）。
+
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — SUVAT-VT-GRAPH: Velocity-Time Graph for SUVAT Derivation**
+> A velocity-time graph with velocity (v) on the y-axis and time (t) on the x-axis. A straight line starts at (0,u) and ends at (t,v). The area under the line is shaded in two parts: a rectangle from 0 to u (light blue) and a triangle above it (light green). Labels: u (initial velocity), v (final velocity), t (time). The gradient is labeled as 'a = (v-u)/t'. The total area is labeled 's = ut + ½(v-u)t = ut + ½at²'. Clean, educational diagram with grid lines.
+
+### Labels Required / 需要标注
+- **English:** Initial velocity $u$, Final velocity $v$, Time $t$, Acceleration $a = \frac{v-u}{t}$, Displacement $s = \text{area}$
+- **中文:** 初速度$u$，末速度$v$，时间$t$，加速度$a = \frac{v-u}{t}$，位移$s = \text{面积}$
+
+### Exam Importance / 考试重要性
+- **English:** Essential for deriving Equations 2 and 3. Frequently tested in Paper 1 (multiple choice) and Paper 2 (structured questions).
+- **中文:** 对于推导方程2和3至关重要。常在Paper 1（选择题）和Paper 2（结构题）中考查。
+
+---
+
+# 8. Worked Examples / 典型例题
+
+## Example 1: Finding Final Velocity / 求末速度
+
+### Question / 题目
+**English:** A car accelerates uniformly from rest at $2.5 \text{ m s}^{-2}$ over a distance of $45 \text{ m}$. Calculate the final velocity of the car.
+
+**中文:** 一辆汽车从静止开始以$2.5 \text{ m s}^{-2}$的匀加速度行驶了$45 \text{ m}$。计算汽车的末速度。
 
 ### Solution / 解答
 
-**Step 1: Identify known and unknown variables**
-- $u = 0 \, m/s$ (starts from rest)
-- $a = 2.5 \, m/s^2$
-- $s = 45 \, m$
-- $v = ?$ (unknown)
-- $t = ?$ (not given, not needed)
+**Step 1: Identify known variables / 步骤1：确定已知变量**
+- $u = 0 \text{ m s}^{-1}$ (starts from rest / 从静止开始)
+- $a = 2.5 \text{ m s}^{-2}$
+- $s = 45 \text{ m}$
+- $v = ?$ (unknown / 未知)
+- $t = ?$ (not needed / 不需要)
 
-**Step 2: Choose the right equation**
-Since we know $u$, $a$, $s$ and need $v$, and $t$ is not involved, use Equation 5:
+**Step 2: Choose the right equation / 步骤2：选择正确的方程**
+We know $u$, $a$, $s$ and need $v$. The equation without $t$ is:
 $$v^2 = u^2 + 2as$$
 
-**Step 3: Substitute values**
+**Step 3: Substitute values / 步骤3：代入数值**
 $$v^2 = 0^2 + 2(2.5)(45)$$
 $$v^2 = 0 + 225$$
 $$v^2 = 225$$
 
-**Step 4: Solve for $v$**
-$$v = \sqrt{225} = 15 \, m/s$$
+**Step 4: Solve / 步骤4：求解**
+$$v = \sqrt{225} = 15 \text{ m s}^{-1}$$
 
 ### Final Answer / 最终答案
-**Answer:** $v = 15 \, m/s$ **答案:** $v = 15 \, m/s$
+**Answer:** $v = 15 \text{ m s}^{-1}$ | **答案：** $v = 15 \text{ m s}^{-1}$
 
 ### Quick Tip / 提示
-When time is not given and not needed, always use $v^2 = u^2 + 2as$. This is the most efficient choice for such problems.
+- **English:** When starting from rest ($u=0$), Equation 5 simplifies to $v^2 = 2as$
+- **中文:** 当从静止开始($u=0$)时，方程5简化为$v^2 = 2as$
 
 ---
 
-### Example 2: Finding Displacement / 例2：求位移
+## Example 2: Finding Time of Flight / 求飞行时间
 
-**English:**
-A ball is thrown vertically upward with an initial velocity of $20 \, m/s$. Calculate the maximum height reached by the ball. (Take $g = 9.81 \, m/s^2$)
+### Question / 题目
+**English:** A ball is thrown vertically upward with an initial velocity of $20 \text{ m s}^{-1}$ from ground level. Calculate the time taken for the ball to return to the ground. (Take $g = 9.81 \text{ m s}^{-2}$)
 
-**中文:**
-一个球以$20 \, m/s$的初速度垂直向上抛出。计算球达到的最大高度。（取$g = 9.81 \, m/s^2$）
+**中文:** 一个球从地面以$20 \text{ m s}^{-1}$的初速度竖直向上抛出。计算球返回地面所需的时间。（取$g = 9.81 \text{ m s}^{-2}$）
 
 ### Solution / 解答
 
-**Step 1: Identify known and unknown variables**
-- $u = 20 \, m/s$ (upward)
-- $v = 0 \, m/s$ (at maximum height, velocity is zero)
-- $a = -9.81 \, m/s^2$ (acceleration due to gravity, downward — negative because upward is positive)
-- $s = ?$ (maximum height, unknown)
-- $t = ?$ (not needed)
+**Step 1: Identify known variables / 步骤1：确定已知变量**
+- $u = +20 \text{ m s}^{-1}$ (upward positive / 向上为正)
+- $a = -9.81 \text{ m s}^{-2}$ (gravity acts downward / 重力向下)
+- $s = 0 \text{ m}$ (returns to starting point / 返回起点)
+- $t = ?$ (unknown / 未知)
 
-**Step 2: Choose the right equation**
-Again, $t$ is not involved, so use Equation 5:
-$$v^2 = u^2 + 2as$$
+**Step 2: Choose the right equation / 步骤2：选择正确的方程**
+We know $s$, $u$, $a$ and need $t$. The equation without $v$ is:
+$$s = ut + \frac{1}{2}at^2$$
 
-**Step 3: Substitute values**
-$$0^2 = 20^2 + 2(-9.81)s$$
-$$0 = 400 - 19.62s$$
+**Step 3: Substitute values / 步骤3：代入数值**
+$$0 = 20t + \frac{1}{2}(-9.81)t^2$$
+$$0 = 20t - 4.905t^2$$
 
-**Step 4: Solve for $s$**
-$$19.62s = 400$$
-$$s = \frac{400}{19.62} = 20.39 \, m$$
+**Step 4: Solve / 步骤4：求解**
+$$t(20 - 4.905t) = 0$$
+$$t = 0 \text{ or } t = \frac{20}{4.905} = 4.08 \text{ s}$$
+
+The $t=0$ solution corresponds to the start. The required answer is $t = 4.08 \text{ s}$.
 
 ### Final Answer / 最终答案
-**Answer:** $s = 20.4 \, m$ (to 3 significant figures) **答案:** $s = 20.4 \, m$（保留3位有效数字）
+**Answer:** $t = 4.08 \text{ s}$ | **答案：** $t = 4.08 \text{ s}$
 
 ### Quick Tip / 提示
-Remember that at the maximum height of vertical motion, the velocity is momentarily zero ($v = 0$). Also, be careful with the sign of acceleration — gravity always acts downward, so if upward is positive, $a = -g$.
+- **English:** For symmetrical vertical motion, total time = $2u/g$. Check: $2(20)/9.81 = 4.08 \text{ s}$ ✓
+- **中文:** 对于对称的竖直运动，总时间 = $2u/g$。验证：$2(20)/9.81 = 4.08 \text{ s}$ ✓
 
 ---
 
-# 7. Flashcards / 闪卡
+# 9. Past Paper Question Types / 历年真题题型
 
-**Flashcard 1:**
-Q (EN): What are the five SUVAT variables?
-Q (CN): 五个SUVAT变量是什么？
-A (EN): s (displacement), u (initial velocity), v (final velocity), a (acceleration), t (time)
-A (CN): s（位移）、u（初速度）、v（末速度）、a（加速度）、t（时间）
+| Question Type / 题型 | Frequency / 频率 | Difficulty / 难度 | Past Paper References / 真题索引 |
+|----------------------|------------------|------------------|-------------------------------|
+| Direct SUVAT substitution / 直接代入SUVAT | Very High / 非常高 | Easy / 简单 | 📝 *待填入* |
+| Vertical motion under gravity / 重力下的竖直运动 | High / 高 | Medium / 中等 | 📝 *待填入* |
+| Two-stage motion / 两阶段运动 | Medium / 中等 | Hard / 困难 | 📝 *待填入* |
+| Derivation from v-t graph / 从v-t图推导 | Medium / 中等 | Medium / 中等 | 📝 *待填入* |
+| Sign convention errors / 符号约定错误 | Common trap / 常见陷阱 | N/A | 📝 *待填入* |
 
-**Flashcard 2:**
-Q (EN): Which SUVAT equation omits time (t)?
-Q (CN): 哪个SUVAT方程省略了时间(t)？
-A (EN): $v^2 = u^2 + 2as$ (Equation 5)
-A (CN): $v^2 = u^2 + 2as$（方程5）
-
-**Flashcard 3:**
-Q (EN): Which SUVAT equation omits displacement (s)?
-Q (CN): 哪个SUVAT方程省略了位移(s)？
-A (EN): $v = u + at$ (Equation 1)
-A (CN): $v = u + at$（方程1）
-
-**Flashcard 4:**
-Q (EN): What condition must be true for SUVAT equations to be valid?
-Q (CN): SUVAT方程成立的条件是什么？
-A (EN): The acceleration must be constant (uniform) and motion must be in a straight line.
-A (CN): 加速度必须恒定（匀加速），且运动必须在直线上。
-
-**Flashcard 5:**
-Q (EN): If a car accelerates from 10 m/s to 30 m/s in 5 seconds, which equation would you use to find the displacement?
-Q (CN): 如果一辆汽车在5秒内从10 m/s加速到30 m/s，你会用哪个方程求位移？
-A (EN): $s = \frac{u+v}{2}t$ (Equation 2) — it uses u, v, and t to find s.
-A (CN): $s = \frac{u+v}{2}t$（方程2）——它使用u、v和t来求s。
+**Common Command Words / 常见指令词:**
+- **English:** Calculate, Determine, Find, Show that, Derive
+- **中文:** 计算，确定，求，证明，推导
 
 ---
 
-# 8. Metadata / 元数据
+# 10. Practical Skills Connections / 实验技能链接
 
-```yaml
-title:
-  en: The Five SUVAT Equations
-  cn: 五个SUVAT方程
-parent_topic: Equations of Motion (SUVAT)
-parent_hub: "[[Equations of Motion (SUVAT)]]"
-subject: Physics
-syllabus:
-  - CAIE 9702
-  - Edexcel IAL
-level: AS
-node_type: leaf_concept
-difficulty: intermediate
-related_leaf_nodes:
-  - "[[Choosing the Right Equation]]"
-  - "[[Free Fall Under Gravity]]"
-  - "[[Two-Stage Motion Problems]]"
-prerequisites:
-  - "[[Displacement, Velocity and Acceleration]]"
-related_topics:
-  - "[[Motion Graphs]]"
-  - "[[Projectile Motion]]"
-language: bilingual_en_cn
+**English:**
+The SUVAT equations connect to practical work in several ways:
+1. **Measuring acceleration:** Use light gates or ticker timers to measure $u$, $v$, and $t$, then calculate $a$ using $a = \frac{v-u}{t}$
+2. **Determining $g$:** Drop objects and measure time of fall over known distances using $s = \frac{1}{2}gt^2$
+3. **Graphical analysis:** Plot $v$ against $t$ — gradient gives $a$, area gives $s$
+4. **Uncertainties:** When using $v^2 = u^2 + 2as$, uncertainties in $u$, $v$, and $s$ propagate to uncertainty in $a$
+
+**中文:**
+SUVAT方程在实验中有多种应用：
+1. **测量加速度：** 使用光门或打点计时器测量$u$、$v$和$t$，然后用$a = \frac{v-u}{t}$计算$a$
+2. **测定$g$：** 下落物体并测量已知距离上的下落时间，使用$s = \frac{1}{2}gt^2$
+3. **图形分析：** 绘制$v$对$t$的图——斜率给出$a$，面积给出$s$
+4. **不确定度：** 使用$v^2 = u^2 + 2as$时，$u$、$v$和$s$的不确定度会传播到$a$的不确定度
+
+---
+
+# 11. Concept Map / 概念图谱
+
+```mermaid
+graph TD
+    SUVAT[["The Five SUVAT Equations"]] --> EQ1["v = u + at<br/>Omits s"]
+    SUVAT --> EQ2["s = ½(u+v)t<br/>Omits a"]
+    SUVAT --> EQ3["s = ut + ½at²<br/>Omits v"]
+    SUVAT --> EQ4["s = vt - ½at²<br/>Omits u"]
+    SUVAT --> EQ5["v² = u² + 2as<br/>Omits t"]
+    
+    SUVAT --> DERIV["Derivation from<br/>v-t Graph"]
+    SUVAT --> SIGN["Sign Convention<br/>(Direction Matters)"]
+    SUVAT --> CONST["Requires<br/>Constant Acceleration"]
+    
+    DERIV --> AREA["Area = Displacement"]
+    DERIV --> GRAD["Gradient = Acceleration"]
+    
+    CONST --> FREE[["Free Fall Under Gravity"]]
+    CONST --> TWOSTAGE[["Two-Stage Motion Problems"]]
+    
+    SIGN --> CHOOSE[["Choosing the Right Equation"]]
+    
+    FREE --> PROJ[["Projectile Motion"]]
+    
+    style SUVAT fill:#4a90d9,color:#fff,stroke:#2c5f8a
+    style EQ1 fill:#e8f4f8,stroke:#4a90d9
+    style EQ2 fill:#e8f4f8,stroke:#4a90d9
+    style EQ3 fill:#e8f4f8,stroke:#4a90d9
+    style EQ4 fill:#e8f4f8,stroke:#4a90d9
+    style EQ5 fill:#e8f4f8,stroke:#4a90d9
+    style DERIV fill:#f0e6d3,stroke:#c4a265
+    style SIGN fill:#f0e6d3,stroke:#c4a265
+    style CONST fill:#f0e6d3,stroke:#c4a265
+```
+
+---
+
+# 12. Quick Revision Sheet / 速查表
+
+| Category / 类别 | Key Points / 要点 |
+|----------------|------------------|
+| **Definition / 定义** | SUVAT equations describe motion with **constant acceleration** in a straight line. Five variables: $s$ (displacement), $u$ (initial velocity), $v$ (final velocity), $a$ (acceleration), $t$ (time). |
+| **Key Formula / 核心公式** | $v = u + at$ (omits $s$) \| $s = \frac{1}{2}(u+v)t$ (omits $a$) \| $s = ut + \frac{1}{2}at^2$ (omits $v$) \| $s = vt - \frac{1}{2}at^2$ (omits $u$) \| $v^2 = u^2 + 2as$ (omits $t$) |
+| **Key Graph / 核心图表** | Velocity-Time graph: straight line → gradient = $a$, area = $s$ |
+| **Exam Tip / 考试提示** | 1. Always list $u, v, a, s, t$ first 2. Choose equation that omits the unknown 3. Be consistent with signs (up = positive, down = negative) 4. SUVAT only works for **constant** acceleration 5. $s$ is displacement, not distance |
+| **Common Trap / 常见陷阱** | Forgetting sign convention for direction; using SUVAT for non-constant acceleration; confusing $s$ (displacement) with distance |
+| **Prerequisites / 前置知识** | [[Displacement, Velocity and Acceleration]] — understanding vector vs scalar quantities |
+| **Next Steps / 下一步** | [[Choosing the Right Equation]] → [[Free Fall Under Gravity]] → [[Two-Stage Motion Problems]] → [[Projectile Motion]] |
+
+---
+
+> **Quick Mnemonic / 快速记忆法:**
+> **English:** "**V**ery **U**nique **S**tudents **A**lways **T**hink" — each equation starts with a different variable!
+> **中文:** "**V**ery **U**nique **S**tudents **A**lways **T**hink" — 每个方程以不同变量开头！

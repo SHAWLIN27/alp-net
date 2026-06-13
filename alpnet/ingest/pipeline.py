@@ -148,7 +148,7 @@ class IngestPipeline:
         return total
 
     def _index_chunks(self, chunks: list[Chunk]) -> int:
-        """Index all chunks with their embeddings into ChromaDB."""
+        """Index all chunks with their embeddings into ChromaDB (batched)."""
         if not chunks:
             return 0
 
@@ -162,10 +162,19 @@ class IngestPipeline:
         if not valid_indices:
             return 0
 
-        self.vector_store.upsert_chunks(
-            ids=[chunk_ids[i] for i in valid_indices],
-            documents=[documents[i] for i in valid_indices],
-            embeddings=[embeddings[i] for i in valid_indices],
-            metadatas=[metadatas[i] for i in valid_indices],
-        )
-        return len(valid_indices)
+        BATCH_SIZE = 500  # ChromaDB max batch is 5461, stay well under
+        total = len(valid_indices)
+        indexed = 0
+        for batch_start in range(0, total, BATCH_SIZE):
+            batch_end = min(batch_start + BATCH_SIZE, total)
+            batch_indices = valid_indices[batch_start:batch_end]
+            self.vector_store.upsert_chunks(
+                ids=[chunk_ids[i] for i in batch_indices],
+                documents=[documents[i] for i in batch_indices],
+                embeddings=[embeddings[i] for i in batch_indices],
+                metadatas=[metadatas[i] for i in batch_indices],
+            )
+            indexed += len(batch_indices)
+            if batch_end < total:
+                print(f"   ... {indexed}/{total}")
+        return indexed

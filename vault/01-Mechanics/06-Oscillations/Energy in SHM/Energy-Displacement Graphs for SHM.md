@@ -1,274 +1,320 @@
+---
+# Energy-Displacement Graphs for SHM / 简谐运动的能量-位移图
+
+---
+
 # 1. Overview / 概述
 
 **English:**
-Energy-Displacement Graphs for SHM provide a powerful visual tool for understanding how kinetic energy (KE) and potential energy (PE) vary as an oscillating object moves through its cycle. Unlike [[Energy-Time Graphs for SHM]] which show energy changes over time, these graphs plot energy against displacement from equilibrium, revealing the fundamental relationship between position and energy storage. This sub-topic is crucial for understanding the conservation of mechanical energy in [[Simple Harmonic Motion]] and forms the foundation for analyzing [[Damped and Forced Oscillations / Resonance]] where energy is gradually lost. The parabolic shape of these graphs is a direct consequence of the restoring force being proportional to displacement (Hooke's law).
+This sub-topic focuses on the graphical representation of how kinetic energy (KE), potential energy (PE), and total mechanical energy (TE) vary with displacement ($x$) in Simple Harmonic Motion (SHM). Unlike energy-time graphs, which show sinusoidal variations over time, energy-displacement graphs reveal the **instantaneous relationship** between energy and position. These graphs are parabolic in shape and are crucial for understanding the conservation of mechanical energy in SHM. This leaf node builds directly on the concepts from [[KE and PE in SHM]] and is a sibling to [[Energy-Time Graphs for SHM]]. A solid understanding of [[Simple Harmonic Motion]] and [[Kinetic Energy and Potential Energy]] is required.
 
 **中文:**
-简谐运动的能量-位移图提供了一个强大的可视化工具，用于理解当振荡物体在其周期中运动时，动能和势能如何变化。与[[Energy-Time Graphs for SHM]]不同，这些图将能量相对于平衡位置的位移绘制出来，揭示了位置与能量储存之间的基本关系。这个子知识点对于理解[[Simple Harmonic Motion]]中的机械能守恒至关重要，并为分析[[Damped and Forced Oscillations / Resonance]]（能量逐渐损失）奠定了基础。这些图的抛物线形状是恢复力与位移成正比（胡克定律）的直接结果。
+本子知识点专注于简谐运动（SHM）中动能（KE）、势能（PE）和总机械能（TE）随位移（$x$）变化的图形表示。与随时间呈正弦变化的能量-时间图不同，能量-位移图揭示了能量与位置之间的**瞬时关系**。这些图形呈抛物线形状，对于理解SHM中机械能守恒至关重要。本叶节点直接建立在[[KE and PE in SHM]]的概念之上，并与[[Energy-Time Graphs for SHM]]是同级知识点。需要扎实掌握[[Simple Harmonic Motion]]和[[Kinetic Energy and Potential Energy]]。
 
 ---
 
-# 2. Core Definition / 核心定义
+# 2. Syllabus Learning Objectives / 考纲学习目标
 
-| Term (EN/CN) | Definition (EN) | Definition (CN) |
-| ------------ | --------------- | --------------- |
-| **Energy-Displacement Graph** / 能量-位移图 | A graph showing how kinetic energy (KE) and potential energy (PE) of an SHM oscillator vary with displacement from equilibrium. | 显示简谐运动振荡器的动能和势能如何随距平衡位置的位移变化的图表。 |
-| **Total Energy (E)** / 总能量 | The constant sum of KE and PE in undamped SHM, equal to the maximum PE at amplitude. | 无阻尼简谐运动中动能和势能的恒定总和，等于振幅处的最大势能。 |
-| **Amplitude (A)** / 振幅 | The maximum displacement from equilibrium, where KE = 0 and PE = E. | 距平衡位置的最大位移，此处动能=0，势能=总能量。 |
-| **Equilibrium Position** / 平衡位置 | The point where displacement x = 0, where PE = 0 and KE = E. | 位移x=0的点，此处势能=0，动能=总能量。 |
-| **Parabolic Relationship** / 抛物线关系 | The quadratic dependence of PE on displacement: PE ∝ x². | 势能对位移的二次依赖关系：PE ∝ x²。 |
+| CAIE 9702 (17.2 a-c) | Edexcel IAL (WPH14 U4: 7.6-7.8) |
+|-----------|-------------|
+| (a) Describe the interchange between kinetic energy and potential energy during SHM. | 7.6 Understand the interchange between kinetic and potential energy in SHM. |
+| (b) Sketch and interpret graphs of energy against displacement for an object in SHM. | 7.7 Be able to draw and interpret graphs of energy against displacement for SHM. |
+| (c) Use the equations for kinetic and potential energy in SHM. | 7.8 Use the equations $E_k = \frac{1}{2} m \omega^2 (A^2 - x^2)$ and $E_p = \frac{1}{2} m \omega^2 x^2$. |
+
+**Examiner Expectations / 考官期望:**
+- **EN:** You must be able to sketch the parabolic shapes of KE and PE vs. displacement graphs. You must understand that the total energy is constant and is the sum of KE and PE. You must be able to identify the amplitude ($A$) and equilibrium position ($x=0$) on the graph. You must be able to use the equations to calculate energy at a given displacement.
+- **CN:** 你必须能够画出动能和势能随位移变化的抛物线形状。你必须理解总能量是恒定的，并且是动能和势能之和。你必须能够在图上识别振幅（$A$）和平衡位置（$x=0$）。你必须能够使用公式计算给定位移下的能量。
 
 ---
 
-# 3. Key Concepts / 关键概念
+# 3. Core Definitions / 核心定义
 
+| Term (EN/CN) | Definition (EN) | Definition (CN) | Common Mistakes / 常见错误 |
+|--------------|-----------------|-----------------|---------------------------|
+| **Total Energy (TE)** / 总能量 | The constant sum of kinetic and potential energy in an ideal SHM system. $TE = \frac{1}{2} m \omega^2 A^2$. | 理想简谐运动系统中动能和势能的总和，为恒定值。$TE = \frac{1}{2} m \omega^2 A^2$。 | Confusing TE with KE or PE. TE is constant, not varying. |
+| **Kinetic Energy (KE)** / 动能 | The energy due to motion. Maximum at equilibrium ($x=0$) and zero at amplitude ($x=\pm A$). | 由于运动而具有的能量。在平衡位置（$x=0$）处最大，在振幅处（$x=\pm A$）为零。 | Thinking KE is linear with $x$. It is parabolic: $KE \propto (A^2 - x^2)$. |
+| **Potential Energy (PE)** / 势能 | The stored energy due to displacement from equilibrium. Zero at equilibrium and maximum at amplitude. | 由于偏离平衡位置而储存的能量。在平衡位置为零，在振幅处最大。 | Thinking PE is linear with $x$. It is parabolic: $PE \propto x^2$. |
+| **Amplitude ($A$)** / 振幅 | The maximum displacement from the equilibrium position. | 从平衡位置到最大位移的距离。 | Forgetting that $x$ can be positive or negative, but the graph is symmetric. |
+| **Equilibrium Position ($x=0$)** / 平衡位置 | The point where net force is zero and velocity is maximum. | 合外力为零、速度最大的位置。 | Placing the origin incorrectly on the graph. |
+
+---
+
+# 4. Key Concepts Explained / 关键概念详解
+
+## 4.1 The Parabolic Relationship / 抛物线关系
+
+### Explanation / 解释
 **English:**
-The energy-displacement graph for SHM is fundamentally different from the [[Energy-Time Graphs for SHM]]. While time graphs show sinusoidal variations, displacement graphs reveal the **parabolic** nature of potential energy.
-
-**Key features of the graph:**
-1. **Potential Energy (PE):** Follows a parabolic curve: $PE = \frac{1}{2}kx^2$. At $x = \pm A$, PE reaches its maximum value $E = \frac{1}{2}kA^2$. At $x = 0$, PE = 0.
-2. **Kinetic Energy (KE):** Follows an inverted parabola: $KE = E - PE = \frac{1}{2}k(A^2 - x^2)$. At $x = 0$, KE is maximum ($E$). At $x = \pm A$, KE = 0.
-3. **Total Energy (E):** A horizontal straight line at $y = E$, representing conservation of mechanical energy.
-
-**Physical interpretation:**
-- When the oscillator is at maximum displacement (turning points), all energy is stored as potential energy.
-- When passing through equilibrium, all energy is kinetic.
-- At any intermediate displacement, energy is shared between KE and PE.
-
-**Common pitfalls:**
-- ❌ Thinking KE and PE are sinusoidal functions of displacement (they are parabolic).
-- ❌ Confusing displacement graphs with time graphs.
-- ❌ Forgetting that total energy remains constant only in undamped SHM.
+In SHM, the potential energy is proportional to the square of the displacement ($PE \propto x^2$). This gives a **parabolic** shape when plotted against $x$. The kinetic energy is the difference between the constant total energy and the potential energy: $KE = TE - PE$. Since $PE$ is a parabola, $KE$ is also a parabola, but inverted. The two parabolas intersect at the points where $KE = PE = \frac{1}{2}TE$. This occurs at $x = \pm \frac{A}{\sqrt{2}}$.
 
 **中文:**
-简谐运动的能量-位移图与[[Energy-Time Graphs for SHM]]有根本不同。时间图显示正弦变化，而位移图揭示了势能的**抛物线**性质。
+在简谐运动中，势能与位移的平方成正比（$PE \propto x^2$）。当以$x$为变量作图时，这会产生一个**抛物线**形状。动能是恒定总能量与势能之差：$KE = TE - PE$。由于$PE$是抛物线，$KE$也是抛物线，但方向相反。两条抛物线在$KE = PE = \frac{1}{2}TE$的点相交。这发生在$x = \pm \frac{A}{\sqrt{2}}$处。
 
-**图的关键特征：**
-1. **势能 (PE):** 遵循抛物线曲线：$PE = \frac{1}{2}kx^2$。在 $x = \pm A$ 处，PE达到最大值 $E = \frac{1}{2}kA^2$。在 $x = 0$ 处，PE = 0。
-2. **动能 (KE):** 遵循倒置抛物线：$KE = E - PE = \frac{1}{2}k(A^2 - x^2)$。在 $x = 0$ 处，KE最大（$E$）。在 $x = \pm A$ 处，KE = 0。
-3. **总能量 (E):** 在 $y = E$ 处的水平直线，代表机械能守恒。
+### Physical Meaning / 物理意义
+**English:**
+The graph shows that as the oscillator moves away from equilibrium, its speed decreases (KE decreases) while the "stored" energy (PE) increases. At the turning points ($x = \pm A$), all energy is potential. At equilibrium ($x=0$), all energy is kinetic. This visualizes the continuous energy conversion in SHM.
 
-**物理解释：**
-- 当振荡器处于最大位移（转折点）时，所有能量都储存为势能。
-- 当经过平衡位置时，所有能量都是动能。
-- 在任何中间位移处，能量在动能和势能之间分配。
+**中文:**
+该图表明，当振子远离平衡位置时，其速度减小（动能减小），而“储存”的能量（势能）增加。在转折点（$x = \pm A$）处，所有能量都是势能。在平衡位置（$x=0$）处，所有能量都是动能。这直观地展示了SHM中能量的连续转换。
 
-**常见陷阱：**
-- ❌ 认为动能和势能是位移的正弦函数（它们是抛物线函数）。
-- ❌ 将位移图与时间图混淆。
-- ❌ 忘记总能量仅在无阻尼简谐运动中保持恒定。
+### Common Misconceptions / 常见误区
+- **EN:** Thinking the KE graph is a straight line sloping down from $x=0$ to $x=A$. **Correction:** It is a parabola, curving downwards.
+- **CN:** 认为动能图是从$x=0$到$x=A$向下倾斜的直线。**纠正：** 它是抛物线，向下弯曲。
+- **EN:** Thinking the PE graph is a "V" shape like a modulus function. **Correction:** It is a smooth parabola ($x^2$), not a "V" ($|x|$).
+- **CN:** 认为势能图是像绝对值函数一样的“V”形。**纠正：** 它是平滑的抛物线（$x^2$），不是“V”形（$|x|$）。
 
----
-
-# 4. Formulas / 公式
-
-## Primary Formula
-
-$$PE = \frac{1}{2}kx^2$$
-
-$$KE = \frac{1}{2}k(A^2 - x^2)$$
-
-$$E = \frac{1}{2}kA^2$$
-
-| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
-| ------------- | ------------ | ------------ | ----------- |
-| $PE$ | Potential energy | 势能 | J |
-| $KE$ | Kinetic energy | 动能 | J |
-| $E$ | Total mechanical energy | 总机械能 | J |
-| $k$ | Spring constant / force constant | 弹簧常数/力常数 | N/m |
-| $A$ | Amplitude | 振幅 | m |
-| $x$ | Displacement from equilibrium | 距平衡位置的位移 | m |
-
-**Derivation / 推导:**
-1. For SHM, restoring force $F = -kx$, so potential energy is the work done against this force:
-   $$PE = \int_0^x kx \, dx = \frac{1}{2}kx^2$$
-2. At maximum displacement $x = A$, $PE = E = \frac{1}{2}kA^2$
-3. By conservation of energy: $KE = E - PE = \frac{1}{2}kA^2 - \frac{1}{2}kx^2 = \frac{1}{2}k(A^2 - x^2)$
-
-**Conditions / 适用条件:**
-- Valid only for **undamped** SHM (no energy loss)
-- Assumes ideal spring or pendulum with small amplitude
-- $x$ is measured from equilibrium position
+### Exam Tips / 考试提示
+- **EN:** Always label the amplitude $A$ and $-A$ on the $x$-axis. Mark the total energy $TE$ on the $y$-axis. Show that $KE + PE = TE$ at all points.
+- **CN:** 始终在$x$轴上标注振幅$A$和$-A$。在$y$轴上标注总能量$TE$。表明在所有点上$KE + PE = TE$。
 
 > 📷 **IMAGE PROMPT — EDS-01: Energy-Displacement Graph for SHM**
->
-> **English Prompt:**
-> A clean, textbook-style 2D vector graph with three curves on the same axes. X-axis labeled "Displacement x (m)" ranging from -A to +A. Y-axis labeled "Energy (J)" ranging from 0 to E. A horizontal dashed line at y = E labeled "Total Energy E". A blue upward-opening parabola labeled "PE = ½kx²" starting at (0,0) and reaching (A,E) and (-A,E). A red downward-opening parabola labeled "KE = ½k(A²-x²)" starting at (0,E) and reaching (A,0) and (-A,0). Vertical dashed lines at x = ±A. Clear grid lines. White background. Professional physics textbook style.
->
-> **中文描述:**
-> 一个干净、教科书风格的2D矢量图，在同一坐标轴上有三条曲线。X轴标记为"位移 x (m)"，范围从-A到+A。Y轴标记为"能量 (J)"，范围从0到E。在y=E处有一条水平虚线标记为"总能量 E"。一条蓝色向上开口的抛物线标记为"PE = ½kx²"，从(0,0)开始到达(A,E)和(-A,E)。一条红色向下开口的抛物线标记为"KE = ½k(A²-x²)"，从(0,E)开始到达(A,0)和(-A,0)。在x=±A处有垂直虚线。清晰的网格线。白色背景。专业物理教科书风格。
->
-> **Labels Required / 需要标注:**
-> * PE curve (blue parabola)
-> * KE curve (red inverted parabola)
-> * Total Energy (horizontal dashed line)
-> * Amplitude points (±A)
-> * Equilibrium point (x=0)
->
-> **Style / 风格:** Textbook vector / 2D graph
->
-> **Exam Relevance / 考试关联:**
-> This graph is frequently tested in A-Level exams. Students must be able to sketch it, label key points, and explain why PE is parabolic and KE is its complement.
+> A clean, labeled graph for a simple harmonic oscillator. The x-axis is labeled "Displacement (x)" with points marked at -A, 0, and +A. The y-axis is labeled "Energy (E)" with a point marked at "Total Energy (TE)". Three curves are shown: a horizontal dashed line for TE, an upward-opening parabola for PE (labeled "Potential Energy"), and a downward-opening parabola for KE (labeled "Kinetic Energy"). The two parabolas intersect at x = ±A/√2. The graph should be clear, with distinct colors for each curve and a legend.
 
 ---
 
-# 5. Image Prompt / 图片提示
+# 5. Essential Equations / 核心公式
 
-> 📷 **IMAGE PROMPT — EDS-02: Mass-Spring System with Energy States**
->
-> **English Prompt:**
-> A 3D rendered split-screen diagram. Left side: A mass-spring system on a frictionless horizontal surface showing three positions: (1) mass at x=+A with spring fully stretched, (2) mass at x=0 with spring at natural length, (3) mass at x=-A with spring fully compressed. Each position has a color-coded energy bar: blue for PE, red for KE. Right side: The corresponding energy-displacement graph with the three positions marked as points on the curves. The mass is a metallic cube, the spring is silver. Clean lighting, educational style, white background.
->
-> **中文描述:**
-> 一个3D渲染的分屏图。左侧：一个在无摩擦水平面上的质量-弹簧系统，显示三个位置：(1) 质量在x=+A处，弹簧完全拉伸，(2) 质量在x=0处，弹簧处于自然长度，(3) 质量在x=-A处，弹簧完全压缩。每个位置都有一个颜色编码的能量条：蓝色代表势能，红色代表动能。右侧：相应的能量-位移图，三个位置标记为曲线上的点。质量是一个金属立方体，弹簧是银色的。清晰的光照，教育风格，白色背景。
->
-> **Labels Required / 需要标注:**
-> * Three positions: +A, 0, -A
-> * Energy bars showing PE (blue) and KE (red) proportions
-> * Corresponding points on the graph
->
-> **Style / 风格:** 3D render / educational illustration
->
-> **Exam Relevance / 考试关联:**
-> Helps students visualize the physical meaning of the graph — connecting the oscillator's position to the energy distribution.
+## Equation 1: Total Energy / 总能量
+
+$$ TE = \frac{1}{2} m \omega^2 A^2 $$
+
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| $TE$ | Total mechanical energy | 总机械能 | J |
+| $m$ | Mass of oscillator | 振子质量 | kg |
+| $\omega$ | Angular frequency | 角频率 | rad s$^{-1}$ |
+| $A$ | Amplitude | 振幅 | m |
+
+**Derivation / 推导:** At maximum displacement ($x = A$), velocity $v = 0$, so $KE = 0$. Therefore, $TE = PE_{max} = \frac{1}{2} k A^2$. Since $k = m\omega^2$, we get $TE = \frac{1}{2} m \omega^2 A^2$.
+**Conditions / 适用条件:** Ideal SHM with no damping.
+**Limitations / 局限性:** Does not account for energy losses due to friction or air resistance.
+
+## Equation 2: Kinetic Energy at Displacement $x$ / 位移$x$处的动能
+
+$$ KE = \frac{1}{2} m \omega^2 (A^2 - x^2) $$
+
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| $KE$ | Kinetic energy | 动能 | J |
+| $x$ | Displacement from equilibrium | 偏离平衡位置的位移 | m |
+
+**Derivation / 推导:** From $v = \omega \sqrt{A^2 - x^2}$, we have $KE = \frac{1}{2} m v^2 = \frac{1}{2} m \omega^2 (A^2 - x^2)$.
+**Conditions / 适用条件:** Valid for any point in the oscillation.
+**Limitations / 局限性:** None for ideal SHM.
+
+## Equation 3: Potential Energy at Displacement $x$ / 位移$x$处的势能
+
+$$ PE = \frac{1}{2} m \omega^2 x^2 $$
+
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| $PE$ | Potential energy | 势能 | J |
+
+**Derivation / 推导:** $PE = TE - KE = \frac{1}{2} m \omega^2 A^2 - \frac{1}{2} m \omega^2 (A^2 - x^2) = \frac{1}{2} m \omega^2 x^2$.
+**Conditions / 适用条件:** Valid for any point in the oscillation.
+**Limitations / 局限性:** None for ideal SHM.
+
+> 📋 **Edexcel Only:** The formula sheet for Edexcel IAL provides $E_k = \frac{1}{2} m \omega^2 (A^2 - x^2)$ and $E_p = \frac{1}{2} m \omega^2 x^2$ directly. You are expected to use them without derivation.
+
+> 📋 **CIE Only:** CIE expects you to derive these relationships from the basic SHM equations. You may be asked to show that $KE + PE = \frac{1}{2} m \omega^2 A^2$.
 
 ---
 
-# 6. Worked Example / 典型例题
+# 6. Graphs and Relationships / 图表与关系
 
-### Example 1: Reading the Graph
+## 6.1 Energy-Displacement Graph / 能量-位移图
+
+### Axes / 坐标轴
+- **X-axis:** Displacement ($x$) / 位移 ($x$) (m)
+- **Y-axis:** Energy ($E$) / 能量 ($E$) (J)
+
+### Shape / 形状
+- **Total Energy (TE):** Horizontal straight line (constant).
+- **Potential Energy (PE):** Upward-opening parabola, $PE \propto x^2$. Minimum at $x=0$, maximum at $x=\pm A$.
+- **Kinetic Energy (KE):** Downward-opening parabola, $KE \propto (A^2 - x^2)$. Maximum at $x=0$, minimum at $x=\pm A$.
+
+### Gradient Meaning / 斜率含义
+- **Gradient of PE graph:** $\frac{d(PE)}{dx} = m\omega^2 x$. This is equal to the negative of the restoring force ($-F$). The steeper the gradient, the larger the restoring force.
+- **Gradient of KE graph:** $\frac{d(KE)}{dx} = -m\omega^2 x$. This is equal to the restoring force ($F$).
+
+### Area Meaning / 面积含义
+- The area under the KE or PE graph has no direct physical meaning in this context. The key relationship is that $KE + PE = TE$ at every point.
+
+### Exam Interpretation / 考试解读
+- **EN:** You may be asked to determine the amplitude from the graph (where PE is maximum). You may be asked to find the displacement where KE = PE (intersection point). You may be asked to calculate the total energy from the graph's maximum PE value.
+- **CN:** 你可能会被要求从图中确定振幅（势能最大处）。你可能会被要求找到动能等于势能时的位移（交点）。你可能会被要求从图中势能的最大值计算总能量。
+
+---
+
+# 7. Required Diagrams / 必备图表
+
+## 7.1 Standard Energy-Displacement Graph / 标准能量-位移图
+
+### Description / 描述
+**English:** A graph showing three curves: a horizontal line for TE, an upward parabola for PE, and a downward parabola for KE. The x-axis is labeled from $-A$ to $+A$, and the y-axis is labeled from $0$ to $TE$. The intersection points of the two parabolas are clearly marked at $x = \pm A/\sqrt{2}$.
+
+**中文:** 一个显示三条曲线的图：一条水平线表示总能量，一条开口向上的抛物线表示势能，一条开口向下的抛物线表示动能。x轴标记为从$-A$到$+A$，y轴标记为从$0$到$TE$。两条抛物线的交点清晰地标记在$x = \pm A/\sqrt{2}$处。
+
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — EDS-02: Detailed Energy-Displacement Graph**
+> A high-quality, textbook-style graph for a simple harmonic oscillator. The x-axis is "Displacement (x)" with tick marks at -A, -A/√2, 0, A/√2, and A. The y-axis is "Energy (E)" with tick marks at 0, TE/2, and TE. A horizontal dashed line at y=TE is labeled "Total Energy". A solid blue upward-opening parabola is labeled "Potential Energy (PE)". A solid red downward-opening parabola is labeled "Kinetic Energy (KE)". The two parabolas intersect at x = ±A/√2, and a small dot or circle marks these points. A legend is included. The graph should be clean, professional, and suitable for an A-Level textbook.
+
+### Labels Required / 需要标注
+- **EN:** Axes, Amplitude ($\pm A$), Equilibrium ($x=0$), Total Energy ($TE$), KE curve, PE curve, Intersection points ($x = \pm A/\sqrt{2}$).
+- **CN:** 坐标轴，振幅（$\pm A$），平衡位置（$x=0$），总能量（$TE$），动能曲线，势能曲线，交点（$x = \pm A/\sqrt{2}$）。
+
+### Exam Importance / 考试重要性
+- **EN:** Extremely high. This is the most common graph asked for in exams for this sub-topic. You must be able to sketch it from memory.
+- **CN:** 极高。这是本子知识点考试中最常要求的图表。你必须能够凭记忆画出它。
+
+---
+
+# 8. Worked Examples / 典型例题
+
+## Example 1: Finding Energy at a Given Displacement / 求给定位移下的能量
 
 ### Question / 题目
-**English:**
-A 0.50 kg mass oscillates on a spring with spring constant $k = 200 \text{ N/m}$ and amplitude $A = 0.10 \text{ m}$.
-(a) Calculate the total energy of the system.
-(b) Calculate the kinetic energy when the displacement is $x = 0.060 \text{ m}$.
-(c) At what displacement is the kinetic energy equal to the potential energy?
+**English:** A 0.50 kg mass oscillates with SHM of amplitude 0.20 m and angular frequency 10 rad s$^{-1}$. Calculate the kinetic energy and potential energy when the displacement is 0.10 m.
 
-**中文:**
-一个0.50 kg的质量在弹簧常数为 $k = 200 \text{ N/m}$、振幅 $A = 0.10 \text{ m}$ 的弹簧上振荡。
-(a) 计算系统的总能量。
-(b) 计算位移为 $x = 0.060 \text{ m}$ 时的动能。
-(c) 在什么位移处动能等于势能？
+**中文:** 一个0.50 kg的物体以0.20 m的振幅和10 rad s$^{-1}$的角频率做简谐运动。计算当位移为0.10 m时的动能和势能。
 
 ### Solution / 解答
+**Step 1: Calculate Total Energy / 计算总能量**
+$$ TE = \frac{1}{2} m \omega^2 A^2 = \frac{1}{2} \times 0.50 \times (10)^2 \times (0.20)^2 = 0.25 \times 100 \times 0.04 = 1.0 \text{ J} $$
 
-**(a) Total Energy:**
-$$E = \frac{1}{2}kA^2 = \frac{1}{2}(200)(0.10)^2 = 1.0 \text{ J}$$
+**Step 2: Calculate Potential Energy / 计算势能**
+$$ PE = \frac{1}{2} m \omega^2 x^2 = \frac{1}{2} \times 0.50 \times (10)^2 \times (0.10)^2 = 0.25 \times 100 \times 0.01 = 0.25 \text{ J} $$
 
-**(b) Kinetic Energy at x = 0.060 m:**
-$$PE = \frac{1}{2}kx^2 = \frac{1}{2}(200)(0.060)^2 = 0.36 \text{ J}$$
-$$KE = E - PE = 1.0 - 0.36 = 0.64 \text{ J}$$
-
-**(c) When KE = PE:**
-$$KE = PE \implies \frac{1}{2}k(A^2 - x^2) = \frac{1}{2}kx^2$$
-$$A^2 - x^2 = x^2 \implies A^2 = 2x^2$$
-$$x = \pm \frac{A}{\sqrt{2}} = \pm \frac{0.10}{\sqrt{2}} = \pm 0.071 \text{ m}$$
+**Step 3: Calculate Kinetic Energy / 计算动能**
+$$ KE = TE - PE = 1.0 - 0.25 = 0.75 \text{ J} $$
 
 ### Final Answer / 最终答案
-**Answer:** (a) $E = 1.0 \text{ J}$ (b) $KE = 0.64 \text{ J}$ (c) $x = \pm 0.071 \text{ m}$
-**答案:** (a) $E = 1.0 \text{ J}$ (b) $KE = 0.64 \text{ J}$ (c) $x = \pm 0.071 \text{ m}$
+**Answer:** $KE = 0.75 \text{ J}$, $PE = 0.25 \text{ J}$ | **答案：** $KE = 0.75 \text{ J}$, $PE = 0.25 \text{ J}$
 
 ### Quick Tip / 提示
-**English:** When KE = PE, the displacement is always $x = \pm A/\sqrt{2}$ regardless of the values of $k$ and $A$. This is a common exam shortcut!
-**中文:** 当动能等于势能时，位移总是 $x = \pm A/\sqrt{2}$，与 $k$ 和 $A$ 的值无关。这是一个常见的考试技巧！
+- **EN:** Always calculate TE first. Then use $PE = \frac{1}{2} m \omega^2 x^2$ and $KE = TE - PE$.
+- **CN:** 始终先计算总能量。然后使用$PE = \frac{1}{2} m \omega^2 x^2$和$KE = TE - PE$。
 
----
-
-### Example 2: Graph Interpretation
+## Example 2: Finding Displacement Where KE = PE / 求动能等于势能时的位移
 
 ### Question / 题目
-**English:**
-The graph shows the energy-displacement relationship for an SHM oscillator. The total energy is 8.0 J and the amplitude is 0.20 m.
-(a) Determine the spring constant $k$.
-(b) Sketch the KE curve on the same axes.
-(c) Find the displacement where KE = 3.0 J.
+**English:** For an object in SHM with amplitude $A$, at what displacement is the kinetic energy equal to the potential energy?
 
-**中文:**
-该图显示了一个简谐运动振荡器的能量-位移关系。总能量为8.0 J，振幅为0.20 m。
-(a) 确定弹簧常数 $k$。
-(b) 在同一坐标轴上画出动能曲线。
-(c) 找到动能=3.0 J时的位移。
+**中文:** 对于一个振幅为$A$的简谐运动物体，在什么位移处动能等于势能？
 
 ### Solution / 解答
+**Step 1: Set up the condition / 建立条件**
+$$ KE = PE $$
+$$ \frac{1}{2} m \omega^2 (A^2 - x^2) = \frac{1}{2} m \omega^2 x^2 $$
 
-**(a) Spring constant:**
-$$E = \frac{1}{2}kA^2 \implies k = \frac{2E}{A^2} = \frac{2(8.0)}{(0.20)^2} = 400 \text{ N/m}$$
+**Step 2: Simplify / 简化**
+Cancel $\frac{1}{2} m \omega^2$ from both sides:
+$$ A^2 - x^2 = x^2 $$
+$$ A^2 = 2x^2 $$
 
-**(b) KE curve:**
-The KE curve is an inverted parabola: $KE = \frac{1}{2}k(A^2 - x^2) = 8.0 - 400x^2$
-It starts at (0, 8.0) and reaches zero at $x = \pm 0.20 \text{ m}$.
-
-**(c) Displacement when KE = 3.0 J:**
-$$KE = E - \frac{1}{2}kx^2 \implies 3.0 = 8.0 - \frac{1}{2}(400)x^2$$
-$$\frac{1}{2}(400)x^2 = 5.0 \implies 200x^2 = 5.0$$
-$$x^2 = 0.025 \implies x = \pm 0.158 \text{ m}$$
+**Step 3: Solve for $x$ / 求解$x$**
+$$ x^2 = \frac{A^2}{2} $$
+$$ x = \pm \frac{A}{\sqrt{2}} $$
 
 ### Final Answer / 最终答案
-**Answer:** (a) $k = 400 \text{ N/m}$ (b) Inverted parabola (c) $x = \pm 0.158 \text{ m}$
-**答案:** (a) $k = 400 \text{ N/m}$ (b) 倒置抛物线 (c) $x = \pm 0.158 \text{ m}$
+**Answer:** $x = \pm \frac{A}{\sqrt{2}}$ | **答案：** $x = \pm \frac{A}{\sqrt{2}}$
 
 ### Quick Tip / 提示
-**English:** Always check your answer makes physical sense: KE = 3.0 J is less than E = 8.0 J, so the displacement should be less than A = 0.20 m. ✓
-**中文:** 始终检查答案是否合理：KE = 3.0 J 小于 E = 8.0 J，所以位移应小于 A = 0.20 m。✓
+- **EN:** This is a classic result. Memorize that KE = PE at $x = \pm A/\sqrt{2}$.
+- **CN:** 这是一个经典结果。记住在$x = \pm A/\sqrt{2}$处动能等于势能。
 
 ---
 
-# 7. Flashcards / 闪卡
+# 9. Past Paper Question Types / 历年真题题型
 
-**Flashcard 1:**
-Q (EN): What shape is the PE-displacement graph for SHM?
-Q (CN): 简谐运动的势能-位移图是什么形状？
-A (EN): A parabola (upward opening), because PE = ½kx².
-A (CN): 抛物线（向上开口），因为 PE = ½kx²。
+| Question Type / 题型 | Frequency / 频率 | Difficulty / 难度 | Past Paper References / 真题索引 |
+|----------------------|------------------|------------------|-------------------------------|
+| Sketching energy-displacement graphs | High | Easy | 📝 *待填入* |
+| Calculating energy at a given displacement | High | Medium | 📝 *待填入* |
+| Finding displacement where KE = PE | Medium | Medium | 📝 *待填入* |
+| Deriving energy equations | Low | Hard | 📝 *待填入* |
+| Interpreting graphs to find amplitude or TE | Medium | Easy | 📝 *待填入* |
 
-**Flashcard 2:**
-Q (EN): At what displacement(s) is KE = PE in SHM?
-Q (CN): 在简谐运动中，什么位移处动能等于势能？
-A (EN): At x = ±A/√2 (approximately ±0.707A).
-A (CN): 在 x = ±A/√2（约 ±0.707A）处。
-
-**Flashcard 3:**
-Q (EN): What is the total energy of an SHM oscillator in terms of k and A?
-Q (CN): 简谐运动振荡器的总能量用k和A如何表示？
-A (EN): E = ½kA²
-A (CN): E = ½kA²
-
-**Flashcard 4:**
-Q (EN): What is the kinetic energy at displacement x in SHM?
-Q (CN): 简谐运动中位移x处的动能是多少？
-A (EN): KE = ½k(A² - x²)
-A (CN): KE = ½k(A² - x²)
-
-**Flashcard 5:**
-Q (EN): How does the energy-displacement graph differ from the energy-time graph?
-Q (CN): 能量-位移图与能量-时间图有何不同？
-A (EN): Energy-displacement graphs show parabolic relationships, while energy-time graphs show sinusoidal variations.
-A (CN): 能量-位移图显示抛物线关系，而能量-时间图显示正弦变化。
+**Common Command Words / 常见指令词:**
+- **Sketch / 画出:** Draw a graph showing the general shape and key features (axes, labels, amplitude, total energy).
+- **Calculate / 计算:** Use the equations to find a numerical value.
+- **Derive / 推导:** Show the steps to obtain an equation from fundamental principles.
+- **State / 写出:** Give a concise answer without explanation.
+- **Explain / 解释:** Give a reason or describe the physics behind a phenomenon.
 
 ---
 
-# 8. Metadata / 元数据
+# 10. Practical Skills Connections / 实验技能链接
 
-```yaml
-title:
-  en: "Energy-Displacement Graphs for SHM"
-  cn: "简谐运动的能量-位移图"
-parent_topic: "Energy in SHM"
-parent_hub: "[[Energy in SHM]]"
-subject: Physics
-syllabus:
-  - CAIE 9702: 17.2 (a-c)
-  - Edexcel IAL: WPH14 U4: 7.6-7.8
-level: A2
-node_type: leaf_concept
-difficulty: intermediate
-related_leaf_nodes:
-  - "[[KE and PE in SHM]]"
-  - "[[Energy-Time Graphs for SHM]]"
-prerequisites:
-  - "[[Simple Harmonic Motion]]"
-  - "[[Kinetic Energy and Potential Energy]]"
-related_topics:
-  - "[[Damped and Forced Oscillations / Resonance]]"
-language: bilingual_en_cn
+**English:**
+This sub-topic connects to practical work in several ways:
+1. **Measurements:** You may be asked to measure the amplitude of oscillation using a ruler or motion sensor.
+2. **Uncertainties:** The uncertainty in measuring displacement ($x$) and amplitude ($A$) will propagate into uncertainties in calculated energy values. For example, if $A = 0.20 \pm 0.01$ m, the uncertainty in $A^2$ is $2A \Delta A = 2 \times 0.20 \times 0.01 = 0.004$ m$^2$.
+3. **Graph Plotting:** You may be asked to plot a graph of $PE$ against $x^2$. This should yield a straight line through the origin with gradient $\frac{1}{2} m \omega^2$.
+4. **Experimental Design:** You could design an experiment to verify the conservation of energy in SHM by measuring the speed (using a light gate) and displacement at various points.
+
+**中文:**
+本子知识点通过以下几种方式与实验工作相关联：
+1. **测量：** 你可能会被要求使用尺子或运动传感器测量振荡的振幅。
+2. **不确定度：** 测量位移（$x$）和振幅（$A$）的不确定度会传递到计算出的能量值的不确定度中。例如，如果$A = 0.20 \pm 0.01$ m，则$A^2$的不确定度为$2A \Delta A = 2 \times 0.20 \times 0.01 = 0.004$ m$^2$。
+3. **图表绘制：** 你可能会被要求绘制$PE$对$x^2$的图表。这应该产生一条通过原点的直线，其斜率为$\frac{1}{2} m \omega^2$。
+4. **实验设计：** 你可以设计一个实验，通过测量不同点的速度（使用光门）和位移来验证SHM中的能量守恒。
+
+---
+
+# 11. Concept Map / 概念图谱
+
+```mermaid
+graph TD
+    %% Show connections for this leaf node
+    subgraph "Parent Hub: Energy in SHM"
+        direction LR
+        A[Energy-Displacement Graphs] --> B[KE and PE in SHM]
+        A --> C[Energy-Time Graphs for SHM]
+    end
+
+    subgraph "Prerequisites"
+        D[Simple Harmonic Motion]
+        E[Kinetic Energy and Potential Energy]
+    end
+
+    subgraph "Related Topics"
+        F[Damped and Forced Oscillations - Resonance]
+    end
+
+    D --> A
+    E --> A
+    A --> F
+
+    subgraph "Key Concepts"
+        G[Parabolic Relationship]
+        H[Conservation of Energy]
+        I[Intersection at x = ±A/√2]
+    end
+
+    A --> G
+    A --> H
+    A --> I
+
+    subgraph "Key Equations"
+        J[TE = ½ m ω² A²]
+        K[KE = ½ m ω² (A² - x²)]
+        L[PE = ½ m ω² x²]
+    end
+
+    A --> J
+    A --> K
+    A --> L
+```
+
+---
+
+# 12. Quick Revision Sheet / 速查表
+
+| Category / 类别 | Key Points / 要点 |
+|----------------|------------------|
+| Definition / 定义 | Energy-displacement graphs show how KE and PE vary with position in SHM. |
+| Key Formula / 核心公式 | $TE = \frac{1}{2} m \omega^2 A^2$, $KE = \frac{1}{2} m \omega^2 (A^2 - x^2)$, $PE = \frac{1}{2} m \omega^2 x^2$ |
+| Key Graph / 核心图表 | TE: horizontal line; PE: upward parabola; KE: downward parabola. Intersect at $x = \pm A/\sqrt{2}$. |
+| Key Values / 关键数值 | At $x=0$: $KE = TE$, $PE = 0$. At $x=\pm A$: $KE = 0$, $PE = TE$. At $x=\pm A/\sqrt{2}$: $KE = PE = TE/2$. |
+| Exam Tip / 考试提示 | Always sketch the graph with correct curvature. Label axes, amplitude, and total energy. Remember that $KE + PE = TE$ at all points. |

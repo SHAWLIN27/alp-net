@@ -1,397 +1,319 @@
+---
 # Two-Stage Motion Problems / 两阶段运动问题
 
 ---
 
-## 1. Overview / 概述
+# 1. Overview / 概述
 
 **English:**
-Two-stage motion problems involve an object undergoing motion that can be divided into two distinct phases, each with its own constant acceleration. These problems are common in real-world scenarios such as a car accelerating from rest then braking, or a ball thrown upward that then falls back down. The key skill is recognizing where one stage ends and the next begins, and correctly transferring kinematic variables (like final velocity of stage 1 becoming initial velocity of stage 2) across the boundary.
-
-This sub-topic builds directly on [[The Five SUVAT Equations]] and [[Choosing the Right Equation]], and requires a solid understanding of [[Displacement, Velocity and Acceleration]]. It is a crucial stepping stone to more complex topics like [[Projectile Motion]] and [[Motion Graphs]].
+Two-stage motion problems involve an object undergoing motion that can be divided into two distinct phases, each with its own constant acceleration. These problems are a direct application of the [[The Five SUVAT Equations]] and require careful analysis of the transition point between stages. Mastering this sub-topic is crucial because it bridges simple single-stage motion and more complex real-world scenarios, such as a car accelerating then braking, or a ball thrown upwards then falling back down. The key skill is identifying the end conditions of the first stage as the initial conditions for the second stage.
 
 **中文:**
-两阶段运动问题涉及物体运动可分为两个不同阶段，每个阶段具有各自的恒定加速度。这类问题常见于现实场景，例如汽车从静止加速然后刹车，或球被向上抛出然后落回地面。关键技能是识别一个阶段何时结束、下一阶段何时开始，并正确地在边界处传递运动学变量（例如阶段1的末速度成为阶段2的初速度）。
-
-本子知识点建立在[[The Five SUVAT Equations]]和[[Choosing the Right Equation]]之上，需要扎实理解[[Displacement, Velocity and Acceleration]]。它是学习更复杂主题如[[Projectile Motion]]和[[Motion Graphs]]的重要阶梯。
+两阶段运动问题涉及一个物体的运动，该运动可分为两个不同的阶段，每个阶段都有其恒定的加速度。这些问题直接应用了[[The Five SUVAT Equations]]，需要仔细分析阶段之间的过渡点。掌握这个子知识点至关重要，因为它连接了简单的单阶段运动和更复杂的现实世界场景，例如汽车加速然后刹车，或者球向上抛出然后落回。关键技能是将第一阶段的结束条件识别为第二阶段的初始条件。
 
 ---
 
-## 2. Core Definition / 核心定义
+# 2. Syllabus Learning Objectives / 考纲学习目标
 
-| Term (EN/CN) | Definition (EN) | Definition (CN) |
-| ------------ | --------------- | --------------- |
-| **Two-Stage Motion** / 两阶段运动 | Motion that can be divided into two separate phases, each with constant acceleration, where the final conditions of stage 1 become the initial conditions of stage 2. | 可分为两个独立阶段的运动，每个阶段具有恒定加速度，阶段1的最终条件成为阶段2的初始条件。 |
-| **Boundary Condition** / 边界条件 | The point in time and space where one stage of motion ends and the next begins; typically where velocity and displacement are continuous. | 运动一个阶段结束、下一阶段开始的时间和空间点；通常速度和位移在此处连续。 |
-| **Stage Transition** / 阶段过渡 | The process of transferring kinematic variables (especially velocity and displacement) from the end of stage 1 to the start of stage 2. | 将运动学变量（特别是速度和位移）从阶段1结束传递到阶段2开始的过程。 |
-| **Piecewise Constant Acceleration** / 分段恒定加速度 | Acceleration that is constant within each stage but may change value between stages. | 在每个阶段内加速度恒定，但阶段之间可能改变数值。 |
-| **Total Displacement** / 总位移 | The sum of displacements from all stages, taking direction into account. | 考虑方向后，所有阶段位移的总和。 |
-| **Total Time** / 总时间 | The sum of time intervals from all stages. | 所有阶段时间间隔的总和。 |
+| CAIE 9702 | Edexcel IAL |
+|-----------|-------------|
+| 3.1(g): Apply the equations of motion for constant acceleration to solve problems involving multi-stage motion. | 1.9: Use the equations of motion for constant acceleration in a straight line, including the motion of bodies falling in a uniform gravitational field without air resistance. |
+| 3.1(h): Describe the motion of a body falling in a uniform gravitational field. | 1.10: Describe and explain the motion of a body falling in a uniform gravitational field. |
+| 3.1(k): Solve problems using the equations of motion. | 1.12: Solve problems using the equations of motion. |
 
----
-
-## 3. Key Concepts / 关键概念
-
-**English:**
-
-### The Transition Principle
-The most critical idea in two-stage problems is that **the final velocity of stage 1 becomes the initial velocity of stage 2**. Similarly, the displacement at the end of stage 1 is the starting position for stage 2. This continuity is what links the two stages together.
-
-### Step-by-Step Problem-Solving Strategy
-
-1. **Identify the two stages** — Look for changes in acceleration (e.g., "then brakes are applied", "after reaching a certain speed").
-2. **List known variables for each stage** — Use a SUVAT table for each stage separately.
-3. **Find the linking variable** — Usually the velocity at the transition point.
-4. **Solve stage 1** — Use [[Choosing the Right Equation]] to find the linking velocity.
-5. **Transfer the linking velocity** — Set $u_2 = v_1$ (final velocity of stage 1 = initial velocity of stage 2).
-6. **Solve stage 2** — Use the appropriate SUVAT equation.
-7. **Combine results** — Add displacements and times if total quantities are required.
-
-### Common Pitfalls
-
-- **Forgetting to transfer velocity** — The most frequent mistake. Always check: $v_1 = u_2$.
-- **Using wrong sign conventions** — If acceleration changes direction (e.g., from acceleration to deceleration), ensure signs are consistent.
-- **Assuming total displacement is simply the sum** — Only if motion is in one direction; if direction reverses, displacements may partially cancel.
-- **Mixing up time intervals** — Each stage has its own time $t_1$ and $t_2$; total time $t_{total} = t_1 + t_2$.
-
-### Real-World Examples
-- A car accelerating from rest to a speed limit, then travelling at constant speed (though constant speed is a special case with $a=0$).
-- A ball thrown upward (stage 1: upward with $g$ downward) and falling back (stage 2: downward with $g$ downward).
-- A train braking to a stop, then reversing (two stages with different acceleration directions).
-
-**中文:**
-
-### 过渡原则
-两阶段问题中最关键的概念是：**阶段1的末速度成为阶段2的初速度**。同样，阶段1结束时的位移是阶段2的起始位置。这种连续性是将两个阶段联系起来的纽带。
-
-### 分步解题策略
-
-1. **识别两个阶段** — 寻找加速度的变化（例如"然后刹车被施加"、"达到一定速度后"）。
-2. **列出每个阶段的已知变量** — 为每个阶段分别制作SUVAT表格。
-3. **找到连接变量** — 通常是过渡点的速度。
-4. **求解阶段1** — 使用[[Choosing the Right Equation]]找到连接速度。
-5. **传递连接速度** — 设 $u_2 = v_1$（阶段1的末速度 = 阶段2的初速度）。
-6. **求解阶段2** — 使用适当的SUVAT方程。
-7. **合并结果** — 如果需要总量，则相加位移和时间。
-
-### 常见错误
-
-- **忘记传递速度** — 最常见的错误。始终检查：$v_1 = u_2$。
-- **使用错误的符号约定** — 如果加速度改变方向（例如从加速到减速），确保符号一致。
-- **假设总位移就是简单相加** — 仅当运动方向一致时才成立；如果方向反转，位移可能部分抵消。
-- **混淆时间间隔** — 每个阶段有自己的时间 $t_1$ 和 $t_2$；总时间 $t_{total} = t_1 + t_2$。
-
-### 现实例子
-- 汽车从静止加速到限速，然后匀速行驶（匀速是 $a=0$ 的特殊情况）。
-- 球向上抛出（阶段1：向上，$g$ 向下）然后落回（阶段2：向下，$g$ 向下）。
-- 火车刹车停止，然后倒车（两个阶段加速度方向不同）。
+**Examiner Expectations / 考官期望:**
+- **EN:** You must be able to break a problem into logical stages, correctly assign variables (u, v, a, s, t) for each stage, and use the continuity of displacement and velocity at the transition point. A common trick is to ask for the total time or total displacement, requiring you to sum the results from each stage.
+- **CN:** 你必须能够将问题分解为逻辑阶段，为每个阶段正确分配变量（u, v, a, s, t），并利用过渡点处位移和速度的连续性。一个常见的技巧是要求总时间或总位移，这需要你将每个阶段的结果相加。
 
 ---
 
-## 4. Formulas / 公式
+# 3. Core Definitions / 核心定义
 
-The core formulas are the five SUVAT equations, applied separately to each stage:
+| Term (EN/CN) | Definition (EN) | Definition (CN) | Common Mistakes / 常见错误 |
+|--------------|-----------------|-----------------|---------------------------|
+| **Two-Stage Motion** / 两阶段运动 | Motion that can be divided into two separate parts, each with a different constant acceleration. | 可以分成两个独立部分的运动，每个部分具有不同的恒定加速度。 | Confusing the two stages and using the wrong initial velocity for the second stage. |
+| **Transition Point** / 过渡点 | The instant in time when the motion changes from one stage to the next. The final velocity ($v$) of the first stage is the initial velocity ($u$) of the second stage. | 运动从一个阶段变为下一个阶段的瞬间。第一阶段的最终速度（$v$）是第二阶段的初始速度（$u$）。 | Forgetting that the displacement at the transition point is also continuous. |
+| **Stage 1 (Phase 1)** / 第一阶段 | The initial part of the motion, defined by its own set of SUVAT variables. | 运动的初始部分，由其自己的一组SUVAT变量定义。 | - |
+| **Stage 2 (Phase 2)** / 第二阶段 | The subsequent part of the motion, following the transition point. | 过渡点之后的后续运动部分。 | - |
+| **Total Displacement** / 总位移 | The vector sum of the displacements from each stage. | 每个阶段位移的矢量和。 | Simply adding magnitudes without considering direction. |
+| **Total Time** / 总时间 | The sum of the time intervals for each stage. | 每个阶段时间间隔的总和。 | - |
 
-$$v = u + at$$
+---
 
-$$s = ut + \frac{1}{2}at^2$$
+# 4. Key Concepts Explained / 关键概念详解
 
-$$v^2 = u^2 + 2as$$
+## 4.1 The "Bridge" Concept / “桥梁”概念
 
-$$s = \frac{(u+v)}{2}t$$
+### Explanation / 解释
+**English:** The most critical concept in two-stage motion is the **transition point**. This point acts as a "bridge" between the two stages. The final velocity ($v_1$) of the first stage is exactly equal to the initial velocity ($u_2$) of the second stage. Similarly, the displacement ($s_1$) from the start to the transition point is a key piece of information for the second stage. If the problem asks for total displacement, you must add $s_1$ and $s_2$. If it asks for total time, you add $t_1$ and $t_2$.
 
-$$s = vt - \frac{1}{2}at^2$$
+**中文:** 两阶段运动中最关键的概念是**过渡点**。这个点充当了两个阶段之间的“桥梁”。第一阶段的最终速度（$v_1$）恰好等于第二阶段的初始速度（$u_2$）。同样，从起点到过渡点的位移（$s_1$）是第二阶段的关键信息。如果问题要求总位移，你必须将 $s_1$ 和 $s_2$ 相加。如果要求总时间，则将 $t_1$ 和 $t_2$ 相加。
+
+### Physical Meaning / 物理意义
+**English:** Physically, the object doesn't "teleport" or change its velocity instantaneously at the transition point. The motion is continuous. The acceleration changes, but the velocity and position do not jump.
+
+**中文:** 从物理上讲，物体在过渡点不会“瞬间移动”或瞬时改变其速度。运动是连续的。加速度会改变，但速度和位置不会跳跃。
+
+### Common Misconceptions / 常见误区
+- **EN:** Thinking the object stops at the transition point. It doesn't; it just changes its acceleration.
+- **CN:** 认为物体在过渡点停止。它不会；它只是改变了加速度。
+- **EN:** Using the initial velocity of the whole problem ($u_1$) as the initial velocity for the second stage ($u_2$).
+- **CN:** 使用整个问题的初始速度（$u_1$）作为第二阶段的初始速度（$u_2$）。
+- **EN:** Forgetting to define a consistent sign convention (e.g., upwards as positive) for the entire problem.
+- **CN:** 忘记为整个问题定义一致的符号约定（例如，向上为正）。
+
+### Exam Tips / 考试提示
+- **EN:** Draw a clear diagram showing the two stages, the transition point, and label all known and unknown variables.
+- **CN:** 画一个清晰的图表，显示两个阶段、过渡点，并标出所有已知和未知的变量。
+- **EN:** Write down the SUVAT variables for each stage in a table. This helps you see what you know and what you need to find.
+- **CN:** 在表格中写下每个阶段的SUVAT变量。这有助于你了解已知和需要求解的量。
+
+> 📷 **IMAGE PROMPT — SUVAT-DIAGRAM: Two-Stage Motion Diagram**
+> A clear, labeled physics diagram showing a car on a straight road. Stage 1: The car accelerates from rest (u=0) to a velocity v. Stage 2: The car then decelerates (brakes) from velocity v to rest (v=0). The transition point is clearly marked where the acceleration changes. Arrows indicate the direction of acceleration in each stage. Variables s1, t1, a1 for stage 1 and s2, t2, a2 for stage 2 are labeled.
+
+---
+
+# 5. Essential Equations / 核心公式
+
+The core equations are the same five [[The Five SUVAT Equations]], applied twice.
+
+$$ v = u + at $$
+$$ s = ut + \frac{1}{2}at^2 $$
+$$ v^2 = u^2 + 2as $$
+$$ s = \frac{1}{2}(u+v)t $$
+$$ s = vt - \frac{1}{2}at^2 $$
 
 | Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
-| ------------- | ------------ | ------------ | ----------- |
-| $u$ | Initial velocity | 初速度 | m s$^{-1}$ |
-| $v$ | Final velocity | 末速度 | m s$^{-1}$ |
-| $a$ | Acceleration | 加速度 | m s$^{-2}$ |
+|--------------|-------------|-------------|------------|
+| $u$ | Initial velocity | 初速度 | m s⁻¹ |
+| $v$ | Final velocity | 末速度 | m s⁻¹ |
+| $a$ | Acceleration | 加速度 | m s⁻² |
 | $s$ | Displacement | 位移 | m |
 | $t$ | Time | 时间 | s |
 
-### The Transition Equation / 过渡方程
-
-The key linking relationship:
-
-$$v_1 = u_2$$
-
-Where $v_1$ is the final velocity of stage 1 and $u_2$ is the initial velocity of stage 2.
-
-### Total Quantities / 总量
-
-$$s_{total} = s_1 + s_2$$
-
-$$t_{total} = t_1 + t_2$$
+**Derivation / 推导:** N/A for this sub-topic. The focus is on application.
 
 **Conditions / 适用条件:**
-- Acceleration is constant within each stage.
-- The transition point is clearly defined (e.g., when brakes are applied, when the ball reaches maximum height).
-- Direction is consistently defined (choose a positive direction and stick to it).
+- **EN:** Constant acceleration within each stage. The acceleration can be different between stages.
+- **CN:** 每个阶段内加速度恒定。不同阶段之间的加速度可以不同。
 
-> 📷 **IMAGE PROMPT — SUVAT-TS01: Two-Stage Motion Diagram**
->
-> **English Prompt:**
-> A clean vector diagram showing a two-stage motion scenario. Left side: a car accelerating from rest (stage 1, a₁ positive, u₁=0, v₁ at transition). Middle: a dashed vertical line labeled "Transition Point" with v₁ = u₂. Right side: the car decelerating (stage 2, a₂ negative, u₂ = v₁, v₂ = 0). Below each stage, show the SUVAT variables listed in a table format. Use blue for stage 1, red for stage 2. Include a position-time graph below showing two parabolic segments meeting at the transition point. Clean textbook style, white background, black labels with colored variable highlights.
->
-> **中文描述:**
-> 一个清晰的两阶段运动矢量图。左侧：汽车从静止加速（阶段1，a₁为正，u₁=0，过渡点v₁）。中间：一条虚线垂直线标记为"过渡点"，标注v₁ = u₂。右侧：汽车减速（阶段2，a₂为负，u₂ = v₁，v₂ = 0）。每个阶段下方以表格形式列出SUVAT变量。阶段1用蓝色，阶段2用红色。下方显示位置-时间图，两个抛物线线段在过渡点相接。干净的教科书风格，白色背景，黑色标签，彩色变量高亮。
->
-> **Labels Required / 需要标注:**
-> * Stage 1: u₁=0, a₁, v₁, s₁, t₁
-> * Transition: v₁ = u₂
-> * Stage 2: u₂=v₁, a₂, v₂=0, s₂, t₂
-> * Total: s_total = s₁ + s₂, t_total = t₁ + t₂
->
-> **Style / 风格:** Textbook vector diagram with graph
->
-> **Exam Relevance / 考试关联:**
-> This diagram directly illustrates the structure of typical exam questions on two-stage motion. Students should be able to sketch this and label all variables.
+**Limitations / 局限性:**
+- **EN:** Cannot be used if acceleration is not constant within a stage. Does not account for air resistance or other non-uniform forces.
+- **CN:** 如果加速度在一个阶段内不恒定，则不能使用。不考虑空气阻力或其他非均匀力。
 
 ---
 
-## 5. Image Prompt / 图片提示
+# 6. Graphs and Relationships / 图表与关系
 
-> 📷 **IMAGE PROMPT — SUVAT-TS02: Ball Thrown Upward Two-Stage Motion**
->
-> **English Prompt:**
-> A vertical diagram showing a ball thrown upward from ground level. Split the motion into two stages with a horizontal dashed line at the maximum height. Stage 1 (upward): ball rising, arrows showing velocity decreasing (shorter arrows), acceleration g downward (constant arrow). Stage 2 (downward): ball falling, arrows showing velocity increasing (longer arrows), acceleration g downward (same constant arrow). At the maximum height, label "v=0, transition point". Show SUVAT tables for each stage. Include a velocity-time graph on the right showing a straight line crossing zero at the transition. Clean physics textbook style, white background, blue and red color coding for stages.
->
-> **中文描述:**
-> 一个垂直方向图，显示球从地面向上抛出。用一条水平虚线在最高点将运动分为两个阶段。阶段1（向上）：球上升，箭头显示速度减小（箭头变短），加速度g向下（恒定箭头）。阶段2（向下）：球下落，箭头显示速度增加（箭头变长），加速度g向下（相同恒定箭头）。在最高点标注"v=0，过渡点"。为每个阶段显示SUVAT表格。右侧包含速度-时间图，显示一条直线在过渡点穿过零。干净的物理教科书风格，白色背景，阶段用蓝色和红色编码。
->
-> **Labels Required / 需要标注:**
-> * Stage 1: u₁=+u, a₁=-g, v₁=0, s₁=H, t₁
-> * Transition: v₁=0=u₂
-> * Stage 2: u₂=0, a₂=-g, v₂=-u, s₂=-H, t₂
-> * Graph: v-t line with slope -g, crossing t-axis at transition
->
-> **Style / 风格:** Textbook vector diagram with graph
->
-> **Exam Relevance / 考试关联:**
-> This is a classic exam scenario. Understanding the symmetry (time up = time down, speed at return = initial speed) is a key exam shortcut.
+## 6.1 Velocity-Time Graph for Two-Stage Motion / 两阶段运动的速度-时间图
+
+### Axes / 坐标轴
+- **X-axis:** Time / 时间 (t / s)
+- **Y-axis:** Velocity / 速度 (v / m s⁻¹)
+
+### Shape / 形状
+**English:** The graph consists of two straight line segments. The first segment has a gradient equal to $a_1$ (acceleration of stage 1). The second segment has a gradient equal to $a_2$ (acceleration of stage 2). The two lines meet at the transition point.
+
+**中文:** 该图由两条直线段组成。第一段的斜率等于 $a_1$（第一阶段的加速度）。第二段的斜率等于 $a_2$（第二阶段的加速度）。两条线在过渡点相交。
+
+### Gradient Meaning / 斜率含义
+**English:** The gradient of each line segment represents the acceleration during that stage.
+- Gradient of line 1 = $a_1$
+- Gradient of line 2 = $a_2$
+
+**中文:** 每个线段的斜率代表该阶段的加速度。
+- 线段1的斜率 = $a_1$
+- 线段2的斜率 = $a_2$
+
+### Area Meaning / 面积含义
+**English:** The total area under the entire graph (sum of areas under both segments) represents the **total displacement**.
+- Area under segment 1 = $s_1$
+- Area under segment 2 = $s_2$
+- Total Area = $s_1 + s_2 = s_{total}$
+
+**中文:** 整个图线下的总面积（两个线段下面积之和）代表**总位移**。
+- 线段1下的面积 = $s_1$
+- 线段2下的面积 = $s_2$
+- 总面积 = $s_1 + s_2 = s_{total}$
+
+### Exam Interpretation / 考试解读
+- **EN:** A velocity-time graph is often the easiest way to solve two-stage problems, especially when finding total displacement. You can calculate the area of trapezoids or triangles without using the SUVAT equations.
+- **CN:** 速度-时间图通常是解决两阶段问题的最简单方法，尤其是在求总位移时。你可以计算梯形或三角形的面积，而无需使用SUVAT方程。
+
+> 📷 **IMAGE PROMPT — SUVAT-GRAPH: Two-Stage Velocity-Time Graph**
+> A velocity-time graph with two straight line segments. The first segment starts at the origin (0,0) and has a positive slope, ending at point (t1, v). The second segment starts at (t1, v) and has a negative slope, ending at (t2, 0). The area under the first segment is shaded and labeled 's1'. The area under the second segment is shaded differently and labeled 's2'. The gradient of the first segment is labeled 'a1', and the gradient of the second is labeled 'a2'.
 
 ---
 
-## 6. Worked Example / 典型例题
+# 7. Required Diagrams / 必备图表
 
-### Example 1: Car Accelerating Then Braking
+## 7.1 The Two-Stage Motion Diagram / 两阶段运动示意图
+
+### Description / 描述
+**English:** A simple diagram showing a straight line path divided into two sections. The first section shows the object moving with acceleration $a_1$, and the second with acceleration $a_2$. The transition point is clearly marked.
+
+**中文:** 一个简单的示意图，显示一条直线路径被分成两部分。第一部分显示物体以加速度 $a_1$ 运动，第二部分以加速度 $a_2$ 运动。过渡点被清晰地标记出来。
+
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — SUVAT-DIAGRAM: Two-Stage Motion Diagram (Detailed)**
+> A detailed physics diagram for a two-stage motion problem. A horizontal line represents the path. The leftmost point is labeled 'Start (t=0, u=u1)'. A point in the middle is labeled 'Transition Point (v1 = u2)'. The rightmost point is labeled 'End (v=v2)'. The segment from Start to Transition is labeled 'Stage 1: a = a1, s = s1, t = t1'. The segment from Transition to End is labeled 'Stage 2: a = a2, s = s2, t = t2'. Arrows above the path indicate the direction of motion. Small arrows below the path indicate the direction of acceleration for each stage.
+
+### Labels Required / 需要标注
+- **EN:** Start, Transition Point, End, Stage 1, Stage 2, $u_1$, $v_1$, $u_2$, $v_2$, $a_1$, $a_2$, $s_1$, $s_2$, $t_1$, $t_2$.
+- **CN:** 起点、过渡点、终点、第一阶段、第二阶段、$u_1$, $v_1$, $u_2$, $v_2$, $a_1$, $a_2$, $s_1$, $s_2$, $t_1$, $t_2$.
+
+### Exam Importance / 考试重要性
+- **EN:** Extremely high. Drawing this diagram is the first and most important step in solving any two-stage problem. It organizes your thoughts and prevents mistakes.
+- **CN:** 极高。绘制此图是解决任何两阶段问题的第一步，也是最重要的一步。它可以整理你的思路并防止错误。
+
+---
+
+# 8. Worked Examples / 典型例题
+
+## Example 1: Car Accelerating and Braking / 汽车加速与刹车
 
 ### Question / 题目
-**English:**
-A car starts from rest and accelerates uniformly at $2.0 \text{ m s}^{-2}$ for $5.0$ seconds. The driver then applies the brakes, causing a uniform deceleration of $4.0 \text{ m s}^{-2}$ until the car stops.
+**English:** A car starts from rest and accelerates uniformly at $2.0 \text{ m s}^{-2}$ for 10 seconds. It then brakes uniformly and comes to a stop after a further 5 seconds. Calculate:
+(a) The maximum speed reached by the car.
+(b) The total displacement of the car.
 
-(a) Calculate the maximum speed reached by the car.
-(b) Calculate the total distance travelled by the car.
-(c) Calculate the total time for the journey.
-
-**中文:**
-一辆汽车从静止开始，以 $2.0 \text{ m s}^{-2}$ 的加速度匀加速 $5.0$ 秒。然后司机刹车，产生 $4.0 \text{ m s}^{-2}$ 的匀减速，直到汽车停止。
-
-(a) 计算汽车达到的最大速度。
-(b) 计算汽车行驶的总距离。
-(c) 计算整个行程的总时间。
+**中文:** 一辆汽车从静止开始，以 $2.0 \text{ m s}^{-2}$ 的加速度匀加速行驶10秒。然后它均匀刹车，并在5秒后停下来。计算：
+(a) 汽车达到的最大速度。
+(b) 汽车的总位移。
 
 ### Solution / 解答
 
-**Stage 1: Acceleration**
+**Stage 1: Acceleration / 第一阶段：加速**
+- $u_1 = 0 \text{ m s}^{-1}$
+- $a_1 = 2.0 \text{ m s}^{-2}$
+- $t_1 = 10 \text{ s}$
+- Find $v_1$ (max speed) and $s_1$.
 
-Known: $u_1 = 0$, $a_1 = +2.0 \text{ m s}^{-2}$, $t_1 = 5.0 \text{ s}$
+(a) Using $v = u + at$:
+$$ v_1 = 0 + (2.0)(10) = 20 \text{ m s}^{-1} $$
 
-(a) Find $v_1$ (maximum speed):
+**Answer (a):** $20 \text{ m s}^{-1}$
 
-Using $v = u + at$:
+**Stage 2: Braking / 第二阶段：刹车**
+- $u_2 = v_1 = 20 \text{ m s}^{-1}$ (The bridge!)
+- $v_2 = 0 \text{ m s}^{-1}$
+- $t_2 = 5 \text{ s}$
+- Find $a_2$ and $s_2$.
 
-$$v_1 = 0 + (2.0)(5.0) = 10 \text{ m s}^{-1}$$
+First, find $a_2$:
+$$ v_2 = u_2 + a_2 t_2 $$
+$$ 0 = 20 + a_2(5) $$
+$$ a_2 = -4 \text{ m s}^{-2} $$
 
-**Transition:** $v_1 = u_2 = 10 \text{ m s}^{-1}$
+Now find $s_2$:
+$$ s_2 = u_2 t_2 + \frac{1}{2}a_2 t_2^2 $$
+$$ s_2 = (20)(5) + \frac{1}{2}(-4)(5)^2 $$
+$$ s_2 = 100 - 50 = 50 \text{ m} $$
 
-**Stage 2: Deceleration**
+**Find $s_1$:**
+$$ s_1 = u_1 t_1 + \frac{1}{2}a_1 t_1^2 $$
+$$ s_1 = 0 + \frac{1}{2}(2)(10)^2 = 100 \text{ m} $$
 
-Known: $u_2 = 10 \text{ m s}^{-1}$, $a_2 = -4.0 \text{ m s}^{-2}$ (negative because deceleration), $v_2 = 0$
+(b) Total displacement:
+$$ s_{total} = s_1 + s_2 = 100 + 50 = 150 \text{ m} $$
 
-(b) Find $s_2$:
-
-Using $v^2 = u^2 + 2as$:
-
-$$0 = (10)^2 + 2(-4.0)s_2$$
-$$0 = 100 - 8s_2$$
-$$s_2 = 12.5 \text{ m}$$
-
-Find $s_1$:
-
-Using $s = ut + \frac{1}{2}at^2$:
-
-$$s_1 = 0 + \frac{1}{2}(2.0)(5.0)^2 = 25 \text{ m}$$
-
-Total distance: $s_{total} = s_1 + s_2 = 25 + 12.5 = 37.5 \text{ m}$
-
-(c) Find $t_2$:
-
-Using $v = u + at$:
-
-$$0 = 10 + (-4.0)t_2$$
-$$t_2 = 2.5 \text{ s}$$
-
-Total time: $t_{total} = t_1 + t_2 = 5.0 + 2.5 = 7.5 \text{ s}$
-
-### Final Answer / 最终答案
-
-**Answer:**
-(a) $10 \text{ m s}^{-1}$
-(b) $37.5 \text{ m}$
-(c) $7.5 \text{ s}$
-
-**答案:**
-(a) $10 \text{ m s}^{-1}$
-(b) $37.5 \text{ m}$
-(c) $7.5 \text{ s}$
+**Answer (b):** $150 \text{ m}$ | **答案：** $150 \text{ m}$
 
 ### Quick Tip / 提示
-Always draw a velocity-time graph for two-stage problems. The area under the graph gives displacement, and the slopes give accelerations. For this problem, the v-t graph is a triangle with base 7.5 s and height 10 m s$^{-1}$, so area = $\frac{1}{2} \times 7.5 \times 10 = 37.5$ m — a quick check!
+- **EN:** You can also solve part (b) by finding the area under the velocity-time graph. The area is a trapezoid: $\frac{1}{2}(10+15)(20) = 250 \text{ m}$? No! The total time is 15 s. The area is $\frac{1}{2}(15)(20) = 150 \text{ m}$. This is much faster!
+- **CN:** 你也可以通过求速度-时间图下的面积来解(b)部分。面积是一个三角形：$\frac{1}{2}(15)(20) = 150 \text{ m}$。这快多了！
 
 ---
 
-### Example 2: Ball Thrown Upward
+# 9. Past Paper Question Types / 历年真题题型
 
-### Question / 题目
+| Question Type / 题型 | Frequency / 频率 | Difficulty / 难度 | Past Paper References / 真题索引 |
+|----------------------|------------------|------------------|-------------------------------|
+| Calculate total displacement or time for a two-stage journey. | High | Medium | 📝 *待填入* |
+| Find the acceleration or deceleration in one stage given total time/displacement. | Medium | Medium-Hard | 📝 *待填入* |
+| Interpret a velocity-time graph for a two-stage motion. | High | Easy-Medium | 📝 *待填入* |
+| Describe the motion of a ball thrown upwards and falling back down. | High | Medium | 📝 *待填入* |
+
+**Common Command Words / 常见指令词:**
+- **EN:** Calculate, Determine, Find, Show, Sketch, Describe.
+- **CN:** 计算、确定、求、证明、画出、描述。
+
+---
+
+# 10. Practical Skills Connections / 实验技能链接
+
 **English:**
-A ball is thrown vertically upward from ground level with an initial speed of $15 \text{ m s}^{-1}$. Take $g = 10 \text{ m s}^{-2}$.
-
-(a) Calculate the maximum height reached.
-(b) Calculate the time taken to return to ground level.
-(c) Calculate the speed of the ball just before it hits the ground.
+This sub-topic connects to practical work involving motion sensors and data loggers. For example, you might use a motion sensor to track a cart on a ramp that is first accelerated by a falling mass and then decelerates on a flat surface. You would then:
+- **Plot a velocity-time graph** from the data.
+- **Identify the two stages** of motion from the graph.
+- **Calculate the acceleration** in each stage from the gradient.
+- **Calculate the total displacement** from the area under the graph.
+- **Estimate uncertainties** in your measurements of time and displacement.
 
 **中文:**
-一个球从地面以 $15 \text{ m s}^{-1}$ 的初速度竖直向上抛出。取 $g = 10 \text{ m s}^{-2}$。
-
-(a) 计算达到的最大高度。
-(b) 计算返回地面所需的时间。
-(c) 计算球即将落地时的速度。
-
-### Solution / 解答
-
-**Stage 1: Upward motion**
-
-Take upward as positive. Known: $u_1 = +15 \text{ m s}^{-1}$, $a_1 = -10 \text{ m s}^{-2}$, $v_1 = 0$ (at maximum height)
-
-(a) Find $s_1$ (maximum height):
-
-Using $v^2 = u^2 + 2as$:
-
-$$0 = (15)^2 + 2(-10)s_1$$
-$$0 = 225 - 20s_1$$
-$$s_1 = 11.25 \text{ m}$$
-
-Find $t_1$:
-
-Using $v = u + at$:
-
-$$0 = 15 + (-10)t_1$$
-$$t_1 = 1.5 \text{ s}$$
-
-**Transition:** $v_1 = 0 = u_2$
-
-**Stage 2: Downward motion**
-
-Known: $u_2 = 0$, $a_2 = -10 \text{ m s}^{-2}$ (still downward, so same sign), $s_2 = -11.25 \text{ m}$ (downward displacement)
-
-(b) Find $t_2$:
-
-Using $s = ut + \frac{1}{2}at^2$:
-
-$$-11.25 = 0 + \frac{1}{2}(-10)t_2^2$$
-$$-11.25 = -5t_2^2$$
-$$t_2^2 = 2.25$$
-$$t_2 = 1.5 \text{ s}$$
-
-Total time: $t_{total} = t_1 + t_2 = 1.5 + 1.5 = 3.0 \text{ s}$
-
-(c) Find $v_2$:
-
-Using $v = u + at$:
-
-$$v_2 = 0 + (-10)(1.5) = -15 \text{ m s}^{-1}$$
-
-Speed = $|v_2| = 15 \text{ m s}^{-1}$
-
-### Final Answer / 最终答案
-
-**Answer:**
-(a) $11.25 \text{ m}$
-(b) $3.0 \text{ s}$
-(c) $15 \text{ m s}^{-1}$
-
-**答案:**
-(a) $11.25 \text{ m}$
-(b) $3.0 \text{ s}$
-(c) $15 \text{ m s}^{-1}$
-
-### Quick Tip / 提示
-For symmetrical vertical motion under gravity (no air resistance), time up = time down, and speed at return = initial speed. This symmetry can save you calculation time in exams. However, always show the full working for method marks.
+本子知识点与涉及运动传感器和数据记录器的实验工作有关。例如，你可能使用运动传感器来跟踪一个在斜面上的小车，该小车先被一个下落的重物加速，然后在水平面上减速。然后你将：
+- 根据数据**绘制速度-时间图**。
+- 从图中**识别两个运动阶段**。
+- 从斜率**计算每个阶段的加速度**。
+- 从图下的面积**计算总位移**。
+- **估计**时间和位移测量中的不确定度。
 
 ---
 
-## 7. Flashcards / 闪卡
+# 11. Concept Map / 概念图谱
 
-**Flashcard 1**
+```mermaid
+graph TD
+    subgraph "Prerequisites / 先决条件"
+        A[Displacement, Velocity and Acceleration / 位移、速度和加速度]
+        B[The Five SUVAT Equations / 五个SUVAT方程]
+    end
 
-Q (EN): What is the key linking relationship between two stages of motion?
-Q (CN): 两个运动阶段之间的关键连接关系是什么？
-A (EN): The final velocity of stage 1 becomes the initial velocity of stage 2: $v_1 = u_2$.
-A (CN): 阶段1的末速度成为阶段2的初速度：$v_1 = u_2$。
+    subgraph "Core Concept / 核心概念"
+        C[Two-Stage Motion Problems / 两阶段运动问题]
+        D[Transition Point / 过渡点]
+        E[Stage 1 / 第一阶段]
+        F[Stage 2 / 第二阶段]
+    end
 
-**Flashcard 2**
+    subgraph "Key Skills / 关键技能"
+        G[Identify Stages / 识别阶段]
+        H[Bridge Variables / 桥接变量]
+        I[Apply SUVAT Equations / 应用SUVAT方程]
+        J[Interpret v-t Graphs / 解读v-t图]
+    end
 
-Q (EN): A car accelerates from rest at 2 m s$^{-2}$ for 4 s, then brakes at 4 m s$^{-2}$. What is the maximum speed?
-Q (CN): 汽车从静止以2 m s$^{-2}$加速4秒，然后以4 m s$^{-2}$刹车。最大速度是多少？
-A (EN): $v = u + at = 0 + 2 \times 4 = 8 \text{ m s}^{-1}$
-A (CN): $v = u + at = 0 + 2 \times 4 = 8 \text{ m s}^{-1}$
+    subgraph "Related Topics / 相关主题"
+        K[Motion Graphs / 运动图]
+        L[Free Fall Under Gravity / 重力下的自由落体]
+        M[Projectile Motion / 抛体运动]
+    end
 
-**Flashcard 3**
-
-Q (EN): What is the most common mistake in two-stage motion problems?
-Q (CN): 两阶段运动问题中最常见的错误是什么？
-A (EN): Forgetting to transfer the velocity from stage 1 to stage 2 (not setting $u_2 = v_1$).
-A (CN): 忘记将速度从阶段1传递到阶段2（没有设 $u_2 = v_1$）。
-
-**Flashcard 4**
-
-Q (EN): For a ball thrown upward and returning to the same height, what is the total displacement?
-Q (CN): 对于向上抛出并返回同一高度的球，总位移是多少？
-A (EN): Zero, because the ball returns to its starting point.
-A (CN): 零，因为球返回起点。
-
-**Flashcard 5**
-
-Q (EN): How do you calculate total distance in a two-stage problem?
-Q (CN): 如何计算两阶段问题中的总距离？
-A (EN): Add the distances from each stage: $s_{total} = s_1 + s_2$ (all positive values).
-A (CN): 将每个阶段的距离相加：$s_{total} = s_1 + s_2$（所有正值）。
+    A --> B
+    B --> C
+    C --> D
+    C --> E
+    C --> F
+    D --> H
+    E --> G
+    F --> G
+    G --> I
+    H --> I
+    I --> J
+    J --> K
+    C --> L
+    L --> M
+```
 
 ---
 
-## 8. Metadata / 元数据
+# 12. Quick Revision Sheet / 速查表
 
-```yaml
-title:
-  en: Two-Stage Motion Problems
-  cn: 两阶段运动问题
-parent_topic: Equations of Motion (SUVAT)
-parent_hub: "[[Equations of Motion (SUVAT)]]"
-subject: Physics
-syllabus:
-  - CAIE 9702
-  - Edexcel IAL
-level: AS
-node_type: leaf_concept
-difficulty: intermediate
-related_leaf_nodes:
-  - "[[The Five SUVAT Equations]]"
-  - "[[Choosing the Right Equation]]"
-  - "[[Free Fall Under Gravity]]"
-prerequisites:
-  - "[[Displacement, Velocity and Acceleration]]"
-related_topics:
-  - "[[Motion Graphs]]"
-  - "[[Projectile Motion]]"
-language: bilingual_en_cn
+| Category / 类别 | Key Points / 要点 |
+|----------------|------------------|
+| Definition / 定义 | Motion split into two parts with different constant accelerations. / 运动分为两个具有不同恒定加速度的部分。 |
+| Key Formula / 核心公式 | $v = u + at$, $s = ut + \frac{1}{2}at^2$, $v^2 = u^2 + 2as$ (applied twice) |
+| Key Graph / 核心图表 | Velocity-Time graph with two straight segments. Gradient = acceleration, Area = displacement. / 具有两条直线段的速度-时间图。斜率=加速度，面积=位移。 |
+| The Bridge / 桥梁 | $v_1 = u_2$ (Final velocity of stage 1 = Initial velocity of stage 2) / 第一阶段的末速度 = 第二阶段的初速度 |
+| Exam Tip / 考试提示 | Always draw a diagram and list SUVAT variables for each stage. / 始终画一个图表并列出每个阶段的SUVAT变量。 |
+| Common Mistake / 常见错误 | Using the initial velocity of the whole problem for the second stage. / 将整个问题的初速度用于第二阶段。 |

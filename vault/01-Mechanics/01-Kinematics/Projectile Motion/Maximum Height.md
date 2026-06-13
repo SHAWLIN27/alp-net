@@ -2,295 +2,443 @@
 
 ---
 
-## 1. Overview / 概述
+# 1. Overview / 概述
 
 **English:**
-Maximum height is the highest vertical displacement reached by a projectile during its flight. This sub-topic focuses on calculating the peak altitude of a projectile launched at an angle to the horizontal. Understanding maximum height is crucial for analyzing projectile trajectories, from sports physics (e.g., basketball shots, golf drives) to engineering applications (e.g., rocket launches, artillery fire). It connects directly to [[Horizontal and Vertical Components]] because the vertical component of initial velocity determines how high the projectile rises, and to [[Time of Flight and Range]] since the time to reach maximum height is exactly half the total time of flight for symmetrical trajectories.
+Maximum height is a critical parameter in [[Projectile Motion]] that represents the highest vertical position reached by a projectile during its flight. This sub-topic focuses on calculating and understanding the maximum height achieved when an object is launched at an angle to the horizontal. The maximum height occurs at the exact moment when the vertical component of velocity becomes zero — the projectile stops rising and begins to fall. Understanding maximum height requires mastery of [[Equations of Motion (SUVAT)]] and [[Scalars and Vectors]], particularly the resolution of initial velocity into [[Horizontal and Vertical Components]]. This concept is essential for analyzing real-world applications such as ballistics, sports trajectories, and engineering design.
 
 **中文:**
-最大高度是抛射体在飞行过程中达到的最高垂直位移。本子知识点专注于计算以一定角度发射的抛射体的最高点高度。理解最大高度对于分析抛射体轨迹至关重要，从体育物理（如篮球投篮、高尔夫击球）到工程应用（如火箭发射、火炮射击）都有涉及。它与[[水平与垂直分量]]直接相关，因为初速度的垂直分量决定了抛射体上升的高度；与[[飞行时间与射程]]相关，因为对于对称轨迹，到达最大高度的时间正好是总飞行时间的一半。
+最大高度是[[抛体运动]]中的一个关键参数，代表抛体在飞行过程中达到的最高垂直位置。本子知识点专注于计算和理解物体以一定角度发射时达到的最大高度。最大高度出现在垂直速度分量变为零的精确时刻——抛体停止上升并开始下落。理解最大高度需要掌握[[运动学方程 (SUVAT)]]和[[标量与矢量]]，特别是将初速度分解为[[水平与垂直分量]]。这一概念对于分析弹道学、运动轨迹和工程设计等实际应用至关重要。
 
 ---
 
-## 2. Core Definition / 核心定义
+# 2. Syllabus Learning Objectives / 考纲学习目标
 
-| Term (EN/CN) | Definition (EN) | Definition (CN) |
-| ------------ | --------------- | --------------- |
-| **Maximum Height** / 最大高度 | The greatest vertical displacement of a projectile from its launch point, occurring when the vertical component of velocity becomes zero. | 抛射体从发射点达到的最大垂直位移，发生在速度的垂直分量变为零的时刻。 |
-| **Peak / Apex** / 顶点 | The point on a projectile's trajectory where maximum height is reached; at this point, $v_y = 0$ and the projectile is moving horizontally only. | 抛射体轨迹上达到最大高度的点；在该点，$v_y = 0$，抛射体仅做水平运动。 |
-| **Vertical Component of Initial Velocity** / 初速度垂直分量 | The upward component of the launch velocity, given by $u_y = u \sin \theta$, where $u$ is the initial speed and $\theta$ is the launch angle. | 发射速度的向上分量，由 $u_y = u \sin \theta$ 给出，其中 $u$ 是初速度大小，$\theta$ 是发射角。 |
-| **Symmetrical Trajectory** / 对称轨迹 | A projectile path where launch and landing heights are equal; the time to maximum height equals the time from maximum height to landing. | 发射高度和落地高度相等的抛射体路径；到达最大高度的时间等于从最大高度到落地的时间。 |
+| CAIE 9702 | Edexcel IAL |
+|-----------|-------------|
+| 3.1(l): Derive and use the equation for maximum height of a projectile | WPH11 U1: 1.13-1.16: Apply equations of motion to projectile problems including maximum height |
+| 3.1(m): Solve problems involving projectile motion, including maximum height calculations | Calculate the maximum height reached by a projectile given initial velocity and launch angle |
+| Understand that at maximum height, vertical velocity = 0 | Interpret graphs of projectile motion showing maximum height |
+
+**Examiner Expectations / 考官期望:**
+- **English:** Students must be able to derive the maximum height formula from first principles using SUVAT equations. They should recognize that at maximum height, $v_y = 0$, and use this condition to solve for height. Common exam questions involve calculating maximum height from given initial velocity and angle, or finding the launch angle required to achieve a specific height.
+- **中文:** 学生必须能够使用SUVAT方程从基本原理推导最大高度公式。他们应认识到在最大高度处$v_y = 0$，并利用这一条件求解高度。常见考题包括根据给定的初速度和角度计算最大高度，或求达到特定高度所需的发射角度。
 
 ---
 
-## 3. Key Concepts / 关键概念
+# 3. Core Definitions / 核心定义
 
+| Term (EN/CN) | Definition (EN) | Definition (CN) | Common Mistakes / 常见错误 |
+|--------------|-----------------|-----------------|---------------------------|
+| **Maximum Height** / 最大高度 | The greatest vertical displacement reached by a projectile above its launch point, occurring when the vertical component of velocity becomes zero | 抛体在发射点上方达到的最大垂直位移，发生在垂直速度分量变为零的时刻 | Confusing maximum height with total vertical displacement (which may be different if landing height ≠ launch height) |
+| **Vertical Component of Velocity** / 垂直速度分量 | The component of velocity in the vertical direction, given by $v_y = u\sin\theta - gt$ | 速度在垂直方向的分量，由$v_y = u\sin\theta - gt$给出 | Forgetting the negative sign of gravitational acceleration |
+| **Apex** / 顶点 | The highest point of a projectile's trajectory, where the projectile is momentarily stationary in the vertical direction | 抛体轨迹的最高点，在该点抛体在垂直方向瞬间静止 | Thinking the projectile is completely stationary (horizontal velocity remains constant) |
+| **Launch Angle** / 发射角度 | The angle at which the projectile is launched relative to the horizontal | 抛体相对于水平方向发射的角度 | Using degrees in calculations without converting to radians when required |
+| **Initial Velocity** / 初速度 | The speed at which the projectile is launched, with both magnitude and direction | 抛体发射时的速度，包含大小和方向 | Using total initial velocity instead of its vertical component in height calculations |
+
+---
+
+# 4. Key Concepts Explained / 关键概念详解
+
+## 4.1 The Condition for Maximum Height / 最大高度的条件
+
+### Explanation / 解释
 **English:**
+The maximum height of a projectile is reached when the vertical component of its velocity becomes zero. This is because the projectile is launched with an upward vertical velocity component ($u_y = u\sin\theta$), and gravity continuously decelerates it at $g = 9.81 \text{ m s}^{-2}$ downward. At the apex, the upward motion stops completely before the projectile begins to fall back down. At this instant:
 
-The maximum height of a projectile is determined entirely by its **vertical motion**. Since horizontal and vertical motions are independent (as established in [[Horizontal and Vertical Components]]), we can analyze the vertical component separately using [[Equations of Motion (SUVAT)]].
+$$v_y = 0$$
 
-### Step-by-Step Reasoning:
-
-1. **At the peak**, the projectile's vertical velocity becomes zero ($v_y = 0$). This is the defining condition for maximum height.
-2. The projectile decelerates upward at $g = 9.81 \text{ m/s}^2$ (downward acceleration due to gravity).
-3. Using the SUVAT equation $v^2 = u^2 + 2as$, with $v = 0$, $u = u_y = u \sin \theta$, $a = -g$, and $s = H$ (maximum height), we derive:
-
-$$ H = \frac{u^2 \sin^2 \theta}{2g} $$
-
-### Physical Interpretation:
-- Maximum height depends on the **square** of the initial speed — doubling the launch speed quadruples the maximum height.
-- Maximum height depends on $\sin^2 \theta$ — it is maximized when $\theta = 90^\circ$ (straight up), giving $H = u^2/(2g)$.
-- For a given speed, a 30° launch and a 60° launch reach the same maximum height because $\sin^2 30^\circ = \sin^2 60^\circ = 0.25$.
-
-### Common Pitfalls:
-- **Forgetting the square**: Students often write $H = u \sin \theta / (2g)$ instead of $H = u^2 \sin^2 \theta / (2g)$.
-- **Using total time instead of time to peak**: The time to reach maximum height is $t_{\text{peak}} = u \sin \theta / g$, not the total time of flight.
-- **Ignoring launch height**: If the projectile is launched from a height above ground, the maximum height above ground is $H + h_0$, where $h_0$ is the launch height.
+This condition is the key to deriving the maximum height formula. The horizontal velocity component ($u_x = u\cos\theta$) remains constant throughout the flight (ignoring air resistance), so at maximum height, the projectile still has horizontal motion.
 
 **中文:**
+抛体的最大高度在其垂直速度分量变为零时达到。这是因为抛体以向上的垂直速度分量（$u_y = u\sin\theta$）发射，重力以$g = 9.81 \text{ m s}^{-2}$向下持续减速。在顶点处，向上运动完全停止，然后抛体开始下落。在这一瞬间：
 
-抛射体的最大高度完全由其**垂直运动**决定。由于水平和垂直运动是独立的（如[[水平与垂直分量]]中所述），我们可以使用[[运动学方程 (SUVAT)]]单独分析垂直分量。
+$$v_y = 0$$
 
-### 逐步推理：
+这一条件是推导最大高度公式的关键。水平速度分量（$u_x = u\cos\theta$）在整个飞行过程中保持不变（忽略空气阻力），因此在最大高度处，抛体仍然具有水平运动。
 
-1. **在顶点处**，抛射体的垂直速度变为零（$v_y = 0$）。这是最大高度的定义条件。
-2. 抛射体以 $g = 9.81 \text{ m/s}^2$（重力引起的向下加速度）向上减速。
-3. 使用SUVAT方程 $v^2 = u^2 + 2as$，其中 $v = 0$，$u = u_y = u \sin \theta$，$a = -g$，$s = H$（最大高度），我们推导出：
+### Physical Meaning / 物理意义
+**English:**
+Physically, the maximum height represents the point where the projectile's kinetic energy associated with vertical motion has been completely converted into gravitational potential energy. The projectile can rise no further because gravity has done enough negative work to bring the vertical velocity to zero. This is analogous to throwing a ball straight up — it reaches a maximum height where it momentarily stops before falling back.
 
-$$ H = \frac{u^2 \sin^2 \theta}{2g} $$
+**中文:**
+从物理意义上讲，最大高度代表与垂直运动相关的动能已完全转化为重力势能的点。抛体不能再上升，因为重力做了足够的负功使垂直速度降为零。这类似于垂直向上抛球——球达到最大高度时瞬间停止，然后下落。
 
-### 物理意义：
-- 最大高度取决于初速度的**平方**——发射速度加倍，最大高度变为四倍。
-- 最大高度取决于 $\sin^2 \theta$——当 $\theta = 90^\circ$（垂直向上）时最大，此时 $H = u^2/(2g)$。
-- 对于相同的速度，30°发射和60°发射达到相同的最大高度，因为 $\sin^2 30^\circ = \sin^2 60^\circ = 0.25$。
+### Common Misconceptions / 常见误区
+- **English:**
+  - ❌ Thinking the projectile is stationary at maximum height (it still has horizontal velocity)
+  - ❌ Using total initial velocity $u$ instead of $u_y = u\sin\theta$ in height calculations
+  - ❌ Forgetting that $g$ is negative when using upward as positive direction
+  - ❌ Assuming maximum height occurs at half the time of flight (only true for symmetrical trajectories)
+  
+- **中文:**
+  - ❌ 认为抛体在最大高度处静止（它仍然有水平速度）
+  - ❌ 在高度计算中使用总初速度$u$而不是$u_y = u\sin\theta$
+  - ❌ 忘记当向上为正方向时$g$为负值
+  - ❌ 假设最大高度发生在飞行时间的一半（仅对对称轨迹成立）
 
-### 常见错误：
-- **忘记平方**：学生常写成 $H = u \sin \theta / (2g)$ 而不是 $H = u^2 \sin^2 \theta / (2g)$。
-- **使用总时间而非到达顶点的时间**：到达最大高度的时间是 $t_{\text{peak}} = u \sin \theta / g$，而不是总飞行时间。
-- **忽略发射高度**：如果抛射体从高于地面的高度发射，则相对于地面的最大高度为 $H + h_0$，其中 $h_0$ 是发射高度。
+### Exam Tips / 考试提示
+- **English:**
+  - ✅ Always write $v_y = 0$ at maximum height — this is your starting equation
+  - ✅ Use the vertical motion only — horizontal motion does not affect maximum height
+  - ✅ Choose a consistent sign convention (upward positive) and stick to it
+  - ✅ Check units: height should be in meters (m)
+  
+- **中文:**
+  - ✅ 始终在最大高度处写出$v_y = 0$——这是你的起始方程
+  - ✅ 仅使用垂直运动——水平运动不影响最大高度
+  - ✅ 选择一致的符号约定（向上为正）并坚持使用
+  - ✅ 检查单位：高度应为米（m）
+
+> 📷 **IMAGE PROMPT — DIAGRAM-01: Projectile at Maximum Height**
+> A clear diagram showing a projectile trajectory with labeled initial velocity vector $u$ at angle $\theta$, resolved into $u_x = u\cos\theta$ (horizontal) and $u_y = u\sin\theta$ (vertical). At the apex, show $v_y = 0$ with a cross through the vertical arrow, while $v_x = u\cos\theta$ remains. Label the maximum height $H$ with a vertical dashed line from apex to ground. Include coordinate axes with upward as positive y-direction.
 
 ---
 
-## 4. Formulas / 公式
+# 5. Essential Equations / 核心公式
 
-### Primary Formula:
+## 5.1 Maximum Height Formula / 最大高度公式
 
-$$ H = \frac{u^2 \sin^2 \theta}{2g} $$
+$$H = \frac{u^2 \sin^2 \theta}{2g}$$
 
 | Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
-| ------------- | ------------ | ------------ | ----------- |
-| $H$ | Maximum height | 最大高度 | m |
-| $u$ | Initial speed | 初速度大小 | m/s |
-| $\theta$ | Launch angle above horizontal | 发射角（与水平面的夹角） | ° or rad |
-| $g$ | Acceleration due to gravity (9.81 m/s²) | 重力加速度 (9.81 m/s²) | m/s² |
+|--------------|-------------|-------------|------------|
+| $H$ | Maximum height above launch point | 发射点以上的最大高度 | m |
+| $u$ | Initial launch speed | 初始发射速度 | m s⁻¹ |
+| $\theta$ | Launch angle above horizontal | 水平面以上的发射角度 | ° or rad |
+| $g$ | Acceleration due to gravity (9.81 m s⁻²) | 重力加速度 (9.81 m s⁻²) | m s⁻² |
 
-### Alternative Form (using vertical component):
-
-$$ H = \frac{u_y^2}{2g} $$
-
-Where $u_y = u \sin \theta$ is the vertical component of initial velocity.
-
-### Time to Reach Maximum Height:
-
-$$ t_{\text{peak}} = \frac{u \sin \theta}{g} = \frac{u_y}{g} $$
-
-### Derivation / 推导:
-
-Starting from SUVAT equation $v^2 = u^2 + 2as$:
-
-1. Set $v = 0$ (vertical velocity at peak), $u = u_y = u \sin \theta$, $a = -g$, $s = H$
-2. $0 = (u \sin \theta)^2 + 2(-g)H$
-3. $0 = u^2 \sin^2 \theta - 2gH$
-4. $2gH = u^2 \sin^2 \theta$
-5. $H = \frac{u^2 \sin^2 \theta}{2g}$
-
-### Conditions / 适用条件:
-
-- **Launch and landing at same height**: This formula assumes the projectile is launched from and lands at the same vertical level.
-- **No air resistance**: The formula applies only in ideal conditions where air resistance is negligible.
-- **Constant gravity**: $g$ is assumed constant throughout the motion.
-- **Flat ground**: The ground is assumed horizontal.
-
-> 📷 **IMAGE PROMPT — MH01: Maximum Height Diagram**
->
-> **English Prompt:**
-> A clean textbook-style vector diagram showing a projectile trajectory with labeled maximum height. The trajectory is a parabolic arc starting from the origin (0,0) and ending on the x-axis. At the peak of the parabola, a dashed horizontal line extends to the y-axis, labeled "H = maximum height". The initial velocity vector is shown at the launch point, split into horizontal component (u_x, horizontal arrow) and vertical component (u_y, vertical arrow). The launch angle θ is marked between the initial velocity vector and the horizontal. A small annotation at the peak reads "v_y = 0". Use a white background, black lines, and blue/red color coding for components. Include a grid in light gray for reference.
->
-> **中文描述:**
-> 一个干净的教科书式矢量图，显示带有标注最大高度的抛射体轨迹。轨迹是从原点(0,0)开始并在x轴上结束的抛物线弧。在抛物线的顶点处，一条虚线水平线延伸到y轴，标注为"H = 最大高度"。在发射点处显示初速度矢量，分解为水平分量(u_x，水平箭头)和垂直分量(u_y，垂直箭头)。发射角θ标记在初速度矢量和水平线之间。顶点处有一个小标注"v_y = 0"。使用白色背景、黑色线条，分量用蓝/红色编码。包含浅灰色参考网格。
->
-> **Labels Required / 需要标注:**
-> * H (maximum height)
-> * u (initial velocity vector)
-> * u_x = u cos θ (horizontal component)
-> * u_y = u sin θ (vertical component)
-> * θ (launch angle)
-> * v_y = 0 (at peak)
->
-> **Style / 风格:** Textbook vector diagram
->
-> **Exam Relevance / 考试关联:**
-> This diagram is essential for understanding the geometry of projectile motion and is frequently used in exam questions to test students' ability to identify and calculate maximum height.
-
----
-
-## 5. Image Prompt / 图片提示
-
-> 📷 **IMAGE PROMPT — MH02: Comparison of Maximum Heights for Different Launch Angles**
->
-> **English Prompt:**
-> A multi-panel comparison diagram showing three projectile trajectories with the same initial speed (u = 20 m/s) but different launch angles: 30°, 45°, and 60°. All three parabolas are overlaid on the same coordinate axes. The 45° trajectory has the greatest range (as shown in [[Time of Flight and Range]]), while the 30° and 60° trajectories have the same maximum height (both reaching H = 5.1 m). The 60° trajectory reaches a higher peak (H = 15.3 m) than the 30° trajectory (H = 5.1 m). Each peak is marked with a dashed horizontal line to the y-axis, with the height value labeled. Use different colors for each trajectory (blue for 30°, green for 45°, red for 60°). Include a legend. The background should be white with light grid lines.
->
-> **中文描述:**
-> 一个多面板比较图，显示三个具有相同初速度(u = 20 m/s)但不同发射角度的抛射体轨迹：30°、45°和60°。所有三条抛物线都叠加在同一个坐标系上。45°轨迹具有最大射程（如[[飞行时间与射程]]所示），而30°和60°轨迹具有相同的最大高度（都达到H = 5.1 m）。60°轨迹达到更高的顶点(H = 15.3 m)比30°轨迹(H = 5.1 m)。每个顶点都用虚线水平线标记到y轴，并标注高度值。每条轨迹使用不同颜色（30°用蓝色，45°用绿色，60°用红色）。包含图例。背景为白色，带有浅色网格线。
->
-> **Labels Required / 需要标注:**
-> * θ = 30°, H = 5.1 m
-> * θ = 45°, H = 10.2 m
-> * θ = 60°, H = 15.3 m
-> * u = 20 m/s (same for all)
->
-> **Style / 风格:** Multi-panel comparison diagram
->
-> **Exam Relevance / 考试关联:**
-> This comparison helps students understand the relationship between launch angle and maximum height, a common exam topic. It also reinforces the concept that complementary angles (30° and 60°) produce different heights but the same range.
-
----
-
-## 6. Worked Example / 典型例题
-
-### Example 1: Basic Maximum Height Calculation
-
-### Question / 题目
-
+**Derivation / 推导:**
 **English:**
-A projectile is launched with an initial speed of 25 m/s at an angle of 40° above the horizontal. Calculate the maximum height reached by the projectile. (Take $g = 9.81 \text{ m/s}^2$)
+Starting from the SUVAT equation for vertical motion:
+$$v_y^2 = u_y^2 + 2a_y s_y$$
+
+At maximum height: $v_y = 0$, $u_y = u\sin\theta$, $a_y = -g$, $s_y = H$
+
+$$0 = (u\sin\theta)^2 + 2(-g)H$$
+$$0 = u^2\sin^2\theta - 2gH$$
+$$2gH = u^2\sin^2\theta$$
+$$H = \frac{u^2\sin^2\theta}{2g}$$
 
 **中文:**
-一个抛射体以25 m/s的初速度、与水平面成40°的角度发射。计算抛射体达到的最大高度。（取 $g = 9.81 \text{ m/s}^2$）
+从垂直运动的SUVAT方程开始：
+$$v_y^2 = u_y^2 + 2a_y s_y$$
+
+在最大高度处：$v_y = 0$，$u_y = u\sin\theta$，$a_y = -g$，$s_y = H$
+
+$$0 = (u\sin\theta)^2 + 2(-g)H$$
+$$0 = u^2\sin^2\theta - 2gH$$
+$$2gH = u^2\sin^2\theta$$
+$$H = \frac{u^2\sin^2\theta}{2g}$$
+
+**Conditions / 适用条件:**
+- **English:** Assumes no air resistance, uniform gravitational field ($g$ constant), launch and landing at same height, and Earth's surface
+- **中文:** 假设无空气阻力、均匀重力场（$g$恒定）、发射和着陆在同一高度、在地球表面
+
+**Limitations / 局限性:**
+- **English:** Does not account for air resistance, varying $g$ at high altitudes, or Earth's rotation. For very high velocities or altitudes, more complex models are needed.
+- **中文:** 未考虑空气阻力、高海拔处$g$的变化或地球自转。对于非常高的速度或高度，需要更复杂的模型。
+
+## 5.2 Alternative Form: Using Time to Maximum Height / 替代形式：使用到达最大高度的时间
+
+$$H = u_y t_{\text{max}} - \frac{1}{2}gt_{\text{max}}^2$$
+
+Where $t_{\text{max}} = \frac{u\sin\theta}{g}$ is the time to reach maximum height.
+
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| $t_{\text{max}}$ | Time to reach maximum height | 到达最大高度的时间 | s |
+| $u_y$ | Initial vertical velocity ($u\sin\theta$) | 初始垂直速度 ($u\sin\theta$) | m s⁻¹ |
+
+**Derivation / 推导:**
+**English:**
+Using $s = ut + \frac{1}{2}at^2$ for vertical motion:
+$$H = u_y t_{\text{max}} + \frac{1}{2}(-g)t_{\text{max}}^2$$
+$$H = u\sin\theta \cdot \frac{u\sin\theta}{g} - \frac{1}{2}g\left(\frac{u\sin\theta}{g}\right)^2$$
+$$H = \frac{u^2\sin^2\theta}{g} - \frac{u^2\sin^2\theta}{2g} = \frac{u^2\sin^2\theta}{2g}$$
+
+**中文:**
+使用垂直运动的$s = ut + \frac{1}{2}at^2$：
+$$H = u_y t_{\text{max}} + \frac{1}{2}(-g)t_{\text{max}}^2$$
+$$H = u\sin\theta \cdot \frac{u\sin\theta}{g} - \frac{1}{2}g\left(\frac{u\sin\theta}{g}\right)^2$$
+$$H = \frac{u^2\sin^2\theta}{g} - \frac{u^2\sin^2\theta}{2g} = \frac{u^2\sin^2\theta}{2g}$$
+
+---
+
+# 6. Graphs and Relationships / 图表与关系
+
+## 6.1 Vertical Displacement vs. Time / 垂直位移-时间图
+
+### Axes / 坐标轴
+- **x-axis:** Time / 时间 (t / s)
+- **y-axis:** Vertical displacement / 垂直位移 (s_y / m)
+
+### Shape / 形状
+**English:** A concave-down parabola (inverted U-shape). The curve starts at $s_y = 0$, rises to a maximum at $t = t_{\text{max}}$, then falls back to $s_y = 0$ at $t = T$ (time of flight).
+
+**中文:** 向下凹的抛物线（倒U形）。曲线从$s_y = 0$开始，在$t = t_{\text{max}}$处上升到最大值，然后在$t = T$（飞行时间）处回落到$s_y = 0$。
+
+### Gradient Meaning / 斜率含义
+**English:** The gradient at any point equals the vertical velocity $v_y$. At maximum height, gradient = 0 (horizontal tangent).
+
+**中文:** 任意点的斜率等于垂直速度$v_y$。在最大高度处，斜率 = 0（水平切线）。
+
+### Area Meaning / 面积含义
+**English:** No direct physical meaning for area under this graph.
+
+**中文:** 该图下方的面积没有直接的物理意义。
+
+### Exam Interpretation / 考试解读
+**English:** The peak of this parabola directly gives the maximum height. The time at which the peak occurs is $t_{\text{max}} = u\sin\theta/g$. Students should be able to read these values from a graph.
+
+**中文:** 该抛物线的顶点直接给出最大高度。顶点出现的时间为$t_{\text{max}} = u\sin\theta/g$。学生应能从图中读取这些值。
+
+## 6.2 Vertical Velocity vs. Time / 垂直速度-时间图
+
+### Axes / 坐标轴
+- **x-axis:** Time / 时间 (t / s)
+- **y-axis:** Vertical velocity / 垂直速度 (v_y / m s⁻¹)
+
+### Shape / 形状
+**English:** A straight line with negative gradient (since $a_y = -g$). Starts at $v_y = u\sin\theta$, crosses zero at $t = t_{\text{max}}$, and continues to negative values.
+
+**中文:** 一条负斜率的直线（因为$a_y = -g$）。从$v_y = u\sin\theta$开始，在$t = t_{\text{max}}$处穿过零，并继续变为负值。
+
+### Gradient Meaning / 斜率含义
+**English:** Gradient = acceleration = $-g$ (constant, negative).
+
+**中文:** 斜率 = 加速度 = $-g$（恒定，负值）。
+
+### Area Meaning / 面积含义
+**English:** Area under the graph = vertical displacement. The area from $t=0$ to $t=t_{\text{max}}$ equals the maximum height $H$.
+
+**中文:** 图下方面积 = 垂直位移。从$t=0$到$t=t_{\text{max}}$的面积等于最大高度$H$。
+
+### Exam Interpretation / 考试解读
+**English:** The zero crossing point on this graph directly gives $t_{\text{max}}$. The area of the triangle formed by the line and axes from $t=0$ to $t=t_{\text{max}}$ equals $H = \frac{1}{2} \times t_{\text{max}} \times u\sin\theta$.
+
+**中文:** 该图上的零点直接给出$t_{\text{max}}$。从$t=0$到$t=t_{\text{max}}$的直线与坐标轴形成的三角形面积等于$H = \frac{1}{2} \times t_{\text{max}} \times u\sin\theta$。
+
+```mermaid
+graph LR
+    subgraph "Vertical Velocity vs Time"
+        A["v_y = u sin θ"] --> B["v_y = 0 at t_max"]
+        B --> C["v_y = -u sin θ at t = T"]
+    end
+    subgraph "Key Points"
+        D["Gradient = -g"]
+        E["Area = Maximum Height H"]
+    end
+```
+
+> 📷 **IMAGE PROMPT — GRAPH-01: Vertical Velocity vs Time for Projectile**
+> A clear graph with time on x-axis (0 to T) and vertical velocity on y-axis (from +u sin θ to -u sin θ). Show a straight line with negative slope crossing zero at t_max. Shade the triangular area from t=0 to t=t_max and label it "H = maximum height". Include labeled axes with units.
+
+---
+
+# 7. Required Diagrams / 必备图表
+
+## 7.1 Projectile Trajectory with Maximum Height Labeled / 标注最大高度的抛体轨迹图
+
+### Description / 描述
+**English:** A complete projectile trajectory diagram showing the parabolic path from launch point to landing point, with the maximum height clearly indicated at the apex. The diagram should include velocity vectors at key points.
+
+**中文:** 完整的抛体轨迹图，显示从发射点到着陆点的抛物线路径，在顶点处清晰标注最大高度。该图应包括关键点的速度矢量。
+
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — DIAGRAM-02: Complete Projectile Trajectory with Maximum Height**
+> A detailed physics diagram showing a projectile launched from ground level at angle θ = 45° with initial velocity u. The parabolic trajectory is drawn as a smooth curve. At the launch point, show velocity vector u resolved into horizontal component u cos θ (rightward arrow) and vertical component u sin θ (upward arrow). At the apex, show a horizontal velocity vector u cos θ (same length as at launch) and label "v_y = 0" with a crossed-out vertical arrow. Draw a vertical dashed line from apex to ground and label it "H = maximum height". At the landing point, show velocity vector with same magnitude u but at angle -θ below horizontal. Include coordinate axes (x horizontal, y vertical) and label launch point (0,0) and landing point (R,0) where R is range. Use professional physics diagram style with clear labels and arrows.
+
+### Labels Required / 需要标注
+- **English:** Initial velocity $u$ at angle $\theta$, $u_x = u\cos\theta$, $u_y = u\sin\theta$, maximum height $H$, apex point, $v_y = 0$, $v_x = u\cos\theta$ (constant), launch point, landing point
+- **中文:** 初速度$u$与角度$\theta$，$u_x = u\cos\theta$，$u_y = u\sin\theta$，最大高度$H$，顶点，$v_y = 0$，$v_x = u\cos\theta$（恒定），发射点，着陆点
+
+### Exam Importance / 考试重要性
+**English:** This diagram is essential for understanding the relationship between launch parameters and maximum height. Students should be able to sketch this diagram from memory and label all key quantities. Exam questions often refer to this diagram when asking students to calculate maximum height.
+
+**中文:** 该图对于理解发射参数与最大高度之间的关系至关重要。学生应能凭记忆画出此图并标注所有关键量。考题在要求学生计算最大高度时经常参考此图。
+
+---
+
+# 8. Worked Examples / 典型例题
+
+## Example 1: Calculating Maximum Height from Initial Conditions / 例1：根据初始条件计算最大高度
+
+### Question / 题目
+**English:**
+A projectile is launched from ground level with an initial velocity of $20 \text{ m s}^{-1}$ at an angle of $30^\circ$ above the horizontal. Calculate the maximum height reached by the projectile. (Take $g = 9.81 \text{ m s}^{-2}$)
+
+**中文:**
+一个抛体从地面以$20 \text{ m s}^{-1}$的初速度、与水平方向成$30^\circ$的角度发射。计算抛体达到的最大高度。（取$g = 9.81 \text{ m s}^{-2}$）
 
 ### Solution / 解答
 
-**Step 1:** Identify the vertical component of initial velocity.
+**Step 1: Identify known quantities / 步骤1：确定已知量**
+$$u = 20 \text{ m s}^{-1}, \quad \theta = 30^\circ, \quad g = 9.81 \text{ m s}^{-2}$$
 
-$$ u_y = u \sin \theta = 25 \times \sin 40^\circ $$
+**Step 2: Find vertical component of initial velocity / 步骤2：求初速度的垂直分量**
+$$u_y = u\sin\theta = 20 \times \sin 30^\circ = 20 \times 0.5 = 10 \text{ m s}^{-1}$$
 
-$$ u_y = 25 \times 0.6428 = 16.07 \text{ m/s} $$
+**Step 3: Apply maximum height formula / 步骤3：应用最大高度公式**
+$$H = \frac{u^2\sin^2\theta}{2g} = \frac{(20)^2 \times (\sin 30^\circ)^2}{2 \times 9.81}$$
 
-**Step 2:** Use the maximum height formula.
+$$H = \frac{400 \times 0.25}{19.62} = \frac{100}{19.62}$$
 
-$$ H = \frac{u_y^2}{2g} = \frac{(16.07)^2}{2 \times 9.81} $$
-
-**Step 3:** Calculate.
-
-$$ H = \frac{258.2}{19.62} = 13.16 \text{ m} $$
+**Step 4: Calculate / 步骤4：计算**
+$$H = 5.10 \text{ m}$$
 
 ### Final Answer / 最终答案
-
-**Answer:** $H = 13.2 \text{ m}$ (3 s.f.) **答案:** $H = 13.2 \text{ m}$ (3位有效数字)
+**Answer:** $H = 5.10 \text{ m}$ | **答案：** $H = 5.10 \text{ m}$
 
 ### Quick Tip / 提示
+**English:** Always check that you're using $\sin\theta$, not $\cos\theta$. A common mistake is to use $u\cos\theta$ (horizontal component) instead of $u\sin\theta$ (vertical component).
 
-Always calculate $u_y = u \sin \theta$ first, then use $H = u_y^2/(2g)$. This reduces errors from forgetting to square the sine term.
+**中文:** 始终检查你使用的是$\sin\theta$而不是$\cos\theta$。常见的错误是使用$u\cos\theta$（水平分量）而不是$u\sin\theta$（垂直分量）。
 
 ---
 
-### Example 2: Finding Launch Speed from Maximum Height
+## Example 2: Finding Launch Angle for Given Maximum Height / 例2：求达到给定最大高度的发射角度
 
 ### Question / 题目
-
 **English:**
-A basketball player shoots a ball at an angle of 55° to the horizontal. The ball reaches a maximum height of 3.5 m above the release point. Calculate the initial speed of the ball. (Take $g = 9.81 \text{ m/s}^2$)
+A projectile is launched with an initial speed of $25 \text{ m s}^{-1}$. It reaches a maximum height of $15 \text{ m}$. Find the launch angle $\theta$ above the horizontal. (Take $g = 9.81 \text{ m s}^{-2}$)
 
 **中文:**
-一名篮球运动员以与水平面成55°的角度投篮。球在出手点上方达到3.5 m的最大高度。计算球的初速度。（取 $g = 9.81 \text{ m/s}^2$）
+一个抛体以$25 \text{ m s}^{-1}$的初速度发射，达到$15 \text{ m}$的最大高度。求水平面以上的发射角度$\theta$。（取$g = 9.81 \text{ m s}^{-2}$）
 
 ### Solution / 解答
 
-**Step 1:** Rearrange the maximum height formula to find $u$.
+**Step 1: Write the formula / 步骤1：写出公式**
+$$H = \frac{u^2\sin^2\theta}{2g}$$
 
-$$ H = \frac{u^2 \sin^2 \theta}{2g} $$
+**Step 2: Rearrange for $\sin^2\theta$ / 步骤2：整理求$\sin^2\theta$**
+$$\sin^2\theta = \frac{2gH}{u^2}$$
 
-$$ u^2 = \frac{2gH}{\sin^2 \theta} $$
+**Step 3: Substitute values / 步骤3：代入数值**
+$$\sin^2\theta = \frac{2 \times 9.81 \times 15}{(25)^2} = \frac{294.3}{625} = 0.4709$$
 
-**Step 2:** Substitute values.
+**Step 4: Solve for $\theta$ / 步骤4：求解$\theta$**
+$$\sin\theta = \sqrt{0.4709} = 0.6862$$
 
-$$ u^2 = \frac{2 \times 9.81 \times 3.5}{\sin^2 55^\circ} $$
-
-$$ \sin 55^\circ = 0.8192, \quad \sin^2 55^\circ = 0.6710 $$
-
-$$ u^2 = \frac{68.67}{0.6710} = 102.3 $$
-
-**Step 3:** Take square root.
-
-$$ u = \sqrt{102.3} = 10.11 \text{ m/s} $$
+$$\theta = \sin^{-1}(0.6862) = 43.3^\circ$$
 
 ### Final Answer / 最终答案
-
-**Answer:** $u = 10.1 \text{ m/s}$ (3 s.f.) **答案:** $u = 10.1 \text{ m/s}$ (3位有效数字)
+**Answer:** $\theta = 43.3^\circ$ | **答案：** $\theta = 43.3^\circ$
 
 ### Quick Tip / 提示
+**English:** When solving for $\theta$, remember that $\sin(180^\circ - \theta) = \sin\theta$, so there are two possible launch angles that give the same maximum height (e.g., $43.3^\circ$ and $136.7^\circ$, but $136.7^\circ$ is above the horizontal and not physically meaningful for a standard projectile problem).
 
-When rearranging for $u$, remember to take the square root at the end. A common mistake is to forget the square root and give $u^2$ as the answer.
-
----
-
-## 7. Flashcards / 闪卡
-
-**Flashcard 1:**
-- **Q (EN):** What is the condition for maximum height in projectile motion?
-- **Q (CN):** 抛射体运动中最大高度的条件是什么？
-- **A (EN):** The vertical component of velocity becomes zero ($v_y = 0$) at the peak of the trajectory.
-- **A (CN):** 在轨迹顶点处，速度的垂直分量变为零（$v_y = 0$）。
-
-**Flashcard 2:**
-- **Q (EN):** Write the formula for maximum height of a projectile launched with speed $u$ at angle $\theta$.
-- **Q (CN):** 写出以速度 $u$、角度 $\theta$ 发射的抛射体的最大高度公式。
-- **A (EN):** $H = \frac{u^2 \sin^2 \theta}{2g}$
-- **A (CN):** $H = \frac{u^2 \sin^2 \theta}{2g}$
-
-**Flashcard 3:**
-- **Q (EN):)** How does doubling the launch speed affect the maximum height?
-- **Q (CN):** 将发射速度加倍如何影响最大高度？
-- **A (EN):** Doubling the launch speed quadruples the maximum height, because $H \propto u^2$.
-- **A (CN):** 将发射速度加倍会使最大高度变为四倍，因为 $H \propto u^2$。
-
-**Flashcard 4:**
-- **Q (EN):** What launch angle gives the maximum possible height for a given initial speed?
-- **Q (CN):** 对于给定的初速度，什么发射角度能获得最大可能高度？
-- **A (EN):** $\theta = 90^\circ$ (straight upward), giving $H = u^2/(2g)$.
-- **A (CN):** $\theta = 90^\circ$（垂直向上），此时 $H = u^2/(2g)$。
-
-**Flashcard 5:**
-- **Q (EN):** What is the time taken to reach maximum height?
-- **Q (CN):** 到达最大高度所需的时间是多少？
-- **A (EN):** $t_{\text{peak}} = \frac{u \sin \theta}{g} = \frac{u_y}{g}$
-- **A (CN):** $t_{\text{peak}} = \frac{u \sin \theta}{g} = \frac{u_y}{g}$
+**中文:** 求解$\theta$时，记住$\sin(180^\circ - \theta) = \sin\theta$，因此有两个可能的发射角度给出相同的最大高度（例如$43.3^\circ$和$136.7^\circ$，但$136.7^\circ$在水平面以上，对于标准抛体问题没有物理意义）。
 
 ---
 
-## 8. Metadata / 元数据
+# 9. Past Paper Question Types / 历年真题题型
 
-```yaml
-title:
-  en: Maximum Height
-  cn: 最大高度
-parent_topic: Projectile Motion
-parent_hub: "[[Projectile Motion]]"
-subject: Physics
-syllabus:
-  - CAIE 9702
-  - Edexcel IAL
-level: AS
-node_type: leaf_concept
-difficulty: advanced
-related_leaf_nodes:
-  - "[[Horizontal and Vertical Components]]"
-  - "[[Time of Flight and Range]]"
-  - "[[Projectile Motion Graphs]]"
-prerequisites:
-  - "[[Scalars and Vectors]]"
-  - "[[Equations of Motion (SUVAT)]]"
-related_topics:
-  - "[[Newton's Laws of Motion]]"
-language: bilingual_en_cn
+| Question Type / 题型 | Frequency / 频率 | Difficulty / 难度 | Past Paper References / 真题索引 |
+|----------------------|------------------|------------------|-------------------------------|
+| Direct calculation of maximum height from $u$ and $\theta$ | High | Easy | 📝 *待填入* |
+| Finding launch angle given maximum height | Medium | Medium | 📝 *待填入* |
+| Maximum height from velocity-time graph | Low | Medium | 📝 *待填入* |
+| Comparing maximum heights for different launch angles | Medium | Medium | 📝 *待填入* |
+| Maximum height in multi-stage projectile problems | Low | Hard | 📝 *待填入* |
+
+**Common Command Words / 常见指令词:**
+- **English:** Calculate, Determine, Find, Show that, Derive, Sketch, Explain
+- **中文:** 计算，确定，求，证明，推导，画出，解释
+
+**English:** For "Show that" questions, you must derive the formula step by step, not just state the final answer. For "Sketch" questions involving maximum height, ensure your graph shows the correct parabolic shape with the peak at the correct time.
+
+**中文:** 对于"证明"类问题，你必须逐步推导公式，而不仅仅是给出最终答案。对于涉及最大高度的"画出"类问题，确保你的图显示正确的抛物线形状，顶点在正确的时间。
+
+---
+
+# 10. Practical Skills Connections / 实验技能链接
+
+**English:**
+Maximum height calculations connect to practical work in several ways:
+
+1. **Experimental Determination:** In the lab, maximum height can be measured using video analysis or photogates. Students launch projectiles (e.g., using a spring-loaded launcher) and record the trajectory with a high-speed camera. Frame-by-frame analysis allows measurement of the maximum height.
+
+2. **Uncertainty Analysis:** When calculating maximum height from measured $u$ and $\theta$, students must propagate uncertainties:
+   - $\Delta H = H \sqrt{\left(\frac{2\Delta u}{u}\right)^2 + \left(\frac{2\Delta(\sin\theta)}{\sin\theta}\right)^2}$
+   - The uncertainty in $\theta$ is particularly important because $\sin\theta$ changes rapidly for angles near $0^\circ$ and $90^\circ$
+
+3. **Graph Plotting:** Students may plot vertical displacement vs. time and use the peak to determine maximum height. The gradient of the $v_y$ vs. $t$ graph gives $g$, which can be compared to the accepted value.
+
+4. **Experimental Design:** To minimize uncertainty in maximum height measurements:
+   - Use a large launch angle (near $45^\circ$ gives good height without excessive range)
+   - Repeat measurements multiple times
+   - Use a calibrated scale in the video frame
+
+**中文:**
+最大高度计算通过以下几种方式与实验工作联系：
+
+1. **实验测定：** 在实验室中，可以使用视频分析或光电门测量最大高度。学生发射抛体（例如使用弹簧发射器）并用高速摄像机记录轨迹。逐帧分析可以测量最大高度。
+
+2. **不确定度分析：** 从测量的$u$和$\theta$计算最大高度时，学生必须传播不确定度：
+   - $\Delta H = H \sqrt{\left(\frac{2\Delta u}{u}\right)^2 + \left(\frac{2\Delta(\sin\theta)}{\sin\theta}\right)^2}$
+   - $\theta$的不确定度特别重要，因为对于接近$0^\circ$和$90^\circ$的角度，$\sin\theta$变化很快
+
+3. **图表绘制：** 学生可以绘制垂直位移与时间的关系图，并使用顶点确定最大高度。$v_y$与$t$关系图的斜率给出$g$，可以与公认值进行比较。
+
+4. **实验设计：** 为最小化最大高度测量的不确定度：
+   - 使用较大的发射角度（接近$45^\circ$可在不过度增加射程的情况下获得良好的高度）
+   - 多次重复测量
+   - 在视频帧中使用校准标尺
+
+---
+
+# 11. Concept Map / 概念图谱
+
+```mermaid
+graph TD
+    %% Maximum Height - Leaf Node Concept Map
+    H["Maximum Height / 最大高度"] --> C1["Condition: v_y = 0 / 条件：v_y = 0"]
+    H --> C2["Formula: H = u²sin²θ / 2g / 公式"]
+    H --> C3["Key Variables / 关键变量"]
+    
+    C1 --> SUVAT["Equations of Motion (SUVAT) / 运动学方程"]
+    C1 --> Vcomp["Vertical Component / 垂直分量"]
+    
+    C2 --> Uinit["Initial Velocity u / 初速度 u"]
+    C2 --> Theta["Launch Angle θ / 发射角度 θ"]
+    C2 --> Gconst["Gravity g / 重力 g"]
+    
+    C3 --> Uy["u_y = u sin θ / 垂直初速度"]
+    C3 --> Tmax["t_max = u sin θ / g / 到达最大高度时间"]
+    
+    H --> Graphs["Graphs / 图表"]
+    Graphs --> Syt["s_y vs t: Parabola peak / 抛物线顶点"]
+    Graphs --> Vyt["v_y vs t: Zero crossing / 零点穿越"]
+    
+    H --> Related["Related Concepts / 相关概念"]
+    Related --> TOF["Time of Flight / 飞行时间"]
+    Related --> Range["Range / 射程"]
+    Related --> Symmetry["Symmetrical Trajectory / 对称轨迹"]
+    
+    H --> Practical["Practical Skills / 实验技能"]
+    Practical --> Video["Video Analysis / 视频分析"]
+    Practical --> Uncertainty["Uncertainty Propagation / 不确定度传播"]
+    
+    style H fill:#f9f,stroke:#333,stroke-width:4px
+    style C1 fill:#bbf,stroke:#333
+    style C2 fill:#bbf,stroke:#333
+    style C3 fill:#bbf,stroke:#333
+```
+
+---
+
+# 12. Quick Revision Sheet / 速查表
+
+| Category / 类别 | Key Points / 要点 |
+|----------------|------------------|
+| **Definition / 定义** | Maximum height is the highest vertical position reached when $v_y = 0$ / 最大高度是当$v_y = 0$时达到的最高垂直位置 |
+| **Key Formula / 核心公式** | $$H = \frac{u^2\sin^2\theta}{2g}$$ |
+| **Key Condition / 关键条件** | At maximum height: $v_y = 0$, $v_x = u\cos\theta$ (constant) / 在最大高度处：$v_y = 0$，$v_x = u\cos\theta$（恒定） |
+| **Key Graph / 核心图表** | $s_y$ vs $t$: Parabola with peak at $H$; $v_y$ vs $t$: Straight line crossing zero at $t_{\text{max}}$ / $s_y$-$t$图：顶点在$H$的抛物线；$v_y$-$t$图：在$t_{\text{max}}$处穿过零的直线 |
+| **Common Mistake / 常见错误** | Using $u\cos\theta$ instead of $u\sin\theta$; forgetting $g$ is negative / 使用$u\cos\theta$而不是$u\sin\theta$；忘记$g$为负值 |
+| **Exam Tip / 考试提示** | Always start with $v_y = 0$; use vertical motion only; check sign convention / 始终从$v_y = 0$开始；仅使用垂直运动；检查符号约定 |
+| **Units / 单位** | Height in meters (m), velocity in m s⁻¹, angle in degrees or radians / 高度单位为米（m），速度单位为m s⁻¹，角度单位为度或弧度 |
+| **Key Relationship / 关键关系** | $H \propto u^2$ and $H \propto \sin^2\theta$ — doubling $u$ quadruples $H$ / $H \propto u^2$且$H \propto \sin^2\theta$ — $u$加倍使$H$变为四倍 |
+| **Maximum Condition / 最大条件** | For fixed $u$, maximum $H$ occurs when $\theta = 90^\circ$ (vertical launch) / 对于固定的$u$，当$\theta = 90^\circ$（垂直发射）时$H$最大 |
+| **Practical Connection / 实验联系** | Measure using video analysis; propagate uncertainties in $u$ and $\theta$ / 使用视频分析测量；传播$u$和$\theta$的不确定度 |

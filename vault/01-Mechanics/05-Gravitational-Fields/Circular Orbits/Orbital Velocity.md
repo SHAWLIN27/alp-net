@@ -1,344 +1,395 @@
-# Orbital Velocity / 轨道速度
-
----
-
 # 1. Overview / 概述
 
 **English:**
-Orbital velocity is the minimum speed required for a satellite or celestial body to maintain a stable circular orbit around a larger central mass. This sub-topic explores the derivation and application of the orbital velocity formula, linking [[Gravitational Force and Field]] with [[Centripetal Acceleration and Force]]. Understanding orbital velocity is essential for explaining satellite motion, planetary orbits, and the design of [[Geostationary Satellites]]. It also connects directly to [[Kepler's Third Law]] through the relationship between orbital radius and period.
+Orbital velocity is the minimum velocity required for an object to maintain a stable circular orbit around a larger celestial body under the influence of gravity. This sub-topic explores the derivation and application of the orbital velocity formula, which is fundamental to understanding satellite motion, planetary orbits, and space exploration. Orbital velocity connects [[Gravitational Force and Field]] with [[Centripetal Acceleration and Force]] to explain why objects in orbit do not fall to the ground but instead continuously "fall" around the Earth. Understanding orbital velocity is essential for calculating satellite altitudes, launch requirements, and orbital periods, and it serves as a prerequisite for studying [[Kepler's Third Law]] and [[Geostationary Satellites]].
 
 **中文:**
-轨道速度是卫星或天体围绕更大中心质量维持稳定圆形轨道所需的最小速度。本子知识点探讨轨道速度公式的推导和应用，将[[Gravitational Force and Field]]与[[Centripetal Acceleration and Force]]联系起来。理解轨道速度对于解释卫星运动、行星轨道以及[[Geostationary Satellites]]的设计至关重要。它还通过轨道半径与周期之间的关系直接连接到[[Kepler's Third Law]]。
+轨道速度是物体在引力作用下围绕较大天体维持稳定圆形轨道所需的最小速度。本子知识点探讨轨道速度公式的推导和应用，这对于理解卫星运动、行星轨道和太空探索至关重要。轨道速度将[[Gravitational Force and Field|引力场]]与[[Centripetal Acceleration and Force|向心加速度和力]]联系起来，解释了为什么轨道上的物体不会掉到地面，而是持续地"绕"地球下落。理解轨道速度对于计算卫星高度、发射要求和轨道周期至关重要，并且是学习[[Kepler's Third Law|开普勒第三定律]]和[[Geostationary Satellites|地球静止卫星]]的先决条件。
 
 ---
 
-# 2. Core Definition / 核心定义
+# 2. Syllabus Learning Objectives / 考纲学习目标
 
-| Term (EN/CN) | Definition (EN) | Definition (CN) |
-| ------------ | --------------- | --------------- |
-| **Orbital Velocity** / 轨道速度 | The constant tangential speed required for an object to maintain a stable circular orbit around a larger central mass, where the gravitational force provides the necessary centripetal force. | 物体围绕较大中心质量维持稳定圆形轨道所需的恒定切向速度，此时引力提供必要的向心力。 |
-| **Tangential Velocity** / 切向速度 | The instantaneous velocity of an orbiting object perpendicular to the radius vector from the center of mass. | 轨道物体垂直于中心质量半径矢量的瞬时速度。 |
-| **Gravitational Force** / 引力 | The attractive force between two masses, given by Newton's law of universal gravitation. | 两个质量之间的吸引力，由牛顿万有引力定律给出。 |
-| **Centripetal Force** / 向心力 | The net force directed toward the center of a circular path, required for circular motion. | 指向圆形路径中心的净力，是圆周运动所必需的。 |
-| **Orbital Radius** / 轨道半径 | The distance from the center of the central mass to the orbiting object. | 从中心质量中心到轨道物体的距离。 |
+| CAIE 9702 | Edexcel IAL |
+|-----------|-------------|
+| 15.3(a) Derive the relationship between orbital speed, radius, and mass of the central body | 6.11 Derive and use the equation for orbital speed: $v = \sqrt{\frac{GM}{r}}$ |
+| 15.3(b) Calculate orbital speed for satellites in circular orbits | 6.12 Calculate orbital speed for satellites and planets |
+| 15.3(c) Explain why orbital speed decreases with increasing orbital radius | 6.13 Explain the relationship between orbital radius and speed |
+| 15.3(d) Apply the orbital speed equation to problems involving satellites and planets | 6.14 Solve problems involving orbital motion |
+| 15.3(e) Distinguish between orbital speed and escape speed | 6.15 Compare orbital speed with escape speed |
+
+**Examiner Expectations / 考官期望:**
+- **English:** Students must be able to derive the orbital velocity formula from equating gravitational force to centripetal force. They should understand that orbital velocity depends only on the mass of the central body and the orbital radius, not on the mass of the orbiting object. Common exam questions involve calculating orbital speed for satellites at different altitudes and explaining why geostationary satellites must orbit at a specific radius.
+- **中文:** 学生必须能够通过将引力等于向心力来推导轨道速度公式。他们应该理解轨道速度仅取决于中心天体的质量和轨道半径，而不取决于轨道物体的质量。常见的考试问题涉及计算不同高度卫星的轨道速度，并解释为什么地球静止卫星必须在特定半径上运行。
 
 ---
 
-# 3. Key Concepts / 关键概念
+# 3. Core Definitions / 核心定义
 
+| Term (EN/CN) | Definition (EN) | Definition (CN) | Common Mistakes / 常见错误 |
+|--------------|-----------------|-----------------|---------------------------|
+| **Orbital Velocity** / 轨道速度 | The minimum velocity required for an object to maintain a stable circular orbit around a larger celestial body, where the gravitational force provides the necessary centripetal force. | 物体围绕较大天体维持稳定圆形轨道所需的最小速度，此时引力提供所需的向心力。 | Confusing orbital velocity with escape velocity — orbital velocity is for circular orbits, escape velocity is to leave the gravitational field entirely. |
+| **Centripetal Force** / 向心力 | The net force directed toward the center of a circular path that keeps an object in circular motion. | 指向圆形路径中心的合力，使物体保持圆周运动。 | Thinking centripetal force is a separate force — it is the net force from other forces (here, gravity). |
+| **Gravitational Force** / 引力 | The attractive force between two masses, described by Newton's law of universal gravitation: $F = \frac{GMm}{r^2}$. | 两个质量之间的吸引力，由牛顿万有引力定律描述。 | Forgetting that $r$ is the distance between centers of mass, not the surface-to-surface distance. |
+| **Orbital Radius** / 轨道半径 | The distance from the center of the central body to the center of the orbiting object. | 从中心天体中心到轨道物体中心的距离。 | Using altitude (height above surface) instead of orbital radius — must add the planet's radius. |
+| **Escape Velocity** / 逃逸速度 | The minimum velocity required for an object to escape the gravitational field of a celestial body without further propulsion. | 物体无需进一步推进即可逃离天体引力场所需的最小速度。 | Confusing with orbital velocity — escape velocity is $\sqrt{2}$ times orbital velocity at the same radius. |
+
+---
+
+# 4. Key Concepts Explained / 关键概念详解
+
+## 4.1 Derivation of Orbital Velocity / 轨道速度的推导
+
+### Explanation / 解释
 **English:**
+For an object in a stable circular orbit, the gravitational force from the central body provides exactly the centripetal force needed to keep the object moving in a circle. This is the fundamental insight: gravity IS the centripetal force. Starting from Newton's law of gravitation and the centripetal force equation:
 
-### Derivation of Orbital Velocity
+$$F_{\text{grav}} = \frac{GMm}{r^2} \quad \text{and} \quad F_{\text{cent}} = \frac{mv^2}{r}$$
 
-The key insight is that for a stable circular orbit, the **gravitational force** must exactly equal the **centripetal force** required to keep the satellite moving in a circle:
+Since $F_{\text{grav}} = F_{\text{cent}}$:
 
-$$ F_{\text{grav}} = F_{\text{centripetal}} $$
+$$\frac{GMm}{r^2} = \frac{mv^2}{r}$$
 
-$$ \frac{GMm}{r^2} = \frac{mv^2}{r} $$
+Cancelling $m$ (the mass of the orbiting object) and one factor of $r$:
 
-Where:
-- $G$ = universal gravitational constant
-- $M$ = mass of central body (e.g., Earth)
-- $m$ = mass of orbiting satellite (cancels out!)
-- $r$ = orbital radius (distance from center of central mass)
-- $v$ = orbital velocity
+$$\frac{GM}{r} = v^2$$
 
-Cancelling $m$ and simplifying:
+Therefore:
 
-$$ v = \sqrt{\frac{GM}{r}} $$
+$$v = \sqrt{\frac{GM}{r}}$$
 
-### Key Observations
-
-1. **Mass independence**: The orbital velocity does NOT depend on the mass of the satellite ($m$ cancels out). This is why a heavy satellite and a light satellite at the same orbital radius have the same speed.
-
-2. **Inverse square root relationship**: As orbital radius $r$ increases, orbital velocity $v$ decreases. Satellites closer to Earth move faster than those farther away.
-
-3. **Direction**: The velocity is always tangential to the orbit, perpendicular to the gravitational force.
-
-### Common Pitfalls
-
-- **Confusing orbital radius with altitude**: Remember $r = R_{\text{Earth}} + h$, where $h$ is altitude above Earth's surface.
-- **Forgetting units**: $G$ is $6.67 \times 10^{-11} \text{ N·m}^2/\text{kg}^2$, so all quantities must be in SI units.
-- **Assuming orbital velocity is constant for all orbits**: It varies with $r$ — lower orbits require higher speeds.
+This derivation shows a crucial result: **orbital velocity does not depend on the mass of the orbiting object**. A small satellite and a large space station at the same orbital radius have the same orbital speed.
 
 **中文:**
+对于稳定圆形轨道上的物体，来自中心天体的引力恰好提供了使物体保持圆周运动所需的向心力。这是基本的洞察：引力就是向心力。从牛顿万有引力定律和向心力方程开始：
 
-### 轨道速度的推导
+$$F_{\text{grav}} = \frac{GMm}{r^2} \quad \text{和} \quad F_{\text{cent}} = \frac{mv^2}{r}$$
 
-关键洞察是：对于稳定的圆形轨道，**引力**必须恰好等于保持卫星做圆周运动所需的**向心力**：
+由于 $F_{\text{grav}} = F_{\text{cent}}$：
 
-$$ F_{\text{grav}} = F_{\text{centripetal}} $$
+$$\frac{GMm}{r^2} = \frac{mv^2}{r}$$
 
-$$ \frac{GMm}{r^2} = \frac{mv^2}{r} $$
+消去 $m$（轨道物体的质量）和一个 $r$ 因子：
 
-其中：
-- $G$ = 万有引力常数
-- $M$ = 中心天体质量（如地球）
-- $m$ = 轨道卫星质量（会消去！）
-- $r$ = 轨道半径（距中心天体中心的距离）
-- $v$ = 轨道速度
+$$\frac{GM}{r} = v^2$$
 
-消去 $m$ 并简化：
+因此：
 
-$$ v = \sqrt{\frac{GM}{r}} $$
+$$v = \sqrt{\frac{GM}{r}}$$
 
-### 关键观察
+这个推导显示了一个关键结果：**轨道速度不依赖于轨道物体的质量**。在相同轨道半径上的小卫星和大空间站具有相同的轨道速度。
 
-1. **质量无关性**：轨道速度不依赖于卫星的质量（$m$ 消去）。这就是为什么在同一轨道半径上，重卫星和轻卫星具有相同的速度。
+### Physical Meaning / 物理意义
+**English:**
+The orbital velocity equation reveals that:
+1. **Inverse relationship with radius**: As orbital radius increases, orbital velocity decreases. This is why satellites in low Earth orbit (LEO) travel much faster than geostationary satellites.
+2. **Dependence on central mass**: The orbital velocity depends only on the mass of the central body. For a given radius, a more massive planet requires a higher orbital speed.
+3. **Mass independence**: The orbiting object's mass cancels out — a feather and a spacecraft at the same orbital radius would orbit at the same speed (in vacuum).
 
-2. **反平方根关系**：随着轨道半径 $r$ 增加，轨道速度 $v$ 减小。靠近地球的卫星比远离的卫星运动得更快。
+**中文:**
+轨道速度方程揭示了：
+1. **与半径的反比关系**：随着轨道半径增加，轨道速度减小。这就是为什么低地球轨道（LEO）的卫星比地球静止卫星运动得快得多。
+2. **对中心质量的依赖**：轨道速度仅取决于中心天体的质量。对于给定的半径，质量更大的行星需要更高的轨道速度。
+3. **质量独立性**：轨道物体的质量被消去——在相同轨道半径上的羽毛和航天器将以相同的速度运行（在真空中）。
 
-3. **方向**：速度始终与轨道相切，垂直于引力方向。
+### Common Misconceptions / 常见误区
+- **English:**
+  - ❌ "Orbital velocity is the speed needed to launch a satellite." — No, launch requires much higher speeds to overcome gravity during ascent.
+  - ❌ "A heavier satellite needs a higher orbital speed." — No, orbital speed is independent of satellite mass.
+  - ❌ "Orbital velocity is constant for all orbits." — No, it decreases as orbital radius increases.
+  - ❌ "The orbital radius is the altitude above the surface." — No, it's the distance from the center of the planet.
 
-### 常见错误
+- **中文:**
+  - ❌ "轨道速度是发射卫星所需的速度。" — 不对，发射需要更高的速度来克服上升过程中的引力。
+  - ❌ "较重的卫星需要更高的轨道速度。" — 不对，轨道速度与卫星质量无关。
+  - ❌ "所有轨道的轨道速度都是恒定的。" — 不对，它随着轨道半径的增加而减小。
+  - ❌ "轨道半径是地表以上的高度。" — 不对，它是从行星中心到卫星的距离。
 
-- **混淆轨道半径与高度**：记住 $r = R_{\text{地球}} + h$，其中 $h$ 是地球表面以上的高度。
-- **忘记单位**：$G$ 是 $6.67 \times 10^{-11} \text{ N·m}^2/\text{kg}^2$，因此所有量必须使用SI单位。
-- **假设所有轨道的轨道速度恒定**：它随 $r$ 变化——较低的轨道需要更高的速度。
+### Exam Tips / 考试提示
+- **English:**
+  - Always use the orbital radius (center-to-center distance), not altitude
+  - Remember: $r = R_{\text{planet}} + h$ where $h$ is altitude above surface
+  - Check units: $G = 6.67 \times 10^{-11} \text{ N m}^2 \text{ kg}^{-2}$, mass in kg, radius in m
+  - For Earth: $M_E = 5.97 \times 10^{24} \text{ kg}$, $R_E = 6.37 \times 10^6 \text{ m}$
+  - The derivation is a common exam question — practice writing it step by step
+
+- **中文:**
+  - 始终使用轨道半径（中心到中心的距离），而不是高度
+  - 记住：$r = R_{\text{行星}} + h$，其中 $h$ 是地表以上的高度
+  - 检查单位：$G = 6.67 \times 10^{-11} \text{ N·m}^2\text{·kg}^{-2}$，质量用kg，半径用m
+  - 对于地球：$M_E = 5.97 \times 10^{24} \text{ kg}$，$R_E = 6.37 \times 10^6 \text{ m}$
+  - 推导是常见的考试题目——练习逐步写出推导过程
+
+> 📷 **IMAGE PROMPT — DIAGRAM-01: Orbital Velocity Derivation Diagram**
+> A clear physics diagram showing a satellite of mass m orbiting a planet of mass M at orbital radius r. The satellite is shown with velocity vector v tangential to the circular orbit. Two force arrows are shown: the gravitational force F_grav pointing from satellite toward planet center, and the centripetal force F_cent also pointing toward planet center. A callout box shows the equation F_grav = F_cent leading to v = sqrt(GM/r). The diagram should clearly label: M (planet mass), m (satellite mass), r (orbital radius), v (orbital velocity), and the two force vectors. Style: clean educational physics diagram, white background, blue planet, grey satellite, red force arrows.
 
 ---
 
-# 4. Formulas / 公式
+# 5. Essential Equations / 核心公式
 
-## Primary Formula / 主要公式
+## 5.1 Orbital Velocity Equation / 轨道速度方程
 
-$$ v = \sqrt{\frac{GM}{r}} $$
+$$v = \sqrt{\frac{GM}{r}}$$
 
 | Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
-| ------------- | ------------ | ------------ | ----------- |
-| $v$ | Orbital velocity | 轨道速度 | m/s |
-| $G$ | Universal gravitational constant | 万有引力常数 | N·m²/kg² |
-| $M$ | Mass of central body | 中心天体质量 | kg |
-| $r$ | Orbital radius (center to center) | 轨道半径（中心到中心） | m |
+|--------------|-------------|-------------|------------|
+| $v$ | Orbital velocity | 轨道速度 | $\text{m s}^{-1}$ |
+| $G$ | Universal gravitational constant | 万有引力常数 | $\text{N m}^2 \text{ kg}^{-2}$ |
+| $M$ | Mass of central body | 中心天体质量 | $\text{kg}$ |
+| $r$ | Orbital radius (center-to-center) | 轨道半径（中心到中心） | $\text{m}$ |
 
-## Alternative Forms / 其他形式
+**Derivation / 推导:**
+As shown in Section 4.1, equating gravitational force to centripetal force:
+$$\frac{GMm}{r^2} = \frac{mv^2}{r} \Rightarrow v^2 = \frac{GM}{r} \Rightarrow v = \sqrt{\frac{GM}{r}}$$
 
-Using the relationship between orbital radius and period ($T$):
+**Conditions / 适用条件:**
+- **English:** The equation applies only to circular orbits. For elliptical orbits, the speed varies with position. The central body must be much more massive than the orbiting object ($M \gg m$). The derivation assumes no other forces (e.g., atmospheric drag, solar radiation pressure).
+- **中文:** 该方程仅适用于圆形轨道。对于椭圆轨道，速度随位置变化。中心天体必须比轨道物体质量大得多（$M \gg m$）。推导假设没有其他力（例如大气阻力、太阳辐射压力）。
 
-$$ v = \frac{2\pi r}{T} $$
+**Limitations / 局限性:**
+- **English:** Does not account for non-uniform gravitational fields, relativistic effects, or perturbations from other bodies. For very low orbits, atmospheric drag becomes significant and the orbit decays.
+- **中文:** 不考虑非均匀引力场、相对论效应或其他天体的扰动。对于非常低的轨道，大气阻力变得显著，轨道会衰减。
 
-Combining with the primary formula gives [[Kepler's Third Law]]:
+## 5.2 Relationship Between Orbital Velocity and Period / 轨道速度与周期的关系
 
-$$ T^2 = \frac{4\pi^2 r^3}{GM} $$
+$$v = \frac{2\pi r}{T}$$
 
-## Derivation / 推导
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| $T$ | Orbital period | 轨道周期 | $\text{s}$ |
+| $r$ | Orbital radius | 轨道半径 | $\text{m}$ |
 
-**Step 1:** Write Newton's law of gravitation:
-$$ F_{\text{grav}} = \frac{GMm}{r^2} $$
+**Derivation / 推导:**
+For a circular orbit, the distance traveled in one orbit is the circumference $2\pi r$, and the time taken is the period $T$. Speed = distance/time.
 
-**Step 2:** Write centripetal force for circular motion:
-$$ F_{\text{centripetal}} = \frac{mv^2}{r} $$
+**Conditions / 适用条件:**
+- **English:** Only for circular orbits. This is a kinematic relationship that applies to any circular motion, not just orbital motion.
+- **中文:** 仅适用于圆形轨道。这是一个运动学关系，适用于任何圆周运动，不仅限于轨道运动。
 
-**Step 3:** Set them equal for stable orbit:
-$$ \frac{GMm}{r^2} = \frac{mv^2}{r} $$
+> 📋 **CIE Only:** Students are expected to derive the orbital velocity equation from first principles in exam questions. The derivation is often worth 3-4 marks.
 
-**Step 4:** Cancel $m$ and rearrange:
-$$ \frac{GM}{r} = v^2 $$
-
-**Step 5:** Take square root:
-$$ v = \sqrt{\frac{GM}{r}} $$
-
-## Conditions / 适用条件
-
-- **Circular orbit only**: This formula applies to circular orbits, not elliptical ones.
-- **Central mass much larger**: $M \gg m$ (the central mass is much larger than the orbiting mass).
-- **No other forces**: Assumes only gravitational force acts (no atmospheric drag, no other gravitational influences).
-- **Newtonian gravity**: Valid for non-relativistic speeds ($v \ll c$).
-
-> 📷 **IMAGE PROMPT — OV01: Orbital Velocity Derivation Diagram**
->
-> **English Prompt:**
-> A clean textbook-style vector diagram showing a satellite in circular orbit around Earth. The diagram should include:
-> - Earth as a blue sphere at center, labeled "Earth (Mass M)"
-> - A satellite as a small grey sphere at distance r from Earth's center, labeled "Satellite (Mass m)"
-> - A dashed circular orbit path
-> - Two arrows from the satellite: one red arrow pointing toward Earth's center labeled "Gravitational Force F_grav = GMm/r²" and one blue arrow tangential to the orbit labeled "Orbital Velocity v"
-> - A radial line from Earth's center to the satellite labeled "Orbital Radius r"
-> - A small curved arrow showing direction of motion
-> - Clean white background, professional physics textbook style
->
-> **中文描述:**
-> 一个干净的教科书风格矢量图，显示卫星绕地球的圆形轨道。图中应包括：
-> - 地球作为蓝色球体在中心，标注"地球（质量M）"
-> - 卫星作为灰色小球体，距离地球中心r，标注"卫星（质量m）"
-> - 虚线圆形轨道路径
-> - 从卫星出发的两个箭头：一个红色箭头指向地球中心，标注"引力 F_grav = GMm/r²"；一个蓝色箭头与轨道相切，标注"轨道速度 v"
-> - 从地球中心到卫星的径向线，标注"轨道半径 r"
-> - 显示运动方向的小弧形箭头
-> - 干净的白色背景，专业物理教科书风格
->
-> **Labels Required / 需要标注:**
-> * Earth (Mass M) / 地球（质量M）
-> * Satellite (Mass m) / 卫星（质量m）
-> * Orbital Radius r / 轨道半径 r
-> * Gravitational Force F_grav / 引力 F_grav
-> * Orbital Velocity v / 轨道速度 v
->
-> **Style / 风格:** Textbook vector / 教科书矢量图
->
-> **Exam Relevance / 考试关联:**
-> This diagram is essential for understanding the force balance in orbital motion. Exam questions often ask students to draw and label this diagram, or to derive the orbital velocity formula from it.
+> 📋 **Edexcel Only:** Students should be able to combine $v = \sqrt{GM/r}$ with $v = 2\pi r/T$ to derive Kepler's Third Law: $T^2 = \frac{4\pi^2}{GM}r^3$.
 
 ---
 
-# 5. Image Prompt / 图片提示
+# 6. Graphs and Relationships / 图表与关系
 
-> 📷 **IMAGE PROMPT — OV02: Orbital Velocity vs Radius Graph**
->
-> **English Prompt:**
-> A graph showing orbital velocity v (y-axis) vs orbital radius r (x-axis) for satellites around Earth. The curve should show a steep decrease at small r (near Earth's surface) and flatten out at large r. Key points marked:
-> - Low Earth Orbit (LEO) at r ≈ 6600 km (altitude 200 km) with v ≈ 7800 m/s
-> - Geostationary orbit at r ≈ 42,000 km with v ≈ 3070 m/s
-> - The curve follows v ∝ 1/√r
-> - Axes labeled with units
-> - Professional graph style with gridlines
->
-> **中文描述:**
-> 显示绕地球卫星的轨道速度v（y轴）与轨道半径r（x轴）关系的图表。曲线应在小r（靠近地球表面）处急剧下降，在大r处趋于平缓。标记关键点：
-> - 近地轨道（LEO）在r ≈ 6600 km（高度200 km）处，v ≈ 7800 m/s
-> - 地球静止轨道在r ≈ 42,000 km处，v ≈ 3070 m/s
-> - 曲线遵循 v ∝ 1/√r
-> - 坐标轴标注单位
-> - 带网格线的专业图表风格
->
-> **Labels Required / 需要标注:**
-> * Low Earth Orbit (LEO) / 近地轨道
-> * Geostationary Orbit / 地球静止轨道
-> * v ∝ 1/√r
->
-> **Style / 风格:** Professional graph / 专业图表
->
-> **Exam Relevance / 考试关联:**
-> Understanding the inverse relationship between orbital velocity and radius is crucial for exam questions comparing different satellite orbits.
+## 6.1 Orbital Velocity vs Orbital Radius / 轨道速度与轨道半径的关系
+
+### Axes / 坐标轴
+- **X-axis:** Orbital radius $r$ (m) — 轨道半径 $r$ (m)
+- **Y-axis:** Orbital velocity $v$ (m s⁻¹) — 轨道速度 $v$ (m s⁻¹)
+
+### Shape / 形状
+- **English:** A decreasing curve that follows $v \propto 1/\sqrt{r}$. The curve is steep at small radii (near the planet's surface) and becomes increasingly shallow at large radii. As $r \to \infty$, $v \to 0$.
+- **中文:** 一条遵循 $v \propto 1/\sqrt{r}$ 的递减曲线。曲线在小半径（靠近行星表面）处陡峭，在大半径处变得越来越平缓。当 $r \to \infty$ 时，$v \to 0$。
+
+### Gradient Meaning / 斜率含义
+- **English:** The gradient $\frac{dv}{dr} = -\frac{1}{2}\sqrt{\frac{GM}{r^3}}$ is always negative, showing that orbital velocity decreases as radius increases. The magnitude of the gradient decreases with increasing radius.
+- **中文:** 梯度 $\frac{dv}{dr} = -\frac{1}{2}\sqrt{\frac{GM}{r^3}}$ 始终为负，表明轨道速度随半径增加而减小。梯度的大小随半径增加而减小。
+
+### Area Meaning / 面积含义
+- **English:** The area under the $v$ vs $r$ graph has no direct physical meaning for orbital motion.
+- **中文:** $v$ 与 $r$ 关系图下的面积对于轨道运动没有直接的物理意义。
+
+### Exam Interpretation / 考试解读
+- **English:** Students may be asked to sketch this graph for different planets. A more massive planet gives a higher curve at the same radius. The graph can be used to find the orbital speed at a given altitude, or to determine the orbital radius for a required speed (e.g., geostationary orbit).
+- **中文:** 学生可能会被要求为不同行星绘制此图。质量更大的行星在相同半径处给出更高的曲线。该图可用于找到给定高度的轨道速度，或确定所需速度的轨道半径（例如地球静止轨道）。
+
+> 📷 **IMAGE PROMPT — GRAPH-01: Orbital Velocity vs Radius**
+> A graph showing orbital velocity v (y-axis) against orbital radius r (x-axis). The curve follows v = sqrt(GM/r), starting high near the planet's surface (r = R_E) and decreasing asymptotically toward zero as r increases. Two curves should be shown: one for Earth (M_E) and one for a more massive planet (2M_E) to show that higher mass gives higher orbital speed at the same radius. Key points should be marked: LEO (low Earth orbit) at r ≈ 6600 km, and GEO (geostationary) at r ≈ 42000 km. Style: clean physics graph with labeled axes, grid lines, and legend.
 
 ---
 
-# 6. Worked Example / 典型例题
+# 7. Required Diagrams / 必备图表
 
-### Example 1: Low Earth Orbit Satellite
+## 7.1 Orbital Velocity Vector Diagram / 轨道速度矢量图
+
+### Description / 描述
+- **English:** A diagram showing a satellite in circular orbit around Earth, with the velocity vector always tangential to the orbit and the gravitational force vector always pointing toward Earth's center. This illustrates that the satellite is constantly "falling" toward Earth but moving sideways fast enough to keep missing it.
+- **中文:** 显示卫星绕地球圆形轨道的图，速度矢量始终与轨道相切，引力矢量始终指向地球中心。这说明了卫星不断"落向"地球，但横向移动速度足够快，以至于不断"错过"地球。
+
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — DIAGRAM-02: Orbital Velocity Vector Diagram**
+> A satellite in circular orbit around Earth. The satellite is shown at four positions (top, right, bottom, left) around the orbit. At each position, two arrows are drawn: a tangential velocity vector v (green arrow, pointing in direction of motion) and a radial gravitational force vector F_g (red arrow, pointing toward Earth's center). The velocity vectors are all the same length (constant speed). The force vectors are all the same length (constant force). A note at the bottom reads: "The satellite is constantly falling toward Earth, but moving sideways fast enough to keep missing it." Earth should be drawn as a blue sphere with continents visible. Style: educational physics diagram, clean, labeled, with arrows clearly distinguished by color.
+
+### Labels Required / 需要标注
+- **English:** Earth (center), satellite (orbiting object), orbital radius $r$, velocity vector $\vec{v}$ (tangential), gravitational force $\vec{F}_g$ (radial inward), orbit path (dashed circle)
+- **中文:** 地球（中心），卫星（轨道物体），轨道半径 $r$，速度矢量 $\vec{v}$（切向），引力 $\vec{F}_g$（径向向内），轨道路径（虚线圆）
+
+### Exam Importance / 考试重要性
+- **English:** This diagram is essential for understanding why satellites stay in orbit. It is often used in exam questions to test understanding of the relationship between velocity, force, and orbital motion. Students should be able to draw and label this diagram from memory.
+- **中文:** 这个图对于理解卫星为什么保持在轨道上至关重要。它经常在考试题中用于测试对速度、力和轨道运动之间关系的理解。学生应该能够凭记忆绘制并标注这个图。
+
+---
+
+# 8. Worked Examples / 典型例题
+
+## Example 1: Calculating Orbital Velocity / 例题1：计算轨道速度
 
 ### Question / 题目
 **English:**
-A satellite is placed in a circular orbit 300 km above the Earth's surface. Given:
-- Earth's mass $M_E = 5.97 \times 10^{24} \text{ kg}$
-- Earth's radius $R_E = 6.37 \times 10^6 \text{ m}$
-- $G = 6.67 \times 10^{-11} \text{ N·m}^2/\text{kg}^2$
+A weather satellite is placed in a circular orbit 300 km above the Earth's surface. Calculate the orbital velocity of the satellite.
 
-Calculate the orbital velocity of the satellite.
+Given: $M_E = 5.97 \times 10^{24} \text{ kg}$, $R_E = 6.37 \times 10^6 \text{ m}$, $G = 6.67 \times 10^{-11} \text{ N m}^2 \text{ kg}^{-2}$
 
 **中文:**
-一颗卫星被放置在距地球表面300 km的圆形轨道上。已知：
-- 地球质量 $M_E = 5.97 \times 10^{24} \text{ kg}$
-- 地球半径 $R_E = 6.37 \times 10^6 \text{ m}$
-- $G = 6.67 \times 10^{-11} \text{ N·m}^2/\text{kg}^2$
+一颗气象卫星被放置在距地球表面300公里的圆形轨道上。计算该卫星的轨道速度。
 
-计算卫星的轨道速度。
+已知：$M_E = 5.97 \times 10^{24} \text{ kg}$，$R_E = 6.37 \times 10^6 \text{ m}$，$G = 6.67 \times 10^{-11} \text{ N·m}^2\text{·kg}^{-2}$
 
 ### Solution / 解答
 
-**Step 1:** Calculate orbital radius $r$
-$$ r = R_E + h = 6.37 \times 10^6 + 300 \times 10^3 = 6.67 \times 10^6 \text{ m} $$
+**Step 1: Determine the orbital radius / 确定轨道半径**
+$$r = R_E + h = 6.37 \times 10^6 + 300 \times 10^3 = 6.67 \times 10^6 \text{ m}$$
 
-**Step 2:** Apply orbital velocity formula
-$$ v = \sqrt{\frac{GM}{r}} = \sqrt{\frac{(6.67 \times 10^{-11})(5.97 \times 10^{24})}{6.67 \times 10^6}} $$
+**Step 2: Apply the orbital velocity equation / 应用轨道速度方程**
+$$v = \sqrt{\frac{GM}{r}} = \sqrt{\frac{(6.67 \times 10^{-11})(5.97 \times 10^{24})}{6.67 \times 10^6}}$$
 
-**Step 3:** Simplify
-$$ v = \sqrt{\frac{3.98 \times 10^{14}}{6.67 \times 10^6}} = \sqrt{5.97 \times 10^7} $$
-
-**Step 4:** Calculate
-$$ v = 7.73 \times 10^3 \text{ m/s} = 7730 \text{ m/s} $$
+**Step 3: Calculate / 计算**
+$$v = \sqrt{\frac{3.98 \times 10^{14}}{6.67 \times 10^6}} = \sqrt{5.97 \times 10^7} = 7.73 \times 10^3 \text{ m s}^{-1}$$
 
 ### Final Answer / 最终答案
-**Answer:** $v = 7.73 \times 10^3 \text{ m/s}$ (approximately 7.73 km/s)
-**答案:** $v = 7.73 \times 10^3 \text{ m/s}$（约7.73 km/s）
+**Answer:** $v = 7.73 \times 10^3 \text{ m s}^{-1}$ (approximately 7.73 km/s) | **答案：** $v = 7.73 \times 10^3 \text{ m·s}^{-1}$（约7.73公里/秒）
 
 ### Quick Tip / 提示
-Always convert altitude to orbital radius by adding Earth's radius. A common mistake is using altitude directly as $r$ in the formula.
+- **English:** Always convert altitude to meters and add to Earth's radius. A common mistake is using altitude directly as the orbital radius.
+- **中文:** 始终将高度转换为米并加到地球半径上。一个常见错误是直接将高度用作轨道半径。
 
 ---
 
-### Example 2: Comparing Orbital Velocities
+## Example 2: Finding Orbital Radius from Velocity / 例题2：从速度求轨道半径
 
 ### Question / 题目
 **English:**
-Two satellites orbit Earth. Satellite A is at an orbital radius of $7.0 \times 10^6 \text{ m}$, and Satellite B is at an orbital radius of $4.2 \times 10^7 \text{ m}$. Calculate the ratio of their orbital velocities $v_A : v_B$.
+A satellite orbits Earth with an orbital speed of 3.07 km/s. Calculate the orbital radius and the altitude of the satellite above Earth's surface.
+
+Given: $M_E = 5.97 \times 10^{24} \text{ kg}$, $R_E = 6.37 \times 10^6 \text{ m}$, $G = 6.67 \times 10^{-11} \text{ N m}^2 \text{ kg}^{-2}$
 
 **中文:**
-两颗卫星绕地球运行。卫星A的轨道半径为 $7.0 \times 10^6 \text{ m}$，卫星B的轨道半径为 $4.2 \times 10^7 \text{ m}$。计算它们的轨道速度之比 $v_A : v_B$。
+一颗卫星以3.07公里/秒的轨道速度绕地球运行。计算轨道半径和卫星距地球表面的高度。
+
+已知：$M_E = 5.97 \times 10^{24} \text{ kg}$，$R_E = 6.37 \times 10^6 \text{ m}$，$G = 6.67 \times 10^{-11} \text{ N·m}^2\text{·kg}^{-2}$
 
 ### Solution / 解答
 
-**Step 1:** Write the ratio using the formula
-$$ \frac{v_A}{v_B} = \frac{\sqrt{GM/r_A}}{\sqrt{GM/r_B}} = \sqrt{\frac{r_B}{r_A}} $$
+**Step 1: Rearrange the orbital velocity equation / 重新排列轨道速度方程**
+$$v = \sqrt{\frac{GM}{r}} \Rightarrow v^2 = \frac{GM}{r} \Rightarrow r = \frac{GM}{v^2}$$
 
-**Step 2:** Substitute values
-$$ \frac{v_A}{v_B} = \sqrt{\frac{4.2 \times 10^7}{7.0 \times 10^6}} = \sqrt{6.0} = 2.45 $$
+**Step 2: Convert velocity to m/s / 将速度转换为米/秒**
+$$v = 3.07 \text{ km/s} = 3.07 \times 10^3 \text{ m/s}$$
 
-**Step 3:** Express as ratio
-$$ v_A : v_B = 2.45 : 1 $$
+**Step 3: Calculate orbital radius / 计算轨道半径**
+$$r = \frac{(6.67 \times 10^{-11})(5.97 \times 10^{24})}{(3.07 \times 10^3)^2} = \frac{3.98 \times 10^{14}}{9.42 \times 10^6} = 4.23 \times 10^7 \text{ m}$$
+
+**Step 4: Calculate altitude / 计算高度**
+$$h = r - R_E = 4.23 \times 10^7 - 6.37 \times 10^6 = 3.59 \times 10^7 \text{ m} = 3.59 \times 10^4 \text{ km}$$
 
 ### Final Answer / 最终答案
-**Answer:** $v_A : v_B = 2.45 : 1$ (Satellite A is about 2.45 times faster)
-**答案:** $v_A : v_B = 2.45 : 1$（卫星A的速度大约是卫星B的2.45倍）
+**Answer:** $r = 4.23 \times 10^7 \text{ m}$, $h = 3.59 \times 10^7 \text{ m}$ (approximately 35,900 km) | **答案：** $r = 4.23 \times 10^7 \text{ m}$，$h = 3.59 \times 10^7 \text{ m}$（约35,900公里）
 
 ### Quick Tip / 提示
-When comparing orbital velocities, the ratio depends only on the square root of the inverse ratio of radii. The mass of Earth cancels out, so you don't need $G$ or $M$ for ratio problems.
+- **English:** This is the orbital radius for a geostationary satellite! The calculated altitude of ~36,000 km matches the known geostationary orbit altitude. Remember this value for exam questions.
+- **中文:** 这就是地球静止卫星的轨道半径！计算出的约36,000公里高度与已知的地球静止轨道高度相符。记住这个值用于考试题。
 
 ---
 
-# 7. Flashcards / 闪卡
+# 9. Past Paper Question Types / 历年真题题型
 
-**Flashcard 1:**
-Q (EN): What is the formula for orbital velocity of a satellite in circular orbit?
-Q (CN): 圆形轨道上卫星的轨道速度公式是什么？
-A (EN): $v = \sqrt{\frac{GM}{r}}$, where $G$ is the gravitational constant, $M$ is the mass of the central body, and $r$ is the orbital radius.
-A (CN): $v = \sqrt{\frac{GM}{r}}$，其中 $G$ 是万有引力常数，$M$ 是中心天体的质量，$r$ 是轨道半径。
+| Question Type / 题型 | Frequency / 频率 | Difficulty / 难度 | Past Paper References / 真题索引 |
+|----------------------|------------------|------------------|-------------------------------|
+| Derivation of orbital velocity equation | ★★★★★ Very High | ★★★ Medium | 📝 *待填入* |
+| Calculation of orbital speed from given data | ★★★★★ Very High | ★★ Easy | 📝 *待填入* |
+| Comparison of orbital speeds at different radii | ★★★★ High | ★★★ Medium | 📝 *待填入* |
+| Finding orbital radius from speed or period | ★★★★ High | ★★★★ Hard | 📝 *待填入* |
+| Orbital velocity for different planets | ★★★ Medium | ★★★ Medium | 📝 *待填入* |
+| Distinguishing orbital vs escape velocity | ★★ Low | ★★ Easy | 📝 *待填入* |
 
-**Flashcard 2:**
-Q (EN): Does the orbital velocity depend on the mass of the satellite? Why?
-Q (CN): 轨道速度是否依赖于卫星的质量？为什么？
-A (EN): No. The satellite's mass cancels out when equating gravitational force and centripetal force, so orbital velocity depends only on the central mass and orbital radius.
-A (CN): 不依赖。当引力等于向心力时，卫星的质量被消去，因此轨道速度只取决于中心天体的质量和轨道半径。
-
-**Flashcard 3:**
-Q (EN): How does orbital velocity change as orbital radius increases?
-Q (CN): 随着轨道半径增加，轨道速度如何变化？
-A (EN): Orbital velocity decreases as orbital radius increases, following $v \propto 1/\sqrt{r}$.
-A (CN): 轨道速度随着轨道半径增加而减小，遵循 $v \propto 1/\sqrt{r}$。
-
-**Flashcard 4:**
-Q (EN): What is the difference between orbital radius and altitude?
-Q (CN): 轨道半径和高度有什么区别？
-A (EN): Orbital radius $r$ is measured from the center of the central mass, while altitude $h$ is measured from the surface. They are related by $r = R_{\text{central}} + h$.
-A (CN): 轨道半径 $r$ 是从中心天体的中心测量的，而高度 $h$ 是从表面测量的。它们的关系是 $r = R_{\text{中心}} + h$。
-
-**Flashcard 5:**
-Q (EN): What condition must be satisfied for a stable circular orbit?
-Q (CN): 稳定圆形轨道必须满足什么条件？
-A (EN): The gravitational force must exactly equal the centripetal force required for circular motion: $\frac{GMm}{r^2} = \frac{mv^2}{r}$.
-A (CN): 引力必须恰好等于圆周运动所需的向心力：$\frac{GMm}{r^2} = \frac{mv^2}{r}$。
+**Common Command Words / 常见指令词:**
+- **English:** Derive, Calculate, Determine, Show that, Explain why, Compare, Sketch
+- **中文:** 推导，计算，确定，证明，解释为什么，比较，绘制草图
 
 ---
 
-# 8. Metadata / 元数据
+# 10. Practical Skills Connections / 实验技能链接
 
-```yaml
-title:
-  en: Orbital Velocity
-  cn: 轨道速度
-parent_topic: Circular Orbits
-parent_hub: "[[Circular Orbits]]"
-subject: Physics
-syllabus:
-  - CAIE 9702
-  - Edexcel IAL
-level: A2
-node_type: leaf_concept
-difficulty: advanced
-related_leaf_nodes:
-  - "[[Kepler's Third Law]]"
-  - "[[Geostationary Satellites]]"
-  - "[[Gravitational Force and Field]]"
-  - "[[Centripetal Acceleration and Force]]"
-  - "[[Gravitational Potential]]"
-language: bilingual_en_cn
+**English:**
+While orbital velocity cannot be directly measured in a school laboratory, the concept connects to several practical skills:
+
+1. **Data Analysis**: Students can analyze orbital data from satellites (e.g., ISS altitude and speed) to verify the $v \propto 1/\sqrt{r}$ relationship.
+2. **Graph Plotting**: Plotting $v^2$ against $1/r$ should give a straight line through the origin with gradient $GM$, allowing determination of the central body's mass.
+3. **Uncertainty Analysis**: When calculating orbital velocity from given data, students should consider uncertainties in $G$, $M$, and $r$, and propagate them to find the uncertainty in $v$.
+4. **Simulation Software**: Many schools use orbital simulation software (e.g., PhET, Stellarium) to visualize how changing orbital radius affects speed.
+5. **Experimental Analogy**: A simple experiment using a mass on a string swung in a circle can demonstrate the relationship between speed and radius for a given centripetal force (tension in string ≈ gravitational force).
+
+**中文:**
+虽然轨道速度无法在学校实验室直接测量，但该概念与多项实验技能相关：
+
+1. **数据分析**：学生可以分析卫星的轨道数据（例如国际空间站的高度和速度）来验证 $v \propto 1/\sqrt{r}$ 关系。
+2. **图表绘制**：绘制 $v^2$ 与 $1/r$ 的关系图应得到一条通过原点的直线，斜率为 $GM$，从而可以确定中心天体的质量。
+3. **不确定度分析**：在根据给定数据计算轨道速度时，学生应考虑 $G$、$M$ 和 $r$ 的不确定度，并传播它们以找到 $v$ 的不确定度。
+4. **模拟软件**：许多学校使用轨道模拟软件（例如PhET、Stellarium）来可视化改变轨道半径如何影响速度。
+5. **实验类比**：使用在圆周上摆动的绳子上的质量的简单实验可以演示给定向心力（绳子张力≈引力）下速度与半径之间的关系。
+
+---
+
+# 11. Concept Map / 概念图谱
+
+```mermaid
+graph TD
+    %% Orbital Velocity Concept Map
+    OV[Orbital Velocity<br/>轨道速度] --> DER[Derivation<br/>推导]
+    OV --> APP[Applications<br/>应用]
+    OV --> REL[Relationships<br/>关系]
+    
+    DER --> GF[Gravitational Force<br/>引力 F = GMm/r²]
+    DER --> CF[Centripetal Force<br/>向心力 F = mv²/r]
+    DER --> EQ[Equate Forces<br/>力相等]
+    DER --> FORM[Formula<br/>v = √(GM/r)]
+    
+    APP --> SAT[Satellite Orbits<br/>卫星轨道]
+    APP --> GEO[Geostationary<br/>地球静止卫星]
+    APP --> PLAN[Planetary Motion<br/>行星运动]
+    
+    REL --> RAD[Inverse with r<br/>与半径成反比]
+    REL --> MASS[Independent of m<br/>与质量无关]
+    REL --> CENT[Depends on M<br/>取决于中心质量]
+    
+    FORM --> PERIOD[Orbital Period<br/>轨道周期 T = 2πr/v]
+    FORM --> KEPLER[Kepler's Third Law<br/>开普勒第三定律]
+    FORM --> ESCAPE[Escape Velocity<br/>逃逸速度 v_esc = √2 × v]
+    
+    %% Links to other topics
+    SAT --> GEO
+    GEO --> [[Geostationary Satellites]]
+    KEPLER --> [[Kepler's Third Law]]
+    GF --> [[Gravitational Force and Field]]
+    CF --> [[Centripetal Acceleration and Force]]
+    ESCAPE --> [[Gravitational Potential]]
+    
+    %% Styling
+    classDef main fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    classDef sub fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px
+    classDef link fill:#fff9c4,stroke:#f57f17,stroke-width:1px
+    
+    class OV main
+    class DER,APP,REL sub
+    class GF,CF,EQ,FORM,SAT,GEO,PLAN,RAD,MASS,CENT,PERIOD,KEPLER,ESCAPE link
+```
+
+---
+
+# 12. Quick Revision Sheet / 速查表
+
+| Category / 类别 | Key Points / 要点 |
+|----------------|------------------|
+| **Definition / 定义** | Minimum velocity for stable circular orbit; gravity provides centripetal force / 稳定圆形轨道的最小速度；引力提供向心力 |
+| **Key Formula / 核心公式** | $v = \sqrt{\frac{GM}{r}}$ — orbital velocity depends only on central mass M and orbital radius r / 轨道速度仅取决于中心质量M和轨道半径r |
+| **Key Relationship / 关键关系** | $v \propto \frac{1}{\sqrt{r}}$ — as orbital radius increases, speed decreases / 轨道半径增加，速度减小 |
+| **Mass Independence / 质量独立性** | Orbital velocity is independent of satellite mass — all objects at same r have same v / 轨道速度与卫星质量无关——相同r处的所有物体具有相同的v |
+| **Orbital Radius / 轨道半径** | $r = R_{\text{planet}} + h$ (center-to-center distance, not altitude) / 中心到中心的距离，不是高度 |
+| **Earth Values / 地球数值** | Surface orbit: ~7.9 km/s; LEO (300 km): ~7.7 km/s; GEO (36,000 km): ~3.1 km/s / 表面轨道：~7.9公里/秒；低地球轨道（300公里）：~7.7公里/秒；地球静止轨道（36,000公里）：~3.1公里/秒 |
+| **Derivation Steps / 推导步骤** | 1. $F_{\text{grav}} = \frac{GMm}{r^2}$ 2. $F_{\text{cent}} = \frac{mv^2}{r}$ 3. Equate: $\frac{GMm}{r^2} = \frac{mv^2}{r}$ 4. Cancel m and one r: $\frac{GM}{r} = v^2$ 5. $v = \sqrt{\frac{GM}{r}}$ |
+| **Common Mistake / 常见错误** | Using altitude instead of orbital radius; forgetting to convert km to m / 使用高度而不是轨道半径；忘记将公里转换为米 |
+| **Exam Tip / 考试提示** | Always check: is r the orbital radius (center-to-center) or altitude? If altitude, add planet's radius / 始终检查：r是轨道半径（中心到中心）还是高度？如果是高度，加上行星半径 |
+| **Related Topics / 相关主题** | [[Kepler's Third Law]], [[Geostationary Satellites]], [[Gravitational Force and Field]], [[Centripetal Acceleration and Force]], [[Gravitational Potential]] |

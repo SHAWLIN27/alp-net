@@ -1,661 +1,1398 @@
 # 1. Overview / 概述
 
-**English:** Gravitational potential is a scalar quantity that describes the gravitational field at a point in terms of the work done per unit mass to bring a test mass from infinity. This topic extends the concept of gravitational potential energy from uniform fields (near Earth's surface) to radial fields (around planets and stars). It is fundamental to understanding satellite motion, escape velocity, orbital mechanics, and the energy considerations in astrophysics. For both CAIE 9702 and Edexcel IAL, this is a high-difficulty A2 topic that frequently appears in multiple-choice, structured questions, and data analysis. Mastery of gravitational potential is essential for linking [[Gravitational Force and Field]] with [[Kinetic Energy and Potential Energy]] and for understanding [[Circular Orbits]].
+**English:**
+Gravitational Potential is a scalar quantity that describes the gravitational field at a point in terms of the work done per unit mass to bring a test mass from infinity to that point. This topic bridges the concepts of [[Gravitational Force and Field]] with [[Kinetic Energy and Potential Energy]], providing a unified framework for understanding gravitational interactions in radial fields.
 
-**中文:** 引力势是一个标量，描述了在引力场中某一点将单位质量的测试质量从无穷远处移动到此点所做的功。本主题将引力势能的概念从均匀场（地球表面附近）扩展到径向场（行星和恒星周围）。它是理解卫星运动、逃逸速度、轨道力学以及天体物理学中能量考虑的基础。对于CAIE 9702和Edexcel IAL，这是一个高难度的A2主题，经常出现在选择题、结构化问题和数据分析中。掌握引力势对于连接[[Gravitational Force and Field]]与[[Kinetic Energy and Potential Energy]]以及理解[[Circular Orbits]]至关重要。
+In A-Level Physics, gravitational potential is fundamental for:
+- Understanding how objects move in gravitational fields (e.g., satellites, planets)
+- Calculating [[Escape Velocity]] from celestial bodies
+- Analyzing [[Circular Orbits]] and orbital mechanics
+- Explaining phenomena like black holes and gravitational collapse
 
-> 📷 **IMAGE PROMPT — GP-OVERVIEW: Gravitational Potential Overview Diagram**
-> A conceptual diagram showing a planet at center with concentric circles representing equipotential surfaces. Labels: "V = -GM/r" at each surface, arrows showing direction of decreasing potential (toward planet), and a test mass moving from infinity. Style: clean vector, blue/black on white. Exam importance: HIGH — helps visualize scalar field.
+Real-world applications include:
+- Satellite orbit design and station-keeping
+- Space mission planning (escape velocities, transfer orbits)
+- Understanding tidal forces and gravitational lensing
+- Gravitational wave detection
+
+For Cambridge 9702 (Topic 15.2 a-f) and Edexcel IAL (Unit 4: 6.6-6.10), this topic is examined through:
+- Definitions and calculations of gravitational potential (V)
+- Gravitational potential energy (Ep) in radial fields
+- Potential gradients and field strength relationships
+- Escape velocity derivations and applications
+- Graphical analysis of potential against distance
+
+**中文：**
+引力势是一个标量，描述在引力场中某一点将单位质量的测试质量从无穷远处移动到该点所做的功。这个主题将[[引力力与场]]的概念与[[动能与势能]]联系起来，为理解径向场中的引力相互作用提供了统一框架。
+
+在A-Level物理中，引力势对于以下方面至关重要：
+- 理解物体在引力场中的运动（如卫星、行星）
+- 计算天体的[[逃逸速度]]
+- 分析[[圆形轨道]]和轨道力学
+- 解释黑洞和引力坍缩等现象
+
+实际应用包括：
+- 卫星轨道设计与保持
+- 太空任务规划（逃逸速度、转移轨道）
+- 理解潮汐力和引力透镜效应
+- 引力波探测
+
+对于剑桥9702（主题15.2 a-f）和爱德思IAL（单元4：6.6-6.10），该主题通过以下方式考查：
+- 引力势（V）的定义和计算
+- 径向场中的引力势能（Ep）
+- 势梯度和场强关系
+- 逃逸速度推导与应用
+- 势与距离的图形分析
+
+---
 
 # 2. Syllabus Learning Objectives / 考纲学习目标
 
 | CAIE 9702 (15.2 a-f) | Edexcel IAL (WPH14 U4: 6.6-6.10) |
-|---|---|
-| Define gravitational potential at a point as the work done per unit mass in bringing a test mass from infinity to that point | Understand gravitational potential as work done per unit mass from infinity |
-| Use the equation $V = -\frac{GM}{r}$ for gravitational potential in a radial field | Use $V = -\frac{GM}{r}$ for radial fields |
-| Understand that gravitational potential is a scalar quantity | Understand scalar nature of potential |
-| Calculate gravitational potential energy: $E_p = mV = -\frac{GMm}{r}$ | Calculate gravitational potential energy in radial fields |
-| Derive and use escape velocity: $v_{esc} = \sqrt{\frac{2GM}{r}}$ | Derive and use escape velocity |
-| Understand potential gradient: $g = -\frac{dV}{dr}$ | Understand relationship between field strength and potential gradient |
+|----------------------|----------------------------------|
+| (a) Define gravitational potential at a point as the work done per unit mass in bringing a small test mass from infinity to that point | 6.6 Understand the concept of gravitational potential and gravitational potential energy |
+| (b) State and use the equation V = -GM/r for gravitational potential in a radial field | 6.7 Use the equation V = -GM/r for gravitational potential |
+| (c) Calculate gravitational potential energy using Ep = mV = -GMm/r | 6.8 Calculate gravitational potential energy using Ep = -GMm/r |
+| (d) Understand and use the relationship g = -dV/dr (potential gradient) | 6.9 Understand the relationship between gravitational field strength and potential gradient: g = -ΔV/Δr |
+| (e) Derive and use escape velocity: v_esc = √(2GM/r) | 6.10 Derive and use escape velocity: v_esc = √(2GM/R) |
+| (f) Understand that gravitational potential is always negative and approaches zero at infinity | (Implicit in 6.6-6.10) |
 
 **Examiner Expectations / 考官期望:**
-- **English:** Candidates must use correct sign conventions (negative potential). The concept of "zero potential at infinity" is critical. Derivation of escape velocity using energy conservation is frequently tested. Potential gradient questions often appear in data analysis.
-- **中文:** 考生必须使用正确的符号约定（负势）。"无穷远处势为零"的概念至关重要。使用能量守恒推导逃逸速度经常被测试。势梯度问题常出现在数据分析中。
 
-> 📋 **CIE Only:** CAIE 9702 specifically requires understanding of gravitational potential in the context of uniform fields (near Earth) vs radial fields. Paper 4 structured questions often ask for derivation of escape velocity.
-> 
-> 📋 **Edexcel Only:** Edexcel IAL Unit 4 often includes gravitational potential in multi-step calculations involving orbital energy changes. The relationship $g = -\frac{dV}{dr}$ is explicitly tested in data analysis questions.
+**English:**
+- Candidates must be able to define gravitational potential precisely, including the phrase "work done per unit mass" and "from infinity"
+- The negative sign in V = -GM/r must be explained physically (potential well concept)
+- Graphical interpretation of V vs r graphs is essential
+- Derivation of escape velocity using energy conservation is frequently tested
+- The relationship g = -dV/dr must be understood both mathematically and conceptually
+- Candidates should be able to calculate gravitational potential energy for systems of multiple masses
+
+**中文：**
+- 考生必须能够精确定义引力势，包括"单位质量所做的功"和"从无穷远处"等短语
+- 必须从物理上解释V = -GM/r中的负号（势阱概念）
+- V vs r图的图形解释至关重要
+- 利用能量守恒推导逃逸速度是常见考点
+- 必须从数学和概念上理解g = -dV/dr的关系
+- 考生应能够计算多质量系统的引力势能
+
+> 📋 **CIE Only:** CIE specifically requires understanding that gravitational potential is always negative and approaches zero at infinity. The derivation of escape velocity using energy conservation is explicitly required.
+>
+> 📋 **Edexcel Only:** Edexcel emphasizes the practical application of escape velocity to real celestial bodies and may ask for calculations involving planetary data. The relationship g = -ΔV/Δr is treated more numerically.
+
+---
 
 # 3. Core Definitions / 核心定义
 
 | Term (EN/CN) | Definition (EN) | Definition (CN) | Common Mistakes / 常见错误 |
-|---|---|---|---|
-| [[Gravitational Potential (V)]] / 引力势 | The work done per unit mass in bringing a small test mass from infinity to that point in the field | 将单位质量的测试质量从无穷远处移动到场中该点所做的功 | Forgetting negative sign; confusing with potential energy |
-| [[Gravitational Potential Energy in a Radial Field]] / 径向场中的引力势能 | The energy stored in a system of two masses separated by distance r in a gravitational field: $E_p = -\frac{GMm}{r}$ | 在引力场中相距r的两个质量系统储存的能量 | Using $mgh$ instead of $-\frac{GMm}{r}$ for radial fields |
-| [[Escape Velocity]] / 逃逸速度 | The minimum speed required for an object to escape a gravitational field from a given starting point, with no further propulsion | 物体从给定起点逃离引力场所需的最小速度，无需进一步推进 | Thinking escape velocity depends on mass of escaping object |
-| [[Potential Gradients]] / 势梯度 | The rate of change of gravitational potential with distance: $g = -\frac{dV}{dr}$ | 引力势随距离的变化率 | Missing negative sign; confusing with field strength direction |
-| Equipotential Surface / 等势面 | A surface where gravitational potential is constant; no work is done moving along it | 引力势恒定的表面；沿其移动不做功 | Thinking field lines are perpendicular to equipotentials (they ARE) |
-| Infinity / 无穷远 | A point so far from all masses that gravitational potential is defined as zero | 距离所有质量足够远，引力势定义为零的点 | Not understanding this is a reference point, not a physical location |
+|--------------|-----------------|-----------------|---------------------------|
+| **Gravitational Potential (V)** / 引力势 | The work done per unit mass in bringing a small test mass from infinity to that point in the gravitational field | 将单位质量的测试质量从无穷远处移动到引力场中某一点所做的功 | Confusing with gravitational potential energy; forgetting the negative sign; not specifying "from infinity" |
+| **Gravitational Potential Energy (Ep)** / 引力势能 | The energy stored in a system of two masses due to their gravitational attraction, given by Ep = -GMm/r | 由于引力吸引而储存在两个质量系统中的能量，由Ep = -GMm/r给出 | Thinking Ep is positive; confusing with mgh (which is only valid near Earth's surface); not recognizing it's a system property |
+| **Escape Velocity (v_esc)** / 逃逸速度 | The minimum velocity required for an object to escape from a gravitational field without further propulsion | 物体无需进一步推进即可逃离引力场所需的最小速度 | Thinking it depends on the mass of the escaping object; confusing with orbital velocity; forgetting it's a scalar speed |
+| **Potential Gradient (dV/dr)** / 势梯度 | The rate of change of gravitational potential with respect to distance, related to gravitational field strength by g = -dV/dr | 引力势随距离的变化率，通过g = -dV/dr与引力场强度相关 | Forgetting the negative sign; confusing gradient with field strength direction |
+| **Equipotential Surface** / 等势面 | A surface on which the gravitational potential is constant; no work is done moving along an equipotential surface | 引力势恒定的表面；沿等势面移动不做功 | Thinking field lines are perpendicular to equipotentials (they are, but students often get the relationship wrong) |
+| **Infinity** / 无穷远处 | A reference point where gravitational potential is defined as zero; a point so far from all masses that gravitational effects are negligible | 引力势定义为零的参考点；距离所有质量足够远，引力效应可忽略不计 | Not understanding why infinity is chosen; thinking it's a physical location |
+
+---
 
 # 4. Key Concepts Explained / 关键概念详解
 
-## 4.1 Gravitational Potential (V) / 引力势 (V)
+## 4.1 Gravitational Potential (V) / 引力势
 
 ### Explanation / 解释
-**English:** Gravitational potential $V$ at a point in a [[Gravitational Force and Field|gravitational field]] is defined as the work done per unit mass in bringing a small test mass from infinity to that point. For a radial field around a point mass $M$, $V = -\frac{GM}{r}$. The negative sign indicates that work is done BY the field (the field does positive work) as the mass moves from infinity inward. Potential is a scalar quantity, so potentials from multiple masses add algebraically.
+**English:**
+Gravitational potential (V) is a scalar quantity that describes the gravitational field at any point. It is defined as the work done per unit mass in bringing a small test mass from infinity to that point. For a point mass M, the gravitational potential at distance r is:
 
-**中文:** 引力场中某点的引力势$V$定义为将单位质量的测试质量从无穷远处移动到该点所做的功。对于点质量$M$周围的径向场，$V = -\frac{GM}{r}$。负号表示当质量从无穷远处向内移动时，场做功（场做正功）。势是标量，因此多个质量的势可以代数相加。
+$$ V = -\frac{GM}{r} $$
+
+The negative sign indicates that gravitational potential is always attractive — work must be done *against* the field to move a mass away from M. At infinity, V = 0, and as we approach the mass, V becomes increasingly negative (deeper potential well).
+
+Gravitational potential is a property of the field, not of any particular mass placed in it. It tells us how much energy per unit mass is "stored" in the field at that location.
+
+**中文：**
+引力势（V）是描述引力场中任意一点的标量。它定义为将单位质量的测试质量从无穷远处移动到该点所做的功。对于点质量M，距离r处的引力势为：
+
+$$ V = -\frac{GM}{r} $$
+
+负号表示引力势始终是吸引的——必须克服引力场做功才能将质量移离M。在无穷远处，V = 0，当我们接近质量时，V变得越来越负（更深的势阱）。
+
+引力势是场的属性，而不是放入其中的任何特定质量的属性。它告诉我们该位置每单位质量在场中"储存"了多少能量。
 
 ### Physical Meaning / 物理意义
-**English:** Gravitational potential represents the "gravitational energy per unit mass" at a point. More negative potential means stronger gravitational binding. The potential well around a planet is deeper (more negative) closer to the surface. This concept directly links to [[Gravitational Potential Energy in a Radial Field]] via $E_p = mV$.
+**English:**
+Think of gravitational potential as a "gravitational height" map. Just as a ball rolls downhill to lower gravitational potential energy, masses move from regions of higher (less negative) gravitational potential to lower (more negative) gravitational potential. The steeper the potential gradient, the stronger the gravitational field.
 
-**中文:** 引力势表示某点的"单位质量的引力能"。更负的势意味着更强的引力束缚。行星周围的势阱在靠近表面时更深（更负）。这个概念通过$E_p = mV$直接连接到[[Gravitational Potential Energy in a Radial Field]]。
+**中文：**
+将引力势想象成一张"引力高度"地图。就像球滚下坡到较低的引力势能一样，质量从较高（负值较小）的引力势区域移动到较低（负值较大）的引力势区域。势梯度越陡，引力场越强。
 
 ### Common Misconceptions / 常见误区
-- Thinking potential is zero at the surface of a planet (it's zero at infinity)
-- Confusing potential $V$ (J kg⁻¹) with potential energy $E_p$ (J)
-- Forgetting the negative sign in calculations
-- Thinking potential is a vector (it's scalar)
+1. **Thinking V is positive:** Gravitational potential is always negative (or zero at infinity). This represents the attractive nature of gravity.
+2. **Confusing V with Ep:** V is potential *per unit mass* (J/kg), while Ep is total potential energy (J) for a specific mass.
+3. **Forgetting the reference point:** V = 0 at infinity is a convention; without this reference, the definition is meaningless.
+4. **Applying V = -GM/r to non-point masses:** This equation is valid only for point masses or spherically symmetric objects (outside their surface).
 
 ### Exam Tips / 考试提示
-**English:** Always write $V = -\frac{GM}{r}$ with the negative sign. When calculating potential difference, remember $\Delta V = V_2 - V_1$. For multiple masses, add potentials algebraically (including signs). Use $V$ to find work done: $W = m\Delta V$.
+**English:**
+- Always include the negative sign when writing V = -GM/r
+- When calculating V for a system of masses, use scalar addition (V_total = V1 + V2 + ...)
+- Remember that V is a scalar, so direction doesn't matter for addition
+- CIE often asks for the definition verbatim — memorize it precisely
+- Edexcel may ask you to compare V at different points in a field
 
-**中文:** 始终在$V = -\frac{GM}{r}$中写上负号。计算势差时，记住$\Delta V = V_2 - V_1$。对于多个质量，代数相加势（包括符号）。使用$V$求做功：$W = m\Delta V$。
+**中文：**
+- 写V = -GM/r时始终包含负号
+- 计算多质量系统的V时，使用标量加法（V_total = V1 + V2 + ...）
+- 记住V是标量，加法时不考虑方向
+- CIE常要求逐字定义——精确记忆
+- Edexcel可能要求比较场中不同点的V
 
-> 📷 **IMAGE PROMPT — GP-POTENTIAL: Gravitational Potential Well Diagram**
-> A 2D cross-section showing a planet at center with a "potential well" curve (V vs r). The curve approaches zero as r→∞ and becomes increasingly negative as r→0. Labels: "V = -GM/r", "r", "V", "Surface", "Infinity (V=0)". Style: graph with shaded region under curve. Exam importance: HIGH — essential for understanding energy changes.
+---
 
 ## 4.2 Gravitational Potential Energy in a Radial Field / 径向场中的引力势能
 
 ### Explanation / 解释
-**English:** For two point masses $M$ and $m$ separated by distance $r$, the [[Gravitational Potential Energy in a Radial Field]] is $E_p = -\frac{GMm}{r}$. This is the energy stored in the system. The negative sign means the system has less energy than if the masses were at infinity (where $E_p = 0$). To separate the masses, work must be done against the field, increasing $E_p$ toward zero.
+**English:**
+Gravitational potential energy (Ep) in a radial field is the energy stored in the system of two masses due to their gravitational interaction. For two point masses M and m separated by distance r:
 
-**中文:** 对于相距$r$的两个点质量$M$和$m$，[[Gravitational Potential Energy in a Radial Field]]为$E_p = -\frac{GMm}{r}$。这是系统储存的能量。负号意味着系统比质量在无穷远处（$E_p = 0$）时具有更少的能量。要分离质量，必须克服场做功，使$E_p$向零增加。
+$$ E_p = -\frac{GMm}{r} $$
+
+This is derived from the work done to bring mass m from infinity to distance r from M. The negative sign means the system has less energy than if the masses were infinitely separated (where Ep = 0). This is why objects are "bound" — you need to add energy to separate them.
+
+Note: The equation Ep = mgh is only valid near Earth's surface (constant g). In radial fields, we must use Ep = -GMm/r.
+
+**中文：**
+径向场中的引力势能（Ep）是由于引力相互作用而储存在两个质量系统中的能量。对于相距r的两个点质量M和m：
+
+$$ E_p = -\frac{GMm}{r} $$
+
+这是将质量m从无穷远处移动到距离M为r处所做的功推导而来。负号意味着系统的能量比质量无限分离时（Ep = 0）更少。这就是物体被"束缚"的原因——需要添加能量才能将它们分开。
+
+注意：Ep = mgh仅在接近地球表面（恒定g）时有效。在径向场中，必须使用Ep = -GMm/r。
 
 ### Physical Meaning / 物理意义
-**English:** This is the gravitational equivalent of elastic potential energy in a spring. It represents the capacity to do work as masses move closer together. The more negative $E_p$, the more tightly bound the system. This concept is crucial for understanding [[Escape Velocity]] and orbital energy changes in [[Circular Orbits]].
+**English:**
+Gravitational potential energy represents the "binding energy" of a system. The more negative Ep is, the more tightly bound the system. For example, a satellite in low Earth orbit has more negative Ep than one in high orbit — it's "deeper" in Earth's potential well.
 
-**中文:** 这是弹簧中弹性势能的引力等效。它表示质量相互靠近时做功的能力。$E_p$越负，系统结合得越紧密。这个概念对于理解[[Escape Velocity]]和[[Circular Orbits]]中的轨道能量变化至关重要。
+**中文：**
+引力势能代表系统的"结合能"。Ep越负，系统结合得越紧密。例如，低地球轨道上的卫星比高轨道上的卫星具有更负的Ep——它在地球的势阱中"更深"。
 
 ### Common Misconceptions / 常见误区
-- Using $mgh$ for radial fields (only valid near Earth's surface where $g$ is constant)
-- Thinking $E_p$ is the energy of one mass (it's the energy of the system of two masses)
-- Forgetting that $E_p$ becomes less negative (increases) as $r$ increases
+1. **Thinking Ep is the energy of one mass:** Ep is a property of the *system* of masses, not of either mass individually.
+2. **Using Ep = mgh in radial fields:** This is only valid for uniform fields (near Earth's surface).
+3. **Forgetting Ep is negative:** Students often write Ep = +GMm/r, missing the negative sign.
+4. **Confusing Ep with kinetic energy:** In orbits, total energy E = Ep + Ek = -GMm/2r (for circular orbits).
 
 ### Exam Tips / 考试提示
-**English:** For orbital problems, total energy $E_{total} = E_k + E_p = \frac{1}{2}mv^2 - \frac{GMm}{r}$. For circular orbits, $E_k = -\frac{1}{2}E_p$, so $E_{total} = \frac{1}{2}E_p = -\frac{GMm}{2r}$. This relationship is frequently tested.
+**English:**
+- When calculating Ep for a system of multiple masses, sum over all pairs: Ep_total = -G Σ (MiMj/rij)
+- Remember that Ep is always negative for bound systems
+- CIE may ask you to derive Ep from the definition of work done
+- Edexcel may combine Ep with kinetic energy in orbital mechanics problems
 
-**中文:** 对于轨道问题，总能量$E_{total} = E_k + E_p = \frac{1}{2}mv^2 - \frac{GMm}{r}$。对于圆形轨道，$E_k = -\frac{1}{2}E_p$，所以$E_{total} = \frac{1}{2}E_p = -\frac{GMm}{2r}$。这个关系经常被测试。
+**中文：**
+- 计算多质量系统的Ep时，对所有对求和：Ep_total = -G Σ (MiMj/rij)
+- 记住束缚系统的Ep始终为负
+- CIE可能要求从做功的定义推导Ep
+- Edexcel可能将Ep与轨道力学问题中的动能结合
+
+---
 
 ## 4.3 Escape Velocity / 逃逸速度
 
 ### Explanation / 解释
-**English:** [[Escape Velocity]] is the minimum speed an object must have at a given distance from a massive body to escape its gravitational field completely, with no further propulsion. It is derived from energy conservation: kinetic energy at launch equals the work needed to reach infinity (where potential energy is zero). The result is $v_{esc} = \sqrt{\frac{2GM}{r}}$, independent of the mass of the escaping object.
+**English:**
+Escape velocity is the minimum speed an object must have to escape from a gravitational field without further propulsion. It is derived from energy conservation: the object's initial kinetic energy must be at least equal to the gravitational potential energy binding it.
 
-**中文:** [[Escape Velocity]]是物体在距离大质量天体给定距离处，无需进一步推进即可完全逃离其引力场所需的最小速度。它由能量守恒推导得出：发射时的动能等于到达无穷远处（势能为零）所需的功。结果为$v_{esc} = \sqrt{\frac{2GM}{r}}$，与逃离物体的质量无关。
+For a mass m escaping from a planet of mass M and radius R:
+
+$$ \frac{1}{2}mv_{esc}^2 = \frac{GMm}{R} $$
+
+$$ v_{esc} = \sqrt{\frac{2GM}{R}} $$
+
+Key points:
+- Escape velocity is independent of the mass of the escaping object
+- It depends only on the mass and radius of the celestial body
+- Escape velocity is a scalar (speed), not a vector (velocity)
+- For Earth, v_esc ≈ 11.2 km/s
+
+**中文：**
+逃逸速度是物体无需进一步推进即可逃离引力场所需的最小速度。它由能量守恒推导而来：物体的初始动能必须至少等于束缚它的引力势能。
+
+对于从质量为M、半径为R的行星逃离的质量m：
+
+$$ \frac{1}{2}mv_{esc}^2 = \frac{GMm}{R} $$
+
+$$ v_{esc} = \sqrt{\frac{2GM}{R}} $$
+
+关键点：
+- 逃逸速度与逃离物体的质量无关
+- 仅取决于天体的质量和半径
+- 逃逸速度是标量（速率），不是矢量（速度）
+- 对于地球，v_esc ≈ 11.2 km/s
 
 ### Physical Meaning / 物理意义
-**English:** Escape velocity represents the "depth" of the gravitational potential well. A deeper well (more negative potential) requires higher escape velocity. For Earth, $v_{esc} \approx 11.2 \text{ km s}^{-1}$. For a black hole, $v_{esc} > c$ (speed of light), defining the event horizon at the Schwarzschild radius $r_s = \frac{2GM}{c^2}$.
+**English:**
+Escape velocity represents the "speed of no return" — if you launch an object at this speed (or greater), it will never fall back. This concept is crucial for:
+- Space missions (launching probes to other planets)
+- Understanding black holes (where v_esc > c)
+- Atmospheric retention (planets with low escape velocity lose their atmospheres)
 
-**中文:** 逃逸速度代表引力势阱的"深度"。更深的阱（更负的势）需要更高的逃逸速度。对于地球，$v_{esc} \approx 11.2 \text{ km s}^{-1}$。对于黑洞，$v_{esc} > c$（光速），定义了史瓦西半径$r_s = \frac{2GM}{c^2}$处的事件视界。
+**中文：**
+逃逸速度代表"不归速度"——如果你以这个速度（或更大）发射物体，它将永远不会落回。这个概念对于以下方面至关重要：
+- 太空任务（向其他行星发射探测器）
+- 理解黑洞（其中v_esc > c）
+- 大气保持（逃逸速度低的行星会失去大气层）
 
 ### Common Misconceptions / 常见误区
-- Thinking escape velocity depends on the mass of the escaping object (it doesn't)
-- Confusing escape velocity with orbital velocity ($v_{orb} = \sqrt{\frac{GM}{r}}$)
-- Thinking escape velocity means you must maintain that speed (it's the initial speed needed)
+1. **Thinking escape velocity depends on object mass:** The m cancels out in the derivation — all objects have the same escape speed from a given body.
+2. **Confusing escape velocity with orbital velocity:** Orbital velocity (v = √(GM/r)) is smaller than escape velocity (v_esc = √(2GM/r)).
+3. **Thinking you must launch vertically:** Direction doesn't matter for the speed required, but launching vertically minimizes atmospheric drag.
+4. **Forgetting escape velocity is from the surface:** The escape speed from a given point depends on the distance from the center.
 
 ### Exam Tips / 考试提示
-**English:** Derivation using $\frac{1}{2}mv^2 = \frac{GMm}{r}$ is a common exam question. Remember that $v_{esc} = \sqrt{2} \times v_{orb}$ for circular orbits. For a planet, escape velocity from the surface is $v_{esc} = \sqrt{\frac{2GM}{R}}$.
+**English:**
+- Derive escape velocity using energy conservation — this is a common exam question
+- Remember that escape velocity from Earth's surface is about 11.2 km/s
+- CIE may ask you to calculate escape velocity from other planets given M and R
+- Edexcel may ask about the concept of black holes (where v_esc = c)
+- Be careful with units: GM/R gives m²/s², so take square root for m/s
 
-**中文:** 使用$\frac{1}{2}mv^2 = \frac{GMm}{r}$进行推导是常见的考试题目。记住对于圆形轨道，$v_{esc} = \sqrt{2} \times v_{orb}$。对于行星，从表面逃逸的速度为$v_{esc} = \sqrt{\frac{2GM}{R}}$。
+**中文：**
+- 使用能量守恒推导逃逸速度——这是常见考题
+- 记住地球表面的逃逸速度约为11.2 km/s
+- CIE可能要求根据M和R计算其他行星的逃逸速度
+- Edexcel可能询问黑洞的概念（其中v_esc = c）
+- 注意单位：GM/R给出m²/s²，开平方得到m/s
+
+---
 
 ## 4.4 Potential Gradients / 势梯度
 
 ### Explanation / 解释
-**English:** The [[Potential Gradients|potential gradient]] is the rate of change of gravitational potential with distance: $g = -\frac{dV}{dr}$. The negative sign indicates that gravitational field strength $g$ points in the direction of decreasing potential (toward the mass). For a radial field, $g = -\frac{d}{dr}\left(-\frac{GM}{r}\right) = -\frac{GM}{r^2}$, which matches Newton's law of gravitation.
-
-**中文:** [[Potential Gradients|势梯度]]是引力势随距离的变化率：$g = -\frac{dV}{dr}$。负号表示引力场强度$g$指向势减小的方向（朝向质量）。对于径向场，$g = -\frac{d}{dr}\left(-\frac{GM}{r}\right) = -\frac{GM}{r^2}$，这与牛顿万有引力定律一致。
-
-### Physical Meaning / 物理意义
-**English:** The potential gradient gives the gravitational field strength at a point. A steeper gradient means stronger gravitational field. On a graph of $V$ vs $r$, the gradient at any point equals $-g$. This relationship allows field strength to be determined from potential measurements, which is useful in geophysics and astrophysics.
-
-**中文:** 势梯度给出某点的引力场强度。梯度越陡，引力场越强。在$V$对$r$的图上，任意点的梯度等于$-g$。这种关系允许从势测量中确定场强度，在地球物理学和天体物理学中很有用。
-
-### Common Misconceptions / 常见误区
-- Forgetting the negative sign in $g = -\frac{dV}{dr}$
-- Thinking gradient of $V$ vs $r$ graph gives $g$ directly (it gives $-g$)
-- Confusing potential gradient with field strength (they are related but different concepts)
-
-### Exam Tips / 考试提示
-**English:** In data analysis questions, you may be asked to plot $V$ vs $r$ and find the gradient. Remember gradient $= -g$. For uniform fields (near Earth), $g = -\frac{\Delta V}{\Delta r}$ where $\Delta V = gh$ (potential difference between two heights).
-
-**中文:** 在数据分析题中，你可能需要绘制$V$对$r$的图并求梯度。记住梯度$= -g$。对于均匀场（地球附近），$g = -\frac{\Delta V}{\Delta r}$，其中$\Delta V = gh$（两个高度之间的势差）。
-
-> 📷 **IMAGE PROMPT — GP-GRADIENT: Potential Gradient Graph**
-> A graph of V vs r for a radial field. The curve is negative and approaches zero as r→∞. Tangent lines at two points show different gradients (steeper near r=0). Labels: "V", "r", "gradient = -g", "g₁ > g₂". Style: clean graph with labeled tangents. Exam importance: HIGH — common in data analysis questions.
-
-# 5. Essential Equations / 核心公式
-
-## 5.1 Gravitational Potential in a Radial Field / 径向场中的引力势
-
-$$ V = -\frac{GM}{r} $$
-
-| Symbol (符号) | Meaning (EN/CN) | Unit (单位) |
-|---|---|---|
-| $V$ | Gravitational potential / 引力势 | J kg⁻¹ |
-| $G$ | Gravitational constant / 引力常数 | N m² kg⁻² |
-| $M$ | Mass of central body / 中心天体质量 | kg |
-| $r$ | Distance from center of mass / 距质心距离 | m |
-
-**Derivation / 推导:** Not required for exam, but understanding that $V = \frac{W}{m}$ where $W = \int_{\infty}^{r} F \, dr = \int_{\infty}^{r} \frac{GMm}{r^2} \, dr = -\frac{GMm}{r}$ is helpful.
-
-**Conditions / 适用条件:** Point mass or spherically symmetric mass distribution; outside the mass.
-
-**Limitations / 局限性:** Does not apply inside a uniform sphere (potential varies differently).
-
-**Rearrangements / 变形:**
-- $M = -\frac{Vr}{G}$
-- $r = -\frac{GM}{V}$
-
-## 5.2 Gravitational Potential Energy / 引力势能
-
-$$ E_p = mV = -\frac{GMm}{r} $$
-
-| Symbol (符号) | Meaning (EN/CN) | Unit (单位) |
-|---|---|---|
-| $E_p$ | Gravitational potential energy / 引力势能 | J |
-| $m$ | Mass of test object / 测试物体质量 | kg |
-| $V$ | Gravitational potential / 引力势 | J kg⁻¹ |
-
-**Derivation / 推导:** $E_p = mV$ follows directly from definition of potential.
-
-**Conditions / 适用条件:** Two point masses; radial field.
-
-**Limitations / 局限性:** For extended objects, use center of mass separation.
-
-**Rearrangements / 变形:**
-- $m = \frac{E_p}{V}$
-- $r = -\frac{GMm}{E_p}$
-
-## 5.3 Escape Velocity / 逃逸速度
-
-$$ v_{esc} = \sqrt{\frac{2GM}{r}} $$
-
-| Symbol (符号) | Meaning (EN/CN) | Unit (单位) |
-|---|---|---|
-| $v_{esc}$ | Escape velocity / 逃逸速度 | m s⁻¹ |
-| $G$ | Gravitational constant / 引力常数 | N m² kg⁻² |
-| $M$ | Mass of central body / 中心天体质量 | kg |
-| $r$ | Distance from center / 距中心距离 | m |
-
-**Derivation / 推导:** Energy conservation: $\frac{1}{2}mv_{esc}^2 + \left(-\frac{GMm}{r}\right) = 0 + 0$ (at infinity, KE=0, PE=0). Therefore $\frac{1}{2}mv_{esc}^2 = \frac{GMm}{r}$, giving $v_{esc} = \sqrt{\frac{2GM}{r}}$.
-
-**Conditions / 适用条件:** No other forces; no propulsion after initial speed.
-
-**Limitations / 局限性:** Does not account for atmospheric drag or other celestial bodies.
-
-**Rearrangements / 变形:**
-- $M = \frac{v_{esc}^2 r}{2G}$
-- $r = \frac{2GM}{v_{esc}^2}$
-
-## 5.4 Potential Gradient / 势梯度
+**English:**
+The potential gradient is the rate of change of gravitational potential with respect to distance. It is directly related to gravitational field strength:
 
 $$ g = -\frac{dV}{dr} $$
 
-| Symbol (符号) | Meaning (EN/CN) | Unit (单位) |
-|---|---|---|
-| $g$ | Gravitational field strength / 引力场强度 | N kg⁻¹ or m s⁻² |
-| $V$ | Gravitational potential / 引力势 | J kg⁻¹ |
-| $r$ | Distance / 距离 | m |
+For a radial field where V = -GM/r:
 
-**Derivation / 推导:** From definition of work: $dW = F \, dr = mg \, dr$. Also $dW = m \, dV$. Therefore $mg \, dr = m \, dV$, so $g = \frac{dV}{dr}$. The negative sign indicates direction toward decreasing potential.
+$$ g = -\frac{d}{dr}\left(-\frac{GM}{r}\right) = -\frac{GM}{r^2} $$
 
-**Conditions / 适用条件:** Valid for any gravitational field.
+The negative sign in g = -dV/dr indicates that the gravitational field points in the direction of decreasing potential (from higher to lower potential). This is consistent with the fact that masses move from regions of higher potential to lower potential.
 
-**Limitations / 局限性:** Requires continuous function $V(r)$.
+**中文：**
+势梯度是引力势随距离的变化率。它与引力场强度直接相关：
+
+$$ g = -\frac{dV}{dr} $$
+
+对于V = -GM/r的径向场：
+
+$$ g = -\frac{d}{dr}\left(-\frac{GM}{r}\right) = -\frac{GM}{r^2} $$
+
+g = -dV/dr中的负号表示引力场指向势减小的方向（从较高势到较低势）。这与质量从较高势区域移动到较低势区域的事实一致。
+
+### Physical Meaning / 物理意义
+**English:**
+The potential gradient tells us how "steep" the potential well is at any point. A steeper gradient means a stronger gravitational field. On a V vs r graph, the gradient at any point gives the gravitational field strength (with a negative sign).
+
+**中文：**
+势梯度告诉我们势阱在任何点有多"陡"。梯度越陡意味着引力场越强。在V vs r图上，任意点的梯度给出引力场强度（带负号）。
+
+### Common Misconceptions / 常见误区
+1. **Forgetting the negative sign:** g = -dV/dr, not g = dV/dr
+2. **Confusing gradient with field strength direction:** The gradient gives the rate of change; the negative sign gives the direction
+3. **Thinking gradient is constant:** In radial fields, gradient varies with r (g ∝ 1/r²)
+4. **Applying to uniform fields incorrectly:** In uniform fields, g = -ΔV/Δr (constant gradient)
+
+### Exam Tips / 考试提示
+**English:**
+- On a V vs r graph, the gradient at any point equals -g
+- CIE may ask you to sketch V vs r and then determine g from the gradient
+- Edexcel may ask numerical calculations of g from potential differences
+- Remember that g is a vector (direction matters), while V is a scalar
+
+**中文：**
+- 在V vs r图上，任意点的梯度等于-g
+- CIE可能要求绘制V vs r图，然后从梯度确定g
+- Edexcel可能要求从势差数值计算g
+- 记住g是矢量（方向重要），而V是标量
+
+---
+
+## 4.5 Equipotential Surfaces / 等势面
+
+### Explanation / 解释
+**English:**
+Equipotential surfaces are surfaces where the gravitational potential is constant. In a radial field around a point mass, equipotential surfaces are concentric spheres centered on the mass. Key properties:
+
+1. No work is done moving a mass along an equipotential surface
+2. Gravitational field lines are always perpendicular to equipotential surfaces
+3. The spacing between equipotential surfaces indicates field strength (closer spacing = stronger field)
+4. Equipotential surfaces never cross
+
+**中文：**
+等势面是引力势恒定的表面。在点质量周围的径向场中，等势面是以质量为中心的同心球面。关键特性：
+
+1. 沿等势面移动质量不做功
+2. 引力场线始终垂直于等势面
+3. 等势面之间的间距表示场强（间距越近 = 场越强）
+4. 等势面永不相交
+
+### Physical Meaning / 物理意义
+**English:**
+Equipotential surfaces are like contour lines on a topographic map. Just as contour lines show constant height, equipotential surfaces show constant gravitational potential. Moving along a contour line requires no work against gravity.
+
+**中文：**
+等势面就像地形图上的等高线。就像等高线显示恒定高度一样，等势面显示恒定的引力势。沿等高线移动不需要克服重力做功。
+
+### Common Misconceptions / 常见误区
+1. **Thinking equipotentials are always spheres:** Only for point masses or spherically symmetric objects
+2. **Confusing equipotentials with field lines:** They are perpendicular to each other
+3. **Thinking work is done moving along equipotentials:** By definition, no work is done
+4. **Forgetting that V is constant on equipotentials:** This is the defining property
+
+### Exam Tips / 考试提示
+**English:**
+- CIE may ask you to sketch equipotential surfaces around a mass
+- Edexcel may ask about the relationship between equipotentials and field lines
+- Remember that closer equipotentials indicate stronger fields
+- Equipotential surfaces are useful for understanding gravitational potential energy changes
+
+**中文：**
+- CIE可能要求绘制质量周围的等势面
+- Edexcel可能询问等势面与场线之间的关系
+- 记住等势面越近表示场越强
+- 等势面有助于理解引力势能变化
+
+---
+
+# 5. Essential Equations / 核心公式
+
+## 5.1 Gravitational Potential / 引力势
+
+**Equation / 公式:**
+$$ V = -\frac{GM}{r} $$
+
+**Variables / 变量:**
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| V | Gravitational potential | 引力势 | J kg⁻¹ |
+| G | Gravitational constant | 引力常数 | N m² kg⁻² |
+| M | Mass of the object creating the field | 产生场的物体质量 | kg |
+| r | Distance from the center of mass | 距质量中心的距离 | m |
+
+**Derivation / 推导:**
+**English:**
+The gravitational potential at a point is the work done per unit mass to bring a test mass from infinity to that point. The work done against the gravitational force F = GMm/r² over a small displacement dr is dW = F dr = (GMm/r²) dr. The total work from infinity to r is:
+
+$$ W = \int_{\infty}^{r} \frac{GMm}{r^2} dr = GMm \left[-\frac{1}{r}\right]_{\infty}^{r} = -\frac{GMm}{r} $$
+
+Dividing by the test mass m gives V = -GM/r.
+
+**中文：**
+某点的引力势是将测试质量从无穷远处移动到该点每单位质量所做的功。克服引力F = GMm/r²在微小位移dr上所做的功为dW = F dr = (GMm/r²) dr。从无穷远到r的总功为：
+
+$$ W = \int_{\infty}^{r} \frac{GMm}{r^2} dr = GMm \left[-\frac{1}{r}\right]_{\infty}^{r} = -\frac{GMm}{r} $$
+
+除以测试质量m得到V = -GM/r。
+
+**Conditions / 适用条件:**
+**English:**
+- Valid for point masses or spherically symmetric objects (outside the object's surface)
+- r must be measured from the center of mass
+- The field must be radial (not uniform)
+
+**中文：**
+- 适用于点质量或球对称物体（在物体表面之外）
+- r必须从质量中心测量
+- 场必须是径向的（非均匀）
+
+**Limitations / 局限性:**
+**English:**
+- Not valid inside a massive object (r < R, where R is the object's radius)
+- Does not account for relativistic effects (use general relativity for strong fields)
+- Assumes the mass M is stationary (no motion effects)
+
+**中文：**
+- 不适用于大质量物体内部（r < R，其中R是物体半径）
+- 不考虑相对论效应（强场使用广义相对论）
+- 假设质量M是静止的（无运动效应）
 
 **Rearrangements / 变形:**
-- $dV = -g \, dr$
-- $\Delta V = -\int g \, dr$
+**English:**
+- M = -Vr/G (to find mass from potential)
+- r = -GM/V (to find distance from potential)
+- ΔV = V₂ - V₁ = -GM(1/r₂ - 1/r₁) (potential difference)
 
-## 5.5 Total Energy in Circular Orbit / 圆形轨道总能量
+**中文：**
+- M = -Vr/G（从势求质量）
+- r = -GM/V（从势求距离）
+- ΔV = V₂ - V₁ = -GM(1/r₂ - 1/r₁)（势差）
 
-$$ E_{total} = E_k + E_p = -\frac{GMm}{2r} $$
+---
 
-| Symbol (符号) | Meaning (EN/CN) | Unit (单位) |
-|---|---|---|
-| $E_{total}$ | Total mechanical energy / 总机械能 | J |
-| $E_k$ | Kinetic energy ($= \frac{GMm}{2r}$) / 动能 | J |
-| $E_p$ | Potential energy ($= -\frac{GMm}{r}$) / 势能 | J |
+## 5.2 Gravitational Potential Energy / 引力势能
 
-**Derivation / 推导:** For circular orbit, centripetal force = gravitational force: $\frac{mv^2}{r} = \frac{GMm}{r^2}$, so $v^2 = \frac{GM}{r}$. Then $E_k = \frac{1}{2}mv^2 = \frac{GMm}{2r}$. $E_p = -\frac{GMm}{r}$. Therefore $E_{total} = \frac{GMm}{2r} - \frac{GMm}{r} = -\frac{GMm}{2r}$.
+**Equation / 公式:**
+$$ E_p = -\frac{GMm}{r} $$
 
-**Conditions / 适用条件:** Circular orbits only.
+**Variables / 变量:**
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| Ep | Gravitational potential energy | 引力势能 | J |
+| G | Gravitational constant | 引力常数 | N m² kg⁻² |
+| M | Mass of the larger object | 较大物体的质量 | kg |
+| m | Mass of the smaller object | 较小物体的质量 | kg |
+| r | Separation between centers of mass | 质量中心之间的距离 | m |
 
-**Limitations / 局限性:** Does not apply to elliptical orbits.
+**Derivation / 推导:**
+**English:**
+Gravitational potential energy is the work done to bring mass m from infinity to distance r from M. From the derivation of V:
+
+$$ E_p = m \times V = m \times \left(-\frac{GM}{r}\right) = -\frac{GMm}{r} $$
+
+Alternatively, from the definition of work:
+
+$$ E_p = \int_{\infty}^{r} \frac{GMm}{r^2} dr = -\frac{GMm}{r} $$
+
+**中文：**
+引力势能是将质量m从无穷远处移动到距离M为r处所做的功。从V的推导：
+
+$$ E_p = m \times V = m \times \left(-\frac{GM}{r}\right) = -\frac{GMm}{r} $$
+
+或者，从功的定义：
+
+$$ E_p = \int_{\infty}^{r} \frac{GMm}{r^2} dr = -\frac{GMm}{r} $$
+
+**Conditions / 适用条件:**
+**English:**
+- Valid for two point masses or spherically symmetric objects
+- r is the separation between centers of mass
+- The system is isolated (no external forces)
+
+**中文：**
+- 适用于两个点质量或球对称物体
+- r是质量中心之间的距离
+- 系统是孤立的（无外力）
+
+**Limitations / 局限性:**
+**English:**
+- Not valid for objects inside a massive body
+- Does not include self-gravitational energy of extended objects
+- Assumes Newtonian gravity (not valid for very strong fields)
+
+**中文：**
+- 不适用于大质量物体内部的物体
+- 不包括扩展物体的自引力能
+- 假设牛顿引力（不适用于非常强的场）
 
 **Rearrangements / 变形:**
-- $r = -\frac{GMm}{2E_{total}}$
-- $E_k = -E_{total}$ (for circular orbits)
+**English:**
+- M = -Epr/Gm (to find mass)
+- r = -GMm/Ep (to find separation)
+- ΔEp = Ep₂ - Ep₁ = -GMm(1/r₂ - 1/r₁) (change in potential energy)
+
+**中文：**
+- M = -Epr/Gm（求质量）
+- r = -GMm/Ep（求距离）
+- ΔEp = Ep₂ - Ep₁ = -GMm(1/r₂ - 1/r₁)（势能变化）
+
+---
+
+## 5.3 Escape Velocity / 逃逸速度
+
+**Equation / 公式:**
+$$ v_{esc} = \sqrt{\frac{2GM}{R}} $$
+
+**Variables / 变量:**
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| v_esc | Escape velocity | 逃逸速度 | m s⁻¹ |
+| G | Gravitational constant | 引力常数 | N m² kg⁻² |
+| M | Mass of the celestial body | 天体的质量 | kg |
+| R | Radius of the celestial body | 天体的半径 | m |
+
+**Derivation / 推导:**
+**English:**
+Using energy conservation: the total mechanical energy at the surface must be at least zero for the object to escape to infinity.
+
+Initial kinetic energy: Ek = ½mv²
+Initial gravitational potential energy: Ep = -GMm/R
+At infinity: Ek = 0, Ep = 0 (by definition)
+
+For escape: Ek_initial + Ep_initial ≥ 0
+½mv² - GMm/R ≥ 0
+½mv² ≥ GMm/R
+v² ≥ 2GM/R
+v_esc = √(2GM/R)
+
+**中文：**
+使用能量守恒：物体要逃逸到无穷远处，表面的总机械能必须至少为零。
+
+初始动能：Ek = ½mv²
+初始引力势能：Ep = -GMm/R
+在无穷远处：Ek = 0，Ep = 0（按定义）
+
+逃逸条件：Ek_初始 + Ep_初始 ≥ 0
+½mv² - GMm/R ≥ 0
+½mv² ≥ GMm/R
+v² ≥ 2GM/R
+v_esc = √(2GM/R)
+
+**Conditions / 适用条件:**
+**English:**
+- Valid for escaping from the surface of a spherically symmetric body
+- Assumes no atmospheric drag or other forces
+- Assumes the object is launched from the surface (r = R)
+
+**中文：**
+- 适用于从球对称体表面逃逸
+- 假设无大气阻力或其他力
+- 假设物体从表面发射（r = R）
+
+**Limitations / 局限性:**
+**English:**
+- Does not account for rotation of the celestial body (which can help with escape)
+- Assumes Newtonian gravity (for black holes, use general relativity)
+- Ignores the gravitational effect of the escaping object on the larger body
+
+**中文：**
+- 不考虑天体的自转（自转有助于逃逸）
+- 假设牛顿引力（对于黑洞，使用广义相对论）
+- 忽略逃逸物体对大天体的引力效应
+
+**Rearrangements / 变形:**
+**English:**
+- M = v_esc²R/(2G) (to find mass from escape velocity)
+- R = 2GM/v_esc² (to find radius)
+- For black holes: v_esc = c, so Schwarzschild radius R_s = 2GM/c²
+
+**中文：**
+- M = v_esc²R/(2G)（从逃逸速度求质量）
+- R = 2GM/v_esc²（求半径）
+- 对于黑洞：v_esc = c，所以史瓦西半径R_s = 2GM/c²
+
+---
+
+## 5.4 Potential Gradient / 势梯度
+
+**Equation / 公式:**
+$$ g = -\frac{dV}{dr} $$
+
+**Variables / 变量:**
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| g | Gravitational field strength | 引力场强度 | N kg⁻¹ or m s⁻² |
+| V | Gravitational potential | 引力势 | J kg⁻¹ |
+| r | Distance from center of mass | 距质量中心的距离 | m |
+
+**Derivation / 推导:**
+**English:**
+For a radial field, V = -GM/r. Differentiating with respect to r:
+
+$$ \frac{dV}{dr} = \frac{d}{dr}\left(-\frac{GM}{r}\right) = \frac{GM}{r^2} $$
+
+Since g = GM/r² (magnitude of field strength), and the field points in the direction of decreasing potential:
+
+$$ g = -\frac{dV}{dr} $$
+
+**中文：**
+对于径向场，V = -GM/r。对r求导：
+
+$$ \frac{dV}{dr} = \frac{d}{dr}\left(-\frac{GM}{r}\right) = \frac{GM}{r^2} $$
+
+由于g = GM/r²（场强大小），且场指向势减小的方向：
+
+$$ g = -\frac{dV}{dr} $$
+
+**Conditions / 适用条件:**
+**English:**
+- Valid for any gravitational field (radial or uniform)
+- For uniform fields: g = -ΔV/Δr (constant gradient)
+- For radial fields: g varies with r
+
+**中文：**
+- 适用于任何引力场（径向或均匀）
+- 对于均匀场：g = -ΔV/Δr（恒定梯度）
+- 对于径向场：g随r变化
+
+**Limitations / 局限性:**
+**English:**
+- Requires V to be differentiable (smooth function)
+- For discrete mass distributions, use superposition
+- Not valid at points where V is discontinuous (e.g., at the surface of a mass)
+
+**中文：**
+- 要求V可微（光滑函数）
+- 对于离散质量分布，使用叠加原理
+- 在V不连续的点无效（例如，质量表面）
+
+**Rearrangements / 变形:**
+**English:**
+- dV = -g dr (infinitesimal potential change)
+- ΔV = -∫g dr (potential difference from field)
+- For uniform field: ΔV = -gΔr
+
+**中文：**
+- dV = -g dr（无穷小势变化）
+- ΔV = -∫g dr（从场求势差）
+- 对于均匀场：ΔV = -gΔr
+
+---
 
 # 6. Graphs and Relationships / 图表与关系
 
 ## 6.1 Gravitational Potential vs Distance (V vs r) / 引力势与距离关系图
 
-**Axes / 坐标轴:** x-axis: $r$ (distance from center), y-axis: $V$ (gravitational potential)
+### Axes / 坐标轴
+**English:** x-axis: r (distance from center of mass), y-axis: V (gravitational potential)
+**中文：** x轴：r（距质量中心的距离），y轴：V（引力势）
 
-**Shape / 形状:** Hyperbolic curve: $V = -\frac{GM}{r}$. Starts very negative near $r=0$, increases (becomes less negative) as $r$ increases, approaches $V=0$ asymptotically as $r \to \infty$.
+### Shape / 形状
+**English:** The graph is a hyperbola approaching zero as r → ∞ and becoming increasingly negative as r → 0. For r > R (outside the mass), V = -GM/r. For r < R (inside the mass), the shape depends on the mass distribution.
 
-**Gradient Meaning / 梯度含义:** Gradient $= \frac{dV}{dr} = -g$. The gradient is positive (curve slopes upward) but becomes less steep as $r$ increases. Steeper gradient = stronger gravitational field.
+**中文：** 图形是双曲线，当r → ∞时趋近于零，当r → 0时变得越来越负。对于r > R（质量外部），V = -GM/r。对于r < R（质量内部），形状取决于质量分布。
 
-**Area Meaning / 面积含义:** Area under $V$ vs $r$ graph has no direct physical meaning. However, area under $g$ vs $r$ graph gives potential difference: $\Delta V = -\int g \, dr$.
+### Gradient Meaning / 斜率含义
+**English:** The gradient of the V vs r graph at any point equals -g (negative of gravitational field strength). A steeper gradient means a stronger field.
 
-**Exam Interpretation / 考试解读:**
-- At any point, gradient $= -g$
-- The curve never crosses $V=0$ (asymptotic approach)
-- More massive objects have deeper potential wells (more negative at same $r$)
+**中文：** V vs r图上任意点的梯度等于-g（引力场强度的负值）。梯度越陡表示场越强。
 
-**Common Questions / 常见问题:**
-- "Determine the gravitational field strength at point X from the graph"
-- "Explain why the potential is negative"
-- "Compare the potential wells of two planets with different masses"
+### Area Meaning / 面积含义
+**English:** The area under a g vs r graph gives the potential difference (ΔV). However, for V vs r, the area is not directly meaningful.
 
-> 📷 **IMAGE PROMPT — GP-VRGRAPH: V vs r Graph for Gravitational Potential**
-> A graph showing V = -GM/r for two different masses (M₁ > M₂). The curve for M₁ is more negative at all r. Both curves approach V=0 as r→∞. Labels: "V", "r", "V = -GM₁/r", "V = -GM₂/r", "M₁ > M₂". Style: two curves on same axes, different colors. Exam importance: HIGH — fundamental graph for this topic.
+**中文：** g vs r图下的面积给出势差（ΔV）。但对于V vs r，面积没有直接意义。
 
-## 6.2 Gravitational Field Strength vs Distance (g vs r) / 引力场强度与距离关系图
+### Exam Interpretation / 考试解读
+**English:**
+- The graph shows that V is always negative (attractive field)
+- V approaches zero asymptotically as r → ∞
+- Near the mass, V becomes very negative (deep potential well)
+- The gradient becomes steeper near the mass (stronger field)
+- CIE may ask you to sketch this graph and label key features
+- Edexcel may ask you to determine g from the gradient at a specific point
 
-**Axes / 坐标轴:** x-axis: $r$ (distance from center), y-axis: $g$ (gravitational field strength)
+**中文：**
+- 图形显示V始终为负（吸引场）
+- 当r → ∞时，V渐近趋近于零
+- 在质量附近，V变得非常负（深势阱）
+- 在质量附近梯度变得更陡（场更强）
+- CIE可能要求绘制此图并标注关键特征
+- Edexcel可能要求从特定点的梯度确定g
 
-**Shape / 形状:** Inverse square: $g = \frac{GM}{r^2}$. Starts very large near $r=0$, decreases rapidly, approaches $g=0$ as $r \to \infty$.
+### Common Questions / 常见问题
+**English:**
+1. Sketch V vs r for a point mass M
+2. Explain why V is negative
+3. Determine g at a point from the gradient
+4. Compare V at two different distances
+5. Calculate the work done to move a mass between two points
 
-**Gradient Meaning / 梯度含义:** Gradient $= \frac{dg}{dr} = -\frac{2GM}{r^3}$. The gradient is negative and its magnitude decreases with $r$.
+**中文：**
+1. 绘制点质量M的V vs r图
+2. 解释为什么V为负
+3. 从梯度确定某点的g
+4. 比较两个不同距离处的V
+5. 计算在两个点之间移动质量所做的功
 
-**Area Meaning / 面积含义:** Area under $g$ vs $r$ graph gives potential difference: $\Delta V = -\int_{r_1}^{r_2} g \, dr$. The negative sign means area is positive but potential difference is negative (potential decreases as you move inward).
+---
 
-**Exam Interpretation / 考试解读:**
-- Inverse square relationship
-- $g \propto \frac{1}{r^2}$
-- Area between two $r$ values gives $|\Delta V|$
+## 6.2 Gravitational Potential Energy vs Distance (Ep vs r) / 引力势能与距离关系图
 
-**Common Questions / 常见问题:**
-- "Calculate the potential difference between two points using the area under the graph"
-- "Compare field strengths at different distances"
-- "Determine the mass of the central body from the graph"
+### Axes / 坐标轴
+**English:** x-axis: r (separation between masses), y-axis: Ep (gravitational potential energy)
+**中文：** x轴：r（质量之间的分离距离），y轴：Ep（引力势能）
 
-## 6.3 Potential Energy vs Distance (Ep vs r) / 势能与距离关系图
+### Shape / 形状
+**English:** Same shape as V vs r but scaled by the mass m: Ep = -GMm/r. Hyperbolic, approaching zero as r → ∞ and becoming increasingly negative as r → 0.
 
-**Axes / 坐标轴:** x-axis: $r$ (distance), y-axis: $E_p$ (gravitational potential energy)
+**中文：** 与V vs r形状相同，但按质量m缩放：Ep = -GMm/r。双曲线，当r → ∞时趋近于零，当r → 0时变得越来越负。
 
-**Shape / 形状:** Same shape as $V$ vs $r$ but scaled by $m$: $E_p = -\frac{GMm}{r}$. Hyperbolic, negative, approaches zero asymptotically.
+### Gradient Meaning / 斜率含义
+**English:** The gradient of Ep vs r gives the gravitational force: F = -dEp/dr. This is consistent with F = GMm/r².
 
-**Gradient Meaning / 梯度含义:** Gradient $= \frac{dE_p}{dr} = \frac{GMm}{r^2} = mg$. The gradient equals the gravitational force (magnitude). Positive gradient means force is attractive (toward decreasing $r$).
+**中文：** Ep vs r的梯度给出引力：F = -dEp/dr。这与F = GMm/r²一致。
 
-**Area Meaning / 面积含义:** No direct physical meaning for area under $E_p$ vs $r$.
+### Area Meaning / 面积含义
+**English:** Not directly meaningful for Ep vs r.
 
-**Exam Interpretation / 考试解读:**
-- Gradient gives force magnitude
-- More negative $E_p$ = more tightly bound system
-- Energy required to separate masses = change in $E_p$ toward zero
+**中文：** 对于Ep vs r没有直接意义。
 
-**Common Questions / 常见问题:**
-- "Calculate the work done to move a satellite from one orbit to another"
-- "Determine the force between two masses from the gradient"
+### Exam Interpretation / 考试解读
+**English:**
+- Shows that bound systems have negative total energy
+- The more negative Ep, the more tightly bound the system
+- Work must be done to increase r (make Ep less negative)
+- CIE may ask to compare Ep for different mass systems
+- Edexcel may combine with kinetic energy for orbital energy analysis
+
+**中文：**
+- 显示束缚系统具有负的总能量
+- Ep越负，系统结合得越紧密
+- 必须做功才能增加r（使Ep负值减小）
+- CIE可能要求比较不同质量系统的Ep
+- Edexcel可能结合动能进行轨道能量分析
+
+### Common Questions / 常见问题
+**English:**
+1. Sketch Ep vs r for two masses M and m
+2. Calculate the work done to increase separation from r₁ to r₂
+3. Determine the binding energy of a system
+4. Compare Ep for different mass combinations
+
+**中文：**
+1. 绘制两个质量M和m的Ep vs r图
+2. 计算将分离距离从r₁增加到r₂所做的功
+3. 确定系统的结合能
+4. 比较不同质量组合的Ep
+
+---
+
+## 6.3 Field Strength vs Distance (g vs r) / 场强与距离关系图
+
+### Axes / 坐标轴
+**English:** x-axis: r (distance from center of mass), y-axis: g (gravitational field strength)
+**中文：** x轴：r（距质量中心的距离），y轴：g（引力场强度）
+
+### Shape / 形状
+**English:** For r > R, g = GM/r² (inverse square law). The graph is a decreasing curve that approaches zero as r → ∞. For r < R (inside a uniform sphere), g ∝ r (linear increase).
+
+**中文：** 对于r > R，g = GM/r²（平方反比定律）。图形是递减曲线，当r → ∞时趋近于零。对于r < R（均匀球体内部），g ∝ r（线性增加）。
+
+### Gradient Meaning / 斜率含义
+**English:** The gradient of g vs r gives the rate of change of field strength. For r > R, dg/dr = -2GM/r³ (negative, decreasing).
+
+**中文：** g vs r的梯度给出场强的变化率。对于r > R，dg/dr = -2GM/r³（负值，递减）。
+
+### Area Meaning / 面积含义
+**English:** The area under the g vs r graph gives the potential difference: ΔV = -∫g dr. This is a key relationship for calculating work done.
+
+**中文：** g vs r图下的面积给出势差：ΔV = -∫g dr。这是计算所做功的关键关系。
+
+### Exam Interpretation / 考试解读
+**English:**
+- Shows the inverse square law for gravitational fields
+- Area under the curve gives potential difference
+- CIE may ask to sketch both g vs r and V vs r on the same axes
+- Edexcel may ask numerical integration to find ΔV
+
+**中文：**
+- 显示引力场的平方反比定律
+- 曲线下的面积给出势差
+- CIE可能要求在相同坐标轴上绘制g vs r和V vs r
+- Edexcel可能要求数值积分求ΔV
+
+### Common Questions / 常见问题
+**English:**
+1. Sketch g vs r for a planet of radius R
+2. Calculate the area under the curve between two points
+3. Determine the potential difference from the graph
+4. Compare g at different distances
+
+**中文：**
+1. 绘制半径为R的行星的g vs r图
+2. 计算两点之间曲线下的面积
+3. 从图形确定势差
+4. 比较不同距离处的g
+
+---
 
 # 7. Required Diagrams / 必备图表
 
-## 7.1 Gravitational Potential Well / 引力势阱
+## 7.1 Gravitational Potential Well Diagram / 引力势阱图
 
-> 📷 **IMAGE PROMPT — GP-WELL: Gravitational Potential Well of a Planet**
-> A 3D-like diagram showing a planet at the center of a funnel-shaped potential well. The well is deepest near the planet and rises to zero at infinity. Equipotential surfaces are shown as concentric circles at different depths. Labels: "Planet", "Surface", "V = -GM/R", "V = -GM/2R", "V = -GM/3R", "V → 0 as r → ∞". A small ball (test mass) is shown at different positions. Style: 3D perspective, blue gradient for depth. Exam importance: HIGH — helps visualize why potential is negative and how it varies with distance.
+### Description / 描述
+**English:**
+A 2D cross-section showing the gravitational potential well around a massive object. The diagram should show:
+- The central mass (e.g., Earth or a star)
+- Concentric equipotential surfaces (circles in 2D)
+- The potential well shape (like a funnel or bowl)
+- Arrows showing the direction of gravitational field lines (perpendicular to equipotentials)
+- Labels for V = 0 at infinity, decreasing V near the mass
 
-## 7.2 Equipotential Surfaces and Field Lines / 等势面与场线
+**中文：**
+显示大质量物体周围引力势阱的二维截面图。图示应显示：
+- 中心质量（如地球或恒星）
+- 同心等势面（二维中为圆形）
+- 势阱形状（如漏斗或碗状）
+- 箭头显示引力场线方向（垂直于等势面）
+- 标注无穷远处V = 0，质量附近V递减
 
-> 📷 **IMAGE PROMPT — GP-EQUIPOTENTIAL: Equipotential Surfaces Around a Planet**
-> A 2D cross-section showing a planet (circle) at center. Concentric circles around it represent equipotential surfaces (labeled V₁, V₂, V₃, with V₁ < V₂ < V₃). Radial lines from center represent gravitational field lines, perpendicular to equipotential surfaces. Labels: "Equipotential surfaces", "Field lines", "V₁ (most negative)", "V₃ (least negative)", "Field lines perpendicular to equipotentials". Style: clean vector, dashed circles for equipotentials, solid arrows for field lines. Exam importance: HIGH — understanding perpendicular relationship is frequently tested.
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — GP-DIAG-01: Gravitational Potential Well Cross-Section**
+>
+> A 2D cross-sectional diagram of a gravitational potential well. In the center, a large blue sphere representing Earth. Around it, concentric dashed circles (equipotential surfaces) getting closer together near the Earth and farther apart at greater distances. The potential well is shown as a 3D funnel shape in cross-section, with the Earth at the bottom of the funnel. Arrows perpendicular to equipotentials point inward toward Earth. Labels: "V = 0 at infinity" at the top, "V = -GM/r" near the surface, "Equipotential surfaces" on one circle, "Field lines" on arrows. Color scheme: blue for Earth, gray dashed lines for equipotentials, red arrows for field lines. Clean scientific diagram style, white background, suitable for A-Level physics textbook.
 
-## 7.3 Escape Velocity Diagram / 逃逸速度示意图
+### Labels Required / 需要标注
+**English:**
+- Central mass (M)
+- Equipotential surfaces (V₁, V₂, V₃, ...)
+- Gravitational field lines (arrows)
+- V = 0 at infinity
+- Decreasing potential (V₁ > V₂ > V₃)
+- Distance r from center
 
-> 📷 **IMAGE PROMPT — GP-ESCAPE: Escape Velocity from a Planet**
-> A diagram showing a planet with three trajectories from the same launch point: (1) Sub-orbital — falls back to surface (v < v_esc), (2) Orbital — enters circular orbit (v = v_orb), (3) Escape — continues to infinity (v ≥ v_esc). Labels: "Planet", "Launch point", "v < v_esc (falls back)", "v = v_orb (orbits)", "v ≥ v_esc (escapes)", "v_esc = √(2GM/R)". Style: curved trajectories, different colors for each case. Exam importance: MEDIUM — helps distinguish escape from orbital velocity.
+**中文：**
+- 中心质量（M）
+- 等势面（V₁, V₂, V₃, ...）
+- 引力场线（箭头）
+- 无穷远处V = 0
+- 势递减（V₁ > V₂ > V₃）
+- 距中心的距离r
 
-## 7.4 Potential Gradient Graph / 势梯度图
+### Exam Importance / 考试重要性
+**English:**
+- CIE uses this to test understanding of potential as a scalar field
+- Edexcel uses it to relate equipotentials to field lines
+- Helps visualize why V is negative and how it varies with distance
+- Essential for understanding potential gradient concept
 
-> 📷 **IMAGE PROMPT — GP-GRADIENT2: Determining g from V vs r Graph**
-> A graph of V vs r with two points A and B marked. A tangent line is drawn at point A, and the gradient is calculated. Labels: "V (J kg⁻¹)", "r (m)", "A", "B", "Tangent at A", "gradient = ΔV/Δr = -g_A". Below the graph, a small calculation box shows: "g_A = -gradient = -(-2.5 × 10⁷ / 2 × 10⁶) = 12.5 N kg⁻¹". Style: clean graph with construction lines. Exam importance: HIGH — common in data analysis questions.
+**中文：**
+- CIE用此测试对势作为标量场的理解
+- Edexcel用此关联等势面与场线
+- 有助于可视化为什么V为负以及它如何随距离变化
+- 对理解势梯度概念至关重要
+
+---
+
+## 7.2 V vs r and g vs r Graphs / V vs r和g vs r图
+
+### Description / 描述
+**English:**
+Two graphs on the same axes or side-by-side showing:
+- V vs r: Hyperbolic curve, negative values, approaching zero at infinity
+- g vs r: Inverse square curve, positive values (magnitude), approaching zero at infinity
+- Key points labeled: surface (r = R), infinity (r → ∞)
+- Gradient of V vs r shown at a point to illustrate g = -dV/dr
+
+**中文：**
+在同一坐标轴或并排显示的两个图形：
+- V vs r：双曲线，负值，在无穷远处趋近于零
+- g vs r：平方反比曲线，正值（大小），在无穷远处趋近于零
+- 标注关键点：表面（r = R），无穷远（r → ∞）
+- 在一点显示V vs r的梯度以说明g = -dV/dr
+
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — GP-DIAG-02: V vs r and g vs r Comparison Graphs**
+>
+> Two graphs placed side by side on the same page. Left graph: V vs r. x-axis labeled "r / m", y-axis labeled "V / J kg⁻¹". A hyperbolic curve in the negative region, starting very negative near r=0, rising steeply then gradually approaching zero as r increases. Dashed line at V=0. Right graph: g vs r. x-axis labeled "r / m", y-axis labeled "g / N kg⁻¹". A decreasing curve starting high near r=0, following inverse square law. Both graphs have a vertical dashed line at r=R (planet surface). A tangent line drawn on the V vs r graph at a point, with annotation "gradient = -g". Clean scientific style, grid lines, professional labeling, suitable for A-Level physics textbook.
+
+### Labels Required / 需要标注
+**English:**
+- V vs r: V = -GM/r, V → 0 as r → ∞, V → -∞ as r → 0
+- g vs r: g = GM/r², g → 0 as r → ∞, g → ∞ as r → 0
+- r = R (surface of planet)
+- Tangent line showing gradient
+- Annotation: g = -dV/dr
+
+**中文：**
+- V vs r：V = -GM/r，r → ∞时V → 0，r → 0时V → -∞
+- g vs r：g = GM/r²，r → ∞时g → 0，r → 0时g → ∞
+- r = R（行星表面）
+- 切线显示梯度
+- 标注：g = -dV/dr
+
+### Exam Importance / 考试重要性
+**English:**
+- CIE frequently asks to sketch these graphs
+- Edexcel uses them for numerical analysis
+- Tests understanding of the relationship between V and g
+- Essential for potential gradient concept
+
+**中文：**
+- CIE常要求绘制这些图形
+- Edexcel用它们进行数值分析
+- 测试对V和g之间关系的理解
+- 对势梯度概念至关重要
+
+---
+
+## 7.3 Escape Velocity Diagram / 逃逸速度图
+
+### Description / 描述
+**English:**
+A diagram showing:
+- A planet (e.g., Earth) with radius R
+- An object on the surface with velocity v
+- Trajectories for different velocities:
+  - v < v_esc: object falls back (parabolic/suborbital)
+  - v = v_esc: object escapes (parabolic trajectory)
+  - v > v_esc: object escapes (hyperbolic trajectory)
+- Labels for escape velocity equation
+- Energy bar chart showing KE and GPE at surface and at infinity
+
+**中文：**
+显示以下内容的图示：
+- 半径为R的行星（如地球）
+- 表面上的物体，速度为v
+- 不同速度的轨迹：
+  - v < v_esc：物体落回（抛物线/亚轨道）
+  - v = v_esc：物体逃逸（抛物线轨迹）
+  - v > v_esc：物体逃逸（双曲线轨迹）
+- 逃逸速度方程标注
+- 能量柱状图显示表面和无穷远处的KE和GPE
+
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — GP-DIAG-03: Escape Velocity Trajectories**
+>
+> A diagram showing a planet (Earth) in the center with radius R labeled. From the surface, three trajectories emanate: 1) A dashed curve that rises then falls back to the surface, labeled "v < v_esc (falls back)". 2) A solid curve that rises and flattens out, never returning, labeled "v = v_esc (escape)". 3) A dotted curve that rises more steeply and curves away, labeled "v > v_esc (escape)". All trajectories start from the same point on the surface. An inset energy bar chart shows: at surface, a tall KE bar and a deep GPE bar (negative); at infinity, both bars at zero. Equation v_esc = √(2GM/R) displayed prominently. Clean scientific diagram, blue planet, colored trajectories, white background.
+
+### Labels Required / 需要标注
+**English:**
+- Planet radius R
+- Surface point
+- Three trajectories with velocity conditions
+- v_esc = √(2GM/R)
+- Energy bar chart: KE (positive), GPE (negative), Total E = 0 at escape
+- "At infinity: KE = 0, GPE = 0"
+
+**中文：**
+- 行星半径R
+- 表面点
+- 三条轨迹及速度条件
+- v_esc = √(2GM/R)
+- 能量柱状图：KE（正），GPE（负），逃逸时总E = 0
+- "在无穷远处：KE = 0，GPE = 0"
+
+### Exam Importance / 考试重要性
+**English:**
+- CIE requires derivation and application of escape velocity
+- Edexcel tests understanding through energy conservation
+- Visualizes why escape velocity is independent of object mass
+- Connects to black hole concept (v_esc = c)
+
+**中文：**
+- CIE要求推导和应用逃逸速度
+- Edexcel通过能量守恒测试理解
+- 可视化为什么逃逸速度与物体质量无关
+- 连接到黑洞概念（v_esc = c）
+
+---
 
 # 8. Worked Examples / 典型例题
 
-## Example 1: Gravitational Potential Calculation / 例1：引力势计算
+## Example 1: Calculating Gravitational Potential and Potential Energy / 计算引力势和势能
 
 ### Question / 题目
-**English:** The mass of Mars is $6.39 \times 10^{23}$ kg and its radius is $3.39 \times 10^6$ m. Calculate:
-(a) The gravitational potential at the surface of Mars.
-(b) The gravitational potential energy of a 500 kg satellite at the surface.
-(c) The work done to move the satellite from the surface to a point where the potential is $-1.0 \times 10^7$ J kg⁻¹.
-(G = $6.67 \times 10^{-11}$ N m² kg⁻²)
+**English:**
+The Earth has mass M = 5.97 × 10²⁴ kg and radius R = 6.37 × 10⁶ m. A satellite of mass m = 500 kg is in orbit at an altitude of 400 km above Earth's surface. G = 6.67 × 10⁻¹¹ N m² kg⁻².
 
-**中文:** 火星的质量为$6.39 \times 10^{23}$ kg，半径为$3.39 \times 10^6$ m。计算：
-(a) 火星表面的引力势。
-(b) 500 kg卫星在表面的引力势能。
-(c) 将卫星从表面移动到势为$-1.0 \times 10^7$ J kg⁻¹的点所做的功。
-(G = $6.67 \times 10^{-11}$ N m² kg⁻²)
+(a) Calculate the gravitational potential at the satellite's position.
+(b) Calculate the gravitational potential energy of the satellite-Earth system.
+(c) Calculate the work done to move the satellite from the surface to this orbit.
 
-### Image Prompt / 图片提示
-> 📷 **IMAGE PROMPT — GP-EX1: Mars Potential Diagram**
-> Simple diagram of Mars with radius R = 3.39 × 10⁶ m, showing surface point and a point at larger distance. Labels: "Mars M = 6.39×10²³ kg", "R = 3.39×10⁶ m", "Surface V = ?", "Point where V = -1.0×10⁷ J kg⁻¹". Style: simple schematic. Exam importance: LOW (just for visualization).
+**中文：**
+地球质量M = 5.97 × 10²⁴ kg，半径R = 6.37 × 10⁶ m。一颗质量为m = 500 kg的卫星在距地球表面400 km的高度轨道上运行。G = 6.67 × 10⁻¹¹ N m² kg⁻²。
+
+(a) 计算卫星位置处的引力势。
+(b) 计算卫星-地球系统的引力势能。
+(c) 计算将卫星从表面移动到该轨道所做的功。
 
 ### Solution / 解答
 
-**(a) Gravitational potential at surface / 表面引力势:**
+**Step 1: Calculate the distance from Earth's center / 计算距地心距离**
 
-$$ V = -\frac{GM}{r} = -\frac{(6.67 \times 10^{-11})(6.39 \times 10^{23})}{3.39 \times 10^6} $$
+**English:**
+r = R + h = 6.37 × 10⁶ + 400 × 10³ = 6.77 × 10⁶ m
 
-$$ V = -\frac{4.262 \times 10^{13}}{3.39 \times 10^6} = -1.257 \times 10^7 \text{ J kg}^{-1} $$
+**中文：**
+r = R + h = 6.37 × 10⁶ + 400 × 10³ = 6.77 × 10⁶ m
 
-$$ V \approx -1.26 \times 10^7 \text{ J kg}^{-1} $$
+**Step 2: Calculate gravitational potential / 计算引力势**
 
-**(b) Gravitational potential energy at surface / 表面引力势能:**
+**English:**
+V = -GM/r
 
-$$ E_p = mV = (500)(-1.257 \times 10^7) = -6.285 \times 10^9 \text{ J} $$
+V = -(6.67 × 10⁻¹¹)(5.97 × 10²⁴) / (6.77 × 10⁶)
 
-$$ E_p \approx -6.29 \times 10^9 \text{ J} $$
+V = -(3.98 × 10¹⁴) / (6.77 × 10⁶)
 
-**(c) Work done to move satellite / 移动卫星所做的功:**
+V = -5.88 × 10⁷ J kg⁻¹
 
-Work done = change in potential energy = $m\Delta V = m(V_2 - V_1)$
+**中文：**
+V = -GM/r
 
-$$ W = 500[(-1.0 \times 10^7) - (-1.257 \times 10^7)] $$
+V = -(6.67 × 10⁻¹¹)(5.97 × 10²⁴) / (6.77 × 10⁶)
 
-$$ W = 500(2.57 \times 10^6) = 1.285 \times 10^9 \text{ J} $$
+V = -(3.98 × 10¹⁴) / (6.77 × 10⁶)
 
-$$ W \approx 1.29 \times 10^9 \text{ J} $$
+V = -5.88 × 10⁷ J kg⁻¹
+
+**Step 3: Calculate gravitational potential energy / 计算引力势能**
+
+**English:**
+Ep = mV = m × (-GM/r)
+
+Ep = 500 × (-5.88 × 10⁷)
+
+Ep = -2.94 × 10¹⁰ J
+
+Alternatively: Ep = -GMm/r = -(6.67 × 10⁻¹¹)(5.97 × 10²⁴)(500) / (6.77 × 10⁶) = -2.94 × 10¹⁰ J
+
+**中文：**
+Ep = mV = m × (-GM/r)
+
+Ep = 500 × (-5.88 × 10⁷)
+
+Ep = -2.94 × 10¹⁰ J
+
+或者：Ep = -GMm/r = -(6.67 × 10⁻¹¹)(5.97 × 10²⁴)(500) / (6.77 × 10⁶) = -2.94 × 10¹⁰ J
+
+**Step 4: Calculate work done to move from surface to orbit / 计算从表面移动到轨道所做的功**
+
+**English:**
+Work done = ΔEp = Ep_orbit - Ep_surface
+
+First, calculate Ep at surface:
+Ep_surface = -GMm/R = -(6.67 × 10⁻¹¹)(5.97 × 10²⁴)(500) / (6.37 × 10⁶)
+Ep_surface = -3.13 × 10¹⁰ J
+
+Work done = Ep_orbit - Ep_surface = (-2.94 × 10¹⁰) - (-3.13 × 10¹⁰)
+Work done = 1.9 × 10⁹ J
+
+**中文：**
+所做的功 = ΔEp = Ep_轨道 - Ep_表面
+
+首先，计算表面的Ep：
+Ep_表面 = -GMm/R = -(6.67 × 10⁻¹¹)(5.97 × 10²⁴)(500) / (6.37 × 10⁶)
+Ep_表面 = -3.13 × 10¹⁰ J
+
+所做的功 = Ep_轨道 - Ep_表面 = (-2.94 × 10¹⁰) - (-3.13 × 10¹⁰)
+所做的功 = 1.9 × 10⁹ J
 
 ### Final Answer / 最终答案
-(a) $V = -1.26 \times 10^7$ J kg⁻¹
-(b) $E_p = -6.29 \times 10^9$ J
-(c) $W = 1.29 \times 10^9$ J
+**Answer:**
+(a) V = -5.88 × 10⁷ J kg⁻¹
+(b) Ep = -2.94 × 10¹⁰ J
+(c) Work done = 1.9 × 10⁹ J
+
+**答案：**
+(a) V = -5.88 × 10⁷ J kg⁻¹
+(b) Ep = -2.94 × 10¹⁰ J
+(c) 所做的功 = 1.9 × 10⁹ J
 
 ### Examiner Notes / 考官点评
-**English:** Common mistakes include: forgetting the negative sign in (a) and (b); using $mgh$ instead of $-\frac{GMm}{r}$; calculating work as $m(V_1 - V_2)$ instead of $m(V_2 - V_1)$. The positive work in (c) indicates work is done against the field (moving away from Mars).
+**English:**
+- Common mistake: forgetting to add altitude to Earth's radius (using R instead of r)
+- Common mistake: using Ep = mgh (which is only valid near Earth's surface)
+- The work done is positive because we must do work against gravity to raise the satellite
+- Note that Ep becomes less negative (increases) as the satellite moves to higher orbit
+- Always check units: V in J kg⁻¹, Ep in J
 
-**中文:** 常见错误包括：在(a)和(b)中忘记负号；使用$mgh$而不是$-\frac{GMm}{r}$；将功计算为$m(V_1 - V_2)$而不是$m(V_2 - V_1)$。(c)中的正功表示克服场做功（远离火星移动）。
+**中文：**
+- 常见错误：忘记将高度加到地球半径上（使用R而不是r）
+- 常见错误：使用Ep = mgh（仅在地球表面附近有效）
+- 所做的功为正，因为我们必须克服重力做功才能提升卫星
+- 注意当卫星移动到更高轨道时，Ep变得不那么负（增加）
+- 始终检查单位：V单位为J kg⁻¹，Ep单位为J
 
-## Example 2: Escape Velocity Derivation and Calculation / 例2：逃逸速度推导与计算
+---
+
+## Example 2: Escape Velocity Calculation / 逃逸速度计算
 
 ### Question / 题目
-**English:** (a) Derive an expression for the escape velocity from the surface of a planet of mass $M$ and radius $R$.
-(b) The escape velocity from Earth is $11.2$ km s⁻¹. Calculate the escape velocity from a planet with twice the mass of Earth and half the radius.
-(c) Explain why the escape velocity does not depend on the mass of the escaping object.
+**English:**
+A planet has mass M = 3.0 × 10²³ kg and radius R = 2.5 × 10⁶ m. G = 6.67 × 10⁻¹¹ N m² kg⁻².
 
-**中文:** (a) 推导从质量为$M$、半径为$R$的行星表面逃逸的速度表达式。
-(b) 地球的逃逸速度为$11.2$ km s⁻¹。计算从质量为地球两倍、半径为地球一半的行星逃逸的速度。
-(c) 解释为什么逃逸速度不依赖于逃离物体的质量。
+(a) Calculate the escape velocity from the surface of this planet.
+(b) A spacecraft of mass 1000 kg is launched from the surface. Calculate the minimum kinetic energy required for it to escape the planet's gravitational field.
+(c) Explain why the escape velocity is independent of the mass of the spacecraft.
 
-### Image Prompt / 图片提示
-> 📷 **IMAGE PROMPT — GP-EX2: Escape Velocity Comparison**
-> Two planets side by side: Earth (M, R) and Planet X (2M, R/2). Arrows show escape trajectories. Labels: "Earth: M, R, v_esc = 11.2 km/s", "Planet X: 2M, R/2, v_esc = ?". Style: simple comparison diagram. Exam importance: LOW (just for visualization).
+**中文：**
+某行星质量M = 3.0 × 10²³ kg，半径R = 2.5 × 10⁶ m。G = 6.67 × 10⁻¹¹ N m² kg⁻²。
+
+(a) 计算从该行星表面逃逸的逃逸速度。
+(b) 一艘质量为1000 kg的航天器从表面发射。计算它逃离行星引力场所需的最小动能。
+(c) 解释为什么逃逸速度与航天器的质量无关。
 
 ### Solution / 解答
 
-**(a) Derivation / 推导:**
+**Step 1: Calculate escape velocity / 计算逃逸速度**
 
-Energy conservation: Total energy at surface = Total energy at infinity
+**English:**
+v_esc = √(2GM/R)
 
-$$ \frac{1}{2}mv_{esc}^2 + \left(-\frac{GMm}{R}\right) = 0 + 0 $$
+v_esc = √[2 × (6.67 × 10⁻¹¹) × (3.0 × 10²³) / (2.5 × 10⁶)]
 
-At infinity, kinetic energy = 0 (object just reaches infinity with zero speed) and potential energy = 0 (by definition).
+v_esc = √[(4.00 × 10¹³) / (2.5 × 10⁶)]
 
-$$ \frac{1}{2}mv_{esc}^2 = \frac{GMm}{R} $$
+v_esc = √(1.60 × 10⁷)
 
-$$ v_{esc}^2 = \frac{2GM}{R} $$
+v_esc = 4.0 × 10³ m s⁻¹ = 4.0 km s⁻¹
 
-$$ v_{esc} = \sqrt{\frac{2GM}{R}} $$
+**中文：**
+v_esc = √(2GM/R)
 
-**(b) Calculation for new planet / 新行星的计算:**
+v_esc = √[2 × (6.67 × 10⁻¹¹) × (3.0 × 10²³) / (2.5 × 10⁶)]
 
-Let Earth parameters be $M_E$, $R_E$, $v_{esc,E} = 11.2$ km s⁻¹.
+v_esc = √[(4.00 × 10¹³) / (2.5 × 10⁶)]
 
-New planet: $M = 2M_E$, $R = \frac{1}{2}R_E$
+v_esc = √(1.60 × 10⁷)
 
-$$ v_{esc} = \sqrt{\frac{2G(2M_E)}{\frac{1}{2}R_E}} = \sqrt{\frac{4GM_E}{\frac{1}{2}R_E}} = \sqrt{\frac{8GM_E}{R_E}} $$
+v_esc = 4.0 × 10³ m s⁻¹ = 4.0 km s⁻¹
 
-$$ v_{esc} = \sqrt{8} \times \sqrt{\frac{2GM_E}{R_E}} = \sqrt{8} \times v_{esc,E} $$
+**Step 2: Calculate minimum kinetic energy / 计算最小动能**
 
-$$ v_{esc} = \sqrt{8} \times 11.2 = 2.828 \times 11.2 = 31.7 \text{ km s}^{-1} $$
+**English:**
+For escape: KE_min = -Ep_surface = GMm/R
 
-**(c) Explanation / 解释:**
+KE_min = (6.67 × 10⁻¹¹)(3.0 × 10²³)(1000) / (2.5 × 10⁶)
 
-**English:** The escape velocity is independent of the mass of the escaping object because both kinetic energy ($\frac{1}{2}mv^2$) and gravitational potential energy ($-\frac{GMm}{R}$) are proportional to $m$. When applying energy conservation, $m$ cancels out, leaving an expression that depends only on the planet's mass and radius.
+KE_min = (2.00 × 10¹⁶) / (2.5 × 10⁶)
 
-**中文:** 逃逸速度与逃离物体的质量无关，因为动能（$\frac{1}{2}mv^2$）和引力势能（$-\frac{GMm}{R}$）都与$m$成正比。应用能量守恒时，$m$被消去，留下仅依赖于行星质量和半径的表达式。
+KE_min = 8.0 × 10⁹ J
+
+Alternatively: KE_min = ½mv_esc² = ½ × 1000 × (4.0 × 10³)² = 8.0 × 10⁹ J
+
+**中文：**
+逃逸条件：KE_最小 = -Ep_表面 = GMm/R
+
+KE_最小 = (6.67 × 10⁻¹¹)(3.0 × 10²³)(1000) / (2.5 × 10⁶)
+
+KE_最小 = (2.00 × 10¹⁶) / (2.5 × 10⁶)
+
+KE_最小 = 8.0 × 10⁹ J
+
+或者：KE_最小 = ½mv_esc² = ½ × 1000 × (4.0 × 10³)² = 8.0 × 10⁹ J
+
+**Step 3: Explain independence of mass / 解释与质量无关**
+
+**English:**
+From the energy conservation derivation:
+½mv² = GMm/R
+
+The mass m cancels out from both sides:
+½v² = GM/R
+
+Therefore v = √(2GM/R), which does not depend on m. This is because both kinetic energy and gravitational potential energy are proportional to the mass of the object.
+
+**中文：**
+从能量守恒推导：
+½mv² = GMm/R
+
+质量m从两边消去：
+½v² = GM/R
+
+因此v = √(2GM/R)，与m无关。这是因为动能和引力势能都与物体质量成正比。
 
 ### Final Answer / 最终答案
-(a) $v_{esc} = \sqrt{\frac{2GM}{R}}$
-(b) $v_{esc} = 31.7$ km s⁻¹
-(c) $m$ cancels in energy conservation equation
+**Answer:**
+(a) v_esc = 4.0 × 10³ m s⁻¹ (4.0 km s⁻¹)
+(b) KE_min = 8.0 × 10⁹ J
+(c) The mass cancels out in the energy conservation equation because both KE and GPE are proportional to mass.
+
+**答案：**
+(a) v_esc = 4.0 × 10³ m s⁻¹ (4.0 km s⁻¹)
+(b) KE_最小 = 8.0 × 10⁹ J
+(c) 在能量守恒方程中质量被消去，因为KE和GPE都与质量成正比。
 
 ### Examiner Notes / 考官点评
-**English:** For part (a), full marks require showing the energy conservation equation explicitly. For part (b), the ratio method ($v_{esc} \propto \sqrt{M/R}$) is efficient. Common error: forgetting to square root. For part (c), explicitly stating that $m$ cancels is essential.
+**English:**
+- Common mistake: forgetting to take the square root when calculating v_esc
+- Common mistake: using diameter instead of radius
+- The explanation of mass independence is frequently tested in exams
+- Remember that escape velocity is a scalar (speed), not a vector
+- For part (c), a clear mathematical derivation is expected
 
-**中文:** 对于(a)部分，满分需要明确写出能量守恒方程。对于(b)部分，比例法（$v_{esc} \propto \sqrt{M/R}$）很高效。常见错误：忘记开平方根。对于(c)部分，明确说明$m$被消去至关重要。
+**中文：**
+- 常见错误：计算v_esc时忘记开平方
+- 常见错误：使用直径而不是半径
+- 质量无关性的解释在考试中经常测试
+- 记住逃逸速度是标量（速率），不是矢量
+- 对于(c)部分，期望清晰的数学推导
+
+---
 
 # 9. Past Paper Question Types / 历年真题题型
 
 | Question Type / 题型 | Frequency / 频率 | Difficulty / 难度 | Past Paper References / 真题索引 |
-|---|---|---|---|
-| Define gravitational potential / 定义引力势 | HIGH | EASY | 📝 *待填入* |
-| Calculate V or Ep using $V = -GM/r$ / 计算V或Ep | HIGH | MEDIUM | 📝 *待填入* |
-| Derive escape velocity / 推导逃逸速度 | HIGH | MEDIUM | 📝 *待填入* |
-| Calculate escape velocity / 计算逃逸速度 | HIGH | MEDIUM | 📝 *待填入* |
-| Potential gradient from graph / 从图表求势梯度 | MEDIUM | HARD | 📝 *待填入* |
-| Work done in moving mass / 移动质量做功 | MEDIUM | MEDIUM | 📝 *待填入* |
-| Total energy in orbit / 轨道总能量 | MEDIUM | HARD | 📝 *待填入* |
-| Compare potentials of different planets / 比较不同行星的势 | LOW | MEDIUM | 📝 *待填入* |
-| Equipotential surfaces / 等势面 | LOW | EASY | 📝 *待填入* |
-| Data analysis: V vs r graph / 数据分析：V对r图 | MEDIUM | HARD | 📝 *待填入* |
+|----------------------|------------------|------------------|-------------------------------|
+| Calculation of V or Ep / 计算V或Ep | High | Medium | 📝 *待填入* |
+| Escape velocity derivation / 逃逸速度推导 | High | Medium | 📝 *待填入* |
+| V vs r graph analysis / V vs r图分析 | Medium | Medium-High | 📝 *待填入* |
+| Potential gradient calculation / 势梯度计算 | Medium | Medium | 📝 *待填入* |
+| Energy conservation in gravitational fields / 引力场中的能量守恒 | High | High | 📝 *待填入* |
+| Comparison of potentials / 势的比较 | Low-Medium | Medium | 📝 *待填入* |
+| Black hole / Schwarzschild radius / 黑洞/史瓦西半径 | Low (Edexcel) | High | 📝 *待填入* |
+| Multi-mass systems / 多质量系统 | Low-Medium | High | 📝 *待填入* |
 
-> 📝 **题库整理中 / Question Bank Under Construction:** 本表格中的真题索引正在整理中。建议学生参考以下资源：CAIE 9702 Paper 4 (2016-2023) 和 Edexcel IAL Unit 4 (2018-2023) 的相关题目。典型题目包括：CAIE 9702/41/M/J/22 Q6 (gravitational potential and escape velocity), Edexcel WPH14/01 (potential gradient analysis)。
+> 📝 **题库整理中 / Question Bank Under Construction:** 具体试卷编号（如 9702/23/M/J/24 Q3）将在后续整理真题后填入上表。
 
 **Common Command Words / 常见指令词:**
-- **Define / 定义:** State the precise meaning (e.g., "Define gravitational potential")
-- **Derive / 推导:** Show step-by-step mathematical derivation
-- **Calculate / 计算:** Use given data to find numerical answer
-- **Explain / 解释:** Give reasons with physics principles
-- **Determine / 确定:** Find value from graph or data
-- **Sketch / 草图:** Draw approximate shape of graph
-- **Compare / 比较:** State similarities and differences
+
+| Command Word (EN) | 指令词 (CN) | Typical Usage / 典型用法 |
+|-------------------|-------------|-------------------------|
+| State | 陈述 | State the definition of gravitational potential |
+| Define | 定义 | Define gravitational potential at a point |
+| Explain | 解释 | Explain why gravitational potential is negative |
+| Describe | 描述 | Describe how gravitational potential varies with distance |
+| Calculate | 计算 | Calculate the escape velocity from the planet |
+| Determine | 确定 | Determine the gravitational potential at point P |
+| Derive | 推导 | Derive an expression for escape velocity |
+| Suggest | 建议 | Suggest why the escape velocity from the Moon is less than from Earth |
+| Sketch | 绘制 | Sketch a graph of V against r |
+| Compare | 比较 | Compare the gravitational potential at two different points |
+
+---
 
 # 10. Practical Skills Connections / 实验技能链接
 
-**English:** Gravitational potential is primarily a theoretical topic, but practical skills are tested through:
-- **Data Analysis (CAIE Paper 5, Edexcel Unit 6):** Plotting $V$ vs $r$ graphs, calculating gradients to find $g$, determining $M$ from graph intercepts
-- **Uncertainties:** Propagating errors in $V = -\frac{GM}{r}$ calculations
-- **Experimental Design:** Using Cavendish-type experiments to determine $G$, then calculating $V$ for known masses
-- **Graph Skills:** Drawing tangents to $V$-$r$ curves, calculating areas under $g$-$r$ graphs
-- **Log-Log Plots:** Verifying $V \propto 1/r$ relationship using logarithmic graphs
+**English:**
+While gravitational potential is primarily a theoretical concept, it connects to practical skills in several ways:
 
-**中文:** 引力势主要是一个理论主题，但实验技能通过以下方式测试：
-- **数据分析（CAIE Paper 5, Edexcel Unit 6）：** 绘制$V$对$r$图，计算梯度以找到$g$，从图截距确定$M$
-- **不确定度：** 在$V = -\frac{GM}{r}$计算中传播误差
-- **实验设计：** 使用卡文迪许型实验确定$G$，然后计算已知质量的$V$
-- **图表技能：** 在$V$-$r$曲线上画切线，计算$g$-$r$图下的面积
-- **对数-对数图：** 使用对数图验证$V \propto 1/r$关系
+**CAIE Paper 3 (AS) / Paper 5 (A2):**
+- **Graph plotting and analysis:** Plotting V vs r or g vs r graphs from given data; determining gradients to find field strength
+- **Uncertainty analysis:** Propagating uncertainties in M, r, and G to find uncertainty in V or Ep
+- **Experimental design:** Designing experiments to determine G (Cavendish experiment) or to verify inverse square law
+- **Data analysis:** Using logarithmic plots to verify relationships (e.g., log V vs log r to confirm V ∝ 1/r)
 
-> 📋 **CIE Only:** CAIE Paper 5 may include questions on determining $G$ from experimental data, then using it to calculate gravitational potential. The "graphical method" for finding $g$ from $V$-$r$ gradient is specifically tested.
-> 
-> 📋 **Edexcel Only:** Edexcel Unit 6 often includes analysis of gravitational potential data from planetary missions. Core Practical 14 (determination of $g$) links to potential gradient concepts.
+**Edexcel Unit 3 (AS) / Unit 6 (A2):**
+- **Measurements:** Measuring gravitational field strength using pendulum or free-fall methods
+- **Graphical analysis:** Using gradients of V vs r graphs to determine g
+- **Error analysis:** Identifying systematic errors in gravitational experiments
+- **Practical investigations:** Investigating factors affecting orbital motion using simulations
+
+**Common Practical Skills:**
+1. **Using logarithmic scales:** Plotting log V against log r to determine the power relationship
+2. **Determining gradients:** Drawing tangents to curves to find instantaneous gradient (g = -dV/dr)
+3. **Area under curves:** Estimating area under g vs r graphs to find potential differences
+4. **Uncertainty propagation:** Calculating percentage uncertainties in derived quantities
+5. **Significant figures:** Reporting answers with appropriate precision
+
+**中文：**
+虽然引力势主要是理论概念，但它通过多种方式与实践技能相关联：
+
+**CAIE Paper 3 (AS) / Paper 5 (A2)：**
+- **图表绘制与分析：** 根据给定数据绘制V vs r或g vs r图；确定梯度以求出场强
+- **不确定度分析：** 传播M、r和G的不确定度以求出V或Ep的不确定度
+- **实验设计：** 设计实验确定G（卡文迪许实验）或验证平方反比定律
+- **数据分析：** 使用对数图验证关系（如log V vs log r确认V ∝ 1/r）
+
+**Edexcel Unit 3 (AS) / Unit 6 (A2)：**
+- **测量：** 使用单摆或自由落体方法测量引力场强度
+- **图形分析：** 使用V vs r图的梯度确定g
+- **误差分析：** 识别引力实验中的系统误差
+- **实践调查：** 使用模拟研究影响轨道运动的因素
+
+**常见实践技能：**
+1. **使用对数刻度：** 绘制log V vs log r以确定幂关系
+2. **确定梯度：** 绘制曲线的切线以找到瞬时梯度（g = -dV/dr）
+3. **曲线下面积：** 估算g vs r图下的面积以求出势差
+4. **不确定度传播：** 计算导出量的百分比不确定度
+5. **有效数字：** 以适当的精度报告答案
+
+> 📋 **CIE Only:** CIE Paper 5 may ask you to design an experiment to determine G or to verify the inverse square law. You should be familiar with the Cavendish experiment setup.
+>
+> 📋 **Edexcel Only:** Edexcel Unit 6 may include practical investigations using computer simulations of gravitational fields or orbital motion.
+
+---
 
 # 11. Concept Map / 概念图谱
 
 ```mermaid
 graph TD
-    A[Gravitational Potential] --> B[Definition: V = W/m]
-    A --> C[Equation: V = -GM/r]
-    A --> D[Gravitational Potential Energy: Ep = mV = -GMm/r]
-    A --> E[Potential Gradient: g = -dV/dr]
-    A --> F[Escape Velocity: v_esc = √(2GM/r)]
-    A --> G[Equipotential Surfaces]
+    %% Main Topic
+    GP[Gravitational Potential]
     
-    B --> H[Work done from infinity]
-    B --> I[Scalar quantity]
-    B --> J[Negative sign convention]
+    %% Prerequisites
+    GFF[Gravitational Force and Field]
+    KEPE[Kinetic Energy and Potential Energy]
     
-    C --> K[Radial field]
-    C --> L[Point mass assumption]
-    C --> M[V → 0 as r → ∞]
+    %% Sub-topics (Leaf Nodes)
+    V[Gravitational Potential V]
+    EPR[Gravitational Potential Energy in Radial Field]
+    ESC[Escape Velocity]
+    PG[Potential Gradients]
     
-    D --> N[Energy of system]
-    D --> O[Links to orbital mechanics]
+    %% Related Topics
+    CO[Circular Orbits]
     
-    E --> P[g = GM/r² from gradient]
-    E --> Q[Graphical determination of g]
+    %% Key Equations
+    EQ1[V = -GM/r]
+    EQ2[Ep = -GMm/r]
+    EQ3[v_esc = √(2GM/R)]
+    EQ4[g = -dV/dr]
     
-    F --> R[Energy conservation derivation]
-    F --> S[Independent of escaping mass]
-    F --> T[Schwarzschild radius]
+    %% Concepts
+    DEF[Definition: Work per unit mass from infinity]
+    NEG[Negative sign: Attractive field]
+    INF[V = 0 at infinity]
+    WELL[Potential Well Concept]
+    BIND[Binding Energy]
+    CONS[Energy Conservation]
+    GRAD[Gradient = Field Strength]
+    EQUI[Equipotential Surfaces]
     
-    G --> U[Perpendicular to field lines]
-    G --> V[No work done along surface]
+    %% Connections
+    GP --> V
+    GP --> EPR
+    GP --> ESC
+    GP --> PG
     
-    O --> W[Circular Orbits]
-    O --> X[Total energy: Etotal = -GMm/2r]
+    GFF --> GP
+    KEPE --> GP
     
-    T --> Y[Black holes]
-    T --> Z[Event horizon]
+    V --> EQ1
+    EPR --> EQ2
+    ESC --> EQ3
+    PG --> EQ4
     
-    style A fill:#f9f,stroke:#333,stroke-width:4px
-    style B fill:#bbf,stroke:#333
-    style C fill:#bbf,stroke:#333
-    style D fill:#bbf,stroke:#333
-    style E fill:#bbf,stroke:#333
-    style F fill:#bbf,stroke:#333
-    style G fill:#bbf,stroke:#333
+    V --> DEF
+    V --> NEG
+    V --> INF
+    V --> WELL
+    
+    EPR --> BIND
+    ESC --> CONS
+    
+    PG --> GRAD
+    PG --> EQUI
+    
+    GP --> CO
+    
+    %% Styling
+    classDef main fill:#f9f,stroke:#333,stroke-width:4px
+    classDef subtopic fill:#bbf,stroke:#333,stroke-width:2px
+    classDef equation fill:#bfb,stroke:#333,stroke-width:2px
+    classDef concept fill:#fbb,stroke:#333,stroke-width:2px
+    classDef related fill:#ffb,stroke:#333,stroke-width:2px
+    
+    class GP main
+    class V,EPR,ESC,PG subtopic
+    class EQ1,EQ2,EQ3,EQ4 equation
+    class DEF,NEG,INF,WELL,BIND,CONS,GRAD,EQUI concept
+    class GFF,KEPE,CO related
 ```
 
-**Prerequisites / 前置知识:** [[Gravitational Force and Field]], [[Kinetic Energy and Potential Energy]]
-**Related Topics / 相关主题:** [[Circular Orbits]]
-**Sub-topics / 子主题:** [[Gravitational Potential Energy in a Radial Field]], [[Gravitational Potential (V)]], [[Escape Velocity]], [[Potential Gradients]]
-
-# 12. Examiner Insights / 考官洞察
+**Concept Map Explanation / 概念图说明:**
 
 **English:**
+The concept map shows how Gravitational Potential connects to:
+- **Prerequisites:** [[Gravitational Force and Field]] (provides the force law F = GMm/r²) and [[Kinetic Energy and Potential Energy]] (provides energy conservation framework)
+- **Sub-topics:** Four leaf nodes that are explored in detail in separate notes
+- **Related Topics:** [[Circular Orbits]] (where gravitational potential energy combines with kinetic energy)
+- **Key Equations:** The four fundamental equations that govern gravitational potential
+- **Core Concepts:** The physical ideas that underpin the mathematics
 
-**Most Tested Ideas (CAIE 9702):**
-1. Definition of gravitational potential (frequently appears as a 2-mark definition question)
-2. Calculation of $V$ and $E_p$ using $V = -GM/r$ (standard calculation question)
-3. Derivation of escape velocity using energy conservation (common 4-mark derivation)
-4. Relationship between $g$ and $V$: $g = -dV/dr$ (often in data analysis)
-5. Total energy in circular orbits: $E_{total} = -GMm/2r$ (linking to orbital mechanics)
+**中文：**
+概念图显示引力势如何连接到：
+- **先决条件：** [[引力力与场]]（提供力定律F = GMm/r²）和[[动能与势能]]（提供能量守恒框架）
+- **子主题：** 四个叶节点，在单独的笔记中详细探讨
+- **相关主题：** [[圆形轨道]]（其中引力势能与动能结合）
+- **关键方程：** 控制引力势的四个基本方程
+- **核心概念：** 支撑数学的物理思想
 
-**Most Tested Ideas (Edexcel IAL):**
-1. Gravitational potential as scalar quantity (multiple choice)
-2. Escape velocity calculations with ratio method
-3. Potential gradient from $V$-$r$ graphs (data analysis in Unit 4)
-4. Work done in moving between equipotential surfaces
-5. Energy changes in satellite orbit transfers
+---
 
-**Mark Scheme Wording / 评分方案措辞:**
-- "Work done per unit mass" (not "energy per unit mass" — though both accepted)
-- "From infinity" must be mentioned in definition
-- Negative sign must be present in equation
-- "Gravitational field does work" for inward movement
-
-**Common Lost Marks / 常见失分点:**
-- Omitting negative sign in $V = -GM/r$
-- Using $mgh$ instead of $-GMm/r$ for radial fields
-- Not stating "from infinity" in definition
-- Confusing potential $V$ with potential energy $E_p$
-- Incorrect sign when calculating work done: $W = m(V_2 - V_1)$, not $m(V_1 - V_2)$
-
-**High-Scoring Structures / 高分结构:**
-- Always define symbols used in derivations
-- Show energy conservation equation explicitly for escape velocity
-- Use ratio method for comparative calculations
-- Draw clear diagrams showing equipotential surfaces and field lines
-- State assumptions (point mass, no other forces)
-
-**中文:**
-
-**最常考的概念（CAIE 9702）：**
-1. 引力势的定义（常作为2分定义题出现）
-2. 使用$V = -GM/r$计算$V$和$E_p$（标准计算题）
-3. 使用能量守恒推导逃逸速度（常见的4分推导题）
-4. $g$和$V$的关系：$g = -dV/dr$（常在数据分析中）
-5. 圆形轨道的总能量：$E_{total} = -GMm/2r$（链接到轨道力学）
-
-**最常考的概念（Edexcel IAL）：**
-1. 引力势作为标量（选择题）
-2. 使用比例法计算逃逸速度
-3. 从$V$-$r$图求势梯度（Unit 4数据分析）
-4. 在等势面之间移动做功
-5. 卫星轨道转移中的能量变化
-
-**评分方案措辞：**
-- "单位质量所做的功"（不是"单位质量的能量"——虽然两者都接受）
-- 定义中必须提到"从无穷远处"
-- 方程中必须有负号
-- 向内移动时"引力场做功"
-
-**常见失分点：**
-- 在$V = -GM/r$中省略负号
-- 对径向场使用$mgh$而不是$-GMm/r$
-- 定义中未说明"从无穷远处"
-- 混淆势$V$和势能$E_p$
-- 计算功时符号错误：$W = m(V_2 - V_1)$，不是$m(V_1 - V_2)$
-
-**高分结构：**
-- 在推导中始终定义所用符号
-- 对逃逸速度明确写出能量守恒方程
-- 对比较计算使用比例法
-- 绘制清晰的等势面和场线图
-- 说明假设条件（点质量，无其他力）
-
-# 13. Quick Revision Sheet / 速查表
+# 12. Quick Revision Sheet / 速查表
 
 | Category / 类别 | Key Points / 要点 |
-|---|---|
-| **Definition / 定义** | $V = \frac{W}{m}$ = work done per unit mass from infinity / 单位质量从无穷远处移动所做的功 |
-| **Equation / 方程** | $V = -\frac{GM}{r}$ (radial field) / 径向场 |
-| **Sign / 符号** | Negative: field does work as mass moves inward / 负号：质量向内移动时场做功 |
-| **Zero point / 零点** | $V = 0$ at $r = \infty$ / 无穷远处为零 |
-| **Potential Energy / 势能** | $E_p = mV = -\frac{GMm}{r}$ (system energy) / 系统能量 |
-| **Escape Velocity / 逃逸速度** | $v_{esc} = \sqrt{\frac{2GM}{r}}$ (independent of $m$) / 与$m$无关 |
-| **Potential Gradient / 势梯度** | $g = -\frac{dV}{dr}$ (gradient of $V$-$r$ graph = $-g$) / $V$-$r$图梯度 = $-g$ |
-| **Orbital Energy / 轨道能量** | $E_{total} = -\frac{GMm}{2r}$ (circular orbit) / 圆形轨道 |
-| **Equipotentials / 等势面** | Surfaces of constant $V$; field lines perpendicular / 恒定$V$的面；场线垂直 |
-| **Scalar / 标量** | $V$ adds algebraically for multiple masses / 多个质量的$V$代数相加 |
-| **Key Ratio / 关键比例** | $v_{esc} = \sqrt{2} \times v_{orb}$ / 逃逸速度 = √2 × 轨道速度 |
-| **Common Mistake / 常见错误** | Don't use $mgh$ for radial fields! / 径向场不要用$mgh$！ |
+|----------------|------------------|
+| **Definitions / 定义** | • **Gravitational Potential (V):** Work done per unit mass to bring a test mass from infinity to that point (J kg⁻¹)<br>• **Gravitational Potential Energy (Ep):** Energy stored in a system of two masses due to gravitational attraction (J)<br>• **Escape Velocity (v_esc):** Minimum speed to escape gravitational field without further propulsion (m s⁻¹)<br>• **Potential Gradient:** Rate of change of V with distance; g = -dV/dr |
+| **Equations / 公式** | • V = -GM/r (gravitational potential)<br>• Ep = mV = -GMm/r (gravitational potential energy)<br>• v_esc = √(2GM/R) (escape velocity)<br>• g = -dV/dr (potential gradient)<br>• For black holes: R_s = 2GM/c² (Schwarzschild radius) |
+| **Graphs / 图表** | • **V vs r:** Hyperbolic curve, negative values, approaches zero at infinity<br>• **g vs r:** Inverse square curve, positive values, approaches zero at infinity<br>• **Ep vs r:** Same shape as V vs r, scaled by mass m<br>• Gradient of V vs r = -g; Area under g vs r = -ΔV |
+| **Key Facts / 关键事实** | • V is always negative (attractive field)<br>• V = 0 at infinity (reference point)<br>• Ep is a system property, not of individual masses<br>• Escape velocity is independent of escaping object's mass<br>• Equipotential surfaces are perpendicular to field lines<br>• No work is done moving along an equipotential surface |
+| **Exam Reminders / 考试提醒** | • **Always include negative sign** in V = -GM/r and Ep = -GMm/r<br>• **Don't use Ep = mgh** in radial fields (only valid near Earth's surface)<br>• **Check units:** V (J kg⁻¹), Ep (J), g (N kg⁻¹ or m s⁻²)<br>• **Derive escape velocity** using energy conservation (KE + GPE = 0 at escape)<br>• **Scalar addition** for V in multi-mass systems<br>• **Gradient interpretation:** Steeper V vs r = stronger field<br>• **Common calculation errors:** Forgetting to add altitude to radius; using diameter instead of radius; forgetting square root in v_esc |
 
-# 14. Metadata / 元数据
+---
 
-```yaml
-title:
-  en: Gravitational Potential
-  cn: 引力势
-subject: Physics
-syllabus: [CAIE 9702, Edexcel IAL]
-cie_ref: 15.2 (a-f)
-edexcel_ref: WPH14 U4: 6.6-6.10
-level: A2
-node_type: topic_hub
-difficulty: advanced
-prerequisites:
-  - Gravitational Force and Field
-  - Kinetic Energy and Potential Energy
-related_topics:
-  - Circular Orbits
-sub_topics:
-  - Gravitational Potential Energy in a Radial Field
-  - Gravitational Potential (V)
-  - Escape Velocity
-  - Potential Gradients
-formula_count: 5
-diagram_count: 6
-exam_frequency: HIGH (appears in 80%+ of A2 papers)
-language: bilingual_en_cn
-last_updated: 2024-01
-```
-
-> 📝 **Note / 备注:** This is the HUB file for Gravitational Potential. Leaf nodes ([[Gravitational Potential Energy in a Radial Field]], [[Gravitational Potential (V)]], [[Escape Velocity]], [[Potential Gradients]]) contain detailed sub-topic content. This hub provides the overview and connections between all sub-topics.
+> 📝 **Note / 备注:** This is the HUB (overview) file for Gravitational Potential. For detailed exploration of specific sub-topics, refer to the leaf nodes: [[Gravitational Potential Energy in a Radial Field]], [[Gravitational Potential (V)]], [[Escape Velocity]], and [[Potential Gradients]].

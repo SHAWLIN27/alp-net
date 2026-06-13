@@ -1,296 +1,353 @@
 # 1. Overview / 概述
 
 **English:**
-Resolving forces on inclined planes is a fundamental skill in [[Free-body Diagrams]] that bridges geometry and mechanics. When an object rests on a slope, its weight does not act perpendicular to the surface — instead, it must be split into two perpendicular components: one parallel to the slope (causing acceleration) and one perpendicular (determining the normal reaction). This sub-topic is essential for understanding [[Newton's Laws of Motion]] applications, particularly for objects sliding, resting, or being pulled up ramps. Mastering this skill allows you to simplify complex 2D problems into two independent 1D problems along and perpendicular to the plane.
+This sub-topic focuses on resolving forces on inclined planes — a fundamental skill in mechanics. When an object rests on a slope, its weight must be resolved into components parallel and perpendicular to the plane. This technique is essential for analyzing motion on ramps, hills, and any sloped surface. Understanding this concept bridges [[Drawing Free-body Diagrams]] with [[Newton's Laws of Motion]], as the resolved forces directly determine acceleration or equilibrium on slopes.
 
 **中文:**
-斜面受力分解是[[Free-body Diagrams]]中的一项基本技能，它将几何学与力学联系起来。当物体放置在斜面上时，其重力并不垂直于斜面表面——必须将其分解为两个垂直分量：一个平行于斜面（导致加速度），一个垂直于斜面（决定法向反作用力）。这个子知识点对于理解[[Newton's Laws of Motion]]的应用至关重要，特别是对于在斜坡上滑动、静止或被拉动的物体。掌握这项技能可以将复杂的二维问题简化为沿斜面和平行于斜面方向的两个独立的一维问题。
+本子知识点专注于斜面受力分解——力学中的基础技能。当物体放置在斜面上时，其重力必须分解为平行和垂直于斜面的分量。这一技巧对于分析斜坡、山坡等任何斜面上的运动至关重要。理解这一概念连接了[[绘制受力分析图]]与[[牛顿运动定律]]，因为分解后的力直接决定了斜面上的加速度或平衡状态。
 
 ---
 
-# 2. Core Definition / 核心定义
+# 2. Syllabus Learning Objectives / 考纲学习目标
 
-| Term (EN/CN) | Definition (EN) | Definition (CN) |
-| ------------ | --------------- | --------------- |
-| **Resolving forces** / 力的分解 | Splitting a single force into two perpendicular components that together have the same effect as the original force. | 将一个力分解为两个相互垂直的分量，这两个分量的共同作用效果与原力相同。 |
-| **Inclined plane** / 斜面 | A flat surface tilted at an angle θ to the horizontal, used to study the effects of gravity on objects at an angle. | 与水平面成θ角的平面，用于研究重力在倾斜方向上的作用效果。 |
-| **Component parallel to slope** / 沿斜面分量 | The part of the weight that acts down the slope, given by $mg\sin\theta$, causing acceleration or requiring an opposing force. | 重力沿斜面方向的分量，大小为$mg\sin\theta$，导致加速度或需要相反的力来平衡。 |
-| **Component perpendicular to slope** / 垂直斜面分量 | The part of the weight that acts into the slope, given by $mg\cos\theta$, balanced by the normal reaction force. | 重力垂直于斜面方向的分量，大小为$mg\cos\theta$，由法向反作用力平衡。 |
-| **Normal reaction** / 法向反作用力 | The force exerted by the surface perpendicular to the plane, equal in magnitude to $mg\cos\theta$ when no other vertical forces act. | 斜面施加的垂直于平面的力，当没有其他垂直力作用时，大小等于$mg\cos\theta$。 |
-| **Angle of inclination** / 倾斜角 | The angle θ between the inclined plane and the horizontal, measured from the horizontal upward. | 斜面与水平面之间的夹角θ，从水平面向上测量。 |
+| CAIE 9702 | Edexcel IAL |
+|-----------|-------------|
+| 3.2(b): Resolve forces into components | 2.4: Resolve forces into perpendicular components |
+| 3.2(c): Apply resolution to inclined plane problems | 2.5: Apply resolution to objects on slopes |
+| - | 2.6: Solve problems involving friction on inclined planes |
+
+**Examiner Expectations / 考官期望:**
+- **EN:** Students must correctly identify the angle of the incline and resolve weight into $mg\sin\theta$ (parallel) and $mg\cos\theta$ (perpendicular) components. Common errors include swapping these components or misidentifying the angle.
+- **中文:** 学生必须正确识别斜面角度，并将重力分解为 $mg\sin\theta$（平行分量）和 $mg\cos\theta$（垂直分量）。常见错误包括混淆这两个分量或错误识别角度。
 
 ---
 
-# 3. Key Concepts / 关键概念
+# 3. Core Definitions / 核心定义
 
+| Term (EN/CN) | Definition (EN) | Definition (CN) | Common Mistakes / 常见错误 |
+|--------------|-----------------|-----------------|---------------------------|
+| **Inclined Plane** / 斜面 | A flat surface tilted at an angle $\theta$ to the horizontal | 与水平面成角度 $\theta$ 的倾斜平面 | Confusing $\theta$ with the angle to the vertical |
+| **Weight Component Parallel** / 平行分量 | $mg\sin\theta$ — the component of weight acting down the slope | 重力沿斜面方向的分量 $mg\sin\theta$ | Using $mg\cos\theta$ instead |
+| **Weight Component Perpendicular** / 垂直分量 | $mg\cos\theta$ — the component of weight acting perpendicular to the slope | 重力垂直于斜面方向的分量 $mg\cos\theta$ | Using $mg\sin\theta$ instead |
+| **Normal Reaction Force** / 法向反力 | The force exerted by the surface perpendicular to the plane, equal to $mg\cos\theta$ (if no other vertical forces) | 斜面施加的垂直于平面的力，等于 $mg\cos\theta$（若无其他垂直力） | Forgetting it equals $mg\cos\theta$, not $mg$ |
+| **Angle of Incline** / 斜面角度 | $\theta$ — the angle between the slope and the horizontal | 斜面与水平面之间的夹角 $\theta$ | Using the angle to the vertical instead |
+
+---
+
+# 4. Key Concepts Explained / 关键概念详解
+
+## 4.1 Resolving Weight on an Inclined Plane / 斜面上的重力分解
+
+### Explanation / 解释
 **English:**
-The key insight for resolving forces on inclined planes is that **the weight vector $mg$ always acts vertically downward**, regardless of the slope angle. This means we must rotate our coordinate system to align with the plane, not the horizontal.
+When an object of mass $m$ rests on an inclined plane at angle $\theta$ to the horizontal, its weight $mg$ acts vertically downward. This weight must be resolved into two perpendicular components:
+- **Parallel component:** $mg\sin\theta$ — acts down the slope, causing acceleration
+- **Perpendicular component:** $mg\cos\theta$ — acts into the slope, balanced by the [[Normal Reaction Force]]
 
-**Step-by-step reasoning:**
-
-1. **Draw the free-body diagram** (see [[Drawing Free-body Diagrams]]): Show the object, the weight $mg$ vertically down, the normal reaction $N$ perpendicular to the slope, and any friction $F$ parallel to the slope.
-
-2. **Choose axes**: Align the x-axis parallel to the slope (downward positive is conventional) and the y-axis perpendicular to the slope (away from the surface positive).
-
-3. **Resolve the weight**: The weight $mg$ makes an angle θ with the perpendicular to the slope (or equivalently, θ with the vertical). Using trigonometry:
-   - Component parallel to slope (down the plane): $mg\sin\theta$
-   - Component perpendicular to slope (into the plane): $mg\cos\theta$
-
-4. **Apply Newton's Second Law** ([[Newton's Laws of Motion]]):
-   - Perpendicular to slope: $N - mg\cos\theta = ma_y$ (usually $a_y = 0$ if no motion off the surface)
-   - Parallel to slope: $mg\sin\theta - F = ma$ (if friction opposes motion)
-
-**Common pitfalls:**
-- ❌ Confusing which component uses sin vs cos. **Tip**: If the angle is measured from the horizontal, the parallel component uses sin; if from the vertical, it uses cos. Always draw the right-angled triangle.
-- ❌ Forgetting that the normal reaction is NOT equal to $mg$ on a slope — it's $mg\cos\theta$.
-- ❌ Using the wrong angle when the plane is not at the standard angle.
+The key insight: the angle between the weight vector and the perpendicular component is $\theta$, which is the same as the incline angle. This is because the perpendicular to the slope makes an angle $\theta$ with the vertical.
 
 **中文:**
-斜面受力分解的关键在于：**重力矢量$mg$始终竖直向下**，与斜面角度无关。这意味着我们必须旋转坐标系使其与斜面平行，而不是与水平面平行。
+当质量为 $m$ 的物体放置在水平夹角为 $\theta$ 的斜面上时，其重力 $mg$ 竖直向下作用。这个重力必须分解为两个垂直分量：
+- **平行分量：** $mg\sin\theta$ — 沿斜面向下作用，引起加速度
+- **垂直分量：** $mg\cos\theta$ — 垂直压入斜面，由[[法向反力]]平衡
 
-**逐步推理：**
+关键要点：重力矢量与垂直分量之间的夹角为 $\theta$，与斜面角度相同。这是因为斜面的法线与竖直方向夹角为 $\theta$。
 
-1. **绘制受力分析图**（参见[[Drawing Free-body Diagrams]]）：画出物体、竖直向下的重力$mg$、垂直于斜面的法向反作用力$N$，以及平行于斜面的摩擦力$F$。
+### Physical Meaning / 物理意义
+**English:**
+The parallel component $mg\sin\theta$ is what causes objects to slide down slopes — the steeper the slope (larger $\theta$), the larger this component. The perpendicular component $mg\cos\theta$ determines the normal reaction force and thus the maximum [[Friction]] available.
 
-2. **选择坐标轴**：将x轴平行于斜面（通常向下为正），y轴垂直于斜面（远离斜面为正）。
+**中文:**
+平行分量 $mg\sin\theta$ 是导致物体沿斜面下滑的原因——坡度越陡（$\theta$ 越大），该分量越大。垂直分量 $mg\cos\theta$ 决定了法向反力，从而决定了可用的最大[[摩擦力]]。
 
-3. **分解重力**：重力$mg$与斜面垂线之间的夹角为θ（或等效地与竖直方向夹角为θ）。使用三角函数：
-   - 平行于斜面的分量（沿斜面向下）：$mg\sin\theta$
-   - 垂直于斜面的分量（垂直进入斜面）：$mg\cos\theta$
+### Common Misconceptions / 常见误区
+- ❌ **EN:** Thinking $mg\sin\theta$ is perpendicular to the slope / **中文:** 认为 $mg\sin\theta$ 垂直于斜面
+- ❌ **EN:** Using $mg$ as the normal reaction force / **中文:** 用法向反力等于 $mg$
+- ❌ **EN:** Confusing $\theta$ with the angle to the vertical / **中文:** 混淆 $\theta$ 与竖直方向夹角
+- ❌ **EN:** Forgetting that $mg\cos\theta$ is NOT the normal force — it's the component of weight; the normal force is equal to it only when no other perpendicular forces act / **中文:** 忘记 $mg\cos\theta$ 不是法向力——它是重力的分量；只有在没有其他垂直力作用时，法向力才等于它
 
-4. **应用牛顿第二定律**（[[Newton's Laws of Motion]]）：
-   - 垂直于斜面：$N - mg\cos\theta = ma_y$（通常$a_y = 0$，如果没有离开表面的运动）
-   - 平行于斜面：$mg\sin\theta - F = ma$（如果摩擦力阻碍运动）
+### Exam Tips / 考试提示
+- ✅ **EN:** Always draw the weight vector vertically down first, then resolve / **中文:** 始终先画出竖直向下的重力矢量，再进行分解
+- ✅ **EN:** Label the angle $\theta$ clearly on your diagram / **中文:** 在图上清晰标注角度 $\theta$
+- ✅ **EN:** Check: if $\theta = 0^\circ$, $mg\sin\theta = 0$ (horizontal surface) / **中文:** 验证：若 $\theta = 0^\circ$，则 $mg\sin\theta = 0$（水平面）
+- ✅ **EN:** Check: if $\theta = 90^\circ$, $mg\cos\theta = 0$ (vertical wall) / **中文:** 验证：若 $\theta = 90^\circ$，则 $mg\cos\theta = 0$（竖直墙面）
 
-**常见错误：**
-- ❌ 混淆哪个分量用sin，哪个用cos。**提示**：如果角度从水平面测量，平行分量用sin；如果从竖直方向测量，则用cos。始终画出直角三角形。
-- ❌ 忘记斜面上的法向反作用力不等于$mg$——而是$mg\cos\theta$。
-- ❌ 当斜面不是标准角度时使用错误的角度。
+> 📷 **IMAGE PROMPT — DIAG-01: Weight Resolution on Inclined Plane**
+> A clear physics diagram showing a block on an inclined plane at angle θ to the horizontal. The weight vector mg is drawn vertically downward from the center of the block. Two dashed lines show the resolution: mg sinθ parallel to the slope (pointing down the incline) and mg cosθ perpendicular to the slope (pointing into the surface). The normal reaction force N is shown perpendicular to the surface, equal and opposite to mg cosθ. All angles are labeled. Clean, textbook-style illustration with arrows and labels.
 
 ---
 
-# 4. Formulas / 公式
+# 5. Essential Equations / 核心公式
 
-**Primary formula for resolving weight on an inclined plane:**
+## Equation 1: Weight Resolution / 重力分解
 
-$$ \text{Parallel component: } F_{\parallel} = mg\sin\theta $$
-$$ \text{Perpendicular component: } F_{\perp} = mg\cos\theta $$
+$$ F_{\parallel} = mg\sin\theta $$
+$$ F_{\perp} = mg\cos\theta $$
 
 | Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
-| ------------- | ------------ | ------------ | ----------- |
-| $m$ | mass of object | 物体的质量 | kg |
-| $g$ | acceleration due to gravity (9.81 m s⁻²) | 重力加速度 (9.81 m s⁻²) | m s⁻² |
-| $\theta$ | angle of inclination from horizontal | 斜面与水平面的夹角 | degrees or radians |
-| $F_{\parallel}$ | component of weight parallel to slope | 重力沿斜面的分量 | N |
-| $F_{\perp}$ | component of weight perpendicular to slope | 重力垂直于斜面的分量 | N |
+|--------------|-------------|-------------|------------|
+| $F_{\parallel}$ | Component of weight parallel to slope | 重力平行于斜面的分量 | N |
+| $F_{\perp}$ | Component of weight perpendicular to slope | 重力垂直于斜面的分量 | N |
+| $m$ | Mass of object | 物体质量 | kg |
+| $g$ | Acceleration due to gravity (9.81 m s⁻²) | 重力加速度 | m s⁻² |
+| $\theta$ | Angle of incline to horizontal | 斜面与水平面的夹角 | ° or rad |
 
 **Derivation / 推导:**
-
-Consider a block on a slope at angle θ to the horizontal. The weight $mg$ acts vertically down. Draw a right-angled triangle where:
-- The hypotenuse is $mg$
-- The side opposite θ (parallel to slope) is $mg\sin\theta$
-- The side adjacent to θ (perpendicular to slope) is $mg\cos\theta$
-
-This follows from basic trigonometry: $\sin\theta = \frac{\text{opposite}}{\text{hypotenuse}}$ and $\cos\theta = \frac{\text{adjacent}}{\text{hypotenuse}}$.
+From the geometry: the angle between the weight vector (vertical) and the perpendicular to the slope is $\theta$. Using trigonometry:
+- $F_{\perp} = mg\cos\theta$ (adjacent to $\theta$)
+- $F_{\parallel} = mg\sin\theta$ (opposite to $\theta$)
 
 **Conditions / 适用条件:**
-- The plane is a straight, rigid surface
-- The angle θ is measured from the horizontal
-- The object is in contact with the surface (no jumping off)
-- Standard gravity $g = 9.81 \text{ m s}^{-2}$ applies
+- **EN:** Valid for any inclined plane where $\theta$ is measured from the horizontal / **中文:** 适用于任何以水平面为基准测量 $\theta$ 的斜面
+- **EN:** Assumes the object is small enough to be treated as a point mass / **中文:** 假设物体足够小，可视为质点
 
-> 📷 **IMAGE PROMPT — FBD-IP-01: Weight Resolution on Inclined Plane**
->
-> **English Prompt:**
-> A clean 2D vector diagram showing a rectangular block on an inclined plane at angle θ (30°). The weight vector mg points straight down from the center of the block. Two dashed lines extend from the tip of the weight vector: one parallel to the slope (labeled "mg sin θ") and one perpendicular to the slope (labeled "mg cos θ"). A right-angle symbol connects these components. The normal reaction N points perpendicularly away from the surface. The angle θ is marked between the horizontal and the slope. Use a textbook-style vector diagram with arrows, clear labels, and a white background. Color code: weight in red, components in blue, normal in green.
->
-> **中文描述:**
-> 一个清晰的二维矢量图，显示一个矩形块在倾斜角为θ（30°）的斜面上。重力矢量mg从块的中心竖直向下。从重力矢量末端延伸出两条虚线：一条平行于斜面（标注"mg sin θ"），一条垂直于斜面（标注"mg cos θ"）。这些分量之间有一个直角符号。法向反作用力N垂直于斜面指向外。角度θ标记在水平面和斜面之间。采用教科书风格的矢量图，带有箭头、清晰的标签和白色背景。颜色编码：重力为红色，分量为蓝色，法向力为绿色。
->
-> **Labels Required / 需要标注:**
-> * θ (angle of inclination)
-> * mg (weight, vertical down)
-> * mg sin θ (parallel component)
-> * mg cos θ (perpendicular component)
-> * N (normal reaction)
->
-> **Style / 风格:** Textbook vector diagram
->
-> **Exam Relevance / 考试关联:**
-> This is the most common diagram in inclined plane questions — students must be able to draw and label it from memory.
+**Limitations / 局限性:**
+- **EN:** Does not account for friction or other forces acting on the object / **中文:** 未考虑摩擦力或其他作用力
+- **EN:** Only resolves weight — other forces must be resolved separately / **中文:** 仅分解重力——其他力需单独分解
+
+## Equation 2: Net Force Down the Slope / 沿斜面净力
+
+$$ F_{\text{net}} = mg\sin\theta - F_{\text{friction}} $$
+
+**Conditions / 适用条件:**
+- **EN:** When friction acts up the slope (opposing motion) / **中文:** 当摩擦力沿斜面向上作用（阻碍运动）时
+- **EN:** For objects sliding down or being pulled up the slope / **中文:** 适用于物体沿斜面下滑或被向上拉动的情况
+
+> 📋 **Edexcel Only:** Edexcel IAL requires students to solve problems involving friction on inclined planes, including calculating the coefficient of friction $\mu = \tan\theta$ for objects on the point of sliding.
 
 ---
 
-# 5. Image Prompt / 图片提示
+# 6. Graphs and Relationships / 图表与关系
 
-> 📷 **IMAGE PROMPT — FBD-IP-02: Three Cases of Inclined Plane Forces**
->
-> **English Prompt:**
-> A split-panel diagram showing three different scenarios on the same inclined plane (θ = 25°). Left panel: Block at rest with friction — show all forces: weight mg (vertical down), normal N (perpendicular), friction F (up the slope), and resolved components mg sin θ and mg cos θ. Middle panel: Block sliding down with no friction — only weight components and normal, with an acceleration arrow a down the slope. Right panel: Block being pulled up the slope by a force T parallel to the slope — show T, friction F down the slope, weight components, and normal. Each panel has a coordinate system (x parallel, y perpendicular). Use a clean educational illustration style with consistent color coding: weight = red, normal = blue, friction = orange, tension = purple, acceleration = green dashed arrow. White background, clear labels in English.
->
-> **中文描述:**
-> 一个分屏图，显示同一斜面（θ = 25°）上的三种不同情景。左面板：静止且有摩擦的块——显示所有力：重力mg（竖直向下）、法向力N（垂直）、摩擦力F（沿斜面向上）以及分解分量mg sin θ和mg cos θ。中面板：无摩擦下滑的块——仅显示重力分量和法向力，沿斜面向下有一个加速度箭头a。右面板：被平行于斜面的力T向上拉的块——显示T、沿斜面向下的摩擦力F、重力分量和法向力。每个面板都有坐标系（x平行，y垂直）。采用清晰的教育插图风格，颜色编码一致：重力=红色，法向力=蓝色，摩擦力=橙色，拉力=紫色，加速度=绿色虚线箭头。白色背景，清晰的英文标签。
->
-> **Labels Required / 需要标注:**
-> * θ (angle)
-> * mg, mg sin θ, mg cos θ
-> * N (normal reaction)
-> * F (friction, with direction)
-> * T (tension, if applicable)
-> * a (acceleration, if applicable)
->
-> **Style / 风格:** Educational illustration, split-panel
->
-> **Exam Relevance / 考试关联:**
-> Exam questions often ask students to compare scenarios with and without friction, or with an applied force. This diagram helps visualize all three common cases.
+## 6.1 $F_{\parallel}$ vs $\theta$ / 平行分量与角度关系
+
+### Axes / 坐标轴
+- **X-axis:** Angle $\theta$ (0° to 90°) / **X轴：** 角度 $\theta$（0°到90°）
+- **Y-axis:** $F_{\parallel} = mg\sin\theta$ (N) / **Y轴：** $F_{\parallel} = mg\sin\theta$ (N)
+
+### Shape / 形状
+- **EN:** Sine curve — starts at 0 (θ=0°), increases to maximum mg (θ=90°) / **中文：** 正弦曲线——从0开始（θ=0°），增加到最大值 mg（θ=90°）
+
+### Gradient Meaning / 斜率含义
+- **EN:** Rate of change of parallel component with angle — $mg\cos\theta$ / **中文：** 平行分量随角度的变化率——$mg\cos\theta$
+
+### Area Meaning / 面积含义
+- **EN:** Not physically meaningful / **中文：** 无物理意义
+
+### Exam Interpretation / 考试解读
+- **EN:** At small angles, $F_{\parallel}$ increases approximately linearly; at large angles, the increase slows / **中文：** 小角度时，$F_{\parallel}$ 近似线性增加；大角度时，增加速度减慢
+
+## 6.2 $F_{\perp}$ vs $\theta$ / 垂直分量与角度关系
+
+### Axes / 坐标轴
+- **X-axis:** Angle $\theta$ (0° to 90°) / **X轴：** 角度 $\theta$（0°到90°）
+- **Y-axis:** $F_{\perp} = mg\cos\theta$ (N) / **Y轴：** $F_{\perp} = mg\cos\theta$ (N)
+
+### Shape / 形状
+- **EN:** Cosine curve — starts at mg (θ=0°), decreases to 0 (θ=90°) / **中文：** 余弦曲线——从 mg 开始（θ=0°），减小到0（θ=90°）
+
+### Gradient Meaning / 斜率含义
+- **EN:** Rate of change of perpendicular component with angle — $-mg\sin\theta$ / **中文：** 垂直分量随角度的变化率——$-mg\sin\theta$
+
+### Area Meaning / 面积含义
+- **EN:** Not physically meaningful / **中文：** 无物理意义
+
+### Exam Interpretation / 考试解读
+- **EN:** As the slope steepens, the normal reaction force decreases, reducing available friction / **中文：** 随着坡度变陡，法向反力减小，可用摩擦力降低
 
 ---
 
-# 6. Worked Example / 典型例题
+# 7. Required Diagrams / 必备图表
 
-### Example 1: Block Sliding Down a Smooth Inclined Plane
+## 7.1 Standard Inclined Plane Free-body Diagram / 标准斜面受力分析图
+
+### Description / 描述
+**English:** A block on an inclined plane showing all forces: weight (mg) vertically down, normal reaction (N) perpendicular to slope, friction (f) parallel to slope (if present), and the resolved components of weight.
+
+**中文:** 斜面上的物块，显示所有力：重力(mg)竖直向下，法向反力(N)垂直于斜面，摩擦力(f)平行于斜面（如存在），以及重力的分解分量。
+
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — DIAG-02: Complete Inclined Plane Free-body Diagram**
+> A detailed physics diagram showing a rectangular block on a 30° inclined plane. From the center of the block: a long vertical arrow labeled "mg" (weight) pointing down. Two dashed construction lines show resolution: mg sinθ parallel to slope (labeled "mg sinθ") and mg cosθ perpendicular to slope (labeled "mg cosθ"). A normal reaction force arrow "N" points perpendicularly away from the surface, equal in length to mg cosθ. A friction arrow "f" points up the slope (if object is sliding down). All angles (θ=30°) clearly marked. Clean, professional textbook style with different colors for different force types.
+
+### Labels Required / 需要标注
+| Label (EN) | Label (中文) | Description |
+|------------|-------------|-------------|
+| $mg$ | 重力 | Weight vector (vertical down) |
+| $mg\sin\theta$ | 平行分量 | Component parallel to slope |
+| $mg\cos\theta$ | 垂直分量 | Component perpendicular to slope |
+| $N$ | 法向反力 | Normal reaction force |
+| $f$ | 摩擦力 | Friction force (if present) |
+| $\theta$ | 斜面角度 | Angle of incline |
+
+### Exam Importance / 考试重要性
+- **EN:** This diagram is required in almost every inclined plane question. Marks are awarded for correct force directions and labels. / **中文：** 几乎所有斜面问题都需要此图。正确的力方向和标注可获得分数。
+
+---
+
+# 8. Worked Examples / 典型例题
+
+## Example 1: Object Sliding Down an Inclined Plane / 物体沿斜面下滑
 
 ### Question / 题目
 **English:**
-A block of mass 5.0 kg slides down a smooth (frictionless) inclined plane at an angle of 30° to the horizontal. Calculate:
-(a) The component of the weight acting down the slope.
-(b) The acceleration of the block down the slope.
-(c) The normal reaction force from the plane on the block.
-(Take $g = 9.81 \text{ m s}^{-2}$)
+A block of mass 5.0 kg slides down a smooth (frictionless) inclined plane at an angle of 25° to the horizontal. Calculate:
+(a) The component of weight acting down the slope
+(b) The normal reaction force
+(c) The acceleration of the block down the slope
 
 **中文:**
-一个质量为5.0 kg的块在光滑（无摩擦）斜面上滑下，斜面与水平面夹角为30°。计算：
-(a) 沿斜面方向的重力分量。
-(b) 块沿斜面的加速度。
-(c) 斜面对块的法向反作用力。
-（取$g = 9.81 \text{ m s}^{-2}$）
+一个质量为5.0 kg的物块沿与水平面成25°角的光滑（无摩擦）斜面下滑。计算：
+(a) 沿斜面方向的重力分量
+(b) 法向反力
+(c) 物块沿斜面的加速度
 
 ### Solution / 解答
 
-**Step 1: Identify forces and resolve weight**
-Weight: $mg = 5.0 \times 9.81 = 49.05 \text{ N}$
+**Step 1: Identify known values / 步骤1：确定已知量**
+- $m = 5.0 \text{ kg}$
+- $\theta = 25^\circ$
+- $g = 9.81 \text{ m s}^{-2}$
+- Frictionless: $f = 0$
 
-Parallel component: $F_{\parallel} = mg\sin\theta = 49.05 \times \sin 30° = 49.05 \times 0.5 = 24.525 \text{ N}$
+**Step 2: Calculate parallel component / 步骤2：计算平行分量**
+$$ F_{\parallel} = mg\sin\theta = 5.0 \times 9.81 \times \sin(25^\circ) $$
+$$ F_{\parallel} = 5.0 \times 9.81 \times 0.4226 $$
+$$ F_{\parallel} = 20.7 \text{ N} $$
 
-Perpendicular component: $F_{\perp} = mg\cos\theta = 49.05 \times \cos 30° = 49.05 \times 0.866 = 42.48 \text{ N}$
+**Step 3: Calculate normal reaction / 步骤3：计算法向反力**
+$$ N = mg\cos\theta = 5.0 \times 9.81 \times \cos(25^\circ) $$
+$$ N = 5.0 \times 9.81 \times 0.9063 $$
+$$ N = 44.5 \text{ N} $$
 
-**Step 2: Apply Newton's Second Law parallel to slope**
-Since no friction: $F_{\text{net, parallel}} = mg\sin\theta = ma$
-$$24.525 = 5.0 \times a$$
-$$a = \frac{24.525}{5.0} = 4.905 \text{ m s}^{-2}$$
-
-**Step 3: Apply Newton's Second Law perpendicular to slope**
-No motion perpendicular to slope: $N - mg\cos\theta = 0$
-$$N = mg\cos\theta = 42.48 \text{ N}$$
+**Step 4: Calculate acceleration / 步骤4：计算加速度**
+Using Newton's Second Law: $F_{\text{net}} = ma$
+$$ mg\sin\theta = ma $$
+$$ a = g\sin\theta = 9.81 \times \sin(25^\circ) $$
+$$ a = 9.81 \times 0.4226 $$
+$$ a = 4.15 \text{ m s}^{-2} $$
 
 ### Final Answer / 最终答案
-**Answer:**
-(a) $F_{\parallel} = 24.5 \text{ N}$ (3 s.f.)
-(b) $a = 4.91 \text{ m s}^{-2}$ (3 s.f.)
-(c) $N = 42.5 \text{ N}$ (3 s.f.)
-
-**答案：**
-(a) $F_{\parallel} = 24.5 \text{ N}$（3位有效数字）
-(b) $a = 4.91 \text{ m s}^{-2}$（3位有效数字）
-(c) $N = 42.5 \text{ N}$（3位有效数字）
+**Answer:** (a) 20.7 N down the slope | (b) 44.5 N perpendicular to slope | (c) 4.15 m s⁻² down the slope
+**答案：** (a) 20.7 N 沿斜面向下 | (b) 44.5 N 垂直于斜面 | (c) 4.15 m s⁻² 沿斜面向下
 
 ### Quick Tip / 提示
-**English:** For a frictionless inclined plane, the acceleration is always $a = g\sin\theta$, independent of mass! This is a common exam shortcut.
+- **EN:** For a frictionless slope, acceleration is always $a = g\sin\theta$, independent of mass! / **中文：** 对于无摩擦斜面，加速度始终为 $a = g\sin\theta$，与质量无关！
 
-**中文：** 对于光滑斜面，加速度总是$a = g\sin\theta$，与质量无关！这是一个常见的考试捷径。
-
----
-
-### Example 2: Block at Rest on a Rough Inclined Plane
+## Example 2: Object on the Point of Sliding / 物体即将滑动
 
 ### Question / 题目
 **English:**
-A block of mass 2.0 kg is at rest on a rough inclined plane at 20° to the horizontal. The coefficient of static friction between the block and the plane is 0.40. Show whether the block will slide down the plane.
+A 2.0 kg block rests on a rough inclined plane. The plane is slowly tilted until the block just begins to slide at an angle of 30°. Calculate the coefficient of static friction between the block and the plane.
 
 **中文:**
-一个质量为2.0 kg的块静止在粗糙斜面上，斜面与水平面夹角为20°。块与斜面之间的静摩擦系数为0.40。判断块是否会沿斜面下滑。
+一个2.0 kg的物块静止在粗糙斜面上。斜面缓慢倾斜，当角度达到30°时物块刚好开始滑动。计算物块与斜面之间的静摩擦系数。
 
 ### Solution / 解答
 
-**Step 1: Calculate the component of weight down the slope**
-$$F_{\parallel} = mg\sin\theta = 2.0 \times 9.81 \times \sin 20° = 2.0 \times 9.81 \times 0.342 = 6.71 \text{ N}$$
+**Step 1: At the point of sliding / 步骤1：在即将滑动的临界点**
+- Forces parallel to slope are balanced: $mg\sin\theta = F_{\text{friction,max}}$
+- $F_{\text{friction,max}} = \mu_s N = \mu_s mg\cos\theta$
 
-**Step 2: Calculate the maximum static friction**
-First find normal reaction: $N = mg\cos\theta = 2.0 \times 9.81 \times \cos 20° = 2.0 \times 9.81 \times 0.940 = 18.44 \text{ N}$
+**Step 2: Set up equation / 步骤2：建立方程**
+$$ mg\sin\theta = \mu_s mg\cos\theta $$
+$$ \sin\theta = \mu_s \cos\theta $$
+$$ \mu_s = \frac{\sin\theta}{\cos\theta} = \tan\theta $$
 
-Maximum static friction: $F_{\text{max}} = \mu_s N = 0.40 \times 18.44 = 7.38 \text{ N}$
-
-**Step 3: Compare forces**
-$F_{\parallel} = 6.71 \text{ N} < F_{\text{max}} = 7.38 \text{ N}$
-
-Since the weight component down the slope is less than the maximum static friction, the block will **not** slide.
+**Step 3: Calculate / 步骤3：计算**
+$$ \mu_s = \tan(30^\circ) = 0.577 $$
 
 ### Final Answer / 最终答案
-**Answer:** The block will NOT slide because $mg\sin\theta = 6.71 \text{ N} < \mu_s mg\cos\theta = 7.38 \text{ N}$.
-
-**答案：** 块不会下滑，因为$mg\sin\theta = 6.71 \text{ N} < \mu_s mg\cos\theta = 7.38 \text{ N}$。
+**Answer:** $\mu_s = 0.577$ | **答案：** $\mu_s = 0.577$
 
 ### Quick Tip / 提示
-**English:** The condition for a block to just start sliding is $mg\sin\theta = \mu_s mg\cos\theta$, which simplifies to $\tan\theta = \mu_s$. This is a quick check for limiting equilibrium.
-
-**中文：** 块刚好开始滑动的条件是$mg\sin\theta = \mu_s mg\cos\theta$，简化为$\tan\theta = \mu_s$。这是检查极限平衡的快速方法。
+- **EN:** For an object on the point of sliding, $\mu = \tan\theta$ — a very useful shortcut! / **中文：** 对于即将滑动的物体，$\mu = \tan\theta$ —— 一个非常有用的捷径！
 
 ---
 
-# 7. Flashcards / 闪卡
+# 9. Past Paper Question Types / 历年真题题型
 
-**Flashcard 1**
-Q (EN): What are the two components of weight on an inclined plane at angle θ?
-Q (CN): 在倾角为θ的斜面上，重力的两个分量是什么？
-A (EN): Parallel component = mg sin θ (down the slope), Perpendicular component = mg cos θ (into the slope).
-A (CN): 平行分量 = mg sin θ（沿斜面向下），垂直分量 = mg cos θ（垂直进入斜面）。
+| Question Type / 题型 | Frequency / 频率 | Difficulty / 难度 | Past Paper References / 真题索引 |
+|----------------------|------------------|------------------|-------------------------------|
+| Calculate acceleration on frictionless slope / 计算无摩擦斜面上的加速度 | High / 高 | Easy / 简单 | 📝 *待填入* |
+| Find normal reaction and friction on rough slope / 求粗糙斜面上的法向反力和摩擦力 | High / 高 | Medium / 中等 | 📝 *待填入* |
+| Determine angle for equilibrium / 确定平衡角度 | Medium / 中 | Medium / 中等 | 📝 *待填入* |
+| Multi-stage problem with pulley on incline / 斜面滑轮组合问题 | Low / 低 | Hard / 困难 | 📝 *待填入* |
 
-**Flashcard 2**
-Q (EN): On a frictionless inclined plane, what is the acceleration of a block?
-Q (CN): 在光滑斜面上，块的加速度是多少？
-A (EN): a = g sin θ, independent of the mass of the block.
-A (CN): a = g sin θ，与块的质量无关。
-
-**Flashcard 3**
-Q (EN): What is the normal reaction force on an inclined plane?
-Q (CN): 斜面上的法向反作用力是多少？
-A (EN): N = mg cos θ (when no other forces perpendicular to the plane act).
-A (CN): N = mg cos θ（当没有其他垂直于斜面的力作用时）。
-
-**Flashcard 4**
-Q (EN): How do you determine if a block will slide on a rough inclined plane?
-Q (CN): 如何判断块是否会在粗糙斜面上滑动？
-A (EN): Compare mg sin θ (force down slope) with μ_s mg cos θ (maximum static friction). If mg sin θ > μ_s mg cos θ, it slides.
-A (CN): 比较 mg sin θ（沿斜面向下的力）和 μ_s mg cos θ（最大静摩擦力）。如果 mg sin θ > μ_s mg cos θ，则滑动。
-
-**Flashcard 5**
-Q (EN): What is the condition for limiting equilibrium on an inclined plane?
-Q (CN): 斜面上极限平衡的条件是什么？
-A (EN): tan θ = μ_s, where θ is the angle of inclination and μ_s is the coefficient of static friction.
-A (CN): tan θ = μ_s，其中θ是倾斜角，μ_s是静摩擦系数。
+**Common Command Words / 常见指令词:**
+- **EN:** "Resolve", "Calculate", "Find", "Determine", "Show that" / **中文：** "分解"、"计算"、"求"、"确定"、"证明"
 
 ---
 
-# 8. Metadata / 元数据
+# 10. Practical Skills Connections / 实验技能链接
 
-```yaml
-title:
-  en: "Resolving Forces on Inclined Planes"
-  cn: "斜面受力分解"
-parent_topic: "Free-body Diagrams"
-parent_hub: "[[Free-body Diagrams]]"
-subject: Physics
-syllabus:
-  - CAIE 9702: 3.2 (b-c)
-  - Edexcel IAL: WPH11 U1: 2.4-2.6
-level: AS
-node_type: leaf_concept
-difficulty: foundation
-related_leaf_nodes:
-  - "[[Drawing Free-body Diagrams]]"
-  - "[[Equilibrium Conditions]]"
-prerequisites:
-  - "[[Types of Force]]"
-related_topics:
-  - "[[Newton's Laws of Motion]]"
-language: bilingual_en_cn
+**English:**
+This sub-topic connects to practical work in several ways:
+1. **Measuring acceleration on a slope:** Use light gates or ticker timers to measure acceleration of a trolley on an inclined plane. Compare experimental $a$ with theoretical $a = g\sin\theta$.
+2. **Determining $\mu$ experimentally:** Slowly increase the angle of a plane until an object slides. Measure $\theta$ and calculate $\mu = \tan\theta$.
+3. **Uncertainty analysis:** The uncertainty in $\theta$ measurement (±0.5°) propagates to uncertainties in $\sin\theta$ and $\cos\theta$, affecting calculated forces.
+4. **Graph plotting:** Plot $a$ vs $\sin\theta$ — gradient should be $g$ for a frictionless slope.
+
+**中文:**
+本子知识点与实验操作有多个联系：
+1. **测量斜面上的加速度：** 使用光门或打点计时器测量小车在斜面上的加速度。比较实验值 $a$ 与理论值 $a = g\sin\theta$。
+2. **实验测定 $\mu$：** 缓慢增加斜面角度直到物体滑动。测量 $\theta$ 并计算 $\mu = \tan\theta$。
+3. **不确定度分析：** $\theta$ 测量的不确定度（±0.5°）会传递到 $\sin\theta$ 和 $\cos\theta$ 中，影响计算的力。
+4. **绘图：** 绘制 $a$ 与 $\sin\theta$ 的关系图——对于无摩擦斜面，斜率应为 $g$。
+
+---
+
+# 11. Concept Map / 概念图谱
+
+```mermaid
+graph TD
+    %% Main concept
+    IR[Inclined Plane Resolution<br/>斜面分解] --> WC[Weight Components<br/>重力分量]
+    
+    %% Components
+    WC --> FP[F∥ = mg sinθ<br/>平行分量]
+    WC --> FV[F⊥ = mg cosθ<br/>垂直分量]
+    
+    %% Connections to other forces
+    FP --> NET[Net Force Down Slope<br/>沿斜面净力]
+    FV --> NR[Normal Reaction N<br/>法向反力]
+    NR --> FR[Friction f = μN<br/>摩擦力]
+    
+    %% Applications
+    NET --> ACC[Acceleration a = g sinθ<br/>加速度]
+    NET --> EQ[Equilibrium<br/>平衡]
+    FR --> MU[μ = tanθ at sliding point<br/>滑动临界点]
+    
+    %% Links to other topics
+    ACC --> N2L[Newton's Second Law<br/>牛顿第二定律]
+    EQ --> EQCOND[Equilibrium Conditions<br/>平衡条件]
+    
+    %% Prerequisites
+    N2L --> FBD[Free-body Diagrams<br/>受力分析图]
+    FBD --> TYPES[Types of Force<br/>力的类型]
+    
+    %% Styling
+    classDef main fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    classDef component fill:#fff3e0,stroke:#e65100,stroke-width:1px
+    classDef application fill:#e8f5e9,stroke:#1b5e20,stroke-width:1px
+    classDef link fill:#f3e5f5,stroke:#4a148c,stroke-width:1px
+    
+    class IR main
+    class WC,FP,FV component
+    class NET,NR,FR,ACC,EQ,MU application
+    class N2L,EQCOND,FBD,TYPES link
+```
+
+---
+
+# 12. Quick Revision Sheet / 速查表
+
+| Category / 类别 | Key Points / 要点 |
+|----------------|------------------|
+| **Definition / 定义** | Resolving weight on an incline: $F_{\parallel} = mg\sin\theta$, $F_{\perp} = mg\cos\theta$ / 斜面重力分解：$F_{\parallel} = mg\sin\theta$, $F_{\perp} = mg\cos\theta$ |
+| **Key Formula / 核心公式** | $F_{\parallel} = mg\sin\theta$ (parallel / 平行), $F_{\perp} = mg\cos\theta$ (perpendicular / 垂直), $N = mg\cos\theta$ (normal / 法向), $a = g\sin\theta$ (frictionless / 无摩擦) |
+| **Key Graph / 核心图表** | $F_{\parallel}$ vs $\theta$: sine curve 0→mg; $F_{\perp}$ vs $\theta$: cosine curve mg→0 / $F_{\parallel}$ 与 $\theta$：正弦曲线 0→mg；$F_{\perp}$ 与 $\theta$：余弦曲线 mg→0 |
+| **Common Mistake / 常见错误** | Swapping $\sin$ and $\cos$ — remember: $\sin$ for sliding (parallel), $\cos$ for contact (perpendicular) / 混淆 $\sin$ 和 $\cos$——记住：$\sin$ 用于滑动（平行），$\cos$ 用于接触（垂直） |
+| **Exam Tip / 考试提示** | Always draw the free-body diagram first! Label $\theta$ clearly. For frictionless slopes, $a = g\sin\theta$ is mass-independent. / 始终先画受力分析图！清晰标注 $\theta$。对于无摩擦斜面，$a = g\sin\theta$ 与质量无关。 |
+| **Special Case / 特殊情况** | At sliding point: $\mu = \tan\theta$ (Edexcel IAL common question) / 滑动临界点：$\mu = \tan\theta$（Edexcel IAL常见题型） |
+| **Units / 单位** | Forces in N, mass in kg, $g = 9.81$ m s⁻², $\theta$ in degrees or radians / 力用N，质量用kg，$g = 9.81$ m s⁻²，$\theta$ 用度或弧度 |

@@ -1,723 +1,1124 @@
 # 1. Overview / 概述
 
-**English:** Newton's Laws of Motion form the cornerstone of classical mechanics. These three laws describe the relationship between forces acting on a body and its motion. They are fundamental to understanding why objects move the way they do — from a car accelerating on a highway to a rocket launching into space. In both CAIE 9702 and Edexcel IAL, this topic is essential for solving problems involving [[Free-body Diagrams]], [[Linear Momentum and Impulse]], and [[Conservation of Momentum]]. Real-world applications include vehicle safety design (seatbelts, airbags), sports physics, and space exploration.
+**English:**
+Newton's Laws of Motion form the cornerstone of classical mechanics. This topic introduces three fundamental laws that describe the relationship between forces acting on a body and its motion. Newton's First Law (Law of Inertia) states that an object remains at rest or in uniform motion unless acted upon by a net external force. Newton's Second Law ($F = ma$) quantifies how force causes acceleration, proportional to mass. Newton's Third Law (Action-Reaction) states that every force has an equal and opposite reaction force.
 
-**中文:** 牛顿运动定律是经典力学的基石。这三条定律描述了作用在物体上的力与其运动之间的关系。它们是理解物体为何以特定方式运动的基础——从高速公路上加速的汽车到发射升空的火箭。在CAIE 9702和Edexcel IAL中，这个主题对于解决涉及[[受力分析图]]、[[线性动量与冲量]]和[[动量守恒]]的问题至关重要。实际应用包括车辆安全设计（安全带、安全气囊）、运动物理学和太空探索。
+This topic is critical in both Cambridge 9702 and Edexcel IAL A-Level Physics. It bridges [[Kinematics]] (describing motion) and [[Dynamics]] (explaining why motion occurs). Real-world applications include vehicle safety design (seatbelts, airbags), rocket propulsion, sports physics, and engineering structures. In examinations, Newton's Laws are tested through calculations, explanations, and practical experiments involving [[Free-body Diagrams]] and [[Linear Momentum and Impulse]].
 
-> 📷 **IMAGE PROMPT — [NL-OV-01]: Newton's Laws Overview**
-> A split-panel diagram showing three real-world scenes: (1) A book resting on a table (First Law - inertia), (2) A person pushing a shopping cart (Second Law - F=ma), (3) A person jumping off a boat (Third Law - action-reaction). Each scene has a simple force arrow diagram overlay. Labels in English and Chinese. Style: clean educational infographic, pastel colors. Exam importance: HIGH - conceptual understanding.
+**中文：**
+牛顿运动定律构成了经典力学的基石。本主题介绍了描述作用在物体上的力与其运动之间关系的三条基本定律。牛顿第一定律（惯性定律）指出，除非受到合外力作用，否则物体保持静止或匀速直线运动。牛顿第二定律（$F = ma$）量化了力如何引起加速度，且加速度与质量成反比。牛顿第三定律（作用力与反作用力）指出，每一个力都有一个大小相等、方向相反的反作用力。
+
+本主题在剑桥 9702 和爱德思 IAL A-Level 物理中至关重要。它连接了[[运动学]]（描述运动）和[[动力学]]（解释运动发生的原因）。实际应用包括车辆安全设计（安全带、安全气囊）、火箭推进、体育物理学和工程结构。在考试中，牛顿定律通过计算、解释和涉及[[受力分析图]]、[[动量与冲量]]的实验进行考查。
+
+---
 
 # 2. Syllabus Learning Objectives / 考纲学习目标
 
-| CAIE 9702 (3.2 d-e) | Edexcel IAL (WPH11 U1: 2.7-2.10) |
-|---------------------|----------------------------------|
-| State and apply Newton's three laws of motion | Understand and apply Newton's three laws of motion |
-| Describe the concept of inertia | Explain the concept of inertia and its relationship to mass |
-| Apply F = ma to solve problems involving constant mass | Use F = ma to solve problems, including those with variable mass (e.g., rockets) |
-| Solve problems involving connected particles (e.g., pulleys, trains) | Solve problems involving systems of connected bodies |
-| Distinguish between weight and mass | Understand the difference between weight and mass |
-| Apply Newton's third law to identify action-reaction pairs | Identify and apply action-reaction pairs in various contexts |
+**English:**
+The table below lists all syllabus requirements for Newton's Laws of Motion from both Cambridge 9702 and Edexcel IAL. Examiner expectations include: (1) stating and explaining each law in words, (2) applying $F = ma$ to solve problems, (3) identifying action-reaction pairs, (4) drawing and interpreting [[Free-body Diagrams]], and (5) linking to [[Linear Momentum and Impulse]] and [[Conservation of Momentum]].
 
-**Examiner Expectations / 考官期望:**
-- **English:** Candidates must be able to state each law verbatim using exam-standard wording. For CAIE, the ability to draw and interpret [[Free-body Diagrams]] is critical. For Edexcel, understanding the distinction between gravitational field strength (g) and acceleration is often tested. Both boards expect candidates to apply F = ma in both scalar and vector forms.
-- **中文:** 考生必须能够用考试标准措辞逐字陈述每条定律。对于CAIE，绘制和解读[[受力分析图]]的能力至关重要。对于Edexcel，理解引力场强度(g)与加速度之间的区别经常被测试。两个考试局都期望考生能以标量和矢量形式应用F = ma。
+**中文：**
+下表列出了剑桥 9702 和爱德思 IAL 关于牛顿运动定律的所有考纲要求。考官期望包括：(1) 用语言陈述并解释每条定律，(2) 应用 $F = ma$ 解决问题，(3) 识别作用力与反作用力对，(4) 绘制并解读[[受力分析图]]，以及 (5) 与[[动量与冲量]]和[[动量守恒]]建立联系。
 
-> 📋 **CIE Only:** CAIE often tests connected particles (e.g., two masses on a pulley) where candidates must apply Newton's second law to each body separately and then solve simultaneous equations.
-> 📋 **Edexcel Only:** Edexcel may include questions on variable mass systems (e.g., a rocket ejecting fuel) where F = ma is applied to the instantaneous mass.
+| CAIE 9702 | Edexcel IAL |
+|-----------|-------------|
+| 3.2(d) State and apply Newton's First Law: an object remains at rest or in uniform motion unless acted upon by a net external force. | 2.7 State and apply Newton's First Law: an object continues in a state of rest or uniform motion unless acted upon by a resultant force. |
+| 3.2(e) State and apply Newton's Second Law: $F = ma$ (resultant force = mass × acceleration). | 2.8 State and apply Newton's Second Law: $F = ma$ (resultant force = mass × acceleration). |
+| 3.2(f) State and apply Newton's Third Law: when two bodies interact, the forces they exert on each other are equal in magnitude and opposite in direction. | 2.9 State and apply Newton's Third Law: when two bodies interact, the forces they exert on each other are equal in magnitude and opposite in direction. |
+| 3.2(g) Apply Newton's Laws to solve problems involving forces and motion, including [[Free-body Diagrams]]. | 2.10 Apply Newton's Laws to solve problems involving forces and motion, including [[Free-body Diagrams]]. |
+| 3.2(h) Understand the concept of weight as the force due to gravity: $W = mg$. | 2.11 Understand weight as the force due to gravity: $W = mg$. |
+| 3.2(i) Understand the concept of normal reaction force. | 2.12 Understand normal reaction force. |
+| 3.2(j) Understand the concept of friction as a force opposing motion. | 2.13 Understand friction as a force opposing motion. |
+| 3.2(k) Understand the concept of tension in strings and cables. | 2.14 Understand tension in strings and cables. |
+
+> 📋 **CIE Only:** CAIE 9702 explicitly requires students to "state and apply" Newton's First Law, including the concept of inertia. The term "inertia" is examinable. CIE also requires understanding of "uniform motion" as constant velocity.
+
+> 📋 **Edexcel Only:** Edexcel IAL uses the term "resultant force" instead of "net external force." Edexcel also places greater emphasis on practical applications, such as using [[Free-body Diagrams]] to solve problems involving multiple forces.
+
+---
 
 # 3. Core Definitions / 核心定义
 
+**English:**
+The table below provides official definitions for key terms related to Newton's Laws of Motion. Each definition is worded to match exam standards. Common mistakes are highlighted to help students avoid errors.
+
+**中文：**
+下表提供了与牛顿运动定律相关的关键术语的官方定义。每个定义都按照考试标准措辞。突出显示了常见错误，以帮助学生避免错误。
+
 | Term (EN/CN) | Definition (EN) | Definition (CN) | Common Mistakes / 常见错误 |
-|--------------|-----------------|-----------------|--------------------------|
-| **Newton's First Law** / 牛顿第一定律 | A body remains at rest or moves with constant velocity unless acted upon by a resultant force. | 物体保持静止或匀速直线运动状态，除非受到合外力的作用。 | Confusing "constant velocity" with "constant speed" (velocity includes direction). |
-| **Newton's Second Law** / 牛顿第二定律 | The rate of change of momentum of a body is directly proportional to the resultant force acting on it, and takes place in the direction of that force. | 物体动量的变化率与作用在其上的合外力成正比，且发生在该力的方向上。 | Forgetting that F = ma only applies when mass is constant. |
-| **Newton's Third Law** / 牛顿第三定律 | When two bodies interact, the forces they exert on each other are equal in magnitude, opposite in direction, and act on different bodies. | 当两个物体相互作用时，它们彼此施加的力大小相等、方向相反，且作用在不同物体上。 | Confusing action-reaction pairs with balanced forces (they act on the SAME body). |
-| **Inertia** / 惯性 | The tendency of a body to resist any change in its state of motion. | 物体抵抗其运动状态发生任何变化的趋势。 | Thinking inertia is a force (it is a property of mass). |
-| **Mass** / 质量 | A measure of the amount of matter in a body; also a measure of its inertia. | 物体中物质数量的量度；也是其惯性大小的量度。 | Confusing mass with weight (mass is scalar, weight is a force). |
-| **Weight** / 重量 | The gravitational force exerted on a body; W = mg. | 作用在物体上的引力；W = mg。 | Using g = 9.81 m/s² when the problem specifies a different value (e.g., on the Moon). |
-| **Resultant Force** / 合力 | The single force that has the same effect as all the forces acting on a body combined. | 与作用在物体上的所有力的组合效果相同的单一力。 | Forgetting to consider direction when adding forces vectorially. |
-| **Action-Reaction Pair** / 作用力与反作用力对 | A pair of forces that are equal in magnitude, opposite in direction, and act on two different interacting bodies. | 大小相等、方向相反、作用在两个不同相互作用物体上的一对力。 | Saying "the reaction force is the opposite of the action" without specifying they act on different bodies. |
+|--------------|-----------------|-----------------|---------------------------|
+| **Newton's First Law** / 牛顿第一定律 | An object remains at rest or in uniform motion (constant velocity) unless acted upon by a net external force (resultant force). | 物体保持静止或匀速直线运动（恒定速度），除非受到合外力（合力）作用。 | Mistaking "uniform motion" for "constant speed" (velocity includes direction). Also, forgetting that the law applies only in inertial frames. |
+| **Newton's Second Law** / 牛顿第二定律 | The resultant force acting on an object is equal to the rate of change of its momentum: $F = \frac{\Delta p}{\Delta t}$. For constant mass, this simplifies to $F = ma$. | 作用在物体上的合力等于其动量变化率：$F = \frac{\Delta p}{\Delta t}$。对于质量恒定的物体，可简化为 $F = ma$。 | Using $F = ma$ when mass changes (e.g., rockets). Also, forgetting that $F$ is the **resultant** force, not any individual force. |
+| **Newton's Third Law** / 牛顿第三定律 | When two bodies interact, the forces they exert on each other are equal in magnitude and opposite in direction. | 当两个物体相互作用时，它们彼此施加的力大小相等、方向相反。 | Confusing action-reaction pairs with balanced forces. Action-reaction forces act on **different** objects; balanced forces act on the **same** object. |
+| **Inertia** / 惯性 | The property of an object to resist changes in its state of motion. It is directly proportional to mass. | 物体抵抗其运动状态变化的性质。它与质量成正比。 | Thinking inertia is a force. Inertia is a property, not a force. |
+| **Resultant Force** / 合力 | The single force that has the same effect as all the forces acting on an object combined. | 与作用在物体上的所有力的组合效果相同的单个力。 | Forgetting to consider direction when adding forces. |
+| **Weight** / 重量 | The gravitational force exerted on an object by a planet: $W = mg$. | 行星对物体施加的万有引力：$W = mg$。 | Confusing weight with mass. Weight is a force (unit: N); mass is a scalar (unit: kg). |
+| **Normal Reaction Force** / 法向反作用力 | The force exerted by a surface on an object in contact with it, perpendicular to the surface. | 表面对其接触的物体施加的力，垂直于表面。 | Thinking normal force always equals weight. It only equals weight on a horizontal surface with no vertical acceleration. |
+| **Friction** / 摩擦力 | A force that opposes the relative motion of two surfaces in contact. | 阻碍两个接触表面相对运动的力。 | Assuming friction always equals $\mu R$. Static friction can vary up to a maximum. |
+| **Tension** / 张力 | The pulling force transmitted through a string, cable, or rope when it is stretched. | 当绳子、电缆或绳索被拉伸时通过其传递的拉力。 | Assuming tension is constant in a massless string. In real strings with mass, tension varies. |
+
+---
 
 # 4. Key Concepts Explained / 关键概念详解
 
 ## 4.1 Newton's First Law (Inertia) / 牛顿第一定律（惯性）
 
 ### Explanation / 解释
-**English:** [[Newton's First Law (Inertia)]] states that a body remains at rest or moves with constant velocity unless acted upon by a resultant force. This law introduces the concept of [[Inertia]] — the tendency of an object to resist changes in its motion. A stationary object will stay stationary, and a moving object will keep moving at the same speed in the same straight line, unless a net external force intervenes. This is why passengers lurch forward when a car suddenly brakes — their bodies continue moving forward due to inertia.
+**English:**
+Newton's First Law states that an object remains at rest or in uniform motion (constant velocity) unless acted upon by a net external force (resultant force). This law introduces the concept of [[Inertia]], which is the property of an object to resist changes in its state of motion. Inertia is directly proportional to mass: heavier objects have greater inertia.
 
-**中文:** [[牛顿第一定律（惯性）]]指出，物体保持静止或匀速直线运动状态，除非受到合外力的作用。这条定律引入了[[惯性]]的概念——物体抵抗其运动状态发生变化的趋势。静止的物体会保持静止，运动的物体会保持相同速度和方向的直线运动，除非有净外力介入。这就是为什么当汽车突然刹车时，乘客会向前冲——他们的身体由于惯性而继续向前运动。
+The law implies that if the resultant force on an object is zero, its velocity remains constant. This includes both objects at rest ($v = 0$) and objects moving with constant velocity ($v = \text{constant}$). This is why a book on a table stays at rest (gravity and normal reaction cancel), and why a spacecraft in deep space continues moving at constant speed without fuel.
+
+**中文：**
+牛顿第一定律指出，除非受到合外力（合力）作用，否则物体保持静止或匀速直线运动（恒定速度）。这条定律引入了[[惯性]]的概念，即物体抵抗其运动状态变化的性质。惯性直接与质量成正比：较重的物体具有更大的惯性。
+
+该定律意味着，如果物体上的合力为零，其速度保持不变。这包括静止物体（$v = 0$）和匀速运动物体（$v = \text{常数}$）。这就是为什么桌子上的书保持静止（重力和法向反作用力抵消），以及为什么深空中的航天器无需燃料就能继续匀速运动。
 
 ### Physical Meaning / 物理意义
-**English:** The First Law defines a [[Inertial Frame of Reference]] — a frame in which a body with zero net force moves with constant velocity. It establishes that force is NOT needed to maintain motion (as Aristotle thought), but rather to CHANGE motion. This is the foundation for understanding [[Newton's Second Law (F=ma)]].
+**English:**
+In real life, Newton's First Law explains why passengers lurch forward when a car suddenly brakes (their bodies continue moving forward due to inertia). It also explains why seatbelts are necessary: without them, passengers would continue moving forward at the car's original speed during a collision.
 
-**中文:** 第一定律定义了[[惯性参考系]]——在该参考系中，净力为零的物体做匀速运动。它确立了力不是维持运动所必需的（如亚里士多德所想），而是改变运动所必需的。这是理解[[牛顿第二定律（F=ma）]]的基础。
+**中文：**
+在现实生活中，牛顿第一定律解释了为什么当汽车突然刹车时乘客会向前冲（他们的身体由于惯性继续向前运动）。它也解释了为什么需要安全带：没有安全带，乘客在碰撞时会以汽车原来的速度继续向前运动。
 
 ### Common Misconceptions / 常见误区
-- ❌ **"Inertia is a force"** — Inertia is a property of mass, not a force. It does not appear in free-body diagrams.
-- ❌ **"A moving object needs a force to keep moving"** — In the absence of friction, no force is needed to maintain constant velocity.
-- ❌ **"Heavier objects have more inertia"** — This is TRUE (mass is a measure of inertia), but many students think inertia only applies to stationary objects.
+1. **Misconception:** A moving object needs a force to keep it moving.
+   **Correction:** According to Newton's First Law, an object in uniform motion requires no net force. Friction and air resistance are forces that oppose motion, so a constant force is needed to **balance** these opposing forces, not to maintain motion itself.
+
+2. **Misconception:** Inertia is a force.
+   **Correction:** Inertia is a property (resistance to change in motion), not a force. It has no units and cannot be measured directly.
+
+3. **Misconception:** "Uniform motion" means constant speed.
+   **Correction:** Uniform motion means constant **velocity**, which includes both speed and direction. An object moving in a circle at constant speed is accelerating (changing direction) and thus requires a net force.
 
 ### Exam Tips / 考试提示
-**English:** When answering questions about the First Law, always mention "resultant force" or "net force." For CAIE, be prepared to explain why passengers move forward when a bus stops. For Edexcel, you may need to relate inertia to mass in qualitative questions.
-**中文:** 回答关于第一定律的问题时，始终提及"合力"或"净力"。对于CAIE，要准备好解释为什么公交车停下时乘客会向前移动。对于Edexcel，你可能需要将惯性与质量联系起来回答定性问题。
+**English:**
+Cambridge and Edexcel often ask students to:
+- State Newton's First Law in words (memorise the exact wording).
+- Explain why an object continues moving after a force is removed (e.g., a puck on ice).
+- Identify situations where resultant force is zero (equilibrium).
+- Use the law to explain safety features (seatbelts, airbags).
 
-> 📷 **IMAGE PROMPT — [NL-FL-01]: Inertia Demonstration**
-> A diagram showing a person in a car: (a) Car moving at constant velocity — person at rest relative to car. (b) Car suddenly brakes — person lurches forward. Force arrows: friction on car tires (backward), no horizontal force on person initially. Labels: "Inertia keeps person moving forward." Style: simple cartoon, clear arrows. Exam importance: HIGH.
+**中文：**
+剑桥和爱德思经常要求学生：
+- 用语言陈述牛顿第一定律（记住确切的措辞）。
+- 解释为什么力移除后物体继续运动（例如，冰球）。
+- 识别合力为零的情况（平衡）。
+- 用该定律解释安全功能（安全带、安全气囊）。
 
-## 4.2 Newton's Second Law (F = ma) / 牛顿第二定律（F = ma）
+---
+
+## 4.2 Newton's Second Law ($F = ma$) / 牛顿第二定律（$F = ma$）
 
 ### Explanation / 解释
-**English:** [[Newton's Second Law (F=ma)]] states that the rate of change of momentum of a body is directly proportional to the resultant force acting on it, and takes place in the direction of that force. Mathematically: F = dp/dt. For constant mass, this simplifies to F = ma, where F is the resultant force, m is the mass, and a is the acceleration. This is the most frequently applied law in mechanics problems.
+**English:**
+Newton's Second Law states that the resultant force acting on an object is equal to the rate of change of its momentum. Mathematically: $F = \frac{\Delta p}{\Delta t}$, where $p = mv$ is momentum. For an object with constant mass, this simplifies to $F = ma$, where $a$ is the acceleration.
 
-**中文:** [[牛顿第二定律（F=ma）]]指出，物体动量的变化率与作用在其上的合外力成正比，且发生在该力的方向上。数学表达式：F = dp/dt。对于质量恒定的物体，这简化为F = ma，其中F是合力，m是质量，a是加速度。这是力学问题中最常用的定律。
+The law is a vector equation: the direction of acceleration is the same as the direction of the resultant force. If multiple forces act on an object, the resultant force is the vector sum of all forces. This is why [[Free-body Diagrams]] are essential: they help identify all forces and their directions.
+
+**中文：**
+牛顿第二定律指出，作用在物体上的合力等于其动量变化率。数学表达式为：$F = \frac{\Delta p}{\Delta t}$，其中 $p = mv$ 是动量。对于质量恒定的物体，可简化为 $F = ma$，其中 $a$ 是加速度。
+
+该定律是一个矢量方程：加速度的方向与合力的方向相同。如果多个力作用在一个物体上，合力是所有力的矢量和。这就是为什么[[受力分析图]]至关重要：它们有助于识别所有力及其方向。
 
 ### Physical Meaning / 物理意义
-**English:** The Second Law quantifies the relationship between force and motion. It tells us that:
-- A larger force produces a larger acceleration (for the same mass)
-- A larger mass requires a larger force to achieve the same acceleration
-- The direction of acceleration is the same as the direction of the resultant force
+**English:**
+Newton's Second Law quantifies the relationship between force and motion. A larger force produces a larger acceleration for the same mass. A larger mass requires a larger force to achieve the same acceleration. This explains why a heavy truck needs a more powerful engine than a small car to accelerate at the same rate.
 
-This law is the basis for [[Applications of Newton's Laws]] in all mechanics problems.
-
-**中文:** 第二定律量化了力与运动之间的关系。它告诉我们：
-- 更大的力产生更大的加速度（对于相同质量）
-- 更大的质量需要更大的力才能达到相同的加速度
-- 加速度的方向与合力的方向相同
-
-这条定律是所有力学问题中[[牛顿定律的应用]]的基础。
+**中文：**
+牛顿第二定律量化了力与运动之间的关系。对于相同的质量，更大的力产生更大的加速度。更大的质量需要更大的力才能达到相同的加速度。这解释了为什么重型卡车需要比小型汽车更强大的发动机才能以相同的速率加速。
 
 ### Common Misconceptions / 常见误区
-- ❌ **"F = ma means force causes acceleration"** — Correct, but many students forget that acceleration is the RESULT, not the cause.
-- ❌ **"The force in F = ma is any individual force"** — F must be the RESULTANT (net) force, not any single force.
-- ❌ **"If velocity is zero, acceleration must be zero"** — An object at the top of its trajectory (e.g., a ball thrown upward) has v = 0 but a = g downward.
-- ❌ **"F = ma works for variable mass"** — Only the momentum form F = dp/dt works for variable mass systems.
+1. **Misconception:** $F = ma$ applies to any force, not just the resultant force.
+   **Correction:** $F$ in Newton's Second Law is always the **resultant** (net) force. Individual forces do not directly cause acceleration; only the net force does.
+
+2. **Misconception:** Acceleration is proportional to force, regardless of mass.
+   **Correction:** Acceleration is proportional to force **and** inversely proportional to mass: $a = F/m$.
+
+3. **Misconception:** $F = ma$ can be used when mass changes.
+   **Correction:** When mass changes (e.g., rockets burning fuel), the full form $F = \frac{\Delta p}{\Delta t}$ must be used.
 
 ### Exam Tips / 考试提示
-**English:** Always draw a [[Free-body Diagrams]] first. Resolve forces into components if needed. For connected particles (CAIE common), apply F = ma to each body separately, then solve simultaneous equations. For Edexcel, be careful with variable mass problems — use F = dp/dt.
-**中文:** 始终先画[[受力分析图]]。如果需要，将力分解为分量。对于连接体（CAIE常见），分别对每个物体应用F = ma，然后解联立方程。对于Edexcel，注意变质量问题——使用F = dp/dt。
+**English:**
+Cambridge and Edexcel often ask students to:
+- Apply $F = ma$ to solve problems involving [[Free-body Diagrams]].
+- Calculate acceleration, force, or mass given two of the three variables.
+- Explain why a falling object reaches terminal velocity (air resistance increases until it balances weight).
+- Use the law in conjunction with [[Kinematics]] equations ($v = u + at$, etc.).
 
-> 📷 **IMAGE PROMPT — [NL-SL-01]: F = ma Diagram**
-> A block of mass m on a frictionless surface. A horizontal force F is applied to the right. Free-body diagram shows: weight mg (down), normal reaction N (up), applied force F (right). Acceleration a = F/m to the right. Labels: "Resultant Force = F", "a = F/m". Style: clean physics diagram, vector arrows with labels. Exam importance: VERY HIGH.
+**中文：**
+剑桥和爱德思经常要求学生：
+- 应用 $F = ma$ 解决涉及[[受力分析图]]的问题。
+- 在已知三个变量中的两个时计算加速度、力或质量。
+- 解释为什么下落物体达到终端速度（空气阻力增加直到平衡重量）。
+- 结合[[运动学]]方程（$v = u + at$ 等）使用该定律。
+
+---
 
 ## 4.3 Newton's Third Law (Action-Reaction) / 牛顿第三定律（作用力与反作用力）
 
 ### Explanation / 解释
-**English:** [[Newton's Third Law (Action-Reaction)]] states that when two bodies interact, the forces they exert on each other are equal in magnitude, opposite in direction, and act on different bodies. For example, when you push a wall, the wall pushes back on you with equal force. The pair of forces is called an [[Action-Reaction Pair]].
+**English:**
+Newton's Third Law states that when two bodies interact, the forces they exert on each other are equal in magnitude and opposite in direction. These forces are called action-reaction pairs. Key characteristics:
+- They act on **different** objects.
+- They are of the **same type** (e.g., both gravitational, both contact).
+- They occur **simultaneously**.
+- They are **equal in magnitude** and **opposite in direction**.
 
-**中文:** [[牛顿第三定律（作用力与反作用力）]]指出，当两个物体相互作用时，它们彼此施加的力大小相等、方向相反，且作用在不同物体上。例如，当你推墙时，墙以相等的力推回你。这一对力称为[[作用力与反作用力对]]。
+Common examples include:
+- A book on a table: Earth pulls book down (gravity), book pulls Earth up (gravity).
+- A person walking: foot pushes ground backward (friction), ground pushes foot forward (friction).
+- A rocket: exhaust gases push down on rocket, rocket pushes exhaust gases up.
+
+**中文：**
+牛顿第三定律指出，当两个物体相互作用时，它们彼此施加的力大小相等、方向相反。这些力称为作用力与反作用力对。关键特征：
+- 它们作用在**不同**的物体上。
+- 它们是**相同类型**的（例如，都是万有引力，都是接触力）。
+- 它们**同时**发生。
+- 它们**大小相等**、**方向相反**。
+
+常见例子包括：
+- 桌子上的书：地球向下拉书（重力），书向上拉地球（重力）。
+- 行走的人：脚向后推地面（摩擦力），地面向前推脚（摩擦力）。
+- 火箭：废气向下推火箭，火箭向上推废气。
 
 ### Physical Meaning / 物理意义
-**English:** The Third Law explains why forces always come in pairs. It is the reason we can walk (we push backward on the ground, the ground pushes us forward), rockets can fly (exhaust gases push down, the rocket is pushed up), and boats move (oars push water backward, water pushes boat forward). Crucially, action-reaction pairs act on DIFFERENT bodies, so they do NOT cancel each other out.
+**English:**
+Newton's Third Law explains how forces always come in pairs. It is the reason we can walk (ground pushes us forward), swim (water pushes us forward), and fly (air pushes wings upward). It also explains why rockets work in space: the rocket pushes exhaust gases backward, and the exhaust gases push the rocket forward.
 
-**中文:** 第三定律解释了为什么力总是成对出现。这是我们能行走（我们向后推地面，地面向前推我们）、火箭能飞行（废气向下推，火箭被向上推）以及船能移动（桨向后推水，水向前推船）的原因。关键在于，作用力与反作用力对作用在**不同**物体上，因此它们不会相互抵消。
+**中文：**
+牛顿第三定律解释了力总是成对出现的原因。这就是为什么我们能行走（地面向前推我们）、游泳（水向前推我们）和飞行（空气向上推机翼）。它也解释了为什么火箭能在太空中工作：火箭向后推废气，废气向前推火箭。
 
 ### Common Misconceptions / 常见误区
-- ❌ **"Action-reaction forces cancel each other"** — They act on different bodies, so they cannot cancel. Cancellation requires forces on the SAME body.
-- ❌ **"The action force is greater than the reaction force"** — They are ALWAYS equal in magnitude.
-- ❌ **"The reaction force occurs after the action"** — They occur SIMULTANEOUSLY.
-- ❌ **"Weight and normal reaction are an action-reaction pair"** — They act on the SAME body (the object), so they are NOT an action-reaction pair. They are balanced forces.
+1. **Misconception:** Action-reaction forces cancel each other out.
+   **Correction:** They act on **different** objects, so they cannot cancel. Cancellation requires forces on the **same** object.
+
+2. **Misconception:** The action force causes the reaction force.
+   **Correction:** Both forces occur simultaneously. Neither causes the other; they are mutual interactions.
+
+3. **Misconception:** If one object is much larger, its force is larger.
+   **Correction:** The forces are always equal in magnitude, regardless of the masses of the objects.
 
 ### Exam Tips / 考试提示
-**English:** To identify action-reaction pairs: (1) Identify the two interacting bodies, (2) Force on body A from body B, and force on body B from body A. Common exam questions involve a book on a table, a person standing on a floor, or a rocket. For CAIE, distinguish between "balanced forces" (same body) and "action-reaction pairs" (different bodies).
-**中文:** 识别作用力与反作用力对的方法：(1) 识别两个相互作用的物体，(2) 物体A受到物体B的力，以及物体B受到物体A的力。常见的考试问题涉及桌子上的书、站在地板上的人或火箭。对于CAIE，要区分"平衡力"（同一物体）和"作用力与反作用力对"（不同物体）。
+**English:**
+Cambridge and Edexcel often ask students to:
+- Identify action-reaction pairs in a given scenario.
+- Distinguish between action-reaction pairs and balanced forces.
+- Explain why a person can move forward by pushing backward on the ground.
+- Use the law to explain rocket propulsion.
 
-> 📷 **IMAGE PROMPT — [NL-TL-01]: Action-Reaction Pairs**
-> Three examples side by side: (1) Person walking — foot pushes ground backward (action), ground pushes foot forward (reaction). (2) Rocket — exhaust gases push downward (action), rocket pushed upward (reaction). (3) Book on table — book pushes table down (action), table pushes book up (reaction). Each pair shown with equal-length arrows in opposite directions, labeled "Action" and "Reaction" on different bodies. Style: clear diagram, color-coded arrows. Exam importance: VERY HIGH.
+**中文：**
+剑桥和爱德思经常要求学生：
+- 在给定场景中识别作用力与反作用力对。
+- 区分作用力与反作用力对和平衡力。
+- 解释为什么人可以通过向后推地面而向前移动。
+- 用该定律解释火箭推进。
+
+---
 
 ## 4.4 Applications of Newton's Laws / 牛顿定律的应用
 
 ### Explanation / 解释
-**English:** [[Applications of Newton's Laws]] involve using all three laws together to solve real-world problems. Common scenarios include:
-- **Connected particles:** Two masses connected by a string over a pulley, or a train with multiple carriages
-- **Inclined planes:** Objects sliding down or up a slope
-- **Lifts (elevators):** Apparent weight changes during acceleration
-- **Circular motion:** (A-level extension) where centripetal force is provided by tension, friction, or gravity
+**English:**
+Newton's Laws are applied to solve problems involving forces and motion. The general approach is:
+1. Draw a [[Free-body Diagram]] showing all forces acting on the object.
+2. Resolve forces into components (if needed).
+3. Apply Newton's Second Law: $F_{\text{net}} = ma$.
+4. Solve for the unknown quantity.
 
-**中文:** [[牛顿定律的应用]]涉及同时使用所有三条定律来解决实际问题。常见场景包括：
-- **连接体：** 两个质量通过绳子连接在滑轮上，或带有多个车厢的火车
-- **斜面：** 物体沿斜面下滑或上滑
-- **电梯：** 加速过程中表观重量的变化
-- **圆周运动：**（A-level扩展）向心力由张力、摩擦力或重力提供
+Common applications include:
+- **Objects on inclined planes:** Resolve weight into components parallel and perpendicular to the plane.
+- **Connected objects (pulleys):** Apply Newton's Second Law to each object separately, then solve simultaneous equations.
+- **Elevators:** Normal reaction force changes depending on acceleration (upward acceleration increases apparent weight).
+- **Terminal velocity:** When drag force equals weight, resultant force is zero, and acceleration becomes zero.
+
+**中文：**
+牛顿定律应用于解决涉及力和运动的问题。一般方法是：
+1. 绘制[[受力分析图]]，显示作用在物体上的所有力。
+2. 将力分解为分量（如果需要）。
+3. 应用牛顿第二定律：$F_{\text{net}} = ma$。
+4. 求解未知量。
+
+常见应用包括：
+- **斜面上的物体：** 将重量分解为平行和垂直于斜面的分量。
+- **连接物体（滑轮）：** 分别对每个物体应用牛顿第二定律，然后求解联立方程。
+- **电梯：** 法向反作用力随加速度变化（向上加速度增加表观重量）。
+- **终端速度：** 当阻力等于重量时，合力为零，加速度变为零。
 
 ### Physical Meaning / 物理意义
-**English:** The key to solving application problems is:
-1. Draw a [[Free-body Diagrams]] for each object
-2. Identify all forces acting on each object
-3. Apply Newton's Second Law (F = ma) to each object
-4. Use Newton's Third Law to relate forces between objects (e.g., tension in a string is the same on both ends)
-5. Solve the resulting equations
+**English:**
+Understanding how to apply Newton's Laws is essential for engineering, physics, and everyday problem-solving. For example, engineers use these laws to design safe bridges, vehicles, and amusement park rides. Physicists use them to predict the motion of planets and satellites.
 
-**中文:** 解决应用问题的关键是：
-1. 为每个物体画[[受力分析图]]
-2. 识别作用在每个物体上的所有力
-3. 对每个物体应用牛顿第二定律（F = ma）
-4. 使用牛顿第三定律关联物体之间的力（例如，绳子两端的张力相同）
-5. 解所得方程
+**中文：**
+理解如何应用牛顿定律对于工程、物理和日常问题解决至关重要。例如，工程师使用这些定律设计安全的桥梁、车辆和游乐园设施。物理学家使用它们预测行星和卫星的运动。
 
 ### Common Misconceptions / 常见误区
-- ❌ **"Tension is different at different points in a light string"** — For a light (massless) string, tension is the same throughout.
-- ❌ **"Normal reaction always equals weight"** — Only on horizontal surfaces with no vertical acceleration. On an incline or in an accelerating lift, N ≠ mg.
-- ❌ **"Friction always opposes motion"** — Friction opposes RELATIVE motion or attempted motion.
+1. **Misconception:** The normal reaction force always equals weight.
+   **Correction:** Normal reaction equals weight only on a horizontal surface with no vertical acceleration. On an incline, it equals $mg \cos \theta$. In an accelerating elevator, it can be greater or less than weight.
+
+2. **Misconception:** Tension is the same on both sides of a pulley.
+   **Correction:** For a massless, frictionless pulley, tension is the same. For real pulleys with mass and friction, tension differs.
+
+3. **Misconception:** Friction always opposes motion.
+   **Correction:** Friction opposes **relative** motion. In some cases (e.g., walking), friction is the force that **causes** motion.
 
 ### Exam Tips / 考试提示
-**English:** For CAIE, connected particles (pulleys, trains) are very common. Always define a positive direction and stick to it. For Edexcel, lift problems and inclined planes are frequent. Remember that "apparent weight" is the normal reaction force, not actual weight.
-**中文:** 对于CAIE，连接体（滑轮、火车）非常常见。始终定义一个正方向并保持一致。对于Edexcel，电梯问题和斜面问题很常见。记住"表观重量"是法向反作用力，而不是实际重量。
+**English:**
+Cambridge and Edexcel often ask students to:
+- Solve problems involving [[Free-body Diagrams]] with multiple forces.
+- Calculate acceleration of connected objects (e.g., two masses on a pulley).
+- Determine normal reaction force in accelerating systems (e.g., elevators).
+- Explain terminal velocity using Newton's Laws.
 
-> 📷 **IMAGE PROMPT — [NL-AP-01]: Connected Particles on a Pulley**
-> Two masses m₁ and m₂ connected by a light inextensible string over a frictionless pulley. m₁ on a horizontal table (with friction coefficient μ), m₂ hanging vertically. Free-body diagrams for each mass: m₁ has weight m₁g (down), normal reaction N (up), tension T (right), friction f (left). m₂ has weight m₂g (down), tension T (up). Acceleration a shown for each. Labels: "Tension T same throughout string", "a₁ = a₂ = a". Style: standard physics diagram. Exam importance: VERY HIGH for CAIE.
+**中文：**
+剑桥和爱德思经常要求学生：
+- 解决涉及多个力的[[受力分析图]]问题。
+- 计算连接物体的加速度（例如，滑轮上的两个质量）。
+- 确定加速系统中的法向反作用力（例如，电梯）。
+- 用牛顿定律解释终端速度。
+
+---
 
 # 5. Essential Equations / 核心公式
 
 ## 5.1 Newton's Second Law (General Form) / 牛顿第二定律（一般形式）
 
-$$ \mathbf{F} = \frac{d\mathbf{p}}{dt} $$
+**Equation / 公式:**
+$$ F = \frac{\Delta p}{\Delta t} $$
 
-| Symbol (符号) | Meaning (EN/CN) | Unit (单位) |
-|---------------|-----------------|-------------|
-| $\mathbf{F}$ | Resultant force / 合力 | N (newton) |
-| $\mathbf{p}$ | Momentum / 动量 | kg·m/s |
-| $t$ | Time / 时间 | s |
+**Variables / 变量:**
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| $F$ | Resultant (net) force | 合力 | N (newton) |
+| $\Delta p$ | Change in momentum | 动量变化 | kg·m/s |
+| $\Delta t$ | Time interval | 时间间隔 | s (second) |
 
-**Derivation / 推导:** This is the original form stated by Newton. For constant mass, it simplifies to F = ma.
-**Conditions / 适用条件:** Always valid, including for variable mass systems.
-**Limitations / 局限性:** Requires an inertial frame of reference.
+**Derivation / 推导:**
+**English:**
+Newton originally stated his Second Law as the rate of change of momentum is proportional to the applied force. Mathematically: $F \propto \frac{\Delta p}{\Delta t}$. With appropriate units, the constant of proportionality is 1, giving $F = \frac{\Delta p}{\Delta t}$. Since $p = mv$, for constant mass: $\Delta p = m \Delta v$, so $F = \frac{m \Delta v}{\Delta t} = ma$.
 
-## 5.2 Newton's Second Law (Constant Mass) / 牛顿第二定律（质量恒定）
+**中文：**
+牛顿最初将他的第二定律表述为动量变化率与施加的力成正比。数学表达式为：$F \propto \frac{\Delta p}{\Delta t}$。使用适当的单位，比例常数为 1，得到 $F = \frac{\Delta p}{\Delta t}$。由于 $p = mv$，对于恒定质量：$\Delta p = m \Delta v$，所以 $F = \frac{m \Delta v}{\Delta t} = ma$。
 
-$$ \mathbf{F} = m\mathbf{a} $$
+**Conditions / 适用条件:**
+**English:** This is the general form applicable to all situations, including variable mass systems (e.g., rockets, conveyor belts).
+**中文：** 这是适用于所有情况的一般形式，包括变质量系统（例如，火箭、传送带）。
 
-| Symbol (符号) | Meaning (EN/CN) | Unit (单位) |
-|---------------|-----------------|-------------|
-| $\mathbf{F}$ | Resultant force / 合力 | N |
-| $m$ | Mass / 质量 | kg |
-| $\mathbf{a}$ | Acceleration / 加速度 | m/s² |
+**Limitations / 局限性:**
+**English:** Requires an inertial frame of reference. Not applicable at relativistic speeds (near speed of light) where special relativity is needed.
+**中文：** 需要惯性参考系。不适用于相对论速度（接近光速），此时需要狭义相对论。
 
-**Derivation / 推导:** From F = dp/dt = d(mv)/dt = m(dv/dt) = ma (when m is constant).
-**Conditions / 适用条件:** Mass must be constant. Valid only in inertial frames.
-**Limitations / 局限性:** Does NOT apply to variable mass systems (e.g., rockets, conveyor belts).
 **Rearrangements / 变形:**
-- $a = F/m$ — acceleration is proportional to force, inversely proportional to mass
-- $m = F/a$ — inertial mass measurement
+$$ \Delta p = F \Delta t \quad \text{(Impulse)} $$
+$$ \Delta t = \frac{\Delta p}{F} $$
+
+---
+
+## 5.2 Newton's Second Law (Constant Mass) / 牛顿第二定律（恒定质量）
+
+**Equation / 公式:**
+$$ F = ma $$
+
+**Variables / 变量:**
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| $F$ | Resultant (net) force | 合力 | N (newton) |
+| $m$ | Mass of object | 物体质量 | kg (kilogram) |
+| $a$ | Acceleration | 加速度 | m/s² |
+
+**Derivation / 推导:**
+**English:**
+From the general form $F = \frac{\Delta p}{\Delta t}$, for constant mass $m$, $\Delta p = m \Delta v$. Therefore:
+$$ F = \frac{m \Delta v}{\Delta t} = m \frac{\Delta v}{\Delta t} = ma $$
+where $a = \frac{\Delta v}{\Delta t}$ is the acceleration.
+
+**中文：**
+从一般形式 $F = \frac{\Delta p}{\Delta t}$ 出发，对于恒定质量 $m$，$\Delta p = m \Delta v$。因此：
+$$ F = \frac{m \Delta v}{\Delta t} = m \frac{\Delta v}{\Delta t} = ma $$
+其中 $a = \frac{\Delta v}{\Delta t}$ 是加速度。
+
+**Conditions / 适用条件:**
+**English:** Only applicable when mass is constant. Suitable for most everyday situations (cars, balls, people).
+**中文：** 仅适用于质量恒定的情况。适用于大多数日常情况（汽车、球、人）。
+
+**Limitations / 局限性:**
+**English:** Cannot be used for variable mass systems (e.g., rockets burning fuel, conveyor belts adding mass). In such cases, use the general form $F = \frac{\Delta p}{\Delta t}$.
+**中文：** 不能用于变质量系统（例如，燃烧燃料的火箭、添加质量的传送带）。在这种情况下，使用一般形式 $F = \frac{\Delta p}{\Delta t}$。
+
+**Rearrangements / 变形:**
+$$ a = \frac{F}{m} $$
+$$ m = \frac{F}{a} $$
+
+---
 
 ## 5.3 Weight / 重量
 
+**Equation / 公式:**
 $$ W = mg $$
 
-| Symbol (符号) | Meaning (EN/CN) | Unit (单位) |
-|---------------|-----------------|-------------|
-| $W$ | Weight / 重量 | N |
-| $m$ | Mass / 质量 | kg |
-| $g$ | Gravitational field strength / 引力场强度 | N/kg or m/s² |
+**Variables / 变量:**
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| $W$ | Weight (gravitational force) | 重量（万有引力） | N (newton) |
+| $m$ | Mass of object | 物体质量 | kg (kilogram) |
+| $g$ | Acceleration due to gravity | 重力加速度 | m/s² |
 
-**Derivation / 推导:** From F = ma, where a = g (acceleration due to gravity).
-**Conditions / 适用条件:** Near the surface of a planet/star.
-**Limitations / 局限性:** g varies with altitude and location. On Earth, g ≈ 9.81 m/s².
+**Derivation / 推导:**
+**English:**
+Weight is the gravitational force exerted on an object by a planet. From Newton's Law of Universal Gravitation: $F = \frac{GMm}{r^2}$. Near Earth's surface, $r \approx R_E$ (Earth's radius), so $g = \frac{GM}{R_E^2} \approx 9.81 \text{ m/s}^2$. Thus, $W = mg$.
 
-## 5.4 Momentum Form / 动量形式
+**中文：**
+重量是行星对物体施加的万有引力。根据牛顿万有引力定律：$F = \frac{GMm}{r^2}$。在地球表面附近，$r \approx R_E$（地球半径），所以 $g = \frac{GM}{R_E^2} \approx 9.81 \text{ m/s}^2$。因此，$W = mg$。
 
-$$ \mathbf{F} = \frac{\Delta \mathbf{p}}{\Delta t} $$
+**Conditions / 适用条件:**
+**English:** Valid near the surface of a planet where $g$ is approximately constant. On Earth, $g = 9.81 \text{ m/s}^2$ (or $9.8 \text{ m/s}^2$ in exams).
+**中文：** 在行星表面附近有效，其中 $g$ 近似恒定。在地球上，$g = 9.81 \text{ m/s}^2$（考试中为 $9.8 \text{ m/s}^2$）。
 
-| Symbol (符号) | Meaning (EN/CN) | Unit (单位) |
-|---------------|-----------------|-------------|
-| $\mathbf{F}$ | Average resultant force / 平均合力 | N |
-| $\Delta \mathbf{p}$ | Change in momentum / 动量变化 | kg·m/s |
-| $\Delta t$ | Time interval / 时间间隔 | s |
+**Limitations / 局限性:**
+**English:** $g$ varies with altitude and latitude. At high altitudes or on other planets, $g$ is different.
+**中文：** $g$ 随海拔和纬度变化。在高海拔或其他行星上，$g$ 不同。
 
-**Derivation / 推导:** From F = dp/dt, approximated over a finite time interval.
-**Conditions / 适用条件:** Valid for constant or average forces.
-**Limitations / 局限性:** For instantaneous forces, use the differential form.
+**Rearrangements / 变形:**
+$$ m = \frac{W}{g} $$
+$$ g = \frac{W}{m} $$
 
-## 5.5 Newton's Third Law / 牛顿第三定律
+---
 
-$$ \mathbf{F}_{AB} = -\mathbf{F}_{BA} $$
+## 5.4 Friction (Kinetic) / 摩擦力（动摩擦）
 
-| Symbol (符号) | Meaning (EN/CN) | Unit (单位) |
-|---------------|-----------------|-------------|
-| $\mathbf{F}_{AB}$ | Force on body A from body B / 物体B对物体A的力 | N |
-| $\mathbf{F}_{BA}$ | Force on body B from body A / 物体A对物体B的力 | N |
+**Equation / 公式:**
+$$ F_f = \mu R $$
 
-**Derivation / 推导:** Empirical law — cannot be derived from other principles.
-**Conditions / 适用条件:** Always true for all interactions.
-**Limitations / 局限性:** The two forces act on DIFFERENT bodies — they do NOT cancel.
+**Variables / 变量:**
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| $F_f$ | Frictional force | 摩擦力 | N (newton) |
+| $\mu$ | Coefficient of friction | 摩擦系数 | dimensionless (无量纲) |
+| $R$ | Normal reaction force | 法向反作用力 | N (newton) |
+
+**Derivation / 推导:**
+**English:**
+This is an empirical relationship (based on experiment), not derived from first principles. It states that the kinetic frictional force is proportional to the normal reaction force, with the constant of proportionality being the coefficient of friction $\mu$.
+
+**中文：**
+这是一个经验关系（基于实验），不是从基本原理推导出来的。它指出动摩擦力与法向反作用力成正比，比例常数为摩擦系数 $\mu$。
+
+**Conditions / 适用条件:**
+**English:** Applies to kinetic (sliding) friction. For static friction, the maximum value is $F_{f,\text{max}} = \mu_s R$, but the actual static friction can be any value from 0 up to this maximum.
+**中文：** 适用于动（滑动）摩擦。对于静摩擦，最大值为 $F_{f,\text{max}} = \mu_s R$，但实际静摩擦力可以是 0 到该最大值之间的任何值。
+
+**Limitations / 局限性:**
+**English:** The coefficient of friction depends on the materials in contact and surface conditions. It is approximately constant for moderate speeds but can vary at very high or low speeds.
+**中文：** 摩擦系数取决于接触材料和表面条件。在中等速度下近似恒定，但在非常高或非常低的速度下可能会变化。
+
+**Rearrangements / 变形:**
+$$ \mu = \frac{F_f}{R} $$
+$$ R = \frac{F_f}{\mu} $$
+
+---
 
 # 6. Graphs and Relationships / 图表与关系
 
-## 6.1 Force vs. Acceleration (Constant Mass) / 力与加速度关系（质量恒定）
+## 6.1 Force vs. Acceleration Graph / 力与加速度关系图
 
-**Axes / 坐标轴:** X-axis: Acceleration a (m/s²), Y-axis: Force F (N)
+### Axes / 坐标轴
+**English:** x-axis: Acceleration ($a$), y-axis: Resultant Force ($F$)
+**中文：** x轴：加速度 ($a$)，y轴：合力 ($F$)
 
-**Shape / 形状:** Straight line through origin
+### Shape / 形状
+**English:** A straight line passing through the origin. The gradient is the mass $m$.
+**中文：** 一条通过原点的直线。斜率为质量 $m$。
 
-**Gradient Meaning / 斜率含义:**
-- **English:** Gradient = mass (m). A steeper line means larger mass.
-- **中文:** 斜率 = 质量(m)。线越陡表示质量越大。
+### Gradient Meaning / 斜率含义
+**English:** Gradient = $\frac{\Delta F}{\Delta a} = m$ (mass of the object).
+**中文：** 斜率 = $\frac{\Delta F}{\Delta a} = m$（物体的质量）。
 
-**Area Meaning / 面积含义:**
-- **English:** No meaningful area under this graph.
-- **中文:** 该图线下没有有意义的面积。
+### Area Meaning / 面积含义
+**English:** The area under the graph has no physical meaning in this context.
+**中文：** 该图下的面积在此上下文中没有物理意义。
 
-**Exam Interpretation / 考试解读:**
-- **English:** This graph demonstrates F ∝ a when m is constant. Used to verify Newton's Second Law experimentally.
-- **中文:** 该图表明当m恒定时F ∝ a。用于实验验证牛顿第二定律。
+### Exam Interpretation / 考试解读
+**English:**
+- A steeper line indicates a larger mass.
+- A line through the origin confirms $F \propto a$ for constant mass.
+- If the line does not pass through the origin, there may be a systematic error (e.g., friction not accounted for).
 
-**Common Questions / 常见问题:**
-- "What does the gradient represent?" → Mass
-- "What would happen if mass is doubled?" → Gradient doubles (line becomes steeper)
+**中文：**
+- 更陡的线表示更大的质量。
+- 通过原点的线确认了对于恒定质量 $F \propto a$。
+- 如果线不通过原点，可能存在系统误差（例如，未考虑摩擦力）。
 
-> 📷 **IMAGE PROMPT — [NL-GR-01]: F vs a Graph**
-> A graph with acceleration on x-axis and force on y-axis. Three straight lines through origin with different slopes, labeled m₁, m₂, m₃ where m₁ < m₂ < m₃. Axes labeled with units. Style: clean graph paper style. Exam importance: HIGH.
+### Common Questions / 常见问题
+**English:**
+- "Determine the mass of the object from the graph."
+- "Explain why the line does not pass through the origin."
+- "Sketch the graph for a different mass."
 
-## 6.2 Acceleration vs. 1/Mass (Constant Force) / 加速度与1/质量关系（力恒定）
+**中文：**
+- "从图中确定物体的质量。"
+- "解释为什么线不通过原点。"
+- "画出不同质量的图。"
 
-**Axes / 坐标轴:** X-axis: 1/m (kg⁻¹), Y-axis: Acceleration a (m/s²)
+---
 
-**Shape / 形状:** Straight line through origin
+## 6.2 Acceleration vs. Inverse Mass Graph / 加速度与质量倒数关系图
 
-**Gradient Meaning / 斜率含义:**
-- **English:** Gradient = Force (F). A steeper line means larger applied force.
-- **中文:** 斜率 = 力(F)。线越陡表示施加的力越大。
+### Axes / 坐标轴
+**English:** x-axis: $1/m$ (inverse mass), y-axis: Acceleration ($a$)
+**中文：** x轴：$1/m$（质量倒数），y轴：加速度 ($a$)
 
-**Area Meaning / 面积含义:**
-- **English:** No meaningful area under this graph.
-- **中文:** 该图线下没有有意义的面积。
+### Shape / 形状
+**English:** A straight line passing through the origin. The gradient is the resultant force $F$.
+**中文：** 一条通过原点的直线。斜率为合力 $F$。
 
-**Exam Interpretation / 考试解读:**
-- **English:** This graph demonstrates a ∝ 1/m when F is constant. Used to verify Newton's Second Law experimentally.
-- **中文:** 该图表明当F恒定时a ∝ 1/m。用于实验验证牛顿第二定律。
+### Gradient Meaning / 斜率含义
+**English:** Gradient = $\frac{\Delta a}{\Delta (1/m)} = F$ (resultant force).
+**中文：** 斜率 = $\frac{\Delta a}{\Delta (1/m)} = F$（合力）。
 
-**Common Questions / 常见问题:**
-- "Why plot a against 1/m instead of a against m?" → To get a linear relationship
-- "What does the gradient represent?" → The constant force applied
+### Area Meaning / 面积含义
+**English:** The area under the graph has no physical meaning in this context.
+**中文：** 该图下的面积在此上下文中没有物理意义。
 
-> 📷 **IMAGE PROMPT — [NL-GR-02]: a vs 1/m Graph**
-> A graph with 1/m on x-axis and acceleration on y-axis. A straight line through origin. Axes labeled with units. Style: clean graph paper style. Exam importance: HIGH.
+### Exam Interpretation / 考试解读
+**English:**
+- A steeper line indicates a larger resultant force.
+- The line through the origin confirms $a \propto 1/m$ for constant force.
+- This graph is often used in practical experiments to verify Newton's Second Law.
 
-## 6.3 Velocity-Time Graph for Constant Force / 恒力作用下的速度-时间图
+**中文：**
+- 更陡的线表示更大的合力。
+- 通过原点的线确认了对于恒定力 $a \propto 1/m$。
+- 该图常用于实验验证牛顿第二定律。
 
-**Axes / 坐标轴:** X-axis: Time t (s), Y-axis: Velocity v (m/s)
+### Common Questions / 常见问题
+**English:**
+- "Determine the resultant force from the gradient."
+- "Explain why the line is straight."
+- "What does the intercept represent?"
 
-**Shape / 形状:** Straight line with constant gradient (for constant mass and constant resultant force)
+**中文：**
+- "从斜率确定合力。"
+- "解释为什么线是直的。"
+- "截距代表什么？"
 
-**Gradient Meaning / 斜率含义:**
-- **English:** Gradient = acceleration (a). From F = ma, gradient = F/m.
-- **中文:** 斜率 = 加速度(a)。由F = ma，斜率 = F/m。
+---
 
-**Area Meaning / 面积含义:**
-- **English:** Area under graph = displacement (s).
-- **中文:** 图线下面积 = 位移(s)。
+## 6.3 Velocity-Time Graph for a Falling Object / 下落物体的速度-时间图
 
-**Exam Interpretation / 考试解读:**
-- **English:** A constant gradient indicates constant resultant force. Changing gradient indicates changing force.
-- **中文:** 恒定斜率表示恒定合力。变化的斜率表示变化的力。
+### Axes / 坐标轴
+**English:** x-axis: Time ($t$), y-axis: Velocity ($v$)
+**中文：** x轴：时间 ($t$)，y轴：速度 ($v$)
 
-**Common Questions / 常见问题:**
-- "How to find force from a v-t graph?" → Find gradient (a), then use F = ma
-- "What if the line is curved?" → Force is changing (non-constant)
+### Shape / 形状
+**English:** Initially, the graph is a straight line with positive gradient (constant acceleration due to gravity). As air resistance increases, the gradient decreases. Eventually, the graph becomes horizontal (terminal velocity reached).
+**中文：** 最初，图是一条具有正斜率的直线（重力引起的恒定加速度）。随着空气阻力增加，斜率减小。最终，图变为水平（达到终端速度）。
+
+### Gradient Meaning / 斜率含义
+**English:** Gradient = acceleration. Initially, gradient = $g$ (9.81 m/s²). As terminal velocity approaches, gradient → 0.
+**中文：** 斜率 = 加速度。最初，斜率 = $g$（9.81 m/s²）。随着终端速度接近，斜率 → 0。
+
+### Area Meaning / 面积含义
+**English:** Area under the graph = displacement (distance fallen).
+**中文：** 图下的面积 = 位移（下落距离）。
+
+### Exam Interpretation / 考试解读
+**English:**
+- The initial straight line shows constant acceleration (no air resistance).
+- The curved section shows decreasing acceleration as air resistance increases.
+- The horizontal section shows terminal velocity (resultant force = 0).
+- The gradient at any point gives the instantaneous acceleration.
+
+**中文：**
+- 初始直线显示恒定加速度（无空气阻力）。
+- 曲线段显示加速度随空气阻力增加而减小。
+- 水平段显示终端速度（合力 = 0）。
+- 任何点的斜率给出瞬时加速度。
+
+### Common Questions / 常见问题
+**English:**
+- "Estimate the terminal velocity from the graph."
+- "Calculate the acceleration at time $t$."
+- "Explain the shape of the graph using Newton's Laws."
+
+**中文：**
+- "从图中估计终端速度。"
+- "计算时间 $t$ 时的加速度。"
+- "用牛顿定律解释图的形状。"
+
+---
 
 # 7. Required Diagrams / 必备图表
 
-## 7.1 Free-Body Diagram for a Block on a Horizontal Surface / 水平面上物块的受力分析图
+## 7.1 Free-body Diagram for a Block on a Horizontal Surface / 水平面上木块的受力分析图
 
-> 📷 **IMAGE PROMPT — [NL-DI-01]: Free-Body Diagram - Block on Horizontal Surface**
-> A rectangular block resting on a horizontal surface. Four force arrows from the center of the block: (1) Weight W = mg pointing straight down, (2) Normal reaction N pointing straight up (equal length to W), (3) Applied force F pointing to the right (if being pushed), (4) Friction f pointing to the left (opposing motion). All arrows labeled with force names and symbols. Style: clean physics diagram, vector arrows with arrowheads, different colors for different forces. Exam importance: ESSENTIAL - this is the most basic and most tested diagram.
+### Description / 描述
+**English:**
+A diagram showing a rectangular block on a horizontal surface. Four forces are shown as arrows: weight ($W = mg$) acting downward from the center of mass, normal reaction ($R$) acting upward from the surface, applied force ($F$) acting horizontally to the right, and friction ($F_f$) acting horizontally to the left (opposing motion). All arrows should be labeled with force names and magnitudes.
 
-## 7.2 Free-Body Diagram for a Block on an Inclined Plane / 斜面上物块的受力分析图
+**中文：**
+显示水平面上矩形木块的图。四个力用箭头表示：从质心向下作用的重量（$W = mg$），从表面向上作用的法向反作用力（$R$），水平向右作用的外力（$F$），以及水平向左作用的摩擦力（$F_f$，阻碍运动）。所有箭头应标有力名称和大小。
 
-> 📷 **IMAGE PROMPT — [NL-DI-02]: Free-Body Diagram - Block on Inclined Plane**
-> A rectangular block on a plane inclined at angle θ to the horizontal. Three force arrows from the center of the block: (1) Weight W = mg pointing straight down, (2) Normal reaction N perpendicular to the plane surface, (3) Friction f parallel to the plane surface (up the plane if block is sliding down). Additionally, show the resolution of weight into components: mg sinθ parallel to the plane (down the plane) and mg cosθ perpendicular to the plane. Labels: "mg sinθ", "mg cosθ", "θ". Style: clean physics diagram, dashed lines for component resolution. Exam importance: VERY HIGH - common in both CAIE and Edexcel.
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — [D01]: Free-body Diagram for a Block on a Horizontal Surface**
+>
+> A clean, educational 2D vector illustration of a rectangular block resting on a horizontal surface. Four labeled force arrows: a downward arrow labeled "W = mg" (weight) from the center of the block, an upward arrow labeled "R" (normal reaction) from the bottom of the block, a rightward arrow labeled "F" (applied force) from the right side of the block, and a leftward arrow labeled "F_f" (friction) from the left side of the block. All arrows should be proportional in length. The surface is a simple horizontal line. Use a white background with black lines and blue/red arrows for clarity. Style: textbook-quality diagram, minimalistic, no shadows.
 
-## 7.3 Action-Reaction Pairs: Book on Table / 作用力与反作用力对：桌子上的书
+### Labels Required / 需要标注
+**English:**
+- $W = mg$ (Weight / 重量)
+- $R$ (Normal Reaction / 法向反作用力)
+- $F$ (Applied Force / 外力)
+- $F_f$ (Friction / 摩擦力)
+- Block (木块)
+- Surface (表面)
 
-> 📷 **IMAGE PROMPT — [NL-DI-03]: Action-Reaction Pairs - Book on Table**
-> A book resting on a table. Two pairs of arrows shown: (1) Pair 1: Book's weight on Earth (W_book_Earth) — arrow from book center pointing down; Earth's gravitational pull on book (W_Earth_book) — arrow from Earth center pointing up (not to scale). (2) Pair 2: Book pushes down on table (F_book_table) — arrow from book bottom pointing down; Table pushes up on book (F_table_book) — arrow from table top pointing up. Also show balanced forces on the book: weight (down) and normal reaction (up) — these are NOT action-reaction pairs because they act on the SAME body. Labels clearly distinguishing "Action-Reaction Pairs" vs "Balanced Forces". Style: educational diagram, color-coded pairs, clear labels. Exam importance: VERY HIGH - common misconception area.
+**中文：**
+- $W = mg$（重量）
+- $R$（法向反作用力）
+- $F$（外力）
+- $F_f$（摩擦力）
+- 木块
+- 表面
 
-## 7.4 Connected Particles on a Pulley / 滑轮上的连接体
+### Exam Importance / 考试重要性
+**English:**
+This is the most fundamental free-body diagram. Cambridge and Edexcel use it to test students' ability to identify and label forces correctly. It is the basis for solving problems involving Newton's Second Law.
 
-> 📷 **IMAGE PROMPT — [NL-DI-04]: Connected Particles on a Pulley System**
-> Two masses m₁ and m₂ connected by a light inextensible string passing over a frictionless pulley. m₁ on a horizontal surface (with friction), m₂ hanging vertically. Free-body diagrams for each mass: m₁ — weight m₁g (down), normal reaction N (up), tension T (right), friction f (left). m₂ — weight m₂g (down), tension T (up). Acceleration a shown for each mass (m₁ to the right, m₂ downward). Labels: "Tension T same throughout", "a₁ = a₂ = a", "Light inextensible string", "Frictionless pulley". Style: standard physics diagram, clear force arrows. Exam importance: VERY HIGH for CAIE.
+**中文：**
+这是最基本的受力分析图。剑桥和爱德思用它来测试学生正确识别和标注力的能力。它是解决涉及牛顿第二定律问题的基础。
+
+---
+
+## 7.2 Free-body Diagram for a Block on an Inclined Plane / 斜面上木块的受力分析图
+
+### Description / 描述
+**English:**
+A diagram showing a rectangular block on an inclined plane at angle $\theta$ to the horizontal. Three forces are shown: weight ($W = mg$) acting vertically downward from the center of mass, normal reaction ($R$) acting perpendicular to the plane, and friction ($F_f$) acting parallel to the plane upward (if the block is sliding down). Weight is resolved into two components: $mg \sin \theta$ (parallel to the plane, downward) and $mg \cos \theta$ (perpendicular to the plane, into the plane).
+
+**中文：**
+显示与水平面成角度 $\theta$ 的斜面上矩形木块的图。显示三个力：从质心垂直向下作用的重量（$W = mg$），垂直于斜面作用的法向反作用力（$R$），以及平行于斜面向上作用的摩擦力（$F_f$，如果木块向下滑动）。重量被分解为两个分量：$mg \sin \theta$（平行于斜面，向下）和 $mg \cos \theta$（垂直于斜面，进入斜面）。
+
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — [D02]: Free-body Diagram for a Block on an Inclined Plane**
+>
+> A clean, educational 2D vector illustration of a rectangular block on an inclined plane at angle θ to the horizontal. Three force arrows: a vertical downward arrow labeled "W = mg" (weight) from the center of the block, an arrow perpendicular to the plane labeled "R" (normal reaction) from the bottom of the block, and an arrow parallel to the plane upward labeled "F_f" (friction) from the bottom of the block. Additionally, show the resolution of weight into two dashed arrows: "mg sin θ" parallel to the plane downward and "mg cos θ" perpendicular to the plane into the plane. Label the angle θ on the plane. Use a white background with black lines and blue/red arrows. Style: textbook-quality diagram, minimalistic.
+
+### Labels Required / 需要标注
+**English:**
+- $W = mg$ (Weight / 重量)
+- $R$ (Normal Reaction / 法向反作用力)
+- $F_f$ (Friction / 摩擦力)
+- $mg \sin \theta$ (Component parallel to plane / 平行于斜面的分量)
+- $mg \cos \theta$ (Component perpendicular to plane / 垂直于斜面的分量)
+- $\theta$ (Angle of incline / 斜面角度)
+- Block (木块)
+- Inclined Plane (斜面)
+
+**中文：**
+- $W = mg$（重量）
+- $R$（法向反作用力）
+- $F_f$（摩擦力）
+- $mg \sin \theta$（平行于斜面的分量）
+- $mg \cos \theta$（垂直于斜面的分量）
+- $\theta$（斜面角度）
+- 木块
+- 斜面
+
+### Exam Importance / 考试重要性
+**English:**
+This diagram is essential for solving inclined plane problems, which are common in both Cambridge and Edexcel exams. It tests students' ability to resolve forces into components and apply Newton's Second Law in two dimensions.
+
+**中文：**
+该图对于解决斜面问题至关重要，这在剑桥和爱德思考试中都很常见。它测试学生将力分解为分量并在二维中应用牛顿第二定律的能力。
+
+---
+
+## 7.3 Action-Reaction Pairs: Person Walking / 作用力与反作用力对：行走的人
+
+### Description / 描述
+**English:**
+A diagram showing a person walking on the ground. Two action-reaction pairs are shown:
+1. **Foot on ground / Ground on foot:** The foot pushes backward on the ground (action), and the ground pushes forward on the foot (reaction). This forward force propels the person.
+2. **Earth pulls person / Person pulls Earth:** Earth pulls the person downward due to gravity (action), and the person pulls Earth upward (reaction).
+
+Arrows should be labeled with "Action" and "Reaction" and show equal magnitudes.
+
+**中文：**
+显示一个人在地面上行走的图。显示两个作用力与反作用力对：
+1. **脚对地面 / 地面对脚：** 脚向后推地面（作用力），地面向前推脚（反作用力）。这个向前的力推动人前进。
+2. **地球拉人 / 人拉地球：** 地球由于重力向下拉人（作用力），人向上拉地球（反作用力）。
+
+箭头应标有"作用力"和"反作用力"，并显示相等的大小。
+
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — [D03]: Action-Reaction Pairs: Person Walking**
+>
+> A clean, educational 2D vector illustration of a person walking on the ground. Show two action-reaction pairs with labeled arrows:
+> 1. From the foot: a backward arrow labeled "Action: Foot pushes ground backward" and a forward arrow on the foot labeled "Reaction: Ground pushes foot forward". Both arrows should be the same length.
+> 2. From the person's center of mass: a downward arrow labeled "Action: Earth pulls person downward (W = mg)" and an upward arrow from the Earth labeled "Reaction: Person pulls Earth upward". Both arrows should be the same length.
+> Use a white background with black lines and blue/red arrows. Style: textbook-quality diagram, minimalistic, clear labels.
+
+### Labels Required / 需要标注
+**English:**
+- Action: Foot pushes ground backward (作用力：脚向后推地面)
+- Reaction: Ground pushes foot forward (反作用力：地面向前推脚)
+- Action: Earth pulls person downward (作用力：地球向下拉人)
+- Reaction: Person pulls Earth upward (反作用力：人向上拉地球)
+- Person (人)
+- Ground (地面)
+- Earth (地球)
+
+**中文：**
+- 作用力：脚向后推地面
+- 反作用力：地面向前推脚
+- 作用力：地球向下拉人
+- 反作用力：人向上拉地球
+- 人
+- 地面
+- 地球
+
+### Exam Importance / 考试重要性
+**English:**
+This diagram is used to test students' understanding of Newton's Third Law. It helps distinguish between action-reaction pairs (forces on different objects) and balanced forces (forces on the same object). Cambridge and Edexcel frequently ask students to identify action-reaction pairs in everyday situations.
+
+**中文：**
+该图用于测试学生对牛顿第三定律的理解。它有助于区分作用力与反作用力对（作用在不同物体上的力）和平衡力（作用在同一物体上的力）。剑桥和爱德思经常要求学生识别日常情况中的作用力与反作用力对。
+
+---
 
 # 8. Worked Examples / 典型例题
 
-## Example 1: Connected Particles on a Pulley / 滑轮上的连接体
+## Example 1: Block on a Horizontal Surface / 水平面上的木块
 
 ### Question / 题目
-**English:** Two masses, m₁ = 4.0 kg and m₂ = 2.0 kg, are connected by a light inextensible string that passes over a frictionless pulley. m₁ rests on a horizontal table with a coefficient of friction μ = 0.30. m₂ hangs freely. Calculate:
-(a) The acceleration of the system
-(b) The tension in the string
+**English:**
+A block of mass 5.0 kg is pulled along a horizontal surface by a horizontal force of 20 N. The coefficient of kinetic friction between the block and the surface is 0.30. Calculate:
+(a) The frictional force acting on the block.
+(b) The acceleration of the block.
+(c) The distance traveled by the block in 4.0 seconds, starting from rest.
 
-**中文:** 两个质量分别为m₁ = 4.0 kg和m₂ = 2.0 kg的物体，通过一根轻质不可伸长的绳子连接，绳子绕过无摩擦的滑轮。m₁放在水平桌面上，摩擦系数μ = 0.30。m₂自由悬挂。计算：
-(a) 系统的加速度
-(b) 绳子中的张力
+**中文：**
+一个质量为 5.0 kg 的木块在水平面上被 20 N 的水平力拉动。木块与表面之间的动摩擦系数为 0.30。计算：
+(a) 作用在木块上的摩擦力。
+(b) 木块的加速度。
+(c) 木块从静止开始，在 4.0 秒内行进的距离。
 
 ### Image Prompt / 图片提示
-> 📷 **IMAGE PROMPT — [NL-EX-01]: Pulley System for Example 1**
-> Diagram showing m₁ = 4.0 kg on a horizontal table connected by a string over a pulley to m₂ = 2.0 kg hanging vertically. Free-body diagrams for each mass with force arrows labeled. Coefficient of friction μ = 0.30 indicated. Style: standard physics diagram.
+> 📷 **IMAGE PROMPT — [E01]: Block on a Horizontal Surface (Example 1)**
+>
+> A clean, educational 2D vector illustration of a rectangular block on a horizontal surface. Four labeled force arrows: a downward arrow labeled "W = mg" (weight) from the center of the block, an upward arrow labeled "R" (normal reaction) from the bottom of the block, a rightward arrow labeled "F = 20 N" (applied force) from the right side of the block, and a leftward arrow labeled "F_f" (friction) from the left side of the block. All arrows should be proportional in length. Use a white background with black lines and blue/red arrows. Style: textbook-quality diagram.
 
 ### Solution / 解答
 
-**Step 1: Draw free-body diagrams and define positive direction / 画受力分析图并定义正方向**
-- **English:** Define positive direction as: m₁ moving right, m₂ moving down.
-- **中文:** 定义正方向为：m₁向右运动，m₂向下运动。
+**Step 1: Calculate the normal reaction force.**
+**English:**
+Since the surface is horizontal and there is no vertical acceleration, the normal reaction force equals the weight:
+$$ R = W = mg = 5.0 \times 9.81 = 49.05 \text{ N} $$
 
-**Step 2: Identify forces on each mass / 识别每个物体上的力**
+**中文：**
+由于表面是水平的且没有垂直加速度，法向反作用力等于重量：
+$$ R = W = mg = 5.0 \times 9.81 = 49.05 \text{ N} $$
 
-For m₁ (4.0 kg):
-- Weight: $W_1 = m_1g = 4.0 \times 9.81 = 39.24 \text{ N}$ (down)
-- Normal reaction: $N = W_1 = 39.24 \text{ N}$ (up) — no vertical acceleration
-- Friction: $f = \mu N = 0.30 \times 39.24 = 11.77 \text{ N}$ (left, opposing motion)
-- Tension: $T$ (right)
+**Step 2: Calculate the frictional force.**
+**English:**
+Using the friction equation:
+$$ F_f = \mu R = 0.30 \times 49.05 = 14.715 \text{ N} \approx 14.7 \text{ N} $$
 
-For m₂ (2.0 kg):
-- Weight: $W_2 = m_2g = 2.0 \times 9.81 = 19.62 \text{ N}$ (down)
-- Tension: $T$ (up)
+**中文：**
+使用摩擦力方程：
+$$ F_f = \mu R = 0.30 \times 49.05 = 14.715 \text{ N} \approx 14.7 \text{ N} $$
 
-**Step 3: Apply Newton's Second Law to each mass / 对每个物体应用牛顿第二定律**
+**Step 3: Calculate the resultant force.**
+**English:**
+The applied force is to the right, and friction is to the left. The resultant force is:
+$$ F_{\text{net}} = F - F_f = 20 - 14.715 = 5.285 \text{ N} \approx 5.29 \text{ N} $$
 
-For m₁ (positive direction = right):
-$$ T - f = m_1a $$
-$$ T - 11.77 = 4.0a \quad \text{(1)} $$
+**中文：**
+外力向右，摩擦力向左。合力为：
+$$ F_{\text{net}} = F - F_f = 20 - 14.715 = 5.285 \text{ N} \approx 5.29 \text{ N} $$
 
-For m₂ (positive direction = down):
-$$ W_2 - T = m_2a $$
-$$ 19.62 - T = 2.0a \quad \text{(2)} $$
+**Step 4: Calculate the acceleration.**
+**English:**
+Using Newton's Second Law:
+$$ a = \frac{F_{\text{net}}}{m} = \frac{5.285}{5.0} = 1.057 \text{ m/s}^2 \approx 1.06 \text{ m/s}^2 $$
 
-**Step 4: Solve simultaneous equations / 解联立方程**
+**中文：**
+使用牛顿第二定律：
+$$ a = \frac{F_{\text{net}}}{m} = \frac{5.285}{5.0} = 1.057 \text{ m/s}^2 \approx 1.06 \text{ m/s}^2 $$
 
-Add equations (1) and (2):
-$$ (T - 11.77) + (19.62 - T) = 4.0a + 2.0a $$
-$$ 7.85 = 6.0a $$
-$$ a = \frac{7.85}{6.0} = 1.31 \text{ m/s}^2 $$
+**Step 5: Calculate the distance traveled.**
+**English:**
+Using the kinematic equation $s = ut + \frac{1}{2}at^2$, with $u = 0$ and $t = 4.0$ s:
+$$ s = 0 + \frac{1}{2} \times 1.057 \times (4.0)^2 = 0.5 \times 1.057 \times 16 = 8.456 \text{ m} \approx 8.46 \text{ m} $$
 
-Substitute a into equation (1):
-$$ T - 11.77 = 4.0 \times 1.31 $$
-$$ T = 11.77 + 5.24 = 17.01 \text{ N} $$
+**中文：**
+使用运动学方程 $s = ut + \frac{1}{2}at^2$，其中 $u = 0$，$t = 4.0$ s：
+$$ s = 0 + \frac{1}{2} \times 1.057 \times (4.0)^2 = 0.5 \times 1.057 \times 16 = 8.456 \text{ m} \approx 8.46 \text{ m} $$
 
 ### Final Answer / 最终答案
-(a) Acceleration: $a = 1.31 \text{ m/s}^2$
-(b) Tension: $T = 17.0 \text{ N}$ (3 significant figures)
+**Answer:**
+(a) Frictional force = 14.7 N
+(b) Acceleration = 1.06 m/s²
+(c) Distance = 8.46 m
+
+**答案：**
+(a) 摩擦力 = 14.7 N
+(b) 加速度 = 1.06 m/s²
+(c) 距离 = 8.46 m
 
 ### Examiner Notes / 考官点评
-**English:** Common mistakes: (1) Forgetting to include friction, (2) Using the same sign convention for both masses incorrectly, (3) Assuming tension equals weight of hanging mass (it doesn't when the system accelerates). Always check that your answer is reasonable — the acceleration should be less than g (9.81 m/s²).
-**中文:** 常见错误：(1) 忘记考虑摩擦力，(2) 对两个物体使用相同的符号约定但方向错误，(3) 假设张力等于悬挂物体的重量（系统加速时并非如此）。始终检查答案是否合理——加速度应小于g（9.81 m/s²）。
+**English:**
+- Common mistake: Forgetting to calculate the normal reaction force first. Students often assume $R = mg$ without stating it.
+- Common mistake: Using $F = ma$ with the applied force (20 N) instead of the resultant force (5.29 N).
+- Tip: Always draw a [[Free-body Diagram]] first to identify all forces.
+- Tip: Use $g = 9.81 \text{ m/s}^2$ unless the question specifies otherwise.
 
-## Example 2: Lift (Elevator) Problem / 电梯问题
+**中文：**
+- 常见错误：忘记先计算法向反作用力。学生经常直接假设 $R = mg$ 而不说明。
+- 常见错误：使用外力（20 N）而不是合力（5.29 N）代入 $F = ma$。
+- 提示：始终先绘制[[受力分析图]]以识别所有力。
+- 提示：除非问题另有说明，否则使用 $g = 9.81 \text{ m/s}^2$。
+
+### Alternative Method / 替代方法
+**English:**
+You could also solve this problem by first calculating the net force and then using the impulse-momentum theorem to find velocity, then distance. However, the method above is more straightforward.
+
+**中文：**
+你也可以先计算净力，然后使用冲量-动量定理求速度，再求距离。但上述方法更直接。
+
+---
+
+## Example 2: Block on an Inclined Plane / 斜面上的木块
 
 ### Question / 题目
-**English:** A person of mass 60 kg stands on a bathroom scale inside a lift. Calculate the reading on the scale (the normal reaction force) when:
-(a) The lift is stationary
-(b) The lift accelerates upward at 2.0 m/s²
-(c) The lift accelerates downward at 2.0 m/s²
-(d) The lift moves upward at constant velocity of 3.0 m/s
+**English:**
+A block of mass 2.0 kg slides down a rough inclined plane at an angle of 30° to the horizontal. The coefficient of kinetic friction between the block and the plane is 0.20. Calculate:
+(a) The normal reaction force on the block.
+(b) The frictional force acting on the block.
+(c) The acceleration of the block down the plane.
 
-**中文:** 一个质量为60 kg的人站在电梯内的浴室秤上。计算秤的读数（法向反作用力）当：
-(a) 电梯静止时
-(b) 电梯以2.0 m/s²向上加速时
-(c) 电梯以2.0 m/s²向下加速时
-(d) 电梯以3.0 m/s匀速向上运动时
+**中文：**
+一个质量为 2.0 kg 的木块沿与水平面成 30° 角的粗糙斜面下滑。木块与斜面之间的动摩擦系数为 0.20。计算：
+(a) 木块上的法向反作用力。
+(b) 作用在木块上的摩擦力。
+(c) 木块沿斜面下滑的加速度。
 
 ### Image Prompt / 图片提示
-> 📷 **IMAGE PROMPT — [NL-EX-02]: Person in Lift**
-> A person standing on a scale inside a lift. Two force arrows on the person: weight W = mg (down) and normal reaction N (up). Arrow lengths vary for different acceleration cases. Labels: "N = scale reading", "W = mg". Style: simple diagram. Exam importance: HIGH.
+> 📷 **IMAGE PROMPT — [E02]: Block on an Inclined Plane (Example 2)**
+>
+> A clean, educational 2D vector illustration of a rectangular block on an inclined plane at 30° to the horizontal. Three force arrows: a vertical downward arrow labeled "W = mg" (weight) from the center of the block, an arrow perpendicular to the plane labeled "R" (normal reaction) from the bottom of the block, and an arrow parallel to the plane upward labeled "F_f" (friction) from the bottom of the block. Additionally, show the resolution of weight into two dashed arrows: "mg sin 30°" parallel to the plane downward and "mg cos 30°" perpendicular to the plane into the plane. Label the angle 30° on the plane. Use a white background with black lines and blue/red arrows. Style: textbook-quality diagram.
 
 ### Solution / 解答
 
-**Step 1: Identify forces / 识别力**
-- **English:** Two forces act on the person: Weight $W = mg$ (downward) and Normal reaction $N$ (upward, this is the scale reading).
-- **中文:** 人受到两个力：重量$W = mg$（向下）和法向反作用力$N$（向上，这就是秤的读数）。
+**Step 1: Calculate the normal reaction force.**
+**English:**
+On an inclined plane, the normal reaction force equals the component of weight perpendicular to the plane:
+$$ R = mg \cos \theta = 2.0 \times 9.81 \times \cos 30^\circ = 2.0 \times 9.81 \times 0.8660 = 16.99 \text{ N} \approx 17.0 \text{ N} $$
 
-**Step 2: Apply Newton's Second Law / 应用牛顿第二定律**
-- **English:** Define positive direction as upward. $F_{\text{net}} = N - mg = ma$
-- **中文:** 定义正方向向上。$F_{\text{净}} = N - mg = ma$
+**中文：**
+在斜面上，法向反作用力等于重量垂直于斜面的分量：
+$$ R = mg \cos \theta = 2.0 \times 9.81 \times \cos 30^\circ = 2.0 \times 9.81 \times 0.8660 = 16.99 \text{ N} \approx 17.0 \text{ N} $$
 
-**Step 3: Solve for each case / 求解每种情况**
+**Step 2: Calculate the frictional force.**
+**English:**
+Using the friction equation:
+$$ F_f = \mu R = 0.20 \times 16.99 = 3.398 \text{ N} \approx 3.40 \text{ N} $$
 
-(a) Stationary: $a = 0$
-$$ N - mg = 0 $$
-$$ N = mg = 60 \times 9.81 = 588.6 \text{ N} $$
+**中文：**
+使用摩擦力方程：
+$$ F_f = \mu R = 0.20 \times 16.99 = 3.398 \text{ N} \approx 3.40 \text{ N} $$
 
-(b) Accelerating upward: $a = +2.0 \text{ m/s}^2$
-$$ N - mg = ma $$
-$$ N = m(g + a) = 60 \times (9.81 + 2.0) = 60 \times 11.81 = 708.6 \text{ N} $$
+**Step 3: Calculate the component of weight down the plane.**
+**English:**
+The component of weight parallel to the plane is:
+$$ mg \sin \theta = 2.0 \times 9.81 \times \sin 30^\circ = 2.0 \times 9.81 \times 0.5 = 9.81 \text{ N} $$
 
-(c) Accelerating downward: $a = -2.0 \text{ m/s}^2$
-$$ N - mg = m(-2.0) $$
-$$ N = m(g - a) = 60 \times (9.81 - 2.0) = 60 \times 7.81 = 468.6 \text{ N} $$
+**中文：**
+重量平行于斜面的分量为：
+$$ mg \sin \theta = 2.0 \times 9.81 \times \sin 30^\circ = 2.0 \times 9.81 \times 0.5 = 9.81 \text{ N} $$
 
-(d) Constant velocity: $a = 0$
-$$ N = mg = 588.6 \text{ N} $$
+**Step 4: Calculate the resultant force down the plane.**
+**English:**
+The resultant force down the plane is the component of weight down the plane minus friction (which acts up the plane):
+$$ F_{\text{net}} = mg \sin \theta - F_f = 9.81 - 3.398 = 6.412 \text{ N} \approx 6.41 \text{ N} $$
+
+**中文：**
+沿斜面向下的合力是重量沿斜面的分量减去摩擦力（摩擦力沿斜面向上）：
+$$ F_{\text{net}} = mg \sin \theta - F_f = 9.81 - 3.398 = 6.412 \text{ N} \approx 6.41 \text{ N} $$
+
+**Step 5: Calculate the acceleration.**
+**English:**
+Using Newton's Second Law:
+$$ a = \frac{F_{\text{net}}}{m} = \frac{6.412}{2.0} = 3.206 \text{ m/s}^2 \approx 3.21 \text{ m/s}^2 $$
+
+**中文：**
+使用牛顿第二定律：
+$$ a = \frac{F_{\text{net}}}{m} = \frac{6.412}{2.0} = 3.206 \text{ m/s}^2 \approx 3.21 \text{ m/s}^2 $$
 
 ### Final Answer / 最终答案
-(a) $N = 589 \text{ N}$ (stationary)
-(b) $N = 709 \text{ N}$ (accelerating upward)
-(c) $N = 469 \text{ N}$ (accelerating downward)
-(d) $N = 589 \text{ N}$ (constant velocity)
+**Answer:**
+(a) Normal reaction force = 17.0 N
+(b) Frictional force = 3.40 N
+(c) Acceleration = 3.21 m/s²
+
+**答案：**
+(a) 法向反作用力 = 17.0 N
+(b) 摩擦力 = 3.40 N
+(c) 加速度 = 3.21 m/s²
 
 ### Examiner Notes / 考官点评
-**English:** Key insight: The scale reading (apparent weight) equals mg only when acceleration is zero. When accelerating upward, apparent weight > actual weight (you feel heavier). When accelerating downward, apparent weight < actual weight (you feel lighter). If the lift were in free fall (a = g downward), N = 0 — you would feel weightless. Common mistake: using N = mg for all cases.
-**中文:** 关键洞察：只有当加速度为零时，秤的读数（表观重量）才等于mg。向上加速时，表观重量 > 实际重量（感觉更重）。向下加速时，表观重量 < 实际重量（感觉更轻）。如果电梯自由落体（a = g向下），N = 0——你会感觉失重。常见错误：对所有情况都使用N = mg。
+**English:**
+- Common mistake: Using $R = mg$ instead of $R = mg \cos \theta$. This is the most frequent error in inclined plane problems.
+- Common mistake: Forgetting to resolve weight into components.
+- Common mistake: Using the wrong trigonometric function ($\sin$ vs $\cos$).
+- Tip: Remember that the component perpendicular to the plane uses $\cos \theta$, and the component parallel to the plane uses $\sin \theta$.
+- Tip: Always draw the [[Free-body Diagram]] and resolve forces before applying Newton's Second Law.
+
+**中文：**
+- 常见错误：使用 $R = mg$ 而不是 $R = mg \cos \theta$。这是斜面问题中最常见的错误。
+- 常见错误：忘记将重量分解为分量。
+- 常见错误：使用错误的三角函数（$\sin$ 与 $\cos$）。
+- 提示：记住垂直于斜面的分量使用 $\cos \theta$，平行于斜面的分量使用 $\sin \theta$。
+- 提示：在应用牛顿第二定律之前，始终绘制[[受力分析图]]并分解力。
+
+### Alternative Method / 替代方法
+**English:**
+You could also solve this problem using energy methods (work-energy theorem), but the force method is more direct for finding acceleration.
+
+**中文：**
+你也可以使用能量方法（功能定理）解决这个问题，但力方法对于求加速度更直接。
+
+---
 
 # 9. Past Paper Question Types / 历年真题题型
 
-| Question Type / 题型 | Frequency / 频率 | Difficulty / 难度 | Past Paper References / 真题索引 |
-|----------------------|------------------|-------------------|----------------------------------|
-| State Newton's laws verbatim / 逐字陈述牛顿定律 | Medium / 中等 | Easy / 简单 | 📝 *待填入* |
-| Identify action-reaction pairs / 识别作用力与反作用力对 | High / 高 | Medium / 中等 | 📝 *待填入* |
-| Draw free-body diagrams / 画受力分析图 | Very High / 非常高 | Medium / 中等 | 📝 *待填入* |
-| Calculate acceleration from F = ma / 从F = ma计算加速度 | Very High / 非常高 | Medium / 中等 | 📝 *待填入* |
-| Connected particles (pulleys) / 连接体（滑轮） | High (CAIE) / 高 | Hard / 困难 | 📝 *待填入* |
-| Lift (elevator) problems / 电梯问题 | Medium (Edexcel) / 中等 | Medium / 中等 | 📝 *待填入* |
-| Inclined plane problems / 斜面问题 | High / 高 | Medium-Hard / 中-困难 | 📝 *待填入* |
-| Experimental verification of F = ma / F = ma的实验验证 | Medium / 中等 | Medium / 中等 | 📝 *待填入* |
-| Variable mass problems / 变质量问题 | Low (Edexcel) / 低 | Hard / 困难 | 📝 *待填入* |
-| Momentum form of Newton's Second Law / 牛顿第二定律的动量形式 | Medium / 中等 | Medium / 中等 | 📝 *待填入* |
+**English:**
+The table below summarises the types of questions that appear in Cambridge 9702 and Edexcel IAL exams for Newton's Laws of Motion. Frequency and difficulty are based on analysis of past papers.
 
-> 📝 **题库整理中 / Question Bank Under Construction:**
-> **English:** The past paper references are being compiled. For CAIE 9702, focus on Paper 2 (AS structured questions) and Paper 4 (A2, for circular motion applications). For Edexcel IAL, focus on Unit 1 (WPH11) Section 2.7-2.10. Common question numbers will be added in future updates.
-> **中文:** 真题索引正在整理中。对于CAIE 9702，重点关注试卷2（AS结构化问题）和试卷4（A2，用于圆周运动应用）。对于Edexcel IAL，重点关注单元1（WPH11）第2.7-2.10节。常见题号将在未来更新中添加。
+**中文：**
+下表总结了剑桥 9702 和爱德思 IAL 考试中关于牛顿运动定律的问题类型。频率和难度基于对历年试卷的分析。
+
+| Question Type / 题型 | Frequency / 频率 | Difficulty / 难度 | Past Paper References / 真题索引 |
+|----------------------|------------------|------------------|-------------------------------|
+| Calculation / 计算 | High | Medium | 📝 *待填入* |
+| Explanation / 解释 | High | Medium | 📝 *待填入* |
+| Graph Analysis / 图表分析 | Medium | Medium-High | 📝 *待填入* |
+| Practical / 实验 | Medium | Medium | 📝 *待填入* |
+| Derivation / 推导 | Low | High | 📝 *待填入* |
+
+> 📝 **题库整理中 / Question Bank Under Construction:** 具体试卷编号（如 9702/23/M/J/24 Q3）将在后续整理真题后填入上表。
 
 **Common Command Words / 常见指令词:**
-- **State / 陈述:** Give a definition or law without explanation
-- **Explain / 解释:** Give reasons or causes
-- **Calculate / 计算:** Use mathematics to find a numerical answer
-- **Draw / 画:** Produce a diagram (e.g., free-body diagram)
-- **Show / 证明:** Demonstrate with reasoning or calculation
-- **Determine / 确定:** Find a value using given information
-- **Discuss / 讨论:** Present arguments for and against, or describe implications
+
+| Command Word (EN) | Command Word (CN) | Meaning (EN) | Meaning (CN) |
+|-------------------|-------------------|--------------|--------------|
+| State | 陈述 | Give a brief, clear answer without explanation. | 给出简短、清晰的答案，无需解释。 |
+| Define | 定义 | Give the precise meaning of a term. | 给出术语的精确含义。 |
+| Explain | 解释 | Give reasons or causes for a phenomenon. | 给出现象的原因或理由。 |
+| Describe | 描述 | Give a detailed account of a process or observation. | 详细描述过程或观察结果。 |
+| Calculate | 计算 | Use mathematical methods to find a numerical answer. | 使用数学方法求出数值答案。 |
+| Determine | 确定 | Find a value using given data or a graph. | 使用给定数据或图表求出值。 |
+| Suggest | 建议 | Propose a possible explanation or solution. | 提出可能的解释或解决方案。 |
+| Sketch | 草图 | Draw a graph or diagram showing the main features. | 绘制显示主要特征的图或图表。 |
+| Show that | 证明 | Demonstrate that a given result is correct. | 证明给定结果是正确的。 |
+
+---
 
 # 10. Practical Skills Connections / 实验技能链接
 
-**English:** Newton's Laws are central to several required practicals:
+**English:**
+Newton's Laws of Motion are central to several practical experiments in both Cambridge 9702 and Edexcel IAL.
 
-1. **Verification of F = ma (CAIE Paper 3 / Edexcel Unit 3):**
-   - Use a trolley on a friction-compensated runway
-   - Vary the applied force (by adding slotted masses to a hanging string over a pulley)
-   - Measure acceleration using light gates or ticker-tape timers
-   - Plot F vs a graph — gradient gives mass
-   - Key uncertainties: friction compensation, reaction time, light gate precision
+**CAIE 9702:**
+- **Paper 3 (AS):** Experiment to verify Newton's Second Law using a trolley on a runway. Measurements include: mass of trolley, applied force (via hanging masses), acceleration (using light gates or ticker timer). Students plot $a$ vs $F$ or $a$ vs $1/m$ to verify $F = ma$.
+- **Paper 5 (A2):** Design an experiment to investigate the relationship between force, mass, and acceleration. Include considerations for reducing friction, measuring acceleration accurately, and handling uncertainties.
 
-2. **Determination of g (acceleration due to gravity):**
-   - Free-fall experiments using electromagnets and timers
-   - Inclined plane experiments to measure acceleration down a slope
-   - Relates to W = mg and F = ma
+**Edexcel IAL:**
+- **Unit 3 (AS):** Core Practical 4: "Investigate the relationship between force, mass, and acceleration using a trolley on a runway." Students use light gates to measure acceleration, vary the applied force by changing the hanging mass, and plot graphs to verify Newton's Second Law.
+- **Unit 6 (A2):** Design an experiment to investigate the effect of friction on the motion of a block on an inclined plane.
 
-3. **Investigation of Friction:**
-   - Measure limiting friction using a spring balance
-   - Relate to Newton's First Law (object just about to move)
-   - Determine coefficient of friction μ
+**Key Practical Skills / 关键实验技能:**
+1. **Measurements / 测量:**
+   - Mass using a balance (精确到 0.1 g)
+   - Force using a spring balance or calibrated masses
+   - Acceleration using light gates, ticker timer, or motion sensor
+   - Distance using a ruler or measuring tape
 
-4. **Conservation of Momentum (links to Newton's Third Law):**
-   - Collision experiments using air tracks
-   - Newton's Third Law explains why momentum is conserved in collisions
+2. **Uncertainties / 不确定度:**
+   - Calculate percentage uncertainty in mass, force, and acceleration
+   - Use error bars on graphs
+   - Determine the gradient uncertainty using maximum/minimum slopes
 
-**中文:** 牛顿定律是几个必修实验的核心：
+3. **Graph Plotting / 图表绘制:**
+   - Plot $a$ vs $F$ (should be a straight line through origin)
+   - Plot $a$ vs $1/m$ (should be a straight line through origin)
+   - Determine gradient and interpret as mass or force
 
-1. **验证F = ma（CAIE试卷3 / Edexcel单元3）：**
-   - 使用摩擦补偿轨道上的小车
-   - 改变施加的力（通过在滑轮上的悬挂绳上添加槽码）
-   - 使用光门或打点计时器测量加速度
-   - 绘制F vs a图——斜率给出质量
-   - 关键不确定度：摩擦补偿、反应时间、光门精度
+4. **Experimental Design / 实验设计:**
+   - Use a friction-compensated runway (tilted slightly to compensate for friction)
+   - Use light gates to measure acceleration accurately
+   - Repeat measurements to reduce random errors
+   - Control variables (keep mass constant when varying force, and vice versa)
 
-2. **测定g（重力加速度）：**
-   - 使用电磁铁和计时器的自由落体实验
-   - 测量沿斜面下滑加速度的斜面实验
-   - 与W = mg和F = ma相关
+**Common Practical Errors / 常见实验错误:**
+- Friction not compensated for, causing the graph not to pass through the origin
+- Inaccurate timing due to human reaction time (use light gates instead)
+- Mass of the hanging masses not accounting for the mass of the string
+- Parallax error when reading measurements
 
-3. **摩擦力的研究：**
-   - 使用弹簧测力计测量极限摩擦力
-   - 与牛顿第一定律相关（物体即将运动时）
-   - 确定摩擦系数μ
+**中文：**
+牛顿运动定律是剑桥 9702 和爱德思 IAL 中几个实验的核心。
 
-4. **动量守恒（与牛顿第三定律的联系）：**
-   - 使用气轨的碰撞实验
-   - 牛顿第三定律解释了为什么碰撞中动量守恒
+**CAIE 9702:**
+- **试卷 3（AS）：** 使用跑道上的小车验证牛顿第二定律的实验。测量包括：小车质量、施加的力（通过悬挂质量）、加速度（使用光门或打点计时器）。学生绘制 $a$ 与 $F$ 或 $a$ 与 $1/m$ 的关系图以验证 $F = ma$。
+- **试卷 5（A2）：** 设计一个实验来研究力、质量和加速度之间的关系。包括减少摩擦、准确测量加速度和处理不确定度的考虑。
 
-> 📋 **CIE Only:** CAIE Paper 3 (Practical) often requires plotting F vs a graphs and calculating the gradient. Paper 5 (Planning) may ask for experimental design to verify Newton's Second Law.
-> 📋 **Edexcel Only:** Edexcel Unit 3 (Practical Skills) may include determining g using free-fall apparatus or investigating motion on an inclined plane. Unit 6 (A2) extends to circular motion applications.
+**Edexcel IAL:**
+- **单元 3（AS）：** 核心实践 4："使用跑道上的小车研究力、质量和加速度之间的关系。" 学生使用光门测量加速度，通过改变悬挂质量来改变施加的力，并绘制图表以验证牛顿第二定律。
+- **单元 6（A2）：** 设计一个实验来研究摩擦力对斜面上木块运动的影响。
+
+**关键实验技能：**
+1. **测量：**
+   - 使用天平测量质量（精确到 0.1 g）
+   - 使用弹簧秤或校准砝码测量力
+   - 使用光门、打点计时器或运动传感器测量加速度
+   - 使用尺子或卷尺测量距离
+
+2. **不确定度：**
+   - 计算质量、力和加速度的百分比不确定度
+   - 在图表上使用误差线
+   - 使用最大/最小斜率确定梯度不确定度
+
+3. **图表绘制：**
+   - 绘制 $a$ 与 $F$ 的关系图（应为通过原点的直线）
+   - 绘制 $a$ 与 $1/m$ 的关系图（应为通过原点的直线）
+   - 确定梯度并解释为质量或力
+
+4. **实验设计：**
+   - 使用摩擦补偿跑道（稍微倾斜以补偿摩擦）
+   - 使用光门准确测量加速度
+   - 重复测量以减少随机误差
+   - 控制变量（改变力时保持质量恒定，反之亦然）
+
+**常见实验错误：**
+- 未补偿摩擦，导致图表不通过原点
+- 由于人为反应时间导致计时不准确（改用光门）
+- 悬挂质量的质量未考虑绳子的质量
+- 读取测量值时出现视差误差
+
+> 📋 **CIE Only:** In CAIE Paper 3, students must be able to describe how to set up the experiment, including the use of a friction-compensated runway and light gates. They must also be able to calculate acceleration from the gradient of a velocity-time graph.
+
+> 📋 **Edexcel Only:** In Edexcel Unit 3, the Core Practical 4 requires students to write a full method, including safety considerations and error analysis. They must also be able to evaluate the accuracy of their results.
+
+---
 
 # 11. Concept Map / 概念图谱
 
+**English:**
+The concept map below shows the connections between Newton's Laws of Motion and related topics. This map helps students understand how the topic fits into the broader A-Level Physics curriculum.
+
+**中文：**
+下面的概念图显示了牛顿运动定律与相关主题之间的联系。该图帮助学生理解该主题如何融入更广泛的 A-Level 物理课程。
+
 ```mermaid
 graph TD
-    A[Newton's Laws of Motion] --> B[First Law: Inertia]
-    A --> C[Second Law: F = ma]
-    A --> D[Third Law: Action-Reaction]
+    %% Main Topic
+    NL["Newton's Laws of Motion<br>牛顿运动定律"]
     
-    B --> E[Inertial Frames]
-    B --> F[Constant Velocity Motion]
-    
-    C --> G[F = ma Constant Mass]
-    C --> H[F = dp/dt General Form]
-    C --> I[Weight W = mg]
-    
-    D --> J[Action-Reaction Pairs]
-    D --> K[Distinction from Balanced Forces]
-    
-    G --> L[Applications]
-    H --> M[Variable Mass Systems]
-    
-    L --> N[Connected Particles]
-    L --> O[Inclined Planes]
-    L --> P[Lift Problems]
-    L --> Q[Friction Problems]
-    
-    N --> R[Pulleys]
-    N --> S[Trains/Carriages]
-    
-    O --> T[Component Resolution]
-    O --> U[mg sinθ & mg cosθ]
-    
-    P --> V[Apparent Weight]
-    P --> W[Weightlessness]
-    
-    Q --> X[Static Friction]
-    Q --> Y[Kinetic Friction]
-    Q --> Z[Coefficient of Friction]
-    
-    M --> AA[Rockets]
-    M --> AB[Conveyor Belts]
-    
-    J --> AC[Walking]
-    J --> AD[Rocket Propulsion]
-    J --> AE[Book on Table]
+    %% Sub-topics (Leaf Nodes)
+    N1["Newton's First Law (Inertia)<br>牛顿第一定律（惯性）"]
+    N2["Newton's Second Law (F=ma)<br>牛顿第二定律（F=ma）"]
+    N3["Newton's Third Law (Action-Reaction)<br>牛顿第三定律（作用力与反作用力）"]
+    N4["Applications of Newton's Laws<br>牛顿定律的应用"]
     
     %% Prerequisites
-    F --> |Requires| FBD[Free-body Diagrams]
-    G --> |Requires| FBD
-    L --> |Requires| FBD
+    FD["Free-body Diagrams<br>受力分析图"]
+    KIN["Kinematics<br>运动学"]
+    VEC["Vectors and Scalars<br>矢量与标量"]
     
     %% Related Topics
-    H --> |Links to| MOM[Linear Momentum and Impulse]
-    D --> |Links to| COM[Conservation of Momentum]
+    MOM["Linear Momentum and Impulse<br>动量与冲量"]
+    COM["Conservation of Momentum<br>动量守恒"]
+    GRAV["Gravitational Fields<br>引力场"]
+    FRIC["Friction<br>摩擦力"]
+    CIRC["Circular Motion<br>圆周运动"]
+    SHM["Simple Harmonic Motion<br>简谐运动"]
     
-    %% Sub-topics (leaf nodes)
-    click B "[[Newton's First Law (Inertia)]]"
-    click C "[[Newton's Second Law (F=ma)]]"
-    click D "[[Newton's Third Law (Action-Reaction)]]"
-    click L "[[Applications of Newton's Laws]]"
-    click FBD "[[Free-body Diagrams]]"
-    click MOM "[[Linear Momentum and Impulse]]"
-    click COM "[[Conservation of Momentum]]"
-```
-
-# 12. Examiner Insights / 考官洞察
-
-**English:**
-
-**Most Tested Ideas (CAIE 9702):**
-1. **Connected particles (pulleys)** — Almost guaranteed in Paper 2. Candidates must apply F = ma to each body separately.
-2. **Free-body diagrams** — Required in nearly every mechanics question. Marks are awarded for correct force directions and labels.
-3. **Distinguishing between Newton's Third Law pairs and balanced forces** — A common 2-3 mark question.
-4. **Friction on inclined planes** — Resolving weight into components is essential.
-
-**Most Tested Ideas (Edexcel IAL):**
-1. **Lift problems** — Apparent weight calculations are frequent in Unit 1.
-2. **Variable mass systems** — Less common but appears in harder questions.
-3. **Experimental verification of F = ma** — Links to practical skills in Unit 3.
-4. **Action-reaction pairs in everyday contexts** — Walking, swimming, rocket propulsion.
-
-**Mark Scheme Wording / 评分方案措辞:**
-- For "State Newton's First Law": "A body remains at rest or moves with constant velocity unless acted upon by a resultant force." (Must mention "resultant force")
-- For "State Newton's Second Law": "The rate of change of momentum is directly proportional to the resultant force and takes place in the direction of that force." (Must mention "rate of change of momentum")
-- For "State Newton's Third Law": "When two bodies interact, the forces they exert on each other are equal in magnitude, opposite in direction, and act on different bodies." (Must mention "different bodies")
-
-**Common Lost Marks / 常见失分点:**
-1. **Forgetting to include all forces** — Missing friction or normal reaction.
-2. **Incorrect sign conventions** — Not defining a positive direction before applying F = ma.
-3. **Confusing mass and weight** — Using kg as a unit of force.
-4. **Not stating that the string is light and inextensible** — This justifies constant tension throughout.
-5. **Forgetting that action-reaction pairs act on different bodies** — Saying they cancel.
-
-**High-Scoring Structures / 高分结构:**
-- Always start with a clear free-body diagram
-- Define a positive direction explicitly
-- Write F = ma for each body separately
-- Show all algebraic steps before substituting numbers
-- Check units and significant figures in the final answer
-
-**中文:**
-
-**最常考内容（CAIE 9702）：**
-1. **连接体（滑轮）** — 几乎必出现在试卷2中。考生必须分别对每个物体应用F = ma。
-2. **受力分析图** — 几乎每个力学问题都需要。正确的力方向和标签可获得分数。
-3. **区分牛顿第三定律力对和平衡力** — 常见的2-3分问题。
-4. **斜面上的摩擦力** — 将重量分解为分量是必要的。
-
-**最常考内容（Edexcel IAL）：**
-1. **电梯问题** — 表观重量计算在单元1中很常见。
-2. **变质量系统** — 较少见，但出现在较难的问题中。
-3. **F = ma的实验验证** — 与单元3的实验技能相关。
-4. **日常情境中的作用力与反作用力对** — 行走、游泳、火箭推进。
-
-**评分方案措辞：**
-- 对于"陈述牛顿第一定律"："物体保持静止或匀速直线运动状态，除非受到合外力的作用。"（必须提及"合力"）
-- 对于"陈述牛顿第二定律"："动量的变化率与合外力成正比，且发生在该力的方向上。"（必须提及"动量的变化率"）
-- 对于"陈述牛顿第三定律"："当两个物体相互作用时，它们彼此施加的力大小相等、方向相反，且作用在不同物体上。"（必须提及"不同物体"）
-
-**常见失分点：**
-1. **忘记包括所有力** — 缺少摩擦力或法向反作用力。
-2. **符号约定错误** — 在应用F = ma之前没有定义正方向。
-3. **混淆质量和重量** — 使用kg作为力的单位。
-4. **未说明绳子是轻质且不可伸长的** — 这证明了整个绳子张力恒定。
-5. **忘记作用力与反作用力对作用在不同物体上** — 说它们相互抵消。
-
-**高分结构：**
-- 始终以清晰的受力分析图开始
-- 明确定义正方向
-- 分别对每个物体写出F = ma
-- 在代入数字之前展示所有代数步骤
-- 检查最终答案的单位和有效数字
-
-# 13. Quick Revision Sheet / 速查表
-
-| Category / 类别 | Key Points / 要点 |
-|-----------------|-------------------|
-| **First Law / 第一定律** | No resultant force → constant velocity (or rest). Inertia = resistance to change in motion. Mass measures inertia. |
-| **Second Law / 第二定律** | F = ma (constant mass). F = dp/dt (general). Resultant force causes acceleration in its direction. |
-| **Third Law / 第三定律** | Forces equal in magnitude, opposite in direction, on DIFFERENT bodies. Do NOT cancel. |
-| **Weight / 重量** | W = mg. g = 9.81 N/kg on Earth. Weight is a force, mass is scalar. |
-| **Free-Body Diagrams / 受力分析图** | Show ALL forces on ONE body. Arrows from center. Label each force. |
-| **Connected Particles / 连接体** | Same acceleration for all bodies. Tension same in light inextensible string. Apply F = ma to each. |
-| **Inclined Planes / 斜面** | Resolve weight: mg sinθ (parallel), mg cosθ (perpendicular). N = mg cosθ. |
-| **Lift Problems / 电梯问题** | N = m(g ± a). Upward accel → N > mg. Downward accel → N < mg. Free fall → N = 0. |
-| **Friction / 摩擦力** | f = μN (kinetic). Opposes relative motion. Static friction ≤ μₛN. |
-| **Action-Reaction vs Balanced / 作用力-反作用力 vs 平衡力** | Action-reaction: different bodies, same type. Balanced: same body, different types. |
-| **Experimental Verification / 实验验证** | F vs a graph → gradient = m. a vs 1/m graph → gradient = F. Friction compensation needed. |
-| **Common Units / 常用单位** | Force: N (kg·m/s²). Mass: kg. Acceleration: m/s². Weight: N. |
-
-# 14. Metadata / 元数据
-
-```yaml
-title:
-  en: "Newton's Laws of Motion"
-  cn: "牛顿运动定律"
-subject: Physics
-syllabus:
-  - CAIE 9702
-  - Edexcel IAL
-cie_ref: "3.2 (d-e)"
-edexcel_ref: "WPH11 U1: 2.7-2.10"
-level: AS
-node_type: topic_hub
-difficulty: intermediate
-prerequisites:
-  - "[[Free-body Diagrams]]"
-related_topics:
-  - "[[Linear Momentum and Impulse]]"
-  - "[[Conservation of Momentum]]"
-sub_topics:
-  - "[[Newton's First Law (Inertia)]]"
-  - "[[Newton's Second Law (F=ma)]]"
-  - "[[Newton's Third Law (Action-Reaction)]]"
-  - "[[Applications of Newton's Laws]]"
-formula_count: 5
-diagram_count: 8
-exam_frequency: very_high
-language: bilingual_en_cn
-last_updated: 2024-01
+    %% Connections
+    NL --> N1
+    NL --> N2
+    NL --> N3
+    NL --> N4
+    
+    N1 --> FD
+    N2 --> FD
+    N4 --> FD
+    
+    N2 --> KIN
+    N4 --> KIN
+    
+    FD --> VEC
+    
+    N2 --> MOM
+    MOM --> COM
+    
+    N3 --> MOM
+    
+    N4 --> FRIC
+    N4 --> GRAV
+    N4 --> CIRC
+    N4 --> SHM
+    
+    %% Styling
+    classDef main fill:#f9f,stroke:#333,stroke-width:4px;
+    classDef sub fill:#bbf,stroke:#333,stroke-width:2px;
+    classDef pre fill:#bfb,stroke:#333,stroke-width:2px;
+    classDef rel fill:#fbb,stroke:#333,stroke-width:2px;
+    
+    class NL main;
+    class N1,N2,N3,N4 sub;
+    class FD,KIN,VEC pre;
+    class MOM,COM,GRAV,FRIC,CIRC,SHM rel;
 ```
 
 ---
-**English:** This hub file provides a comprehensive overview of Newton's Laws of Motion for AS-level Physics. Each sub-topic has its own leaf node file for deeper exploration. Use the [[wikilinks]] to navigate to specific topics. For exam preparation, focus on the Worked Examples (Section 8) and Quick Revision Sheet (Section 13).
 
-**中文:** 本枢纽文件提供了AS级物理牛顿运动定律的全面概述。每个子主题都有其自己的叶节点文件供深入探索。使用[[wikilinks]]导航到特定主题。备考时，重点关注典型例题（第8节）和速查表（第13节）。
+# 12. Quick Revision Sheet / 速查表
+
+**English:**
+This one-page summary provides all key information for Newton's Laws of Motion. Use it for last-minute revision before exams.
+
+**中文：**
+这一页摘要提供了牛顿运动定律的所有关键信息。在考试前用于最后冲刺复习。
+
+| Category / 类别 | Key Points / 要点 |
+|----------------|------------------|
+| **Definitions / 定义** | **Newton's First Law:** Object remains at rest or uniform motion unless acted upon by a net external force. (物体保持静止或匀速直线运动，除非受到合外力作用。) |
+| | **Newton's Second Law:** $F = \frac{\Delta p}{\Delta t} = ma$ (for constant mass). (合力等于动量变化率，恒定质量时 $F = ma$。) |
+| | **Newton's Third Law:** Action-reaction pairs are equal in magnitude, opposite in direction, act on different objects. (作用力与反作用力大小相等、方向相反，作用在不同物体上。) |
+| | **Inertia:** Property of mass to resist changes in motion. (质量抵抗运动状态变化的性质。) |
+| | **Weight:** $W = mg$, gravitational force on an object. (重量：$W = mg$，物体上的万有引力。) |
+| **Equations / 公式** | $F = ma$ (Newton's Second Law / 牛顿第二定律) |
+| | $W = mg$ (Weight / 重量) |
+| | $F_f = \mu R$ (Kinetic friction / 动摩擦力) |
+| | $F = \frac{\Delta p}{\Delta t}$ (General form of Newton's Second Law / 牛顿第二定律一般形式) |
+| **Graphs / 图表** | $F$ vs $a$: Straight line through origin, gradient = mass. ($F$ 与 $a$：通过原点的直线，斜率 = 质量。) |
+| | $a$ vs $1/m$: Straight line through origin, gradient = force. ($a$ 与 $1/m$：通过原点的直线，斜率 = 力。) |
+| | $v$ vs $t$ for falling object: Initially straight (constant $g$), then curves (increasing air resistance), then horizontal (terminal velocity). (下落物体的 $v$ 与 $t$：最初为直线（恒定 $g$），然后弯曲（空气阻力增加），最后水平（终端速度）。) |
+| **Key Facts / 关键事实** | Newton's Laws apply in inertial frames only. (牛顿定律仅适用于惯性参考系。) |
+| | Action-reaction pairs act on **different** objects; balanced forces act on the **same** object. (作用力与反作用力对作用在**不同**物体上；平衡力作用在**同一**物体上。) |
+| | Normal reaction $R$ equals $mg$ only on horizontal surfaces with no vertical acceleration. (法向反作用力 $R$ 仅在无垂直加速度的水平面上等于 $mg$。) |
+| | On an inclined plane: $R = mg \cos \theta$, $mg \sin \theta$ is the component down the plane. (在斜面上：$R = mg \cos \theta$，$mg \sin \theta$ 是沿斜面向下的分量。) |
+| | Terminal velocity occurs when drag force equals weight ($F_{\text{net}} = 0$). (当阻力等于重量时达到终端速度（$F_{\text{net}} = 0$）。) |
+| **Exam Reminders / 考试提醒** | Always draw a [[Free-body Diagram]] first. (始终先绘制[[受力分析图]]。) |
+| | Use $g = 9.81 \text{ m/s}^2$ unless specified otherwise. (除非另有说明，否则使用 $g = 9.81 \text{ m/s}^2$。) |
+| | Check units: Force in N, mass in kg, acceleration in m/s². (检查单位：力用 N，质量用 kg，加速度用 m/s²。) |
+| | For connected objects (pulleys), apply $F = ma$ to each object separately. (对于连接物体（滑轮），分别对每个物体应用 $F = ma$。) |
+| | Remember: $F$ in $F = ma$ is the **resultant** force, not any individual force. (记住：$F = ma$ 中的 $F$ 是**合力**，不是任何单个力。) |
+| | For variable mass systems, use $F = \frac{\Delta p}{\Delta t}$. (对于变质量系统，使用 $F = \frac{\Delta p}{\Delta t}$。) |
+
+---
+
+**End of Note / 笔记结束**
+
+*This note is part of the A-Level Physics Knowledge Graph. For related topics, see [[Free-body Diagrams]], [[Linear Momentum and Impulse]], [[Conservation of Momentum]], [[Kinematics]], and [[Friction]].*

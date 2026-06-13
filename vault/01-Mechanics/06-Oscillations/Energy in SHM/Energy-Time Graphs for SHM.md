@@ -1,348 +1,279 @@
-# Energy-Time Graphs for SHM
-
 ---
-
 # 1. Overview / 概述
 
 **English:**
-Energy-Time Graphs for SHM show how the kinetic energy (KE), potential energy (PE), and total mechanical energy of an oscillating system vary with time. Unlike [[Energy-Displacement Graphs for SHM]] which show energy variation with position, energy-time graphs reveal the *temporal* behaviour — how energy flows between KE and PE as the oscillator moves through its cycle. This is crucial for understanding the conservation of mechanical energy in ideal SHM and for analysing real-world oscillatory systems.
-
-These graphs are sinusoidal in shape, with KE and PE oscillating at *twice* the frequency of the displacement. The total energy remains constant (a horizontal line) for undamped SHM. Mastering these graphs allows students to predict energy values at any instant, relate them to [[Simple Harmonic Motion]] parameters, and understand the effects of [[Damped and Forced Oscillations / Resonance]].
+This sub-topic focuses on how the kinetic energy (KE), potential energy (PE), and total mechanical energy of a system undergoing simple harmonic motion (SHM) vary with time. Understanding these [[Energy-Time Graphs for SHM]] is crucial for visualising the continuous interchange of energy within an oscillating system, such as a mass on a spring or a simple pendulum. These graphs are a direct application of the principles of [[Simple Harmonic Motion]] and [[Kinetic Energy and Potential Energy]], and they provide a powerful tool for analysing the phase relationships between displacement, velocity, and energy. This knowledge is fundamental for understanding more complex phenomena like [[Damped and Forced Oscillations - Resonance]].
 
 **中文:**
-简谐运动的能量-时间图展示了振荡系统中动能 (KE)、势能 (PE) 和总机械能随时间的变化。与[[Energy-Displacement Graphs for SHM]]（显示能量随位置变化）不同，能量-时间图揭示了*时间*行为——能量如何在振荡器完成一个周期时在动能和势能之间流动。这对于理解理想简谐运动中的机械能守恒以及分析现实世界的振荡系统至关重要。
-
-这些图形呈正弦形状，动能和势能以位移*两倍*的频率振荡。对于无阻尼简谐运动，总能量保持不变（一条水平线）。掌握这些图形使学生能够预测任意时刻的能量值，将其与[[Simple Harmonic Motion]]参数联系起来，并理解[[Damped and Forced Oscillations / Resonance]]的影响。
+本子知识点专注于研究在简谐运动（SHM）系统中，动能（KE）、势能（PE）和总机械能如何随时间变化。理解这些[[能量-时间图（SHM）]]对于可视化振荡系统（如弹簧上的质量块或单摆）内能量的连续转换至关重要。这些图是[[简谐运动]]以及[[动能与势能]]原理的直接应用，并为分析位移、速度和能量之间的相位关系提供了有力工具。该知识是理解[[阻尼振动与受迫振动 - 共振]]等更复杂现象的基础。
 
 ---
 
-# 2. Core Definition / 核心定义
+# 2. Syllabus Learning Objectives / 考纲学习目标
 
-| Term (EN/CN) | Definition (EN) | Definition (CN) |
-| ------------ | --------------- | --------------- |
-| **Energy-Time Graph** / 能量-时间图 | A graph showing how kinetic energy, potential energy, and total mechanical energy of an SHM system vary with time over one or more complete cycles. | 显示简谐运动系统中动能、势能和总机械能在一个或多个完整周期内随时间变化的图形。 |
-| **Total Mechanical Energy** / 总机械能 | The constant sum of kinetic and potential energy in ideal undamped SHM, equal to the maximum KE or maximum PE. | 在理想无阻尼简谐运动中，动能和势能的恒定总和，等于最大动能或最大势能。 |
-| **Energy Oscillation Frequency** / 能量振荡频率 | The frequency at which KE and PE oscillate, which is twice the frequency of displacement oscillation ($f_{energy} = 2f_{displacement}$). | 动能和势能振荡的频率，是位移振荡频率的两倍 ($f_{能量} = 2f_{位移}$)。 |
-| **Phase Relationship** / 相位关系 | The relationship where KE and PE are exactly $\pi/2$ radians (90°) out of phase with each other — when one is maximum, the other is zero. | 动能和势能彼此恰好相差 $\pi/2$ 弧度（90°）的关系——当一个最大时，另一个为零。 |
-| **Amplitude of Energy** / 能量振幅 | The maximum value of KE or PE, equal to the total mechanical energy $E_{total} = \frac{1}{2}m\omega^2 A^2$. | 动能或势能的最大值，等于总机械能 $E_{总} = \frac{1}{2}m\omega^2 A^2$。 |
+| CAIE 9702 | Edexcel IAL |
+|-----------|-------------|
+| 17.2(a) Describe the interchange between kinetic energy and potential energy during SHM. | 7.6 Understand the interchange between kinetic and potential energy for simple harmonic oscillators. |
+| 17.2(b) Sketch and interpret graphs of energy against time for an ideal SHM system. | 7.7 Be able to draw and interpret graphs of energy against time for a simple harmonic oscillator. |
+| 17.2(c) Recognise that the total energy of an undamped SHM system is constant. | 7.8 Understand that the total energy of an undamped simple harmonic oscillator is constant. |
 
----
-
-# 3. Key Concepts / 关键概念
-
-**English:**
-
-### The Shape of Energy-Time Graphs
-
-For an object undergoing SHM with displacement $x = A\sin(\omega t)$, the energy-time graphs have specific shapes:
-
-1. **Kinetic Energy ($E_K$):** $E_K = \frac{1}{2}m\omega^2 A^2 \cos^2(\omega t)$ — a $\cos^2$ function, which is a sine wave oscillating between 0 and $E_{total}$ at frequency $2f$.
-
-2. **Potential Energy ($E_P$):** $E_P = \frac{1}{2}m\omega^2 A^2 \sin^2(\omega t)$ — a $\sin^2$ function, also oscillating between 0 and $E_{total}$ at frequency $2f$.
-
-3. **Total Energy ($E_{total}$):** $E_{total} = E_K + E_P = \frac{1}{2}m\omega^2 A^2$ — a constant horizontal line.
-
-### Key Observations
-
-- **KE and PE are complementary:** When KE is maximum, PE is zero (at equilibrium), and vice versa (at amplitude).
-- **Energy oscillates at $2f$:** In one complete SHM cycle, KE and PE each complete *two* full cycles.
-- **The sum is constant:** This demonstrates conservation of mechanical energy in ideal SHM.
-- **Phase shift:** KE leads PE by $\pi/2$ radians (90°).
-
-### Relationship to [[KE and PE in SHM]]
-
-The energy-time graph is the *temporal* representation of the same physics described in [[KE and PE in SHM]]. While that sub-topic focuses on the formulas and instantaneous values, the energy-time graph shows the *evolution* of these values over time.
-
-### Common Pitfalls
-
-- **Confusing frequency:** Students often think KE and PE oscillate at the same frequency as displacement. Remember: $f_{energy} = 2f_{displacement}$.
-- **Forgetting the constant total energy line:** Always include the horizontal $E_{total}$ line on the graph.
-- **Misinterpreting phase:** KE is maximum at $t=0$ if $x = A\sin(\omega t)$, but if $x = A\cos(\omega t)$, the phase shifts.
-
-**中文:**
-
-### 能量-时间图的形状
-
-对于位移为 $x = A\sin(\omega t)$ 的简谐运动物体，能量-时间图具有特定形状：
-
-1. **动能 ($E_K$):** $E_K = \frac{1}{2}m\omega^2 A^2 \cos^2(\omega t)$ — 一个 $\cos^2$ 函数，是在0和 $E_{总}$ 之间以 $2f$ 频率振荡的正弦波。
-
-2. **势能 ($E_P$):** $E_P = \frac{1}{2}m\omega^2 A^2 \sin^2(\omega t)$ — 一个 $\sin^2$ 函数，也是在0和 $E_{总}$ 之间以 $2f$ 频率振荡。
-
-3. **总能量 ($E_{总}$):** $E_{总} = E_K + E_P = \frac{1}{2}m\omega^2 A^2$ — 一条恒定的水平线。
-
-### 关键观察
-
-- **动能和势能互补：** 当动能最大时，势能为零（在平衡位置），反之亦然（在振幅处）。
-- **能量以 $2f$ 振荡：** 在一个完整的简谐运动周期中，动能和势能各完成*两个*完整周期。
-- **总和恒定：** 这证明了理想简谐运动中机械能守恒。
-- **相位差：** 动能领先势能 $\pi/2$ 弧度（90°）。
-
-### 与[[KE and PE in SHM]]的关系
-
-能量-时间图是[[KE and PE in SHM]]中描述的相同物理量的*时间*表示。该子知识点侧重于公式和瞬时值，而能量-时间图显示了这些值随时间的*演变*。
-
-### 常见陷阱
-
-- **混淆频率：** 学生常认为动能和势能以与位移相同的频率振荡。记住：$f_{能量} = 2f_{位移}$。
-- **忘记恒定的总能量线：** 始终在图形上包含水平的 $E_{总}$ 线。
-- **误解相位：** 如果 $x = A\sin(\omega t)$，动能在 $t=0$ 时最大；但如果 $x = A\cos(\omega t)$，相位会偏移。
+**Examiner Expectations / 考官期望:**
+- **EN:** You must be able to sketch the sinusoidal curves for KE and PE, showing that they are in anti-phase (one is maximum when the other is zero). The total energy line must be a straight horizontal line. You should be able to label the axes with appropriate energy values and time periods (or fractions of a period like T/4).
+- **CN:** 你必须能够画出动能和势能的正弦曲线，并显示它们是反相的（一个最大时另一个为零）。总能量线必须是一条水平的直线。你应该能够用适当的能量值和周期（或周期的分数，如 T/4）来标记坐标轴。
 
 ---
 
-# 4. Formulas / 公式
+# 3. Core Definitions / 核心定义
 
-## Key Formula 1: Kinetic Energy as a Function of Time
+| Term (EN/CN) | Definition (EN) | Definition (CN) | Common Mistakes / 常见错误 |
+|--------------|-----------------|-----------------|---------------------------|
+| **Kinetic Energy (KE)** / 动能 (KE) | The energy an object possesses due to its motion. In SHM, it is maximum at the equilibrium position and zero at the amplitude. | 物体由于运动而具有的能量。在简谐运动中，它在平衡位置最大，在振幅处为零。 | Confusing KE with velocity. KE is proportional to $v^2$, so it is always positive. |
+| **Potential Energy (PE)** / 势能 (PE) | The energy stored in the system due to its position or configuration. For a spring, it's elastic PE; for a pendulum, it's gravitational PE. It is maximum at the amplitude and zero at equilibrium. | 系统由于其位置或构型而储存的能量。对于弹簧，是弹性势能；对于单摆，是重力势能。它在振幅处最大，在平衡位置为零。 | Forgetting that PE is always positive in an ideal system. |
+| **Total Mechanical Energy (E)** / 总机械能 (E) | The sum of the kinetic and potential energies of the system. For an undamped SHM system, this remains constant. | 系统动能和势能的总和。对于无阻尼的简谐运动系统，这是一个常数。 | Thinking total energy varies with time. It is constant for ideal SHM. |
+| **Anti-phase** / 反相 | A phase difference of 180° ($\pi$ radians). In energy-time graphs, KE and PE are in anti-phase; when one is at a maximum, the other is at a minimum. | 相位差为180°（$\pi$ 弧度）。在能量-时间图中，动能和势能是反相的；当一个达到最大值时，另一个达到最小值。 | Thinking they are in phase. They are not. |
+| **Period (T)** / 周期 (T) | The time taken for one complete oscillation. The energy curves repeat every half-period ($T/2$). | 完成一次全振动所需的时间。能量曲线每半个周期（$T/2$）重复一次。 | Forgetting that the energy cycle repeats twice as fast as the displacement cycle. |
 
-$$E_K(t) = \frac{1}{2}m\omega^2 A^2 \cos^2(\omega t)$$
+---
+
+# 4. Key Concepts Explained / 关键概念详解
+
+## 4.1 Energy Interchange and Phase / 能量交换与相位
+
+### Explanation / 解释
+**English:** In an ideal (undamped) SHM system, energy continuously transforms between kinetic and potential forms. Consider a mass on a spring. As the mass passes through the [[Equilibrium Position]] (displacement $x=0$), its velocity is maximum, so its [[Kinetic Energy and Potential Energy|KE]] is maximum. At this point, the spring is unstretched, so its [[Elastic Potential Energy|PE]] is zero. As the mass moves towards the amplitude ($x = \pm x_0$), it slows down (KE decreases) while the spring stretches or compresses (PE increases). At the amplitude, the mass is momentarily at rest (KE = 0), and all the energy is stored as PE. This process then reverses. The graphs of KE and PE against time are therefore sinusoidal curves that are in anti-phase. The total energy ($E = KE + PE$) remains constant, represented by a horizontal line.
+
+**中文:** 在一个理想（无阻尼）的简谐运动系统中，能量在动能和势能形式之间连续转换。以弹簧上的质量块为例。当质量块经过[[平衡位置]]（位移 $x=0$）时，其速度最大，因此其[[动能与势能|动能]]最大。此时，弹簧未被拉伸，所以其[[弹性势能|势能]]为零。当质量块向振幅处（$x = \pm x_0$）移动时，它减速（动能减少），同时弹簧被拉伸或压缩（势能增加）。在振幅处，质量块瞬间静止（动能为零），所有能量都储存为势能。然后这个过程逆转。因此，动能和势能随时间变化的图是正弦曲线，并且是反相的。总能量（$E = KE + PE$）保持不变，由一条水平线表示。
+
+### Physical Meaning / 物理意义
+**English:** The constant total energy line represents the conservation of mechanical energy in the system. The anti-phase relationship between KE and PE shows that the energy is not lost but merely changes form. The frequency of the energy oscillation is twice the frequency of the displacement oscillation because the energy is maximum twice per cycle (once for KE at equilibrium, once for PE at each amplitude).
+
+**中文:** 恒定的总能量线代表了系统中机械能守恒。动能和势能之间的反相关系表明能量并未损失，只是改变了形式。能量振荡的频率是位移振荡频率的两倍，因为每个周期内能量达到最大值两次（一次是动能，在平衡位置；一次是势能，在每个振幅处）。
+
+### Common Misconceptions / 常见误区
+- **EN:** Thinking KE and PE are in phase. (They are in anti-phase).
+- **CN:** 认为动能和势能是同相的。（它们是反相的）。
+- **EN:** Thinking the total energy line is sinusoidal. (It is a straight horizontal line).
+- **CN:** 认为总能量线是正弦曲线。（它是一条水平的直线）。
+- **EN:** Confusing the period of the energy graph ($T/2$) with the period of the motion ($T$).
+- **CN:** 混淆能量图的周期（$T/2$）与运动的周期（$T$）。
+
+### Exam Tips / 考试提示
+- **EN:** When sketching, always start by drawing the horizontal total energy line. Then draw the KE and PE curves as mirror images of each other about the $E/2$ line.
+- **CN:** 画图时，总是先画水平的**总能量线**。然后，将动能和势能曲线画成关于 $E/2$ 线互为镜像的曲线。
+- **EN:** Label the maximum values clearly (e.g., $KE_{max} = E$, $PE_{max} = E$).
+- **CN:** 清晰地标出最大值（例如，$KE_{max} = E$, $PE_{max} = E$）。
+- **EN:** Mark the time axis with fractions of the period ($T/4$, $T/2$, $3T/4$, $T$) to show the relationship to displacement.
+- **CN:** 在时间轴上标出周期的分数（$T/4$, $T/2$, $3T/4$, $T$）以显示与位移的关系。
+
+> 📷 **IMAGE PROMPT — DIAGRAM-01: Standard Energy-Time Graph for SHM**
+> A clear, labelled graph with time on the x-axis and Energy on the y-axis. Show three curves: a horizontal dashed line labelled "Total Energy (E)", a cosine-squared curve labelled "Kinetic Energy (KE)" peaking at E, and a sine-squared curve labelled "Potential Energy (PE)" peaking at E. The KE and PE curves should cross at E/2. The x-axis should be marked with 0, T/4, T/2, 3T/4, and T. The graph should be clean, professional, and suitable for an A-Level physics textbook.
+
+---
+
+# 5. Essential Equations / 核心公式
+
+For an object in SHM with angular frequency $\omega$, amplitude $x_0$, and total energy $E$:
+
+$$ KE(t) = \frac{1}{2} m v^2 = \frac{1}{2} m \omega^2 x_0^2 \sin^2(\omega t + \phi) = E \sin^2(\omega t + \phi) $$
+
+$$ PE(t) = \frac{1}{2} k x^2 = \frac{1}{2} m \omega^2 x_0^2 \cos^2(\omega t + \phi) = E \cos^2(\omega t + \phi) $$
+
+$$ E = KE(t) + PE(t) = \frac{1}{2} m \omega^2 x_0^2 = \text{constant} $$
 
 | Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
-| ------------- | ------------ | ------------ | ----------- |
-| $E_K(t)$ | Kinetic energy at time $t$ | 时间 $t$ 时的动能 | J |
-| $m$ | Mass of oscillating object | 振荡物体的质量 | kg |
-| $\omega$ | Angular frequency | 角频率 | rad s$^{-1}$ |
-| $A$ | Amplitude of oscillation | 振荡振幅 | m |
+|--------------|-------------|-------------|------------|
+| $KE(t)$ | Kinetic energy at time $t$ | 时间 $t$ 时的动能 | J |
+| $PE(t)$ | Potential energy at time $t$ | 时间 $t$ 时的势能 | J |
+| $E$ | Total mechanical energy | 总机械能 | J |
+| $m$ | Mass of the oscillating object | 振荡物体的质量 | kg |
+| $\omega$ | Angular frequency ($2\pi f$) | 角频率 ($2\pi f$) | rad s$^{-1}$ |
+| $x_0$ | Amplitude of oscillation | 振荡的振幅 | m |
+| $v$ | Velocity at time $t$ | 时间 $t$ 时的速度 | m s$^{-1}$ |
+| $k$ | Spring constant (for a spring system) | 弹簧常数（对于弹簧系统） | N m$^{-1}$ |
 | $t$ | Time | 时间 | s |
-
-## Key Formula 2: Potential Energy as a Function of Time
-
-$$E_P(t) = \frac{1}{2}m\omega^2 A^2 \sin^2(\omega t)$$
-
-| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
-| ------------- | ------------ | ------------ | ----------- |
-| $E_P(t)$ | Potential energy at time $t$ | 时间 $t$ 时的势能 | J |
-
-## Key Formula 3: Total Mechanical Energy (Constant)
-
-$$E_{total} = \frac{1}{2}m\omega^2 A^2$$
-
-| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
-| ------------- | ------------ | ------------ | ----------- |
-| $E_{total}$ | Total mechanical energy | 总机械能 | J |
-
-## Key Formula 4: Energy Oscillation Period
-
-$$T_{energy} = \frac{T_{displacement}}{2} = \frac{\pi}{\omega}$$
-
-| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
-| ------------- | ------------ | ------------ | ----------- |
-| $T_{energy}$ | Period of energy oscillation | 能量振荡周期 | s |
-| $T_{displacement}$ | Period of displacement oscillation | 位移振荡周期 | s |
+| $\phi$ | Phase constant | 初相位 | rad |
 
 **Derivation / 推导:**
-
-Starting from displacement $x = A\sin(\omega t)$ and velocity $v = \omega A\cos(\omega t)$:
-
-$$E_K = \frac{1}{2}mv^2 = \frac{1}{2}m\omega^2 A^2 \cos^2(\omega t)$$
-
-$$E_P = \frac{1}{2}kx^2 = \frac{1}{2}m\omega^2 x^2 = \frac{1}{2}m\omega^2 A^2 \sin^2(\omega t)$$
-
-Using $\sin^2(\omega t) + \cos^2(\omega t) = 1$:
-
-$$E_{total} = E_K + E_P = \frac{1}{2}m\omega^2 A^2[\sin^2(\omega t) + \cos^2(\omega t)] = \frac{1}{2}m\omega^2 A^2$$
+- From [[Simple Harmonic Motion]], we know $x(t) = x_0 \cos(\omega t + \phi)$ and $v(t) = -x_0 \omega \sin(\omega t + \phi)$.
+- Substituting $v(t)$ into $KE = \frac{1}{2}mv^2$ gives $KE(t) = \frac{1}{2}m x_0^2 \omega^2 \sin^2(\omega t + \phi)$.
+- Substituting $x(t)$ into $PE = \frac{1}{2}kx^2$ and using $k = m\omega^2$ gives $PE(t) = \frac{1}{2}m \omega^2 x_0^2 \cos^2(\omega t + \phi)$.
+- The total energy $E = KE + PE = \frac{1}{2}m \omega^2 x_0^2 (\sin^2(\theta) + \cos^2(\theta)) = \frac{1}{2}m \omega^2 x_0^2$.
 
 **Conditions / 适用条件:**
-- Ideal undamped SHM only (no energy loss)
-- System with spring constant $k = m\omega^2$
-- Valid for any SHM system (mass-spring, pendulum, etc.)
+- **EN:** This applies to ideal, undamped SHM where no energy is lost to the surroundings (e.g., no friction or air resistance).
+- **CN:** 这适用于理想、无阻尼的简谐运动，即没有能量损失到周围环境（例如，没有摩擦或空气阻力）。
 
-> 📷 **IMAGE PROMPT — ETG01: Energy-Time Graph for SHM**
->
-> **English Prompt:**
-> A clean, textbook-style graph with three curves on the same axes. X-axis: "Time / s" from 0 to 2T (where T is the period). Y-axis: "Energy / J" from 0 to E_total. Three curves: (1) A horizontal dashed line at E_total labelled "Total Energy", (2) A cosine-squared curve (starting at maximum) labelled "Kinetic Energy" in blue, (3) A sine-squared curve (starting at zero) labelled "Potential Energy" in red. The curves cross at E_total/2 at t = T/4, 3T/4, etc. Grid lines shown. Labels in English. Clean white background, vector style.
->
-> **中文描述:**
-> 一个干净的教科书风格图形，在同一坐标轴上显示三条曲线。X轴："时间 / s"，从0到2T（T为周期）。Y轴："能量 / J"，从0到E_total。三条曲线：(1) 在E_total处的水平虚线，标注"总能量"；(2) 余弦平方曲线（从最大值开始），蓝色，标注"动能"；(3) 正弦平方曲线（从零开始），红色，标注"势能"。曲线在t = T/4、3T/4等处交叉于E_total/2。显示网格线。英文标注。干净白色背景，矢量风格。
->
-> **Labels Required / 需要标注:**
-> * Total Energy (horizontal dashed line)
-> * Kinetic Energy (blue cosine-squared curve)
-> * Potential Energy (red sine-squared curve)
-> * E_total (label on y-axis)
-> * T (period marker on x-axis)
-> * T/2, T/4 markers
-> * Crossing points at E_total/2
->
-> **Style / 风格:** Textbook vector / 教科书矢量图
->
-> **Exam Relevance / 考试关联:**
-> This is the most commonly tested graph for energy in SHM. Students must be able to sketch it, label it, and interpret it.
+**Limitations / 局限性:**
+- **EN:** In real-world systems, energy is dissipated, so the total energy decreases over time (damped oscillations). The curves would no longer have constant amplitude.
+- **CN:** 在现实世界的系统中，能量会耗散，因此总能量随时间减少（阻尼振荡）。曲线将不再具有恒定的振幅。
 
 ---
 
-# 5. Image Prompt / 图片提示
+# 6. Graphs and Relationships / 图表与关系
 
-> 📷 **IMAGE PROMPT — ETG02: Energy-Time Graph with Displacement Comparison**
->
-> **English Prompt:**
-> A dual-panel graph for comparison. Top panel: Standard displacement-time graph for SHM (sine wave, amplitude A, period T). Bottom panel: Energy-time graph (same time axis). Three curves in bottom panel: Total Energy (horizontal dashed), KE (blue cosine-squared), PE (red sine-squared). Vertical dashed lines connect key points between panels: at t=0 (displacement=0, KE=max, PE=0), at t=T/4 (displacement=A, KE=0, PE=max), at t=T/2 (displacement=0, KE=max, PE=0). Labels show "Equilibrium" and "Amplitude" at appropriate positions. Clean vector style, white background, English labels.
->
-> **中文描述:**
-> 用于比较的双面板图形。上面板：简谐运动的标准位移-时间图（正弦波，振幅A，周期T）。下面板：能量-时间图（相同时间轴）。下面板中的三条曲线：总能量（水平虚线），动能（蓝色余弦平方），势能（红色正弦平方）。垂直虚线连接面板之间的关键点：在t=0（位移=0，动能=最大，势能=0），在t=T/4（位移=A，动能=0，势能=最大），在t=T/2（位移=0，动能=最大，势能=0）。在适当位置标注"平衡位置"和"振幅"。干净矢量风格，白色背景，英文标注。
->
-> **Labels Required / 需要标注:**
-> * Displacement (top panel y-axis)
-> * Energy (bottom panel y-axis)
-> * Time (both x-axes)
-> * A (amplitude on top panel)
-> * E_total (on bottom panel)
-> * Equilibrium positions
-> * Amplitude positions
-> * Connecting dashed lines
->
-> **Style / 风格:** Textbook vector / 教科书矢量图
->
-> **Exam Relevance / 考试关联:**
-> This comparison helps students understand the relationship between displacement and energy, which is frequently tested in exam questions.
+## 6.1 Energy-Time Graph for SHM / 简谐运动的能量-时间图
+
+### Axes / 坐标轴
+- **X-axis:** Time (t) / 时间 (t)
+- **Y-axis:** Energy (E) / 能量 (E)
+
+### Shape / 形状
+- **Total Energy (E):** A straight horizontal line.
+- **Kinetic Energy (KE):** A $\sin^2$ (or $\cos^2$) curve. It starts at a maximum (if starting from equilibrium) or zero (if starting from amplitude).
+- **Potential Energy (PE):** A $\cos^2$ (or $\sin^2$) curve. It is the mirror image of the KE curve about the $E/2$ line.
+
+### Gradient Meaning / 斜率含义
+- **EN:** The gradient of the KE or PE curve represents the rate of change of that form of energy. The gradient of the KE curve is equal to the negative of the gradient of the PE curve ($d(KE)/dt = -d(PE)/dt$), representing the power transfer between the two forms.
+- **CN:** 动能或势能曲线的斜率代表该形式能量的变化率。动能曲线的斜率等于势能曲线斜率的负值（$d(KE)/dt = -d(PE)/dt$），代表两种形式之间的功率传递。
+
+### Area Meaning / 面积含义
+- **EN:** The area under the KE or PE curve between two times is not a standard quantity asked about in A-Level. The key concept is the constant total energy.
+- **CN:** 在A-Level考试中，通常不要求计算两个时间点之间动能或势能曲线下的面积。关键概念是恒定的总能量。
+
+### Exam Interpretation / 考试解读
+- **EN:** You must be able to read from the graph the maximum KE/PE ($=E$), the period of the energy oscillation ($T/2$), and the time when KE = PE (when the curves cross at $E/2$).
+- **CN:** 你必须能够从图中读出最大动能/势能（$=E$）、能量振荡的周期（$T/2$）以及动能等于势能的时间（曲线在 $E/2$ 处相交时）。
+
+> 📷 **IMAGE PROMPT — DIAGRAM-02: Energy-Time Graph with Displacement Reference**
+> A two-part graph. The top part shows a standard displacement-time graph for SHM (a cosine wave). The bottom part shows the corresponding energy-time graph (KE, PE, and Total E). Vertical dashed lines should connect key points (e.g., when displacement is zero, KE is max; when displacement is max, PE is max). This helps students see the phase relationship between displacement and energy.
 
 ---
 
-# 6. Worked Example / 典型例题
+# 7. Required Diagrams / 必备图表
 
-### Example 1: Reading Values from an Energy-Time Graph
+## 7.1 Standard Energy-Time Graph for an Undamped SHM System / 无阻尼简谐运动系统的标准能量-时间图
+
+### Description / 描述
+**English:** A graph with time on the x-axis and energy on the y-axis. It shows three curves: a horizontal line for total energy (E), a sinusoidal curve for kinetic energy (KE), and a sinusoidal curve for potential energy (PE). The KE and PE curves are mirror images of each other about the line $y = E/2$. The curves repeat every $T/2$ seconds.
+
+**中文:** 一个以时间为x轴、能量为y轴的图。它显示三条曲线：一条代表总能量（E）的水平线，一条代表动能（KE）的正弦曲线，以及一条代表势能（PE）的正弦曲线。动能和势能曲线关于直线 $y = E/2$ 互为镜像。曲线每 $T/2$ 秒重复一次。
+
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — DIAGRAM-03: Detailed Energy-Time Graph for SHM**
+> A high-quality, textbook-style graph. X-axis: "Time / s" marked with 0, T/4, T/2, 3T/4, T. Y-axis: "Energy / J" marked with 0, E/2, E. A thick, dashed horizontal line labelled "Total Energy (E)". A solid, smooth curve labelled "KE" that peaks at E at t=0, T/2, and T, and is zero at T/4 and 3T/4. Another solid, smooth curve labelled "PE" that is zero at t=0, T/2, and T, and peaks at E at T/4 and 3T/4. The KE and PE curves should cross exactly at the E/2 line. The graph should be clean, with no grid lines, and use a professional colour scheme (e.g., blue for KE, red for PE, black for Total E).
+
+### Labels Required / 需要标注
+- **EN:** Axes (Time, Energy), Curves (KE, PE, Total Energy), Key points (0, E/2, E), Time markers (0, T/4, T/2, 3T/4, T).
+- **CN:** 坐标轴（时间、能量）、曲线（动能、势能、总能量）、关键点（0, E/2, E）、时间标记（0, T/4, T/2, 3T/4, T）。
+
+### Exam Importance / 考试重要性
+- **EN:** Extremely high. This is the most common graph asked for in exams for this sub-topic. You must be able to sketch it from memory and interpret it.
+- **CN:** 极高。这是本子知识点考试中最常考的图。你必须能够凭记忆画出它并解释它。
+
+---
+
+# 8. Worked Examples / 典型例题
+
+## Example 1: Sketching and Interpreting an Energy-Time Graph / 示例1：绘制和解释能量-时间图
 
 ### Question / 题目
-**English:**
-A mass-spring system oscillates with SHM. The energy-time graph shows that the total energy is 8.0 J, and the period of displacement oscillation is 2.0 s.
+**English:** A mass of 0.50 kg is attached to a spring and performs SHM with an amplitude of 0.10 m and a period of 2.0 s. The total energy of the system is 0.25 J.
+(a) Sketch the energy-time graph for the system for one complete oscillation, starting from the equilibrium position moving in the positive direction.
+(b) On your graph, mark the time(s) at which the kinetic energy equals the potential energy.
 
-(a) What is the period of oscillation of the kinetic energy?
-(b) At what time(s) in the first cycle is the kinetic energy equal to the potential energy?
-(c) If the amplitude is 0.10 m and the mass is 0.50 kg, calculate the angular frequency $\omega$.
-
-**中文:**
-一个质量-弹簧系统以简谐运动振荡。能量-时间图显示总能量为8.0 J，位移振荡周期为2.0 s。
-
-(a) 动能振荡的周期是多少？
-(b) 在第一个周期中，动能等于势能的时间是什么？
-(c) 如果振幅为0.10 m，质量为0.50 kg，计算角频率 $\omega$。
+**中文:** 一个0.50 kg的质量块连接在弹簧上，以0.10 m的振幅和2.0 s的周期进行简谐运动。系统的总能量为0.25 J。
+(a) 画出系统在一次完整振荡中的能量-时间图，从平衡位置开始向正方向运动。
+(b) 在图上标出动能等于势能的时间。
 
 ### Solution / 解答
+**(a) Sketching the graph / 绘制图表:**
+1.  **Axes:** Draw x-axis (Time / s) and y-axis (Energy / J).
+2.  **Total Energy:** Draw a horizontal dashed line at $E = 0.25 \text{ J}$.
+3.  **Period of Energy:** The energy cycle repeats every $T/2 = 1.0 \text{ s}$. Mark the x-axis from 0 to $T = 2.0 \text{ s}$.
+4.  **Initial Condition:** Starting from equilibrium ($x=0$), velocity is maximum, so KE is maximum and PE is zero. Therefore, the KE curve starts at $E = 0.25 \text{ J}$ at $t=0$.
+5.  **Draw Curves:**
+    - At $t = T/4 = 0.5 \text{ s}$, the mass is at amplitude ($v=0$), so KE = 0 and PE = E = 0.25 J.
+    - At $t = T/2 = 1.0 \text{ s}$, the mass is back at equilibrium moving in the opposite direction, so KE = E = 0.25 J and PE = 0.
+    - At $t = 3T/4 = 1.5 \text{ s}$, the mass is at the other amplitude, so KE = 0 and PE = E = 0.25 J.
+    - At $t = T = 2.0 \text{ s}$, the mass returns to the starting point, so KE = E = 0.25 J and PE = 0.
+    - Draw smooth $\sin^2$ and $\cos^2$ curves connecting these points.
 
-**(a)** The energy oscillation period is half the displacement period:
-$$T_{energy} = \frac{T_{displacement}}{2} = \frac{2.0}{2} = 1.0 \text{ s}$$
-
-**(b)** KE = PE when both equal half the total energy:
-$$E_K = E_P = \frac{E_{total}}{2} = 4.0 \text{ J}$$
-
-From the graph, this occurs at $t = \frac{T_{displacement}}{8} = \frac{2.0}{8} = 0.25 \text{ s}$ and $t = \frac{3T_{displacement}}{8} = 0.75 \text{ s}$.
-
-**(c)** Using $E_{total} = \frac{1}{2}m\omega^2 A^2$:
-$$8.0 = \frac{1}{2}(0.50)\omega^2(0.10)^2$$
-$$8.0 = 0.0025\omega^2$$
-$$\omega^2 = \frac{8.0}{0.0025} = 3200$$
-$$\omega = \sqrt{3200} = 56.6 \text{ rad s}^{-1}$$
+**(b) KE = PE / 动能等于势能:**
+- KE = PE when the two curves cross. This happens when both are equal to $E/2 = 0.125 \text{ J}$.
+- This occurs at $t = T/8 = 0.25 \text{ s}$, $t = 3T/8 = 0.75 \text{ s}$, $t = 5T/8 = 1.25 \text{ s}$, and $t = 7T/8 = 1.75 \text{ s}$.
 
 ### Final Answer / 最终答案
-**Answer:** (a) 1.0 s (b) 0.25 s and 0.75 s (c) 56.6 rad s$^{-1}$
-**答案:** (a) 1.0 秒 (b) 0.25 秒和 0.75 秒 (c) 56.6 弧度/秒
+**Answer:** The graph is sketched as described. KE = PE at $t = 0.25 \text{ s}, 0.75 \text{ s}, 1.25 \text{ s}, 1.75 \text{ s}$. | **答案：** 按上述描述绘制图表。动能等于势能的时间为 $t = 0.25 \text{ s}, 0.75 \text{ s}, 1.25 \text{ s}, 1.75 \text{ s}$。
 
 ### Quick Tip / 提示
-Remember that KE and PE are equal at $t = T/8$, $3T/8$, $5T/8$, $7T/8$ — these are the times when the oscillator is at $x = \pm A/\sqrt{2}$.
+- **EN:** Remember that the energy curves are always positive and are mirror images about the $E/2$ line. The crossing points are always at $E/2$.
+- **CN:** 记住能量曲线总是正的，并且关于 $E/2$ 线互为镜像。交点总是在 $E/2$ 处。
 
 ---
 
-### Example 2: Sketching an Energy-Time Graph
+# 9. Past Paper Question Types / 历年真题题型
 
-### Question / 题目
+| Question Type / 题型 | Frequency / 频率 | Difficulty / 难度 | Past Paper References / 真题索引 |
+|----------------------|------------------|------------------|-------------------------------|
+| Sketching energy-time graphs from given data | High | Easy | 📝 *待填入* |
+| Interpreting graphs to find energy values or time periods | High | Medium | 📝 *待填入* |
+| Explaining the phase relationship between KE and PE | Medium | Easy | 📝 *待填入* |
+| Relating energy graphs to displacement and velocity graphs | Medium | Medium | 📝 *待填入* |
+| Calculating total energy from graph data | Low | Medium | 📝 *待填入* |
+
+**Common Command Words / 常见指令词:**
+- **Sketch / 画出:** Draw a graph showing the general shape and key features. Labels are essential.
+- **Determine / 确定:** Use data from the graph or question to calculate a value.
+- **Explain / 解释:** Give a reason for the shape or relationship shown in the graph.
+- **State / 陈述:** Give a brief answer without detailed reasoning.
+
+---
+
+# 10. Practical Skills Connections / 实验技能链接
+
 **English:**
-A particle of mass 0.20 kg oscillates with SHM of amplitude 0.050 m and angular frequency 40 rad s$^{-1}$.
-
-(a) Calculate the total mechanical energy.
-(b) Sketch the energy-time graph for one complete cycle of displacement, labelling all key values.
-(c) On the same axes, sketch the graph if the amplitude is doubled.
+While you don't directly plot energy-time graphs in a practical, the concepts are verified through experiments on [[Simple Harmonic Motion]].
+- **Measurements:** You would measure the period ($T$) and amplitude ($x_0$) of an oscillating mass on a spring.
+- **Calculations:** You would calculate the total energy using $E = \frac{1}{2} m \omega^2 x_0^2$.
+- **Graph Plotting:** You could plot a graph of $KE$ (calculated from velocity) against time to see the sinusoidal shape. This requires using a motion sensor or video analysis.
+- **Uncertainties:** The main uncertainties come from measuring the amplitude and period. The total energy has a significant uncertainty because it depends on $x_0^2$.
+- **Experimental Design:** To demonstrate constant total energy, you would need to minimise energy losses (e.g., use a light spring, smooth surface, or air track). You would then show that the amplitude of oscillation decreases very slowly.
 
 **中文:**
-一个质量为0.20 kg的粒子以振幅0.050 m和角频率40 rad s$^{-1}$进行简谐运动。
-
-(a) 计算总机械能。
-(b) 绘制一个完整位移周期的能量-时间图，标注所有关键值。
-(c) 在同一坐标轴上，绘制振幅加倍时的图形。
-
-### Solution / 解答
-
-**(a)** 
-$$E_{total} = \frac{1}{2}m\omega^2 A^2 = \frac{1}{2}(0.20)(40)^2(0.050)^2$$
-$$E_{total} = \frac{1}{2}(0.20)(1600)(0.0025)$$
-$$E_{total} = \frac{1}{2}(0.20)(4.0) = 0.40 \text{ J}$$
-
-**(b)** The displacement period: $T = \frac{2\pi}{\omega} = \frac{2\pi}{40} = 0.157 \text{ s}$
-The energy period: $T_{energy} = \frac{T}{2} = 0.0785 \text{ s}$
-
-Key values on the graph:
-- Total energy: horizontal line at 0.40 J
-- KE: starts at 0.40 J (maximum), reaches 0 J at $t = T/4 = 0.0393$ s
-- PE: starts at 0 J, reaches 0.40 J at $t = T/4 = 0.0393$ s
-- KE = PE = 0.20 J at $t = T/8 = 0.0196$ s
-
-**(c)** If $A$ is doubled, $E_{total}$ increases by a factor of 4:
-$$E_{total(new)} = 4 \times 0.40 = 1.60 \text{ J}$$
-
-The new graph has the same period but all energy values are multiplied by 4.
-
-### Final Answer / 最终答案
-**Answer:** (a) 0.40 J (b) Graph with E_total = 0.40 J, T_energy = 0.0785 s (c) New E_total = 1.60 J
-**答案:** (a) 0.40 焦耳 (b) 图形：E_total = 0.40 J，T_能量 = 0.0785 秒 (c) 新 E_total = 1.60 J
-
-### Quick Tip / 提示
-When amplitude changes, the shape of the energy-time graph remains the same (same period), but the amplitude of the energy oscillation changes. Since $E \propto A^2$, doubling $A$ quadruples $E$.
+虽然在实验中你不会直接绘制能量-时间图，但这些概念通过[[简谐运动]]的实验得到验证。
+- **测量：** 你会测量弹簧上振荡质量块的周期（$T$）和振幅（$x_0$）。
+- **计算：** 你会使用 $E = \frac{1}{2} m \omega^2 x_0^2$ 计算总能量。
+- **绘图：** 你可以绘制动能（根据速度计算）随时间变化的图，以观察其正弦形状。这需要使用运动传感器或视频分析。
+- **不确定度：** 主要的不确定度来自测量振幅和周期。总能量的不确定度很大，因为它取决于 $x_0^2$。
+- **实验设计：** 为了证明总能量守恒，你需要最小化能量损失（例如，使用轻质弹簧、光滑表面或气垫导轨）。然后你会看到振荡的振幅减小得非常缓慢。
 
 ---
 
-# 7. Flashcards / 闪卡
+# 11. Concept Map / 概念图谱
 
-**Flashcard 1**
-Q (EN): What is the relationship between the period of energy oscillation and the period of displacement oscillation in SHM?
-Q (CN): 在简谐运动中，能量振荡周期与位移振荡周期之间有什么关系？
-A (EN): The energy oscillation period is half the displacement oscillation period: $T_{energy} = T_{displacement}/2$.
-A (CN): 能量振荡周期是位移振荡周期的一半：$T_{能量} = T_{位移}/2$。
+```mermaid
+graph TD
+    %% Show connections for this leaf node
+    subgraph "Parent Topic: Energy in SHM"
+        direction LR
+        A[Energy-Time Graphs for SHM] --> B[KE and PE in SHM]
+        A --> C[Energy-Displacement Graphs for SHM]
+    end
 
-**Flashcard 2**
-Q (EN): At what times in one complete SHM cycle are kinetic energy and potential energy equal?
-Q (CN): 在一个完整的简谐运动周期中，动能和势能在哪些时间相等？
-A (EN): At $t = T/8$, $3T/8$, $5T/8$, and $7T/8$ (where T is the displacement period).
-A (CN): 在 $t = T/8$、$3T/8$、$5T/8$ 和 $7T/8$ 时（其中 T 是位移周期）。
+    subgraph "Prerequisites"
+        D[Simple Harmonic Motion]
+        E[Kinetic Energy and Potential Energy]
+    end
 
-**Flashcard 3**
-Q (EN): What is the phase difference between kinetic energy and potential energy in SHM?
-Q (CN): 在简谐运动中，动能和势能之间的相位差是多少？
-A (EN): They are $\pi/2$ radians (90°) out of phase — when one is maximum, the other is zero.
-A (CN): 它们相差 $\pi/2$ 弧度（90°）——当一个最大时，另一个为零。
+    subgraph "Related Topics"
+        F[Damped and Forced Oscillations - Resonance]
+    end
 
-**Flashcard 4**
-Q (EN): If the amplitude of SHM is doubled, what happens to the total mechanical energy?
-Q (CN): 如果简谐运动的振幅加倍，总机械能会发生什么变化？
-A (EN): The total energy increases by a factor of 4 (since $E \propto A^2$).
-A (CN): 总能量增加4倍（因为 $E \propto A^2$）。
+    D --> A
+    E --> A
+    A --> F
 
-**Flashcard 5**
-Q (EN): Sketch the energy-time graph for undamped SHM, showing KE, PE, and total energy.
-Q (CN): 绘制无阻尼简谐运动的能量-时间图，显示动能、势能和总能量。
-A (EN): A horizontal line for total energy; a cosine-squared curve for KE (starting at maximum); a sine-squared curve for PE (starting at zero); both oscillating at twice the displacement frequency.
-A (CN): 总能量为水平线；动能为余弦平方曲线（从最大值开始）；势能为正弦平方曲线（从零开始）；两者都以位移频率的两倍振荡。
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+```
 
 ---
 
-# 8. Metadata / 元数据
+# 12. Quick Revision Sheet / 速查表
 
-```yaml
-title:
-  en: Energy-Time Graphs for SHM
-  cn: 简谐运动的能量-时间图
-parent_topic: Energy in SHM
-parent_hub: "[[Energy in SHM]]"
-subject: Physics
-syllabus:
-  - CAIE 9702
-  - Edexcel IAL
-level: A2
-node_type: leaf_concept
-difficulty: intermediate
-related_leaf_nodes:
-  - "[[KE and PE in SHM]]"
-  - "[[Energy-Displacement Graphs for SHM]]"
-prerequisites:
-  - "[[Simple Harmonic Motion]]"
-  - "[[Kinetic Energy and Potential Energy]]"
-related_topics:
-  - "[[Damped and Forced Oscillations / Resonance]]"
-language: bilingual_en_cn
+| Category / 类别 | Key Points / 要点 |
+|----------------|------------------|
+| **Definition / 定义** | Graphs showing how KE, PE, and Total Energy (E) of an SHM system change over time. |
+| **Key Formula / 核心公式** | $KE(t) = E \sin^2(\omega t + \phi)$, $PE(t) = E \cos^2(\omega t + \phi)$, $E = \frac{1}{2}m\omega^2 x_0^2$ |
+| **Key Graph / 核心图表** | Total E is a horizontal line. KE and PE are $\sin^2$/$\cos^2$ curves in anti-phase, mirroring each other about $E/2$. |
+| **Key Relationship / 关键关系** | KE and PE are in **anti-phase**. Energy cycle period is **$T/2$**. KE = PE at **$E/2$**. |
+| **Exam Tip / 考试提示** | Always draw the Total E line first. Label axes and key times (T/4, T/2, etc.). Remember the curves are always positive. |

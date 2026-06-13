@@ -1,564 +1,995 @@
+# Power and Efficiency / 功率与效率
+
+---
+
 # 1. Overview / 概述
 
-**English:** This topic explores the rate at which work is done or energy is transferred (power) and how effectively energy is converted from one form to another (efficiency). Power quantifies how quickly a system can perform work, while efficiency measures the useful output relative to the total input. These concepts are fundamental in engineering, transportation, electrical systems, and everyday appliances. In both CAIE 9702 and Edexcel IAL, power and efficiency are essential for understanding real-world energy applications, from car engines to power stations. They connect directly to [[Work Done by a Force]] and [[Conservation of Energy]], forming a bridge between theoretical energy principles and practical system performance.
+**English:**
+Power and Efficiency are fundamental concepts in mechanics that describe how quickly work is done and how effectively energy is converted from one form to another. Power quantifies the rate at which work is performed or energy is transferred, while efficiency measures the proportion of useful energy output relative to the total energy input. These concepts bridge the gap between abstract energy principles and real-world applications, from designing electric motors and engines to understanding biological systems and renewable energy technologies. In both Cambridge 9702 and Edexcel IAL A-Level Physics, power and efficiency are essential for analysing mechanical systems, electrical circuits, and thermal processes. They appear frequently in examination questions involving calculations, graph interpretation, and practical contexts, making them foundational for further study in physics and engineering.
 
-**中文:** 本主题探讨做功或能量转移的速率（功率）以及能量从一种形式转换为另一种形式的有效性（效率）。功率量化了系统做功的快慢，而效率衡量了有用输出相对于总输入的比例。这些概念在工程、交通运输、电气系统和日常电器中至关重要。在CAIE 9702和Edexcel IAL中，功率和效率对于理解从汽车发动机到发电站等现实世界的能量应用至关重要。它们直接连接到[[Work Done by a Force|力做功]]和[[Conservation of Energy|能量守恒]]，在理论能量原理和实际系统性能之间架起桥梁。
+**中文：**
+功率与效率是力学中的基本概念，描述了做功的快慢以及能量从一种形式转换为另一种形式的有效程度。功率量化了做功或能量传递的速率，而效率则衡量有用能量输出相对于总能量输入的比例。这些概念连接了抽象的能量原理与现实应用，从设计电动机和发动机到理解生物系统和可再生能源技术。在剑桥 9702 和爱德思 IAL A-Level 物理中，功率和效率对于分析机械系统、电路和热过程至关重要。它们经常出现在涉及计算、图表解读和实际情境的考试题目中，是进一步学习物理和工程学的基础。
 
-> 📷 **IMAGE PROMPT — [POW-OVW-01]: Power and Efficiency Overview**
-> A split infographic showing: Left side — a car engine with arrows showing fuel energy input, useful kinetic energy output, and waste heat/sound; Right side — a light bulb with electrical energy input, useful light output, and waste heat. Labels in English and Chinese. Style: clean educational diagram with blue (useful) and red (waste) arrows. Exam importance: HIGH — visualises the core concept of efficiency.
+---
 
 # 2. Syllabus Learning Objectives / 考纲学习目标
 
-| CAIE 9702 (3.3 h-k) | Edexcel IAL (WPH11 U1: 4.12-4.15) |
-|:---|:---|
-| h) Define power as work done per unit time, $P = \frac{W}{t}$ | 4.12 Define power as the rate of transfer of energy |
-| i) Derive and use $P = Fv$ | 4.13 Use $P = Fv$ for constant force and velocity |
-| j) Define efficiency as useful energy output / total energy input | 4.14 Define efficiency as useful output energy / total input energy |
-| k) Solve problems involving power and efficiency | 4.15 Solve problems involving power, efficiency, and energy transfers |
+| CAIE 9702 | Edexcel IAL |
+|-----------|-------------|
+| 3.3(h) Define power as work done per unit time and derive power = Fv | 4.12 Define power as the rate of doing work |
+| 3.3(i) Recall and use power = Fv | 4.13 Use power = Fv for constant force and velocity |
+| 3.3(j) Define efficiency as useful energy output / total energy input | 4.14 Define efficiency as useful power output / total power input |
+| 3.3(k) Solve problems involving efficiency | 4.15 Solve problems involving efficiency |
 
-**Examiner Expectations / 考官期望:**
-- **English:** Candidates must be able to distinguish between power (rate) and energy (total amount). For efficiency, the key is identifying "useful" output — waste energy is not counted. In calculations, ensure consistent units (W for power, J for energy, s for time). The $P = Fv$ derivation is examinable in both boards.
-- **中文:** 考生必须能够区分功率（速率）和能量（总量）。对于效率，关键是识别"有用"输出——浪费的能量不计入。计算中确保单位一致（功率用W，能量用J，时间用s）。$P = Fv$的推导在两个考试局中都是可考的。
+**Examiner Expectations / 考官期望：**
 
-> 📋 **CIE Only:** CAIE explicitly requires deriving $P = Fv$ from $P = W/t$ and $W = Fs$. Efficiency is tested in both Paper 1 (MCQ) and Paper 2 (structured).
-> 📋 **Edexcel Only:** Edexcel emphasises real-world applications — car engines, electrical appliances, and renewable energy systems. Efficiency is often linked to [[Conservation of Energy]] in exam questions.
+**English:**
+- Candidates must be able to define power and efficiency using precise, exam-standard wording.
+- Derivation of power = Fv from work done = Fs and power = work done / time is expected.
+- Efficiency calculations must use either energy or power ratios, with answers expressed as decimals or percentages.
+- Common pitfalls include confusing power with work, forgetting to convert units (e.g., minutes to seconds), and misidentifying useful vs. wasted energy.
+- Graph questions may involve interpreting power-time or force-velocity relationships.
+
+**中文：**
+- 考生必须能够使用精确的考试标准措辞定义功率和效率。
+- 需要能够从做功 = Fs 和功率 = 做功 / 时间推导出功率 = Fv。
+- 效率计算必须使用能量或功率比值，答案以小数或百分比表示。
+- 常见错误包括混淆功率与功、忘记单位换算（如分钟转秒）、以及错误识别有用能量与浪费能量。
+- 图表题可能涉及解读功率-时间或力-速度关系。
+
+> 📋 **CIE Only:** Efficiency is defined using energy ratio (useful energy output / total energy input). Problems may involve Sankey diagrams.
+> 
+> 📋 **Edexcel Only:** Efficiency is defined using power ratio (useful power output / total power input). Questions often link to electrical circuits and motors.
+
+---
 
 # 3. Core Definitions / 核心定义
 
 | Term (EN/CN) | Definition (EN) | Definition (CN) | Common Mistakes / 常见错误 |
-|:---|:---|:---|:---|
-| **Power / 功率** | The rate at which work is done or energy is transferred | 做功或能量转移的速率 | Confusing power with energy — power is NOT the same as energy |
-| **Efficiency / 效率** | The ratio of useful energy (or power) output to total energy (or power) input, often expressed as a percentage | 有用能量（或功率）输出与总能量（或功率）输入的比率，通常以百分比表示 | Forgetting to multiply by 100% when asked for percentage; using total output instead of useful output |
-| **Useful Energy / 有用能量** | The energy that is converted into the desired form for a specific purpose | 转换为特定目的所需形式的能量 | Including waste energy in the "useful" calculation |
-| **Waste Energy / 浪费的能量** | Energy that is not usefully transferred, often dissipated to the surroundings (e.g., heat, sound) | 未被有效转移的能量，通常耗散到周围环境中（如热量、声音） | Thinking waste energy is "lost" — it is still conserved, just not useful |
-| **Rate of Energy Transfer / 能量转移速率** | The amount of energy transferred per unit time, measured in watts (W) | 单位时间内转移的能量，以瓦特（W）为单位 | Using J instead of W for power values |
-| **Mechanical Power / 机械功率** | The power associated with mechanical work, $P = Fv$ for constant force and velocity | 与机械功相关的功率，恒定力和速度下$P = Fv$ | Forgetting that $v$ must be in the direction of $F$ |
+|--------------|-----------------|-----------------|---------------------------|
+| [[Power]] / 功率 | The rate at which work is done or energy is transferred. | 做功或能量传递的速率。 | Confusing power with work; forgetting time factor. 混淆功率与功；忘记时间因素。 |
+| [[Efficiency]] / 效率 | The ratio of useful energy (or power) output to total energy (or power) input, often expressed as a percentage. | 有用能量（或功率）输出与总能量（或功率）输入的比值，通常以百分比表示。 | Using wrong ratio (e.g., input/output instead of output/input); not converting to percentage. 使用错误比值（如输入/输出而非输出/输入）；未转换为百分比。 |
+| [[Work Done by a Force]] / 力做的功 | The product of force and displacement in the direction of the force. | 力与沿力方向位移的乘积。 | Forgetting the cosine factor for non-parallel forces. 忘记非平行力的余弦因子。 |
+| [[Conservation of Energy]] / 能量守恒 | Energy cannot be created or destroyed, only transferred from one form to another. | 能量不能被创造或消灭，只能从一种形式转换为另一种形式。 | Ignoring energy losses in efficiency calculations. 在效率计算中忽略能量损失。 |
+| Useful Energy Output / 有用能量输出 | The energy that is converted into the desired form for a specific purpose. | 转换为特定目的所需形式的能量。 | Including wasted energy in the numerator. 将浪费的能量包含在分子中。 |
+| Wasted Energy / 浪费的能量 | Energy that is dissipated to the surroundings, often as heat or sound, and is not useful. | 耗散到环境中（通常以热或声音形式）且无用的能量。 | Assuming all energy is useful; forgetting to account for friction. 假设所有能量都有用；忘记考虑摩擦。 |
+
+---
 
 # 4. Key Concepts Explained / 关键概念详解
 
-## 4.1 Definition of Power / 功率的定义
+## 4.1 Power / 功率
 
 ### Explanation / 解释
-**English:** Power ($P$) is defined as the rate of doing work or transferring energy. Mathematically, $P = \frac{W}{t} = \frac{\Delta E}{t}$, where $W$ is work done (J), $\Delta E$ is energy transferred (J), and $t$ is time (s). The SI unit of power is the watt (W), where 1 W = 1 J s⁻¹. A power of 1 watt means 1 joule of work is done every second. This concept connects directly to [[Work Done by a Force]] — if a force does work quickly, it has high power.
+**English:**
+Power ($P$) is defined as the rate at which [[Work Done by a Force|work is done]] or energy is transferred. Mathematically, $P = \frac{W}{t}$, where $W$ is work done (in joules) and $t$ is time taken (in seconds). The SI unit of power is the watt (W), where 1 W = 1 J s⁻¹. Power is a scalar quantity. A more powerful machine does the same amount of work in less time, or more work in the same time. For example, a 100 W light bulb transfers 100 J of electrical energy into light and heat every second. Power is closely related to [[Conservation of Energy]] because the total power input must equal the sum of useful power output and wasted power output.
 
-**中文:** 功率（$P$）定义为做功或能量转移的速率。数学上，$P = \frac{W}{t} = \frac{\Delta E}{t}$，其中$W$是做的功（J），$\Delta E$是转移的能量（J），$t$是时间（s）。功率的SI单位是瓦特（W），其中1 W = 1 J s⁻¹。1瓦特的功率意味着每秒做1焦耳的功。这个概念直接连接到[[Work Done by a Force|力做功]]——如果力做功快，则功率高。
+**中文：**
+功率（$P$）定义为[[力做的功|做功]]或能量传递的速率。数学上，$P = \frac{W}{t}$，其中 $W$ 是做的功（单位焦耳），$t$ 是所用时间（单位秒）。功率的 SI 单位是瓦特（W），1 W = 1 J s⁻¹。功率是标量。更强大的机器能在更短时间内完成相同量的功，或在相同时间内完成更多功。例如，一个 100 W 的灯泡每秒将 100 J 的电能转换为光和热。功率与[[能量守恒]]密切相关，因为总功率输入必须等于有用功率输出与浪费功率输出之和。
 
 ### Physical Meaning / 物理意义
-**English:** Power tells us how quickly energy is being used or transferred. A high-power device (e.g., a 2000 W kettle) transfers energy much faster than a low-power device (e.g., a 10 W LED bulb). Power is not about how much total energy is used, but the rate of usage.
+**English:**
+Power tells us how quickly energy is being used or transferred. In everyday life, a 2000 W kettle heats water faster than a 1000 W kettle because it transfers electrical energy to thermal energy at a higher rate. In mechanics, a car engine with higher power can accelerate faster or maintain a higher speed against resistive forces. Power is the "speed" of energy transfer.
 
-**中文:** 功率告诉我们能量被使用或转移的快慢。高功率设备（如2000 W的水壶）比低功率设备（如10 W的LED灯泡）转移能量快得多。功率不是关于使用了多少总能量，而是使用速率。
+**中文：**
+功率告诉我们能量被使用或传递的快慢。在日常生活中，一个 2000 W 的水壶比 1000 W 的水壶加热水更快，因为它以更高的速率将电能转换为热能。在力学中，功率更高的汽车发动机可以更快加速，或在抵抗阻力时保持更高速度。功率是能量传递的"速度"。
 
 ### Common Misconceptions / 常见误区
-- **Power = Energy:** Students often think high power means high energy. A high-power device used for a short time may use less total energy than a low-power device used for a long time.
-- **Power is always constant:** In many real situations, power varies with time. The formula $P = W/t$ gives average power when $W$ is total work over total time.
-- **Watts are only for electricity:** Watts apply to ALL forms of power — mechanical, thermal, electrical, etc.
+1. **Power is the same as work:** Power is work per unit time, not work itself. A machine can do the same work but with different power depending on time taken.
+2. **High power always means high efficiency:** A high-power device may waste a lot of energy as heat. Efficiency is a separate concept.
+3. **Power = Fv applies only when force and velocity are constant:** Actually, it applies for instantaneous values too, but careful with varying forces.
 
 ### Exam Tips / 考试提示
-**English:** Always check units — if time is in minutes or hours, convert to seconds. For average power, use total work/total time. For instantaneous power, use $P = Fv$.
-**中文:** 始终检查单位——如果时间以分钟或小时为单位，转换为秒。对于平均功率，使用总功/总时间。对于瞬时功率，使用$P = Fv$。
+**English:**
+- Always check units: time must be in seconds, not minutes or hours.
+- For power = Fv, ensure force and velocity are in the same direction.
+- In efficiency questions, identify which energy is "useful" and which is "wasted" based on the context.
+- Cambridge often asks for derivation of power = Fv from work done = Fs.
+- Edexcel frequently links power to electrical circuits (P = IV) and motors.
 
-> 📷 **IMAGE PROMPT — [POW-KEY-01]: Power Comparison Diagram**
-> Side-by-side comparison of a 2000W kettle and a 10W LED bulb. Show energy transfer over 1 minute: kettle transfers 120,000 J (mostly heat), bulb transfers 600 J (mostly light). Labels: "High Power = Fast Energy Transfer" and "Low Power = Slow Energy Transfer". Style: clean infographic with bar charts. Exam importance: MEDIUM — helps visualise rate concept.
+**中文：**
+- 始终检查单位：时间必须用秒，而非分钟或小时。
+- 对于功率 = Fv，确保力和速度方向相同。
+- 在效率问题中，根据上下文识别哪些能量是"有用的"，哪些是"浪费的"。
+- 剑桥常要求从做功 = Fs 推导功率 = Fv。
+- 爱德思常将功率与电路（P = IV）和电动机联系起来。
+
+---
 
 ## 4.2 Power and Velocity / 功率与速度
 
 ### Explanation / 解释
-**English:** For an object moving at constant velocity $v$ under a constant force $F$ in the direction of motion, power can be expressed as $P = Fv$. This is derived from $P = \frac{W}{t}$ and $W = Fs$, giving $P = \frac{Fs}{t} = F\left(\frac{s}{t}\right) = Fv$. This relationship is crucial for understanding vehicle power — a car engine must produce more power to maintain higher speeds against resistive forces. This connects to [[Work Done by a Force]] through the work equation.
+**English:**
+For an object moving under a constant force $F$ in the direction of motion, the power developed is given by $P = Fv$, where $v$ is the instantaneous velocity. This is derived from $P = \frac{W}{t} = \frac{Fs}{t} = F \cdot \frac{s}{t} = Fv$. This relationship is crucial for understanding vehicle performance: at constant power, as velocity increases, the driving force decreases. For example, a car engine delivering constant power can provide high force at low speeds (useful for acceleration or climbing hills) but lower force at high speeds (where air resistance dominates). This explains why vehicles have gearboxes — to match the engine's power output to the required force-velocity trade-off.
 
-**中文:** 对于在运动方向上受恒定力$F$作用下以恒定速度$v$运动的物体，功率可以表示为$P = Fv$。这是从$P = \frac{W}{t}$和$W = Fs$推导出来的，得到$P = \frac{Fs}{t} = F\left(\frac{s}{t}\right) = Fv$。这个关系对于理解车辆功率至关重要——汽车发动机必须产生更多功率来克服阻力以维持更高速度。这通过功方程连接到[[Work Done by a Force|力做功]]。
+**中文：**
+对于在运动方向上受恒定力 $F$ 作用的物体，其功率由 $P = Fv$ 给出，其中 $v$ 是瞬时速度。这是从 $P = \frac{W}{t} = \frac{Fs}{t} = F \cdot \frac{s}{t} = Fv$ 推导出来的。这个关系对于理解车辆性能至关重要：在恒定功率下，随着速度增加，驱动力减小。例如，输出恒定功率的汽车发动机在低速时能提供高力（适用于加速或爬坡），但在高速时力较小（此时空气阻力占主导）。这解释了为什么车辆有变速箱——以匹配发动机功率输出到所需的力-速度权衡。
 
 ### Physical Meaning / 物理意义
-**English:** $P = Fv$ shows that for a given power output, a larger force means a smaller velocity, and vice versa. This explains why vehicles use low gears (high force, low speed) for climbing hills and high gears (low force, high speed) for cruising on flat roads. The force $F$ is typically the driving force (tractive effort) minus resistive forces.
+**English:**
+$P = Fv$ shows that for a given power, force and velocity are inversely proportional. A cyclist climbing a steep hill uses a low gear to increase force at the expense of speed, while on flat ground a high gear allows higher speed with less force. This principle applies to all machines: electric motors, pumps, and even biological systems like muscles.
 
-**中文:** $P = Fv$表明，对于给定的功率输出，较大的力意味着较小的速度，反之亦然。这解释了为什么车辆在上坡时使用低档位（大力、低速），在平路巡航时使用高档位（小力、高速）。力$F$通常是驱动力（牵引力）减去阻力。
+**中文：**
+$P = Fv$ 表明，对于给定功率，力和速度成反比。骑自行车者爬陡坡时使用低档位以牺牲速度为代价增加力，而在平地上高档位允许以较小的力获得更高速度。这个原理适用于所有机器：电动机、泵，甚至像肌肉这样的生物系统。
 
 ### Common Misconceptions / 常见误区
-- **$F$ is always the net force:** In $P = Fv$, $F$ is the force doing work (e.g., driving force), not necessarily the net force.
-- **$v$ must be constant:** The formula $P = Fv$ gives instantaneous power when $F$ and $v$ are instantaneous values. For average power, use average values.
-- **Direction doesn't matter:** $F$ and $v$ must be in the same direction — power is a scalar, but only the component of force in the direction of velocity does work.
+1. **$P = Fv$ only works for constant velocity:** It works for instantaneous values even if velocity changes.
+2. **Force and velocity can be in any direction:** They must be parallel (same direction) for the simple form; otherwise use $P = Fv\cos\theta$.
+3. **Power is always constant:** In many real situations, power varies (e.g., engine power curves).
 
 ### Exam Tips / 考试提示
-**English:** Derivation of $P = Fv$ is commonly tested. Remember: $P = \frac{W}{t} = \frac{Fs}{t} = Fv$. For vehicles, the driving force equals resistive forces at constant speed. For accelerating objects, use $P = Fv$ with instantaneous values.
-**中文:** $P = Fv$的推导是常见考点。记住：$P = \frac{W}{t} = \frac{Fs}{t} = Fv$。对于车辆，匀速时驱动力等于阻力。对于加速物体，使用瞬时值的$P = Fv$。
+**English:**
+- Derivation of $P = Fv$ is a common exam question — memorise the steps.
+- For vehicles, identify resistive forces (friction, air resistance) and driving force.
+- At maximum speed, driving force equals resistive force, so $P = F_{\text{resist}} \times v_{\text{max}}$.
+- Graph questions may show force-velocity or power-velocity relationships.
 
-> 📷 **IMAGE PROMPT — [POW-KEY-02]: Power-Velocity Relationship for a Car**
-> Graph showing power output vs velocity for a car engine. Two curves: one for low gear (high force, low max speed) and one for high gear (low force, high max speed). Labels: "Constant Power Region", "Tractive Effort", "Resistive Forces". Include a small car diagram showing forces. Style: technical graph with clear annotations. Exam importance: HIGH — frequently tested in both boards.
+**中文：**
+- $P = Fv$ 的推导是常见考题——记住步骤。
+- 对于车辆，识别阻力（摩擦、空气阻力）和驱动力。
+- 在最大速度时，驱动力等于阻力，所以 $P = F_{\text{resist}} \times v_{\text{max}}$。
+- 图表题可能显示力-速度或功率-速度关系。
 
-## 4.3 Efficiency of Energy Transfers / 能量转移的效率
+> 📷 **IMAGE PROMPT — [PWR-01]: Force-Velocity Relationship for Constant Power**
+>
+> A graph showing force (y-axis) against velocity (x-axis) for a constant power output. The curve is a hyperbola (inverse relationship). Label axes: "Force / N" and "Velocity / m s⁻¹". Add annotations: "P = constant", "High force, low speed" in bottom-left region, "Low force, high speed" in top-right region. Include a dashed line showing the resistive force increasing with velocity, and mark the intersection as "Maximum speed". Use clean, educational style with gridlines.
+
+---
+
+## 4.3 Efficiency / 效率
 
 ### Explanation / 解释
-**English:** Efficiency ($\eta$) measures how well a device converts input energy into useful output energy. It is defined as: $\eta = \frac{\text{Useful Energy Output}}{\text{Total Energy Input}} \times 100\%$ (for percentage) or $\eta = \frac{\text{Useful Power Output}}{\text{Total Power Input}}$ (as a decimal). Efficiency is always less than 100% due to energy dissipation (waste) to the surroundings, consistent with [[Conservation of Energy]] — energy is conserved, but some becomes less useful.
+**English:**
+Efficiency ($\eta$) is a measure of how well a device or system converts input energy (or power) into useful output energy (or power). It is defined as:
 
-**中文:** 效率（$\eta$）衡量设备将输入能量转换为有用输出能量的效果。定义为：$\eta = \frac{\text{有用能量输出}}{\text{总能量输入}} \times 100\%$（百分比形式）或$\eta = \frac{\text{有用功率输出}}{\text{总功率输入}}$（小数形式）。由于能量耗散（浪费）到周围环境，效率总是小于100%，这与[[Conservation of Energy|能量守恒]]一致——能量守恒，但部分变得不那么有用。
+$$\eta = \frac{\text{useful energy output}}{\text{total energy input}} \times 100\%$$
+
+or equivalently:
+
+$$\eta = \frac{\text{useful power output}}{\text{total power input}} \times 100\%$$
+
+Efficiency is a dimensionless quantity, always between 0 and 1 (or 0% and 100%). No real device is 100% efficient due to energy losses, primarily through friction, heat dissipation, sound, and electrical resistance. The [[Conservation of Energy]] principle ensures that total energy input equals useful energy output plus wasted energy output. Improving efficiency reduces energy waste, lowers costs, and benefits the environment.
+
+**中文：**
+效率（$\eta$）是衡量设备或系统将输入能量（或功率）转换为有用输出能量（或功率）有效程度的指标。其定义为：
+
+$$\eta = \frac{\text{有用能量输出}}{\text{总能量输入}} \times 100\%$$
+
+或等价地：
+
+$$\eta = \frac{\text{有用功率输出}}{\text{总功率输入}} \times 100\%$$
+
+效率是无量纲量，始终在 0 到 1（或 0% 到 100%）之间。由于能量损失（主要通过摩擦、热耗散、声音和电阻），没有实际设备是 100% 高效的。[[能量守恒]]原理确保总能量输入等于有用能量输出加上浪费的能量输出。提高效率可以减少能量浪费、降低成本并有益于环境。
 
 ### Physical Meaning / 物理意义
-**English:** Efficiency tells us how much of the input energy is actually used for the intended purpose. A 90% efficient motor converts 90% of electrical energy into mechanical work, with 10% wasted as heat. Improving efficiency reduces energy waste, saves money, and is environmentally beneficial. Real-world efficiencies: LED bulbs (~80%), car engines (~25-30%), electric motors (~85-95%).
+**English:**
+Efficiency tells us what fraction of the energy we put into a system actually does what we want. For example, a typical incandescent light bulb has an efficiency of about 10% — only 10% of the electrical energy is converted to light; the rest becomes heat. Modern LED bulbs can achieve 80-90% efficiency. In mechanics, a car engine's efficiency is around 25-30%, meaning most of the fuel's chemical energy is wasted as heat and sound rather than used for motion.
 
-**中文:** 效率告诉我们输入能量中有多少实际用于预期目的。效率为90%的电机将90%的电能转换为机械功，10%以热量形式浪费。提高效率可以减少能量浪费、节省资金，并且对环境有益。实际效率：LED灯泡（约80%）、汽车发动机（约25-30%）、电动机（约85-95%）。
+**中文：**
+效率告诉我们输入系统的能量中有多少实际做了我们想要的事情。例如，典型的白炽灯泡效率约为 10%——只有 10% 的电能转换为光；其余变成热。现代 LED 灯泡可以达到 80-90% 的效率。在力学中，汽车发动机的效率约为 25-30%，意味着燃料的大部分化学能作为热和声音被浪费，而非用于运动。
 
 ### Common Misconceptions / 常见误区
-- **Efficiency can exceed 100%:** Impossible due to [[Conservation of Energy]]. Any claim of >100% efficiency violates physics.
-- **Waste energy is destroyed:** Waste energy is not destroyed — it dissipates to the surroundings (e.g., as heat), increasing the thermal energy of the environment.
-- **Efficiency is the same as power:** Efficiency is a ratio (dimensionless), while power has units (W). They measure different things.
+1. **Efficiency can exceed 100%:** Impossible due to energy conservation. Perpetual motion machines are not physically possible.
+2. **Efficiency is the same as power:** Efficiency is a ratio; power is a rate. A device can have high power but low efficiency.
+3. **Using energy ratio vs. power ratio interchangeably without checking:** Both are valid, but ensure consistency — don't mix energy input with power output.
+4. **Forgetting to multiply by 100%:** Efficiency is often required as a percentage.
 
 ### Exam Tips / 考试提示
-**English:** Always identify what counts as "useful" output — this depends on the device's purpose. For a light bulb, useful output is light; for a motor, it's mechanical work. Use consistent forms — either both energy or both power in the ratio.
-**中文:** 始终确定什么算作"有用"输出——这取决于设备的用途。对于灯泡，有用输出是光；对于电机，是有用功。使用一致的形式——比率中要么都用能量，要么都用功率。
+**English:**
+- Clearly identify "useful" energy/power in the problem context.
+- For multi-step processes, calculate overall efficiency by multiplying individual efficiencies.
+- Sankey diagrams (energy flow diagrams) are used by Cambridge to visualise energy transfers.
+- Edexcel often asks for efficiency of electrical devices (motors, transformers).
+- Remember: $\text{Total energy input} = \text{Useful energy output} + \text{Wasted energy output}$.
 
-> 📷 **IMAGE PROMPT — [POW-KEY-03]: Energy Flow Diagram for Efficiency**
-> Sankey diagram showing energy flow through a device. Input arrow (100 J) splits into: Useful Output (green, 75 J) and Waste Energy (red, 25 J split into heat and sound). Labels: "Total Input Energy", "Useful Output Energy", "Waste Energy". Style: clean Sankey diagram with proportional arrow widths. Exam importance: HIGH — Sankey diagrams are common in exam questions.
+**中文：**
+- 在问题上下文中清楚识别"有用的"能量/功率。
+- 对于多步骤过程，通过乘以各个效率来计算总效率。
+- 剑桥使用桑基图（能量流图）来可视化能量传递。
+- 爱德思常问电气设备（电动机、变压器）的效率。
+- 记住：$\text{总能量输入} = \text{有用能量输出} + \text{浪费的能量输出}$。
+
+> 📷 **IMAGE PROMPT — [PWR-02]: Sankey Diagram for Energy Efficiency**
+>
+> A Sankey diagram showing energy flow through a device (e.g., a car engine). On the left, a thick arrow labelled "Total Energy Input / 总能量输入" (e.g., 100 J). The arrow splits into multiple branches: a thick branch going right labelled "Useful Energy Output / 有用能量输出" (e.g., 25 J), and thinner branches going down labelled "Heat Loss / 热损失" (e.g., 60 J), "Sound Loss / 声音损失" (e.g., 10 J), and "Friction Loss / 摩擦损失" (e.g., 5 J). Use different colours: green for useful, red/orange for wasted. Include percentage labels. Clean, educational diagram style.
+
+---
 
 # 5. Essential Equations / 核心公式
 
 ## 5.1 Power as Rate of Work / 功率作为做功速率
 
-$$P = \frac{W}{t} = \frac{\Delta E}{t}$$
+**Equation / 公式:**
+$$P = \frac{W}{t}$$
 
-| Symbol (符号) | Meaning (EN/CN) | Unit (单位) |
-|:---|:---|:---|
-| $P$ | Power / 功率 | W (watts / 瓦特) |
-| $W$ | Work done / 做的功 | J (joules / 焦耳) |
-| $\Delta E$ | Energy transferred / 转移的能量 | J (joules / 焦耳) |
-| $t$ | Time taken / 所用时间 | s (seconds / 秒) |
+**Variables / 变量:**
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| $P$ | Power | 功率 | W (watt / 瓦特) |
+| $W$ | Work done | 做的功 | J (joule / 焦耳) |
+| $t$ | Time taken | 所用时间 | s (second / 秒) |
 
-**Derivation / 推导:** Definition — power is work per unit time.
-**Conditions / 条件:** $W$ is total work done, $t$ is total time — gives average power.
-**Limitations / 限制:** Does not account for varying power — use instantaneous formulas for changing rates.
-**Rearrangements / 变形:** $W = Pt$, $t = \frac{W}{P}$
+**Derivation / 推导:**
+**English:**
+Power is defined as the rate of doing work. By definition, $P = \frac{W}{t}$. This is a fundamental definition, not derived from other equations.
+
+**中文：**
+功率定义为做功的速率。根据定义，$P = \frac{W}{t}$。这是一个基本定义，而非从其他方程推导而来。
+
+**Conditions / 适用条件:**
+**English:**
+- Work done $W$ must be constant over the time interval $t$.
+- If work varies with time, $P = \frac{W}{t}$ gives average power over that interval.
+
+**中文：**
+- 做的功 $W$ 必须在时间间隔 $t$ 内恒定。
+- 如果功随时间变化，$P = \frac{W}{t}$ 给出该时间间隔内的平均功率。
+
+**Limitations / 局限性:**
+**English:**
+- Does not give instantaneous power if work varies with time.
+- Cannot be used if time is zero (division by zero).
+
+**中文：**
+- 如果功随时间变化，不能给出瞬时功率。
+- 如果时间为零则不能使用（除以零）。
+
+**Rearrangements / 变形:**
+$$W = Pt \quad \text{and} \quad t = \frac{W}{P}$$
+
+---
 
 ## 5.2 Power and Velocity / 功率与速度
 
+**Equation / 公式:**
 $$P = Fv$$
 
-| Symbol (符号) | Meaning (EN/CN) | Unit (单位) |
-|:---|:---|:---|
-| $P$ | Power / 功率 | W (watts / 瓦特) |
-| $F$ | Force in direction of motion / 运动方向上的力 | N (newtons / 牛顿) |
-| $v$ | Velocity / 速度 | m s⁻¹ (米每秒) |
+**Variables / 变量:**
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| $P$ | Power | 功率 | W |
+| $F$ | Force in direction of motion | 运动方向上的力 | N (newton / 牛顿) |
+| $v$ | Velocity | 速度 | m s⁻¹ (metre per second / 米每秒) |
 
-**Derivation / 推导:** $P = \frac{W}{t} = \frac{Fs}{t} = F\left(\frac{s}{t}\right) = Fv$
-**Conditions / 条件:** Constant force $F$ in direction of velocity $v$; $v$ can be instantaneous or average.
-**Limitations / 限制:** Only valid when force and velocity are in the same direction. For non-constant forces, use instantaneous values.
-**Rearrangements / 变形:** $F = \frac{P}{v}$, $v = \frac{P}{F}$
+**Derivation / 推导:**
+**English:**
+Starting from the definition of power:
+$$P = \frac{W}{t}$$
+Work done by a constant force $F$ over displacement $s$:
+$$W = Fs$$
+Substituting:
+$$P = \frac{Fs}{t}$$
+Since velocity $v = \frac{s}{t}$:
+$$P = Fv$$
+
+**中文：**
+从功率的定义开始：
+$$P = \frac{W}{t}$$
+恒定力 $F$ 在位移 $s$ 上做的功：
+$$W = Fs$$
+代入：
+$$P = \frac{Fs}{t}$$
+由于速度 $v = \frac{s}{t}$：
+$$P = Fv$$
+
+**Conditions / 适用条件:**
+**English:**
+- Force $F$ must be constant and in the same direction as velocity $v$.
+- For instantaneous power, use instantaneous values of $F$ and $v$.
+- For average power over a journey, use average force and average velocity.
+
+**中文：**
+- 力 $F$ 必须恒定且与速度 $v$ 方向相同。
+- 对于瞬时功率，使用 $F$ 和 $v$ 的瞬时值。
+- 对于一段行程的平均功率，使用平均力和平均速度。
+
+**Limitations / 局限性:**
+**English:**
+- If force and velocity are not parallel, use $P = Fv\cos\theta$ where $\theta$ is the angle between them.
+- Does not account for varying force or velocity unless using instantaneous values.
+
+**中文：**
+- 如果力和速度不平行，使用 $P = Fv\cos\theta$，其中 $\theta$ 是它们之间的夹角。
+- 除非使用瞬时值，否则不考虑变化的力或速度。
+
+**Rearrangements / 变形:**
+$$F = \frac{P}{v} \quad \text{and} \quad v = \frac{P}{F}$$
+
+---
 
 ## 5.3 Efficiency / 效率
 
-$$\eta = \frac{E_{\text{useful}}}{E_{\text{total}}} \times 100\% \quad \text{or} \quad \eta = \frac{P_{\text{useful}}}{P_{\text{total}}}$$
+**Equation / 公式:**
+$$\eta = \frac{\text{useful energy output}}{\text{total energy input}} \times 100\%$$
 
-| Symbol (符号) | Meaning (EN/CN) | Unit (单位) |
-|:---|:---|:---|
-| $\eta$ | Efficiency / 效率 | Dimensionless (无量纲) or % |
-| $E_{\text{useful}}$ | Useful energy output / 有用能量输出 | J (joules / 焦耳) |
-| $E_{\text{total}}$ | Total energy input / 总能量输入 | J (joules / 焦耳) |
-| $P_{\text{useful}}$ | Useful power output / 有用功率输出 | W (watts / 瓦特) |
-| $P_{\text{total}}$ | Total power input / 总功率输入 | W (watts / 瓦特) |
+or
 
-**Derivation / 推导:** Definition — ratio of useful to total energy/power.
-**Conditions / 条件:** Both numerator and denominator must be in same units (both energy or both power).
-**Limitations / 限制:** Cannot exceed 1 (100%) due to [[Conservation of Energy]].
-**Rearrangements / 变形:** $E_{\text{useful}} = \eta E_{\text{total}}$, $E_{\text{waste}} = E_{\text{total}} - E_{\text{useful}}$
+$$\eta = \frac{\text{useful power output}}{\text{total power input}} \times 100\%$$
 
-## 5.4 Waste Energy / 浪费的能量
+**Variables / 变量:**
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| $\eta$ | Efficiency | 效率 | dimensionless (无量纲) or % |
+| $E_{\text{useful}}$ | Useful energy output | 有用能量输出 | J |
+| $E_{\text{total}}$ | Total energy input | 总能量输入 | J |
+| $P_{\text{useful}}$ | Useful power output | 有用功率输出 | W |
+| $P_{\text{total}}$ | Total power input | 总功率输入 | W |
 
-$$E_{\text{waste}} = E_{\text{total}} - E_{\text{useful}}$$
+**Derivation / 推导:**
+**English:**
+Efficiency is defined by the ratio of useful output to total input. This is a definition, not derived. The percentage form comes from multiplying the decimal ratio by 100%.
 
-| Symbol (符号) | Meaning (EN/CN) | Unit (单位) |
-|:---|:---|:---|
-| $E_{\text{waste}}$ | Waste energy / 浪费的能量 | J (joules / 焦耳) |
-| $E_{\text{total}}$ | Total energy input / 总能量输入 | J (joules / 焦耳) |
-| $E_{\text{useful}}$ | Useful energy output / 有用能量输出 | J (joules / 焦耳) |
+**中文：**
+效率由有用输出与总输入的比值定义。这是一个定义，而非推导而来。百分比形式来自将小数比值乘以 100%。
 
-**Derivation / 推导:** From [[Conservation of Energy]] — total input = useful output + waste.
-**Conditions / 条件:** All forms of waste (heat, sound, light, etc.) are included.
-**Limitations / 限制:** Waste energy is not "lost" — it dissipates to surroundings.
+**Conditions / 适用条件:**
+**English:**
+- Both numerator and denominator must be in the same units (both energy or both power).
+- Efficiency is always between 0 and 1 (or 0% and 100%).
+- Can be applied to any energy conversion process.
+
+**中文：**
+- 分子和分母必须使用相同单位（同为能量或同为功率）。
+- 效率始终在 0 到 1（或 0% 到 100%）之间。
+- 可应用于任何能量转换过程。
+
+**Limitations / 局限性:**
+**English:**
+- Does not indicate where energy losses occur — only the overall ratio.
+- Cannot exceed 100% due to conservation of energy.
+
+**中文：**
+- 不指示能量损失发生在何处——仅给出总体比值。
+- 由于能量守恒，不能超过 100%。
+
+**Rearrangements / 变形:**
+$$\text{Useful energy output} = \eta \times \text{Total energy input}$$
+$$\text{Wasted energy} = \text{Total energy input} - \text{Useful energy output}$$
+
+---
 
 # 6. Graphs and Relationships / 图表与关系
 
-## 6.1 Power vs Time Graph / 功率-时间图
+## 6.1 Power-Time Graph / 功率-时间图
 
-**Axes / 坐标轴:** X-axis: Time (s), Y-axis: Power (W)
-**Shape / 形状:** 
-- Constant power: horizontal line
-- Varying power: curve or stepped line
-**Gradient Meaning / 斜率含义:** Rate of change of power (not commonly used)
-**Area Meaning / 面积含义:** Area under graph = total energy transferred ($E = \int P \, dt$ or $E = P \times t$ for constant power)
-**Exam Interpretation / 考试解读:** 
-- **English:** The area under a power-time graph gives the total work done or energy transferred. For constant power, simply multiply $P \times t$. For varying power, estimate area or use integration.
-- **中文:** 功率-时间图下的面积给出总做功或能量转移。对于恒定功率，只需乘以$P \times t$。对于变化功率，估算面积或使用积分。
-**Common Questions / 常见问题:** 
-- Calculate total energy from a power-time graph
-- Compare energy usage of different devices over time
-- Determine average power from total energy and time
+### Axes / 坐标轴
+**English:** x-axis: Time (s); y-axis: Power (W)
+**中文：** x轴：时间 (s)；y轴：功率 (W)
 
-> 📷 **IMAGE PROMPT — [POW-GPH-01]: Power-Time Graph**
-> Graph showing two scenarios: (1) Constant 100 W for 10 s — horizontal line, area = 1000 J; (2) Varying power from 0 to 200 W over 10 s — diagonal line, area = 1000 J (triangle). Labels: "Area = Energy Transferred", "Constant Power", "Varying Power". Style: clear graph with shaded areas. Exam importance: HIGH — area interpretation is frequently tested.
+### Shape / 形状
+**English:**
+- Constant power: horizontal line.
+- Varying power: any curve (e.g., increasing, decreasing, sinusoidal).
+- Area under the graph represents work done or energy transferred.
+
+**中文：**
+- 恒定功率：水平线。
+- 变化功率：任意曲线（如增加、减少、正弦波）。
+- 图线下方面积表示做的功或传递的能量。
+
+### Gradient Meaning / 斜率含义
+**English:**
+The gradient of a power-time graph has no direct physical meaning in standard A-Level physics. It represents the rate of change of power with time.
+
+**中文：**
+功率-时间图的斜率在标准 A-Level 物理中没有直接的物理意义。它表示功率随时间的变化率。
+
+### Area Meaning / 面积含义
+**English:**
+The area under a power-time graph equals the total work done or energy transferred:
+$$\text{Area} = \int P \, dt = W$$
+
+**中文：**
+功率-时间图下的面积等于做的总功或传递的总能量：
+$$\text{Area} = \int P \, dt = W$$
+
+### Exam Interpretation / 考试解读
+**English:**
+- Calculate area by counting squares or using geometric formulas (rectangle, triangle, trapezium).
+- For non-uniform power, use average power: $W = P_{\text{avg}} \times t$.
+- Cambridge may ask to estimate area from a curved graph.
+
+**中文：**
+- 通过数方格或使用几何公式（矩形、三角形、梯形）计算面积。
+- 对于非均匀功率，使用平均功率：$W = P_{\text{avg}} \times t$。
+- 剑桥可能要求从曲线图估算面积。
+
+### Common Questions / 常见问题
+**English:**
+- "Calculate the work done from the power-time graph."
+- "Determine the average power over a given time interval."
+- "Sketch the power-time graph for a car accelerating at constant force."
+
+**中文：**
+- "从功率-时间图计算做的功。"
+- "确定给定时间间隔内的平均功率。"
+- "画出以恒定力加速的汽车的功率-时间图。"
+
+---
 
 ## 6.2 Force-Velocity Graph for Constant Power / 恒定功率的力-速度图
 
-**Axes / 坐标轴:** X-axis: Velocity (m s⁻¹), Y-axis: Force (N)
-**Shape / 形状:** Hyperbolic curve — $F = P/v$, so as $v$ increases, $F$ decreases
-**Gradient Meaning / 斜率含义:** Not directly meaningful
-**Area Meaning / 面积含义:** Area under curve = work done (not commonly used in this form)
-**Exam Interpretation / 考试解读:**
-- **English:** For a constant power source (e.g., car engine at full throttle), the driving force decreases as speed increases. This explains gear ratios — low gear gives high force at low speed (hill climbing), high gear gives low force at high speed (cruising).
-- **中文:** 对于恒定功率源（如全油门汽车发动机），驱动力随速度增加而减小。这解释了传动比——低档位在低速时提供大力（爬坡），高档位在高速时提供小力（巡航）。
-**Common Questions / 常见问题:**
-- Calculate force at a given speed for a known power
-- Explain why cars need lower gears for hill climbing
-- Determine maximum speed given power and resistive forces
+### Axes / 坐标轴
+**English:** x-axis: Velocity (m s⁻¹); y-axis: Force (N)
+**中文：** x轴：速度 (m s⁻¹)；y轴：力 (N)
 
-> 📷 **IMAGE PROMPT — [POW-GPH-02]: Force-Velocity Hyperbola**
-> Graph of $F = P/v$ for a 50 kW engine. Show points at 10 m/s (5000 N), 25 m/s (2000 N), 50 m/s (1000 N). Add a horizontal line for resistive force (e.g., 1000 N) — intersection gives maximum speed. Labels: "Constant Power Curve", "Resistive Force", "Maximum Speed". Style: technical graph with clear intersection point. Exam importance: HIGH — common in vehicle dynamics questions.
+### Shape / 形状
+**English:**
+A rectangular hyperbola: $F = \frac{P}{v}$. As velocity increases, force decreases inversely.
 
-## 6.3 Efficiency vs Load Graph / 效率-负载图
+**中文：**
+矩形双曲线：$F = \frac{P}{v}$。随着速度增加，力反比减小。
 
-**Axes / 坐标轴:** X-axis: Load (as % of maximum), Y-axis: Efficiency (%)
-**Shape / 形状:** Typically a bell-shaped curve — low efficiency at very low and very high loads, maximum efficiency at moderate load
-**Gradient Meaning / 斜率含义:** Rate of change of efficiency with load
-**Area Meaning / 面积含义:** Not applicable
-**Exam Interpretation / 考试解读:**
-- **English:** Most devices (motors, engines, generators) operate most efficiently at a specific load range. Operating at very low or very high loads reduces efficiency due to proportionally higher fixed losses (e.g., friction) or increased resistive losses.
-- **中文:** 大多数设备（电机、发动机、发电机）在特定负载范围内运行效率最高。在非常低或非常高的负载下运行会降低效率，因为固定损耗（如摩擦）或电阻损耗比例更高。
-**Common Questions / 常见问题:**
-- Identify the most efficient operating point
-- Explain why efficiency drops at low/high loads
-- Compare efficiency curves of different devices
+### Gradient Meaning / 斜率含义
+**English:**
+The gradient at any point is $-\frac{P}{v^2}$, which is not directly examined but shows how rapidly force changes with velocity.
+
+**中文：**
+任意点的斜率为 $-\frac{P}{v^2}$，不直接考查，但显示力随速度变化的快慢。
+
+### Area Meaning / 面积含义
+**English:**
+The area under the force-velocity graph has no standard physical meaning. However, the product $Fv$ at any point equals the power.
+
+**中文：**
+力-速度图下的面积没有标准物理意义。然而，任意点的乘积 $Fv$ 等于功率。
+
+### Exam Interpretation / 考试解读
+**English:**
+- Identify the constant power curve.
+- For a vehicle, add the resistive force line (often proportional to $v$ or $v^2$).
+- The intersection of driving force and resistive force curves gives maximum speed.
+- Cambridge may ask to explain why force decreases as speed increases for constant power.
+
+**中文：**
+- 识别恒定功率曲线。
+- 对于车辆，添加阻力线（通常与 $v$ 或 $v^2$ 成正比）。
+- 驱动力和阻力曲线的交点给出最大速度。
+- 剑桥可能要求解释为什么在恒定功率下力随速度增加而减小。
+
+### Common Questions / 常见问题
+**English:**
+- "A car engine delivers constant power. Sketch the force-velocity graph."
+- "Determine the maximum speed of a vehicle given power and resistive forces."
+- "Explain the shape of the force-velocity graph for a constant power source."
+
+**中文：**
+- "汽车发动机输出恒定功率。画出力-速度图。"
+- "给定功率和阻力，确定车辆的最大速度。"
+- "解释恒定功率源的力-速度图的形状。"
+
+---
+
+## 6.3 Efficiency vs. Load Graph / 效率-负载图
+
+### Axes / 坐标轴
+**English:** x-axis: Load (e.g., current, power output); y-axis: Efficiency (%)
+**中文：** x轴：负载（如电流、功率输出）；y轴：效率 (%)
+
+### Shape / 形状
+**English:**
+Typically a curve that rises to a maximum then falls. Most devices have an optimal operating point where efficiency is highest. For example, electric motors have maximum efficiency at around 70-80% of full load.
+
+**中文：**
+通常是一条先上升至最大值然后下降的曲线。大多数设备有一个最佳工作点，效率最高。例如，电动机在约 70-80% 满载时效率最高。
+
+### Gradient Meaning / 斜率含义
+**English:**
+The gradient shows how efficiency changes with load. Positive gradient means efficiency increases with load; negative means it decreases.
+
+**中文：**
+斜率显示效率如何随负载变化。正斜率表示效率随负载增加而增加；负斜率表示效率随负载增加而减小。
+
+### Area Meaning / 面积含义
+**English:**
+No standard area meaning for this graph.
+
+**中文：**
+此图没有标准面积含义。
+
+### Exam Interpretation / 考试解读
+**English:**
+- Identify the load at which maximum efficiency occurs.
+- Explain why efficiency is low at very low loads (fixed losses dominate) and at very high loads (increased resistive losses).
+- Edexcel may link this to transformer or motor efficiency curves.
+
+**中文：**
+- 识别出现最大效率时的负载。
+- 解释为什么在非常低的负载下效率低（固定损耗占主导）和在非常高的负载下效率低（电阻损耗增加）。
+- 爱德思可能将此与变压器或电动机效率曲线联系起来。
+
+### Common Questions / 常见问题
+**English:**
+- "From the graph, determine the maximum efficiency and the corresponding load."
+- "Explain the shape of the efficiency-load graph for an electric motor."
+- "Suggest why operating a device at very low load is inefficient."
+
+**中文：**
+- "从图中确定最大效率和对应的负载。"
+- "解释电动机的效率-负载图的形状。"
+- "建议为什么在非常低的负载下运行设备效率低。"
+
+---
 
 # 7. Required Diagrams / 必备图表
 
-## 7.1 Sankey Diagram for Energy Transfers / 能量转移桑基图
+## 7.1 Sankey Diagram for Energy Efficiency / 能量效率桑基图
 
-> 📷 **IMAGE PROMPT — [POW-DIA-01]: Sankey Diagram for a Car Engine**
-> A Sankey diagram showing energy flow in a petrol car engine. Input arrow (100% fuel energy) splits into: Useful kinetic energy (25%, green arrow), Waste heat from engine (55%, red arrow), Waste heat from friction (10%, orange arrow), Sound (5%, yellow arrow), Other losses (5%, grey arrow). Arrow widths proportional to energy percentages. Labels in English and Chinese. Style: clean Sankey diagram with colour-coded arrows and percentage labels. Exam importance: HIGH — Sankey diagrams are frequently tested in both CAIE and Edexcel for visualising efficiency.
+### Description / 描述
+**English:**
+A Sankey diagram is a flow diagram where the width of arrows is proportional to the amount of energy (or power) flowing. It shows the total energy input splitting into useful output and various wasted energy streams. The diagram visually demonstrates the [[Conservation of Energy]] principle and allows quick estimation of efficiency.
 
-## 7.2 Power Transmission System / 功率传输系统
+**中文：**
+桑基图是一种流程图，其中箭头的宽度与流动的能量（或功率）量成正比。它显示总能量输入分流为有用输出和各种浪费的能量流。该图直观地展示了[[能量守恒]]原理，并允许快速估算效率。
 
-> 📷 **IMAGE PROMPT — [POW-DIA-02]: Power Transmission from Engine to Wheels**
-> A block diagram showing power flow: Engine → Gearbox → Driveshaft → Differential → Wheels. At each stage, show input power, output power, and losses (heat). Labels: "Engine: 100 kW input", "Gearbox: 95% efficient → 95 kW", "Driveshaft: 98% efficient → 93.1 kW", "Differential: 97% efficient → 90.3 kW", "Wheels: 90.3 kW useful". Include small icons for each component. Style: technical block diagram with power values and efficiency percentages. Exam importance: MEDIUM — illustrates cumulative efficiency concept.
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — [PWR-03]: Sankey Diagram for an Electric Motor**
+>
+> A Sankey diagram for an electric motor with total electrical energy input of 1000 J. The main arrow enters from the left. It splits into: a thick green arrow going right labelled "Useful Mechanical Energy / 有用机械能" (750 J, 75%), a medium orange arrow going down labelled "Heat Loss in Windings / 绕组热损失" (150 J, 15%), a thin red arrow going down labelled "Friction in Bearings / 轴承摩擦" (60 J, 6%), and a very thin yellow arrow going down labelled "Sound / 声音" (40 J, 4%). All arrows have proportional widths. Clean, educational style with clear labels and percentages. White background.
 
-## 7.3 Force-Velocity Graph for Maximum Speed / 力-速度图求最大速度
+### Labels Required / 需要标注
+| English | 中文 |
+|---------|------|
+| Total Energy Input | 总能量输入 |
+| Useful Energy Output | 有用能量输出 |
+| Heat Loss | 热损失 |
+| Friction Loss | 摩擦损失 |
+| Sound Loss | 声音损失 |
+| Efficiency = 75% | 效率 = 75% |
 
-> 📷 **IMAGE PROMPT — [POW-DIA-03]: Determining Maximum Speed from Power and Resistive Forces**
-> A graph with two curves: (1) Driving force curve $F = P/v$ (hyperbola) for a 60 kW engine, (2) Resistive force curve (quadratic, $F_R = kv^2$). The intersection point shows maximum speed (~50 m/s). Shade the region where driving force > resistive force (acceleration region). Labels: "Driving Force = P/v", "Resistive Force = kv²", "Maximum Speed at Intersection", "Acceleration Region". Style: clear technical graph with labelled intersection. Exam importance: HIGH — common in Edexcel vehicle dynamics questions.
+### Exam Importance / 考试重要性
+**English:**
+Cambridge 9702 frequently uses Sankey diagrams in Paper 1 (multiple choice) and Paper 2 (structured questions). Candidates must be able to interpret the diagram, calculate efficiency from arrow widths, and identify where energy is wasted. Edexcel may also use them in the context of energy transfers.
+
+**中文：**
+剑桥 9702 常在 Paper 1（选择题）和 Paper 2（结构化问题）中使用桑基图。考生必须能够解读图表、从箭头宽度计算效率，并识别能量浪费在哪里。爱德思也可能在能量传递的背景下使用它们。
+
+---
+
+## 7.2 Force-Velocity Graph for Constant Power / 恒定功率的力-速度图
+
+### Description / 描述
+**English:**
+A graph showing the inverse relationship between driving force and velocity when power is constant. The curve is a rectangular hyperbola. A second curve showing resistive force (often increasing with velocity) is often added. The intersection of the two curves gives the maximum velocity of the vehicle.
+
+**中文：**
+显示在功率恒定情况下驱动力与速度之间反比关系的图。曲线是矩形双曲线。通常添加显示阻力（通常随速度增加）的第二条曲线。两条曲线的交点给出车辆的最大速度。
+
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — [PWR-04]: Force-Velocity Graph for Constant Power Vehicle**
+>
+> A Cartesian graph with "Force / N" on the y-axis (0 to 5000 N) and "Velocity / m s⁻¹" on the x-axis (0 to 50 m/s). A smooth hyperbolic curve labelled "Driving Force (P = constant)" starts high on the left and decreases asymptotically towards the x-axis. A second curve labelled "Resistive Force" starts near the origin and increases quadratically (parabolic shape). The two curves intersect at a point labelled "Maximum Speed / 最大速度" with dashed lines to both axes. Add gridlines. Use blue for driving force, red for resistive force. Clean educational style.
+
+### Labels Required / 需要标注
+| English | 中文 |
+|---------|------|
+| Driving Force / N | 驱动力 / N |
+| Resistive Force / N | 阻力 / N |
+| Velocity / m s⁻¹ | 速度 / m s⁻¹ |
+| Constant Power Curve | 恒定功率曲线 |
+| Maximum Speed | 最大速度 |
+| Operating Point | 工作点 |
+
+### Exam Importance / 考试重要性
+**English:**
+This graph is essential for understanding vehicle dynamics. Cambridge and Edexcel both use it to test understanding of $P = Fv$, the concept of terminal velocity, and energy losses. Candidates must be able to sketch the graph, explain its shape, and calculate maximum speed.
+
+**中文：**
+此图对于理解车辆动力学至关重要。剑桥和爱德思都使用它来测试对 $P = Fv$、终端速度概念和能量损失的理解。考生必须能够画出草图、解释其形状并计算最大速度。
+
+---
+
+## 7.3 Power-Time Graph for Work Done / 功率-时间图表示做的功
+
+### Description / 描述
+**English:**
+A graph with power on the y-axis and time on the x-axis. The area under the graph represents the total work done or energy transferred. For constant power, the graph is a horizontal line and the area is a rectangle. For varying power, the area can be found by counting squares or using integration.
+
+**中文：**
+功率在 y 轴、时间在 x 轴的图。图下的面积表示做的总功或传递的总能量。对于恒定功率，图是水平线，面积是矩形。对于变化功率，可以通过数方格或使用积分找到面积。
+
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — [PWR-05]: Power-Time Graph with Shaded Area for Work Done**
+>
+> A Cartesian graph with "Power / W" on the y-axis (0 to 100 W) and "Time / s" on the x-axis (0 to 10 s). A horizontal line at P = 60 W from t = 0 to t = 6 s, then a diagonal line decreasing from 60 W to 20 W from t = 6 to t = 10 s. The area under the entire curve is shaded in light blue. Label the rectangular portion "Area = P × t = 360 J" and the triangular portion "Area = ½ × base × height = 120 J". Total area = 480 J. Clean educational style with gridlines.
+
+### Labels Required / 需要标注
+| English | 中文 |
+|---------|------|
+| Power / W | 功率 / W |
+| Time / s | 时间 / s |
+| Area = Work Done / J | 面积 = 做的功 / J |
+| Constant Power Region | 恒定功率区域 |
+| Varying Power Region | 变化功率区域 |
+
+### Exam Importance / 考试重要性
+**English:**
+This graph tests the fundamental relationship between power, work, and time. Cambridge Paper 1 often includes multiple-choice questions asking candidates to calculate work done from a power-time graph. Edexcel may use it in structured questions requiring area calculation.
+
+**中文：**
+此图测试功率、功和时间之间的基本关系。剑桥 Paper 1 常包含要求考生从功率-时间图计算做的功的选择题。爱德思可能在需要面积计算的结构化问题中使用它。
+
+---
 
 # 8. Worked Examples / 典型例题
 
-## Example 1: Power of a Car Climbing a Hill / 汽车爬坡功率
+## Example 1: Calculating Power from Work Done / 从做的功计算功率
 
 ### Question / 题目
-**English:** A car of mass 1200 kg climbs a hill at a constant speed of 15 m s⁻¹. The hill has a gradient of 1 in 10 (i.e., for every 10 m along the slope, the height increases by 1 m). The total resistive force (friction + air resistance) is 800 N. Calculate:
-a) The component of the car's weight acting down the slope
-b) The total force the engine must provide
-c) The power output of the engine
-(Take $g = 9.81$ m s⁻²)
+**English:**
+A crane lifts a 500 kg concrete block vertically upwards through a height of 20 m in 40 seconds. Calculate:
+(a) The work done by the crane.
+(b) The power output of the crane.
+(Take $g = 9.81 \text{ m s}^{-2}$)
 
-**中文:** 一辆质量为1200 kg的汽车以15 m s⁻¹的恒定速度爬坡。坡度为1:10（即沿斜坡每10 m，高度增加1 m）。总阻力（摩擦力+空气阻力）为800 N。计算：
-a) 汽车重力沿斜坡方向的分量
-b) 发动机必须提供的总力
-c) 发动机的输出功率
-（取$g = 9.81$ m s⁻²）
-
-### Image Prompt / 图片提示
-> 📷 **IMAGE PROMPT — [POW-EX1-01]: Car on an Inclined Plane**
-> A car on a slope with gradient 1:10. Show forces: Weight (mg) vertically downward, component mg sin θ down the slope, Normal reaction perpendicular to slope, Resistive force (800 N) down the slope, Driving force (F) up the slope. Label the angle θ where sin θ = 1/10. Style: clear force diagram with labelled arrows. Exam importance: HIGH — typical exam question setup.
+**中文：**
+一台起重机在 40 秒内将一块 500 kg 的混凝土块垂直向上提升 20 m。计算：
+(a) 起重机做的功。
+(b) 起重机的功率输出。
+（取 $g = 9.81 \text{ m s}^{-2}$）
 
 ### Solution / 解答
 
-**Step 1: Find the angle of the slope / 求斜坡角度**
-$$\sin \theta = \frac{1}{10} = 0.1$$
+**Step 1: Identify known quantities / 步骤 1：确定已知量**
+- Mass, $m = 500 \text{ kg}$
+- Height, $h = 20 \text{ m}$
+- Time, $t = 40 \text{ s}$
+- Gravitational field strength, $g = 9.81 \text{ m s}^{-2}$
 
-**Step 2: Calculate weight component down slope / 计算重力沿斜坡分量**
-$$W_{\text{parallel}} = mg \sin \theta = 1200 \times 9.81 \times 0.1$$
-$$W_{\text{parallel}} = 1177.2 \text{ N}$$
+**Step 2: Calculate work done / 步骤 2：计算做的功**
+The crane does work against gravity. The force required equals the weight of the block:
+$$F = mg = 500 \times 9.81 = 4905 \text{ N}$$
 
-**Step 3: Total force engine must provide / 发动机必须提供的总力**
-At constant speed, net force = 0, so driving force = resistive force + weight component
-$$F = F_{\text{resistive}} + W_{\text{parallel}} = 800 + 1177.2 = 1977.2 \text{ N}$$
+Work done:
+$$W = Fs = 4905 \times 20 = 98100 \text{ J}$$
 
-**Step 4: Calculate power / 计算功率**
-$$P = Fv = 1977.2 \times 15 = 29658 \text{ W} \approx 29.7 \text{ kW}$$
+**Step 3: Calculate power / 步骤 3：计算功率**
+$$P = \frac{W}{t} = \frac{98100}{40} = 2452.5 \text{ W}$$
 
 ### Final Answer / 最终答案
-a) 1180 N (3 s.f.) / 1180 N（3位有效数字）
-b) 1980 N (3 s.f.) / 1980 N（3位有效数字）
-c) 29.7 kW (3 s.f.) / 29.7 kW（3位有效数字）
+**Answer:** (a) $W = 98100 \text{ J}$ (or $9.81 \times 10^4 \text{ J}$) | **答案：** (a) $W = 98100 \text{ J}$（或 $9.81 \times 10^4 \text{ J}$）
+**Answer:** (b) $P = 2450 \text{ W}$ (3 s.f.) | **答案：** (b) $P = 2450 \text{ W}$（3 位有效数字）
 
 ### Examiner Notes / 考官点评
-**English:** Common mistakes include: (1) Using $mg$ instead of $mg \sin \theta$ for the weight component; (2) Forgetting to add resistive force to the weight component; (3) Using $P = Fv$ with the wrong force. Always draw a force diagram first. The gradient "1 in 10" means $\sin \theta = 0.1$, not $\tan \theta = 0.1$ — though for small angles they are similar, use the correct trigonometric ratio.
-**中文:** 常见错误包括：(1) 使用$mg$而不是$mg \sin \theta$求重力分量；(2) 忘记将阻力加到重力分量上；(3) 使用错误的力代入$P = Fv$。始终先画力图。坡度"1:10"意味着$\sin \theta = 0.1$，而不是$\tan \theta = 0.1$——虽然小角度时它们相近，但应使用正确的三角比。
+**English:**
+- Common mistake: Using mass instead of weight for force. Remember $F = mg$, not $F = m$.
+- Ensure time is in seconds (already given).
+- Power can also be found using $P = Fv$ where $v = \frac{20}{40} = 0.5 \text{ m s}^{-1}$, giving $P = 4905 \times 0.5 = 2452.5 \text{ W}$.
+- Answer should be given to 3 significant figures.
 
-## Example 2: Efficiency of an Electric Motor / 电动机效率
+**中文：**
+- 常见错误：使用质量而非重量作为力。记住 $F = mg$，而非 $F = m$。
+- 确保时间以秒为单位（已给出）。
+- 也可以使用 $P = Fv$ 求功率，其中 $v = \frac{20}{40} = 0.5 \text{ m s}^{-1}$，得到 $P = 4905 \times 0.5 = 2452.5 \text{ W}$。
+- 答案应保留 3 位有效数字。
+
+### Alternative Method / 替代方法
+**English:**
+Using $P = Fv$:
+Average velocity $v = \frac{20}{40} = 0.5 \text{ m s}^{-1}$
+Force $F = mg = 4905 \text{ N}$
+$P = 4905 \times 0.5 = 2452.5 \text{ W}$
+
+**中文：**
+使用 $P = Fv$：
+平均速度 $v = \frac{20}{40} = 0.5 \text{ m s}^{-1}$
+力 $F = mg = 4905 \text{ N}$
+$P = 4905 \times 0.5 = 2452.5 \text{ W}$
+
+---
+
+## Example 2: Efficiency of an Electric Motor / 电动机的效率
 
 ### Question / 题目
-**English:** An electric motor is used to lift a 50 kg mass through a vertical height of 12 m in 8.0 seconds. The electrical power input to the motor is 900 W. Calculate:
-a) The useful work done by the motor
-b) The useful power output of the motor
-c) The efficiency of the motor
-d) The energy wasted as heat in 8.0 seconds
-(Take $g = 9.81$ m s⁻²)
+**English:**
+An electric motor is used to lift a 200 kg mass through a vertical height of 5.0 m in 10 seconds. The electrical power input to the motor is 1500 W. Calculate:
+(a) The useful power output of the motor.
+(b) The efficiency of the motor.
+(c) The energy wasted per second.
+(Take $g = 9.81 \text{ m s}^{-2}$)
 
-**中文:** 一个电动机用于在8.0秒内将50 kg的质量提升12 m的垂直高度。电动机的电功率输入为900 W。计算：
-a) 电动机做的有用功
-b) 电动机的有用功率输出
-c) 电动机的效率
-d) 8.0秒内以热量形式浪费的能量
-（取$g = 9.81$ m s⁻²）
-
-### Image Prompt / 图片提示
-> 📷 **IMAGE PROMPT — [POW-EX2-01]: Motor Lifting a Mass**
-> Diagram showing an electric motor with a cable lifting a 50 kg mass vertically upward. Labels: "Electrical Input: 900 W", "Mass: 50 kg", "Height: 12 m", "Time: 8.0 s". Show energy flow: Electrical energy → Gravitational potential energy (useful) + Heat (waste). Style: simple schematic with energy flow arrows. Exam importance: HIGH — standard efficiency calculation setup.
+**中文：**
+一个电动机用于在 10 秒内将 200 kg 的质量垂直提升 5.0 m。电动机的电功率输入为 1500 W。计算：
+(a) 电动机的有用功率输出。
+(b) 电动机的效率。
+(c) 每秒浪费的能量。
+（取 $g = 9.81 \text{ m s}^{-2}$）
 
 ### Solution / 解答
 
-**Step 1: Calculate useful work done / 计算有用功**
-Useful work = gain in gravitational potential energy
-$$W_{\text{useful}} = mgh = 50 \times 9.81 \times 12$$
-$$W_{\text{useful}} = 5886 \text{ J}$$
+**Step 1: Identify known quantities / 步骤 1：确定已知量**
+- Mass, $m = 200 \text{ kg}$
+- Height, $h = 5.0 \text{ m}$
+- Time, $t = 10 \text{ s}$
+- Power input, $P_{\text{in}} = 1500 \text{ W}$
+- $g = 9.81 \text{ m s}^{-2}$
 
-**Step 2: Calculate useful power output / 计算有用功率输出**
-$$P_{\text{useful}} = \frac{W_{\text{useful}}}{t} = \frac{5886}{8.0} = 735.75 \text{ W}$$
+**Step 2: Calculate useful work done / 步骤 2：计算有用功**
+Useful work = gain in gravitational potential energy:
+$$W_{\text{useful}} = mgh = 200 \times 9.81 \times 5.0 = 9810 \text{ J}$$
 
-**Step 3: Calculate efficiency / 计算效率**
-$$\eta = \frac{P_{\text{useful}}}{P_{\text{total}}} \times 100\% = \frac{735.75}{900} \times 100\%$$
-$$\eta = 81.75\% \approx 81.8\%$$
+**Step 3: Calculate useful power output / 步骤 3：计算有用功率输出**
+$$P_{\text{useful}} = \frac{W_{\text{useful}}}{t} = \frac{9810}{10} = 981 \text{ W}$$
 
-**Step 4: Calculate waste energy / 计算浪费的能量**
-Total energy input = $P_{\text{total}} \times t = 900 \times 8.0 = 7200 \text{ J}$
-$$E_{\text{waste}} = E_{\text{total}} - E_{\text{useful}} = 7200 - 5886 = 1314 \text{ J}$$
+**Step 4: Calculate efficiency / 步骤 4：计算效率**
+$$\eta = \frac{P_{\text{useful}}}{P_{\text{in}}} \times 100\% = \frac{981}{1500} \times 100\% = 65.4\%$$
+
+**Step 5: Calculate wasted energy per second / 步骤 5：计算每秒浪费的能量**
+Wasted power = Power input - Useful power output:
+$$P_{\text{wasted}} = 1500 - 981 = 519 \text{ W}$$
+
+Energy wasted per second = $519 \text{ J}$
 
 ### Final Answer / 最终答案
-a) 5890 J (3 s.f.) / 5890 J（3位有效数字）
-b) 736 W (3 s.f.) / 736 W（3位有效数字）
-c) 81.8% (3 s.f.) / 81.8%（3位有效数字）
-d) 1310 J (3 s.f.) / 1310 J（3位有效数字）
+**Answer:** (a) $P_{\text{useful}} = 981 \text{ W}$ | **答案：** (a) $P_{\text{useful}} = 981 \text{ W}$
+**Answer:** (b) $\eta = 65.4\%$ | **答案：** (b) $\eta = 65.4\%$
+**Answer:** (c) $519 \text{ J s}^{-1}$ | **答案：** (c) $519 \text{ J s}^{-1}$
 
 ### Examiner Notes / 考官点评
-**English:** Key points: (1) Useful work equals the gain in gravitational potential energy — the motor does work against gravity; (2) Efficiency can be calculated using either energy or power — both give the same result; (3) Waste energy is the difference between total input and useful output, NOT "lost" but dissipated as heat; (4) Always check units — power in W, energy in J, time in s. A common error is using mass × height without $g$.
-**中文:** 关键点：(1) 有用功等于重力势能的增加——电动机克服重力做功；(2) 效率可以用能量或功率计算——两者结果相同；(3) 浪费的能量是总输入与有用输出之差，不是"丢失"而是以热量形式耗散；(4) 始终检查单位——功率用W，能量用J，时间用s。常见错误是使用质量×高度而没有乘以$g$。
+**English:**
+- Efficiency can also be calculated using energy: $\eta = \frac{mgh}{P_{\text{in}} \times t} \times 100\%$.
+- Common mistake: Using $P_{\text{in}} / P_{\text{useful}}$ instead of $P_{\text{useful}} / P_{\text{in}}$.
+- The wasted energy is dissipated as heat in the motor windings and bearings, and as sound.
+- Always state efficiency as a percentage unless asked for a decimal.
+
+**中文：**
+- 效率也可以使用能量计算：$\eta = \frac{mgh}{P_{\text{in}} \times t} \times 100\%$。
+- 常见错误：使用 $P_{\text{in}} / P_{\text{useful}}$ 而非 $P_{\text{useful}} / P_{\text{in}}$。
+- 浪费的能量以热的形式在电动机绕组和轴承中耗散，以及以声音形式耗散。
+- 除非要求小数，否则始终以百分比表示效率。
+
+### Alternative Method / 替代方法
+**English:**
+Using energy ratio:
+Total energy input = $P_{\text{in}} \times t = 1500 \times 10 = 15000 \text{ J}$
+Useful energy output = $mgh = 9810 \text{ J}$
+$$\eta = \frac{9810}{15000} \times 100\% = 65.4\%$$
+
+**中文：**
+使用能量比值：
+总能量输入 = $P_{\text{in}} \times t = 1500 \times 10 = 15000 \text{ J}$
+有用能量输出 = $mgh = 9810 \text{ J}$
+$$\eta = \frac{9810}{15000} \times 100\% = 65.4\%$$
+
+---
 
 # 9. Past Paper Question Types / 历年真题题型
 
 | Question Type / 题型 | Frequency / 频率 | Difficulty / 难度 | Past Paper References / 真题索引 |
-|:---|:---|:---|:---|
-| **Power Calculation from Work/Energy** / 从功/能量计算功率 | Very High / 非常高 | Easy / 简单 | 📝 *待填入* |
-| **$P = Fv$ Derivation and Application** / $P = Fv$的推导与应用 | High / 高 | Medium / 中等 | 📝 *待填入* |
-| **Efficiency Calculation (Energy)** / 效率计算（能量） | Very High / 非常高 | Easy-Medium / 简单-中等 | 📝 *待填入* |
-| **Efficiency Calculation (Power)** / 效率计算（功率） | High / 高 | Medium / 中等 | 📝 *待填入* |
-| **Vehicle Power and Resistive Forces** / 车辆功率与阻力 | High / 高 | Medium-Hard / 中等-困难 | 📝 *待填入* |
-| **Sankey Diagram Interpretation** / 桑基图解读 | Medium / 中等 | Easy-Medium / 简单-中等 | 📝 *待填入* |
-| **Power-Time Graph Area** / 功率-时间图面积 | Medium / 中等 | Medium / 中等 | 📝 *待填入* |
-| **Combined Power and Efficiency Problems** / 功率与效率综合题 | Medium / 中等 | Hard / 困难 | 📝 *待填入* |
-| **Multiple Choice on Definitions** / 定义选择题 | High / 高 | Easy / 简单 | 📝 *待填入* |
-| **Experimental Determination of Power** / 实验测定功率 | Low / 低 | Medium / 中等 | 📝 *待填入* |
+|----------------------|------------------|------------------|-------------------------------|
+| Calculation of Power / 功率计算 | High | Low-Medium | 📝 *待填入* |
+| Efficiency Calculation / 效率计算 | High | Medium | 📝 *待填入* |
+| Derivation of $P = Fv$ / $P = Fv$ 的推导 | Medium | Medium | 📝 *待填入* |
+| Graph Interpretation (P-t, F-v) / 图表解读 (P-t, F-v) | Medium | Medium-High | 📝 *待填入* |
+| Sankey Diagram Analysis / 桑基图分析 | Low-Medium | Low-Medium | 📝 *待填入* |
+| Multi-step Energy/Power Problems / 多步能量/功率问题 | Medium | High | 📝 *待填入* |
+| Practical Design / 实验设计 | Low | High | 📝 *待填入* |
 
-> 📝 **题库整理中 / Question Bank Under Construction:** 具体真题索引正在整理中，将包含CAIE 9702 Paper 1, 2, 4和Edexcel IAL WPH11 Unit 1的相关题目编号。请关注后续更新。 / Specific past paper references are being compiled and will include relevant question numbers from CAIE 9702 Paper 1, 2, 4 and Edexcel IAL WPH11 Unit 1. Please check future updates.
+> 📝 **题库整理中 / Question Bank Under Construction:** 具体试卷编号（如 9702/23/M/J/24 Q3）将在后续整理真题后填入上表。
 
-**Common Command Words / 常见指令词:**
-- **Calculate / 计算:** Use formulas to find numerical answer
-- **Define / 定义:** State the precise meaning
-- **Derive / 推导:** Show step-by-step mathematical development
-- **Determine / 确定:** Find a value using given information
-- **Explain / 解释:** Give reasons or causes
-- **Show that / 证明:** Demonstrate a result with working
-- **Sketch / 画草图:** Draw a graph showing general shape
-- **State / 陈述:** Give a brief answer without explanation
+**Common Command Words / 常见指令词：**
+
+| English | 中文 | Typical Usage / 典型用法 |
+|---------|------|------------------------|
+| State | 陈述 | State the definition of power. / 陈述功率的定义。 |
+| Define | 定义 | Define efficiency. / 定义效率。 |
+| Derive | 推导 | Derive the equation $P = Fv$. / 推导方程 $P = Fv$。 |
+| Calculate | 计算 | Calculate the power output. / 计算功率输出。 |
+| Determine | 确定 | Determine the efficiency of the motor. / 确定电动机的效率。 |
+| Explain | 解释 | Explain why the efficiency is less than 100%. / 解释为什么效率小于 100%。 |
+| Sketch | 画出草图 | Sketch a graph of force against velocity for constant power. / 画出恒定功率下力与速度的关系图。 |
+| Suggest | 建议 | Suggest one way to improve the efficiency. / 建议一种提高效率的方法。 |
+
+---
 
 # 10. Practical Skills Connections / 实验技能链接
 
-**English:** Power and efficiency concepts are tested in practical contexts across both exam boards:
+**English:**
+Power and efficiency concepts are assessed in practical examinations through several key experiments:
 
-1. **Measuring Power of a Student (CAIE Paper 3 / Edexcel Unit 3):** Students run up stairs — measure height of stairs, time taken, and their mass. Calculate power output: $P = \frac{mgh}{t}$. Key skills: measuring height (metre rule), time (stopwatch), mass (balance). Uncertainties: reaction time in stopwatch (±0.1 s), height measurement (±0.01 m).
+1. **Measuring Power Output of a Student (CAIE Paper 3 / Edexcel Unit 3):**
+   - A student runs up a flight of stairs. Measure height of stairs (using a metre rule), time taken (using a stopwatch), and student's mass (using a balance).
+   - Power output = $mgh / t$.
+   - Uncertainties: height measurement (±0.5 cm per step × number of steps), time measurement (±0.1 s), mass measurement (±0.1 kg).
+   - Percentage uncertainty in power = % uncertainty in height + % uncertainty in time + % uncertainty in mass.
 
-2. **Efficiency of an Electric Motor (CAIE Paper 5 / Edexcel Unit 6):** Use a motor to lift a mass. Measure electrical input (voltmeter + ammeter → $P = IV$) and mechanical output ($P = mgh/t$). Efficiency = output/input. Key skills: circuit connections, measuring potential difference and current, timing.
+2. **Efficiency of an Electric Motor (CAIE Paper 5 / Edexcel Unit 6):**
+   - Use a motor to lift a known mass. Measure electrical power input (using ammeter and voltmeter: $P = IV$).
+   - Measure mechanical power output ($P = mgh/t$).
+   - Efficiency = mechanical power output / electrical power input.
+   - Sources of error: friction in pulley, heat loss in wires, parallax error in reading meters.
 
-3. **Efficiency of a Solar Cell (Edexcel Unit 6):** Measure electrical output power ($P = IV$) from a solar cell under different light intensities. Compare to light power input (using light meter or known lamp power). Key skills: varying independent variable, controlling variables (distance from lamp), data logging.
+3. **Efficiency of a Solar Cell (Edexcel Unit 6):**
+   - Measure electrical power output from a solar cell under a lamp.
+   - Measure light power input using a light meter or calculate from lamp specifications.
+   - Efficiency = electrical power output / light power input.
+   - Variables: distance from lamp, angle of incidence, load resistance.
 
-4. **Graph Plotting and Analysis:** Plot power vs load, efficiency vs load. Determine maximum efficiency from graph. Calculate gradient and area under curves.
+4. **Graph Plotting Skills:**
+   - Plot power against load resistance to find maximum power transfer.
+   - Plot efficiency against load to find optimal operating point.
+   - Use error bars and line of best fit.
 
-5. **Uncertainties in Power Calculations:** Power involves multiple measurements — use percentage uncertainties: $\frac{\Delta P}{P} = \frac{\Delta W}{W} + \frac{\Delta t}{t}$ for $P = W/t$, or $\frac{\Delta P}{P} = \frac{\Delta F}{F} + \frac{\Delta v}{v}$ for $P = Fv$.
+**中文：**
+功率和效率概念通过几个关键实验在实践考试中评估：
 
-**中文:** 功率和效率概念在两个考试局的实验环境中都有测试：
+1. **测量学生的功率输出（CAIE Paper 3 / Edexcel Unit 3）：**
+   - 学生跑上一段楼梯。测量楼梯高度（使用米尺）、所用时间（使用秒表）和学生质量（使用天平）。
+   - 功率输出 = $mgh / t$。
+   - 不确定度：高度测量（每级台阶 ±0.5 cm × 台阶数）、时间测量（±0.1 s）、质量测量（±0.1 kg）。
+   - 功率的百分比不确定度 = 高度的百分比不确定度 + 时间的百分比不确定度 + 质量的百分比不确定度。
 
-1. **测量学生的功率（CAIE Paper 3 / Edexcel Unit 3）：** 学生跑上楼梯——测量楼梯高度、所用时间和学生质量。计算功率输出：$P = \frac{mgh}{t}$。关键技能：测量高度（米尺）、时间（秒表）、质量（天平）。不确定度：秒表反应时间（±0.1 s）、高度测量（±0.01 m）。
+2. **电动机的效率（CAIE Paper 5 / Edexcel Unit 6）：**
+   - 使用电动机提升已知质量。测量电功率输入（使用电流表和电压表：$P = IV$）。
+   - 测量机械功率输出（$P = mgh/t$）。
+   - 效率 = 机械功率输出 / 电功率输入。
+   - 误差来源：滑轮摩擦、导线热损失、读取仪表的视差误差。
 
-2. **电动机效率（CAIE Paper 5 / Edexcel Unit 6）：** 使用电动机提升质量。测量电输入（电压表+电流表 → $P = IV$）和机械输出（$P = mgh/t$）。效率 = 输出/输入。关键技能：电路连接、测量电势差和电流、计时。
+3. **太阳能电池的效率（Edexcel Unit 6）：**
+   - 测量太阳能电池在灯下的电功率输出。
+   - 使用光度计测量光功率输入或根据灯规格计算。
+   - 效率 = 电功率输出 / 光功率输入。
+   - 变量：与灯的距离、入射角、负载电阻。
 
-3. **太阳能电池效率（Edexcel Unit 6）：** 在不同光照强度下测量太阳能电池的电输出功率（$P = IV$）。与光功率输入（使用照度计或已知灯功率）比较。关键技能：改变自变量、控制变量（与灯的距离）、数据记录。
+4. **图表绘制技能：**
+   - 绘制功率与负载电阻的关系图以找到最大功率传递。
+   - 绘制效率与负载的关系图以找到最佳工作点。
+   - 使用误差棒和最佳拟合线。
 
-4. **图表绘制与分析：** 绘制功率-负载图、效率-负载图。从图中确定最大效率。计算斜率和曲线下面积。
+> 📋 **CIE Only:** Paper 3 (AS) focuses on simple power measurements (stairs experiment). Paper 5 (A2) may involve efficiency of motors or generators with more complex error analysis.
+>
+> 📋 **Edexcel Only:** Unit 3 (AS) includes the stairs experiment and efficiency of a model wind turbine. Unit 6 (A2) includes efficiency of solar cells and transformers.
 
-5. **功率计算中的不确定度：** 功率涉及多个测量——使用百分比不确定度：$\frac{\Delta P}{P} = \frac{\Delta W}{W} + \frac{\Delta t}{t}$（对于$P = W/t$），或$\frac{\Delta P}{P} = \frac{\Delta F}{F} + \frac{\Delta v}{v}$（对于$P = Fv$）。
-
-> 📋 **CIE Only:** CAIE Paper 3 often includes the "running up stairs" experiment. Paper 5 may involve designing an experiment to measure efficiency of a device.
-> 📋 **Edexcel Only:** Edexcel Unit 3 Core Practical 4 involves measuring power. Unit 6 may include efficiency of renewable energy systems (solar, wind).
+---
 
 # 11. Concept Map / 概念图谱
 
 ```mermaid
 graph TD
-    A[Work Done by a Force / 力做功] --> B[Power / 功率]
-    C[Conservation of Energy / 能量守恒] --> B
-    B --> D[Definition of Power / 功率的定义]
-    B --> E[Power and Velocity / 功率与速度]
-    B --> F[Efficiency of Energy Transfers / 能量转移的效率]
+    %% Main Topic
+    POWER_EFFICIENCY["Power and Efficiency / 功率与效率"]
     
-    D --> D1[P = W/t]
-    D --> D2[P = ΔE/t]
-    D --> D3[Unit: Watt (W) / 单位：瓦特]
+    %% Prerequisites
+    WORK["Work Done by a Force / 力做的功"]
+    ENERGY_CONS["Conservation of Energy / 能量守恒"]
     
-    E --> E1[P = Fv]
-    E --> E2[Derivation from P = W/t]
-    E --> E3[Vehicle Dynamics / 车辆动力学]
-    E --> E4[Gear Ratios / 传动比]
+    %% Sub-topics
+    DEF_POWER["Definition of Power / 功率的定义"]
+    POWER_VEL["Power and Velocity / 功率与速度"]
+    EFFICIENCY["Efficiency of Energy Transfers / 能量传递效率"]
     
-    F --> F1[η = E_useful / E_total]
-    F --> F2[η = P_useful / P_total]
-    F --> F3[Sankey Diagrams / 桑基图]
-    F --> F4[Waste Energy / 浪费的能量]
-    F --> F5[Real-world Efficiencies / 实际效率]
+    %% Related concepts
+    FORCE["Force / 力"]
+    VELOCITY["Velocity / 速度"]
+    TIME["Time / 时间"]
+    ENERGY["Energy / 能量"]
+    WORK_DONE["Work Done / 做的功"]
+    USEFUL_ENERGY["Useful Energy / 有用能量"]
+    WASTED_ENERGY["Wasted Energy / 浪费的能量"]
+    HEAT["Heat / 热"]
+    FRICTION["Friction / 摩擦"]
     
-    E3 --> G[Resistive Forces / 阻力]
-    E3 --> H[Maximum Speed / 最大速度]
+    %% Equations
+    EQ1["P = W/t"]
+    EQ2["P = Fv"]
+    EQ3["η = E_useful / E_total × 100%"]
+    EQ4["η = P_useful / P_total × 100%"]
     
-    F4 --> I[Heat Dissipation / 热量耗散]
-    F4 --> J[Sound / 声音]
+    %% Graphs
+    GRAPH1["Power-Time Graph / 功率-时间图"]
+    GRAPH2["Force-Velocity Graph / 力-速度图"]
+    GRAPH3["Efficiency-Load Graph / 效率-负载图"]
     
-    style A fill:#e1f5fe,stroke:#01579b
-    style C fill:#e1f5fe,stroke:#01579b
-    style B fill:#fff3e0,stroke:#e65100
-    style D fill:#f3e5f5,stroke:#4a148c
-    style E fill:#f3e5f5,stroke:#4a148c
-    style F fill:#f3e5f5,stroke:#4a148c
-```
-
-**Prerequisites / 前置知识:**
-- [[Work Done by a Force]] — understanding work as force × distance
-- [[Conservation of Energy]] — energy cannot be created or destroyed
-
-**Related Topics / 相关主题:**
-- [[Kinematics]] — velocity and acceleration in power calculations
-- [[Dynamics]] — forces and Newton's laws in vehicle motion
-- [[Electrical Power]] — $P = IV$ for electrical systems
-
-**Sub-topics / 子主题:**
-- [[Definition of Power]] — detailed exploration of power as rate
-- [[Power and Velocity]] — the $P = Fv$ relationship
-- [[Efficiency of Energy Transfers]] — Sankey diagrams and calculations
-
-# 12. Examiner Insights / 考官洞察
-
-**English:**
-
-**Most Tested Ideas (CAIE 9702):**
-1. **Power definition and calculation** — appears in nearly every exam. Candidates must know $P = W/t$ and $P = Fv$.
-2. **Efficiency calculations** — very common in Paper 1 (MCQ) and Paper 2 (structured). Always identify "useful" output.
-3. **$P = Fv$ derivation** — frequently tested in Paper 2 as a "show that" or "derive" question.
-4. **Vehicle power problems** — combining $P = Fv$ with resistive forces, often with constant speed condition.
-
-**Most Tested Ideas (Edexcel IAL):**
-1. **Real-world applications** — car engines, electric motors, renewable energy systems.
-2. **Efficiency in energy chains** — multiple stages of energy conversion (e.g., power station → transmission → home).
-3. **Graph interpretation** — power-time graphs (area = energy), force-velocity graphs (constant power).
-4. **Experimental determination of power** — Core Practical 4 (running up stairs).
-
-**Mark Scheme Wording / 评分方案措辞:**
-- For "define power": "rate of doing work" OR "rate of transfer of energy" (1 mark). Must mention "rate" — "work done per unit time" is also acceptable.
-- For efficiency: "useful energy output / total energy input" — must specify "useful". Simply "output/input" loses marks.
-- For $P = Fv$ derivation: $P = W/t$, $W = Fs$, so $P = Fs/t = Fv$ — each step may carry marks.
-
-**Common Lost Marks / 常见失分点:**
-1. **Unit errors:** Writing J for power instead of W; forgetting to convert minutes to seconds.
-2. **Efficiency > 100%:** Impossible — check calculations.
-3. **Wrong force in $P = Fv$:** Using net force instead of driving force; forgetting to include weight component on slopes.
-4. **Not identifying useful output:** Using total output instead of useful output in efficiency.
-5. **Percentage vs decimal:** Forgetting to multiply by 100% when asked for percentage efficiency.
-
-**High-Scoring Structures / 高分结构:**
-- Always show full working with formulas
-- Draw force diagrams for vehicle problems
-- State assumptions (e.g., "constant speed → net force = 0")
-- Check units before final answer
-- Use 3 significant figures unless specified otherwise
-
-**中文:**
-
-**最常考的概念（CAIE 9702）：**
-1. **功率定义和计算** — 几乎每次考试都出现。考生必须知道$P = W/t$和$P = Fv$。
-2. **效率计算** — 在Paper 1（选择题）和Paper 2（结构题）中非常常见。始终确定"有用"输出。
-3. **$P = Fv$推导** — 在Paper 2中经常作为"证明"或"推导"题出现。
-4. **车辆功率问题** — 将$P = Fv$与阻力结合，通常涉及匀速条件。
-
-**最常考的概念（Edexcel IAL）：**
-1. **实际应用** — 汽车发动机、电动机、可再生能源系统。
-2. **能量链中的效率** — 多级能量转换（如发电站→传输→家庭）。
-3. **图表解读** — 功率-时间图（面积=能量）、力-速度图（恒定功率）。
-4. **实验测定功率** — Core Practical 4（跑楼梯）。
-
-**评分方案措辞：**
-- 对于"定义功率"："做功速率"或"能量转移速率"（1分）。必须提到"速率"——"单位时间做的功"也可接受。
-- 对于效率："有用能量输出/总能量输入"——必须指定"有用"。仅"输出/输入"会失分。
-- 对于$P = Fv$推导：$P = W/t$，$W = Fs$，所以$P = Fs/t = Fv$——每一步可能都有分数。
-
-**常见失分点：**
-1. **单位错误：** 将功率写为J而不是W；忘记将分钟转换为秒。
-2. **效率 > 100%：** 不可能——检查计算。
-3. **$P = Fv$中力用错：** 使用合力而不是驱动力；忘记在斜坡上包括重力分量。
-4. **未识别有用输出：** 在效率中使用总输出而不是有用输出。
-5. **百分比与小数：** 当要求百分比效率时忘记乘以100%。
-
-**高分结构：**
-- 始终显示完整的计算过程，包含公式
-- 为车辆问题画力图
-- 说明假设条件（如"匀速 → 合力 = 0"）
-- 在最终答案前检查单位
-- 除非另有说明，使用3位有效数字
-
-# 13. Quick Revision Sheet / 速查表
-
-| Category / 类别 | Key Points / 要点 |
-|:---|:---|
-| **Power Definition / 功率定义** | $P = \frac{W}{t} = \frac{\Delta E}{t}$; Unit: W (1 W = 1 J s⁻¹); Rate of energy transfer |
-| **Power and Velocity / 功率与速度** | $P = Fv$; Derived from $P = W/t$ and $W = Fs$; $F$ in direction of $v$ |
-| **Efficiency / 效率** | $\eta = \frac{E_{\text{useful}}}{E_{\text{total}}} \times 100\%$ or $\frac{P_{\text{useful}}}{P_{\text{total}}}$; Always < 100% |
-| **Waste Energy / 浪费的能量** | $E_{\text{waste}} = E_{\text{total}} - E_{\text{useful}}$; Dissipated as heat, sound, etc. |
-| **Key Units / 关键单位** | Power: W (watt); Energy: J (joule); Time: s (second); Force: N (newton); Velocity: m s⁻¹ |
-| **Common Conversions / 常见换算** | 1 kW = 1000 W; 1 MW = 10⁶ W; 1 GW = 10⁹ W; minutes → seconds (×60); hours → seconds (×3600) |
-| **Sankey Diagrams / 桑基图** | Arrow width ∝ energy/power; Show input, useful output, waste; Used to visualise efficiency |
-| **Vehicle Dynamics / 车辆动力学** | At constant speed: driving force = resistive forces; $P = Fv$; Max speed when $F_{\text{drive}} = F_{\text{resistive}}$ |
-| **Gear Ratios / 传动比** | Low gear: high $F$, low $v$ (hill climbing); High gear: low $F$, high $v$ (cruising); $P = Fv$ constant |
-| **Experimental Methods / 实验方法** | Running up stairs: $P = mgh/t$; Motor efficiency: $P_{\text{out}}/P_{\text{in}}$; Use stopwatch, metre rule, balance |
-| **Common Mistakes / 常见错误** | Confusing power & energy; Efficiency > 100%; Wrong force in $P = Fv$; Unit errors; Not identifying "useful" output |
-| **Exam Formulas to Memorise / 需记忆的考试公式** | $P = W/t$, $P = Fv$, $\eta = E_{\text{useful}}/E_{\text{total}}$, $\eta = P_{\text{useful}}/P_{\text{total}}$ |
-
-# 14. Metadata / 元数据
-
-```yaml
-title:
-  en: "Power and Efficiency"
-  cn: "功率与效率"
-subject: Physics
-syllabus:
-  - CAIE 9702
-  - Edexcel IAL
-cie_ref: "3.3 (h-k)"
-edexcel_ref: "WPH11 U1: 4.12-4.15"
-level: AS
-node_type: topic_hub
-difficulty: foundation
-prerequisites:
-  - "Work Done by a Force"
-  - "Conservation of Energy"
-related_topics: []
-sub_topics:
-  - "Definition of Power"
-  - "Power and Velocity"
-  - "Efficiency of Energy Transfers"
-formula_count: 4
-diagram_count: 6
-exam_frequency: very_high
-language: bilingual_en_cn
-last_updated: "2025-01-15"
+    %% Practical
+    PRACTICAL1["Stairs Experiment / 爬楼梯实验"]
+    PRACTICAL2["Motor Efficiency / 电动机效率"]
+    PRACTICAL3["Solar Cell Efficiency / 太阳能电池效率"]
+    
+    %% Connections
+    POWER_EFFICIENCY --> WORK
+    POWER_EFFICIENCY --> ENERGY_CONS
+    
+    POWER_EFFICIENCY --> DEF_POWER
+    POWER_EFFICIENCY --> POWER_VEL
+    POWER_EFFICIENCY --> EFFICIENCY
+    
+    DEF_POWER --> EQ1
+    DEF_POWER --> TIME
+    DEF_POWER --> WORK_DONE
+    
+    POWER_VEL --> EQ2
+    POWER_VEL --> FORCE
+    POWER_VEL --> VELOCITY
+    
+    EFFICIENCY --> EQ3
+    EFFICIENCY --> EQ4
+    EFFICIENCY --> USEFUL_ENERGY
+    EFFICIENCY --> WASTED_ENERGY
+    WASTED_ENERGY --> HEAT
+    WASTED_ENERGY --> FRICTION
+    
+    DEF_POWER --> GRAPH1
+    POWER_VEL --> GRAPH2
+    EFFICIENCY --> GRAPH3
+    
+    DEF_POWER --> PRACTICAL1
+    EFFICIENCY --> PRACTICAL2
+    EFFICIENCY --> PRACTICAL3
+    
+    %% Cross-links
+    WORK --> WORK_DONE
+    ENERGY_CONS --> ENERGY
+    ENERGY --> USEFUL_ENERGY
+    ENERGY --> WASTED_ENERGY
+    
+    %% Styling
+    classDef main fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    classDef sub fill:#fff3e0,stroke:#e65100,stroke-width:1px
+    classDef eq fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
+    classDef graph fill:#f3e5f5,stroke:#6a1b9a,stroke-width:1px
+    classDef practical fill:#fce4ec,stroke:#c62828,stroke-width:1px
+    classDef prereq fill:#e0f2f1,stroke:#004d40,stroke-width:1px
+    
+    class POWER_EFFICIENCY main
+    class DEF_POWER,POWER_VEL,EFFICIENCY sub
+    class EQ1,EQ2,EQ3,EQ4 eq
+    class GRAPH1,GRAPH2,GRAPH3 graph
+    class PRACTICAL1,PRACTICAL2,PRACTICAL3 practical
+    class WORK,ENERGY_CONS prereq
 ```
 
 ---
-*This note is part of the Obsidian Physics Knowledge Graph. Link to sub-topic notes for detailed exploration of each concept.*
+
+# 12. Quick Revision Sheet / 速查表
+
+| Category / 类别 | Key Points / 要点 |
+|----------------|------------------|
+| **Definitions / 定义** | **Power:** Rate of doing work / energy transfer ($P = W/t$). Unit: watt (W) = J s⁻¹. Scalar. |
+| | **Efficiency:** Ratio of useful output to total input ($\eta = E_{\text{useful}} / E_{\text{total}} \times 100\%$). Dimensionless, 0-100%. |
+| | **功率：** 做功/能量传递的速率 ($P = W/t$)。单位：瓦特 (W) = J s⁻¹。标量。 |
+| | **效率：** 有用输出与总输入的比值 ($\eta = E_{\text{有用}} / E_{\text{总}} \times 100\%$)。无量纲，0-100%。 |
+| **Equations / 公式** | $P = \frac{W}{t}$ — Power from work and time |
+| | $P = Fv$ — Power from force and velocity (derived from $P = W/t$, $W = Fs$, $v = s/t$) |
+| | $\eta = \frac{E_{\text{useful}}}{E_{\text{total}}} \times 100\%$ — Efficiency using energy |
+| | $\eta = \frac{P_{\text{useful}}}{P_{\text{total}}} \times 100\%$ — Efficiency using power |
+| | $P = \frac{W}{t}$ — 从功和时间求功率 |
+| | $P = Fv$ — 从力和速度求功率（从 $P = W/t$, $W = Fs$, $v = s/t$ 推导） |
+| | $\eta = \frac{E_{\text{有用}}}{E_{\text{总}}} \times 100\%$ — 使用能量的效率 |
+| | $\eta = \frac{P_{\text{有用}}}{P_{\text{总}}} \times 100\%$ — 使用功率的效率 |
+| **Graphs / 图表** | **Power-Time:** Area under graph = work done / energy transferred. |
+| | **Force-Velocity (constant P):** Hyperbola $F = P/v$. Intersection with resistive force curve = max speed. |
+| | **Efficiency-Load:** Rises to maximum then falls. Optimal operating point. |
+| | **功率-时间：** 图下面积 = 做的功 / 传递的能量。 |
+| | **力-速度（恒定 P）：** 双曲线 $F = P/v$。与阻力曲线交点 = 最大速度。 |
+| | **效率-负载：** 先上升至最大值后下降。最佳工作点。 |
+| **Key Facts / 关键事实** | 1. Power is a scalar quantity. |
+| | 2. 1 W = 1 J s⁻¹. |
+| | 3. Efficiency cannot exceed 100% (energy conservation). |
+| | 4. Total energy input = Useful energy output + Wasted energy output. |
+| | 5. At maximum speed: Driving force = Resistive force. |
+| | 6. For constant power: $F \propto 1/v$. |
+| | 1. 功率是标量。 |
+| | 2. 1 W = 1 J s⁻¹。 |
+| | 3. 效率不能超过 100%（能量守恒）。 |
+| | 4. 总能量输入 = 有用能量输出 + 浪费的能量输出。 |
+| | 5. 在最大速度时：驱动力 = 阻力。 |
+| | 6. 对于恒定功率：$F \propto 1/v$。 |
+| **Exam Reminders / 考试提醒** | ✅ Always convert time to seconds. |
+| | ✅ Use $F = mg$ for weight, not $F = m$. |
+| | ✅ Efficiency = output/input, not input/output. |
+| | ✅ State efficiency as a percentage unless asked for decimal. |
+| | ✅ For $P = Fv$, ensure $F$ and $v$ are parallel. |
+| | ✅ In Sankey diagrams, arrow width ∝ energy/power. |
+| | ✅ 始终将时间转换为秒。 |
+| | ✅ 使用 $F = mg$ 求重量，而非 $F = m$。 |
+| | ✅ 效率 = 输出/输入，而非输入/输出。 |
+| | ✅ 除非要求小数，否则以百分比表示效率。 |
+| | ✅ 对于 $P = Fv$，确保 $F$ 和 $v$ 平行。 |
+| | ✅ 在桑基图中，箭头宽度 ∝ 能量/功率。 |
+
+---
+
+> 📝 **Document Version / 文档版本:** v1.0
+> 📝 **Last Updated / 最后更新:** 2025-01
+> 📝 **Parent Folder / 父文件夹:** `vault/01-Mechanics/03-Work-Energy-Power/Power and Efficiency/`
+> 📝 **Related Leaf Nodes / 相关叶节点:** [[Definition of Power]], [[Power and Velocity]], [[Efficiency of Energy Transfers]]

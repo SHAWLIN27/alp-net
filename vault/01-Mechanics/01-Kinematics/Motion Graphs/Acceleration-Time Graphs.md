@@ -1,232 +1,436 @@
 # 1. Overview / 概述
 
 **English:**
-Acceleration-Time (a-t) graphs are a fundamental tool in kinematics, showing how an object's acceleration changes over time. This sub-topic focuses on interpreting a-t graphs, understanding their shape, and extracting key information such as changes in velocity. While [[Displacement-Time Graphs]] and [[Velocity-Time Graphs]] are more commonly tested, a-t graphs provide a deeper insight into the forces acting on an object. The area under an a-t graph represents the change in velocity, making it a crucial link to [[Equations of Motion (SUVAT)]]. Mastering a-t graphs is essential for understanding the relationship between [[Displacement, Velocity and Acceleration]] and for solving complex motion problems.
+Acceleration-Time (a-t) graphs are a fundamental tool in kinematics that show how an object's acceleration changes over time. This sub-topic focuses on understanding the shape, gradient, and area under an a-t graph, and how it relates to [[Velocity-Time Graphs]] and [[Displacement-Time Graphs]]. While a-t graphs are less commonly tested than v-t graphs, they are essential for understanding non-uniform acceleration and are frequently used in conjunction with [[Equations of Motion (SUVAT)]] for more complex problems. The key skill is interpreting the graph to find changes in velocity (area under the graph) and understanding that constant acceleration appears as a horizontal line.
 
 **中文:**
-加速度-时间（a-t）图是运动学中的基本工具，展示了物体的加速度如何随时间变化。本子知识点侧重于解读a-t图，理解其形状，并提取关键信息，例如速度的变化。虽然[[位移-时间图]]和[[速度-时间图]]更常被考察，但a-t图能更深入地洞察作用在物体上的力。a-t图下的面积代表速度的变化，这使其成为连接[[运动学方程 (SUVAT)]]的关键。掌握a-t图对于理解[[位移、速度和加速度]]之间的关系以及解决复杂的运动问题至关重要。
+加速度-时间 (a-t) 图是运动学中的基本工具，用于展示物体的加速度随时间如何变化。本子知识点侧重于理解 a-t 图的形状、斜率和曲线下面积，以及它与 [[速度-时间图]] 和 [[位移-时间图]] 的关系。虽然 a-t 图不如 v-t 图常见，但它对于理解非匀变速运动至关重要，并经常与 [[运动学方程 (SUVAT)]] 结合用于更复杂的问题。关键技能是解读图形以找到速度的变化（曲线下面积），并理解匀加速度表现为水平线。
 
 ---
 
-# 2. Core Definition / 核心定义
+# 2. Syllabus Learning Objectives / 考纲学习目标
 
-| Term (EN/CN) | Definition (EN) | Definition (CN) |
-| ------------ | --------------- | --------------- |
-| **Acceleration-Time Graph** / 加速度-时间图 | A graph plotting acceleration (a) on the y-axis against time (t) on the x-axis, showing how acceleration varies during motion. | 以加速度 (a) 为纵轴、时间 (t) 为横轴的图表，显示运动过程中加速度如何变化。 |
-| **Constant Acceleration** / 恒定加速度 | A horizontal line on an a-t graph, indicating the acceleration does not change over time. | a-t图上的一条水平线，表示加速度不随时间变化。 |
-| **Changing Acceleration** / 变化的加速度 | A non-horizontal line (sloped or curved) on an a-t graph, indicating the acceleration is increasing or decreasing. | a-t图上的一条非水平线（倾斜或弯曲），表示加速度在增加或减少。 |
-| **Area Under a-t Graph** / a-t图下的面积 | The area between the graph line and the time axis, representing the change in velocity ($\Delta v$) of the object. | 图线与时间轴之间的面积，代表物体速度的变化 ($\Delta v$)。 |
-| **Zero Acceleration** / 零加速度 | A line along the time axis (a=0), indicating the object is moving at constant velocity. | 沿着时间轴的线 (a=0)，表示物体以恒定速度运动。 |
+| CAIE 9702 | Edexcel IAL |
+|-----------|-------------|
+| 3.1 (j): Interpret displacement-time and velocity-time graphs for motion with uniform and non-uniform acceleration. | WPH11 U1: 1.5-1.8: Use and interpret graphs of displacement, velocity, and acceleration against time. |
+
+**Examiner Expectations (EN):**
+- Recognize and sketch a-t graphs for constant acceleration (horizontal line) and changing acceleration (non-horizontal line).
+- Calculate the change in velocity from the area under an a-t graph.
+- Understand that the gradient of an a-t graph has no direct physical meaning in standard A-Level physics (it represents "jerk" or rate of change of acceleration, which is not required).
+- Relate a-t graphs to corresponding v-t and s-t graphs.
+
+**Examiner Expectations (中文):**
+- 识别并绘制匀加速度（水平线）和变加速度（非水平线）的 a-t 图。
+- 通过 a-t 图下的面积计算速度的变化。
+- 理解 a-t 图的斜率在标准 A-Level 物理中没有直接的物理意义（它代表“加加速度”或加速度的变化率，不要求掌握）。
+- 将 a-t 图与对应的 v-t 图和 s-t 图联系起来。
 
 ---
 
-# 3. Key Concepts / 关键概念
+# 3. Core Definitions / 核心定义
 
+| Term (EN/CN) | Definition (EN) | Definition (CN) | Common Mistakes / 常见错误 |
+|--------------|-----------------|-----------------|---------------------------|
+| **Acceleration-Time Graph** / 加速度-时间图 | A graph showing how acceleration varies with time. The y-axis is acceleration (a) and the x-axis is time (t). | 展示加速度随时间变化的图形。纵轴为加速度 (a)，横轴为时间 (t)。 | Confusing a-t graph with v-t graph; thinking the graph shows velocity. |
+| **Area Under a-t Graph** / a-t图下的面积 | The area between the graph line and the time axis represents the change in velocity (Δv) of the object. | 图线与时间轴之间的面积代表物体速度的变化量 (Δv)。 | Forgetting that area = Δv, not final velocity v. |
+| **Constant Acceleration** / 匀加速度 | Acceleration that does not change with time; appears as a horizontal line on an a-t graph. | 不随时间变化的加速度；在 a-t 图上表现为水平线。 | Thinking constant acceleration means zero acceleration. |
+| **Non-Uniform Acceleration** / 非匀加速度 | Acceleration that changes with time; appears as a sloping or curved line on an a-t graph. | 随时间变化的加速度；在 a-t 图上表现为斜线或曲线。 | Trying to use SUVAT equations directly (they only apply for constant acceleration). |
+| **Zero Acceleration** / 零加速度 | The object moves with constant velocity; appears as a line along the time axis (a = 0). | 物体以恒定速度运动；在 a-t 图上表现为与时间轴重合的线 (a = 0)。 | Confusing zero acceleration with zero velocity. |
+
+---
+
+# 4. Key Concepts Explained / 关键概念详解
+
+## 4.1 Interpreting the a-t Graph / 解读 a-t 图
+
+### Explanation / 解释
 **English:**
-The acceleration-time graph is the third type of motion graph, following [[Displacement-Time Graphs]] and [[Velocity-Time Graphs]]. Its primary purpose is to show how acceleration changes, which is directly related to the net force acting on an object (Newton's Second Law).
-
-**Interpreting the Graph:**
-*   **Horizontal Line:** A horizontal line at a constant value (e.g., a = 2 m/s²) means the object has **constant acceleration**. This is the most common scenario in A-Level physics, often seen with objects in free fall or under constant forces.
-*   **Line at a=0:** This means the acceleration is zero, so the object is moving at a **constant velocity**.
-*   **Sloped Line:** A sloped line means the acceleration is changing. This is called "jerk" or "rate of change of acceleration." This is less common in basic problems but appears in more complex scenarios.
-*   **Negative Values:** Acceleration can be negative (deceleration). A negative value on the a-t graph means the object is slowing down (if velocity is positive) or speeding up in the negative direction.
-
-**Key Relationship:**
-The most important concept is that the **area under the a-t graph** equals the **change in velocity** ($\Delta v$). This is the integral of acceleration with respect to time:
-$$ \Delta v = \int a \, dt $$
-This is analogous to how the area under a v-t graph gives displacement.
-
-**Common Pitfalls:**
-*   **Confusing a-t graphs with v-t graphs:** Students often try to read velocity directly from an a-t graph. You cannot. You must calculate the area to find the change in velocity.
-*   **Forgetting initial velocity:** The area gives $\Delta v$, not the final velocity. To find final velocity ($v$), you need to know the initial velocity ($u$): $v = u + \Delta v$.
-*   **Ignoring sign conventions:** When calculating area, treat areas above the time axis as positive and areas below as negative. This determines whether velocity increases or decreases.
+An acceleration-time graph plots acceleration (a) on the y-axis against time (t) on the x-axis. The key interpretation rules are:
+1. **Horizontal line (constant a):** The object experiences uniform acceleration. If the line is above the x-axis, acceleration is positive (speeding up in positive direction or slowing down in negative direction). If below, acceleration is negative (deceleration).
+2. **Sloping line (changing a):** The acceleration is changing uniformly (linear change) or non-uniformly (curved).
+3. **Line on x-axis (a = 0):** The object moves with constant velocity (no acceleration).
+4. **Area under graph:** The area between the graph line and the time axis equals the **change in velocity** (Δv = v_final - v_initial).
 
 **中文:**
-加速度-时间图是继[[位移-时间图]]和[[速度-时间图]]之后的第三种运动图。其主要目的是展示加速度如何变化，这与作用在物体上的合力直接相关（牛顿第二定律）。
+加速度-时间图将加速度 (a) 绘制在纵轴上，时间 (t) 绘制在横轴上。关键的解读规则是：
+1. **水平线 (恒定 a):** 物体经历匀加速度。如果线在 x 轴上方，加速度为正（正向加速或反向减速）。如果在下方，加速度为负（减速）。
+2. **斜线 (变化 a):** 加速度均匀变化（线性变化）或非均匀变化（曲线）。
+3. **x 轴上的线 (a = 0):** 物体以恒定速度运动（无加速度）。
+4. **图下面积:** 图线与时间轴之间的面积等于 **速度的变化量** (Δv = v_final - v_initial)。
 
-**解读图表：**
-*   **水平线：** 在恒定值处的水平线（例如 a = 2 m/s²）意味着物体具有**恒定加速度**。这是A-Level物理中最常见的情况，常见于自由落体或恒定力作用下的物体。
-*   **a=0 处的线：** 这意味着加速度为零，因此物体以**恒定速度**运动。
-*   **斜线：** 斜线意味着加速度在变化。这被称为“加加速度”或“加速度的变化率”。在基础问题中不太常见，但会出现在更复杂的场景中。
-*   **负值：** 加速度可以是负的（减速）。a-t图上的负值意味着物体正在减速（如果速度为正）或在负方向上加速。
+### Physical Meaning / 物理意义
+**English:**
+The a-t graph directly shows how the rate of change of velocity evolves over time. A positive area means the object's velocity increases; a negative area means velocity decreases. The graph is particularly useful for problems where acceleration is not constant, as it allows calculation of velocity changes without using SUVAT equations.
 
-**关键关系：**
-最重要的概念是**a-t图下的面积**等于**速度的变化** ($\Delta v$)。这是加速度对时间的积分：
-$$ \Delta v = \int a \, dt $$
-这类似于v-t图下的面积给出位移。
+**中文:**
+a-t 图直接展示了速度变化率随时间如何演变。正面积意味着物体的速度增加；负面积意味着速度减少。该图对于加速度不恒定的问题特别有用，因为它允许在不使用 SUVAT 方程的情况下计算速度变化。
 
-**常见误区：**
-*   **混淆 a-t 图和 v-t 图：** 学生经常试图直接从a-t图中读取速度。这是不可能的。你必须计算面积才能找到速度的变化。
-*   **忘记初速度：** 面积给出的是 $\Delta v$，而不是最终速度。要找到最终速度 ($v$)，你需要知道初速度 ($u$)：$v = u + \Delta v$。
-*   **忽略符号约定：** 计算面积时，将时间轴上方的面积视为正，下方的面积视为负。这决定了速度是增加还是减少。
+### Common Misconceptions / 常见误区
+- **Misconception:** The a-t graph shows the velocity of the object.
+  **Reality:** It shows acceleration, not velocity. The area gives the change in velocity.
+- **Misconception:** A horizontal line on an a-t graph means the object is stationary.
+  **Reality:** It means acceleration is constant. The object could be moving at increasing speed.
+- **Misconception:** The gradient of an a-t graph is important.
+  **Reality:** For A-Level, the gradient is not required (it's "jerk"). Focus on area.
+
+### Exam Tips / 考试提示
+- **EN:** Always check the y-axis label. Many students mistake a-t graphs for v-t graphs.
+- **EN:** When calculating area, use the formula for the shape (rectangle, triangle, trapezium).
+- **EN:** Remember: area = Δv, not v. You need initial velocity to find final velocity.
+- **中文:** 始终检查纵轴标签。许多学生将 a-t 图误认为是 v-t 图。
+- **中文:** 计算面积时，使用形状的公式（矩形、三角形、梯形）。
+- **中文:** 记住：面积 = Δv，而不是 v。你需要初速度才能找到末速度。
+
+> 📷 **IMAGE PROMPT — A01: Basic a-t Graph Shapes**
+> A clean diagram showing three common a-t graph shapes: (1) a horizontal line above the x-axis labeled "constant positive acceleration", (2) a horizontal line below the x-axis labeled "constant negative acceleration (deceleration)", (3) a line on the x-axis labeled "zero acceleration (constant velocity)". Each with a brief description of the motion.
 
 ---
 
-# 4. Formulas / 公式
+## 4.2 Relating a-t to v-t and s-t Graphs / 将 a-t 图与 v-t 图和 s-t 图关联
 
-The key formula for a-t graphs is the relationship between area and change in velocity:
+### Explanation / 解释
+**English:**
+Understanding the relationship between a-t, v-t, and s-t graphs is crucial. The connections are:
+- **a-t → v-t:** The area under the a-t graph gives the change in velocity. To construct a v-t graph from an a-t graph, calculate the area for each time interval and add it to the initial velocity.
+- **v-t → a-t:** The gradient of the v-t graph at any point gives the acceleration at that instant. So the a-t graph is the gradient of the v-t graph.
+- **a-t → s-t:** Indirectly through v-t. First find v-t from a-t (area), then find s-t from v-t (area under v-t).
 
-$$ \Delta v = \text{Area under a-t graph} $$
+**中文:**
+理解 a-t、v-t 和 s-t 图之间的关系至关重要。联系如下：
+- **a-t → v-t:** a-t 图下的面积给出速度的变化。要从 a-t 图构建 v-t 图，计算每个时间间隔的面积并将其加到初速度上。
+- **v-t → a-t:** v-t 图上任意点的斜率给出该时刻的加速度。因此 a-t 图是 v-t 图的斜率。
+- **a-t → s-t:** 通过 v-t 间接得到。首先从 a-t 图找到 v-t 图（面积），然后从 v-t 图找到 s-t 图（v-t 下的面积）。
 
-For a rectangular area (constant acceleration):
-$$ \Delta v = a \times t $$
+### Physical Meaning / 物理意义
+**English:**
+This hierarchy shows that acceleration is the "driver" of motion. The a-t graph determines how velocity changes, which in turn determines how displacement changes. This is why a-t graphs are fundamental: they describe the forces acting on an object (via F = ma).
 
-For a triangular area (linearly changing acceleration):
-$$ \Delta v = \frac{1}{2} \times \text{base} \times \text{height} $$
+**中文:**
+这种层级关系表明加速度是运动的“驱动力”。a-t 图决定了速度如何变化，进而决定了位移如何变化。这就是为什么 a-t 图是基础性的：它们描述了作用在物体上的力（通过 F = ma）。
+
+### Common Misconceptions / 常见误区
+- **Misconception:** You can directly read velocity from an a-t graph.
+  **Reality:** You can only find the change in velocity. You need initial velocity.
+- **Misconception:** The shape of a-t and v-t graphs are the same.
+  **Reality:** Only for constant acceleration (both are horizontal lines). For changing acceleration, they differ.
+
+### Exam Tips / 考试提示
+- **EN:** Practice converting between graph types. A common question gives an a-t graph and asks for the v-t or s-t graph.
+- **EN:** Use the "area" and "gradient" relationships systematically.
+- **中文:** 练习在不同图形类型之间转换。常见题目给出 a-t 图，要求画出 v-t 或 s-t 图。
+- **中文:** 系统地使用“面积”和“斜率”关系。
+
+> 📷 **IMAGE PROMPT — A02: Converting a-t to v-t Graph**
+> A three-panel diagram. Panel 1: a-t graph showing a rectangle of positive acceleration from t=0 to t=5s, then zero acceleration from t=5s to t=10s. Panel 2: The corresponding v-t graph showing a linear increase (positive gradient) from t=0 to t=5s, then horizontal line from t=5s to t=10s. Panel 3: The corresponding s-t graph showing a curved (parabolic) section from t=0 to t=5s, then a straight line from t=5s to t=10s. Arrows show the relationships: area of a-t → gradient of v-t → gradient of s-t.
+
+---
+
+# 5. Essential Equations / 核心公式
+
+## 5.1 Change in Velocity from a-t Graph / 从 a-t 图求速度变化
+
+$$ \Delta v = \int_{t_1}^{t_2} a \, dt = \text{Area under a-t graph} $$
 
 | Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
-| ------------- | ------------ | ------------ | ----------- |
-| $\Delta v$ | Change in velocity | 速度的变化 | m/s |
-| $a$ | Acceleration | 加速度 | m/s² |
-| $t$ | Time interval | 时间间隔 | s |
+|--------------|-------------|-------------|------------|
+| $\Delta v$ | Change in velocity | 速度的变化量 | m s⁻¹ |
+| $a$ | Acceleration | 加速度 | m s⁻² |
+| $t_1, t_2$ | Initial and final times | 初始和最终时间 | s |
 
 **Derivation / 推导:**
-From the definition of acceleration:
-$$ a = \frac{dv}{dt} $$
-Rearranging:
-$$ dv = a \, dt $$
-Integrating both sides:
-$$ \int_{u}^{v} dv = \int_{0}^{t} a \, dt $$
-$$ v - u = \text{Area under a-t graph} $$
-$$ \Delta v = \text{Area} $$
+From the definition of acceleration: $a = \frac{dv}{dt}$, rearranging gives $dv = a \, dt$. Integrating both sides: $\int_{v_1}^{v_2} dv = \int_{t_1}^{t_2} a \, dt$, so $\Delta v = \text{area under a-t graph}$.
 
 **Conditions / 适用条件:**
-*   The formula applies for any shape of a-t graph.
-*   The area must be calculated with sign (positive above axis, negative below).
-*   The initial velocity ($u$) must be known to find the final velocity ($v$).
+- **EN:** Always valid for any motion, uniform or non-uniform acceleration.
+- **中文:** 适用于任何运动，匀变速或非匀变速。
 
-> 📷 **IMAGE PROMPT — A01: Area Under a-t Graph**
->
-> **English Prompt:**
-> A clean, textbook-style vector diagram showing an acceleration-time (a-t) graph. The graph has a horizontal line at a = 3 m/s² from t = 0 to t = 5 s. The area under the line is shaded in light blue, forming a rectangle. An arrow points from the shaded area to a label: "Area = Δv = 15 m/s". The axes are labeled: y-axis "a / m s⁻²" and x-axis "t / s". The graph is on a white background with a simple grid.
->
-> **中文描述:**
-> 一个干净、教科书风格的矢量图，显示一个加速度-时间 (a-t) 图。该图有一条从 t=0 到 t=5 秒、位于 a=3 m/s² 处的水平线。线下方的区域用浅蓝色阴影表示，形成一个矩形。一个箭头从阴影区域指向标签：“面积 = Δv = 15 m/s”。坐标轴已标注：y轴为“a / m s⁻²”，x轴为“t / s”。图表位于白色背景上，带有简单的网格。
->
-> **Labels Required / 需要标注:**
-> *   a = 3 m/s²
-> *   t = 5 s
-> *   Area = Δv = 15 m/s
->
-> **Style / 风格:** Textbook vector
->
-> **Exam Relevance / 考试关联:**
-> This diagram is essential for understanding the core concept of a-t graphs. Exams often ask students to calculate the area to find the change in velocity.
+**Limitations / 局限性:**
+- **EN:** Only gives change in velocity, not final velocity. You must know initial velocity.
+- **EN:** For non-uniform acceleration, area calculation may require integration or approximation.
+- **中文:** 只给出速度的变化量，不是末速度。必须知道初速度。
+- **中文:** 对于非匀加速度，面积计算可能需要积分或近似。
 
----
+## 5.2 For Constant Acceleration (Rectangular Area) / 匀加速度（矩形面积）
 
-# 5. Image Prompt / 图片提示
+$$ \Delta v = a \times \Delta t $$
 
-> 📷 **IMAGE PROMPT — A02: Comparing Motion Graphs**
->
-> **English Prompt:**
-> A side-by-side comparison of three motion graphs for the same object: a displacement-time (s-t) graph, a velocity-time (v-t) graph, and an acceleration-time (a-t) graph. The object starts from rest and accelerates uniformly (constant acceleration). The s-t graph is a parabola curving upwards. The v-t graph is a straight line with a positive slope. The a-t graph is a horizontal line at a constant positive value. Each graph is on a white background with a grid. Arrows connect corresponding points on the graphs to show the relationship. The graphs are labeled clearly.
->
-> **中文描述:**
-> 同一物体的三种运动图的并排比较：位移-时间 (s-t) 图、速度-时间 (v-t) 图和加速度-时间 (a-t) 图。物体从静止开始并匀加速（恒定加速度）。s-t 图是一条向上弯曲的抛物线。v-t 图是一条具有正斜率的直线。a-t 图是一条位于恒定正值处的水平线。每个图表都在白色背景上，带有网格。箭头连接图表上的对应点以显示关系。图表已清晰标注。
->
-> **Labels Required / 需要标注:**
-> *   s-t graph: Parabola (curved)
-> *   v-t graph: Straight line (slope = a)
-> *   a-t graph: Horizontal line (a = constant)
-> *   "Constant Acceleration" label on a-t graph
->
-> **Style / 风格:** Textbook vector
->
-> **Exam Relevance / 考试关联:**
-> This comparison is a common exam question. Students must be able to relate the shape of an a-t graph to the shapes of s-t and v-t graphs for the same motion.
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| $a$ | Constant acceleration | 匀加速度 | m s⁻² |
+| $\Delta t$ | Time interval | 时间间隔 | s |
+
+**Conditions / 适用条件:**
+- **EN:** Only for constant acceleration (horizontal line on a-t graph).
+- **中文:** 仅适用于匀加速度（a-t 图上的水平线）。
 
 ---
 
-# 6. Worked Example / 典型例题
+# 6. Graphs and Relationships / 图表与关系
+
+## 6.1 Basic a-t Graph Shapes / 基本 a-t 图形状
+
+### Axes / 坐标轴
+- **EN:** x-axis: Time (t) / s; y-axis: Acceleration (a) / m s⁻²
+- **中文:** x轴：时间 (t) / s；y轴：加速度 (a) / m s⁻²
+
+### Shape / 形状
+| Motion Type | a-t Graph Shape | Description |
+|-------------|-----------------|-------------|
+| Constant velocity | Horizontal line at a = 0 | No acceleration |
+| Constant acceleration (positive) | Horizontal line above x-axis | a = positive constant |
+| Constant deceleration (negative) | Horizontal line below x-axis | a = negative constant |
+| Increasing acceleration | Line with positive gradient | a increases with time |
+| Decreasing acceleration | Line with negative gradient | a decreases with time |
+
+### Gradient Meaning / 斜率含义
+- **EN:** The gradient of an a-t graph represents the rate of change of acceleration (called "jerk"). This is NOT required for A-Level Physics.
+- **中文:** a-t 图的斜率代表加速度的变化率（称为“加加速度”）。A-Level 物理不要求掌握。
+
+### Area Meaning / 面积含义
+- **EN:** The area under an a-t graph represents the **change in velocity** (Δv).
+- **中文:** a-t 图下的面积代表 **速度的变化量** (Δv)。
+
+### Exam Interpretation / 考试解读
+- **EN:** Focus on area calculation. Common shapes: rectangles (constant a), triangles (linearly changing a), trapeziums (combination).
+- **EN:** If the graph crosses the x-axis, calculate positive and negative areas separately, then find net Δv.
+- **中文:** 专注于面积计算。常见形状：矩形（恒定 a）、三角形（线性变化 a）、梯形（组合）。
+- **中文:** 如果图形穿过 x 轴，分别计算正面积和负面积，然后求净 Δv。
+
+> 📷 **IMAGE PROMPT — A03: Area Under a-t Graph Examples**
+> Four panels showing different a-t graph shapes with shaded areas: (1) Rectangle: constant a = 2 m/s² from t=0 to t=5s, area = 10 m/s. (2) Triangle: a increases linearly from 0 to 4 m/s² over 6s, area = 12 m/s. (3) Trapezium: a = 3 m/s² from t=0 to t=2s, then decreases linearly to 0 at t=6s, area = 18 m/s. (4) Graph crossing x-axis: positive area from t=0 to t=4s, negative area from t=4s to t=8s. Each with area calculation shown.
+
+---
+
+# 7. Required Diagrams / 必备图表
+
+## 7.1 Standard a-t Graph for Constant Acceleration / 匀加速度的标准 a-t 图
+
+### Description / 描述
+**English:**
+A standard a-t graph for an object moving with constant acceleration of +2 m/s² for 5 seconds, then constant velocity for 3 seconds, then constant deceleration of -3 m/s² for 2 seconds.
+
+**中文:**
+一个物体以 +2 m/s² 的匀加速度运动 5 秒，然后以恒定速度运动 3 秒，然后以 -3 m/s² 的匀减速度运动 2 秒的标准 a-t 图。
+
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — A04: Multi-Stage a-t Graph**
+> A clean, labeled acceleration-time graph with three distinct sections. Section 1 (t=0 to t=5s): horizontal line at a = +2 m/s², labeled "constant acceleration". Section 2 (t=5 to t=8s): horizontal line at a = 0 m/s², labeled "constant velocity". Section 3 (t=8 to t=10s): horizontal line at a = -3 m/s², labeled "constant deceleration". The area under each section is shaded in different colors. Axes labeled: "a / m s⁻²" (y-axis) and "t / s" (x-axis). Grid lines shown for clarity.
+
+### Labels Required / 需要标注
+- **EN:** Axes: "a / m s⁻²" and "t / s"; Sections: "constant acceleration", "constant velocity", "constant deceleration"; Shaded areas with Δv values.
+- **中文:** 坐标轴："a / m s⁻²" 和 "t / s"；分段："匀加速度"、"恒定速度"、"匀减速度"；阴影区域及 Δv 值。
+
+### Exam Importance / 考试重要性
+- **EN:** High. This is the most common type of a-t graph question. Students must calculate total Δv from the areas.
+- **中文:** 高。这是最常见的 a-t 图题型。学生必须通过面积计算总 Δv。
+
+---
+
+## 7.2 Converting a-t to v-t Graph / 将 a-t 图转换为 v-t 图
+
+### Description / 描述
+**English:**
+A side-by-side comparison showing how the area under an a-t graph translates to the gradient of a v-t graph. Given initial velocity v₀ = 0 m/s.
+
+**中文:**
+并排比较，展示 a-t 图下的面积如何转化为 v-t 图的斜率。给定初速度 v₀ = 0 m/s。
+
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — A05: a-t to v-t Conversion**
+> Two graphs placed side by side. Left graph: a-t graph with a rectangle of a = 3 m/s² from t=0 to t=4s, then a = 0 from t=4s to t=8s. The rectangle area is shaded and labeled "Δv = 12 m/s". Right graph: v-t graph starting at (0,0), with a straight line of gradient 3 from t=0 to t=4s reaching v = 12 m/s, then a horizontal line at v = 12 m/s from t=4s to t=8s. Arrows connect the area on the a-t graph to the gradient on the v-t graph. Both graphs share the same time axis.
+
+### Labels Required / 需要标注
+- **EN:** Left: "a-t graph", shaded area "Δv = a × Δt". Right: "v-t graph", gradient "a = Δv/Δt". Initial velocity v₀ = 0.
+- **中文:** 左侧："a-t 图"，阴影面积 "Δv = a × Δt"。右侧："v-t 图"，斜率 "a = Δv/Δt"。初速度 v₀ = 0。
+
+### Exam Importance / 考试重要性
+- **EN:** Very high. Converting between graph types is a common exam skill.
+- **中文:** 非常高。在不同图形类型之间转换是常见的考试技能。
+
+---
+
+# 8. Worked Examples / 典型例题
+
+## Example 1: Calculating Change in Velocity from a-t Graph / 从 a-t 图计算速度变化
 
 ### Question / 题目
 **English:**
-An object starts from rest and experiences an acceleration described by the a-t graph below. The graph shows a constant acceleration of 4 m/s² for the first 3 seconds, followed by a constant deceleration of -2 m/s² for the next 2 seconds.
-(a) Calculate the velocity of the object at t = 3 s.
-(b) Calculate the velocity of the object at t = 5 s.
+An object starts from rest. Its acceleration-time graph shows:
+- From t = 0 to t = 4 s: constant acceleration of +3 m s⁻²
+- From t = 4 to t = 10 s: constant acceleration of -2 m s⁻²
+
+Calculate:
+(a) The change in velocity during the first 4 seconds.
+(b) The change in velocity during the next 6 seconds.
+(c) The final velocity of the object at t = 10 s.
 
 **中文:**
-一个物体从静止开始，经历如下a-t图所示的加速度。该图显示前3秒内恒定加速度为4 m/s²，随后2秒内恒定减速度为-2 m/s²。
-(a) 计算物体在 t = 3 秒时的速度。
-(b) 计算物体在 t = 5 秒时的速度。
+一个物体从静止开始运动。其加速度-时间图显示：
+- 从 t = 0 到 t = 4 s：匀加速度 +3 m s⁻²
+- 从 t = 4 到 t = 10 s：匀加速度 -2 m s⁻²
+
+计算：
+(a) 前 4 秒内的速度变化量。
+(b) 接下来 6 秒内的速度变化量。
+(c) 物体在 t = 10 s 时的末速度。
 
 ### Solution / 解答
 
-**(a) Velocity at t = 3 s:**
-The area under the a-t graph from t=0 to t=3 s is a rectangle:
-$$ \text{Area}_1 = a \times t = 4 \times 3 = 12 \text{ m/s} $$
-Since the object starts from rest ($u = 0$):
-$$ v_{3} = u + \Delta v = 0 + 12 = 12 \text{ m/s} $$
+**Step 1: Identify the shapes and calculate areas**
+(a) First 4 seconds: Rectangle
+$$ \Delta v_1 = a \times \Delta t = 3 \times 4 = 12 \text{ m s}^{-1} $$
 
-**(b) Velocity at t = 5 s:**
-The area under the a-t graph from t=3 to t=5 s is another rectangle (but negative):
-$$ \text{Area}_2 = a \times t = (-2) \times 2 = -4 \text{ m/s} $$
-Total change in velocity from t=0 to t=5 s:
-$$ \Delta v_{\text{total}} = \text{Area}_1 + \text{Area}_2 = 12 + (-4) = 8 \text{ m/s} $$
-Therefore:
-$$ v_{5} = u + \Delta v_{\text{total}} = 0 + 8 = 8 \text{ m/s} $$
+(b) Next 6 seconds: Rectangle
+$$ \Delta v_2 = a \times \Delta t = (-2) \times 6 = -12 \text{ m s}^{-1} $$
+
+**Step 2: Calculate final velocity**
+(c) Initial velocity $u = 0$ (starts from rest)
+$$ v = u + \Delta v_1 + \Delta v_2 = 0 + 12 + (-12) = 0 \text{ m s}^{-1} $$
 
 ### Final Answer / 最终答案
-**Answer:** (a) 12 m/s, (b) 8 m/s
-**答案:** (a) 12 米/秒, (b) 8 米/秒
+**Answer:** (a) Δv = +12 m s⁻¹ | (b) Δv = -12 m s⁻¹ | (c) v = 0 m s⁻¹
+**答案：** (a) Δv = +12 m s⁻¹ | (b) Δv = -12 m s⁻¹ | (c) v = 0 m s⁻¹
 
 ### Quick Tip / 提示
-Always remember that the area gives the **change** in velocity, not the velocity itself. You must add the initial velocity. Also, treat areas above and below the axis with opposite signs.
+- **EN:** Always check if the object starts from rest or has an initial velocity. The area gives Δv, not v.
+- **中文:** 始终检查物体是从静止开始还是有初速度。面积给出的是 Δv，而不是 v。
 
 ---
 
-# 7. Flashcards / 闪卡
+## Example 2: Non-Constant Acceleration (Triangular Area) / 非匀加速度（三角形面积）
 
-**Card 1:**
-Q (EN): What does the area under an acceleration-time graph represent?
-Q (CN): 加速度-时间图下的面积代表什么？
-A (EN): The change in velocity ($\Delta v$).
-A (CN): 速度的变化 ($\Delta v$)。
+### Question / 题目
+**English:**
+A car accelerates from rest. The a-t graph shows acceleration increasing linearly from 0 to 4 m s⁻² over 5 seconds.
+(a) Calculate the change in velocity of the car during these 5 seconds.
+(b) If the car then continues with constant acceleration of 4 m s⁻² for another 3 seconds, what is the total change in velocity?
 
-**Card 2:**
-Q (EN): What does a horizontal line at a = 0 on an a-t graph indicate?
-Q (CN): a-t图上 a=0 处的水平线表示什么？
-A (EN): The object is moving at constant velocity (zero acceleration).
-A (CN): 物体以恒定速度运动（加速度为零）。
+**中文:**
+一辆汽车从静止开始加速。a-t 图显示加速度在 5 秒内从 0 线性增加到 4 m s⁻²。
+(a) 计算汽车在这 5 秒内的速度变化量。
+(b) 如果汽车随后以 4 m s⁻² 的匀加速度继续运动 3 秒，总速度变化量是多少？
 
-**Card 3:**
-Q (EN): If an a-t graph shows a horizontal line at a = 5 m/s² for 4 seconds, what is the change in velocity?
-Q (CN): 如果一个a-t图显示在4秒内有一条位于 a=5 m/s² 的水平线，速度的变化是多少？
-A (EN): $\Delta v = 5 \times 4 = 20$ m/s.
-A (CN): $\Delta v = 5 \times 4 = 20$ 米/秒。
+### Solution / 解答
 
-**Card 4:**
-Q (EN): Can you read the instantaneous velocity directly from an a-t graph?
-Q (CN): 你能直接从a-t图中读取瞬时速度吗？
-A (EN): No. You must calculate the area to find the change in velocity, then add the initial velocity.
-A (CN): 不能。你必须计算面积来找到速度的变化，然后加上初速度。
+**Step 1: Calculate area for triangular section**
+(a) Area of triangle:
+$$ \Delta v_1 = \frac{1}{2} \times \text{base} \times \text{height} = \frac{1}{2} \times 5 \times 4 = 10 \text{ m s}^{-1} $$
 
-**Card 5:**
-Q (EN): What does a negative area under an a-t graph represent?
-Q (CN): a-t图下的负面积代表什么？
-A (EN): A decrease in velocity (deceleration).
-A (CN): 速度的减小（减速）。
+**Step 2: Calculate area for rectangular section**
+(b) Area of rectangle:
+$$ \Delta v_2 = a \times \Delta t = 4 \times 3 = 12 \text{ m s}^{-1} $$
+
+**Step 3: Total change in velocity**
+$$ \Delta v_{\text{total}} = \Delta v_1 + \Delta v_2 = 10 + 12 = 22 \text{ m s}^{-1} $$
+
+### Final Answer / 最终答案
+**Answer:** (a) Δv = 10 m s⁻¹ | (b) Total Δv = 22 m s⁻¹
+**答案：** (a) Δv = 10 m s⁻¹ | (b) 总 Δv = 22 m s⁻¹
+
+### Quick Tip / 提示
+- **EN:** For linearly changing acceleration, the a-t graph forms a triangle. Use the triangle area formula.
+- **中文:** 对于线性变化的加速度，a-t 图形成三角形。使用三角形面积公式。
 
 ---
 
-# 8. Metadata / 元数据
+# 9. Past Paper Question Types / 历年真题题型
 
-```yaml
-title:
-  en: Acceleration-Time Graphs
-  cn: 加速度-时间图
-parent_topic: Motion Graphs
-parent_hub: "[[Motion Graphs]]"
-subject: Physics
-syllabus:
-  - CAIE 9702
-  - Edexcel IAL
-level: AS
-node_type: leaf_concept
-difficulty: foundation
-related_leaf_nodes:
-  - "[[Displacement-Time Graphs]]"
-  - "[[Velocity-Time Graphs]]"
-  - "[[Interpreting Gradient and Area]]"
-language: bilingual_en_cn
+| Question Type / 题型 | Frequency / 频率 | Difficulty / 难度 | Past Paper References / 真题索引 |
+|----------------------|------------------|------------------|-------------------------------|
+| Calculate Δv from area under a-t graph | High | Easy | 📝 *待填入* |
+| Sketch v-t graph from given a-t graph | Medium | Medium | 📝 *待填入* |
+| Interpret a-t graph for non-uniform motion | Low | Medium-Hard | 📝 *待填入* |
+| Multi-stage motion with a-t, v-t, s-t conversion | Medium | Hard | 📝 *待填入* |
+
+**Common Command Words / 常见指令词:**
+- **EN:** "Calculate the change in velocity", "Sketch the velocity-time graph", "Determine the acceleration", "Find the area under the graph"
+- **中文:** "计算速度的变化量"、"画出速度-时间图"、"确定加速度"、"求图下的面积"
+
+---
+
+# 10. Practical Skills Connections / 实验技能链接
+
+**English:**
+Acceleration-time graphs are less commonly produced directly in experiments compared to displacement-time or velocity-time graphs. However, they can be derived from experimental data:
+
+1. **Motion Sensors / Data Loggers:** Using ultrasonic motion sensors connected to a computer, you can collect displacement-time data. Software can then differentiate to find velocity-time and acceleration-time graphs.
+2. **Ticker Timers:** From a ticker tape, you can calculate velocities at intervals, plot a v-t graph, and then find acceleration from its gradient. This acceleration value can be plotted against time to create an a-t graph.
+3. **Light Gates:** Using dual light gates, you can measure instantaneous velocities and calculate acceleration. Plotting these acceleration values against time gives an a-t graph.
+4. **Uncertainties:** When deriving a-t graphs from experimental data, uncertainties in displacement measurements propagate through differentiation, making acceleration values less precise. Always include error bars on a-t graphs.
+5. **Graph Plotting Skills:** When asked to plot an a-t graph from data, ensure axes are labeled with units, scales are appropriate, and points are plotted accurately. Draw a line of best fit.
+
+**中文:**
+与位移-时间图或速度-时间图相比，加速度-时间图在实验中直接产生的频率较低。然而，它们可以从实验数据中推导出来：
+
+1. **运动传感器/数据记录器:** 使用连接到计算机的超声波运动传感器，可以收集位移-时间数据。然后软件可以微分以找到速度-时间和加速度-时间图。
+2. **打点计时器:** 从打点计时器纸带上，可以计算间隔内的速度，绘制 v-t 图，然后从其斜率找到加速度。这个加速度值可以相对于时间绘制以创建 a-t 图。
+3. **光电门:** 使用双光电门，可以测量瞬时速度并计算加速度。将这些加速度值相对于时间绘制得到 a-t 图。
+4. **不确定度:** 从实验数据推导 a-t 图时，位移测量的不确定度通过微分传播，使加速度值精度降低。始终在 a-t 图上包含误差棒。
+5. **绘图技能:** 当要求根据数据绘制 a-t 图时，确保坐标轴标有单位，比例适当，点准确绘制。画出最佳拟合线。
+
+---
+
+# 11. Concept Map / 概念图谱
+
+```mermaid
+graph TD
+    %% Leaf Node: Acceleration-Time Graphs
+    A[Acceleration-Time Graphs] --> B[Definition]
+    A --> C[Key Interpretations]
+    A --> D[Area Under Graph]
+    A --> E[Relationship to Other Graphs]
+    A --> F[Practical Applications]
+
+    B --> B1["a on y-axis, t on x-axis"]
+    B --> B2["Shows how acceleration changes"]
+
+    C --> C1["Horizontal line = constant a"]
+    C --> C2["Line on axis = zero a"]
+    C --> C3["Sloping line = changing a"]
+
+    D --> D1["Area = Δv (change in velocity)"]
+    D --> D2["Rectangle: Δv = a × Δt"]
+    D --> D3["Triangle: Δv = ½ × base × height"]
+    D --> D4["Trapezium: Δv = ½(a₁ + a₂) × Δt"]
+
+    E --> E1["a-t → v-t: area gives gradient"]
+    E --> E2["v-t → a-t: gradient gives a"]
+    E --> E3["a-t → s-t: indirect via v-t"]
+
+    E1 --> E1a["[[Velocity-Time Graphs]]"]
+    E2 --> E2a["[[Velocity-Time Graphs]]"]
+    E3 --> E3a["[[Displacement-Time Graphs]]"]
+
+    F --> F1["Motion sensors & data loggers"]
+    F --> F2["Ticker timers"]
+    F --> F3["Light gates"]
+
+    %% Prerequisites
+    A -.-> P1["[[Displacement, Velocity and Acceleration]]"]
+    A -.-> P2["[[Equations of Motion (SUVAT)]]"]
+
+    %% Sibling topics
+    A -.-> S1["[[Displacement-Time Graphs]]"]
+    A -.-> S2["[[Velocity-Time Graphs]]"]
+    A -.-> S3["[[Interpreting Gradient and Area]]"]
+
+    %% Parent Hub
+    A -.-> H["[[Motion Graphs]]"]
+```
+
+---
+
+# 12. Quick Revision Sheet / 速查表
+
+| Category / 类别 | Key Points / 要点 |
+|----------------|------------------|
+| **Definition / 定义** | Graph of acceleration (y-axis) vs time (x-axis). Shows how acceleration changes. / 加速度（纵轴）与时间（横轴）的图。展示加速度如何变化。 |
+| **Key Formula / 核心公式** | $\Delta v = \text{Area under a-t graph}$ / a-t 图下的面积 = 速度变化量 |
+| **Area Shapes / 面积形状** | Rectangle: $\Delta v = a \times \Delta t$; Triangle: $\Delta v = \frac{1}{2} \times \text{base} \times \text{height}$; Trapezium: $\Delta v = \frac{1}{2}(a_1 + a_2) \times \Delta t$ |
+| **Key Graph / 核心图表** | Horizontal line = constant acceleration; Line on axis = constant velocity; Sloping line = changing acceleration / 水平线 = 匀加速度；轴上直线 = 恒定速度；斜线 = 变化加速度 |
+| **Gradient / 斜率** | NOT required for A-Level (represents "jerk") / A-Level 不要求（代表“加加速度”） |
+| **Common Mistake / 常见错误** | Confusing a-t graph with v-t graph; thinking area gives final velocity (it gives Δv) / 混淆 a-t 图和 v-t 图；认为面积给出末速度（它给出 Δv） |
+| **Exam Tip / 考试提示** | Always check y-axis label; calculate area carefully; remember you need initial velocity to find final velocity / 始终检查纵轴标签；仔细计算面积；记住需要初速度才能找到末速度 |
+| **Prerequisites / 前置知识** | [[Displacement, Velocity and Acceleration]]; [[Equations of Motion (SUVAT)]] |
+| **Related Topics / 相关主题** | [[Motion Graphs]]; [[Velocity-Time Graphs]]; [[Displacement-Time Graphs]]; [[Interpreting Gradient and Area]] |

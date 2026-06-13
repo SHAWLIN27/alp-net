@@ -1,556 +1,773 @@
 # 1. Overview / 概述
 
-**English:** This topic introduces the fundamental distinction between [[Scalar Quantities]] and [[Vector Quantities]] in physics. Scalars have magnitude only (e.g., [[Speed]], [[Mass]], [[Energy]]), while vectors have both magnitude and direction (e.g., [[Displacement]], [[Velocity]], [[Force]]). Understanding this distinction is crucial because vector addition and subtraction follow different rules from scalar arithmetic. This topic also covers [[Vector Addition and Subtraction]] using graphical methods (triangle/parallelogram law) and analytical methods (component resolution), as well as [[Resolution of Vectors]] into perpendicular components. This is foundational for all mechanics topics including [[Projectile Motion]], [[Types of Force]], and [[Newton's Laws of Motion]]. In both CAIE 9702 and Edexcel IAL, this is a core prerequisite for Paper 1 (multiple choice) and Paper 2 (structured questions), and is tested in practical contexts in Paper 3/5 and Unit 3/6.
+**English:**
+This topic introduces the fundamental distinction between scalar and vector quantities in physics. Scalars are quantities that have only magnitude (size), while vectors have both magnitude and direction. Understanding this distinction is crucial because many physical laws and calculations require vector addition, subtraction, and resolution. This topic forms the foundation for [[Displacement, Velocity and Acceleration]], [[Projectile Motion]], and [[Types of Force]].
 
-**中文:** 本主题介绍物理学中[[标量]]与[[矢量]]的基本区别。标量只有大小（例如[[速率]]、[[质量]]、[[能量]]），而矢量既有大小又有方向（例如[[位移]]、[[速度]]、[[力]]）。理解这一区别至关重要，因为矢量的加法和减法遵循与标量算术不同的规则。本主题还涵盖使用图形方法（三角形/平行四边形法则）和解析方法（分量分解）进行的[[矢量加法与减法]]，以及将矢量[[矢量分解]]为垂直分量。这是所有力学主题的基础，包括[[抛体运动]]、[[力的类型]]和[[牛顿运动定律]]。在CAIE 9702和Edexcel IAL中，这是Paper 1（选择题）和Paper 2（结构化问题）的核心先决条件，并在Paper 3/5和Unit 3/6的实践背景中进行测试。
+In both Cambridge 9702 and Edexcel IAL syllabuses, scalars and vectors are assessed through:
+- Identifying whether a quantity is scalar or vector
+- Adding and subtracting vectors using graphical methods (triangle/parallelogram rule)
+- Resolving vectors into perpendicular components
+- Applying vector resolution to equilibrium problems and motion analysis
+
+Real-world applications include navigation (GPS uses vector calculations), engineering (force analysis in structures), sports science (projectile motion of balls), and aviation (wind velocity vectors affecting flight paths).
+
+**中文：**
+本主题介绍物理学中标量和矢量量的基本区别。标量只有大小（量值），而矢量既有大小又有方向。理解这一区别至关重要，因为许多物理定律和计算需要矢量加法、减法和分解。本主题构成了[[位移、速度和加速度]]、[[抛体运动]]和[[力的类型]]的基础。
+
+在剑桥9702和爱德思IAL教学大纲中，标量和矢量通过以下方式评估：
+- 识别一个量是标量还是矢量
+- 使用图形方法（三角形/平行四边形法则）进行矢量加法和减法
+- 将矢量分解为垂直分量
+- 将矢量分解应用于平衡问题和运动分析
+
+实际应用包括导航（GPS使用矢量计算）、工程（结构中的力分析）、体育科学（球的抛体运动）和航空（影响飞行路径的风速矢量）。
+
+---
 
 # 2. Syllabus Learning Objectives / 考纲学习目标
 
+**English:**
+The table below lists all syllabus requirements relevant to scalars and vectors for both Cambridge 9702 and Edexcel IAL.
+
+**中文：**
+下表列出了剑桥9702和爱德思IAL中与标量和矢量相关的所有考纲要求。
+
 | CAIE 9702 | Edexcel IAL |
 |-----------|-------------|
-| 3.1(a) Distinguish between scalar and vector quantities and give examples of each | 1.1 Understand the difference between scalar and vector quantities |
-| 3.1(b) Add and subtract coplanar vectors using graphical methods (triangle and parallelogram laws) | 1.2 Add and subtract vectors using graphical methods |
-| 3.1(c) Resolve a vector into two perpendicular components | 1.3 Resolve vectors into perpendicular components |
+| 3.1(a) Distinguish between scalar and vector quantities and give examples of each | 1.1 Distinguish between scalar and vector quantities |
+| 3.1(b) Add and subtract coplanar vectors using the triangle or parallelogram rule | 1.2 Add and subtract vectors using graphical methods |
+| 3.1(c) Resolve a vector into two perpendicular components | 1.3 Resolve a vector into two perpendicular components |
 
-**Examiner Expectations / 考官期望:**
-- **English:** Candidates must be able to: (1) correctly classify quantities as scalar or vector; (2) draw accurate vector diagrams to scale; (3) use the parallelogram law and triangle law for vector addition; (4) resolve vectors into perpendicular components using trigonometry; (5) calculate the magnitude and direction of a resultant vector; (6) apply vector resolution to equilibrium problems and motion problems.
-- **中文:** 考生必须能够：(1) 正确将物理量分类为标量或矢量；(2) 按比例绘制准确的矢量图；(3) 使用平行四边形法则和三角形法则进行矢量加法；(4) 使用三角学将矢量分解为垂直分量；(5) 计算合矢量的大小和方向；(6) 将矢量分解应用于平衡问题和运动问题。
+**Examiner Expectations / 考官期望：**
 
-> 📋 **CIE Only:** CAIE specifically requires knowledge of the triangle law and parallelogram law for vector addition. Questions often involve forces in equilibrium (Paper 2 structured questions).
-> 📋 **Edexcel Only:** Edexcel emphasizes practical applications, including resolving forces on inclined planes and using vector diagrams in mechanics contexts.
+**English:**
+- Candidates must be able to state whether a quantity is scalar or vector with confidence
+- For vector addition, candidates must draw accurate vector diagrams (scale drawings) or use trigonometry
+- For vector resolution, candidates must identify the correct trigonometric function (sine or cosine) for each component
+- Common errors include confusing magnitude with direction, and using the wrong trigonometric ratio
+
+**中文：**
+- 考生必须能够自信地说明一个量是标量还是矢量
+- 对于矢量加法，考生必须绘制准确的矢量图（比例图）或使用三角学
+- 对于矢量分解，考生必须为每个分量确定正确的三角函数（正弦或余弦）
+- 常见错误包括混淆大小和方向，以及使用错误的三角比
+
+> 📋 **CIE Only:** Cambridge 9702 Paper 1 (MCQ) and Paper 2 (structured questions) often test vector addition and resolution. Paper 5 may require vector resolution in practical contexts.
+>
+> 📋 **Edexcel Only:** Edexcel IAL Unit 1 often includes vector questions in Section A (MCQ) and Section B (structured). Practical skills in Unit 3 may involve vector resolution for force measurements.
+
+---
 
 # 3. Core Definitions / 核心定义
 
+**English:**
+The table below provides official definitions with exam-standard wording, common mistakes, and links to related concepts.
+
+**中文：**
+下表提供了官方定义、考试标准措辞、常见错误以及与相关概念的链接。
+
 | Term (EN/CN) | Definition (EN) | Definition (CN) | Common Mistakes / 常见错误 |
 |--------------|-----------------|-----------------|---------------------------|
-| [[Scalar Quantities]] / 标量 | A physical quantity that has magnitude only, with no direction | 只有大小、没有方向的物理量 | Confusing speed (scalar) with velocity (vector) |
-| [[Vector Quantities]] / 矢量 | A physical quantity that has both magnitude and direction | 既有大小又有方向的物理量 | Forgetting to specify direction when stating a vector quantity |
-| [[Magnitude]] / 大小 | The size or numerical value of a vector, always positive | 矢量的大小或数值，始终为正 | Using negative values for magnitude (magnitude is always positive) |
-| [[Direction]] / 方向 | The orientation of a vector, usually measured from a reference axis | 矢量的方向，通常从参考轴测量 | Not specifying the reference direction (e.g., "30°" vs "30° above horizontal") |
-| [[Resultant Vector]] / 合矢量 | The single vector that produces the same effect as two or more vectors combined | 与两个或多个矢量组合产生相同效果的单矢量 | Adding vectors as scalars (ignoring direction) |
-| [[Component]] / 分量 | The projection of a vector onto a specified axis | 矢量在指定轴上的投影 | Using wrong trigonometric function (sin vs cos) |
-| [[Equilibrium]] / 平衡 | The state where the resultant of all forces acting on a body is zero | 作用在物体上的所有力的合力为零的状态 | Thinking equilibrium means no forces, not zero resultant |
+| **Scalar Quantity** / 标量 | A physical quantity that has magnitude only, with no direction | 只有大小、没有方向的物理量 | Confusing scalars with vectors (e.g., speed vs velocity). Students often forget that time, mass, and energy are scalars. |
+| **Vector Quantity** / 矢量 | A physical quantity that has both magnitude and direction | 既有大小又有方向的物理量 | Thinking that all vectors must be forces or velocities. Students sometimes forget that displacement and acceleration are vectors. |
+| **Magnitude** / 大小 | The size or numerical value of a quantity, regardless of direction | 一个量的大小或数值，与方向无关 | Confusing magnitude with the quantity itself. For example, the magnitude of velocity is speed, but they are different concepts. |
+| **Direction** / 方向 | The line along which a vector acts, specified by an angle or bearing | 矢量作用的方向，用角度或方位角表示 | Not specifying direction clearly (e.g., "30°" without reference to a baseline). |
+| **Resultant Vector** / 合矢量 | The single vector that has the same effect as two or more vectors combined | 与两个或多个矢量组合效果相同的单一矢量 | Adding vectors algebraically without considering direction. |
+| **Component** / 分量 | One of two perpendicular parts into which a vector can be resolved | 矢量可以分解成的两个垂直部分之一 | Using the wrong trigonometric function (sine vs cosine) for the component. |
+| **Triangle Rule** / 三角形法则 | A graphical method for adding two vectors by placing them head-to-tail | 通过将两个矢量首尾相接进行矢量加法的图形方法 | Drawing vectors in the wrong order or not maintaining correct direction. |
+| **Parallelogram Rule** / 平行四边形法则 | A graphical method for adding two vectors by completing a parallelogram | 通过完成平行四边形进行矢量加法的图形方法 | Not drawing the diagonal correctly or confusing it with the other diagonal. |
+
+---
 
 # 4. Key Concepts Explained / 关键概念详解
 
-## 4.1 Distinction Between Scalars and Vectors / 标量与矢量的区别
+## 4.1 Distinguishing Scalars and Vectors / 区分标量和矢量
 
 ### Explanation / 解释
-**English:** The fundamental difference between [[Scalar Quantities]] and [[Vector Quantities]] is that scalars have only [[magnitude]] (size), while vectors have both [[magnitude]] and [[direction]]. This distinction affects how these quantities are added, subtracted, and manipulated mathematically. For example, adding two scalar quantities (e.g., 5 kg + 3 kg = 8 kg) is straightforward. However, adding two vector quantities (e.g., forces of 5 N east and 3 N north) requires considering direction, giving a resultant of approximately 5.83 N at 31° north of east. Common scalar quantities include [[mass]], [[speed]], [[distance]], [[energy]], [[time]], [[temperature]], and [[pressure]]. Common vector quantities include [[displacement]], [[velocity]], [[acceleration]], [[force]], [[momentum]], and [[electric field strength]].
+**English:**
+The fundamental difference between scalars and vectors is that scalars have only magnitude, while vectors have both magnitude and direction. This distinction is not just theoretical—it affects how we perform calculations. For example, adding two scalar quantities (like 5 kg + 3 kg) is straightforward arithmetic. However, adding two vector quantities (like 5 N east + 3 N north) requires vector addition because direction matters.
 
-**中文:** [[标量]]与[[矢量]]的根本区别在于标量只有[[大小]]，而矢量既有[[大小]]又有[[方向]]。这一区别影响这些量的加法、减法和数学运算方式。例如，两个标量相加（如5 kg + 3 kg = 8 kg）很简单。然而，两个矢量相加（如5 N向东的力和3 N向北的力）需要考虑方向，得到大约5.83 N、北偏东31°的合力。常见的标量包括[[质量]]、[[速率]]、[[距离]]、[[能量]]、[[时间]]、[[温度]]和[[压强]]。常见的矢量包括[[位移]]、[[速度]]、[[加速度]]、[[力]]、[[动量]]和[[电场强度]]。
+Common scalar quantities include: mass, time, temperature, energy, power, speed, distance, and electric charge.
+Common vector quantities include: displacement, velocity, acceleration, force, momentum, electric field strength, and magnetic flux density.
+
+**中文：**
+标量和矢量之间的根本区别在于标量只有大小，而矢量既有大小又有方向。这一区别不仅仅是理论上的——它影响我们如何进行计算。例如，将两个标量相加（如5千克+3千克）是简单的算术运算。然而，将两个矢量相加（如5牛向东+3牛向北）需要矢量加法，因为方向很重要。
+
+常见的标量包括：质量、时间、温度、能量、功率、速率、距离和电荷。
+常见的矢量包括：位移、速度、加速度、力、动量、电场强度和磁通密度。
 
 ### Physical Meaning / 物理意义
-**English:** The distinction between scalars and vectors reflects the nature of physical quantities. Some quantities (like mass) are intrinsic properties that don't depend on orientation in space. Others (like force) inherently involve direction because they describe interactions that push or pull in specific directions. Understanding this distinction is essential for correctly applying physical laws, especially [[Newton's Laws of Motion]] and [[conservation laws]].
+**English:**
+In real life, direction matters. If you walk 5 km east and then 3 km west, your total distance traveled is 8 km (scalar addition), but your displacement (vector addition) is only 2 km east. This is why navigation systems use vectors—they need to know not just how far you've traveled, but in which direction you've ended up.
 
-**中文:** 标量和矢量的区别反映了物理量的本质。有些量（如质量）是固有属性，不依赖于空间方向。其他量（如力）本质上涉及方向，因为它们描述了在特定方向上推或拉的相互作用。理解这一区别对于正确应用物理定律至关重要，特别是[[牛顿运动定律]]和[[守恒定律]]。
+**中文：**
+在现实生活中，方向很重要。如果你向东走5公里，然后向西走3公里，你走过的总距离是8公里（标量加法），但你的位移（矢量加法）只有2公里向东。这就是为什么导航系统使用矢量——它们不仅需要知道你走了多远，还需要知道你最终在哪个方向。
 
 ### Common Misconceptions / 常见误区
-- Thinking that all quantities with a sign (e.g., -5°C) are vectors — temperature is a scalar
-- Confusing [[speed]] (scalar) with [[velocity]] (vector)
-- Believing that [[distance]] and [[displacement]] are the same thing
-- Thinking that [[work]] is a vector because it involves force (it is a scalar — dot product)
-- Assuming that [[current]] is a vector because it has direction (it is a scalar — it doesn't follow vector addition)
+1. **Speed and velocity are the same** — Speed is scalar (magnitude only), velocity is vector (magnitude and direction).
+2. **Distance and displacement are the same** — Distance is scalar (total path length), displacement is vector (straight line from start to finish).
+3. **All quantities with units are scalars** — Units alone don't determine scalar/vector nature; direction matters.
+4. **Force is always a vector** — Correct, but students sometimes forget that the direction of force is essential.
 
 ### Exam Tips / 考试提示
-**English:** In multiple-choice questions, examiners often test the scalar/vector distinction by asking which quantity is a vector/scalar. Memorize the common examples. In structured questions, you may be asked to explain why a quantity is scalar or vector — always mention both magnitude and direction criteria.
+**English:**
+Cambridge and Edexcel often ask: "State whether [quantity] is a scalar or a vector." Be prepared to justify your answer. For example: "Velocity is a vector because it has both magnitude and direction." Also, be able to give examples of each type.
 
-**中文:** 在选择题中，考官常通过询问哪个量是矢量/标量来测试区分能力。记住常见的例子。在结构化问题中，你可能被要求解释为什么某个量是标量或矢量——始终要提到大小和方向这两个标准。
+**中文：**
+剑桥和爱德思经常问："说明[某个量]是标量还是矢量。"准备好证明你的答案。例如："速度是矢量，因为它既有大小又有方向。"同时，能够给出每种类型的例子。
 
-> 📷 **IMAGE PROMPT — [SV-01]: Scalar vs Vector Comparison Table**
-> A clean, exam-style table comparing 10 common physical quantities. Columns: Quantity Name, Symbol, Scalar or Vector, Reason. Rows include: mass (scalar), distance (scalar), displacement (vector), speed (scalar), velocity (vector), acceleration (vector), force (vector), energy (scalar), temperature (scalar), pressure (scalar). Use a professional textbook style with clear color coding (blue for scalars, red for vectors). Labels in English. Exam importance: HIGH — frequently tested in multiple choice.
+---
 
-## 4.2 Vector Addition and Subtraction / 矢量加法与减法
+## 4.2 Vector Addition and Subtraction / 矢量加法和减法
 
 ### Explanation / 解释
-**English:** [[Vector Addition and Subtraction]] follow different rules from scalar arithmetic. There are two main graphical methods: the [[Triangle Law]] and the [[Parallelogram Law]]. The [[Triangle Law]] states that if two vectors are represented by two sides of a triangle taken in order, their resultant is represented by the third side taken in the opposite direction. The [[Parallelogram Law]] states that if two vectors are represented by two adjacent sides of a parallelogram, their resultant is represented by the diagonal of the parallelogram. For vector subtraction, we add the negative of the vector (same magnitude, opposite direction). Mathematically, vectors can be added using components: $\vec{R} = \vec{A} + \vec{B} = (A_x + B_x)\hat{i} + (A_y + B_y)\hat{j}$.
+**English:**
+Vector addition combines two or more vectors to find a single resultant vector. The two main graphical methods are:
 
-**中文:** [[矢量加法与减法]]遵循与标量算术不同的规则。有两种主要的图形方法：[[三角形法则]]和[[平行四边形法则]]。[[三角形法则]]指出，如果两个矢量由按顺序排列的三角形的两条边表示，则它们的合矢量由反向的第三条边表示。[[平行四边形法则]]指出，如果两个矢量由平行四边形的两条邻边表示，则它们的合矢量由平行四边形的对角线表示。对于矢量减法，我们加上该矢量的负矢量（大小相同，方向相反）。数学上，可以使用分量进行矢量加法：$\vec{R} = \vec{A} + \vec{B} = (A_x + B_x)\hat{i} + (A_y + B_y)\hat{j}$。
+1. **Triangle Rule (Head-to-Tail Method):** Place the tail of the second vector at the head of the first. The resultant is the vector from the tail of the first to the head of the second.
+
+2. **Parallelogram Rule:** Place the tails of both vectors together. Complete the parallelogram. The resultant is the diagonal from the common tail to the opposite corner.
+
+Vector subtraction is similar: to subtract vector B from vector A, add the negative of B (same magnitude, opposite direction) to A.
+
+**中文：**
+矢量加法将两个或多个矢量组合起来，找到一个单一的合矢量。两种主要的图形方法是：
+
+1. **三角形法则（首尾相接法）：** 将第二个矢量的尾端放在第一个矢量的首端。合矢量是从第一个矢量的尾端到第二个矢量的首端的矢量。
+
+2. **平行四边形法则：** 将两个矢量的尾端放在一起。完成平行四边形。合矢量是从公共尾端到对角线的对角线。
+
+矢量减法类似：要从矢量A中减去矢量B，将B的负矢量（大小相同，方向相反）加到A上。
 
 ### Physical Meaning / 物理意义
-**English:** Vector addition models how multiple influences combine in the real world. For example, when two forces act on an object, the net effect is the vector sum (resultant). When a boat crosses a river, its actual velocity is the vector sum of its own velocity and the river current. Understanding vector addition is essential for analyzing [[equilibrium]] situations, [[projectile motion]], and [[Newton's Second Law]].
+**English:**
+Imagine two forces acting on an object: one pulls east with 10 N, another pulls north with 10 N. The object doesn't move northeast at 45° with a force of 20 N—it moves with a resultant force of about 14.1 N at 45° northeast. Vector addition tells us the actual combined effect.
 
-**中文:** 矢量加法模拟了多个影响在现实世界中如何组合。例如，当两个力作用在物体上时，净效果是矢量和（合力）。当船横渡河流时，其实际速度是自身速度与河流速度的矢量和。理解矢量加法对于分析[[平衡]]情况、[[抛体运动]]和[[牛顿第二定律]]至关重要。
+**中文：**
+想象两个力作用在一个物体上：一个向东拉10牛，另一个向北拉10牛。物体不会以20牛的力向东北45°方向移动——它以约14.1牛的力向东北45°方向移动。矢量加法告诉我们实际的组合效果。
 
 ### Common Misconceptions / 常见误区
-- Adding vectors as scalars (e.g., 3 N + 4 N = 7 N without considering direction)
-- Drawing vector diagrams not to scale
-- Confusing the direction of the resultant (e.g., using the wrong angle)
-- Thinking that vector subtraction is the same as scalar subtraction
-- Not understanding that $\vec{A} - \vec{B} = \vec{A} + (-\vec{B})$
+1. **Adding magnitudes directly** — Students often add 5 N + 3 N = 8 N without considering direction.
+2. **Forgetting direction of resultant** — The resultant vector must have both magnitude and direction.
+3. **Confusing the two diagonals of a parallelogram** — Only one diagonal is the resultant; the other is the difference.
+4. **Not using scale drawings correctly** — In exams, if a scale drawing is required, accuracy matters.
 
 ### Exam Tips / 考试提示
-**English:** For graphical methods, always use a ruler and protractor. Draw vectors to scale (e.g., 1 cm = 1 N). Label all vectors clearly. For analytical methods, always resolve into perpendicular components first. Check your answer by estimating whether the resultant magnitude makes sense (it should be between the difference and sum of the magnitudes).
+**English:**
+For Cambridge, be prepared to draw vector diagrams to scale. For Edexcel, trigonometry (sine rule, cosine rule) is often sufficient. Always state the magnitude and direction of the resultant. Use bearings (e.g., 060°) or angles relative to a direction (e.g., 30° north of east).
 
-**中文:** 对于图形方法，始终使用直尺和量角器。按比例绘制矢量（例如，1 cm = 1 N）。清晰标注所有矢量。对于解析方法，始终先分解为垂直分量。通过估算合矢量大小是否合理来检查答案（它应介于两个矢量大小之差与和之间）。
+**中文：**
+对于剑桥，准备好按比例绘制矢量图。对于爱德思，三角学（正弦定理、余弦定理）通常就足够了。始终说明合矢量的大小和方向。使用方位角（如060°）或相对于某个方向的角度（如北偏东30°）。
 
-> 📷 **IMAGE PROMPT — [SV-02]: Triangle Law and Parallelogram Law**
-> Two side-by-side diagrams showing vector addition methods. Left: Triangle Law — vectors A and B placed head-to-tail, resultant R from tail of A to head of B. Right: Parallelogram Law — vectors A and B from same point forming adjacent sides of parallelogram, resultant R as diagonal. Use different colors for each vector (A=blue, B=red, R=green). Include angle labels. Professional textbook style. Labels in English. Exam importance: HIGH — both methods are examinable.
+---
 
-## 4.3 Resolution of Vectors / 矢量分解
+## 4.3 Resolution of Vectors / 矢量的分解
 
 ### Explanation / 解释
-**English:** [[Resolution of Vectors]] is the process of splitting a single vector into two perpendicular components. This is the reverse of vector addition. For a vector $\vec{F}$ at angle $\theta$ to the horizontal, the horizontal component is $F_x = F\cos\theta$ and the vertical component is $F_y = F\sin\theta$. The components are perpendicular (usually horizontal and vertical, but can be parallel and perpendicular to a surface). Vector resolution is essential for analyzing forces on inclined planes, projectile motion, and any situation where forces act at angles.
+**English:**
+Resolution is the reverse of addition—splitting a single vector into two perpendicular components. This is useful because perpendicular components are independent of each other. For a vector V at angle θ to the horizontal:
 
-**中文:** [[矢量分解]]是将单个矢量分解为两个垂直分量的过程。这是矢量加法的逆过程。对于与水平方向成角度$\theta$的矢量$\vec{F}$，水平分量为$F_x = F\cos\theta$，垂直分量为$F_y = F\sin\theta$。分量是垂直的（通常是水平和垂直方向，但也可以是平行和垂直于表面）。矢量分解对于分析斜面上的力、抛体运动以及任何力以角度作用的情况至关重要。
+- Horizontal component: $V_x = V \cos \theta$
+- Vertical component: $V_y = V \sin \theta$
+
+The original vector can be reconstructed using Pythagoras: $V = \sqrt{V_x^2 + V_y^2}$ and $\theta = \tan^{-1}(V_y / V_x)$.
+
+**中文：**
+分解是加法的逆过程——将一个矢量分解为两个垂直的分量。这很有用，因为垂直分量彼此独立。对于一个与水平方向成θ角的矢量V：
+
+- 水平分量：$V_x = V \cos \theta$
+- 垂直分量：$V_y = V \sin \theta$
+
+原始矢量可以使用勾股定理重建：$V = \sqrt{V_x^2 + V_y^2}$ 和 $\theta = \tan^{-1}(V_y / V_x)$。
 
 ### Physical Meaning / 物理意义
-**English:** Vector resolution allows us to analyze the independent effects of a vector in perpendicular directions. For example, when a force is applied at an angle to a surface, only the component parallel to the surface causes motion along the surface, while the perpendicular component affects the normal reaction force. In [[projectile motion]], the horizontal component of velocity remains constant (ignoring air resistance), while the vertical component changes due to gravity.
+**English:**
+When you push a lawnmower at an angle, part of your force pushes it forward (horizontal component) and part pushes it into the ground (vertical component). Resolution helps us analyze these separate effects. Similarly, when a projectile is launched at an angle, its velocity has horizontal and vertical components that behave independently.
 
-**中文:** 矢量分解使我们能够分析矢量在垂直方向上的独立效应。例如，当力以一定角度作用于表面时，只有平行于表面的分量引起沿表面的运动，而垂直分量影响法向反作用力。在[[抛体运动]]中，速度的水平分量保持不变（忽略空气阻力），而垂直分量因重力而变化。
+**中文：**
+当你以一定角度推割草机时，你的力的一部分向前推（水平分量），一部分向下推入地面（垂直分量）。分解帮助我们分析这些分离的效果。类似地，当抛体以一定角度发射时，其速度具有独立运动的水平和垂直分量。
 
 ### Common Misconceptions / 常见误区
-- Using $\sin$ when $\cos$ should be used (and vice versa) — remember: adjacent component uses $\cos$, opposite component uses $\sin$
-- Forgetting that components are perpendicular to each other
-- Thinking that the component is always smaller than the original vector (true for perpendicular components)
-- Not specifying which axis the angle is measured from
-- Confusing resolution with addition
+1. **Using sine for horizontal and cosine for vertical** — Always check: if the angle is measured from the horizontal, horizontal = cos, vertical = sin.
+2. **Forgetting that components are vectors** — Components have direction (positive/negative signs matter).
+3. **Thinking components are smaller than the original** — Components can be larger than the original if the angle is small? No, components are always ≤ the original magnitude.
+4. **Not specifying which component is which** — Clearly label horizontal and vertical components.
 
 ### Exam Tips / 考试提示
-**English:** Always draw a right-angled triangle showing the vector and its components. Label the angle clearly. Remember: $F_x = F\cos\theta$ when $\theta$ is measured from the horizontal. If the angle is measured from the vertical, swap sin and cos. For inclined plane problems, resolve weight into components parallel and perpendicular to the plane.
+**English:**
+Cambridge and Edexcel frequently ask: "Resolve the vector into horizontal and vertical components." Always draw a right-angled triangle showing the vector and its components. Label the angle clearly. Use $\cos$ for the adjacent side and $\sin$ for the opposite side relative to the given angle.
 
-**中文:** 始终绘制一个直角三角形，显示矢量及其分量。清晰标注角度。记住：当$\theta$从水平方向测量时，$F_x = F\cos\theta$。如果角度从垂直方向测量，则交换sin和cos。对于斜面问题，将重力分解为平行和垂直于斜面的分量。
+**中文：**
+剑桥和爱德思经常问："将矢量分解为水平和垂直分量。"始终画一个直角三角形，显示矢量及其分量。清晰标注角度。相对于给定角度，使用$\cos$表示邻边，$\sin$表示对边。
 
-> 📷 **IMAGE PROMPT — [SV-03]: Resolution of a Vector into Components**
-> A diagram showing vector F at angle θ above the horizontal. A right-angled triangle is formed with F as hypotenuse, Fx (horizontal) as adjacent side, and Fy (vertical) as opposite side. Label: Fx = F cos θ, Fy = F sin θ. Include a dashed line showing the original vector. Use color coding (F=red, Fx=blue, Fy=green). Professional textbook style. Labels in English. Exam importance: HIGH — fundamental for all mechanics problems.
+> 📷 **IMAGE PROMPT — [SV-01]: Vector Resolution Diagram**
+>
+> A right-angled triangle showing a vector V at angle θ from the horizontal. The horizontal component V cos θ is along the base, the vertical component V sin θ is along the height. The vector V is the hypotenuse. Labels: V, V_x = V cos θ, V_y = V sin θ, θ. Clean white background, educational style, black lines with blue and red arrows for components.
+
+---
 
 # 5. Essential Equations / 核心公式
 
-## 5.1 Resultant Magnitude (Two Perpendicular Vectors) / 合矢量大小（两个垂直矢量）
+## 5.1 Vector Addition (Triangle Rule) / 矢量加法（三角形法则）
 
-$$R = \sqrt{A^2 + B^2}$$
+**Equation / 公式:**
+$$ \vec{R} = \vec{A} + \vec{B} $$
 
-| Symbol (符号) | Meaning (EN/CN) | Unit (单位) |
-|---------------|-----------------|-------------|
-| $R$ | Resultant magnitude / 合矢量大小 | Depends on quantity (N, m/s, etc.) |
-| $A$ | Magnitude of first vector / 第一个矢量的大小 | Same as R |
-| $B$ | Magnitude of second vector / 第二个矢量的大小 | Same as R |
+**Variables / 变量:**
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| $\vec{R}$ | Resultant vector | 合矢量 | Depends on quantity (N, m/s, etc.) |
+| $\vec{A}$ | First vector | 第一个矢量 | Same as above |
+| $\vec{B}$ | Second vector | 第二个矢量 | Same as above |
 
-**Derivation / 推导:** From [[Pythagoras' theorem]] applied to the right-angled triangle formed by the two perpendicular vectors.
+**Derivation / 推导:**
+**English:**
+The triangle rule is a graphical method. Place the tail of $\vec{B}$ at the head of $\vec{A}$. The resultant $\vec{R}$ is the vector from the tail of $\vec{A}$ to the head of $\vec{B}$. Mathematically, if the angle between $\vec{A}$ and $\vec{B}$ is θ, then:
+$$ R = \sqrt{A^2 + B^2 + 2AB \cos \theta} $$
+This comes from the cosine rule in trigonometry.
 
-**Conditions / 适用条件:** Only valid when the two vectors are perpendicular (90° to each other).
+**中文：**
+三角形法则是一种图形方法。将$\vec{B}$的尾端放在$\vec{A}$的首端。合矢量$\vec{R}$是从$\vec{A}$的尾端到$\vec{B}$的首端的矢量。数学上，如果$\vec{A}$和$\vec{B}$之间的夹角为θ，则：
+$$ R = \sqrt{A^2 + B^2 + 2AB \cos \theta} $$
+这来自三角学中的余弦定理。
 
-**Limitations / 局限性:** Does not apply to vectors at other angles — use the cosine rule: $R = \sqrt{A^2 + B^2 + 2AB\cos\theta}$ where $\theta$ is the angle between vectors.
+**Conditions / 适用条件:**
+**English:** Vectors must be coplanar (in the same plane). The method works for any two vectors.
+**中文：** 矢量必须共面（在同一平面内）。该方法适用于任意两个矢量。
 
-**Rearrangements / 变形:** $A = \sqrt{R^2 - B^2}$, $B = \sqrt{R^2 - A^2}$
+**Limitations / 局限性:**
+**English:** Only works for two vectors at a time. For more vectors, add them sequentially.
+**中文：** 一次只适用于两个矢量。对于更多矢量，依次相加。
 
-## 5.2 Resultant Direction (Two Perpendicular Vectors) / 合矢量方向（两个垂直矢量）
+**Rearrangements / 变形:**
+**English:** For perpendicular vectors (θ = 90°): $R = \sqrt{A^2 + B^2}$
+**中文：** 对于垂直矢量（θ = 90°）：$R = \sqrt{A^2 + B^2}$
 
-$$\theta = \tan^{-1}\left(\frac{A_y}{A_x}\right)$$
+---
 
-| Symbol (符号) | Meaning (EN/CN) | Unit (单位) |
-|---------------|-----------------|-------------|
-| $\theta$ | Angle of resultant from reference axis / 合矢量与参考轴的夹角 | degrees (°) or radians (rad) |
-| $A_y$ | Vertical/perpendicular component / 垂直分量 | Same as A |
-| $A_x$ | Horizontal/parallel component / 水平分量 | Same as A |
+## 5.2 Vector Subtraction / 矢量减法
 
-**Derivation / 推导:** From [[trigonometry]]: $\tan\theta = \frac{\text{opposite}}{\text{adjacent}} = \frac{A_y}{A_x}$.
+**Equation / 公式:**
+$$ \vec{R} = \vec{A} - \vec{B} = \vec{A} + (-\vec{B}) $$
 
-**Conditions / 适用条件:** The reference axis must be clearly specified (usually horizontal or the x-axis).
+**Variables / 变量:**
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| $\vec{R}$ | Resultant vector | 合矢量 | Depends on quantity |
+| $\vec{A}$ | First vector | 第一个矢量 | Same as above |
+| $-\vec{B}$ | Negative of vector B (same magnitude, opposite direction) | 矢量B的负矢量（大小相同，方向相反） | Same as above |
 
-**Limitations / 局限性:** The inverse tangent function gives angles in the range -90° to +90°. For vectors in the second or third quadrants, add 180° to get the correct direction.
+**Derivation / 推导:**
+**English:**
+To subtract $\vec{B}$ from $\vec{A}$, reverse the direction of $\vec{B}$ to get $-\vec{B}$, then add $\vec{A}$ and $-\vec{B}$ using the triangle rule.
 
-**Rearrangements / 变形:** $A_y = R\sin\theta$, $A_x = R\cos\theta$
+**中文：**
+要从$\vec{A}$中减去$\vec{B}$，将$\vec{B}$的方向反转得到$-\vec{B}$，然后使用三角形法则将$\vec{A}$和$-\vec{B}$相加。
 
-## 5.3 Component Resolution / 分量分解
+**Conditions / 适用条件:**
+**English:** Same as vector addition.
+**中文：** 与矢量加法相同。
 
-$$F_x = F\cos\theta$$
-$$F_y = F\sin\theta$$
+**Limitations / 局限性:**
+**English:** Same as vector addition.
+**中文：** 与矢量加法相同。
 
-| Symbol (符号) | Meaning (EN/CN) | Unit (单位) |
-|---------------|-----------------|-------------|
-| $F_x$ | Horizontal/parallel component / 水平/平行分量 | Same as F |
-| $F_y$ | Vertical/perpendicular component / 垂直分量 | Same as F |
-| $F$ | Magnitude of original vector / 原始矢量的大小 | Same as components |
-| $\theta$ | Angle between vector and horizontal / 矢量与水平方向的夹角 | degrees (°) or radians (rad) |
+**Rearrangements / 变形:**
+**English:** For perpendicular vectors: $R = \sqrt{A^2 + B^2}$ (same formula, but direction differs)
+**中文：** 对于垂直矢量：$R = \sqrt{A^2 + B^2}$（公式相同，但方向不同）
 
-**Derivation / 推导:** From [[right-angled triangle trigonometry]]: $\cos\theta = \frac{\text{adjacent}}{\text{hypotenuse}} = \frac{F_x}{F}$, $\sin\theta = \frac{\text{opposite}}{\text{hypotenuse}} = \frac{F_y}{F}$.
+---
 
-**Conditions / 适用条件:** $\theta$ is measured from the horizontal axis. If measured from the vertical, swap sin and cos.
+## 5.3 Vector Resolution / 矢量分解
 
-**Limitations / 局限性:** Only works for perpendicular components. The components are always smaller than or equal to the original vector.
+**Equation / 公式:**
+$$ V_x = V \cos \theta $$
+$$ V_y = V \sin \theta $$
 
-**Rearrangements / 变形:** $F = \frac{F_x}{\cos\theta} = \frac{F_y}{\sin\theta}$, $\theta = \tan^{-1}\left(\frac{F_y}{F_x}\right)$
+**Variables / 变量:**
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| $V$ | Original vector magnitude | 原始矢量大小 | Depends on quantity |
+| $V_x$ | Horizontal component | 水平分量 | Same as V |
+| $V_y$ | Vertical component | 垂直分量 | Same as V |
+| $\theta$ | Angle from horizontal | 与水平方向的夹角 | Degrees (°) or radians (rad) |
 
-## 5.4 Cosine Rule for Resultant (General Case) / 合矢量的余弦定理（一般情况）
+**Derivation / 推导:**
+**English:**
+Consider a vector V at angle θ to the horizontal. Draw a right-angled triangle with V as the hypotenuse. The horizontal component is adjacent to θ, so $V_x = V \cos \theta$. The vertical component is opposite to θ, so $V_y = V \sin \theta$.
 
-$$R = \sqrt{A^2 + B^2 + 2AB\cos\theta}$$
+**中文：**
+考虑一个与水平方向成θ角的矢量V。画一个以V为斜边的直角三角形。水平分量与θ相邻，所以$V_x = V \cos \theta$。垂直分量与θ相对，所以$V_y = V \sin \theta$。
 
-| Symbol (符号) | Meaning (EN/CN) | Unit (单位) |
-|---------------|-----------------|-------------|
-| $R$ | Resultant magnitude / 合矢量大小 | Same as A, B |
-| $A, B$ | Magnitudes of two vectors / 两个矢量的大小 | Same as R |
-| $\theta$ | Angle between vectors A and B / 矢量A与B之间的夹角 | degrees (°) or radians (rad) |
+**Conditions / 适用条件:**
+**English:** The angle must be measured from the horizontal. If measured from the vertical, swap sine and cosine.
+**中文：** 角度必须从水平方向测量。如果从垂直方向测量，交换正弦和余弦。
 
-**Derivation / 推导:** From the [[law of cosines]] applied to the triangle formed by vectors A, B, and resultant R.
+**Limitations / 局限性:**
+**English:** Only works for perpendicular components. Non-perpendicular components require more complex methods.
+**中文：** 仅适用于垂直分量。非垂直分量需要更复杂的方法。
 
-**Conditions / 适用条件:** Valid for any angle between the two vectors (0° to 180°).
+**Rearrangements / 变形:**
+**English:**
+$$ V = \sqrt{V_x^2 + V_y^2} $$
+$$ \theta = \tan^{-1}\left(\frac{V_y}{V_x}\right) $$
 
-**Limitations / 局限性:** Does not directly give the direction of the resultant — use the sine rule or component method for direction.
+**中文：**
+$$ V = \sqrt{V_x^2 + V_y^2} $$
+$$ \theta = \tan^{-1}\left(\frac{V_y}{V_x}\right) $$
 
-**Rearrangements / 变形:** $\cos\theta = \frac{R^2 - A^2 - B^2}{2AB}$
+---
 
 # 6. Graphs and Relationships / 图表与关系
 
-## 6.1 Vector Addition Diagram (Triangle Law) / 矢量加法图（三角形法则）
+## 6.1 Vector Addition Diagram / 矢量加法图
 
-**Axes / 坐标轴:** No formal axes — this is a vector diagram drawn in the plane.
+### Axes / 坐标轴
+**English:** x-axis (horizontal), y-axis (vertical) — used for graphical representation
+**中文：** x轴（水平），y轴（垂直）——用于图形表示
 
-**Shape / 形状:** A triangle formed by three vectors placed head-to-tail.
+### Shape / 形状
+**English:** Two vectors placed head-to-tail form a triangle. The resultant is the third side.
+**中文：** 两个矢量首尾相接形成一个三角形。合矢量是第三边。
 
-**Gradient Meaning / 斜率意义:** Not applicable — this is a geometric construction, not a function graph.
+### Gradient Meaning / 斜率含义
+**English:** Not applicable directly. The direction of each vector is given by its angle relative to the axes.
+**中文：** 不直接适用。每个矢量的方向由其相对于坐标轴的角度给出。
 
-**Area Meaning / 面积意义:** Not applicable.
+### Area Meaning / 面积含义
+**English:** Not applicable.
+**中文：** 不适用。
 
-**Exam Interpretation / 考试解读:**
-- **English:** The resultant vector is drawn from the tail of the first vector to the head of the last vector. The order of addition doesn't matter (vector addition is commutative). For subtraction, reverse the direction of the vector being subtracted.
-- **中文:** 合矢量从第一个矢量的尾部画到最后一个矢量的头部。加法顺序无关紧要（矢量加法满足交换律）。对于减法，反转被减矢量的方向。
+### Exam Interpretation / 考试解读
+**English:** In exams, you may be asked to draw a vector diagram to scale. The accuracy of your drawing determines the accuracy of your resultant. Always include a scale (e.g., 1 cm = 10 N).
+**中文：** 在考试中，你可能被要求按比例绘制矢量图。绘图的准确性决定了合矢量的准确性。始终包含比例尺（例如，1厘米=10牛）。
 
-**Common Questions / 常见问题:**
-- Draw the resultant of two given vectors using the triangle law
-- Find the missing vector given the resultant and one vector
-- Determine if three vectors can be in equilibrium (they form a closed triangle)
+### Common Questions / 常见问题
+**English:**
+- "Draw a vector diagram to find the resultant force."
+- "Use the triangle rule to add these two vectors."
+- "Determine the magnitude and direction of the resultant."
 
-> 📷 **IMAGE PROMPT — [SV-04]: Vector Addition Using Triangle Law**
-> Step-by-step diagram showing: (a) Two vectors A and B to be added; (b) Vector B moved so its tail is at the head of A; (c) Resultant R drawn from tail of A to head of B. Use different colors (A=blue, B=red, R=green). Include arrows showing the direction of each vector. Professional textbook style. Labels in English. Exam importance: HIGH — required for graphical method questions.
+**中文：**
+- "绘制矢量图以找到合力。"
+- "使用三角形法则将这两个矢量相加。"
+- "确定合矢量的大小和方向。"
 
-## 6.2 Vector Addition Diagram (Parallelogram Law) / 矢量加法图（平行四边形法则）
+---
 
-**Axes / 坐标轴:** No formal axes — vector diagram in the plane.
+## 6.2 Vector Resolution Diagram / 矢量分解图
 
-**Shape / 形状:** A parallelogram with the two vectors as adjacent sides and the resultant as the diagonal.
+### Axes / 坐标轴
+**English:** x-axis (horizontal component), y-axis (vertical component)
+**中文：** x轴（水平分量），y轴（垂直分量）
 
-**Gradient Meaning / 斜率意义:** Not applicable.
+### Shape / 形状
+**English:** A right-angled triangle with the original vector as the hypotenuse.
+**中文：** 一个直角三角形，原始矢量为斜边。
 
-**Area Meaning / 面积意义:** Not applicable.
+### Gradient Meaning / 斜率含义
+**English:** The gradient of the original vector (rise/run) equals $\tan \theta = V_y / V_x$.
+**中文：** 原始矢量的斜率（上升/运行）等于$\tan \theta = V_y / V_x$。
 
-**Exam Interpretation / 考试解读:**
-- **English:** Both vectors start from the same point. Complete the parallelogram by drawing lines parallel to each vector. The diagonal from the common starting point to the opposite corner represents the resultant.
-- **中文:** 两个矢量从同一点出发。通过绘制平行于每个矢量的线来完成平行四边形。从共同起点到对角顶点的对角线表示合矢量。
+### Area Meaning / 面积含义
+**English:** Not applicable.
+**中文：** 不适用。
 
-**Common Questions / 常见问题:**
-- Use the parallelogram law to find the resultant of two forces
-- Determine the angle between two vectors given the resultant
-- Find the magnitude of one vector given the resultant and the other vector
+### Exam Interpretation / 考试解读
+**English:** You may be asked to resolve a vector into components given its magnitude and angle. Alternatively, given components, find the original vector.
+**中文：** 你可能被要求根据矢量的大小和角度将其分解为分量。或者，给定分量，找到原始矢量。
 
-> 📷 **IMAGE PROMPT — [SV-05]: Vector Addition Using Parallelogram Law**
-> Diagram showing two vectors A and B from the same origin point O. A parallelogram is completed with dashed lines. The resultant R is the diagonal from O to the opposite corner. Label all vectors and angles. Use different colors (A=blue, B=red, R=green, dashed lines=gray). Professional textbook style. Labels in English. Exam importance: HIGH — required for graphical method questions.
+### Common Questions / 常见问题
+**English:**
+- "Resolve the force into horizontal and vertical components."
+- "Find the horizontal component of the velocity."
+- "Calculate the magnitude and direction of the original vector from its components."
 
-## 6.3 Component Resolution Diagram / 分量分解图
+**中文：**
+- "将力分解为水平和垂直分量。"
+- "找到速度的水平分量。"
+- "从分量计算原始矢量的大小和方向。"
 
-**Axes / 坐标轴:** x-axis (horizontal) and y-axis (vertical).
+---
 
-**Shape / 形状:** A right-angled triangle with the original vector as the hypotenuse.
+```mermaid
+graph LR
+    A[Vector V] --> B[Horizontal Component V cos θ]
+    A --> C[Vertical Component V sin θ]
+    B --> D[Pythagoras: V = √(Vx² + Vy²)]
+    C --> D
+    D --> E[Angle: θ = tan⁻¹(Vy/Vx)]
+```
 
-**Gradient Meaning / 斜率意义:** Not applicable.
-
-**Area Meaning / 面积意义:** Not applicable.
-
-**Exam Interpretation / 考试解读:**
-- **English:** The original vector F is at angle θ to the horizontal. The horizontal component Fx = F cos θ is the adjacent side. The vertical component Fy = F sin θ is the opposite side. The components are perpendicular to each other.
-- **中文:** 原始矢量F与水平方向成角度θ。水平分量Fx = F cos θ是邻边。垂直分量Fy = F sin θ是对边。分量彼此垂直。
-
-**Common Questions / 常见问题:**
-- Find the horizontal and vertical components of a force at a given angle
-- Determine the angle from the components
-- Resolve weight into components parallel and perpendicular to an inclined plane
+---
 
 # 7. Required Diagrams / 必备图表
 
-## 7.1 Vector Addition Using Triangle Law / 使用三角形法则的矢量加法
+## 7.1 Vector Addition Using Triangle Rule / 使用三角形法则的矢量加法图
 
-> 📷 **IMAGE PROMPT — [SV-06]: Triangle Law Vector Addition**
-> A clear, exam-style diagram showing the triangle law of vector addition. Three vectors are shown: vector A (blue arrow, 4 cm long at 0°), vector B (red arrow, 3 cm long at 60°), and resultant R (green arrow, approximately 6.08 cm long at 25.3°). The vectors are arranged head-to-tail. All vectors have arrowheads. Angles are labeled with arc symbols. A scale is indicated (1 cm = 1 N). Professional textbook style with clean lines. Labels in English. Exam importance: HIGH — directly tested in Paper 2 structured questions.
+### Description / 描述
+**English:**
+A diagram showing two vectors A and B placed head-to-tail. Vector A starts at point O and ends at point P. Vector B starts at point P and ends at point Q. The resultant vector R goes from O to Q. Arrows indicate direction. Labels show A, B, and R.
 
-## 7.2 Vector Addition Using Parallelogram Law / 使用平行四边形法则的矢量加法
+**中文：**
+一个显示两个矢量A和B首尾相接的图。矢量A从点O开始，到点P结束。矢量B从点P开始，到点Q结束。合矢量R从O到Q。箭头指示方向。标签显示A、B和R。
 
-> 📷 **IMAGE PROMPT — [SV-07]: Parallelogram Law Vector Addition**
-> A diagram showing the parallelogram law of vector addition. Two vectors A (blue, 4 cm at 0°) and B (red, 3 cm at 60°) originate from the same point O. A parallelogram is completed with dashed gray lines. The resultant R (green, diagonal) goes from O to the opposite corner. All vectors have arrowheads. Angles are labeled. A scale is indicated. Professional textbook style. Labels in English. Exam importance: HIGH — directly tested in Paper 2 structured questions.
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — [SV-02]: Triangle Rule Vector Addition**
+>
+> A clean educational diagram showing two vectors placed head-to-tail. Vector A (blue arrow) from point O to point P. Vector B (red arrow) from point P to point Q. Resultant vector R (green dashed arrow) from O to Q. Labels: A, B, R. Arrows at the heads of all vectors. White background, simple line art style, suitable for textbook.
 
-## 7.3 Resolution of a Vector into Components / 矢量分解为分量
+### Labels Required / 需要标注
+- Vector A (矢量A)
+- Vector B (矢量B)
+- Resultant R (合矢量R)
+- Points O, P, Q (点O、P、Q)
+- Direction arrows (方向箭头)
 
-> 📷 **IMAGE PROMPT — [SV-08]: Vector Resolution into Components**
-> A diagram showing vector F (red, 5 cm long at 30° above horizontal) resolved into horizontal component Fx (blue, 4.33 cm) and vertical component Fy (green, 2.5 cm). A right-angled triangle is formed with F as hypotenuse. The angle θ = 30° is labeled. Dashed lines show the projection onto axes. Labels: Fx = F cos θ, Fy = F sin θ. Professional textbook style. Labels in English. Exam importance: HIGH — fundamental for all mechanics problems.
+### Exam Importance / 考试重要性
+**English:** This diagram is essential for understanding how to combine vectors graphically. Cambridge and Edexcel both require students to draw or interpret such diagrams.
 
-## 7.4 Forces on an Inclined Plane / 斜面上的力
+**中文：** 这个图对于理解如何图形化组合矢量至关重要。剑桥和爱德思都要求学生绘制或解释此类图。
 
-> 📷 **IMAGE PROMPT — [SV-09]: Forces on an Inclined Plane**
-> A diagram showing a block on an inclined plane at angle θ to the horizontal. The weight W (mg) acts vertically downward. This is resolved into two components: W sin θ (parallel to the plane, pointing down the slope) and W cos θ (perpendicular to the plane). The normal reaction force N is perpendicular to the plane. Friction (if present) acts parallel to the plane. All forces are labeled with arrows. The angle θ is shown both at the base of the incline and in the force triangle. Professional textbook style. Labels in English. Exam importance: VERY HIGH — extremely common in both CAIE and Edexcel exams.
+---
+
+## 7.2 Vector Addition Using Parallelogram Rule / 使用平行四边形法则的矢量加法图
+
+### Description / 描述
+**English:**
+A diagram showing two vectors A and B with their tails together at point O. A parallelogram is completed with sides parallel to A and B. The resultant R is the diagonal from O to the opposite corner. The other diagonal represents the difference A - B.
+
+**中文：**
+一个显示两个矢量A和B的尾端在点O处在一起的图。完成一个平行四边形，边与A和B平行。合矢量R是从O到对角线的对角线。另一条对角线表示差A - B。
+
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — [SV-03]: Parallelogram Rule Vector Addition**
+>
+> A clean educational diagram showing two vectors with tails together. Vector A (blue arrow) and Vector B (red arrow) originate from point O. A parallelogram is drawn with dashed lines. The resultant R (green arrow) is the diagonal from O to the opposite corner. The other diagonal (gray dashed) shows A - B. Labels: A, B, R, A-B. White background, simple line art.
+
+### Labels Required / 需要标注
+- Vector A (矢量A)
+- Vector B (矢量B)
+- Resultant R (合矢量R)
+- Difference A - B (差A - B)
+- Point O (点O)
+- Direction arrows (方向箭头)
+
+### Exam Importance / 考试重要性
+**English:** The parallelogram rule is an alternative to the triangle rule. Cambridge sometimes asks students to use this method, especially when both vectors originate from the same point.
+
+**中文：** 平行四边形法则是三角形法则的替代方法。剑桥有时要求学生使用这种方法，特别是当两个矢量都从同一点出发时。
+
+---
+
+## 7.3 Vector Resolution Diagram / 矢量分解图
+
+### Description / 描述
+**English:**
+A right-angled triangle showing a vector V at angle θ from the horizontal. The horizontal component V cos θ is along the base, the vertical component V sin θ is along the height. The vector V is the hypotenuse. All sides are labeled.
+
+**中文：**
+一个直角三角形，显示一个与水平方向成θ角的矢量V。水平分量V cos θ沿底边，垂直分量V sin θ沿高度。矢量V是斜边。所有边都有标签。
+
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — [SV-04]: Vector Resolution into Components**
+>
+> A right-angled triangle on a white background. The hypotenuse is a vector V (black arrow) at angle θ from the horizontal. The horizontal leg is V cos θ (blue arrow). The vertical leg is V sin θ (red arrow). The right angle is marked with a small square. Labels: V, V cos θ, V sin θ, θ. Clean educational style.
+
+### Labels Required / 需要标注
+- Vector V (矢量V)
+- Horizontal component V cos θ (水平分量V cos θ)
+- Vertical component V sin θ (垂直分量V sin θ)
+- Angle θ (角度θ)
+- Right angle marker (直角标记)
+
+### Exam Importance / 考试重要性
+**English:** This is one of the most important diagrams in A-Level physics. It appears in mechanics (forces, motion), electricity (electric fields), and waves. Students must be able to draw and interpret it.
+
+**中文：** 这是A-Level物理学中最重要的图之一。它出现在力学（力、运动）、电学（电场）和波中。学生必须能够绘制和解释它。
+
+---
 
 # 8. Worked Examples / 典型例题
 
-## Example 1: Finding Resultant of Two Perpendicular Forces / 求两个垂直力的合力
+## Example 1: Adding Two Perpendicular Vectors / 示例1：相加两个垂直矢量
 
 ### Question / 题目
-**English:** A force of 6.0 N acts horizontally to the right, and a force of 8.0 N acts vertically upward. Calculate the magnitude and direction of the resultant force.
+**English:**
+A force of 6.0 N acts east and a force of 8.0 N acts north. Calculate the magnitude and direction of the resultant force.
 
-**中文:** 一个6.0 N的力水平向右作用，一个8.0 N的力垂直向上作用。计算合力的大小和方向。
+**中文：**
+一个6.0牛的力向东作用，一个8.0牛的力向北作用。计算合力的大小和方向。
 
 ### Image Prompt / 图片提示
-> 📷 **IMAGE PROMPT — [SV-10]: Example 1 Diagram**
-> Simple diagram showing two perpendicular forces: F1 = 6.0 N (horizontal right, blue arrow) and F2 = 8.0 N (vertical up, red arrow) acting from the same point. The resultant R (green arrow) is shown as the diagonal. Right angle is marked. Professional style. Labels in English.
+> 📷 **IMAGE PROMPT — [SV-05]: Perpendicular Force Vectors**
+>
+> Two perpendicular arrows: one pointing east (6.0 N, blue), one pointing north (8.0 N, red). Their tails meet at a common point. A dashed diagonal arrow (green) shows the resultant. Labels: 6.0 N, 8.0 N, R. White background, educational style.
 
 ### Solution / 解答
 
-**Step 1: Identify the given information / 步骤1：确定已知信息**
-- $F_x = 6.0 \text{ N}$ (horizontal)
-- $F_y = 8.0 \text{ N}$ (vertical)
-- The forces are perpendicular (90° between them)
+**Step 1: Identify the vectors**
+- $\vec{A} = 6.0 \text{ N east}$
+- $\vec{B} = 8.0 \text{ N north}$
+- Angle between them: $\theta = 90^\circ$
 
-**Step 2: Calculate the magnitude of the resultant / 步骤2：计算合力大小**
+**Step 2: Calculate magnitude using Pythagoras**
+Since the vectors are perpendicular:
+$$ R = \sqrt{A^2 + B^2} = \sqrt{6.0^2 + 8.0^2} = \sqrt{36 + 64} = \sqrt{100} = 10 \text{ N} $$
 
-Using [[Pythagoras' theorem]]:
+**Step 3: Calculate direction**
+The angle from east (horizontal) is:
+$$ \theta = \tan^{-1}\left(\frac{B}{A}\right) = \tan^{-1}\left(\frac{8.0}{6.0}\right) = \tan^{-1}(1.333) = 53.1^\circ $$
 
-$$R = \sqrt{F_x^2 + F_y^2} = \sqrt{(6.0)^2 + (8.0)^2} = \sqrt{36 + 64} = \sqrt{100} = 10 \text{ N}$$
-
-**Step 3: Calculate the direction of the resultant / 步骤3：计算合力方向**
-
-Using [[trigonometry]]:
-
-$$\theta = \tan^{-1}\left(\frac{F_y}{F_x}\right) = \tan^{-1}\left(\frac{8.0}{6.0}\right) = \tan^{-1}(1.333) = 53.1^\circ$$
-
-The angle is measured from the horizontal (x-axis), so the direction is 53.1° above the horizontal.
+**Step 4: State the answer**
+Resultant force = 10 N at 53.1° north of east (or bearing 053°).
 
 ### Final Answer / 最终答案
-**English:** The resultant force has a magnitude of 10 N and acts at an angle of 53.1° above the horizontal (or 53.1° from the horizontal).
-
-**中文:** 合力大小为10 N，方向为水平向上偏转53.1°（即与水平方向成53.1°角）。
+**Answer:** 10 N at 53.1° north of east | **答案：** 10牛，北偏东53.1°
 
 ### Examiner Notes / 考官点评
-**English:** This is a straightforward application of Pythagoras and trigonometry. Common mistakes include: (1) adding the magnitudes directly (6 + 8 = 14 N); (2) using the wrong trigonometric function for the angle; (3) forgetting to specify the direction (just giving the magnitude loses marks). Always show your working clearly and state the direction relative to a reference axis.
+**English:**
+- Full marks require both magnitude and direction.
+- Direction must be clearly stated (e.g., "north of east" or "bearing 053°").
+- Common mistake: giving only the magnitude (10 N) without direction.
 
-**中文:** 这是勾股定理和三角学的直接应用。常见错误包括：(1) 直接相加大小（6 + 8 = 14 N）；(2) 使用错误的三角函数求角度；(3) 忘记说明方向（只给出大小会失分）。始终清晰展示你的计算过程，并说明相对于参考轴的方向。
+**中文：**
+- 满分需要同时给出大小和方向。
+- 方向必须清晰说明（例如，"北偏东"或"方位角053°"）。
+- 常见错误：只给出大小（10牛）而没有方向。
 
-## Example 2: Resolving a Force on an Inclined Plane / 分解斜面上的力
+### Alternative Method / 替代方法
+**English:**
+Use scale drawing: draw 6.0 cm east, then 8.0 cm north from the head. Measure the resultant length (10 cm) and angle (53°). This method is acceptable but less precise.
+
+**中文：**
+使用比例图：向东画6.0厘米，然后从首端向北画8.0厘米。测量合矢量长度（10厘米）和角度（53°）。这种方法可以接受，但精度较低。
+
+---
+
+## Example 2: Resolving a Vector into Components / 示例2：将矢量分解为分量
 
 ### Question / 题目
-**English:** A block of mass 5.0 kg rests on a frictionless inclined plane that makes an angle of 30° with the horizontal. Calculate:
-(a) The component of the weight acting parallel to the plane.
-(b) The component of the weight acting perpendicular to the plane.
-(c) The normal reaction force from the plane on the block.
+**English:**
+A projectile is launched with an initial velocity of 20 m/s at an angle of 30° above the horizontal. Calculate the horizontal and vertical components of the initial velocity.
 
-**中文:** 一个质量为5.0 kg的物块静止在光滑斜面上，斜面与水平方向成30°角。计算：
-(a) 平行于斜面的重力分量。
-(b) 垂直于斜面的重力分量。
-(c) 斜面对物块的法向反作用力。
+**中文：**
+一个抛体以20米/秒的初速度、与水平方向成30°角发射。计算初速度的水平分量和垂直分量。
 
 ### Image Prompt / 图片提示
-> 📷 **IMAGE PROMPT — [SV-11]: Example 2 Diagram**
-> Diagram showing a block on a 30° inclined plane. Weight W = mg acts vertically downward. This is resolved into W sin 30° (parallel to plane, down the slope) and W cos 30° (perpendicular to plane). Normal reaction N is perpendicular to the plane, equal and opposite to W cos 30°. All forces labeled with arrows and values. Professional style. Labels in English.
+> 📷 **IMAGE PROMPT — [SV-06]: Velocity Resolution**
+>
+> A right-angled triangle with hypotenuse 20 m/s at 30° from horizontal. Horizontal leg labeled "v_x = 20 cos 30°", vertical leg labeled "v_y = 20 sin 30°". Angle marked 30°. Clean educational diagram.
 
 ### Solution / 解答
 
-**Step 1: Identify given information / 步骤1：确定已知信息**
-- Mass $m = 5.0 \text{ kg}$
-- Angle $\theta = 30^\circ$
-- Gravitational field strength $g = 9.81 \text{ m s}^{-2}$ (use 9.81 unless specified otherwise)
-- Weight $W = mg = 5.0 \times 9.81 = 49.05 \text{ N}$
+**Step 1: Identify the given values**
+- Initial velocity $v = 20 \text{ m/s}$
+- Angle from horizontal $\theta = 30^\circ$
 
-**Step 2: Resolve weight into components / 步骤2：将重力分解为分量**
+**Step 2: Calculate horizontal component**
+$$ v_x = v \cos \theta = 20 \times \cos 30^\circ = 20 \times 0.8660 = 17.3 \text{ m/s} $$
 
-(a) Component parallel to the plane:
-$$F_{\parallel} = W\sin\theta = mg\sin\theta = 49.05 \times \sin 30^\circ = 49.05 \times 0.5 = 24.5 \text{ N}$$
+**Step 3: Calculate vertical component**
+$$ v_y = v \sin \theta = 20 \times \sin 30^\circ = 20 \times 0.5000 = 10.0 \text{ m/s} $$
 
-(b) Component perpendicular to the plane:
-$$F_{\perp} = W\cos\theta = mg\cos\theta = 49.05 \times \cos 30^\circ = 49.05 \times 0.866 = 42.5 \text{ N}$$
-
-**Step 3: Find normal reaction force / 步骤3：求法向反作用力**
-
-Since the block is at rest (equilibrium) perpendicular to the plane, the normal reaction force N must balance the perpendicular component of weight:
-
-$$N = F_{\perp} = 42.5 \text{ N}$$
+**Step 4: State the answer**
+Horizontal component = 17.3 m/s
+Vertical component = 10.0 m/s
 
 ### Final Answer / 最终答案
-**English:** (a) 24.5 N parallel to the plane (down the slope); (b) 42.5 N perpendicular to the plane; (c) 42.5 N (normal reaction).
-
-**中文:** (a) 24.5 N，平行于斜面（沿斜面向下）；(b) 42.5 N，垂直于斜面；(c) 42.5 N（法向反作用力）。
+**Answer:** $v_x = 17.3 \text{ m/s}$, $v_y = 10.0 \text{ m/s}$ | **答案：** $v_x = 17.3 \text{米/秒}$，$v_y = 10.0 \text{米/秒}$
 
 ### Examiner Notes / 考官点评
-**English:** This is a classic inclined plane problem. Key points: (1) Always resolve weight, not the normal reaction; (2) The component parallel to the plane uses sin θ, the perpendicular component uses cos θ; (3) For a frictionless plane, the normal reaction equals the perpendicular component of weight; (4) If the block is accelerating down the plane, use $F_{\parallel} = ma$ to find acceleration. Common mistake: confusing which component uses sin and which uses cos.
+**English:**
+- Use $\cos$ for horizontal (adjacent to angle) and $\sin$ for vertical (opposite to angle).
+- Always include units (m/s).
+- Common mistake: swapping sine and cosine (using $\sin$ for horizontal).
 
-**中文:** 这是一个经典的斜面问题。关键点：(1) 始终分解重力，而不是法向反作用力；(2) 平行于斜面的分量使用sin θ，垂直于斜面的分量使用cos θ；(3) 对于光滑斜面，法向反作用力等于重力的垂直分量；(4) 如果物块沿斜面加速下滑，使用$F_{\parallel} = ma$求加速度。常见错误：混淆哪个分量使用sin，哪个使用cos。
+**中文：**
+- 使用$\cos$表示水平分量（与角度相邻），使用$\sin$表示垂直分量（与角度相对）。
+- 始终包含单位（米/秒）。
+- 常见错误：交换正弦和余弦（对水平分量使用$\sin$）。
+
+### Alternative Method / 替代方法
+**English:**
+If the angle is measured from the vertical, swap the formulas: $v_x = v \sin \theta$, $v_y = v \cos \theta$. Always check which angle is given.
+
+**中文：**
+如果角度是从垂直方向测量的，交换公式：$v_x = v \sin \theta$，$v_y = v \cos \theta$。始终检查给出的角度。
+
+---
 
 # 9. Past Paper Question Types / 历年真题题型
 
+**English:**
+The table below summarizes the types of questions that appear in Cambridge 9702 and Edexcel IAL exams for scalars and vectors.
+
+**中文：**
+下表总结了剑桥9702和爱德思IAL考试中与标量和矢量相关的题型。
+
 | Question Type / 题型 | Frequency / 频率 | Difficulty / 难度 | Past Paper References / 真题索引 |
-|----------------------|------------------|-------------------|----------------------------------|
-| Distinguish scalar vs vector (MCQ) | Very High / 非常高 | Easy / 简单 | 📝 *待填入* |
-| Find resultant of two perpendicular vectors | High / 高 | Easy-Medium / 简单-中等 | 📝 *待填入* |
-| Find resultant using cosine rule (non-perpendicular) | Medium / 中等 | Medium / 中等 | 📝 *待填入* |
-| Resolve a force into components | Very High / 非常高 | Easy-Medium / 简单-中等 | 📝 *待填入* |
-| Forces on an inclined plane | Very High / 非常高 | Medium-Hard / 中等-困难 | 📝 *待填入* |
-| Vector addition graphical method (scale drawing) | Medium / 中等 | Medium / 中等 | 📝 *待填入* |
-| Equilibrium of three forces (closed triangle) | High / 高 | Medium-Hard / 中等-困难 | 📝 *待填入* |
-| Vector subtraction | Low / 低 | Easy-Medium / 简单-中等 | 📝 *待填入* |
+|----------------------|------------------|------------------|-------------------------------|
+| Calculation / 计算 | High | Low-Medium | 📝 *待填入* |
+| Explanation / 解释 | Medium | Low | 📝 *待填入* |
+| Graph Analysis / 图表分析 | Low | Medium | 📝 *待填入* |
+| Practical / 实验 | Low | Medium | 📝 *待填入* |
+| Derivation / 推导 | Low | Low | 📝 *待填入* |
 
-> 📝 **题库整理中 / Question Bank Under Construction:** 本表格中的真题索引正在整理中。建议学生参考CAIE 9702/22, 9702/23, 9702/12和Edexcel WPH11/01的近年试卷进行练习。The past paper references in this table are being compiled. Students are advised to practice with recent papers from CAIE 9702/22, 9702/23, 9702/12 and Edexcel WPH11/01.
+> 📝 **题库整理中 / Question Bank Under Construction:** 具体试卷编号（如 9702/23/M/J/24 Q3）将在后续整理真题后填入上表。
 
-**Common Command Words / 常见指令词:**
-- **Calculate / 计算:** Find a numerical value using mathematical operations
-- **Determine / 确定:** Find a value, often by calculation or graphical method
-- **State / 陈述:** Give a brief answer without explanation
-- **Explain / 解释:** Give reasons or causes
-- **Draw / 绘制:** Produce a diagram or graph
-- **Resolve / 分解:** Split a vector into perpendicular components
-- **Find / 求:** Determine a value or relationship
-- **Show / 证明:** Demonstrate that a statement is true
+**Common Command Words / 常见指令词：**
+
+| Command Word (EN) | Command Word (CN) | Meaning (EN) | Meaning (CN) |
+|-------------------|-------------------|--------------|--------------|
+| State | 陈述 | Give a brief answer without explanation | 给出简短答案，无需解释 |
+| Define | 定义 | Give the precise meaning of a term | 给出术语的精确含义 |
+| Explain | 解释 | Give reasons or causes | 给出原因或理由 |
+| Describe | 描述 | Give a detailed account | 给出详细说明 |
+| Calculate | 计算 | Work out a numerical answer | 计算出数值答案 |
+| Determine | 确定 | Find a value using given data | 使用给定数据找出一个值 |
+| Suggest | 建议 | Propose a possible answer | 提出一个可能的答案 |
+
+---
 
 # 10. Practical Skills Connections / 实验技能链接
 
-**English:** Vector concepts are tested in practical contexts in both CAIE (Paper 3/5) and Edexcel (Unit 3/6) exams. Key practical skills include:
+**English:**
+Scalars and vectors are fundamental to many practical experiments in A-Level physics.
 
-1. **Force Table Experiment:** Using a force table (or three spring balances) to verify the parallelogram law of vector addition. Forces are applied at known angles, and the resultant is found experimentally. Uncertainties arise from angle measurement (±1°) and force measurement (±0.1 N).
+**中文：**
+标量和矢量是A-Level物理学中许多实验的基础。
 
-2. **Inclined Plane Experiment:** Measuring the force required to pull a block up an inclined plane at constant speed. The component of weight parallel to the plane ($mg\sin\theta$) is compared with the measured force. Uncertainties include angle measurement and friction.
+### Measurements / 测量
+**English:**
+- **Force vectors:** Using spring balances to measure forces in equilibrium. Students must record both magnitude (from the balance reading) and direction (using a protractor).
+- **Displacement vectors:** Using rulers and protractors to measure displacement in two dimensions.
+- **Velocity vectors:** Using ticker timers or motion sensors to measure velocity components.
 
-3. **Vector Addition by Scale Drawing:** Using a ruler and protractor to add vectors graphically. The scale must be chosen appropriately (e.g., 1 cm = 1 N). The accuracy depends on the precision of drawing and measurement.
+**中文：**
+- **力矢量：** 使用弹簧测力计测量平衡中的力。学生必须记录大小（从测力计读数）和方向（使用量角器）。
+- **位移矢量：** 使用尺子和量角器测量二维位移。
+- **速度矢量：** 使用打点计时器或运动传感器测量速度分量。
 
-4. **Uncertainty Analysis:** When resolving vectors, uncertainties in angle measurement propagate to uncertainties in components. For a vector $F$ at angle $\theta$, the uncertainty in $F_x = F\cos\theta$ depends on both $\Delta F$ and $\Delta\theta$.
+### Uncertainties / 不确定度
+**English:**
+- When drawing vector diagrams to scale, the uncertainty in the resultant depends on the scale used and the precision of the drawing.
+- For resolution, uncertainty in the angle measurement propagates to uncertainties in components: $\Delta V_x = V \sin \theta \, \Delta \theta$ (in radians).
 
-**中文:** 矢量概念在CAIE（Paper 3/5）和Edexcel（Unit 3/6）考试中都在实验背景下进行测试。关键实验技能包括：
+**中文：**
+- 当按比例绘制矢量图时，合矢量的不确定度取决于使用的比例尺和绘图的精度。
+- 对于分解，角度测量的不确定度会传播到分量中：$\Delta V_x = V \sin \theta \, \Delta \theta$（以弧度为单位）。
 
-1. **力台实验：** 使用力台（或三个弹簧测力计）验证矢量加法的平行四边形法则。以已知角度施加力，通过实验找到合力。不确定度来自角度测量（±1°）和力测量（±0.1 N）。
+### Graph Plotting / 图表绘制
+**English:**
+- Plotting vector components on a graph (e.g., horizontal vs vertical velocity) helps visualize the vector.
+- The gradient of a vector component graph can give information about acceleration.
 
-2. **斜面实验：** 测量以恒定速度将物块拉上斜面所需的力。将平行于斜面的重力分量（$mg\sin\theta$）与测量力进行比较。不确定度包括角度测量和摩擦力。
+**中文：**
+- 在图表上绘制矢量分量（例如，水平速度与垂直速度）有助于可视化矢量。
+- 矢量分量图的斜率可以提供关于加速度的信息。
 
-3. **按比例绘图的矢量加法：** 使用直尺和量角器以图形方式添加矢量。必须适当选择比例（例如，1 cm = 1 N）。精度取决于绘图和测量的精确度。
+### Experimental Design / 实验设计
+**English:**
+- **CAIE Paper 3/5:** Students may be asked to design an experiment to find the resultant of two forces using a force board, pulleys, and weights.
+- **Edexcel Unit 3/6:** Students may investigate equilibrium of forces using a force table, resolving forces into components.
 
-4. **不确定度分析：** 分解矢量时，角度测量的不确定度会传播到分量的不确定度。对于角度为$\theta$的矢量$F$，$F_x = F\cos\theta$的不确定度取决于$\Delta F$和$\Delta\theta$。
+**中文：**
+- **CAIE Paper 3/5：** 学生可能被要求设计一个实验，使用力板、滑轮和砝码找到两个力的合力。
+- **Edexcel Unit 3/6：** 学生可能使用力表研究力的平衡，将力分解为分量。
 
-> 📋 **CIE Only:** CAIE Paper 3 often includes experiments where students must resolve forces or verify vector addition using spring balances. Paper 5 may include design questions involving vector resolution.
-> 📋 **Edexcel Only:** Edexcel Unit 3 includes practical investigations of forces in equilibrium, often using a force board or Newton meter. Students must evaluate experimental methods and suggest improvements.
+> 📋 **CIE Only:** Cambridge Paper 3 (AS) often includes a question on vector addition using a force board. Paper 5 (A2) may require vector resolution in a practical context.
+>
+> 📋 **Edexcel Only:** Edexcel Unit 3 (AS) includes a practical on equilibrium of forces. Unit 6 (A2) may involve vector resolution for more complex systems.
+
+---
 
 # 11. Concept Map / 概念图谱
 
+**English:**
+The concept map below shows the relationships between scalars, vectors, and related topics.
+
+**中文：**
+下面的概念图显示了标量、矢量和相关主题之间的关系。
+
 ```mermaid
 graph TD
-    A[Scalars and Vectors] --> B[Scalar Quantities]
-    A --> C[Vector Quantities]
-    C --> D[Vector Addition and Subtraction]
-    C --> E[Resolution of Vectors]
-    D --> F[Triangle Law]
-    D --> G[Parallelogram Law]
-    D --> H[Component Method]
-    E --> I[Horizontal/Vertical Components]
-    E --> J[Parallel/Perpendicular Components]
-    F --> K[Resultant Vector]
-    G --> K
-    H --> K
-    I --> L[Applications]
-    J --> L
-    L --> M[Forces on Inclined Plane]
-    L --> N[Projectile Motion]
-    L --> O[Equilibrium Problems]
-    L --> P[Newton's Laws]
+    %% Main topic
+    SAV[Scalars and Vectors] --> SQ[Scalar Quantities]
+    SAV --> VQ[Vector Quantities]
     
-    Q[Prerequisites] -.-> A
-    R[Displacement, Velocity and Acceleration] -.-> A
-    S[Trigonometry] -.-> A
+    %% Sub-topics
+    VQ --> VAS[Vector Addition and Subtraction]
+    VQ --> RV[Resolution of Vectors]
     
-    A -.-> T[Related Topics]
-    T --> U[Types of Force]
-    T --> V[Projectile Motion]
-    T --> W[Newton's Laws of Motion]
+    %% Prerequisites
+    SAV --> PM[Basic Mathematics]
+    PM --> TRIG[Trigonometry]
+    PM --> ALG[Algebra]
+    
+    %% Related topics
+    VAS --> DVA[Displacement, Velocity and Acceleration]
+    RV --> DVA
+    RV --> PM[Projectile Motion]
+    RV --> TF[Types of Force]
+    
+    %% Applications
+    DVA --> KIN[Kinematics]
+    PM --> PROJ[Projectile Motion]
+    TF --> STAT[Statics]
+    TF --> DYN[Dynamics]
+    
+    %% Practical skills
+    SAV --> PS[Practical Skills]
+    PS --> MEAS[Measurements]
+    PS --> UNC[Uncertainties]
+    PS --> GRAPH[Graph Plotting]
+    
+    %% Styling
+    classDef main fill:#f9f,stroke:#333,stroke-width:2px
+    classDef sub fill:#bbf,stroke:#333,stroke-width:1px
+    classDef related fill:#bfb,stroke:#333,stroke-width:1px
+    classDef practical fill:#fbb,stroke:#333,stroke-width:1px
+    
+    class SAV main
+    class SQ,VQ,VAS,RV sub
+    class DVA,PM,TF related
+    class PS,MEAS,UNC,GRAPH practical
 ```
 
-# 12. Examiner Insights / 考官洞察
+---
 
-**English:** Based on analysis of past CAIE 9702 and Edexcel IAL papers:
+# 12. Quick Revision Sheet / 速查表
 
-**Most Tested Ideas:**
-1. **Scalar vs Vector Classification (CAIE & Edexcel):** Almost every Paper 1 (MCQ) has at least one question asking which quantity is a vector or scalar. Common examples: velocity (vector), speed (scalar), force (vector), energy (scalar).
-2. **Resolution of Forces on Inclined Planes (CAIE & Edexcel):** This is the most common application. Typically worth 3-5 marks in structured questions.
-3. **Finding Resultant Using Components (CAIE & Edexcel):** Often combined with equilibrium problems. Worth 4-6 marks.
-4. **Graphical Vector Addition (CAIE only):** Scale drawing questions appear in Paper 2. Worth 3-4 marks. Accuracy is crucial.
+**English:**
+The table below provides a one-page bilingual summary of key points for scalars and vectors.
 
-**Mark Scheme Wording / 评分方案措辞:**
-- For "state" questions: "A scalar has magnitude only / A vector has magnitude and direction" (1 mark)
-- For "calculate resultant" questions: "Correct use of Pythagoras (1), correct magnitude (1), correct use of tan (1), correct angle (1)"
-- For "resolve" questions: "Correct identification of component (1), correct trigonometric function (1), correct calculation (1)"
-
-**Common Lost Marks / 常见失分点:**
-1. Not specifying direction when giving a vector answer
-2. Using the wrong trigonometric function (sin vs cos)
-3. Adding vectors as scalars
-4. Drawing vector diagrams not to scale
-5. Forgetting to convert units (e.g., cm to m)
-6. Not showing working for calculation questions
-
-**High-Scoring Structures / 高分结构:**
-- Always draw a diagram showing vectors and components
-- Clearly label all angles and magnitudes
-- Show each step of the calculation
-- State the final answer with both magnitude and direction
-- Include units in all numerical answers
-
-**中文:** 基于对CAIE 9702和Edexcel IAL历年试卷的分析：
-
-**最常考的概念：**
-1. **标量与矢量分类（CAIE和Edexcel）：** 几乎每份Paper 1（选择题）都至少有一道题询问哪个量是矢量或标量。常见例子：速度（矢量）、速率（标量）、力（矢量）、能量（标量）。
-2. **斜面上的力分解（CAIE和Edexcel）：** 这是最常见的应用。通常在结构化问题中占3-5分。
-3. **使用分量求合力（CAIE和Edexcel）：** 常与平衡问题结合。占4-6分。
-4. **图形矢量加法（仅CAIE）：** 按比例绘图题出现在Paper 2中。占3-4分。精度至关重要。
-
-**评分方案措辞：**
-- 对于"陈述"题："标量只有大小 / 矢量有大小和方向"（1分）
-- 对于"计算合力"题："正确使用勾股定理（1），正确的大小（1），正确使用正切（1），正确的角度（1）"
-- 对于"分解"题："正确识别分量（1），正确的三角函数（1），正确的计算（1）"
-
-**常见失分点：**
-1. 给出矢量答案时未说明方向
-2. 使用错误的三角函数（sin与cos混淆）
-3. 将矢量作为标量相加
-4. 矢量图未按比例绘制
-5. 忘记转换单位（如cm到m）
-6. 计算题未展示过程
-
-**高分结构：**
-- 始终绘制显示矢量和分量的图表
-- 清晰标注所有角度和大小
-- 展示计算的每一步
-- 最终答案同时包含大小和方向
-- 所有数值答案包含单位
-
-# 13. Quick Revision Sheet / 速查表
+**中文：**
+下表提供了标量和矢量的关键点的一页双语总结。
 
 | Category / 类别 | Key Points / 要点 |
-|-----------------|-------------------|
-| **Scalar Quantities / 标量** | Magnitude only. Examples: mass, speed, distance, energy, time, temperature, pressure, work, power, electric charge |
-| **Vector Quantities / 矢量** | Magnitude + direction. Examples: displacement, velocity, acceleration, force, momentum, weight, electric field, magnetic field |
-| **Vector Addition / 矢量加法** | Triangle Law: head-to-tail. Parallelogram Law: diagonal. Component method: $R_x = \sum F_x$, $R_y = \sum F_y$ |
-| **Vector Subtraction / 矢量减法** | $\vec{A} - \vec{B} = \vec{A} + (-\vec{B})$. Reverse direction of $\vec{B}$, then add |
-| **Resolution / 分解** | $F_x = F\cos\theta$, $F_y = F\sin\theta$ (θ from horizontal). For inclined plane: $F_{\parallel} = mg\sin\theta$, $F_{\perp} = mg\cos\theta$ |
-| **Resultant Magnitude / 合力大小** | Perpendicular: $R = \sqrt{A^2 + B^2}$. General: $R = \sqrt{A^2 + B^2 + 2AB\cos\theta}$ |
-| **Resultant Direction / 合力方向** | $\theta = \tan^{-1}(F_y/F_x)$. Check quadrant! |
-| **Equilibrium / 平衡** | Resultant = 0. Closed vector triangle. $\sum F_x = 0$, $\sum F_y = 0$ |
-| **Common Mistakes / 常见错误** | Adding as scalars, wrong trig function, no direction, diagram not to scale, forgetting units |
-| **Exam Tips / 考试提示** | Draw diagrams, label angles, show working, check quadrants, include units |
+|----------------|------------------|
+| **Definitions / 定义** | **Scalar:** magnitude only (e.g., mass, time, speed, distance, energy) / 标量：只有大小（例如，质量、时间、速率、距离、能量） |
+| | **Vector:** magnitude and direction (e.g., displacement, velocity, acceleration, force, momentum) / 矢量：大小和方向（例如，位移、速度、加速度、力、动量） |
+| **Equations / 公式** | **Vector addition (perpendicular):** $R = \sqrt{A^2 + B^2}$ / 矢量加法（垂直）：$R = \sqrt{A^2 + B^2}$ |
+| | **Vector addition (general):** $R = \sqrt{A^2 + B^2 + 2AB \cos \theta}$ / 矢量加法（一般）：$R = \sqrt{A^2 + B^2 + 2AB \cos \theta}$ |
+| | **Resolution:** $V_x = V \cos \theta$, $V_y = V \sin \theta$ / 分解：$V_x = V \cos \theta$，$V_y = V \sin \theta$ |
+| | **Reconstruction:** $V = \sqrt{V_x^2 + V_y^2}$, $\theta = \tan^{-1}(V_y / V_x)$ / 重建：$V = \sqrt{V_x^2 + V_y^2}$，$\theta = \tan^{-1}(V_y / V_x)$ |
+| **Graphs / 图表** | **Triangle rule:** head-to-tail placement / 三角形法则：首尾相接 |
+| | **Parallelogram rule:** tails together, diagonal is resultant / 平行四边形法则：尾端在一起，对角线是合矢量 |
+| | **Resolution:** right-angled triangle with vector as hypotenuse / 分解：以矢量为斜边的直角三角形 |
+| **Key Facts / 关键事实** | Scalars add algebraically; vectors add using vector rules / 标量代数相加；矢量使用矢量规则相加 |
+| | Components are perpendicular and independent / 分量是垂直且独立的 |
+| | The resultant is always ≤ the sum of magnitudes / 合矢量总是≤大小之和 |
+| | For perpendicular vectors, $R = \sqrt{A^2 + B^2}$ / 对于垂直矢量，$R = \sqrt{A^2 + B^2}$ |
+| **Exam Reminders / 考试提醒** | Always state both magnitude and direction for vectors / 始终说明矢量的大小和方向 |
+| | Use $\cos$ for horizontal (adjacent), $\sin$ for vertical (opposite) / 使用$\cos$表示水平（邻边），$\sin$表示垂直（对边） |
+| | Check the angle: from horizontal or vertical? / 检查角度：从水平还是垂直测量？ |
+| | Include units in all answers / 在所有答案中包含单位 |
+| | For scale drawings, include the scale and measure accurately / 对于比例图，包含比例尺并准确测量 |
 
-# 14. Metadata / 元数据
+---
 
-```yaml
-title:
-  en: Scalars and Vectors
-  cn: 标量与矢量
-subject: Physics
-syllabus: [CAIE 9702, Edexcel IAL]
-cie_ref: 3.1 (a-c)
-edexcel_ref: WPH11 U1: 1.1-1.3
-level: AS
-node_type: topic_hub
-difficulty: foundation
-prerequisites: []
-related_topics:
-  - Displacement, Velocity and Acceleration
-  - Projectile Motion
-  - Types of Force
-sub_topics:
-  - Scalar Quantities
-  - Vector Quantities
-  - Vector Addition and Subtraction
-  - Resolution of Vectors
-formula_count: 4
-diagram_count: 11
-exam_frequency: very_high
-language: bilingual_en_cn
-last_updated: 2024-01
+**End of Note / 笔记结束**
+
+*This note is part of the Physics Knowledge Graph. Related notes: [[Scalar Quantities]], [[Vector Quantities]], [[Vector Addition and Subtraction]], [[Resolution of Vectors]], [[Displacement, Velocity and Acceleration]], [[Projectile Motion]], [[Types of Force]].*

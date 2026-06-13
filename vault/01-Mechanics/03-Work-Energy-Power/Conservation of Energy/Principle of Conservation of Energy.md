@@ -1,263 +1,450 @@
 # 1. Overview / 概述
 
 **English:**
-The **Principle of Conservation of Energy** is one of the most fundamental laws in physics. It states that **energy cannot be created or destroyed, only transferred from one form to another**. This principle applies to all physical processes, from a ball falling under gravity to complex nuclear reactions. Within the broader topic of [[Conservation of Energy]], this principle serves as the foundation for understanding [[Energy Transfers in Mechanical Systems]] and analyzing [[Dissipative Forces and Energy Loss]]. It is essential for solving problems involving energy changes, as it allows us to track energy flow and predict outcomes without needing to know the detailed forces involved.
+The Principle of Conservation of Energy is a cornerstone of physics, stating that energy cannot be created or destroyed, only transferred from one form to another. This sub-topic explores how this principle applies to mechanical systems, where energy transforms between [[Kinetic Energy and Potential Energy]] forms. Understanding this principle is essential for analyzing real-world scenarios, from roller coasters to pendulums, and forms the foundation for [[Energy Transfers in Mechanical Systems]].
+
+The principle provides a powerful tool for solving problems without needing to know the detailed forces involved. By tracking energy changes, we can predict speeds, heights, and other quantities in isolated systems. This concept is fundamental to [[Conservation of Energy]] and connects directly to [[Power and Efficiency]] in more advanced applications.
 
 **中文:**
-**能量守恒原理**是物理学中最基本的定律之一。它指出**能量既不能被创造也不能被消灭，只能从一种形式转化为另一种形式**。这一原理适用于所有物理过程，从重力作用下落下的球到复杂的核反应。在[[Conservation of Energy]]这一更广泛的主题中，该原理是理解[[Energy Transfers in Mechanical Systems]]和分析[[Dissipative Forces and Energy Loss]]的基础。它对于解决涉及能量变化的问题至关重要，因为它使我们能够追踪能量流动并在不需要知道详细作用力的情况下预测结果。
+能量守恒原理是物理学的基石，它指出能量既不能被创造也不能被消灭，只能从一种形式转化为另一种形式。本子知识点探讨该原理如何应用于机械系统，其中能量在[[Kinetic Energy and Potential Energy]]形式之间转换。理解这一原理对于分析从过山车到摆锤等现实场景至关重要，并为[[Energy Transfers in Mechanical Systems]]奠定基础。
+
+该原理提供了一个强大的解题工具，无需了解所涉及的详细力。通过追踪能量变化，我们可以预测孤立系统中的速度、高度和其他物理量。这一概念是[[Conservation of Energy]]的基础，并直接与更高级应用中的[[Power and Efficiency]]相关联。
 
 ---
 
-# 2. Core Definition / 核心定义
+# 2. Syllabus Learning Objectives / 考纲学习目标
 
-| Term (EN/CN) | Definition (EN) | Definition (CN) |
-| ------------ | --------------- | --------------- |
-| **Principle of Conservation of Energy** / 能量守恒原理 | The total energy of an isolated system remains constant over time. Energy can be transformed from one form to another, but the total amount remains unchanged. | 孤立系统的总能量随时间保持不变。能量可以从一种形式转化为另一种形式，但总量保持不变。 |
-| **Isolated System** / 孤立系统 | A system that does not exchange energy or matter with its surroundings. | 不与周围环境交换能量或物质的系统。 |
-| **Energy Transfer** / 能量转移 | The movement of energy from one object or system to another. | 能量从一个物体或系统转移到另一个物体或系统。 |
-| **Energy Transformation** / 能量转化 | The conversion of energy from one form to another (e.g., kinetic to thermal). | 能量从一种形式转换为另一种形式（例如，动能转化为热能）。 |
-| **Closed System** / 封闭系统 | A system that can exchange energy but not matter with its surroundings. | 可以与周围环境交换能量但不能交换物质的系统。 |
-| **Dissipative Forces** / 耗散力 | Forces (like friction or air resistance) that convert mechanical energy into thermal energy, which is often considered "lost" from the mechanical system. | 将机械能转化为热能（通常被视为从机械系统中"损失"）的力（如摩擦力或空气阻力）。 |
+| CAIE 9702 | Edexcel IAL |
+|-----------|-------------|
+| 3.3(g) State the principle of conservation of energy | 4.9 Understand the principle of conservation of energy |
+| 3.3(g) Apply the principle to mechanical systems | 4.10 Apply the principle to solve problems involving energy transfers |
+| 3.3(g) Distinguish between open and closed systems | 4.11 Understand that energy is dissipated in real systems |
+
+**Examiner Expectations / 考官期望:**
+- **English:** Students must state the principle verbatim, apply it to calculate unknown quantities in mechanical systems, and recognize that in real systems, energy is dissipated (e.g., as heat due to friction). Be able to identify closed systems where total mechanical energy is conserved.
+- **中文:** 学生必须准确陈述该原理，将其应用于计算机械系统中的未知量，并认识到在真实系统中能量会耗散（例如因摩擦转化为热能）。能够识别总机械能守恒的封闭系统。
 
 ---
 
-# 3. Key Concepts / 关键概念
+# 3. Core Definitions / 核心定义
 
+| Term (EN/CN) | Definition (EN) | Definition (CN) | Common Mistakes / 常见错误 |
+|--------------|-----------------|-----------------|---------------------------|
+| **Principle of Conservation of Energy** / 能量守恒原理 | Energy cannot be created or destroyed; it can only be transferred from one form to another. The total energy of an isolated system remains constant. | 能量既不能被创造也不能被消灭；只能从一种形式转化为另一种形式。孤立系统的总能量保持不变。 | ❌ Thinking energy is "used up" or "lost" — it is only transferred or dissipated |
+| **Closed System** / 封闭系统 | A system that does not exchange energy with its surroundings; total energy within remains constant. | 不与外界交换能量的系统；内部总能量保持不变。 | ❌ Confusing with open systems where energy can enter/leave |
+| **Dissipation** / 耗散 | The process where useful energy is transformed into less useful forms (e.g., thermal energy) that are not recoverable for the intended purpose. | 有用能量转化为不太有用的形式（如热能）的过程，这些能量无法再用于预期目的。 | ❌ Thinking dissipated energy is "lost" — it still exists but is spread out |
+| **Mechanical Energy** / 机械能 | The sum of kinetic energy and potential energy in a system. | 系统中动能和势能的总和。 | ❌ Forgetting to include both KE and PE |
+| **Isolated System** / 孤立系统 | A system that exchanges neither matter nor energy with its surroundings. | 既不与外界交换物质也不交换能量的系统。 | ❌ Using interchangeably with "closed system" |
+
+---
+
+# 4. Key Concepts Explained / 关键概念详解
+
+## 4.1 The Principle of Conservation of Energy / 能量守恒原理
+
+### Explanation / 解释
 **English:**
-The Principle of Conservation of Energy is a **universal law** — it applies to all physical processes, from subatomic particles to galaxies. It is not derived from other laws but is an empirical observation confirmed by countless experiments.
+The Principle of Conservation of Energy states that the total energy of an isolated system remains constant over time. In mechanical systems, this means that the sum of [[Kinetic Energy and Potential Energy]] (mechanical energy) is constant if no non-conservative forces (like friction) do work. When non-conservative forces are present, the total energy is still conserved, but some mechanical energy is transformed into other forms (e.g., thermal energy, sound).
 
-### Step-by-Step Reasoning
+Consider a ball dropped from height $h$: at the top, it has maximum gravitational potential energy $E_p = mgh$ and zero kinetic energy. As it falls, $E_p$ decreases while $E_k = \frac{1}{2}mv^2$ increases, but $E_p + E_k$ remains constant (ignoring air resistance). This is expressed as:
 
-1. **Identify the system**: Define what is included (e.g., a ball + Earth + air). This determines whether the system is isolated, closed, or open.
-2. **Identify energy forms present**: List all forms of energy involved — [[Kinetic Energy and Potential Energy|kinetic energy (KE)]], gravitational potential energy (GPE), elastic potential energy (EPE), thermal energy, etc.
-3. **Apply conservation**: The total initial energy equals the total final energy, accounting for any energy transfers across the system boundary.
-4. **Account for dissipative forces**: If [[Dissipative Forces and Energy Loss|dissipative forces]] like friction are present, some mechanical energy is converted to thermal energy, but total energy remains constant.
-
-### Physical Interpretation
-
-The principle implies that energy is a **state function** — the total energy of an isolated system depends only on its current state, not on how it reached that state. This allows us to use energy methods (like the work-energy theorem) to solve problems without analyzing forces in detail.
-
-### Common Pitfalls
-
-- **Forgetting to account for all energy forms**: Students often ignore thermal energy from friction or air resistance.
-- **Confusing "lost" energy with destroyed energy**: Energy is never destroyed; it is merely transferred to a less useful form (e.g., thermal energy dissipated to the surroundings).
-- **Applying conservation to non-isolated systems**: If energy enters or leaves the system (e.g., a car engine burning fuel), the system's total energy changes — you must account for the energy crossing the boundary.
+$$E_{\text{total}} = E_k + E_p = \text{constant}$$
 
 **中文:**
-能量守恒原理是一条**普适定律**——它适用于所有物理过程，从亚原子粒子到星系。它不是从其他定律推导出来的，而是经过无数次实验验证的经验观察。
+能量守恒原理指出，孤立系统的总能量随时间保持不变。在机械系统中，这意味着如果没有非保守力（如摩擦力）做功，[[Kinetic Energy and Potential Energy]]之和（机械能）是恒定的。当存在非保守力时，总能量仍然守恒，但部分机械能转化为其他形式（如热能、声能）。
 
-### 逐步推理
+考虑一个从高度 $h$ 下落的球：在顶部，它具有最大的重力势能 $E_p = mgh$ 和零动能。下落过程中，$E_p$ 减少而 $E_k = \frac{1}{2}mv^2$ 增加，但 $E_p + E_k$ 保持不变（忽略空气阻力）。这可以表示为：
 
-1. **确定系统**：定义包含什么（例如，球 + 地球 + 空气）。这决定了系统是孤立的、封闭的还是开放的。
-2. **识别涉及的能量形式**：列出所有涉及的能量形式——[[Kinetic Energy and Potential Energy|动能]]、重力势能、弹性势能、热能等。
-3. **应用守恒**：总初始能量等于总最终能量，同时考虑任何穿过系统边界的能量转移。
-4. **考虑耗散力**：如果存在[[Dissipative Forces and Energy Loss|耗散力]]（如摩擦力），部分机械能会转化为热能，但总能量保持不变。
+$$E_{\text{总}} = E_k + E_p = \text{常数}$$
 
-### 物理解释
+### Physical Meaning / 物理意义
+**English:**
+The principle reflects a fundamental symmetry of nature: energy is a conserved quantity. This means that in any process, the total energy before equals the total energy after. Energy can change form (e.g., chemical → thermal, kinetic → potential), but the total amount never changes. This is why perpetual motion machines are impossible — energy cannot be created from nothing.
 
-该原理意味着能量是一个**状态函数**——孤立系统的总能量仅取决于其当前状态，而不取决于它如何达到该状态。这使我们能够使用能量方法（如功能定理）来解决问题，而无需详细分析力。
+**中文:**
+该原理反映了自然界的一个基本对称性：能量是一个守恒量。这意味着在任何过程中，总能量前后保持不变。能量可以改变形式（如化学能→热能，动能→势能），但总量永远不会改变。这就是永动机不可能存在的原因——能量不能凭空产生。
 
-### 常见错误
+### Common Misconceptions / 常见误区
+- ❌ **"Energy is used up"** — Energy is never used up; it is transferred or dissipated. The "lost" energy still exists but in less useful forms.
+- ❌ **"Energy is lost as heat"** — Heat is a form of energy; it is not lost but transferred to the surroundings.
+- ❌ **"Conservation of energy means mechanical energy is always conserved"** — Mechanical energy is only conserved in the absence of non-conservative forces.
+- ❌ **"Energy can be created in nuclear reactions"** — Even in nuclear reactions, mass-energy is conserved ($E=mc^2$).
 
-- **忘记考虑所有能量形式**：学生常常忽略来自摩擦力或空气阻力的热能。
-- **混淆"损失"的能量与消灭的能量**：能量永远不会被消灭；它只是被转移到一种不太有用的形式（例如，耗散到周围环境的热能）。
-- **对非孤立系统应用守恒**：如果能量进入或离开系统（例如，汽车发动机燃烧燃料），系统的总能量会发生变化——你必须考虑穿过边界的能量。
+### Exam Tips / 考试提示
+- **English:** Always state the principle in full before applying it. Identify whether the system is closed or open. Check if non-conservative forces are present — if so, mechanical energy is NOT conserved, but total energy IS.
+- **中文:** 在应用前务必完整陈述该原理。识别系统是封闭的还是开放的。检查是否存在非保守力——如果存在，机械能不守恒，但总能量守恒。
+
+> 📷 **IMAGE PROMPT — DIAGRAM-01: Energy Transformation in a Falling Ball**
+> A diagram showing a ball at three positions during free fall: (1) at maximum height with label "E_p = mgh, E_k = 0", (2) halfway down with "E_p decreasing, E_k increasing", (3) just before hitting ground with "E_p = 0, E_k = ½mv²". Arrows show energy transfer between forms. A bar chart alongside shows total energy constant while KE and PE bars change height.
 
 ---
 
-# 4. Formulas / 公式
+# 5. Essential Equations / 核心公式
 
-The fundamental statement of the Principle of Conservation of Energy:
+## Equation 1: Conservation of Mechanical Energy (No Friction)
 
-$$ E_{\text{total, initial}} = E_{\text{total, final}} $$
+$$E_{\text{total}} = E_k + E_p = \text{constant}$$
 
-For a mechanical system with dissipative forces:
-
-$$ \text{KE}_i + \text{GPE}_i + \text{EPE}_i = \text{KE}_f + \text{GPE}_f + \text{EPE}_f + \text{Thermal Energy} $$
-
-Or more generally:
-
-$$ \sum E_{\text{initial}} = \sum E_{\text{final}} $$
+$$mgh_1 + \frac{1}{2}mv_1^2 = mgh_2 + \frac{1}{2}mv_2^2$$
 
 | Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
-| ------------- | ------------ | ------------ | ----------- |
-| $E_{\text{total}}$ | Total energy of the system | 系统的总能量 | J (Joules) |
-| $\text{KE}$ | Kinetic energy | 动能 | J |
-| $\text{GPE}$ | Gravitational potential energy | 重力势能 | J |
-| $\text{EPE}$ | Elastic potential energy | 弹性势能 | J |
-| $\text{Thermal Energy}$ | Energy dissipated as heat | 以热量形式耗散的能量 | J |
-
-**Derivation / 推导:**
-The principle is not mathematically derived but is an empirical law. However, for mechanical systems, it can be related to the work-energy theorem: the net work done by all forces equals the change in kinetic energy. If only conservative forces act, mechanical energy is conserved. If non-conservative forces (like friction) act, the work done by those forces equals the energy transferred to thermal energy.
+|--------------|-------------|-------------|------------|
+| $E_{\text{total}}$ | Total mechanical energy | 总机械能 | J (Joules) |
+| $E_k$ | Kinetic energy | 动能 | J |
+| $E_p$ | Potential energy | 势能 | J |
+| $m$ | Mass | 质量 | kg |
+| $g$ | Gravitational field strength | 重力场强度 | N/kg or m/s² |
+| $h$ | Height above reference point | 相对于参考点的高度 | m |
+| $v$ | Velocity | 速度 | m/s |
 
 **Conditions / 适用条件:**
-- The system must be **isolated** (no energy exchange with surroundings) for the total energy to remain constant.
-- For mechanical energy conservation specifically, only **conservative forces** (gravity, springs) should do work — no friction or air resistance.
-- The principle itself is universal, but the specific forms of energy considered depend on the problem.
+- **English:** Only valid when no non-conservative forces (friction, air resistance) do work. The system must be closed.
+- **中文:** 仅在没有非保守力（摩擦力、空气阻力）做功时有效。系统必须是封闭的。
 
-> 📷 **IMAGE PROMPT — E01: Energy Conservation Diagram**
->
-> **English Prompt:**
-> A clean, textbook-style vector diagram showing a ball falling from a height h. The diagram is split into three vertical positions: top (height h), middle (height h/2), and bottom (ground level). At each position, a horizontal bar chart shows the distribution of energy: at the top, all GPE (green); at the middle, half GPE (green) and half KE (blue); at the bottom, all KE (blue). Arrows indicate energy transformation. Labels: "Gravitational Potential Energy (GPE)", "Kinetic Energy (KE)", "Total Energy = Constant". White background, clean sans-serif font, professional physics textbook style.
->
-> **中文描述:**
-> 一个干净、教科书风格的矢量图，显示一个球从高度h落下。图分为三个垂直位置：顶部（高度h）、中部（高度h/2）和底部（地面）。在每个位置，水平条形图显示能量分布：顶部全部为GPE（绿色）；中部一半GPE（绿色）和一半KE（蓝色）；底部全部为KE（蓝色）。箭头指示能量转化。标签："重力势能（GPE）"、"动能（KE）"、"总能量 = 常数"。白色背景，干净的无衬线字体，专业物理教科书风格。
->
-> **Labels Required / 需要标注:**
-> * "Gravitational Potential Energy (GPE)" / 重力势能
-> * "Kinetic Energy (KE)" / 动能
-> * "Total Energy = Constant" / 总能量 = 常数
-> * "h", "h/2", "Ground" / 地面
->
-> **Style / 风格:** Textbook vector
->
-> **Exam Relevance / 考试关联:**
-> This diagram is commonly used in exam questions to test understanding of energy conservation during free fall. Students must be able to describe how energy transforms from GPE to KE while total energy remains constant.
+**Limitations / 局限性:**
+- **English:** Does not account for energy dissipation. In real systems, some mechanical energy is always converted to thermal energy.
+- **中文:** 不考虑能量耗散。在真实系统中，总有一些机械能转化为热能。
 
----
+## Equation 2: Conservation of Total Energy (With Dissipation)
 
-# 5. Image Prompt / 图片提示
+$$E_{\text{initial}} = E_{\text{final}} + E_{\text{dissipated}}$$
 
-> 📷 **IMAGE PROMPT — E02: Closed vs Isolated System**
->
-> **English Prompt:**
-> A side-by-side comparison diagram showing two systems. Left: "Closed System" — a box with a dashed boundary, showing energy (arrows labeled "E") crossing the boundary but matter (circles) staying inside. Right: "Isolated System" — a box with a solid boundary, showing nothing crossing the boundary. Labels: "Closed System: Energy can enter/leave, matter cannot", "Isolated System: Neither energy nor matter can enter/leave". Clean vector style, blue and green color scheme, white background.
->
-> **中文描述:**
-> 一个并排比较图，显示两个系统。左侧："封闭系统"——一个带有虚线边界的盒子，显示能量（标有"E"的箭头）穿过边界但物质（圆圈）留在内部。右侧："孤立系统"——一个带有实线边界的盒子，显示没有任何东西穿过边界。标签："封闭系统：能量可以进入/离开，物质不能"、"孤立系统：能量和物质都不能进入/离开"。干净的矢量风格，蓝色和绿色配色方案，白色背景。
->
-> **Labels Required / 需要标注:**
-> * "Closed System" / 封闭系统
-> * "Isolated System" / 孤立系统
-> * "Energy (E)" / 能量
-> * "Matter" / 物质
->
-> **Style / 风格:** Textbook vector
->
-> **Exam Relevance / 考试关联:**
-> Understanding the difference between closed and isolated systems is crucial for correctly applying the Principle of Conservation of Energy in exam problems.
+$$mgh_1 + \frac{1}{2}mv_1^2 = mgh_2 + \frac{1}{2}mv_2^2 + W_{\text{friction}}$$
+
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| $W_{\text{friction}}$ | Work done against friction (energy dissipated) | 克服摩擦力做的功（耗散的能量） | J |
+
+**Conditions / 适用条件:**
+- **English:** Applies to all real systems where non-conservative forces are present. The dissipated energy is usually transferred to the surroundings as thermal energy.
+- **中文:** 适用于所有存在非保守力的真实系统。耗散的能量通常以热能形式转移到周围环境中。
+
+**Limitations / 局限性:**
+- **English:** Calculating exact dissipated energy requires knowing frictional forces and displacement.
+- **中文:** 精确计算耗散能量需要知道摩擦力和位移。
 
 ---
 
-# 6. Worked Example / 典型例题
+# 6. Graphs and Relationships / 图表与关系
 
-### Example 1: Free Fall with Energy Conservation
+## 6.1 Energy vs. Time for a Falling Object / 下落物体的能量-时间图
+
+### Axes / 坐标轴
+- **X-axis:** Time / 时间 (s)
+- **Y-axis:** Energy / 能量 (J)
+
+### Shape / 形状
+- **English:** Three curves: KE increases parabolically from zero, PE decreases parabolically from maximum, total energy remains constant as a horizontal line.
+- **中文:** 三条曲线：动能从零开始抛物线增加，势能从最大值抛物线减少，总能量保持水平直线不变。
+
+### Gradient Meaning / 斜率含义
+- **English:** The gradient of KE vs. time equals the power delivered by gravity ($P = mgv$). The gradient of PE vs. time equals $-mgv$.
+- **中文:** 动能-时间图的斜率等于重力提供的功率 ($P = mgv$)。势能-时间图的斜率等于 $-mgv$。
+
+### Area Meaning / 面积含义
+- **English:** Area under KE vs. time graph has no direct physical meaning. Area under PE vs. time graph also has no direct meaning.
+- **中文:** 动能-时间图下的面积没有直接物理意义。势能-时间图下的面积也没有直接意义。
+
+### Exam Interpretation / 考试解读
+- **English:** The constant total energy line confirms conservation. The crossing point of KE and PE curves occurs when $E_k = E_p = \frac{1}{2}E_{\text{total}}$, which happens at $h = \frac{1}{2}h_{\text{max}}$.
+- **中文:** 恒定的总能量线证实了守恒。KE和PE曲线的交点出现在 $E_k = E_p = \frac{1}{2}E_{\text{总}}$ 时，发生在 $h = \frac{1}{2}h_{\text{最大}}$ 处。
+
+```mermaid
+graph LR
+    subgraph "Energy vs Time for Falling Object"
+        direction TB
+        T[Time] --> KE[Kinetic Energy ↑]
+        T --> PE[Potential Energy ↓]
+        T --> TE[Total Energy →]
+    end
+    style KE fill:#ff6b6b
+    style PE fill:#4ecdc4
+    style TE fill:#45b7d1
+```
+
+> 📷 **IMAGE PROMPT — GRAPH-01: Energy vs Time for Free Fall**
+> A graph with three curves: red upward-curving line (KE), blue downward-curving line (PE), and green horizontal line (Total Energy). Axes labeled "Time (s)" and "Energy (J)". The KE and PE curves cross at the midpoint. The total energy line is constant at the top of the graph.
+
+---
+
+# 7. Required Diagrams / 必备图表
+
+## 7.1 Energy Transformation in a Pendulum / 摆锤中的能量转化
+
+### Description / 描述
+**English:** A diagram showing a pendulum at three positions: maximum displacement (left), equilibrium position (center), and maximum displacement (right). Energy bars show KE and PE at each position.
+
+**中文:** 显示摆锤在三个位置的示意图：最大位移（左）、平衡位置（中）和最大位移（右）。能量条显示每个位置的动能和势能。
+
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — DIAGRAM-02: Pendulum Energy Transformation**
+> A simple pendulum showing three positions: (1) leftmost swing with label "Max PE, Zero KE", (2) bottom center with label "Max KE, Zero PE", (3) rightmost swing with label "Max PE, Zero KE". Energy bar charts at each position: at ends, tall PE bar and zero KE bar; at center, tall KE bar and zero PE bar. Arrows indicate direction of swing. Total energy bar shown constant across all positions.
+
+### Labels Required / 需要标注
+- **English:** Maximum displacement (amplitude), equilibrium position, PE (gravitational potential energy), KE (kinetic energy), total energy
+- **中文:** 最大位移（振幅）、平衡位置、PE（重力势能）、KE（动能）、总能量
+
+### Exam Importance / 考试重要性
+- **English:** High — pendulum problems are common in exams to test understanding of energy conservation in oscillatory motion.
+- **中文:** 高——摆锤问题在考试中常见，用于测试对振荡运动中能量守恒的理解。
+
+## 7.2 Energy Flow Diagram for a Roller Coaster / 过山车能量流图
+
+### Description / 描述
+**English:** A diagram showing a roller coaster car at different points along a track: top of first hill, bottom of valley, top of second hill. Energy transformations are indicated with arrows.
+
+**中文:** 显示过山车在轨道不同位置的示意图：第一个山顶、谷底、第二个山顶。用箭头表示能量转化。
+
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — DIAGRAM-03: Roller Coaster Energy Conservation**
+> A roller coaster track with three labeled positions: (A) top of first hill with label "PE = max, KE = min", (B) bottom of valley with label "PE = min, KE = max", (C) top of second hill (lower than first) with label "PE = intermediate, KE = intermediate". Arrows between positions show "PE → KE" descending and "KE → PE" ascending. A note: "Total Energy Constant (ignoring friction)".
+
+### Labels Required / 需要标注
+- **English:** Height $h$, velocity $v$, gravitational PE, kinetic energy, total energy
+- **中文:** 高度 $h$、速度 $v$、重力势能、动能、总能量
+
+### Exam Importance / 考试重要性
+- **English:** Medium — helps visualize energy conservation in curved motion, often tested with numerical calculations.
+- **中文:** 中——有助于可视化曲线运动中的能量守恒，常与数值计算一起考查。
+
+---
+
+# 8. Worked Examples / 典型例题
+
+## Example 1: Ball Dropped from Height / 从高度下落的球
 
 ### Question / 题目
-**English:** A ball of mass 0.50 kg is dropped from a height of 10 m above the ground. Using the Principle of Conservation of Energy, calculate the speed of the ball just before it hits the ground. (Assume no air resistance, $g = 9.81 \, \text{m/s}^2$)
+**English:**
+A ball of mass 0.50 kg is dropped from a height of 20 m above the ground. Using the principle of conservation of energy, calculate:
+(a) The speed of the ball just before it hits the ground (ignore air resistance).
+(b) The height at which the ball's kinetic energy equals its potential energy.
 
-**中文:** 一个质量为0.50 kg的球从离地面10 m的高度落下。利用能量守恒原理，计算球即将撞击地面时的速度。（假设无空气阻力，$g = 9.81 \, \text{m/s}^2$）
+Take $g = 9.81 \text{ m/s}^2$.
+
+**中文:**
+一个质量为0.50 kg的球从离地面20 m的高度释放。利用能量守恒原理，计算：
+(a) 球即将撞击地面时的速度（忽略空气阻力）。
+(b) 球的动能等于势能时的高度。
+
+取 $g = 9.81 \text{ m/s}^2$。
 
 ### Solution / 解答
 
-**Step 1: Identify the system and energy forms**
-System: ball + Earth (isolated, no external forces)
-Initial energy: only GPE at height $h = 10 \, \text{m}$
-Final energy: only KE just before hitting ground
+**Part (a):**
 
-**Step 2: Apply conservation of energy**
-$$ E_{\text{initial}} = E_{\text{final}} $$
-$$ \text{GPE}_i = \text{KE}_f $$
-$$ mgh = \frac{1}{2}mv^2 $$
+**English:**
+Apply conservation of mechanical energy:
+$$E_{\text{top}} = E_{\text{bottom}}$$
+$$mgh + 0 = 0 + \frac{1}{2}mv^2$$
+$$mgh = \frac{1}{2}mv^2$$
+$$v = \sqrt{2gh} = \sqrt{2 \times 9.81 \times 20}$$
+$$v = \sqrt{392.4} = 19.8 \text{ m/s}$$
 
-**Step 3: Solve for $v$**
-Cancel $m$ from both sides:
-$$ gh = \frac{1}{2}v^2 $$
-$$ v^2 = 2gh $$
-$$ v = \sqrt{2gh} = \sqrt{2 \times 9.81 \times 10} $$
-$$ v = \sqrt{196.2} \approx 14.0 \, \text{m/s} $$
+**中文:**
+应用机械能守恒：
+$$E_{\text{顶部}} = E_{\text{底部}}$$
+$$mgh + 0 = 0 + \frac{1}{2}mv^2$$
+$$mgh = \frac{1}{2}mv^2$$
+$$v = \sqrt{2gh} = \sqrt{2 \times 9.81 \times 20}$$
+$$v = \sqrt{392.4} = 19.8 \text{ m/s}$$
+
+**Part (b):**
+
+**English:**
+When $E_k = E_p$, and total energy $E_{\text{total}} = mgh_0$ (where $h_0 = 20$ m):
+$$E_k + E_p = mgh_0$$
+$$E_p + E_p = mgh_0$$
+$$2E_p = mgh_0$$
+$$2mgh = mgh_0$$
+$$h = \frac{h_0}{2} = \frac{20}{2} = 10 \text{ m}$$
+
+**中文:**
+当 $E_k = E_p$ 时，总能量 $E_{\text{总}} = mgh_0$（其中 $h_0 = 20$ m）：
+$$E_k + E_p = mgh_0$$
+$$E_p + E_p = mgh_0$$
+$$2E_p = mgh_0$$
+$$2mgh = mgh_0$$
+$$h = \frac{h_0}{2} = \frac{20}{2} = 10 \text{ m}$$
 
 ### Final Answer / 最终答案
-**Answer:** $v = 14.0 \, \text{m/s}$ **答案:** $v = 14.0 \, \text{m/s}$
+**Answer:** (a) $v = 19.8$ m/s | **答案：** (a) $v = 19.8$ m/s
+**Answer:** (b) $h = 10$ m | **答案：** (b) $h = 10$ m
 
 ### Quick Tip / 提示
-Notice that the mass cancels out — the speed of a falling object (ignoring air resistance) depends only on the height, not the mass. This is a common exam trick!
+- **English:** Notice that mass cancels out — the speed of a falling object depends only on height, not mass! For part (b), the height where KE = PE is always half the initial height.
+- **中文:** 注意质量被消去——下落物体的速度只取决于高度，与质量无关！对于(b)部分，KE = PE的高度总是初始高度的一半。
 
 ---
 
-### Example 2: Energy Conservation with Friction
+## Example 2: Block Sliding Down an Incline with Friction / 有摩擦时沿斜面下滑的物块
 
 ### Question / 题目
-**English:** A block of mass 2.0 kg slides down a rough incline of height 3.0 m. At the bottom, its speed is 5.0 m/s. Calculate the energy dissipated as thermal energy due to friction. ($g = 9.81 \, \text{m/s}^2$)
+**English:**
+A block of mass 2.0 kg slides down a rough incline of length 5.0 m and height 3.0 m. The block starts from rest. The work done against friction is 15 J. Calculate the speed of the block at the bottom of the incline. Take $g = 9.81 \text{ m/s}^2$.
 
-**中文:** 一个质量为2.0 kg的物块从高度为3.0 m的粗糙斜面滑下。在底部，其速度为5.0 m/s。计算由于摩擦力而耗散为热能的能量。（$g = 9.81 \, \text{m/s}^2$）
+**中文:**
+一个质量为2.0 kg的物块从粗糙斜面上滑下，斜面长5.0 m，高3.0 m。物块从静止开始。克服摩擦力做的功为15 J。计算物块到达斜面底端时的速度。取 $g = 9.81 \text{ m/s}^2$。
 
 ### Solution / 解答
 
-**Step 1: Identify initial and final energies**
-Initial: GPE at height $h = 3.0 \, \text{m}$
-$$ \text{GPE}_i = mgh = 2.0 \times 9.81 \times 3.0 = 58.86 \, \text{J} $$
+**English:**
+Apply conservation of total energy (including dissipation):
+$$E_{\text{top}} = E_{\text{bottom}} + W_{\text{friction}}$$
+$$mgh + 0 = 0 + \frac{1}{2}mv^2 + W_{\text{friction}}$$
+$$mgh = \frac{1}{2}mv^2 + W_{\text{friction}}$$
+$$\frac{1}{2}mv^2 = mgh - W_{\text{friction}}$$
+$$v = \sqrt{\frac{2(mgh - W_{\text{friction}})}{m}}$$
+$$v = \sqrt{\frac{2(2.0 \times 9.81 \times 3.0 - 15)}{2.0}}$$
+$$v = \sqrt{\frac{2(58.86 - 15)}{2.0}} = \sqrt{\frac{2 \times 43.86}{2.0}}$$
+$$v = \sqrt{43.86} = 6.62 \text{ m/s}$$
 
-Final: KE at bottom
-$$ \text{KE}_f = \frac{1}{2}mv^2 = \frac{1}{2} \times 2.0 \times (5.0)^2 = 25.0 \, \text{J} $$
-
-**Step 2: Apply conservation of energy**
-$$ \text{GPE}_i = \text{KE}_f + \text{Thermal Energy} $$
-$$ 58.86 = 25.0 + \text{Thermal Energy} $$
-
-**Step 3: Solve for thermal energy**
-$$ \text{Thermal Energy} = 58.86 - 25.0 = 33.86 \, \text{J} $$
+**中文:**
+应用总能量守恒（包括耗散）：
+$$E_{\text{顶部}} = E_{\text{底部}} + W_{\text{摩擦}}$$
+$$mgh + 0 = 0 + \frac{1}{2}mv^2 + W_{\text{摩擦}}$$
+$$mgh = \frac{1}{2}mv^2 + W_{\text{摩擦}}$$
+$$\frac{1}{2}mv^2 = mgh - W_{\text{摩擦}}$$
+$$v = \sqrt{\frac{2(mgh - W_{\text{摩擦}})}{m}}$$
+$$v = \sqrt{\frac{2(2.0 \times 9.81 \times 3.0 - 15)}{2.0}}$$
+$$v = \sqrt{\frac{2(58.86 - 15)}{2.0}} = \sqrt{\frac{2 \times 43.86}{2.0}}$$
+$$v = \sqrt{43.86} = 6.62 \text{ m/s}$$
 
 ### Final Answer / 最终答案
-**Answer:** $33.9 \, \text{J}$ (to 3 s.f.) **答案:** $33.9 \, \text{J}$（保留3位有效数字）
+**Answer:** $v = 6.62$ m/s | **答案：** $v = 6.62$ m/s
 
 ### Quick Tip / 提示
-When friction is present, the mechanical energy (GPE + KE) is not conserved. The "lost" mechanical energy equals the thermal energy generated. Always check if the problem mentions "smooth" (no friction) or "rough" (friction present).
+- **English:** When friction is present, the final speed is LESS than $\sqrt{2gh}$ (which would be 7.67 m/s without friction). The difference represents energy dissipated as heat.
+- **中文:** 当存在摩擦时，最终速度小于 $\sqrt{2gh}$（无摩擦时为7.67 m/s）。差值代表以热能形式耗散的能量。
 
 ---
 
-# 7. Flashcards / 闪卡
+# 9. Past Paper Question Types / 历年真题题型
 
-**Flashcard 1**
-Q (EN): State the Principle of Conservation of Energy.
-Q (CN): 陈述能量守恒原理。
-A (EN): Energy cannot be created or destroyed, only transferred from one form to another. The total energy of an isolated system remains constant.
-A (CN): 能量既不能被创造也不能被消灭，只能从一种形式转化为另一种形式。孤立系统的总能量保持不变。
+| Question Type / 题型 | Frequency / 频率 | Difficulty / 难度 | Past Paper References / 真题索引 |
+|----------------------|------------------|------------------|-------------------------------|
+| State the principle and apply to simple falling object | High | Easy | 📝 *待填入* |
+| Calculate speed/height using energy conservation | High | Medium | 📝 *待填入* |
+| Energy conservation with friction/dissipation | Medium | Medium-Hard | 📝 *待填入* |
+| Pendulum energy transformation analysis | Medium | Medium | 📝 *待填入* |
+| Roller coaster/curved track energy problems | Low-Medium | Hard | 📝 *待填入* |
+| Energy bar chart interpretation | Low | Easy-Medium | 📝 *待填入* |
 
-**Flashcard 2**
-Q (EN): What is the difference between an isolated system and a closed system?
-Q (CN): 孤立系统和封闭系统有什么区别？
-A (EN): An isolated system exchanges neither energy nor matter with its surroundings. A closed system can exchange energy but not matter.
-A (CN): 孤立系统既不与周围环境交换能量也不交换物质。封闭系统可以交换能量但不能交换物质。
-
-**Flashcard 3**
-Q (EN): A ball is dropped from height h. Write the energy conservation equation just before it hits the ground (no air resistance).
-Q (CN): 一个球从高度h落下。写出它即将撞击地面时的能量守恒方程（无空气阻力）。
-A (EN): $mgh = \frac{1}{2}mv^2$
-A (CN): $mgh = \frac{1}{2}mv^2$
-
-**Flashcard 4**
-Q (EN): What happens to the "lost" mechanical energy when friction is present?
-Q (CN): 当存在摩擦力时，"损失"的机械能去了哪里？
-A (EN): It is converted into thermal energy (heat). The total energy (mechanical + thermal) remains constant.
-A (CN): 它被转化为热能（热量）。总能量（机械能 + 热能）保持不变。
-
-**Flashcard 5**
-Q (EN): Why does the mass cancel out when calculating the speed of a falling object using energy conservation?
-Q (CN): 为什么使用能量守恒计算下落物体的速度时质量会消去？
-A (EN): Because both GPE ($mgh$) and KE ($\frac{1}{2}mv^2$) contain mass $m$, so it cancels when equating them.
-A (CN): 因为重力势能（$mgh$）和动能（$\frac{1}{2}mv^2$）都包含质量$m$，所以在等式两边相等时质量会消去。
+**Common Command Words / 常见指令词:**
+- **English:** State, Apply, Calculate, Determine, Show that, Explain, Sketch
+- **中文:** 陈述、应用、计算、确定、证明、解释、画出草图
 
 ---
 
-# 8. Metadata / 元数据
+# 10. Practical Skills Connections / 实验技能链接
 
-```yaml
-title:
-  en: "Principle of Conservation of Energy"
-  cn: "能量守恒原理"
-parent_topic: "Conservation of Energy"
-parent_hub: "[[Conservation of Energy]]"
-subject: Physics
-syllabus:
-  - CAIE 9702
-  - Edexcel IAL
-level: AS
-node_type: leaf_concept
-difficulty: intermediate
-related_leaf_nodes:
-  - "[[Energy Transfers in Mechanical Systems]]"
-  - "[[Dissipative Forces and Energy Loss]]"
-  - "[[Kinetic Energy and Potential Energy]]"
-  - "[[Power and Efficiency]]"
-language: bilingual_en_cn
+**English:**
+The Principle of Conservation of Energy can be investigated experimentally in several ways:
+
+1. **Verification using a falling object:** Measure the speed of a falling object using light gates at different heights. Plot $v^2$ against $h$ — the gradient should be $2g$ if energy is conserved. Calculate percentage difference from theoretical value.
+
+2. **Pendulum experiment:** Measure the maximum speed of a pendulum bob at the bottom of its swing using a light gate. Compare with theoretical speed from $v = \sqrt{2gh}$ where $h$ is the vertical drop. Account for energy losses due to air resistance and friction at the pivot.
+
+3. **Inclined plane with friction:** Measure the speed of a block at the bottom of an incline. Compare with the frictionless prediction. The difference allows calculation of work done against friction.
+
+**Key measurements / 关键测量:**
+- Height $h$ (using ruler or measuring tape) — uncertainty ±1 mm
+- Speed $v$ (using light gates) — uncertainty depends on gate spacing and timer resolution
+- Mass $m$ (using balance) — uncertainty ±0.1 g
+
+**Common errors / 常见误差:**
+- Air resistance not accounted for (systematic error)
+- Friction at pulley or pivot (systematic error)
+- Parallax error when measuring height (random error)
+- Timing errors with light gates (random error)
+
+**Graphical analysis / 图形分析:**
+- Plot $v^2$ vs $h$: gradient = $2g$ (if conserved), intercept should be zero
+- Plot $E_k$ vs $E_p$: should give a straight line with gradient -1 if mechanical energy is conserved
+
+**中文:**
+能量守恒原理可以通过多种实验方式进行验证：
+
+1. **利用下落物体验证：** 使用光门在不同高度测量下落物体的速度。绘制 $v^2$ 对 $h$ 的图——如果能量守恒，斜率应为 $2g$。计算与理论值的百分比差异。
+
+2. **摆锤实验：** 使用光门测量摆锤在摆动底部的最大速度。与 $v = \sqrt{2gh}$ 的理论速度进行比较，其中 $h$ 是垂直下落距离。考虑空气阻力和支点摩擦造成的能量损失。
+
+3. **有摩擦的斜面：** 测量物块在斜面底部的速度。与无摩擦预测值进行比较。差值可用于计算克服摩擦力所做的功。
+
+**关键测量：**
+- 高度 $h$（使用尺子或卷尺）——不确定度 ±1 mm
+- 速度 $v$（使用光门）——不确定度取决于光门间距和计时器分辨率
+- 质量 $m$（使用天平）——不确定度 ±0.1 g
+
+**常见误差：**
+- 未考虑空气阻力（系统误差）
+- 滑轮或支点处的摩擦（系统误差）
+- 测量高度时的视差误差（随机误差）
+- 光门的计时误差（随机误差）
+
+**图形分析：**
+- 绘制 $v^2$ 对 $h$ 的图：斜率 = $2g$（如果守恒），截距应为零
+- 绘制 $E_k$ 对 $E_p$ 的图：如果机械能守恒，应得到斜率为 -1 的直线
+
+---
+
+# 11. Concept Map / 概念图谱
+
+```mermaid
+graph TD
+    %% Core Concept
+    PCE[Principle of Conservation of Energy] --> |states| Statement[Energy cannot be created/destroyed]
+    
+    %% Types of Systems
+    PCE --> |applies to| CS[Closed System]
+    PCE --> |applies to| IS[Isolated System]
+    
+    %% Energy Forms
+    PCE --> |involves| KE[Kinetic Energy]
+    PCE --> |involves| PE[Potential Energy]
+    PCE --> |involves| TE[Thermal Energy]
+    PCE --> |involves| SE[Sound Energy]
+    
+    %% Mechanical Energy
+    KE + PE --> ME[Mechanical Energy]
+    ME --> |conserved if| NCF[No Non-Conservative Forces]
+    ME --> |not conserved if| CF[Conservative Forces Present]
+    
+    %% Dissipation
+    CF --> |leads to| Diss[Dissipation of Energy]
+    Diss --> |transfers to| TE
+    
+    %% Applications
+    PCE --> |applied to| FO[Falling Objects]
+    PCE --> |applied to| Pend[Pendulums]
+    PCE --> |applied to| RC[Roller Coasters]
+    PCE --> |applied to| Inc[Inclined Planes]
+    
+    %% Related Topics
+    PCE --> |connects to| PowEff[Power and Efficiency]
+    PCE --> |connects to| ETMS[Energy Transfers in Mechanical Systems]
+    PCE --> |connects to| DFL[Dissipative Forces and Energy Loss]
+    
+    %% Prerequisites
+    KE --> |requires| KEPE[Kinetic Energy and Potential Energy]
+    PE --> |requires| KEPE
+    
+    %% Styling
+    style PCE fill:#f9d71c,stroke:#333,stroke-width:4px
+    style ME fill:#45b7d1,stroke:#333,stroke-width:2px
+    style Diss fill:#ff6b6b,stroke:#333,stroke-width:2px
+    style Statement fill:#96ceb4,stroke:#333,stroke-width:2px
+```
+
+---
+
+# 12. Quick Revision Sheet / 速查表
+
+| Category / 类别 | Key Points / 要点 |
+|----------------|------------------|
+| **Definition / 定义** | Energy cannot be created or destroyed, only transferred. Total energy of isolated system is constant. / 能量不能被创造或消灭，只能转移。孤立系统总能量恒定。 |
+| **Key Formula / 核心公式** | $E_{\text{total}} = E_k + E_p = \text{constant}$ (no friction) / $mgh_1 + \frac{1}{2}mv_1^2 = mgh_2 + \frac{1}{2}mv_2^2 + W_{\text{friction}}$ (with friction) |
+| **Key Graph / 核心图表** | Energy vs Time: KE ↑, PE ↓, Total Energy → (horizontal line). Crossing point at $h = h_0/2$. / 能量-时间图：KE↑, PE↓, 总能量→（水平线）。交点位于 $h = h_0/2$。 |
+| **Exam Tip / 考试提示** | 1. Always state the principle first. / 始终先陈述原理。<br>2. Identify if system is closed/open. / 识别系统是封闭还是开放。<br>3. Check for non-conservative forces. / 检查是否存在非保守力。<br>4. Mass cancels in free fall problems. / 自由落体问题中质量消去。<br>5. When KE = PE, height is half initial. / 当KE = PE时，高度为初始的一半。 |
+| **Common Mistake / 常见错误** | ❌ Saying energy is "lost" — it is dissipated, not destroyed. / 说能量"丢失"——它是耗散，不是消灭。<br>❌ Assuming mechanical energy is always conserved. / 假设机械能总是守恒。<br>❌ Forgetting to include dissipated energy in calculations. / 计算中忘记包括耗散能量。 |
+| **Practical Link / 实验联系** | Verify using light gates with falling objects or pendulums. Plot $v^2$ vs $h$ to find $g$. / 使用光门与下落物体或摆锤验证。绘制 $v^2$ 对 $h$ 的图求 $g$。 |
+| **Related Topics / 相关主题** | [[Kinetic Energy and Potential Energy]], [[Energy Transfers in Mechanical Systems]], [[Dissipative Forces and Energy Loss]], [[Power and Efficiency]] |

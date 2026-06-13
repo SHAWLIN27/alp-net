@@ -1,198 +1,425 @@
-Here is the complete bilingual leaf node for **Terminal Velocity**, designed for A-Level Physics students.
-
----
-
 # 1. Overview / 概述
 
 **English:**
-Terminal velocity is the constant, maximum velocity reached by an object falling through a fluid (such as air or water) when the resistive force (drag) equals the weight of the object. This sub-topic is a crucial application of [[Newton's Laws of Motion]] and the concept of [[Acceleration]]. It explains why a skydiver stops accelerating and falls at a steady speed, and why a feather falls slower than a hammer. Understanding terminal velocity requires linking [[Displacement, Velocity and Acceleration]] with forces, specifically [[Weight and Gravitational Field Strength]] and [[Drag and Air Resistance]].
+Terminal velocity is the constant maximum velocity reached by an object falling through a fluid (air or liquid) when the drag force equals the weight of the object. This sub-topic explores how forces balance during free fall, the factors affecting terminal velocity, and its practical applications. It connects directly to [[Displacement, Velocity and Acceleration]] by showing how velocity changes over time under non-uniform acceleration, and builds on [[Scalars and Vectors]] to understand force directions. Understanding terminal velocity is crucial for analyzing real-world motion like skydiving, parachuting, and sedimentation.
 
 **中文:**
-终端速度是指物体在流体（如空气或水）中下落时，当阻力（拖曳力）等于物体重量时所达到的恒定最大速度。本子知识点是[[牛顿运动定律]]和[[加速度]]概念的重要应用。它解释了为什么跳伞者会停止加速并以恒定速度下落，以及为什么羽毛比锤子下落得更慢。理解终端速度需要将[[位移、速度和加速度]]与力联系起来，特别是[[重量与重力场强度]]和[[阻力与空气阻力]]。
+终端速度是物体在流体（空气或液体）中下落时，当阻力等于物体重量时所达到的恒定最大速度。本子知识点探讨自由落体过程中力的平衡、影响终端速度的因素及其实际应用。它通过展示在非均匀加速度下速度随时间的变化，直接连接到[[位移、速度和加速度]]，并建立在[[标量和矢量]]的基础上来理解力的方向。理解终端速度对于分析跳伞、降落伞和沉降等真实运动至关重要。
 
 ---
 
-# 2. Core Definition / 核心定义
+# 2. Syllabus Learning Objectives / 考纲学习目标
 
-| Term (EN/CN) | Definition (EN) | Definition (CN) |
-| ------------ | --------------- | --------------- |
-| **Terminal Velocity** / 终端速度 | The constant, maximum velocity reached by an object falling through a fluid when the net force acting on it is zero (drag = weight). | 物体在流体中下落时，当作用在其上的合力为零（阻力 = 重量）时所达到的恒定最大速度。 |
-| **Drag Force** / 阻力 | A resistive force acting on an object moving through a fluid, opposing the direction of motion. | 作用在流体中运动物体上的阻力，与运动方向相反。 |
-| **Net Force** / 合力 | The vector sum of all forces acting on an object. | 作用在物体上所有力的矢量和。 |
-| **Acceleration** / 加速度 | The rate of change of velocity. | 速度的变化率。 |
-| **Equilibrium** / 平衡 | A state where the net force on an object is zero, resulting in constant velocity (or rest). | 物体所受合力为零的状态，导致恒定速度（或静止）。 |
+| CAIE 9702 | Edexcel IAL |
+|-----------|-------------|
+| 3.1(d): Describe the motion of objects falling in a uniform gravitational field in the presence of air resistance | 1.4: Understand the concept of terminal velocity |
+| 3.1(e): Recall and use the concept of terminal velocity | 1.5: Describe the forces acting on a falling object |
+| 3.1(f): Interpret velocity-time graphs for objects falling with air resistance | 1.6: Explain how terminal velocity is reached |
+| - | 1.7: Calculate terminal velocity from given data |
+| - | 1.8: Apply terminal velocity to real-world contexts |
 
----
-
-# 3. Key Concepts / 关键概念
-
-**English:**
-When an object is dropped from rest, it initially experiences only its **weight** ($mg$) acting downwards. This causes an initial [[Acceleration]] of $g$ (≈ 9.81 m/s²). As the object speeds up, the **drag force** ($F_d$) increases. Drag is a [[Scalars and Vectors|vector]] quantity that always opposes motion.
-
-The key relationship is:
-1.  **Initial Stage:** Net force = Weight (downwards). Acceleration = $g$.
-2.  **Intermediate Stage:** As velocity increases, drag increases. Net force = Weight - Drag. Acceleration decreases but is still positive (downwards).
-3.  **Terminal Velocity:** When the drag force equals the weight, the net force becomes zero. According to [[Newton's Laws of Motion|Newton's First Law]], the object continues moving at a constant velocity—this is **terminal velocity**.
-
-**Common Pitfalls:**
-- Students often think that at terminal velocity, the object is in free fall. It is not; it is in **equilibrium**.
-- The drag force is not constant; it depends on speed, cross-sectional area, and the fluid's density.
-- Terminal velocity is reached when acceleration is zero, not when velocity is zero.
-
-**中文:**
-当一个物体从静止释放时，最初只受到向下的**重量** ($mg$) 作用。这导致初始[[加速度]]为 $g$ (≈ 9.81 m/s²)。随着物体加速，**阻力** ($F_d$) 增大。阻力是一个[[标量与矢量|矢量]]，总是阻碍运动。
-
-关键关系是：
-1.  **初始阶段：** 合力 = 重量（向下）。加速度 = $g$。
-2.  **中间阶段：** 随着速度增加，阻力增加。合力 = 重量 - 阻力。加速度减小，但仍为正（向下）。
-3.  **终端速度：** 当阻力等于重量时，合力变为零。根据[[牛顿运动定律|牛顿第一定律]]，物体继续以恒定速度运动——这就是**终端速度**。
-
-**常见误区：**
-- 学生常认为在终端速度时，物体处于自由落体状态。实际上并非如此；它处于**平衡**状态。
-- 阻力不是恒定的；它取决于速度、横截面积和流体的密度。
-- 终端速度是在加速度为零时达到的，而不是速度为零时。
-
-> 📷 **IMAGE PROMPT — TV01: Forces on a Falling Object**
->
-> **English Prompt:**
-> A clear, textbook-style vector diagram showing a skydiver in freefall. Three stages side-by-side: Stage 1 (just jumped): one large downward arrow labeled "Weight (mg)" and a tiny upward arrow labeled "Drag (Fd)". Stage 2 (speeding up): Weight arrow same size, Drag arrow larger but still smaller than Weight. Stage 3 (terminal velocity): Weight and Drag arrows are equal in length. A horizontal dashed line connects the three stages. The background is a light blue sky with a gradient. Labels in English.
->
-> **中文描述:**
-> 一个清晰的教科书式矢量图，展示跳伞者自由下落。并排三个阶段：阶段1（刚跳下）：一个大的向下箭头标注“重量 (mg)”和一个小的向上箭头标注“阻力 (Fd)”。阶段2（加速中）：重量箭头大小相同，阻力箭头更大但仍小于重量。阶段3（终端速度）：重量和阻力箭头长度相等。一条水平虚线连接三个阶段。背景是带有渐变的浅蓝色天空。标签为英文。
->
-> **Labels Required / 需要标注:**
-> * Weight (mg)
-> * Drag (Fd)
-> * Net Force (Fnet)
-> * Stage 1: Accelerating
-> * Stage 2: Acceleration decreasing
-> * Stage 3: Terminal Velocity (a=0)
->
-> **Style / 风格:** Textbook vector / 2D diagram
->
-> **Exam Relevance / 考试关联:**
-> This diagram is essential for explaining the force balance at terminal velocity and is a common exam question.
+**Examiner Expectations / 考官期望:**
+- **English:** Students must be able to describe the forces acting on a falling object, explain why terminal velocity is reached, interpret velocity-time graphs for falling objects with air resistance, and calculate terminal velocity in simple scenarios.
+- **中文:** 学生必须能够描述下落物体所受的力，解释为何达到终端速度，解读有空气阻力下落物体的速度-时间图，并在简单场景中计算终端速度。
 
 ---
 
-# 4. Formulas / 公式
+# 3. Core Definitions / 核心定义
 
-The core principle is a force balance, not a single kinematic formula.
+| Term (EN/CN) | Definition (EN) | Definition (CN) | Common Mistakes / 常见错误 |
+|--------------|-----------------|-----------------|---------------------------|
+| **Terminal Velocity** / 终端速度 | The constant maximum velocity reached by an object falling through a fluid when the drag force equals the weight of the object, resulting in zero net force and zero acceleration. | 物体在流体中下落时，当阻力等于物体重量时所达到的恒定最大速度，此时合力为零，加速度为零。 | Confusing terminal velocity with maximum possible speed in a vacuum (which doesn't exist with air resistance). |
+| **Drag Force** / 阻力 | A resistive force acting opposite to the direction of motion of an object through a fluid, caused by friction and pressure differences. | 物体在流体中运动时，由于摩擦和压力差而产生的与运动方向相反的阻力。 | Thinking drag is constant; it increases with speed. |
+| **Weight** / 重量 | The gravitational force acting on an object, calculated as $W = mg$, where $m$ is mass and $g$ is gravitational field strength. | 作用在物体上的重力，计算公式为 $W = mg$，其中 $m$ 是质量，$g$ 是重力场强度。 | Confusing weight with mass. |
+| **Net Force** / 合力 | The vector sum of all forces acting on an object; determines acceleration according to Newton's Second Law. | 作用在物体上所有力的矢量和；根据牛顿第二定律决定加速度。 | Forgetting direction when adding forces. |
+| **Acceleration** / 加速度 | The rate of change of velocity; for a falling object, it decreases from $g$ to zero as terminal velocity is approached. | 速度的变化率；对于下落物体，加速度从 $g$ 减小到零，直至达到终端速度。 | Assuming acceleration is constant throughout the fall. |
 
-$$ \text{At terminal velocity: } F_{\text{drag}} = mg $$
+---
+
+# 4. Key Concepts Explained / 关键概念详解
+
+## 4.1 Forces on a Falling Object / 下落物体的受力
+
+### Explanation / 解释
+**English:** When an object falls through a fluid (e.g., air), two main forces act on it:
+1. **Weight ($W = mg$)** — acts downward, constant for a given mass.
+2. **Drag Force ($F_d$)** — acts upward, opposing motion. Drag increases with speed, typically proportional to $v$ (low speeds) or $v^2$ (high speeds).
+
+At the start of the fall, $W > F_d$, so there is a net downward force causing acceleration. As speed increases, drag increases, reducing the net force and acceleration. Eventually, $F_d = W$, net force becomes zero, acceleration becomes zero, and the object falls at constant terminal velocity $v_T$.
+
+**中文:** 当物体在流体（如空气）中下落时，受到两个主要力的作用：
+1. **重量 ($W = mg$)** — 向下作用，对于给定质量是恒定的。
+2. **阻力 ($F_d$)** — 向上作用，阻碍运动。阻力随速度增加而增加，通常与 $v$（低速）或 $v^2$（高速）成正比。
+
+下落开始时，$W > F_d$，因此存在向下的合力导致加速度。随着速度增加，阻力增加，合力和加速度减小。最终，$F_d = W$，合力为零，加速度为零，物体以恒定的终端速度 $v_T$ 下落。
+
+### Physical Meaning / 物理意义
+**English:** Terminal velocity represents the equilibrium between gravitational pull and fluid resistance. It's a practical limit on how fast an object can fall through a fluid, determined by the object's shape, size, mass, and the fluid's properties.
+
+**中文:** 终端速度代表了引力与流体阻力之间的平衡。它是物体在流体中下落速度的实际极限，由物体的形状、大小、质量和流体性质决定。
+
+### Common Misconceptions / 常见误区
+- **Misconception 1:** "Heavier objects always have higher terminal velocity." → **Correction:** While mass affects weight, shape and cross-sectional area also matter. A feather has low terminal velocity despite being light.
+- **Misconception 2:** "Terminal velocity is reached instantly." → **Correction:** It takes time for drag to build up; acceleration decreases gradually.
+- **Misconception 3:** "At terminal velocity, there are no forces acting." → **Correction:** Forces are balanced (net force = 0), but weight and drag still act.
+
+### Exam Tips / 考试提示
+- **English:** Always state that at terminal velocity, net force = 0, so acceleration = 0. Use Newton's First Law: constant velocity implies balanced forces.
+- **中文:** 始终说明在终端速度时，合力 = 0，因此加速度 = 0。使用牛顿第一定律：恒定速度意味着力平衡。
+
+> 📷 **IMAGE PROMPT — FBD: Free Body Diagram of Falling Object**
+> A clear diagram showing a falling object (e.g., a skydiver) with two arrows: a downward arrow labeled "Weight (W = mg)" and an upward arrow labeled "Drag (F_d)". At terminal velocity, both arrows are equal length. Include labels for forces and direction.
+
+## 4.2 Factors Affecting Terminal Velocity / 影响终端速度的因素
+
+### Explanation / 解释
+**English:** Terminal velocity depends on:
+1. **Mass ($m$):** Greater mass → greater weight → higher terminal velocity (if shape/size constant).
+2. **Cross-sectional Area ($A$):** Larger area → greater drag → lower terminal velocity.
+3. **Shape:** Streamlined shapes reduce drag → higher terminal velocity.
+4. **Fluid Density ($\rho$):** Denser fluid → greater drag → lower terminal velocity.
+5. **Gravitational Field Strength ($g$):** Higher $g$ → greater weight → higher terminal velocity.
+
+**中文:** 终端速度取决于：
+1. **质量 ($m$)：** 质量越大 → 重量越大 → 终端速度越高（如果形状/大小恒定）。
+2. **横截面积 ($A$)：** 面积越大 → 阻力越大 → 终端速度越低。
+3. **形状：** 流线型形状减少阻力 → 终端速度越高。
+4. **流体密度 ($\rho$)：** 流体密度越大 → 阻力越大 → 终端速度越低。
+5. **重力场强度 ($g$)：** $g$ 越大 → 重量越大 → 终端速度越高。
+
+### Physical Meaning / 物理意义
+**English:** Terminal velocity is a balance between weight (proportional to mass) and drag (proportional to area, shape factor, and fluid density). This explains why a skydiver spreads their arms to increase drag and reduce terminal velocity, or why a parachute dramatically slows descent.
+
+**中文:** 终端速度是重量（与质量成正比）和阻力（与面积、形状因子和流体密度成正比）之间的平衡。这解释了为什么跳伞者张开双臂以增加阻力并降低终端速度，或者为什么降落伞能显著减缓下降速度。
+
+### Common Misconceptions / 常见误区
+- **Misconception:** "All objects have the same terminal velocity." → **Correction:** Terminal velocity varies widely based on the factors listed above.
+- **Misconception:** "Terminal velocity only occurs in air." → **Correction:** It occurs in any fluid (air, water, oil, etc.).
+
+### Exam Tips / 考试提示
+- **English:** When asked "How does terminal velocity change if...", systematically consider how weight and drag change. Use the equation $W = mg$ and drag proportional to $v^2$ or $v$.
+- **中文:** 当被问到"如果...终端速度如何变化"时，系统地考虑重量和阻力如何变化。使用方程 $W = mg$ 和阻力与 $v^2$ 或 $v$ 成正比。
+
+---
+
+# 5. Essential Equations / 核心公式
+
+## Equation 1: Terminal Velocity Condition / 终端速度条件
+
+$$ F_d = W = mg $$
 
 | Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
-| ------------- | ------------ | ------------ | ----------- |
-| $F_{\text{drag}}$ | Drag force | 阻力 | N (Newtons) |
+|--------------|-------------|-------------|------------|
+| $F_d$ | Drag force at terminal velocity | 终端速度时的阻力 | N |
+| $W$ | Weight of object | 物体重量 | N |
 | $m$ | Mass of object | 物体质量 | kg |
-| $g$ | Gravitational field strength (≈ 9.81 m/s²) | 重力场强度 | N/kg or m/s² |
+| $g$ | Gravitational field strength | 重力场强度 | N/kg or m/s² |
 
-**Derivation / 推导:**
-From [[Newton's Laws of Motion|Newton's Second Law]]: $F_{\text{net}} = ma$.
-For a falling object: $F_{\text{net}} = mg - F_{\text{drag}}$.
-At terminal velocity, $a = 0$, so $F_{\text{net}} = 0$.
-Therefore: $mg - F_{\text{drag}} = 0 \implies F_{\text{drag}} = mg$.
+**Derivation / 推导:** At terminal velocity, net force $F_{net} = W - F_d = 0$, so $F_d = W = mg$.
 
-**Conditions / 适用条件:**
-- The object must be moving through a fluid (gas or liquid).
-- The object must have reached a constant velocity (no further acceleration).
-- The weight of the object must be constant.
+**Conditions / 适用条件:** Object falling through a fluid; steady state reached.
+
+**Limitations / 局限性:** Assumes constant $g$ and uniform fluid density; doesn't account for buoyancy (significant in liquids).
+
+## Equation 2: Drag Force (Stokes' Law for low speeds) / 阻力（低速斯托克斯定律）
+
+$$ F_d = 6\pi\eta r v $$
+
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| $\eta$ | Dynamic viscosity of fluid | 流体动力粘度 | Pa·s |
+| $r$ | Radius of spherical object | 球形物体半径 | m |
+| $v$ | Velocity of object | 物体速度 | m/s |
+
+**Conditions / 适用条件:** Low Reynolds number (slow, small objects in viscous fluids).
+
+**Limitations / 局限性:** Not valid for high-speed objects in air (turbulent flow).
+
+## Equation 3: Drag Force (Quadratic drag for high speeds) / 阻力（高速二次阻力）
+
+$$ F_d = \frac{1}{2} \rho C_d A v^2 $$
+
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| $\rho$ | Density of fluid | 流体密度 | kg/m³ |
+| $C_d$ | Drag coefficient (depends on shape) | 阻力系数（取决于形状） | dimensionless |
+| $A$ | Cross-sectional area perpendicular to motion | 垂直于运动方向的横截面积 | m² |
+| $v$ | Velocity | 速度 | m/s |
+
+**Conditions / 适用条件:** High Reynolds number (typical for objects falling in air).
+
+**Limitations / 局限性:** $C_d$ varies with shape and flow conditions; approximate for complex shapes.
+
+> 📋 **Edexcel Only:** Edexcel may require calculation of terminal velocity using $F_d = \frac{1}{2}\rho C_d A v^2$ set equal to $mg$.
 
 ---
 
-# 5. Image Prompt / 图片提示
+# 6. Graphs and Relationships / 图表与关系
 
-> 📷 **IMAGE PROMPT — TV02: Velocity-Time Graph for Terminal Velocity**
->
-> **English Prompt:**
-> A velocity-time graph for an object falling from rest and reaching terminal velocity. The graph starts at the origin (0,0). It has a steep, decreasing slope (concave down) that gradually flattens out to a horizontal line. The horizontal line is labeled "Terminal Velocity". The y-axis is labeled "Velocity (v)" and the x-axis is labeled "Time (t)". A dashed line extends from the horizontal part of the curve to the y-axis to show the constant velocity value. The curve should be smooth and realistic. Style: clean, vector graph on a white background.
->
-> **中文描述:**
-> 一个物体从静止下落并达到终端速度的速度-时间图。图形从原点 (0,0) 开始。它有一个陡峭的、递减的斜率（向下凸），逐渐变平为一条水平线。水平线标注为“终端速度”。y轴标注为“速度 (v)”，x轴标注为“时间 (t)”。一条虚线从曲线的水平部分延伸到y轴，以显示恒定速度值。曲线应平滑且逼真。风格：白色背景上的干净矢量图。
->
-> **Labels Required / 需要标注:**
-> * Terminal Velocity
-> * Gradient decreasing (acceleration decreasing)
-> * Gradient = 0 (acceleration = 0)
->
-> **Style / 风格:** Textbook vector / 2D graph
->
-> **Exam Relevance / 考试关联:**
-> This graph is a standard exam question. Students must be able to sketch it and explain the shape.
+## 6.1 Velocity-Time Graph for Falling Object with Air Resistance / 有空气阻力下落物体的速度-时间图
+
+### Axes / 坐标轴
+- **X-axis:** Time ($t$) / 时间 ($t$)
+- **Y-axis:** Velocity ($v$) / 速度 ($v$)
+
+### Shape / 形状
+- **English:** The graph starts at the origin (0,0) with a steep slope (initial acceleration = $g$). As time increases, the slope decreases (acceleration decreases) as drag builds up. The curve approaches a horizontal asymptote at $v = v_T$ (terminal velocity). The graph is concave down (decreasing gradient).
+- **中文:** 图形从原点 (0,0) 开始，斜率陡峭（初始加速度 = $g$）。随着时间增加，斜率减小（加速度减小），因为阻力增大。曲线趋近于 $v = v_T$（终端速度）处的水平渐近线。图形向下凹（梯度递减）。
+
+### Gradient Meaning / 斜率含义
+- **English:** The gradient of the $v$-$t$ graph represents acceleration. Initially, gradient = $g$ (9.81 m/s²). As terminal velocity is approached, gradient → 0.
+- **中文:** $v$-$t$ 图的斜率代表加速度。初始时，斜率 = $g$ (9.81 m/s²)。接近终端速度时，斜率 → 0。
+
+### Area Meaning / 面积含义
+- **English:** The area under the $v$-$t$ graph represents displacement (distance fallen). This can be compared to the area under the constant acceleration line to show reduced distance due to air resistance.
+- **中文:** $v$-$t$ 图下的面积代表位移（下落距离）。这可以与恒定加速度线下的面积进行比较，以显示空气阻力导致的距离减少。
+
+### Exam Interpretation / 考试解读
+- **English:** Be able to sketch this graph and label key features: initial gradient = $g$, asymptotic approach to $v_T$, and compare with the straight line for free fall without air resistance.
+- **中文:** 能够绘制此图并标注关键特征：初始梯度 = $g$，渐近接近 $v_T$，并与无空气阻力自由落体的直线进行比较。
+
+```mermaid
+graph LR
+    subgraph "Velocity-Time Graph"
+        direction TB
+        A["v (m/s)"] --> B["v_T ──────"]
+        B --> C["/"]
+        C --> D["/"]
+        D --> E["/"]
+        E --> F["t (s)"]
+    end
+```
+
+> 📷 **IMAGE PROMPT — GRAPH: Velocity-Time Graph for Falling Object with Air Resistance**
+> A velocity-time graph showing a curve starting at origin (0,0) with steep initial slope, gradually flattening to approach a horizontal asymptote at v = v_T. Include a dashed straight line from origin showing free fall without air resistance for comparison. Label axes: "Time (s)" on x-axis, "Velocity (m/s)" on y-axis. Mark "v_T" on y-axis.
+
+## 6.2 Acceleration-Time Graph / 加速度-时间图
+
+### Axes / 坐标轴
+- **X-axis:** Time ($t$) / 时间 ($t$)
+- **Y-axis:** Acceleration ($a$) / 加速度 ($a$)
+
+### Shape / 形状
+- **English:** Starts at $a = g$ at $t = 0$. Decreases exponentially toward $a = 0$ as terminal velocity is approached. The graph is concave up (decreasing negative slope).
+- **中文:** 在 $t = 0$ 时从 $a = g$ 开始。指数递减趋近于 $a = 0$，接近终端速度。图形向上凹（负斜率递减）。
+
+### Gradient Meaning / 斜率含义
+- **English:** The gradient of $a$-$t$ graph represents jerk (rate of change of acceleration), which is not typically examined at A-Level.
+- **中文:** $a$-$t$ 图的斜率代表加加速度（加速度的变化率），A-Level 通常不考。
+
+### Area Meaning / 面积含义
+- **English:** The area under the $a$-$t$ graph represents change in velocity ($\Delta v$). The total area from $t=0$ to infinity equals $v_T$.
+- **中文:** $a$-$t$ 图下的面积代表速度变化 ($\Delta v$)。从 $t=0$ 到无穷大的总面积等于 $v_T$。
+
+### Exam Interpretation / 考试解读
+- **English:** Understand that acceleration decreases from $g$ to 0, not instantly but gradually. The shape reflects the increasing drag force.
+- **中文:** 理解加速度从 $g$ 减小到 0，不是瞬间而是逐渐的。形状反映了阻力的增加。
 
 ---
 
-# 6. Worked Example / 典型例题
+# 7. Required Diagrams / 必备图表
+
+## 7.1 Free Body Diagram of Falling Object at Different Stages / 不同阶段下落物体的受力图
+
+### Description / 描述
+**English:** Three free body diagrams showing the forces on a falling object at three stages: (a) just released (t=0), (b) during acceleration, (c) at terminal velocity. Each shows weight (downward) and drag (upward) with arrow lengths proportional to force magnitude.
+
+**中文:** 三个受力图显示下落物体在三个阶段所受的力：(a) 刚释放时 (t=0)，(b) 加速过程中，(c) 终端速度时。每个图显示重量（向下）和阻力（向上），箭头长度与力的大小成正比。
+
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — FBD: Three-Stage Free Body Diagram of Falling Object**
+> Three side-by-side diagrams of a falling object (sphere or skydiver shape). Stage 1 (t=0): Only one downward arrow labeled "W = mg", no upward arrow. Stage 2 (mid-fall): Downward arrow "W = mg" longer than upward arrow "F_d (small)". Stage 3 (terminal velocity): Downward arrow "W = mg" and upward arrow "F_d = mg" equal length. Include labels and direction arrows. Clean, educational style.
+
+### Labels Required / 需要标注
+- **English:** Weight ($W = mg$), Drag ($F_d$), Net Force ($F_{net}$), Direction of motion
+- **中文:** 重量 ($W = mg$)，阻力 ($F_d$)，合力 ($F_{net}$)，运动方向
+
+### Exam Importance / 考试重要性
+- **English:** High — free body diagrams are frequently tested in both CAIE and Edexcel exams. Students must correctly show force directions and relative magnitudes.
+- **中文:** 高 — 受力图在 CAIE 和 Edexcel 考试中经常出现。学生必须正确显示力的方向和相对大小。
+
+## 7.2 Velocity-Time Graph with Key Points / 带关键点的速度-时间图
+
+### Description / 描述
+**English:** A velocity-time graph for a falling object with air resistance, annotated with key points: initial acceleration = $g$, region of decreasing acceleration, terminal velocity $v_T$, and comparison line for free fall without air resistance.
+
+**中文:** 有空气阻力下落物体的速度-时间图，标注关键点：初始加速度 = $g$，加速度递减区域，终端速度 $v_T$，以及无空气阻力自由落体的比较线。
+
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — GRAPH: Annotated Velocity-Time Graph for Terminal Velocity**
+> A velocity-time graph with a curved line from origin approaching horizontal asymptote. Annotate: "Initial gradient = g (9.81 m/s²)" at start, "Decreasing acceleration" along curve, "v_T" at asymptote. Add dashed straight line from origin labeled "Free fall (no air resistance)". Label axes clearly. Include grid lines for reference.
+
+### Labels Required / 需要标注
+- **English:** $v_T$, $t$ (time to approach terminal velocity), initial gradient = $g$, free fall comparison line
+- **中文:** $v_T$，$t$（接近终端速度的时间），初始梯度 = $g$，自由落体比较线
+
+### Exam Importance / 考试重要性
+- **English:** High — interpreting and sketching this graph is a common exam question. Understanding the shape and its physical meaning is essential.
+- **中文:** 高 — 解读和绘制此图是常见的考试题目。理解其形状和物理意义至关重要。
+
+---
+
+# 8. Worked Examples / 典型例题
+
+## Example 1: Calculating Terminal Velocity / 计算终端速度
 
 ### Question / 题目
-**English:** A skydiver of mass 80 kg falls through the air. The drag force acting on them is given by $F_d = kv^2$, where $k = 0.25 \text{ N s}^2\text{m}^{-2}$. Calculate their terminal velocity. (Take $g = 9.81 \text{ m/s}^2$)
+**English:** A skydiver of mass 80 kg falls through air. At terminal velocity, the drag force is given by $F_d = \frac{1}{2} \rho C_d A v^2$, where $\rho = 1.2 \text{ kg/m}^3$, $C_d = 0.7$, and $A = 0.5 \text{ m}^2$. Calculate the terminal velocity $v_T$. Take $g = 9.81 \text{ m/s}^2$.
 
-**中文:** 一个质量为 80 kg 的跳伞者从空中下落。作用在他们身上的阻力由 $F_d = kv^2$ 给出，其中 $k = 0.25 \text{ N s}^2\text{m}^{-2}$。计算他们的终端速度。（取 $g = 9.81 \text{ m/s}^2$）
+**中文:** 一个质量为 80 kg 的跳伞者在空气中下落。在终端速度时，阻力由 $F_d = \frac{1}{2} \rho C_d A v^2$ 给出，其中 $\rho = 1.2 \text{ kg/m}^3$，$C_d = 0.7$，$A = 0.5 \text{ m}^2$。计算终端速度 $v_T$。取 $g = 9.81 \text{ m/s}^2$。
 
 ### Solution / 解答
-1.  **Identify the condition for terminal velocity:** At terminal velocity, $F_d = mg$.
-2.  **Write the equation:** $kv^2 = mg$
-3.  **Substitute values:** $0.25 \times v^2 = 80 \times 9.81$
-4.  **Solve for $v^2$:** $v^2 = \frac{80 \times 9.81}{0.25} = \frac{784.8}{0.25} = 3139.2$
-5.  **Solve for $v$:** $v = \sqrt{3139.2} \approx 56.03 \text{ m/s}$
+
+**Step 1:** At terminal velocity, drag force equals weight.
+$$ F_d = W = mg = 80 \times 9.81 = 784.8 \text{ N} $$
+
+**Step 2:** Set drag equation equal to weight.
+$$ \frac{1}{2} \rho C_d A v_T^2 = mg $$
+$$ \frac{1}{2} \times 1.2 \times 0.7 \times 0.5 \times v_T^2 = 784.8 $$
+
+**Step 3:** Solve for $v_T^2$.
+$$ 0.21 \times v_T^2 = 784.8 $$
+$$ v_T^2 = \frac{784.8}{0.21} = 3737.14 $$
+
+**Step 4:** Take square root.
+$$ v_T = \sqrt{3737.14} \approx 61.1 \text{ m/s} $$
 
 ### Final Answer / 最终答案
-**Answer:** $56.0 \text{ m/s}$ (to 3 s.f.) **答案:** $56.0 \text{ m/s}$
+**Answer:** $v_T \approx 61.1 \text{ m/s}$ | **答案：** $v_T \approx 61.1 \text{ m/s}$
 
 ### Quick Tip / 提示
-Always start by stating the equilibrium condition ($F_d = mg$). This is the key to solving any terminal velocity problem.
+- **English:** Always check units — ensure mass in kg, area in m², density in kg/m³. The drag coefficient $C_d$ is dimensionless.
+- **中文:** 始终检查单位 — 确保质量以 kg 为单位，面积以 m² 为单位，密度以 kg/m³ 为单位。阻力系数 $C_d$ 是无量纲的。
+
+## Example 2: Interpreting Velocity-Time Graph / 解读速度-时间图
+
+### Question / 题目
+**English:** A ball is dropped from rest. Figure 1 shows its velocity-time graph. (a) Describe the motion of the ball. (b) Explain why the gradient decreases. (c) Estimate the terminal velocity from the graph.
+
+**中文:** 一个球从静止释放。图 1 显示其速度-时间图。(a) 描述球的运动。(b) 解释为什么梯度减小。(c) 从图中估计终端速度。
+
+### Solution / 解答
+
+**Part (a):** The ball starts from rest ($v=0$). Initially, it accelerates at approximately $g = 9.81 \text{ m/s}^2$ (steep gradient). As speed increases, acceleration decreases (gradient decreases). Eventually, the ball approaches a constant velocity (terminal velocity), where the graph becomes horizontal.
+
+**Part (b):** The gradient decreases because the drag force increases with speed. As drag increases, the net downward force ($W - F_d$) decreases, so acceleration ($a = F_{net}/m$) decreases. When $F_d = W$, net force = 0, acceleration = 0, and velocity becomes constant.
+
+**Part (c):** From the graph, the horizontal asymptote is at approximately $v = 50 \text{ m/s}$. Therefore, terminal velocity $v_T \approx 50 \text{ m/s}$.
+
+### Final Answer / 最终答案
+**Answer:** (a) Accelerating motion with decreasing acceleration; (b) Drag increases with speed, reducing net force; (c) $v_T \approx 50 \text{ m/s}$ | **答案：** (a) 加速度递减的加速运动；(b) 阻力随速度增加，减小合力；(c) $v_T \approx 50 \text{ m/s}$
+
+### Quick Tip / 提示
+- **English:** When describing motion, mention both velocity and acceleration changes. Use phrases like "acceleration decreases from g to zero" and "velocity increases to a constant value."
+- **中文:** 描述运动时，同时提及速度和加速度的变化。使用"加速度从 g 减小到零"和"速度增加到恒定值"等短语。
 
 ---
 
-# 7. Flashcards / 闪卡
+# 9. Past Paper Question Types / 历年真题题型
 
-**Q (EN):** What is terminal velocity?
-**Q (CN):** 什么是终端速度？
-**A (EN):** The constant maximum velocity reached when the drag force equals the weight of the object, resulting in zero net force and zero acceleration.
-**A (CN):** 当阻力等于物体重量时达到的恒定最大速度，导致合力为零且加速度为零。
+| Question Type / 题型 | Frequency / 频率 | Difficulty / 难度 | Past Paper References / 真题索引 |
+|----------------------|------------------|------------------|-------------------------------|
+| Describe forces on falling object / 描述下落物体受力 | High / 高 | Easy / 容易 | 📝 *待填入* |
+| Explain why terminal velocity is reached / 解释为何达到终端速度 | High / 高 | Medium / 中等 | 📝 *待填入* |
+| Sketch/interpret v-t graph for falling object / 绘制/解读下落物体v-t图 | High / 高 | Medium / 中等 | 📝 *待填入* |
+| Calculate terminal velocity from given data / 从给定数据计算终端速度 | Medium / 中 | Medium / 中等 | 📝 *待填入* |
+| Compare motion with/without air resistance / 比较有/无空气阻力的运动 | Medium / 中 | Medium / 中等 | 📝 *待填入* |
+| Factors affecting terminal velocity / 影响终端速度的因素 | Low-Medium / 低-中 | Easy / 容易 | 📝 *待填入* |
 
-**Q (EN):** What is the net force on an object at terminal velocity?
-**Q (CN):** 处于终端速度的物体所受的合力是多少？
-**A (EN):** Zero.
-**A (CN):** 零。
-
-**Q (EN):** What happens to the acceleration of a falling object as it approaches terminal velocity?
-**Q (CN):** 当物体接近终端速度时，其加速度会发生什么变化？
-**A (EN):** The acceleration decreases from $g$ to zero.
-**A (CN):** 加速度从 $g$ 减小到零。
-
-**Q (EN):** Name two factors that affect the terminal velocity of an object.
-**Q (CN):** 说出两个影响物体终端速度的因素。
-**A (EN):** Mass (or weight) and cross-sectional area (or shape/drag coefficient).
-**A (CN):** 质量（或重量）和横截面积（或形状/阻力系数）。
-
-**Q (EN):** If a skydiver opens their parachute, what happens to their terminal velocity?
-**Q (CN):** 如果跳伞者打开降落伞，他们的终端速度会发生什么变化？
-**A (EN):** It decreases because the increased surface area increases the drag force, so a lower speed is needed for drag to equal weight.
-**A (CN):** 它会减小，因为增大的表面积增加了阻力，所以需要更低的速度才能使阻力等于重量。
+**Common Command Words / 常见指令词:**
+- **English:** Describe, Explain, Sketch, Calculate, Determine, Compare, State
+- **中文:** 描述，解释，绘制，计算，确定，比较，陈述
 
 ---
 
-# 8. Metadata / 元数据
+# 10. Practical Skills Connections / 实验技能链接
 
-```yaml
-title:
-  en: Terminal Velocity
-  cn: 终端速度
-parent_topic: "[[Displacement, Velocity and Acceleration]]"
-parent_hub: "[[Displacement, Velocity and Acceleration]]"
-subject: Physics
-syllabus:
-  - CAIE 9702
-  - Edexcel IAL
-level: AS
-node_type: leaf_concept
-difficulty: foundation
-related_leaf_nodes:
-  - "[[Displacement and Distance]]"
-  - "[[Speed and Velocity]]"
-  - "[[Acceleration]]"
-  - "[[Scalars and Vectors]]"
-  - "[[Motion Graphs]]"
-  - "[[Equations of Motion (SUVAT)]]"
-language: bilingual_en_cn
+**English:**
+Terminal velocity connects to practical work in several ways:
+
+1. **Measuring Terminal Velocity:** Drop small spheres (e.g., ball bearings) through viscous liquids (glycerol, oil) and measure the time to fall between two marks after terminal velocity is reached. Use $v = \frac{d}{t}$ to calculate terminal velocity.
+
+2. **Investigating Factors:** Vary the sphere's radius, mass, or the liquid's viscosity to see how terminal velocity changes. Plot graphs of $v_T$ vs $r^2$ (Stokes' law predicts $v_T \propto r^2$).
+
+3. **Uncertainties:** Measure multiple times, calculate mean and uncertainty. Consider timing errors, parallax in reading marks, and ensuring terminal velocity is reached before timing.
+
+4. **Graph Plotting:** Plot $v_T$ against $r^2$ to verify Stokes' law. The gradient can be used to calculate fluid viscosity.
+
+5. **Experimental Design:** Discuss how to ensure terminal velocity is reached (e.g., drop from sufficient height, use markers at appropriate positions).
+
+**中文:**
+终端速度通过多种方式与实验工作联系：
+
+1. **测量终端速度：** 将小球（如滚珠）通过粘性液体（甘油、油）下落，测量终端速度达到后通过两个标记之间的时间。使用 $v = \frac{d}{t}$ 计算终端速度。
+
+2. **研究影响因素：** 改变球的半径、质量或液体的粘度，观察终端速度如何变化。绘制 $v_T$ 与 $r^2$ 的关系图（斯托克斯定律预测 $v_T \propto r^2$）。
+
+3. **不确定度：** 多次测量，计算平均值和不确定度。考虑计时误差、读取标记时的视差，以及确保在计时前已达到终端速度。
+
+4. **图表绘制：** 绘制 $v_T$ 与 $r^2$ 的关系图以验证斯托克斯定律。斜率可用于计算流体粘度。
+
+5. **实验设计：** 讨论如何确保达到终端速度（例如，从足够高度释放，在适当位置使用标记）。
+
+> 📋 **CAIE Only:** CAIE Paper 3 (Practical) may include experiments on terminal velocity in viscous liquids, requiring careful measurement and graph plotting.
+
+> 📋 **Edexcel Only:** Edexcel Unit 1 Core Practical 1 involves investigating the motion of a falling object, including terminal velocity concepts.
+
+---
+
+# 11. Concept Map / 概念图谱
+
+```mermaid
+graph TD
+    %% Terminal Velocity Concept Map
+    TV[Terminal Velocity / 终端速度] --> COND[Condition: F_d = W = mg / 条件：阻力 = 重量]
+    TV --> FORCES[Forces on Falling Object / 下落物体受力]
+    TV --> GRAPH[Velocity-Time Graph / 速度-时间图]
+    TV --> FACTORS[Factors Affecting v_T / 影响终端速度的因素]
+    
+    FORCES --> W[Weight / 重量 W = mg]
+    FORCES --> FD[Drag Force / 阻力 F_d]
+    FD --> LOW[Low Speed: F_d ∝ v / 低速：F_d ∝ v]
+    FD --> HIGH[High Speed: F_d ∝ v² / 高速：F_d ∝ v²]
+    
+    GRAPH --> SHAPE[Shape: Concave down / 形状：向下凹]
+    GRAPH --> GRADIENT[Gradient: Acceleration / 斜率：加速度]
+    GRAPH --> ASYMPTOTE[Asymptote at v_T / 渐近线在 v_T]
+    
+    FACTORS --> MASS[Mass / 质量 m]
+    FACTORS --> AREA[Cross-sectional Area / 横截面积 A]
+    FACTORS --> SHAPE2[Shape / 形状]
+    FACTORS --> FLUID[Fluid Density / 流体密度 ρ]
+    FACTORS --> G[Gravitational Field / 重力场 g]
+    
+    TV --> PRAC[Practical Applications / 实际应用]
+    PRAC --> SKYDIVE[Skydiving / 跳伞]
+    PRAC --> PARACHUTE[Parachute Design / 降落伞设计]
+    PRAC --> SEDIMENT[Sedimentation / 沉降]
+    
+    %% Links to parent and siblings
+    TV -->|Parent| DVA[Displacement, Velocity and Acceleration / 位移、速度和加速度]
+    DVA -->|Sibling| ACC[Acceleration / 加速度]
+    DVA -->|Sibling| SV[Speed and Velocity / 速率和速度]
+    
+    %% Prerequisites
+    TV -.->|Prerequisite| SVEC[Scalars and Vectors / 标量和矢量]
+    TV -.->|Related| SUVAT[Equations of Motion (SUVAT) / 运动方程]
+    TV -.->|Related| MGRAPH[Motion Graphs / 运动图]
+```
+
+---
+
+# 12. Quick Revision Sheet / 速查表
+
+| Category / 类别 | Key Points / 要点 |
+|----------------|------------------|
+| **Definition / 定义** | Terminal velocity = constant max speed when drag = weight / 终端速度 = 阻力等于重量时的恒定最大速度 |
+| **Key Condition / 核心条件** | $F_d = W = mg$ → Net force = 0 → $a = 0$ / 合力 = 0 → 加速度 = 0 |
+| **Key Formula / 核心公式** | $F_d = \frac{1}{2}\rho C_d A v^2$ (high speed) or $F_d = 6\pi\eta r v$ (low speed) / 高速或低速阻力公式 |
+| **Key Graph / 核心图表** | v-t graph: steep start → curve flattens → horizontal at $v_T$ / v-t图：陡峭开始 → 曲线变平 → 在 $v_T$ 处水平 |
+| **Key Factors / 关键因素** | Mass ↑ → $v_T$ ↑; Area ↑ → $v_T$ ↓; Streamlined shape → $v_T$ ↑ / 质量↑ → 终端速度↑；面积↑ → 终端速度↓；流线型 → 终端速度↑ |
+| **Common Exam Question / 常见考题** | "Explain why terminal velocity is reached" / "解释为何达到终端速度" |
+| **Key Phrase / 关键短语** | "As speed increases, drag increases, reducing net force and acceleration" / "随着速度增加，阻力增加，减小合力和加速度" |
+| **Practical Tip / 实验提示** | Use viscous liquids (glycerol) for measurable terminal velocities / 使用粘性液体（甘油）获得可测量的终端速度 |
+| **Misconception Alert / 误区提醒** | At terminal velocity, forces are balanced, NOT absent / 终端速度时，力是平衡的，不是不存在 |
+| **Exam Board Difference / 考局差异** | CIE: Focus on qualitative description; Edexcel: May require calculation using $F_d = \frac{1}{2}\rho C_d A v^2$ / CIE：侧重定性描述；Edexcel：可能要求使用公式计算 |

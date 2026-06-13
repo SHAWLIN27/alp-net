@@ -3,6 +3,7 @@
 import { useEffect, useRef, useCallback } from 'react';
 import ForceGraph3D from '3d-force-graph';
 import * as THREE from 'three';
+import { forceCollide } from 'd3-force-3d';
 import { useGraphStore } from '@/store';
 import { fetchGraphData, fetchNodeNeighborhood } from '@/lib/api';
 
@@ -19,6 +20,7 @@ interface GraphLink {
   source: string;
   target: string;
   relation: string;
+  weight: number;
 }
 interface GraphData {
   nodes: GraphNode[];
@@ -27,17 +29,23 @@ interface GraphData {
 
 // ── API → 3D format ──
 const DOMAIN_COLORS: Record<string, string> = {
-  '01-Kinematics': '#38BDF8',
-  '02-Forces': '#22D3EE',
-  '03-Work-Energy-Power': '#10B981',
-  '04-Circular-Motion': '#A855F7',
-  '05-Gravitational-Fields': '#F59E0B',
-  '06-Oscillations': '#EC4899',
+  '01-Mechanics':                  '#38BDF8',  // Blue
+  '02-Waves':                      '#EC4899',  // Pink
+  '03-Electricity':                '#10B981',  // Green
+  '04-Fields':                     '#A855F7',  // Purple
+  '05-Thermal-Physics':            '#F59E0B',  // Orange
+  '06-Nuclear-and-Particle-Physics':'#EF4444', // Red
+  '07-Quantum-Physics':            '#8B5CF6',  // Violet
+  '08-Materials':                  '#14B8A6',  // Teal
+  '09-Astrophysics':               '#6366F1',  // Indigo
+  '10-Medical-Physics':            '#F97316',  // Deep orange
+  '11-Mathematical-Foundations':   '#06B6D4',  // Cyan
+  '12-Practical-Skills':           '#84CC16',  // Lime
 };
 
 function apiToGraphData(data: {
   nodes: { id: string; name: string; domain: string; node_type: string; metadata?: Record<string, unknown> }[];
-  edges: { source: string; target: string; edge_type: string }[];
+  edges: { source: string; target: string; edge_type: string; weight?: number }[];
 }): GraphData {
   const nodes: GraphNode[] = data.nodes.map(n => ({
     id: n.id,
@@ -52,6 +60,7 @@ function apiToGraphData(data: {
     source: e.source,
     target: e.target,
     relation: e.edge_type || 'RELATED_TO',
+    weight: e.weight || 1.0,
   }));
 
   return { nodes, links };
@@ -170,6 +179,10 @@ export default function GraphCanvas() {
   const selectNode = useGraphStore(s => s.selectNode);
   const setLoading = useGraphStore(s => s.setLoading);
   const focusNodeId = useGraphStore(s => s.focusNodeId);
+  const graphCommand = useGraphStore(s => s.graphCommand);
+
+  // Save initial graph data for reset
+  const initialDataRef = useRef<GraphData | null>(null);
 
   // ── Init ──
   useEffect(() => {
@@ -181,6 +194,11 @@ export default function GraphCanvas() {
         const apiData = await fetchGraphData();
         const gData = apiToGraphData(apiData);
         graphDataRef.current = gData;
+
+        // Save initial data for reset
+        if (!initialDataRef.current) {
+          initialDataRef.current = gData;
+        }
 
         // Update Zustand store
         if (!cancelled) {
@@ -219,14 +237,14 @@ export default function GraphCanvas() {
           // Labels
           .nodeLabel((n: unknown) => (n as GraphNode).name)
 
-          // Force simulation
+          // Force simulation — optimized for 459 nodes with typed edges
           .numDimensions(3)
           .forceEngine('d3')
-          .d3AlphaDecay(0.015)
-          .d3VelocityDecay(0.35)
-          .warmupTicks(80)
-          .cooldownTicks(300)
-          .cooldownTime(15000)
+          .d3AlphaDecay(0.0228)
+          .d3VelocityDecay(0.4)
+          .warmupTicks(100)
+          .cooldownTicks(400)
+          .cooldownTime(20000)
 
           // Camera
           .showNavInfo(false)
@@ -257,6 +275,26 @@ export default function GraphCanvas() {
           rimLight.position.set(0, 0, -200);
           scene.add(rimLight);
         }
+
+        // ── Custom force configuration ──
+        // Link force: different distances & strengths by edge type
+        g.d3Force('link')
+          .distance((link: GraphLink) =>
+            link.relation === 'SUBTOPIC_OF' ? 15 : 50
+          )
+          .strength((link: GraphLink) =>
+            (link.relation === 'SUBTOPIC_OF' ? 0.6 : 0.1) * (link.weight || 1)
+          );
+
+        // Charge force: stronger repulsion to keep graph compact
+        g.d3Force('charge').strength(-120);
+
+        // Collision force: prevent node overlap based on visual radius
+        g.d3Force('collide', forceCollide()
+          .radius((n: GraphNode) => (n.nodeType === 'topic_hub' ? 8 : 4))
+          .strength(0.8)
+          .iterations(2)
+        );
 
         // ── Single click → select + show right panel ──
         // ── Double click → expand neighborhood ──
@@ -376,6 +414,56 @@ export default function GraphCanvas() {
       }
     }
   }, [focusNodeId]);
+
+  // ── Graph command handler (Reset / Center / Fit from bottom bar) ──
+  useEffect(() => {
+    if (!graphCommand || !graphRef.current) return;
+
+    const g = graphRef.current;
+    const { action } = graphCommand;
+
+    switch (action) {
+      case 'reset': {
+        // Restore initial full graph data
+        if (initialDataRef.current) {
+          graphDataRef.current = initialDataRef.current;
+          g.graphData(initialDataRef.current);
+          // Reheat simulation to re-layout
+          setTimeout(() => g.d3ReheatSimulation(), 100);
+          // Reset camera to default position
+          g.cameraPosition({ x: 150, y: 100, z: 220 }, { x: 0, y: 0, z: 0 }, 1000);
+          // Update Zustand store
+          const d = initialDataRef.current;
+          setGraphData(
+            d.nodes.map(n => ({
+              id: n.id,
+              label: n.name,
+              category: n.domain,
+              description: '',
+              size: n.size,
+              color: n.color,
+              nodeType: n.nodeType as 'topic_hub' | 'leaf_concept',
+            })),
+            d.links.map(l => ({ source: l.source, target: l.target, relation: l.relation }))
+          );
+        }
+        break;
+      }
+      case 'center': {
+        // Zoom to fit all visible nodes with smooth transition
+        g.zoomToFit(400, 30);
+        break;
+      }
+      case 'fit': {
+        // Zoom to fit then reset to optimal overview angle
+        g.zoomToFit(0, 30);
+        setTimeout(() => {
+          g.cameraPosition({ x: 150, y: 100, z: 220 }, { x: 0, y: 0, z: 0 }, 800);
+        }, 50);
+        break;
+      }
+    }
+  }, [graphCommand]);
 
   return <div ref={containerRef} className="absolute inset-0 z-10" />;
 }

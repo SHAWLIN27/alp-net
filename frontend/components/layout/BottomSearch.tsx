@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Search, RotateCcw, Crosshair, Maximize2 } from 'lucide-react';
 import { useGraphStore } from '@/store';
@@ -10,8 +10,9 @@ export default function BottomSearch() {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<ReturnType<typeof searchNodes>>([]);
   const [showResults, setShowResults] = useState(false);
+  const inputRef = useRef<HTMLInputElement>(null);
 
-  const { nodes, selectNode, focusNode } = useGraphStore();
+  const { nodes, selectNode, focusNode, triggerGraphCommand } = useGraphStore();
 
   useEffect(() => {
     if (nodes.length > 0) createFuseIndex(nodes);
@@ -39,7 +40,29 @@ export default function BottomSearch() {
   const handleReset = () => {
     selectNode(null);
     setQuery('');
+    setResults([]);
+    triggerGraphCommand('reset');
   };
+
+  const handleCenter = () => {
+    triggerGraphCommand('center');
+  };
+
+  const handleFit = () => {
+    triggerGraphCommand('fit');
+  };
+
+  // ── Cmd+K / Ctrl+K keyboard shortcut ──
+  useEffect(() => {
+    function onKeyDown(e: KeyboardEvent) {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault();
+        inputRef.current?.focus();
+      }
+    }
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, []);
 
   return (
     <motion.div
@@ -50,14 +73,15 @@ export default function BottomSearch() {
     >
       <div className="flex gap-2">
         <ControlButton icon={<RotateCcw className="w-4 h-5" />} label="Reset" onClick={handleReset} />
-        <ControlButton icon={<Crosshair className="w-4 h-5" />} label="Center" onClick={handleReset} />
-        <ControlButton icon={<Maximize2 className="w-4 h-5" />} label="Fit" onClick={handleReset} />
+        <ControlButton icon={<Crosshair className="w-4 h-5" />} label="Center" onClick={handleCenter} />
+        <ControlButton icon={<Maximize2 className="w-4 h-5" />} label="Fit" onClick={handleFit} />
       </div>
 
       <div className="relative">
         <div className="flex items-center gap-3 px-5 py-3 rounded-2xl border border-white/[0.08] bg-[#020617]/80 backdrop-blur-2xl shadow-2xl shadow-black/50">
           <Search className="w-4 h-5 text-slate-500" />
           <input
+            ref={inputRef}
             type="text"
             value={query}
             onChange={(e) => handleSearch(e.target.value)}

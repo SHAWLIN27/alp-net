@@ -1,261 +1,266 @@
+Here is the complete bilingual leaf node for **Forced Oscillations**, designed as a standalone Obsidian note and knowledge graph node.
+
+---
+
 # 1. Overview / 概述
 
 **English:**
-Forced oscillations occur when an external, periodic driving force is applied to an oscillating system, causing it to vibrate at the **driving frequency** rather than its natural frequency. This sub-topic is central to understanding how energy is transferred into oscillatory systems and sets the foundation for [[Resonance and the Barton Pendulum]]. Unlike [[Free Oscillations]] (which are covered in [[Simple Harmonic Motion]]), forced oscillations involve continuous energy input from an external source, which can sustain or amplify motion even in the presence of damping. Understanding forced oscillations is crucial for A-Level Physics as it explains real-world phenomena such as machinery vibrations, musical instrument sustain, and structural responses to periodic forces.
+This sub-topic explores what happens when an external, periodic driving force is applied to an oscillating system. Unlike [[Free Oscillations]], where the system oscillates at its own [[Natural Frequency]] ($f_0$), a forced oscillator is subjected to a continuous energy input from an external source. The system is then forced to oscillate at the **driving frequency** ($f_d$) of the external force, not its own natural frequency. This concept is crucial for understanding how energy is transferred into oscillatory systems and sets the stage for the critical phenomenon of [[Resonance and the Barton Pendulum]]. It explains why a child on a swing can be pushed at any frequency, but the swing's amplitude will vary dramatically depending on how that frequency relates to the swing's natural frequency. This sub-topic builds directly on the principles of [[Energy in SHM]] and the concept of damping.
 
 **中文:**
-受迫振动发生在外部周期性驱动力施加于振动系统时，迫使系统以**驱动频率**而非其固有频率振动。本子知识点是理解能量如何传递到振动系统的核心，并为[[共振与巴顿摆]]奠定基础。与[[自由振动]]（在[[简谐运动]]中涵盖）不同，受迫振动涉及来自外部源的持续能量输入，即使在阻尼存在的情况下也能维持或放大运动。理解受迫振动对A-Level物理至关重要，因为它解释了机械振动、乐器延音以及结构对周期性力的响应等现实世界现象。
+本子知识点探讨当外部周期性驱动力施加于一个振荡系统时会发生什么。与[[自由振荡]]（系统以其自身[[固有频率]] $f_0$ 振荡）不同，受迫振荡器会持续从外部源接收能量输入。系统被迫以外部驱动力的**驱动频率** ($f_d$) 振荡，而非其自身的固有频率。这个概念对于理解能量如何传递到振荡系统至关重要，并为[[共振与巴顿摆]]这一关键现象奠定了基础。它解释了为什么一个孩子荡秋千时可以被以任何频率推动，但秋千的振幅会因该频率与秋千固有频率的关系而发生巨大变化。本子知识点直接建立在[[简谐运动中的能量]]和阻尼概念之上。
 
 ---
 
-# 2. Core Definition / 核心定义
+# 2. Syllabus Learning Objectives / 考纲学习目标
 
-| Term (EN/CN) | Definition (EN) | Definition (CN) |
-| ------------ | --------------- | --------------- |
-| **Forced Oscillation** / 受迫振动 | An oscillation in which an external periodic driving force is applied to a system, causing it to oscillate at the driving frequency. | 外部周期性驱动力施加于系统，迫使系统以驱动频率振动的振动。 |
-| **Driving Frequency** / 驱动频率 | The frequency of the external periodic force applied to the system. | 施加于系统的外部周期性力的频率。 |
-| **Natural Frequency** / 固有频率 | The frequency at which a system oscillates freely when displaced from equilibrium and released, without any external driving force. | 系统在不受外部驱动力的情况下，从平衡位置被释放后自由振动的频率。 |
-| **Steady State** / 稳态 | The condition reached after initial transients have died away, where the system oscillates at a constant amplitude at the driving frequency. | 初始瞬态消失后，系统以恒定振幅和驱动频率振动的状态。 |
-| **Transient** / 瞬态 | The initial, temporary response of a system before it settles into steady-state oscillation. | 系统在进入稳态振动之前的初始、临时响应。 |
-| **Amplitude of Forced Oscillation** / 受迫振动振幅 | The maximum displacement of the system from equilibrium during steady-state forced oscillation. | 稳态受迫振动期间系统从平衡位置的最大位移。 |
+| CAIE 9702 (17.3 a-d) | Edexcel IAL (WPH14 U4: 7.9-7.13) |
+|-----------|-------------|
+| Describe examples of forced oscillations. | Understand the concept of forced oscillations. |
+| Describe the variation of amplitude with driving frequency near the natural frequency. | Understand the relationship between driving frequency, natural frequency, and amplitude. |
+| Describe the phase difference between the driving force and the displacement of the oscillator. | Understand the phase relationship between the driving force and the oscillator's displacement. |
+| Define and apply the concept of resonance. | Understand the conditions for resonance. |
 
----
-
-# 3. Key Concepts / 关键概念
-
-**English:**
-
-### How Forced Oscillations Work
-When a periodic driving force is applied to an oscillating system, the system initially exhibits a **transient** response — a combination of its natural frequency and the driving frequency. Over time, damping causes the natural frequency component to decay, and the system settles into **steady-state** oscillation at the **driving frequency** only. The amplitude of this steady-state oscillation depends on:
-1. The **driving frequency** relative to the system's **natural frequency**
-2. The **magnitude** of the driving force
-3. The **damping** present in the system (see [[Light, Critical and Heavy Damping]])
-
-### Energy Transfer in Forced Oscillations
-The driving force does **positive work** on the system, transferring energy into it. In steady state, the energy input per cycle equals the energy dissipated per cycle due to damping. This is analogous to pushing a child on a swing — you push at the right moment to transfer energy efficiently. The system's [[Energy in SHM]] concepts apply here, but with continuous energy input.
-
-### Key Differences from Free Oscillations
-- **Frequency**: Free oscillations occur at the natural frequency; forced oscillations occur at the driving frequency.
-- **Amplitude**: Free oscillations have constant amplitude (undamped) or decaying amplitude (damped); forced oscillations can have constant amplitude in steady state.
-- **Energy**: Free oscillations have no external energy input; forced oscillations have continuous external energy input.
-
-### Common Pitfalls
-- **Confusing driving frequency with natural frequency**: The system oscillates at the driving frequency, not its natural frequency, in steady state.
-- **Assuming amplitude is constant regardless of driving frequency**: Amplitude varies significantly with driving frequency, especially near resonance.
-- **Forgetting that transients exist**: Students often jump straight to steady-state analysis without considering initial behavior.
-
-**中文:**
-
-### 受迫振动的工作原理
-当周期性驱动力施加于振动系统时，系统最初表现出**瞬态**响应——固有频率和驱动频率的组合。随着时间的推移，阻尼导致固有频率分量衰减，系统最终进入以**驱动频率**振动的**稳态**。稳态振幅取决于：
-1. **驱动频率**相对于系统**固有频率**的关系
-2. 驱动力的**大小**
-3. 系统中存在的**阻尼**（参见[[轻阻尼、临界阻尼与重阻尼]]）
-
-### 受迫振动中的能量传递
-驱动力对系统做**正功**，将能量传递到系统中。在稳态下，每个周期的能量输入等于因阻尼而耗散的能量。这类似于推秋千上的孩子——在正确的时机推动以高效传递能量。系统的[[简谐运动中的能量]]概念在此适用，但具有持续的能量输入。
-
-### 与自由振动的关键区别
-- **频率**：自由振动以固有频率发生；受迫振动以驱动频率发生。
-- **振幅**：自由振动具有恒定振幅（无阻尼）或衰减振幅（有阻尼）；受迫振动在稳态下可具有恒定振幅。
-- **能量**：自由振动无外部能量输入；受迫振动有持续的外部能量输入。
-
-### 常见误区
-- **混淆驱动频率与固有频率**：系统在稳态下以驱动频率振动，而非固有频率。
-- **假设振幅与驱动频率无关**：振幅随驱动频率显著变化，尤其在共振附近。
-- **忽略瞬态的存在**：学生常直接跳到稳态分析，而不考虑初始行为。
+**Examiner Expectations / 考官期望:**
+- **English:** You must be able to distinguish between free and forced oscillations. You should be able to sketch and interpret a graph of amplitude vs. driving frequency. You must understand that the amplitude is maximum when $f_d = f_0$ (resonance). You should also be able to describe the phase relationship: at low frequencies, displacement is in phase with the driving force; at resonance, displacement lags by $90^\circ$; at high frequencies, displacement lags by $180^\circ$.
+- **中文:** 你必须能够区分自由振荡和受迫振荡。你应该能够绘制并解释振幅-驱动频率图。你必须理解当 $f_d = f_0$（共振）时振幅最大。你还应该能够描述相位关系：在低频时，位移与驱动力同相；在共振时，位移滞后 $90^\circ$；在高频时，位移滞后 $180^\circ$。
 
 ---
 
-# 4. Formulas / 公式
+# 3. Core Definitions / 核心定义
 
-The key formula for forced oscillations relates the amplitude of the forced oscillation to the driving frequency and damping:
+| Term (EN/CN) | Definition (EN) | Definition (CN) | Common Mistakes / 常见错误 |
+|--------------|-----------------|-----------------|---------------------------|
+| **Forced Oscillation** / 受迫振荡 | An oscillation where an external periodic driving force is applied to the system, causing it to oscillate at the driving frequency. | 一个外部周期性驱动力施加于系统，迫使其以驱动频率进行的振荡。 | Confusing the driving frequency with the natural frequency. The system does NOT oscillate at its natural frequency. |
+| **Driving Frequency ($f_d$)** / 驱动频率 | The frequency of the external periodic force applied to the system. | 施加于系统的外部周期性力的频率。 | Thinking the driving frequency changes with amplitude. It is a fixed property of the external force. |
+| **Natural Frequency ($f_0$)** / 固有频率 | The frequency at which a system would oscillate if displaced from equilibrium and left to oscillate freely. | 系统从平衡位置被移开并自由振荡时的频率。 | Forgetting that damping slightly reduces the natural frequency. |
+| **Phase Difference ($\phi$)** / 相位差 | The difference in phase angle between the driving force and the displacement of the oscillator. | 驱动力与振荡器位移之间的相位角差。 | Confusing phase difference with a time delay without considering the period. |
 
-$$ A = \frac{F_0 / m}{\sqrt{(\omega_0^2 - \omega^2)^2 + (b\omega / m)^2}} $$
+---
+
+# 4. Key Concepts Explained / 关键概念详解
+
+## 4.1 The Mechanism of Forced Oscillation / 受迫振荡的机制
+
+### Explanation / 解释
+**English:** In a forced oscillation, an external agent (e.g., a motor, a person pushing) does work on the system, transferring energy to it. The system is compelled to oscillate at the frequency of this external agent, the **driving frequency** ($f_d$). The amplitude of the resulting oscillation is not constant; it depends critically on the relationship between $f_d$ and the system's own [[Natural Frequency]] ($f_0$). When $f_d$ is very different from $f_0$, the amplitude is small. As $f_d$ approaches $f_0$, the amplitude increases significantly. This is because the driving force is able to efficiently transfer energy to the system, reinforcing its natural motion. The system's response is a balance between the energy input from the driver and the energy lost due to [[Light, Critical and Heavy Damping]].
+
+**中文:** 在受迫振荡中，一个外部施力者（例如，马达、推人的人）对系统做功，向其传递能量。系统被迫以这个外部施力者的频率，即**驱动频率** ($f_d$) 进行振荡。由此产生的振荡振幅不是恒定的；它关键取决于 $f_d$ 与系统自身[[固有频率]] ($f_0$) 之间的关系。当 $f_d$ 与 $f_0$ 相差很大时，振幅很小。随着 $f_d$ 接近 $f_0$，振幅显著增加。这是因为驱动力能够有效地将能量传递给系统，从而增强其自然运动。系统的响应是来自驱动器的能量输入与因[[轻阻尼、临界阻尼和重阻尼]]而损失的能量之间的平衡。
+
+### Physical Meaning / 物理意义
+**English:** The driving force "tries" to make the system move at its own pace. The system "prefers" to move at its natural frequency. The resulting motion is a compromise. The closer the driving frequency is to the natural frequency, the more the system's natural tendency is reinforced, leading to larger amplitudes.
+
+**中文:** 驱动力“试图”让系统按照自己的节奏运动。系统“偏好”以其固有频率运动。最终的运动是一种折衷。驱动频率越接近固有频率，系统的自然趋势就越被增强，从而导致更大的振幅。
+
+### Common Misconceptions / 常见误区
+- **English:** Students think the system oscillates at its natural frequency. **Correction:** It oscillates at the *driving* frequency.
+- **English:** Students think the amplitude is always large. **Correction:** The amplitude is only large when $f_d \approx f_0$.
+- **中文:** 学生认为系统以其固有频率振荡。**纠正：** 它是以*驱动*频率振荡。
+- **中文:** 学生认为振幅总是很大。**纠正：** 只有当 $f_d \approx f_0$ 时振幅才大。
+
+### Exam Tips / 考试提示
+- **English:** Always state that the system oscillates at the *driving frequency*, not the natural frequency.
+- **English:** Use the phrase "energy is transferred most efficiently" when $f_d = f_0$.
+- **中文:** 始终说明系统以*驱动频率*振荡，而非固有频率。
+- **中文:** 当 $f_d = f_0$ 时，使用“能量传递效率最高”这个短语。
+
+> 📷 **IMAGE PROMPT — FOC-01: Forced Oscillation Diagram**
+> A simple diagram showing a mass on a spring. The top of the spring is attached to a motor-driven wheel that rotates, providing a periodic driving force. Arrows indicate the driving force direction and the displacement of the mass. Labels: "Driving Force (F_d)", "Displacement (x)", "Driving Frequency (f_d)".
+
+---
+
+# 5. Essential Equations / 核心公式
+
+There is no single simple equation for the amplitude of a forced oscillator, but the key relationship is conceptual.
+
+$$ \text{Amplitude} \propto \frac{1}{\sqrt{(\omega_0^2 - \omega_d^2)^2 + (b\omega_d)^2}} $$
 
 Where:
-- $A$ = amplitude of forced oscillation (m)
-- $F_0$ = amplitude of driving force (N)
-- $m$ = mass of oscillating object (kg)
-- $\omega_0$ = natural angular frequency (rad/s)
-- $\omega$ = driving angular frequency (rad/s)
-- $b$ = damping coefficient (kg/s)
+- $\omega_0 = 2\pi f_0$ is the natural angular frequency.
+- $\omega_d = 2\pi f_d$ is the driving angular frequency.
+- $b$ is the damping constant.
 
 | Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
-| ------------- | ------------ | ------------ | ----------- |
-| $A$ | Amplitude of forced oscillation | 受迫振动振幅 | m |
-| $F_0$ | Driving force amplitude | 驱动力振幅 | N |
-| $m$ | Mass | 质量 | kg |
-| $\omega_0$ | Natural angular frequency | 固有角频率 | rad/s |
-| $\omega$ | Driving angular frequency | 驱动角频率 | rad/s |
-| $b$ | Damping coefficient | 阻尼系数 | kg/s |
+|--------------|-------------|-------------|------------|
+| $\omega_0$ | Natural angular frequency | 固有角频率 | rad s$^{-1}$ |
+| $\omega_d$ | Driving angular frequency | 驱动角频率 | rad s$^{-1}$ |
+| $b$ | Damping constant | 阻尼常数 | kg s$^{-1}$ |
 
-**Derivation / 推导:**
-Starting from the equation of motion for a damped, driven oscillator:
-$$ m\frac{d^2x}{dt^2} + b\frac{dx}{dt} + kx = F_0 \cos(\omega t) $$
+**Derivation / 推导:** Not required for A-Level. The equation is for understanding the shape of the resonance curve.
 
-Assume a steady-state solution of the form $x = A\cos(\omega t - \phi)$. Substituting and solving for $A$ yields the amplitude formula above. The phase difference $\phi$ is given by:
-$$ \tan\phi = \frac{b\omega}{m(\omega_0^2 - \omega^2)} $$
+**Conditions / 适用条件:** This applies to a driven, damped harmonic oscillator.
 
-**Conditions / 适用条件:**
-- The system must be linear (Hooke's law applies)
-- The driving force must be sinusoidal
-- Valid only for steady-state (after transients have decayed)
-- Damping must be present for steady-state amplitude to be finite at resonance
+**Limitations / 局限性:** This is a simplified model. Real-world systems may have non-linearities.
 
-> 📷 **IMAGE PROMPT — FOSC-01: Forced Oscillation Amplitude vs Driving Frequency**
->
-> **English Prompt:**
-> A clean, textbook-style vector graph showing amplitude of forced oscillation (y-axis) against driving frequency (x-axis). Three curves are plotted for different damping levels: low damping (tall, narrow peak), medium damping (shorter, wider peak), and high damping (flat, low curve). The natural frequency is marked with a vertical dashed line at f₀. The x-axis is labeled "Driving Frequency / Hz" and y-axis "Amplitude / m". Use a white background with black axes and colored curves (blue for low damping, red for medium, green for high). Include a legend in the top right corner.
->
-> **中文描述:**
-> 一个干净、教科书风格的矢量图，显示受迫振动振幅（y轴）与驱动频率（x轴）的关系。绘制三条不同阻尼水平的曲线：低阻尼（高而窄的峰值）、中阻尼（较短、较宽的峰值）和高阻尼（平坦、低曲线）。固有频率用垂直虚线标记在f₀处。x轴标记为"驱动频率/Hz"，y轴标记为"振幅/m"。使用白色背景、黑色坐标轴和彩色曲线（蓝色为低阻尼，红色为中阻尼，绿色为高阻尼）。右上角包含图例。
->
-> **Labels Required / 需要标注:**
-> * f₀ (natural frequency)
-> * Low damping curve
-> * Medium damping curve
-> * High damping curve
-> * Axes labels
->
-> **Style / 风格:** Textbook vector
->
-> **Exam Relevance / 考试关联:**
-> This graph is essential for understanding how amplitude varies with driving frequency and damping — a common exam question topic.
+> 📷 **IMAGE PROMPT — FOC-02: Amplitude vs Driving Frequency Graph**
+> A graph with "Driving Frequency (f_d)" on the x-axis and "Amplitude" on the y-axis. Three curves are shown for different damping levels (light, medium, heavy). The peak of each curve is at the natural frequency (f_0). The light damping curve has a tall, narrow peak. The heavy damping curve has a low, broad peak.
 
 ---
 
-# 5. Image Prompt / 图片提示
+# 6. Graphs and Relationships / 图表与关系
 
-> 📷 **IMAGE PROMPT — FOSC-02: Forced Oscillation Phase Difference Diagram**
->
-> **English Prompt:**
-> A 3D-rendered diagram showing a mass-spring system being driven by an external periodic force. The mass (a blue block) is attached to a spring (coiled, silver) on the left, and a hand or mechanical arm (shown in orange) is pushing the mass from the right with a sinusoidal motion. Arrows indicate the direction of the driving force (F_drive) and the displacement (x). Below the system, two sine waves are shown: one for the driving force (orange) and one for the displacement (blue), with a phase difference φ marked between them. The phase difference should be less than 90° (driving force leading displacement). Use a clean, educational style with a white background and clear labels.
->
-> **中文描述:**
-> 一个3D渲染图，显示一个由外部周期性力驱动的质量-弹簧系统。质量块（蓝色方块）连接到左侧的弹簧（银色螺旋），一只手或机械臂（橙色）从右侧以正弦运动推动质量块。箭头指示驱动力（F_drive）和位移（x）的方向。系统下方显示两个正弦波：一个用于驱动力（橙色），一个用于位移（蓝色），它们之间的相位差φ被标记。相位差应小于90°（驱动力领先位移）。使用干净的教育风格，白色背景和清晰的标签。
->
-> **Labels Required / 需要标注:**
-> * Mass (m)
-> * Spring (k)
-> * Driving force (F_drive)
-> * Displacement (x)
-> * Phase difference (φ)
-> * Driving force sine wave
-> * Displacement sine wave
->
-> **Style / 风格:** 3D render
->
-> **Exam Relevance / 考试关联:**
-> Understanding phase difference in forced oscillations is key to explaining energy transfer and resonance behavior.
+## 6.1 Amplitude vs. Driving Frequency (Resonance Curve) / 振幅-驱动频率图（共振曲线）
+
+### Axes / 坐标轴
+- **X-axis:** Driving Frequency ($f_d$) / 驱动频率 ($f_d$)
+- **Y-axis:** Amplitude of Oscillation / 振荡振幅
+
+### Shape / 形状
+**English:** A curve that starts at a low amplitude for low $f_d$, rises to a sharp peak at $f_d = f_0$, and then falls to a low amplitude again for high $f_d$. The height and sharpness of the peak depend on the amount of [[Light, Critical and Heavy Damping]].
+
+**中文:** 一条曲线，在低 $f_d$ 时振幅较低，在 $f_d = f_0$ 处上升到尖锐的峰值，然后在高 $f_d$ 时再次下降到低振幅。峰值的高度和尖锐程度取决于[[轻阻尼、临界阻尼和重阻尼]]的大小。
+
+### Gradient Meaning / 斜率含义
+**English:** The gradient shows the rate of change of amplitude with driving frequency. It is steepest near the natural frequency.
+
+**中文:** 斜率表示振幅随驱动频率变化的速率。在固有频率附近最陡。
+
+### Area Meaning / 面积含义
+**English:** The area under the curve is not physically significant in this context.
+
+**中文:** 曲线下的面积在此上下文中没有物理意义。
+
+### Exam Interpretation / 考试解读
+**English:** You must be able to identify the natural frequency from the peak of the curve. You must be able to explain how the curve changes with different damping levels. A common question is to sketch the curve for a system with more or less damping.
+
+**中文:** 你必须能够从曲线的峰值识别出固有频率。你必须能够解释曲线如何随不同阻尼水平而变化。一个常见问题是绘制一个具有更多或更少阻尼的系统的曲线。
 
 ---
 
-# 6. Worked Example / 典型例题
+# 7. Required Diagrams / 必备图表
+
+## 7.1 Phase Difference vs. Driving Frequency / 相位差-驱动频率图
+
+### Description / 描述
+**English:** A graph showing how the phase difference ($\phi$) between the driving force and the displacement changes as the driving frequency ($f_d$) is varied. The phase difference is $0^\circ$ at very low frequencies, $90^\circ$ at resonance ($f_d = f_0$), and $180^\circ$ at very high frequencies.
+
+**中文:** 一张显示驱动力与位移之间的相位差 ($\phi$) 如何随驱动频率 ($f_d$) 变化的图。在非常低的频率下，相位差为 $0^\circ$；在共振时 ($f_d = f_0$)，相位差为 $90^\circ$；在非常高的频率下，相位差为 $180^\circ$。
+
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — FOC-03: Phase Difference vs Driving Frequency**
+> A graph with "Driving Frequency (f_d)" on the x-axis and "Phase Difference (degrees)" on the y-axis. The curve starts at 0 degrees, smoothly increases through 90 degrees at the natural frequency (f_0), and asymptotically approaches 180 degrees. The curve is an arctan shape.
+
+### Labels Required / 需要标注
+- **English:** Driving Frequency ($f_d$), Phase Difference ($\phi$), Natural Frequency ($f_0$), $0^\circ$, $90^\circ$, $180^\circ$.
+- **中文:** 驱动频率 ($f_d$), 相位差 ($\phi$), 固有频率 ($f_0$), $0^\circ$, $90^\circ$, $180^\circ$.
+
+### Exam Importance / 考试重要性
+**English:** High. This is a classic exam question. You must be able to explain the physical reason for this phase shift. At low frequencies, the system can keep up with the force. At high frequencies, the system's inertia prevents it from responding instantly.
+
+**中文:** 高。这是一个经典的考试题目。你必须能够解释这种相位偏移的物理原因。在低频时，系统能跟上力的变化。在高频时，系统的惯性阻止它立即响应。
+
+---
+
+# 8. Worked Examples / 典型例题
+
+## Example 1: Identifying Forced Oscillation / 识别受迫振荡
 
 ### Question / 题目
-**English:**
-A mass-spring system has a natural frequency of 2.0 Hz. It is driven by an external periodic force of amplitude 5.0 N. The mass is 0.50 kg and the damping coefficient is 0.20 kg/s.
+**English:** A child is on a swing. A parent pushes the swing once every 2 seconds. The swing has a natural period of 2.5 seconds. Is this a forced oscillation? Explain your answer.
 
-(a) Calculate the amplitude of the forced oscillation when the driving frequency is 1.5 Hz.
-(b) Explain why the amplitude would be larger if the driving frequency were 2.0 Hz.
-
-**中文:**
-一个质量-弹簧系统的固有频率为2.0 Hz。它受到振幅为5.0 N的外部周期性力的驱动。质量为0.50 kg，阻尼系数为0.20 kg/s。
-
-(a) 计算驱动频率为1.5 Hz时受迫振动的振幅。
-(b) 解释为什么如果驱动频率为2.0 Hz，振幅会更大。
+**中文:** 一个孩子坐在秋千上。家长每2秒推一次秋千。秋千的固有周期是2.5秒。这是受迫振荡吗？解释你的答案。
 
 ### Solution / 解答
+**English:**
+1.  **Identify the driving force:** The parent's push is the external periodic driving force.
+2.  **Identify the driving frequency:** The parent pushes every 2 seconds, so the driving period $T_d = 2$ s. The driving frequency $f_d = 1/T_d = 0.5$ Hz.
+3.  **Identify the natural frequency:** The natural period $T_0 = 2.5$ s. The natural frequency $f_0 = 1/T_0 = 0.4$ Hz.
+4.  **Conclusion:** Yes, this is a forced oscillation because an external periodic force is applied. The swing will be forced to oscillate at the driving frequency of 0.5 Hz, not its natural frequency of 0.4 Hz.
 
-**Part (a):**
-
-First, convert frequencies to angular frequencies:
-$$ \omega_0 = 2\pi f_0 = 2\pi \times 2.0 = 4\pi \text{ rad/s} $$
-$$ \omega = 2\pi f = 2\pi \times 1.5 = 3\pi \text{ rad/s} $$
-
-Use the amplitude formula:
-$$ A = \frac{F_0 / m}{\sqrt{(\omega_0^2 - \omega^2)^2 + (b\omega / m)^2}} $$
-
-Substitute values:
-$$ A = \frac{5.0 / 0.50}{\sqrt{((4\pi)^2 - (3\pi)^2)^2 + (0.20 \times 3\pi / 0.50)^2}} $$
-
-$$ A = \frac{10}{\sqrt{((16\pi^2 - 9\pi^2)^2 + (0.60\pi)^2}} $$
-
-$$ A = \frac{10}{\sqrt{(7\pi^2)^2 + (0.60\pi)^2}} $$
-
-$$ A = \frac{10}{\sqrt{(7 \times 9.87)^2 + (1.88)^2}} $$
-
-$$ A = \frac{10}{\sqrt{(69.1)^2 + 3.54}} $$
-
-$$ A = \frac{10}{\sqrt{4775 + 3.54}} = \frac{10}{\sqrt{4779}} $$
-
-$$ A = \frac{10}{69.1} = 0.145 \text{ m} $$
-
-**Part (b):**
-At the natural frequency (2.0 Hz), $\omega = \omega_0$, so the term $(\omega_0^2 - \omega^2)^2$ becomes zero. The denominator is then minimized, consisting only of the damping term $(b\omega/m)^2$. This results in the maximum possible amplitude for the given damping — this is the condition for **resonance** (see [[Resonance and the Barton Pendulum]]). Therefore, the amplitude at 2.0 Hz would be larger than at 1.5 Hz.
+**中文:**
+1.  **识别驱动力：** 家长的推力是外部周期性驱动力。
+2.  **识别驱动频率：** 家长每2秒推一次，所以驱动周期 $T_d = 2$ 秒。驱动频率 $f_d = 1/T_d = 0.5$ Hz。
+3.  **识别固有频率：** 固有周期 $T_0 = 2.5$ 秒。固有频率 $f_0 = 1/T_0 = 0.4$ Hz。
+4.  **结论：** 是的，这是受迫振荡，因为施加了外部周期性力。秋千将被迫以0.5 Hz的驱动频率振荡，而不是其0.4 Hz的固有频率。
 
 ### Final Answer / 最终答案
-**Answer:** (a) 0.145 m (b) At resonance, the denominator is minimized, giving maximum amplitude. **答案:** (a) 0.145 米 (b) 在共振时，分母最小化，得到最大振幅。
+**Answer:** Yes, it is a forced oscillation. | **答案：** 是的，这是受迫振荡。
 
 ### Quick Tip / 提示
-**English:** Always convert frequency to angular frequency ($\omega = 2\pi f$) before using the amplitude formula. Remember that at resonance ($\omega = \omega_0$), the amplitude is limited only by damping.
-
-**中文:** 在使用振幅公式前，务必先将频率转换为角频率（$\omega = 2\pi f$）。记住在共振时（$\omega = \omega_0$），振幅仅受阻尼限制。
+**English:** Always check if the system is being driven by an external, periodic force. If yes, it's a forced oscillation. | **中文：** 始终检查系统是否受到外部周期性力的驱动。如果是，那就是受迫振荡。
 
 ---
 
-# 7. Flashcards / 闪卡
+# 9. Past Paper Question Types / 历年真题题型
 
-**Flashcard 1:**
-Q (EN): What is a forced oscillation?
-Q (CN): 什么是受迫振动？
-A (EN): An oscillation where an external periodic driving force causes the system to oscillate at the driving frequency.
-A (CN): 外部周期性驱动力迫使系统以驱动频率振动的振动。
+| Question Type / 题型 | Frequency / 频率 | Difficulty / 难度 | Past Paper References / 真题索引 |
+|----------------------|------------------|------------------|-------------------------------|
+| Define forced oscillation / 定义受迫振荡 | High | Easy | 📝 *待填入* |
+| Sketch amplitude vs. frequency graph / 绘制振幅-频率图 | High | Medium | 📝 *待填入* |
+| Explain phase difference at resonance / 解释共振时的相位差 | Medium | Hard | 📝 *待填入* |
+| Compare free and forced oscillations / 比较自由和受迫振荡 | Medium | Medium | 📝 *待填入* |
 
-**Flashcard 2:**
-Q (EN): What frequency does a forced oscillator oscillate at in steady state?
-Q (CN): 受迫振子在稳态下以什么频率振动？
-A (EN): The driving frequency, not the natural frequency.
-A (CN): 驱动频率，而非固有频率。
-
-**Flashcard 3:**
-Q (EN): What happens to the transient response in a forced oscillation?
-Q (CN): 受迫振动中的瞬态响应会发生什么？
-A (EN): It decays due to damping, leaving only the steady-state oscillation at the driving frequency.
-A (CN): 它因阻尼而衰减，只留下以驱动频率振动的稳态。
-
-**Flashcard 4:**
-Q (EN): How does the amplitude of forced oscillation depend on driving frequency?
-Q (CN): 受迫振动的振幅如何依赖于驱动频率？
-A (EN): Amplitude is maximum when driving frequency equals natural frequency (resonance), and decreases as driving frequency moves away from natural frequency.
-A (CN): 当驱动频率等于固有频率（共振）时振幅最大，随着驱动频率远离固有频率而减小。
-
-**Flashcard 5:**
-Q (EN): What is the condition for steady-state in forced oscillations?
-Q (CN): 受迫振动中稳态的条件是什么？
-A (EN): Energy input per cycle from the driving force equals energy dissipated per cycle due to damping.
-A (CN): 每个周期驱动力输入的能量等于每个周期因阻尼而耗散的能量。
+**Common Command Words / 常见指令词:**
+- **English:** Define, Describe, Explain, Sketch, State, Compare.
+- **中文:** 定义，描述，解释，绘制，陈述，比较。
 
 ---
 
-# 8. Metadata / 元数据
+# 10. Practical Skills Connections / 实验技能链接
 
-```yaml
-title:
-  en: Forced Oscillations
-  cn: 受迫振动
-parent_topic: Damped and Forced Oscillations / Resonance
-parent_hub: "[[Damped and Forced Oscillations / Resonance]]"
-subject: Physics
-syllabus:
-  - CAIE 9702
-  - Edexcel IAL
-level: A2
-node_type: leaf_concept
-difficulty: advanced
-related_leaf_nodes:
-  - "[[Light, Critical and Heavy Damping]]"
-  - "[[Resonance and the Barton Pendulum]]"
-  - "[[Energy in SHM]]"
-language: bilingual_en_cn
+**English:**
+This sub-topic is directly tested in the practical context of the [[Resonance and the Barton Pendulum]] experiment. Key skills include:
+- **Measurements:** Measuring the period of oscillation for different pendulums.
+- **Graph Plotting:** Plotting a graph of amplitude against driving frequency.
+- **Analysis:** Identifying the natural frequency from the peak of the graph.
+- **Uncertainties:** Estimating the uncertainty in measuring the period and amplitude.
+- **Experimental Design:** Understanding how to vary the driving frequency (e.g., by changing the speed of a motor) and how to control damping.
+
+**中文:**
+本子知识点在[[共振与巴顿摆]]实验的实践背景中直接测试。关键技能包括：
+- **测量：** 测量不同摆的振荡周期。
+- **图表绘制：** 绘制振幅对驱动频率的图表。
+- **分析：** 从图表的峰值识别固有频率。
+- **不确定度：** 估计测量周期和振幅的不确定度。
+- **实验设计：** 理解如何改变驱动频率（例如，通过改变马达的速度）以及如何控制阻尼。
+
+---
+
+# 11. Concept Map / 概念图谱
+
+```mermaid
+graph TD
+    subgraph "Forced Oscillations"
+        A[Forced Oscillation] --> B{External Periodic Force}
+        A --> C[Driving Frequency (f_d)]
+        A --> D[System's Natural Frequency (f_0)]
+        A --> E[Amplitude]
+        E --> F{Relationship between f_d and f_0}
+        F -->|f_d << f_0| G[Small Amplitude]
+        F -->|f_d = f_0| H[Maximum Amplitude (Resonance)]
+        F -->|f_d >> f_0| I[Small Amplitude]
+        H --> J[Energy Transfer Most Efficient]
+        A --> K[Phase Difference (φ)]
+        K -->|f_d << f_0| L[φ = 0°]
+        K -->|f_d = f_0| M[φ = 90°]
+        K -->|f_d >> f_0| N[φ = 180°]
+    end
+
+    subgraph "Prerequisites"
+        O[Energy in SHM]
+        P[Free Oscillations]
+        Q[Natural Frequency]
+    end
+
+    subgraph "Related Topics"
+        R[Resonance and the Barton Pendulum]
+        S[Light, Critical and Heavy Damping]
+    end
+
+    A --> O
+    A --> P
+    A --> Q
+    R --> A
+    S --> A
+```
+
+---
+
+# 12. Quick Revision Sheet / 速查表
+
+| Category / 类别 | Key Points / 要点 |
+|----------------|------------------|
+| Definition / 定义 | A system oscillating at the **driving frequency** due to an external periodic force. / 系统因外部周期性力而以**驱动频率**振荡。 |
+| Key Formula / 核心公式 | No simple formula. Amplitude depends on $f_d$, $f_0$, and damping. / 无简单公式。振幅取决于 $f_d$、$f_0$ 和阻尼。 |
+| Key Graph / 核心图表 | **Amplitude vs. $f_d$:** Peak at $f_d = f_0$. **Phase vs. $f_d$:** $0^\circ \rightarrow 90^\circ \rightarrow 180^\circ$. / **振幅-$f_d$图：** 在 $f_d = f_0$ 处有峰值。**相位-$f_d$图：** $0^\circ \rightarrow 90^\circ \rightarrow 180^\circ$。 |
+| Exam Tip / 考试提示 | Always state the system oscillates at the **driving frequency**. The amplitude is maximum at **resonance** ($f_d = f_0$). / 始终说明系统以**驱动频率**振荡。振幅在**共振** ($f_d = f_0$) 时最大。 |

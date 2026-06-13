@@ -1,324 +1,293 @@
+---
+# The Simple Pendulum / 单摆
+
+---
+
 # 1. Overview / 概述
 
 **English:**
-The simple pendulum is one of the most classic examples of [[Simple Harmonic Motion]] in A-Level Physics. This sub-topic explores how a small, heavy bob swinging on a light, inextensible string approximates SHM for small angular displacements. You will derive the formula for its time period, understand the factors that affect it, and learn how to use the pendulum to determine the acceleration due to gravity ($g$). This is a cornerstone experiment in mechanics, linking [[Conditions for SHM]] with practical measurement.
+The simple pendulum is a classic example of a system that undergoes [[Simple Harmonic Motion]] under specific conditions. This sub-topic focuses on deriving and applying the formula for the time period of a simple pendulum, $T = 2\pi \sqrt{\frac{l}{g}}$. We will explore the assumptions that make a pendulum a simple harmonic oscillator, the factors that affect its period, and how to use it as a tool for measuring gravitational field strength. Understanding the simple pendulum builds directly on the [[Conditions for SHM]] and the [[Displacement, Velocity and Acceleration in SHM]] concepts, and is a key practical application of SHM theory.
 
 **中文:**
-单摆是A-Level物理中[[简谐运动]]最经典的例子之一。本子知识点探讨了一个在轻质、不可伸长的绳子上摆动的小而重的摆锤，在小角度位移下如何近似为简谐运动。你将推导其周期公式，理解影响周期的因素，并学习如何利用单摆测定重力加速度 ($g$)。这是力学中的基石实验，将[[简谐运动的条件]]与实际测量联系起来。
+单摆是在特定条件下进行[[简谐运动]]的经典系统。本子知识点专注于推导和应用单摆的周期公式 $T = 2\pi \sqrt{\frac{l}{g}}$。我们将探讨使单摆成为简谐振子的假设条件、影响其周期的因素，以及如何将其用作测量重力场强度的工具。理解单摆直接建立在[[简谐运动的条件]]和[[简谐运动中的位移、速度和加速度]]概念之上，是SHM理论的关键实际应用。
 
 ---
 
-# 2. Core Definition / 核心定义
+# 2. Syllabus Learning Objectives / 考纲学习目标
 
-| Term (EN/CN) | Definition (EN) | Definition (CN) |
-| ------------ | --------------- | --------------- |
-| **Simple Pendulum** / 单摆 | A point mass suspended from a fixed point by a light, inextensible string, which oscillates under gravity. | 一个由轻质、不可伸长的绳子悬挂在固定点上的质点，在重力作用下摆动。 |
-| **Restoring Force** / 回复力 | The component of the weight of the bob acting perpendicular to the string, directed towards the equilibrium position. | 摆锤重力的垂直于绳子的分量，方向指向平衡位置。 |
-| **Small Angle Approximation** / 小角度近似 | For small angular displacements ($\theta \ll 1$ rad), $\sin\theta \approx \theta$, allowing the motion to be treated as SHM. | 对于小角度位移 ($\theta \ll 1$ rad)，$\sin\theta \approx \theta$，使运动可被视为简谐运动。 |
-| **Time Period ($T$)** / 周期 | The time taken for one complete oscillation (to-and-fro motion). | 完成一次全振动（来回运动）所需的时间。 |
-| **Amplitude ($\theta_0$)** / 振幅 | The maximum angular displacement from the equilibrium position. | 从平衡位置出发的最大角位移。 |
-| **Length ($L$)** / 摆长 | The distance from the pivot point to the centre of mass of the bob. | 从悬挂点到摆锤质心的距离。 |
+| CAIE 9702 (17.1) | Edexcel IAL (WPH14 U4: 7.1-7.5) |
+|-----------|-------------|
+| (a) Describe simple examples of SHM, including the simple pendulum. | 7.1 Understand the conditions for SHM and how the simple pendulum satisfies them. |
+| (b) Define and use the terms displacement, amplitude, period, frequency, angular frequency and phase difference. | 7.2 Derive and use the formula $T = 2\pi \sqrt{\frac{l}{g}}$ for the period of a simple pendulum. |
+| (c) Derive and use the formula $T = 2\pi \sqrt{\frac{l}{g}}$ for the period of a simple pendulum. | 7.3 Investigate the factors affecting the period of a simple pendulum. |
+| (d) Describe an experiment to determine $g$ using a simple pendulum. | 7.4 Use a simple pendulum to determine the value of $g$. |
+| | 7.5 Understand the limitations of the simple pendulum model. |
+
+**Examiner Expectations / 考官期望:**
+- **CAIE:** Students must be able to derive the period formula from the restoring force and the condition for SHM. They must also be able to describe the experimental procedure to find $g$ and identify sources of error.
+- **Edexcel:** Students must be able to derive and use the formula, and understand the assumptions (small angle, inextensible string, point mass). They should be able to analyze experimental data to find $g$.
 
 ---
 
-# 3. Key Concepts / 关键概念
+# 3. Core Definitions / 核心定义
 
+| Term (EN/CN) | Definition (EN) | Definition (CN) | Common Mistakes / 常见错误 |
+|--------------|-----------------|-----------------|---------------------------|
+| **Simple Pendulum** / 单摆 | An idealized model consisting of a point mass suspended from a fixed point by a massless, inextensible string, swinging under gravity. | 一个理想化模型，由一个质点通过一根无质量、不可伸长的绳子悬挂在固定点上，在重力作用下摆动。 | Confusing the real pendulum with the ideal model. |
+| **Restoring Force** / 回复力 | The net force acting on the pendulum bob that always acts towards the equilibrium position. For a simple pendulum, it is the component of weight tangential to the arc: $F = -mg \sin \theta$. | 作用在单摆摆锤上的净力，始终指向平衡位置。对于单摆，它是重力沿圆弧切向的分量：$F = -mg \sin \theta$. | Forgetting the negative sign or using the full weight $mg$ instead of its component. |
+| **Small Angle Approximation** / 小角度近似 | The assumption that for small angular displacements ($\theta < 10^\circ$), $\sin \theta \approx \theta$ (in radians). This linearizes the restoring force, making the motion SHM. | 假设对于小角位移 ($\theta < 10^\circ$)，$\sin \theta \approx \theta$ (以弧度为单位)。这使回复力线性化，从而使运动成为简谐运动。 | Using degrees instead of radians when applying the approximation. |
+| **Period (T)** / 周期 | The time taken for one complete oscillation (e.g., from one extreme to the other and back). | 完成一次全振动所需的时间（例如，从一个极端到另一个极端再返回）。 | Confusing period with frequency or half-period. |
+| **Length (l)** / 摆长 | The distance from the point of suspension to the center of mass of the bob. | 从悬挂点到摆锤质心的距离。 | Measuring to the bottom of the bob instead of its center. |
+
+---
+
+# 4. Key Concepts Explained / 关键概念详解
+
+## 4.1 Derivation of the Period Formula / 周期公式的推导
+
+### Explanation / 解释
 **English:**
-The simple pendulum is a physical system that demonstrates [[Conditions for SHM]] under specific conditions. Consider a bob of mass $m$ suspended by a string of length $L$. When displaced by a small angle $\theta$ from the vertical, the restoring force is the component of the bob's weight acting tangentially to the arc: $F = -mg\sin\theta$.
+The derivation of $T = 2\pi \sqrt{\frac{l}{g}}$ is a core skill. It links the [[Conditions for SHM]] to the geometry of the pendulum.
 
-For small angles ($\theta < 10^\circ$ or $\theta < 0.175$ rad), we use the **small angle approximation**: $\sin\theta \approx \theta$ (where $\theta$ is in radians). This gives $F \approx -mg\theta$. Since the arc length $s = L\theta$, we can write $F \approx -\frac{mg}{L}s$. This is of the form $F = -kx$, where $k = \frac{mg}{L}$, confirming that the motion is SHM.
-
-The angular frequency $\omega$ is then $\omega = \sqrt{\frac{k}{m}} = \sqrt{\frac{g}{L}}$, leading to the famous period formula $T = 2\pi\sqrt{\frac{L}{g}}$.
-
-**Key points to remember:**
-* The period is **independent of mass** — a heavier bob does not swing faster.
-* The period is **independent of amplitude** (for small angles) — this is the property of isochronism.
-* The period depends only on **length** and **gravitational field strength**.
-* The motion is **not** SHM for large amplitudes — the small angle approximation breaks down.
-
-**Common pitfalls:**
-* Forgetting to convert degrees to radians when using the small angle approximation.
-* Confusing the length $L$ with the amplitude.
-* Assuming the period formula applies for any amplitude.
+1.  **Restoring Force:** For a pendulum displaced by an angle $\theta$, the restoring force is the component of weight acting towards the equilibrium position: $F = -mg \sin \theta$.
+2.  **Small Angle Approximation:** For SHM, the restoring force must be proportional to displacement ($F \propto -x$). The displacement $x$ along the arc is $x = l\theta$. Using the small angle approximation ($\sin \theta \approx \theta$), we get $F \approx -mg \theta = -mg \left(\frac{x}{l}\right) = -\left(\frac{mg}{l}\right)x$.
+3.  **Identifying $k$:** Comparing $F = -kx$ with $F = -\left(\frac{mg}{l}\right)x$, we find the effective spring constant for the pendulum is $k = \frac{mg}{l}$.
+4.  **Using the SHM Period Formula:** The general formula for the period of any SHM system is $T = 2\pi \sqrt{\frac{m}{k}}$. Substituting $k = \frac{mg}{l}$ gives $T = 2\pi \sqrt{\frac{m}{mg/l}} = 2\pi \sqrt{\frac{l}{g}}$.
 
 **中文:**
-单摆是一个在特定条件下展示[[简谐运动的条件]]的物理系统。考虑一个质量为 $m$ 的摆锤，由长度为 $L$ 的绳子悬挂。当从竖直方向偏离一个小角度 $\theta$ 时，回复力是摆锤重力沿圆弧切线方向的分量：$F = -mg\sin\theta$。
+推导 $T = 2\pi \sqrt{\frac{l}{g}}$ 是一项核心技能。它将[[简谐运动的条件]]与单摆的几何形状联系起来。
 
-对于小角度 ($\theta < 10^\circ$ 或 $\theta < 0.175$ rad)，我们使用**小角度近似**：$\sin\theta \approx \theta$（其中 $\theta$ 以弧度为单位）。这给出 $F \approx -mg\theta$。由于弧长 $s = L\theta$，我们可以写成 $F \approx -\frac{mg}{L}s$。这是 $F = -kx$ 的形式，其中 $k = \frac{mg}{L}$，证实了运动是简谐运动。
+1.  **回复力：** 对于偏离角度 $\theta$ 的单摆，回复力是重力指向平衡位置的分量：$F = -mg \sin \theta$。
+2.  **小角度近似：** 对于SHM，回复力必须与位移成正比 ($F \propto -x$)。沿弧的位移 $x$ 为 $x = l\theta$。使用小角度近似 ($\sin \theta \approx \theta$)，我们得到 $F \approx -mg \theta = -mg \left(\frac{x}{l}\right) = -\left(\frac{mg}{l}\right)x$。
+3.  **识别 $k$：** 比较 $F = -kx$ 和 $F = -\left(\frac{mg}{l}\right)x$，我们发现单摆的有效劲度系数为 $k = \frac{mg}{l}$。
+4.  **使用SHM周期公式：** 任何SHM系统的通用周期公式是 $T = 2\pi \sqrt{\frac{m}{k}}$。代入 $k = \frac{mg}{l}$ 得到 $T = 2\pi \sqrt{\frac{m}{mg/l}} = 2\pi \sqrt{\frac{l}{g}}$。
 
-角频率 $\omega$ 为 $\omega = \sqrt{\frac{k}{m}} = \sqrt{\frac{g}{L}}$，从而得出著名的周期公式 $T = 2\pi\sqrt{\frac{L}{g}}$。
+### Physical Meaning / 物理意义
+**English:** The period of a simple pendulum depends only on its length ($l$) and the local gravitational field strength ($g$). It is independent of the mass of the bob and the amplitude (for small angles). A longer pendulum has a longer period; a stronger gravitational field results in a shorter period.
+**中文:** 单摆的周期仅取决于其摆长 ($l$) 和当地的重力场强度 ($g$)。它与摆锤的质量和振幅（在小角度下）无关。摆长越长，周期越长；重力场越强，周期越短。
 
-**需要记住的关键点：**
-* 周期**与质量无关**——更重的摆锤不会摆动得更快。
-* 周期**与振幅无关**（对于小角度）——这是等时性。
-* 周期仅取决于**摆长**和**重力场强度**。
-* 对于大振幅，运动**不是**简谐运动——小角度近似失效。
+### Common Misconceptions / 常见误区
+- **Mass matters:** Students often think a heavier bob will swing slower. The derivation shows mass cancels out.
+- **Large amplitude:** The formula is only valid for small amplitudes ($\theta < 10^\circ$). For larger amplitudes, the motion is not simple harmonic, and the period becomes longer.
+- **Angle units:** The small angle approximation $\sin \theta \approx \theta$ is only valid when $\theta$ is in **radians**.
 
-**常见错误：**
-* 使用小角度近似时忘记将度数转换为弧度。
-* 混淆摆长 $L$ 和振幅。
-* 假设周期公式适用于任何振幅。
+### Exam Tips / 考试提示
+- **Derivation:** Be prepared to derive the formula step-by-step in a "show that" question.
+- **Variables:** Clearly state which variables are independent and dependent when describing experiments.
+- **Units:** Ensure $l$ is in meters and $g$ is in $ms^{-2}$.
+
+> 📷 **IMAGE PROMPT — DIAGRAM: Simple Pendulum Force Diagram**
+> A clear diagram of a simple pendulum displaced by an angle θ. Show the string of length l, the bob of mass m, the equilibrium position (dashed line), and the displacement x along the arc. Draw the weight mg acting vertically downwards, and resolve it into two components: mg cosθ along the string and mg sinθ tangential to the arc. Label the restoring force as F = -mg sinθ. Indicate the angle θ.
 
 ---
 
-# 4. Formulas / 公式
+# 5. Essential Equations / 核心公式
 
-## Restoring Force / 回复力
+## Equation 1: Period of a Simple Pendulum / 单摆周期公式
 
-$$ F = -mg\sin\theta $$
-
-For small angles: $F \approx -mg\theta$
-
-## Time Period / 周期
-
-$$ T = 2\pi\sqrt{\frac{L}{g}} $$
+$$ T = 2\pi \sqrt{\frac{l}{g}} $$
 
 | Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
-| ------------- | ------------ | ------------ | ----------- |
-| $T$ | Time period | 周期 | s |
-| $L$ | Length of pendulum | 摆长 | m |
-| $g$ | Acceleration due to gravity | 重力加速度 | m s$^{-2}$ |
+|--------------|-------------|-------------|------------|
+| $T$ | Period of oscillation | 振动周期 | s (秒) |
+| $l$ | Length of the pendulum (from pivot to center of mass) | 摆长（从支点到质心） | m (米) |
+| $g$ | Acceleration due to gravity | 重力加速度 | $ms^{-2}$ |
 
-## Angular Frequency / 角频率
-
-$$ \omega = \sqrt{\frac{g}{L}} $$
-
-| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
-| ------------- | ------------ | ------------ | ----------- |
-| $\omega$ | Angular frequency | 角频率 | rad s$^{-1}$ |
-
-## Displacement as a Function of Time / 位移随时间变化
-
-$$ \theta(t) = \theta_0 \cos(\omega t + \phi) $$
-
-Where $\theta_0$ is the angular amplitude and $\phi$ is the phase constant.
-
-**Derivation / 推导:**
-1. Restoring force: $F = -mg\sin\theta \approx -mg\theta$ (for small $\theta$)
-2. Using $F = ma$ and $a = L\alpha$ (tangential acceleration = $L \times$ angular acceleration): $mL\frac{d^2\theta}{dt^2} = -mg\theta$
-3. Simplify: $\frac{d^2\theta}{dt^2} = -\frac{g}{L}\theta$
-4. This is the SHM equation with $\omega^2 = \frac{g}{L}$, so $\omega = \sqrt{\frac{g}{L}}$
-5. Therefore: $T = \frac{2\pi}{\omega} = 2\pi\sqrt{\frac{L}{g}}$
-
+**Derivation / 推导:** See Section 4.1.
 **Conditions / 适用条件:**
-* Small angular amplitude ($\theta < 10^\circ$ or $\theta < 0.175$ rad)
-* Light, inextensible string (mass of string negligible)
-* Point mass bob (size of bob negligible compared to $L$)
-* No air resistance or friction at the pivot
+- **EN:** Small angular displacement ($\theta < 10^\circ$), inextensible string, point mass bob, no air resistance.
+- **CN:** 小角位移 ($\theta < 10^\circ$)，不可伸长的绳子，质点摆锤，无空气阻力。
+**Limitations / 局限性:**
+- **EN:** The formula is an approximation. For larger amplitudes, the period is longer and depends on amplitude. Real pendulums have mass distribution and friction.
+- **CN:** 该公式是一个近似值。对于较大的振幅，周期更长且取决于振幅。真实的单摆有质量分布和摩擦。
 
-> 📷 **IMAGE PROMPT — SP01: Simple Pendulum Force Diagram**
->
-> **English Prompt:**
-> A clean, textbook-style vector diagram of a simple pendulum at a small angular displacement $\theta$. Show a bob of mass $m$ hanging from a fixed pivot by a string of length $L$. Draw and label the forces: weight $mg$ acting vertically downward, tension $T$ along the string, and the restoring force component $mg\sin\theta$ perpendicular to the string. Show the equilibrium position as a dashed vertical line. Use a light blue background with clear black labels. Include a small angle indicator arc showing $\theta$.
->
-> **中文描述:**
-> 一个干净、教科书风格的矢量图，展示一个小角度位移 $\theta$ 下的单摆。显示一个质量为 $m$ 的摆锤，通过长度为 $L$ 的绳子从固定悬挂点垂下。绘制并标注力：竖直向下的重力 $mg$，沿绳子的张力 $T$，以及垂直于绳子的回复力分量 $mg\sin\theta$。用虚线垂直线显示平衡位置。使用浅蓝色背景和清晰的黑色标签。包含一个显示 $\theta$ 的小角度指示弧。
->
-> **Labels Required / 需要标注:**
-> * Pivot point / 悬挂点
-> * String length $L$ / 摆长 $L$
-> * Bob mass $m$ / 摆锤质量 $m$
-> * Weight $mg$ / 重力 $mg$
-> * Tension $T$ / 张力 $T$
-> * Restoring force $mg\sin\theta$ / 回复力 $mg\sin\theta$
-> * Angular displacement $\theta$ / 角位移 $\theta$
-> * Equilibrium position (dashed) / 平衡位置（虚线）
->
-> **Style / 风格:** Textbook vector diagram
->
-> **Exam Relevance / 考试关联:**
-> Essential for understanding the derivation of the period formula and identifying the restoring force in exam questions.
+## Equation 2: Restoring Force / 回复力公式
+
+$$ F = -mg \sin \theta $$
+
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| $F$ | Restoring force | 回复力 | N (牛顿) |
+| $m$ | Mass of bob | 摆锤质量 | kg (千克) |
+| $g$ | Acceleration due to gravity | 重力加速度 | $ms^{-2}$ |
+| $\theta$ | Angular displacement from equilibrium | 与平衡位置的角位移 | rad (弧度) |
+
+**Conditions / 适用条件:** Always true for a simple pendulum.
+**Limitations / 局限性:** This is the exact expression. It is not proportional to $\theta$ unless the small angle approximation is used.
 
 ---
 
-# 5. Image Prompt / 图片提示
+# 6. Graphs and Relationships / 图表与关系
 
-> 📷 **IMAGE PROMPT — SP02: Period vs Length Graph**
->
-> **English Prompt:**
-> A graph showing the relationship between the time period $T$ and the length $L$ of a simple pendulum. Plot $T$ on the y-axis and $L$ on the x-axis. Show a curve following $T = 2\pi\sqrt{L/g}$ for $g = 9.81$ m s$^{-2}$. Include data points with error bars to suggest experimental results. Add a second graph inset showing $T^2$ vs $L$ as a straight line through the origin, with gradient $4\pi^2/g$. Use a clean white background with gridlines. Labels in black serif font.
->
-> **中文描述:**
-> 一张展示单摆周期 $T$ 与摆长 $L$ 关系的图表。在 y 轴上绘制 $T$，在 x 轴上绘制 $L$。显示 $g = 9.81$ m s$^{-2}$ 时 $T = 2\pi\sqrt{L/g}$ 的曲线。包含带有误差棒的数据点以暗示实验结果。添加一个内嵌图，显示 $T^2$ 与 $L$ 的关系为一条通过原点的直线，斜率为 $4\pi^2/g$。使用干净的白色背景和网格线。标签使用黑色衬线字体。
->
-> **Labels Required / 需要标注:**
-> * $T$ / s (y-axis) / $T$ / 秒（y轴）
-> * $L$ / m (x-axis) / $L$ / 米（x轴）
-> * $T = 2\pi\sqrt{L/g}$ / $T = 2\pi\sqrt{L/g}$
-> * Experimental data points / 实验数据点
-> * Error bars / 误差棒
-> * Inset: $T^2$ vs $L$ / 内嵌图：$T^2$ 与 $L$
-> * Gradient = $4\pi^2/g$ / 斜率 = $4\pi^2/g$
->
-> **Style / 风格:** Scientific graph with experimental data
->
-> **Exam Relevance / 考试关联:**
-> This graph is commonly used in practical exam questions to determine $g$ from experimental pendulum data.
+## 6.1 $T^2$ vs $l$ Graph / $T^2$ 对 $l$ 关系图
+
+### Axes / 坐标轴
+- **X-axis:** Length, $l$ (m) / 摆长 $l$ (米)
+- **Y-axis:** Square of Period, $T^2$ ($s^2$) / 周期的平方 $T^2$ (秒²)
+
+### Shape / 形状
+A straight line passing through the origin.
+
+### Gradient Meaning / 斜率含义
+From $T = 2\pi \sqrt{\frac{l}{g}}$, squaring both sides gives $T^2 = \frac{4\pi^2}{g} l$.
+Therefore, the gradient of the $T^2$ vs $l$ graph is $m = \frac{4\pi^2}{g}$.
+
+### Area Meaning / 面积含义
+No physical meaning.
+
+### Exam Interpretation / 考试解读
+This graph is the standard method for determining $g$ experimentally. By plotting $T^2$ against $l$ and calculating the gradient, you can find $g = \frac{4\pi^2}{\text{gradient}}$. A straight line through the origin confirms the relationship $T^2 \propto l$.
+
+> 📷 **IMAGE PROMPT — GRAPH: T² vs l for a Simple Pendulum**
+> A graph with 'Length, l / m' on the x-axis and 'T² / s²' on the y-axis. Show a straight line passing through the origin. Label the gradient as 'm = 4π²/g'. Add a data point with error bars to show experimental uncertainty.
 
 ---
 
-# 6. Worked Example / 典型例题
+# 7. Required Diagrams / 必备图表
 
-### Example 1: Finding the Period / 例题1：求周期
+## 7.1 Experimental Setup for Determining $g$ / 测定重力加速度 $g$ 的实验装置
 
-**English:**
-A simple pendulum of length 1.20 m is set oscillating with a small amplitude on Earth ($g = 9.81$ m s$^{-2}$). Calculate:
-a) The time period of the pendulum.
-b) The length of a pendulum on the Moon ($g = 1.62$ m s$^{-2}$) that would have the same period.
+### Description / 描述
+**English:** A diagram showing the experimental setup used to determine the acceleration due to gravity using a simple pendulum. It includes a clamp stand, a string, a bob, a protractor to measure the initial angle, and a ruler or meter rule to measure the length.
+**中文:** 显示使用单摆测定重力加速度的实验装置图。它包括一个铁架台、一根绳子、一个摆锤、一个用于测量初始角度的量角器，以及一把用于测量摆长的尺子或米尺。
 
-**中文:**
-一个摆长为1.20 m的单摆在地球上以小振幅摆动（$g = 9.81$ m s$^{-2}$）。计算：
-a) 单摆的周期。
-b) 在月球上（$g = 1.62$ m s$^{-2}$）具有相同周期的单摆的摆长。
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — DIAGRAM: Pendulum Experiment Setup**
+> A clean, labeled diagram of a simple pendulum experiment. A clamp stand holds a string from which a metal bob is suspended. A protractor is shown at the pivot point to indicate the small angle of release (θ < 10°). A meter rule is placed vertically next to the pendulum to measure the length 'l' from the clamp to the center of the bob. A stopwatch is shown nearby.
+
+### Labels Required / 需要标注
+- **Clamp and Stand** / 铁架台
+- **String (inextensible)** / 绳子（不可伸长）
+- **Bob (point mass)** / 摆锤（质点）
+- **Length, $l$** / 摆长 $l$
+- **Angle of release, $\theta$** / 释放角度 $\theta$
+- **Equilibrium position** / 平衡位置
+
+### Exam Importance / 考试重要性
+**English:** This is a required practical for both CAIE and Edexcel. You must be able to draw and label this setup, describe the procedure, and identify sources of error (e.g., reaction time in starting/stopping the stopwatch, measuring length to the center of mass, air resistance).
+**中文:** 这是CAIE和Edexcel都要求的必做实验。你必须能够绘制并标注此装置，描述实验步骤，并识别误差来源（例如，启动/停止秒表的反应时间，测量到质心的摆长，空气阻力）。
+
+---
+
+# 8. Worked Examples / 典型例题
+
+## Example 1: Calculating Period / 计算周期
+
+### Question / 题目
+**English:** A simple pendulum of length 1.2 m is set into oscillation on Earth, where $g = 9.81 \, ms^{-2}$. Calculate the period of the pendulum.
+**中文:** 一个摆长为1.2米的单摆在地球上开始振动，已知 $g = 9.81 \, ms^{-2}$。计算该单摆的周期。
 
 ### Solution / 解答
-
-**a) Time period on Earth / 地球上的周期:**
-
-$$ T = 2\pi\sqrt{\frac{L}{g}} = 2\pi\sqrt{\frac{1.20}{9.81}} $$
-
-$$ T = 2\pi \times 0.3498 = 2.20 \text{ s} $$
-
-**b) Length on Moon / 月球上的摆长:**
-
-Since $T$ is the same, $T = 2\pi\sqrt{\frac{L_{\text{Earth}}}{g_{\text{Earth}}}} = 2\pi\sqrt{\frac{L_{\text{Moon}}}{g_{\text{Moon}}}}$
-
-Therefore: $\frac{L_{\text{Earth}}}{g_{\text{Earth}}} = \frac{L_{\text{Moon}}}{g_{\text{Moon}}}$
-
-$$ L_{\text{Moon}} = L_{\text{Earth}} \times \frac{g_{\text{Moon}}}{g_{\text{Earth}}} = 1.20 \times \frac{1.62}{9.81} = 0.198 \text{ m} $$
+1.  **Identify the formula:** $T = 2\pi \sqrt{\frac{l}{g}}$
+2.  **Substitute values:** $T = 2\pi \sqrt{\frac{1.2}{9.81}}$
+3.  **Calculate:** $T = 2\pi \sqrt{0.1223} = 2\pi \times 0.3498$
+4.  **Final:** $T = 2.20 \, s$
 
 ### Final Answer / 最终答案
-
-**Answer:** a) $T = 2.20$ s, b) $L = 0.198$ m
-**答案:** a) $T = 2.20$ 秒, b) $L = 0.198$ 米
+**Answer:** $T = 2.20 \, s$ | **答案：** $T = 2.20 \, s$
 
 ### Quick Tip / 提示
+**English:** Always ensure your calculator is in radian mode when dealing with trigonometric functions in SHM, although for this specific formula, it doesn't matter as you are only using arithmetic.
+**中文:** 在处理SHM中的三角函数时，务必确保计算器处于弧度模式，尽管对于这个特定公式，由于只用到算术运算，所以无关紧要。
 
-**English:** When comparing pendulums in different gravitational fields, remember that $T \propto \sqrt{L/g}$. If $T$ is constant, then $L \propto g$.
+## Example 2: Determining $g$ from Experimental Data / 从实验数据确定 $g$
 
-**中文:** 比较不同重力场中的单摆时，记住 $T \propto \sqrt{L/g}$。如果 $T$ 恒定，则 $L \propto g$。
-
----
-
-### Example 2: Determining $g$ from Experimental Data / 例题2：从实验数据求 $g$
-
-**English:**
-In an experiment, a student measures the period of a simple pendulum for different lengths. The results are:
-
-| $L$ (m) | $T$ (s) |
-| ------- | ------- |
-| 0.40    | 1.27    |
-| 0.60    | 1.55    |
-| 0.80    | 1.79    |
-| 1.00    | 2.01    |
-
-Plot a suitable graph to determine the value of $g$.
-
-**中文:**
-在一个实验中，学生测量了不同摆长下单摆的周期。结果如下：
-
-| $L$ (m) | $T$ (s) |
-| ------- | ------- |
-| 0.40    | 1.27    |
-| 0.60    | 1.55    |
-| 0.80    | 1.79    |
-| 1.00    | 2.01    |
-
-绘制合适的图表以确定 $g$ 的值。
+### Question / 题目
+**English:** In an experiment to determine $g$, a student measures the period $T$ for different lengths $l$ of a simple pendulum. The graph of $T^2$ against $l$ has a gradient of $4.02 \, s^2 m^{-1}$. Calculate the value of $g$.
+**中文:** 在测定 $g$ 的实验中，一名学生测量了不同摆长 $l$ 下单摆的周期 $T$。$T^2$ 对 $l$ 的图线斜率为 $4.02 \, s^2 m^{-1}$。计算 $g$ 的值。
 
 ### Solution / 解答
-
-**Step 1: Linearise the equation / 步骤1：线性化方程**
-
-$$ T = 2\pi\sqrt{\frac{L}{g}} \implies T^2 = \frac{4\pi^2}{g}L $$
-
-This is of the form $y = mx$, where $y = T^2$, $x = L$, and gradient $m = 4\pi^2/g$.
-
-**Step 2: Calculate $T^2$ values / 步骤2：计算 $T^2$ 值**
-
-| $L$ (m) | $T$ (s) | $T^2$ (s$^2$) |
-| ------- | ------- | -------------- |
-| 0.40    | 1.27    | 1.61           |
-| 0.60    | 1.55    | 2.40           |
-| 0.80    | 1.79    | 3.20           |
-| 1.00    | 2.01    | 4.04           |
-
-**Step 3: Plot $T^2$ vs $L$ and find gradient / 步骤3：绘制 $T^2$ 与 $L$ 的图并求斜率**
-
-Gradient $m = \frac{\Delta T^2}{\Delta L} = \frac{4.04 - 1.61}{1.00 - 0.40} = \frac{2.43}{0.60} = 4.05$ s$^2$ m$^{-1}$
-
-**Step 4: Calculate $g$ / 步骤4：计算 $g$**
-
-$$ m = \frac{4\pi^2}{g} \implies g = \frac{4\pi^2}{m} = \frac{4\pi^2}{4.05} = 9.75 \text{ m s}^{-2} $$
+1.  **Relate gradient to $g$:** From $T^2 = \frac{4\pi^2}{g} l$, the gradient $m = \frac{4\pi^2}{g}$.
+2.  **Rearrange for $g$:** $g = \frac{4\pi^2}{m}$.
+3.  **Substitute:** $g = \frac{4\pi^2}{4.02} = \frac{39.48}{4.02}$.
+4.  **Final:** $g = 9.82 \, ms^{-2}$.
 
 ### Final Answer / 最终答案
-
-**Answer:** $g = 9.75$ m s$^{-2}$
-**答案:** $g = 9.75$ 米/秒$^2$
+**Answer:** $g = 9.82 \, ms^{-2}$ | **答案：** $g = 9.82 \, ms^{-2}$
 
 ### Quick Tip / 提示
-
-**English:** Always plot $T^2$ against $L$ (not $T$ against $L$) to get a straight line. The gradient gives $4\pi^2/g$, from which you can calculate $g$.
-
-**中文:** 始终绘制 $T^2$ 与 $L$ 的关系图（而不是 $T$ 与 $L$）以获得直线。斜率给出 $4\pi^2/g$，由此可以计算 $g$。
+**English:** Plotting $T^2$ vs $l$ is better than plotting $T$ vs $l$ because it linearizes the data, making it easier to find the gradient and hence $g$.
+**中文:** 绘制 $T^2$ 对 $l$ 的图线比绘制 $T$ 对 $l$ 的图线更好，因为它使数据线性化，更容易找到斜率，从而求出 $g$。
 
 ---
 
-# 7. Flashcards / 闪卡
+# 9. Past Paper Question Types / 历年真题题型
 
-**Flashcard 1:**
-Q (EN): What is the condition for a simple pendulum to exhibit SHM?
-Q (CN): 单摆表现出简谐运动的条件是什么？
-A (EN): The angular displacement must be small ($\theta < 10^\circ$ or $\theta < 0.175$ rad) so that $\sin\theta \approx \theta$.
-A (CN): 角位移必须很小（$\theta < 10^\circ$ 或 $\theta < 0.175$ rad），使得 $\sin\theta \approx \theta$。
+| Question Type / 题型 | Frequency / 频率 | Difficulty / 难度 | Past Paper References / 真题索引 |
+|----------------------|------------------|------------------|-------------------------------|
+| Derivation of $T = 2\pi \sqrt{l/g}$ | High | Medium | 📝 *待填入* |
+| Calculation of period or length | High | Low | 📝 *待填入* |
+| Experimental determination of $g$ | High | Medium | 📝 *待填入* |
+| Effect of changing parameters (mass, amplitude) | Medium | Low | 📝 *待填入* |
+| Pendulum on other planets | Low | Medium | 📝 *待填入* |
 
-**Flashcard 2:**
-Q (EN): State the formula for the time period of a simple pendulum.
-Q (CN): 写出单摆周期的公式。
-A (EN): $T = 2\pi\sqrt{\frac{L}{g}}$
-A (CN): $T = 2\pi\sqrt{\frac{L}{g}}$
-
-**Flashcard 3:**
-Q (EN): What factors does the period of a simple pendulum depend on?
-Q (CN): 单摆的周期取决于哪些因素？
-A (EN): The period depends only on the length $L$ and the gravitational field strength $g$. It is independent of the mass and amplitude (for small angles).
-A (CN): 周期仅取决于摆长 $L$ 和重力场强度 $g$。它与质量和振幅无关（对于小角度）。
-
-**Flashcard 4:**
-Q (EN): How can you determine $g$ using a simple pendulum experiment?
-Q (CN): 如何利用单摆实验测定 $g$？
-A (EN): Measure $T$ for different $L$, plot $T^2$ against $L$, find the gradient $m$, then $g = 4\pi^2/m$.
-A (CN): 测量不同 $L$ 下的 $T$，绘制 $T^2$ 与 $L$ 的关系图，求斜率 $m$，则 $g = 4\pi^2/m$。
-
-**Flashcard 5:**
-Q (EN): What is the restoring force in a simple pendulum?
-Q (CN): 单摆中的回复力是什么？
-A (EN): The component of the bob's weight acting perpendicular to the string: $mg\sin\theta$.
-A (CN): 摆锤重力垂直于绳子的分量：$mg\sin\theta$。
+**Common Command Words / 常见指令词:**
+- **Derive / 推导:** Show the step-by-step mathematical proof.
+- **Determine / 测定:** Calculate a value from given data or a graph.
+- **Describe / 描述:** Explain the experimental procedure.
+- **Explain / 解释:** Give reasons for an observation or result.
+- **State / 陈述:** Give a brief answer without explanation.
 
 ---
 
-# 8. Metadata / 元数据
+# 10. Practical Skills Connections / 实验技能链接
 
-```yaml
-title:
-  en: The Simple Pendulum
-  cn: 单摆
-parent_topic: Simple Harmonic Motion
-parent_hub: "[[Simple Harmonic Motion]]"
-subject: Physics
-syllabus:
-  - CAIE 9702
-  - Edexcel IAL
-level: A2
-node_type: leaf_concept
-difficulty: intermediate
-related_leaf_nodes:
-  - "[[Conditions for SHM]]"
-  - "[[Displacement, Velocity and Acceleration in SHM]]"
-  - "[[Mass-Spring System]]"
-  - "[[Energy in SHM]]"
-prerequisites:
-  - "[[Equations of Motion (SUVAT)]]"
-  - "[[Angular Measures]]"
-language: bilingual_en_cn
+**English:**
+The simple pendulum is a core practical for determining $g$. Key practical skills include:
+- **Measurement:** Measuring length $l$ from the pivot to the center of the bob using a meter rule. Measuring the time for a number of oscillations (e.g., 20) to reduce the percentage uncertainty in $T$.
+- **Uncertainties:** Calculating the uncertainty in $T$ from the range of repeated measurements. Propagating uncertainties to find the uncertainty in $g$.
+- **Graph Plotting:** Plotting $T^2$ against $l$ and drawing a line of best fit. Calculating the gradient and using it to find $g$.
+- **Experimental Design:** Controlling variables (e.g., keeping the angle small). Identifying and minimizing sources of error (e.g., parallax error in reading the ruler, reaction time in using the stopwatch).
+
+**中文:**
+单摆是测定 $g$ 的核心实验。关键的实验技能包括：
+- **测量：** 使用米尺测量从支点到摆锤质心的摆长 $l$。测量多次振动（例如20次）的时间，以减小 $T$ 的百分比不确定度。
+- **不确定度：** 根据重复测量的极差计算 $T$ 的不确定度。传递不确定度以求出 $g$ 的不确定度。
+- **绘图：** 绘制 $T^2$ 对 $l$ 的图线，并画出最佳拟合直线。计算斜率并用它来求 $g$。
+- **实验设计：** 控制变量（例如，保持小角度）。识别并最小化误差来源（例如，读取尺子时的视差误差，使用秒表时的反应时间）。
+
+---
+
+# 11. Concept Map / 概念图谱
+
+```mermaid
+graph TD
+    subgraph "Prerequisites / 先决条件"
+        A[Equations of Motion (SUVAT)] --> B[Angular Measures]
+        B --> C[Conditions for SHM]
+    end
+
+    subgraph "This Leaf Node / 本子知识点"
+        C --> D[Simple Pendulum]
+        D --> E[Restoring Force: F = -mg sinθ]
+        E --> F[Small Angle Approximation: sinθ ≈ θ]
+        F --> G[Derivation of T = 2π√(l/g)]
+        G --> H[Factors Affecting Period: l, g]
+        G --> I[Factors NOT Affecting Period: m, Amplitude]
+    end
+
+    subgraph "Related Topics / 相关主题"
+        G --> J[Energy in SHM]
+        H --> K[Mass-Spring System]
+        I --> L[Displacement, Velocity and Acceleration in SHM]
+    end
+
+    subgraph "Practical Application / 实际应用"
+        G --> M[Experiment to Determine g]
+        M --> N[Graph of T² vs l]
+        N --> O[Calculate g from Gradient]
+    end
+```
+
+---
+
+# 12. Quick Revision Sheet / 速查表
+
+| Category / 类别 | Key Points / 要点 |
+|----------------|------------------|
+| **Definition / 定义** | A point mass on a massless, inextensible string swinging under gravity. / 一个质点在一根无质量、不可伸长的绳子上，在重力作用下摆动。 |
+| **Key Formula / 核心公式** | $T = 2\pi \sqrt{\frac{l}{g}}$ |
+| **Key Graph / 核心图表** | $T^2$ vs $l$: Straight line through origin. Gradient $= \frac{4\pi^2}{g}$. / $T^2$ 对 $l$：过原点的直线。斜率 $= \frac{4\pi^2}{g}$. |
+| **Conditions for SHM / SHM的条件** | Small angle ($\theta < 10^\circ$), so $\sin \theta \approx \theta$. / 小角度 ($\theta < 10^\circ$)，使得 $\sin \theta \approx \theta$. |
+| **Independent of / 无关因素** | Mass of bob ($m$) and amplitude ($A$). / 摆锤质量 ($m$) 和振幅 ($A$). |
+| **Exam Tip / 考试提示** | Derive the formula step-by-step. Use the $T^2$ vs $l$ graph to find $g$. Remember the small angle approximation is in radians. / 逐步推导公式。使用 $T^2$ 对 $l$ 的图线求 $g$。记住小角度近似是以弧度为单位的。 |

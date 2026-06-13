@@ -1,321 +1,322 @@
+---
 # Gravitational Potential Energy in a Radial Field / 径向场中的引力势能
 
 ---
 
-## 1. Overview / 概述
+# 1. Overview / 概述
 
 **English:**
-Gravitational Potential Energy (GPE) in a radial field extends the simple $mgh$ formula from uniform fields to the more general case of a point mass or spherical body. This sub-topic explores how GPE is defined, calculated, and applied in radial gravitational fields, where the force follows an inverse-square law. Understanding this concept is crucial for analyzing satellite motion, escape velocity, and energy changes in orbital mechanics. It builds directly on [[Gravitational Force and Field]] and [[Kinetic Energy and Potential Energy]], and is closely linked to [[Gravitational Potential (V)]] and [[Escape Velocity]].
+This sub-topic extends the concept of gravitational potential energy ($E_p$) from the uniform field approximation (where $E_p = mgh$) to the more general and accurate **radial field** model. In a radial field, the gravitational force varies with distance ($F \propto 1/r^2$), so the potential energy is no longer linear with height. Instead, we define $E_p$ relative to infinity, leading to the key equation $E_p = -\frac{GMm}{r}$. This is a foundational concept for understanding [[Gravitational Potential (V)]], [[Escape Velocity]], and [[Circular Orbits]]. It is crucial for A2 students as it unifies mechanics and field theory, and is frequently tested in both CAIE and Edexcel exams.
 
 **中文:**
-径向场中的引力势能（GPE）将均匀场中的简单公式 $mgh$ 扩展到点质量或球体的更一般情况。本子知识点探讨了在径向引力场中如何定义、计算和应用引力势能，其中力遵循平方反比定律。理解这一概念对于分析卫星运动、逃逸速度和轨道力学中的能量变化至关重要。它直接建立在[[Gravitational Force and Field]]和[[Kinetic Energy and Potential Energy]]的基础上，并与[[Gravitational Potential (V)]]和[[Escape Velocity]]密切相关。
+本子知识点将引力势能 ($E_p$) 的概念从均匀场近似（其中 $E_p = mgh$）扩展到更通用、更精确的**径向场**模型。在径向场中，引力随距离变化（$F \propto 1/r^2$），因此势能不再与高度成线性关系。相反，我们定义相对于无穷远处的势能，从而得出关键方程 $E_p = -\frac{GMm}{r}$。这是理解[[Gravitational Potential (V)]]、[[Escape Velocity]]和[[Circular Orbits]]的基础概念。对于A2学生来说至关重要，因为它统一了力学和场论，并且在CAIE和Edexcel考试中经常出现。
 
 ---
 
-## 2. Core Definition / 核心定义
+# 2. Syllabus Learning Objectives / 考纲学习目标
 
-| Term (EN/CN) | Definition (EN) | Definition (CN) |
-| ------------ | --------------- | --------------- |
-| **Gravitational Potential Energy** / 引力势能 | The work done by an external agent to bring a mass from infinity to a point in a gravitational field, without acceleration. | 在无加速的情况下，将质量从无穷远处移动到引力场中某一点时外力所做的功。 |
-| **Radial Field** / 径向场 | A gravitational field where field lines radiate outward from a point mass or spherical body, with strength following an inverse-square law. | 场线从点质量或球体向外辐射的引力场，场强遵循平方反比定律。 |
-| **Infinity** / 无穷远 | A reference point where gravitational potential energy is defined as zero, representing a location beyond the influence of the gravitational field. | 引力势能被定义为零的参考点，代表超出引力场影响范围的位置。 |
-| **Work Done** / 做功 | The product of force and displacement in the direction of the force, representing energy transfer. | 力与力方向上的位移的乘积，代表能量转移。 |
-| **Negative Potential Energy** / 负势能 | A consequence of defining zero at infinity; GPE is always negative in a bound system, indicating that work must be done to separate the masses. | 将零点定义在无穷远处的结果；在束缚系统中引力势能始终为负，表示必须做功才能分离质量。 |
+| CAIE 9702 (15.2) | Edexcel IAL (WPH14 U4: 6.6-6.10) |
+|-----------|-------------|
+| (a) Define gravitational potential energy in a radial field. | 6.6 Know that gravitational potential energy is defined as the work done in moving a mass from infinity to a point. |
+| (b) Derive and use $E_p = -\frac{GMm}{r}$. | 6.7 Derive and use $E_p = -\frac{GMm}{r}$. |
+| (c) Understand that $E_p$ is negative and approaches zero at infinity. | 6.8 Understand the significance of the negative sign. |
+| (d) Calculate the work done in moving a mass between two points in a radial field. | 6.9 Calculate the change in potential energy ($\Delta E_p$) between two points. |
+| (e) Relate $E_p$ to gravitational potential $V$ ($E_p = mV$). | 6.10 Use the relationship $E_p = mV$ to solve problems. |
+| (f) Apply conservation of energy in radial fields (e.g., rocket launch). | (Implicit in 6.6-6.10 and escape velocity). |
+
+**Examiner Expectations / 考官期望:**
+- **EN:** Students must be able to derive the formula using integration of $F = GMm/r^2$. They must explain why $E_p$ is negative and why infinity is the zero point. They must be able to calculate $\Delta E_p$ for a mass moving between two radial distances.
+- **CN:** 学生必须能够通过对 $F = GMm/r^2$ 进行积分来推导公式。他们必须解释为什么 $E_p$ 是负的，以及为什么无穷远处是零点。他们必须能够计算质量在两个径向距离之间移动时的 $\Delta E_p$。
 
 ---
 
-## 3. Key Concepts / 关键概念
+# 3. Core Definitions / 核心定义
 
+| Term (EN/CN) | Definition (EN) | Definition (CN) | Common Mistakes / 常见错误 |
+|--------------|-----------------|-----------------|---------------------------|
+| **Gravitational Potential Energy ($E_p$)** / 引力势能 | The work done in moving a mass from infinity to a point in a gravitational field. | 将质量从无穷远处移动到引力场中某一点所做的功。 | Confusing with gravitational potential ($V$). $E_p$ is energy (J), $V$ is potential (J/kg). |
+| **Radial Field** / 径向场 | A field where the gravitational force acts along lines radiating from a central mass, with strength varying as $1/r^2$. | 引力沿从中心质量辐射的线作用，强度随 $1/r^2$ 变化的场。 | Thinking the field is uniform. |
+| **Zero Point at Infinity** / 无穷远处零点 | The reference point where $E_p = 0$; the point where the gravitational force is effectively zero. | 参考点，其中 $E_p = 0$；引力实际上为零的点。 | Forgetting that $E_p$ is defined relative to infinity, not the surface of the planet. |
+| **Work Done ($W$)** / 做功 | The energy transferred when a force moves an object; in this context, $W = \Delta E_p$. | 力移动物体时传递的能量；在此上下文中，$W = \Delta E_p$. | Using $W = Fd$ directly, forgetting that $F$ is not constant. |
+| **Change in Potential Energy ($\Delta E_p$)** / 势能变化 | The difference in $E_p$ between two points in the field: $\Delta E_p = E_{p2} - E_{p1} = GMm(1/r_1 - 1/r_2)$. | 场中两点之间 $E_p$ 的差值：$\Delta E_p = E_{p2} - E_{p1} = GMm(1/r_1 - 1/r_2)$. | Getting the sign wrong; work done by the field is negative $\Delta E_p$. |
+
+---
+
+# 4. Key Concepts Explained / 关键概念详解
+
+## 4.1 Derivation of $E_p = -\frac{GMm}{r}$ / $E_p = -\frac{GMm}{r}$ 的推导
+
+### Explanation / 解释
 **English:**
+Gravitational potential energy is defined as the **work done** against the gravitational field to bring a mass $m$ from infinity to a point at distance $r$ from a mass $M$. Since the gravitational force is attractive and varies with distance, we must integrate.
 
-### The Definition of GPE in a Radial Field
-
-In a uniform gravitational field (near Earth's surface), GPE is simply $mgh$, with zero at the surface. However, in a radial field, the gravitational force varies with distance according to Newton's law of gravitation:
-
-$$F = -\frac{GMm}{r^2}$$
-
-The negative sign indicates the force is attractive (toward the center). To define GPE consistently, we choose a reference point at infinity ($r \to \infty$), where the gravitational force is effectively zero. This means:
-
-- **GPE at infinity = 0**
-- **GPE at any finite distance is negative** (because work must be done *against* the field to move a mass to infinity)
-
-### Physical Interpretation
-
-The gravitational potential energy $U$ of a mass $m$ at distance $r$ from mass $M$ is:
-
-$$U = -\frac{GMm}{r}$$
-
-This represents the energy stored in the gravitational interaction between the two masses. The negative value indicates that the system is **bound** — energy must be supplied to separate the masses.
-
-### Relationship to Gravitational Potential
-
-The gravitational potential $V$ is the GPE per unit mass:
-
-$$V = \frac{U}{m} = -\frac{GM}{r}$$
-
-This links directly to [[Gravitational Potential (V)]].
-
-### Common Pitfalls
-
-1. **Confusing GPE with gravitational potential**: GPE ($U$) depends on both masses; potential ($V$) is per unit mass.
-2. **Forgetting the negative sign**: Many students mistakenly write $U = +\frac{GMm}{r}$.
-3. **Using $mgh$ in radial fields**: The $mgh$ formula only applies near Earth's surface where $g$ is approximately constant.
-4. **Misinterpreting "work done by field" vs "work done against field"**: Work done *by* the gravitational field is positive when masses move closer; work done *against* the field (by an external agent) is positive when masses separate.
+The force on $m$ due to $M$ is:
+$$ F = \frac{GMm}{r^2} $$
+To move $m$ *against* this force (i.e., away from $M$), we must apply an equal and opposite force. The work done $dW$ to move $m$ a small distance $dr$ away from $M$ is:
+$$ dW = F \, dr = \frac{GMm}{r^2} \, dr $$
+To find the total work done from infinity ($r = \infty$) to a point $r = r$, we integrate:
+$$ W = \int_{\infty}^{r} \frac{GMm}{r^2} \, dr = GMm \int_{\infty}^{r} r^{-2} \, dr $$
+$$ W = GMm \left[ -\frac{1}{r} \right]_{\infty}^{r} = GMm \left( -\frac{1}{r} + \frac{1}{\infty} \right) = -\frac{GMm}{r} $$
+Since work done on the mass is stored as potential energy, $E_p = W = -\frac{GMm}{r}$.
 
 **中文:**
+引力势能定义为克服引力场将质量 $m$ 从无穷远处移动到距离质量 $M$ 为 $r$ 的点所做的**功**。由于引力是吸引力且随距离变化，我们必须进行积分。
 
-### 径向场中引力势能的定义
+$m$ 受到 $M$ 的力为：
+$$ F = \frac{GMm}{r^2} $$
+为了*克服*这个力移动 $m$（即远离 $M$），我们必须施加一个大小相等、方向相反的力。将 $m$ 移动一小段距离 $dr$ 远离 $M$ 所做的功 $dW$ 为：
+$$ dW = F \, dr = \frac{GMm}{r^2} \, dr $$
+为了找到从无穷远处 ($r = \infty$) 到点 $r = r$ 所做的总功，我们进行积分：
+$$ W = \int_{\infty}^{r} \frac{GMm}{r^2} \, dr = GMm \int_{\infty}^{r} r^{-2} \, dr $$
+$$ W = GMm \left[ -\frac{1}{r} \right]_{\infty}^{r} = GMm \left( -\frac{1}{r} + \frac{1}{\infty} \right) = -\frac{GMm}{r} $$
+由于对质量所做的功以势能的形式储存，因此 $E_p = W = -\frac{GMm}{r}$。
 
-在均匀引力场（地球表面附近）中，引力势能简单表示为 $mgh$，零点在地表。然而，在径向场中，引力随距离变化，遵循牛顿万有引力定律：
+### Physical Meaning / 物理意义
+**English:**
+The negative sign indicates that the gravitational potential energy is **negative** because work is done *by* the field (not against it) when the mass moves from infinity towards $M$. The field does positive work, converting potential energy into kinetic energy. At infinity, $E_p = 0$. As $r$ decreases, $E_p$ becomes more negative, meaning the mass is more tightly bound to $M$.
 
-$$F = -\frac{GMm}{r^2}$$
+**中文:**
+负号表示引力势能为**负**，因为当质量从无穷远处向 $M$ 移动时，是场*做*功（而不是克服场做功）。场做正功，将势能转化为动能。在无穷远处，$E_p = 0$。随着 $r$ 减小，$E_p$ 变得更负，意味着质量与 $M$ 的结合更紧密。
 
-负号表示力是吸引的（指向中心）。为了一致地定义引力势能，我们选择无穷远处（$r \to \infty$）作为参考点，此处引力实际上为零。这意味着：
+### Common Misconceptions / 常见误区
+- **EN:** Thinking $E_p$ can be positive. It is always negative or zero.
+- **CN:** 认为 $E_p$ 可以是正的。它总是负的或零。
+- **EN:** Confusing $E_p$ with gravitational potential $V$. $E_p$ is for a specific mass $m$; $V$ is per unit mass.
+- **CN:** 混淆 $E_p$ 和引力势 $V$。$E_p$ 是针对特定质量 $m$ 的；$V$ 是每单位质量的。
+- **EN:** Forgetting that the formula applies to point masses or spherical masses (outside the sphere).
+- **CN:** 忘记该公式适用于点质量或球形质量（在球体外部）。
 
-- **无穷远处的引力势能 = 0**
-- **任何有限距离处的引力势能为负**（因为必须克服场做功才能将质量移动到无穷远）
+### Exam Tips / 考试提示
+- **EN:** Always state the reference point (infinity) when defining $E_p$. Use the formula $E_p = -\frac{GMm}{r}$ for radial fields, not $mgh$.
+- **CN:** 在定义 $E_p$ 时，始终说明参考点（无穷远处）。对于径向场，使用公式 $E_p = -\frac{GMm}{r}$，而不是 $mgh$。
 
-### 物理意义
-
-质量 $m$ 在距离质量 $M$ 为 $r$ 处的引力势能 $U$ 为：
-
-$$U = -\frac{GMm}{r}$$
-
-这代表两个质量之间引力相互作用中储存的能量。负值表示系统是**束缚的**——必须提供能量才能分离质量。
-
-### 与引力势的关系
-
-引力势 $V$ 是单位质量的引力势能：
-
-$$V = \frac{U}{m} = -\frac{GM}{r}$$
-
-这与[[Gravitational Potential (V)]]直接相关。
-
-### 常见误区
-
-1. **混淆引力势能与引力势**：引力势能（$U$）取决于两个质量；引力势（$V$）是单位质量的量。
-2. **忘记负号**：许多学生错误地写成 $U = +\frac{GMm}{r}$。
-3. **在径向场中使用 $mgh$**：$mgh$ 公式仅适用于地球表面附近 $g$ 近似恒定的情况。
-4. **误解"场做功"与"克服场做功"**：质量靠近时，引力场*做正功*；质量分离时，外力*克服场做正功*。
-
-> 📷 **IMAGE PROMPT — GPE-01: Gravitational Potential Energy Diagram**
->
-> **English Prompt:**
-> A clean vector diagram showing two masses M and m separated by distance r. The larger mass M is at the center, with radial field lines radiating outward. Mass m is shown at two positions: one closer (r₁) and one farther (r₂). Arrows indicate the direction of gravitational force (toward M). A graph below shows U vs r, with U = -GMm/r curve, highlighting that U approaches 0 as r → ∞ and becomes more negative as r decreases. Labels: "M (central mass)", "m (test mass)", "r₁", "r₂", "U₁ = -GMm/r₁", "U₂ = -GMm/r₂", "U = 0 at r = ∞". Color scheme: blue for field lines, red for force arrows, green for energy curve.
->
-> **中文描述:**
-> 一个清晰的矢量图，显示两个质量M和m相距距离r。较大的质量M在中心，径向场线向外辐射。质量m显示在两个位置：较近（r₁）和较远（r₂）。箭头表示引力方向（指向M）。下方的图表显示U与r的关系，曲线为U = -GMm/r，突出显示当r → ∞时U趋近于0，当r减小时U变得更负。标签："M（中心质量）"，"m（测试质量）"，"r₁"，"r₂"，"U₁ = -GMm/r₁"，"U₂ = -GMm/r₂"，"U = 0 at r = ∞"。配色方案：蓝色为场线，红色为力箭头，绿色为能量曲线。
->
-> **Labels Required / 需要标注:**
-> * M (central mass / 中心质量)
-> * m (test mass / 测试质量)
-> * r₁, r₂ (distances / 距离)
-> * U₁, U₂ (potential energies / 势能)
-> * U = 0 at r = ∞
->
-> **Style / 风格:** Textbook vector diagram with graph
->
-> **Exam Relevance / 考试关联:**
-> Essential for understanding the inverse relationship between GPE and distance, and the concept of negative potential energy.
+> 📷 **IMAGE PROMPT — GRAPH: Gravitational Potential Energy vs Distance**
+> A graph showing $E_p$ on the y-axis and $r$ on the x-axis. The curve is a negative reciprocal function ($-1/r$), starting from a large negative value near $r=0$, rising steeply, and asymptotically approaching $E_p=0$ as $r \to \infty$. Label the axes: "Gravitational Potential Energy, $E_p$ / J" and "Distance from centre, $r$ / m". Mark the point at $r = R$ (planet surface) with a label "$E_p = -GMm/R$".
 
 ---
 
-## 4. Formulas / 公式
+# 5. Essential Equations / 核心公式
 
-### Primary Formula
+## Equation 1: Gravitational Potential Energy in a Radial Field
 
-$$U = -\frac{GMm}{r}$$
+$$ E_p = -\frac{GMm}{r} $$
 
 | Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
-| ------------- | ------------ | ------------ | ----------- |
-| $U$ | Gravitational potential energy | 引力势能 | J (Joules) |
-| $G$ | Gravitational constant ($6.67 \times 10^{-11} \text{ N·m}^2\text{/kg}^2$) | 万有引力常数 | N·m²/kg² |
-| $M$ | Mass of central body | 中心天体质量 | kg |
-| $m$ | Mass of test object | 测试物体质量 | kg |
-| $r$ | Distance between centers of mass | 质心间距离 | m |
+|--------------|-------------|-------------|------------|
+| $E_p$ | Gravitational potential energy | 引力势能 | J (Joules) |
+| $G$ | Gravitational constant ($6.67 \times 10^{-11} \, \text{N m}^2 \text{kg}^{-2}$) | 引力常数 | N m² kg⁻² |
+| $M$ | Mass of the central body | 中心天体的质量 | kg |
+| $m$ | Mass of the object in the field | 在场中的物体质量 | kg |
+| $r$ | Distance from the centre of $M$ to the object | 从 $M$ 中心到物体的距离 | m |
 
-### Change in GPE
+**Derivation / 推导:** See Section 4.1.
+**Conditions / 适用条件:**
+- **EN:** For point masses or spherical masses (outside the sphere). $r$ must be measured from the centre of $M$.
+- **CN:** 适用于点质量或球形质量（在球体外部）。$r$ 必须从 $M$ 的中心测量。
+**Limitations / 局限性:**
+- **EN:** Does not apply inside a massive body (e.g., inside a planet) where the field is not simply $1/r^2$.
+- **CN:** 不适用于大质量天体内部（例如行星内部），因为那里的场不是简单的 $1/r^2$。
 
-$$\Delta U = U_f - U_i = -\frac{GMm}{r_f} - \left(-\frac{GMm}{r_i}\right) = GMm\left(\frac{1}{r_i} - \frac{1}{r_f}\right)$$
+## Equation 2: Change in Gravitational Potential Energy
 
-### Work Done by Gravitational Field
+$$ \Delta E_p = E_{p2} - E_{p1} = GMm \left( \frac{1}{r_1} - \frac{1}{r_2} \right) $$
 
-$$W_{\text{field}} = -\Delta U = GMm\left(\frac{1}{r_f} - \frac{1}{r_i}\right)$$
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| $\Delta E_p$ | Change in gravitational potential energy | 引力势能的变化 | J |
+| $r_1$ | Initial distance from centre | 初始距离（从中心） | m |
+| $r_2$ | Final distance from centre | 最终距离（从中心） | m |
 
-### Derivation / 推导
+**Derivation / 推导:** $\Delta E_p = -\frac{GMm}{r_2} - \left( -\frac{GMm}{r_1} \right) = GMm \left( \frac{1}{r_1} - \frac{1}{r_2} \right)$.
+**Conditions / 适用条件:** Same as Equation 1.
+**Limitations / 局限性:** Same as Equation 1.
 
-Starting from the definition of work:
+## Equation 3: Relationship with Gravitational Potential
 
-$$W = \int_{r_i}^{r_f} F \, dr = \int_{r_i}^{r_f} \left(-\frac{GMm}{r^2}\right) dr$$
+$$ E_p = mV $$
 
-$$W = -GMm \int_{r_i}^{r_f} r^{-2} \, dr = -GMm \left[-\frac{1}{r}\right]_{r_i}^{r_f}$$
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| $E_p$ | Gravitational potential energy | 引力势能 | J |
+| $m$ | Mass of the object | 物体的质量 | kg |
+| $V$ | Gravitational potential at that point ($V = -GM/r$) | 该点的引力势 | J/kg |
 
-$$W = GMm\left(\frac{1}{r_f} - \frac{1}{r_i}\right)$$
-
-Since work done by the field equals the negative change in potential energy:
-
-$$\Delta U = -W = -GMm\left(\frac{1}{r_f} - \frac{1}{r_i}\right) = GMm\left(\frac{1}{r_i} - \frac{1}{r_f}\right)$$
-
-Setting $U = 0$ at $r = \infty$ and $r_i = \infty$, $r_f = r$:
-
-$$U = GMm\left(\frac{1}{\infty} - \frac{1}{r}\right) = -\frac{GMm}{r}$$
-
-### Conditions / 适用条件
-
-- **Point masses or spherically symmetric bodies** (e.g., planets, stars)
-- **Outside the surface** of the central body (inside, the formula changes due to mass distribution)
-- **Non-relativistic** (Newtonian gravity)
-- **Zero at infinity** reference point
-
----
-
-## 5. Image Prompt / 图片提示
-
-> 📷 **IMAGE PROMPT — GPE-02: Energy Changes in Orbital Motion**
->
-> **English Prompt:**
-> A 3D rendered diagram showing a satellite in elliptical orbit around Earth. The orbit is drawn as an ellipse with Earth at one focus. Two key points are marked: perigee (closest approach) and apogee (farthest point). At each point, bar charts show the relative magnitudes of kinetic energy (KE), gravitational potential energy (GPE), and total mechanical energy (TME). At perigee: KE is high (tall bar), GPE is low (short negative bar), TME is constant. At apogee: KE is low (short bar), GPE is high (taller negative bar), TME is same as at perigee. Labels: "Perigee (r_min)", "Apogee (r_max)", "KE + GPE = TME (constant)". Color scheme: blue for KE, red for GPE, green for TME. Background: dark space with stars.
->
-> **中文描述:**
-> 一个3D渲染图，显示卫星绕地球的椭圆轨道。轨道画为椭圆，地球在一个焦点上。标记两个关键点：近地点（最近点）和远地点（最远点）。在每个点处，条形图显示动能（KE）、引力势能（GPE）和总机械能（TME）的相对大小。在近地点：KE高（长条），GPE低（短负条），TME恒定。在远地点：KE低（短条），GPE高（较长的负条），TME与近地点相同。标签："Perigee (r_min)"，"Apogee (r_max)"，"KE + GPE = TME (constant)"。配色方案：蓝色为KE，红色为GPE，绿色为TME。背景：深色星空。
->
-> **Labels Required / 需要标注:**
-> * Perigee / 近地点
-> * Apogee / 远地点
-> * KE (kinetic energy / 动能)
-> * GPE (gravitational potential energy / 引力势能)
-> * TME (total mechanical energy / 总机械能)
-> * r_min, r_max
->
-> **Style / 风格:** 3D render with bar charts
->
-> **Exam Relevance / 考试关联:**
-> Crucial for understanding energy conservation in orbits and the relationship between orbital position and energy distribution.
+**Derivation / 推导:** By definition, $V = E_p / m$.
+**Conditions / 适用条件:** Always true for a given point in a gravitational field.
+**Limitations / 局限性:** None.
 
 ---
 
-## 6. Worked Example / 典型例题
+# 6. Graphs and Relationships / 图表与关系
 
-### Example 1: Calculating GPE Change
+## 6.1 $E_p$ vs $r$ Graph / $E_p$ 与 $r$ 关系图
+
+### Axes / 坐标轴
+- **X-axis:** Distance from centre, $r$ / m (距离中心，$r$ / 米)
+- **Y-axis:** Gravitational potential energy, $E_p$ / J (引力势能，$E_p$ / 焦耳)
+
+### Shape / 形状
+- **EN:** A negative reciprocal curve ($-1/r$). It is steep near the centre and flattens out as $r$ increases, asymptotically approaching $E_p = 0$ from below.
+- **CN:** 负倒数曲线 ($-1/r$)。在中心附近很陡，随着 $r$ 增加而变平，从下方渐近接近 $E_p = 0$。
+
+### Gradient Meaning / 斜率含义
+- **EN:** The gradient of the $E_p$ vs $r$ graph is equal to the **negative of the gravitational force** ($-F$). This is because $F = -dE_p/dr$.
+- **CN:** $E_p$ 与 $r$ 关系图的斜率等于**引力的负值** ($-F$)。这是因为 $F = -dE_p/dr$。
+
+### Area Meaning / 面积含义
+- **EN:** The area under the $F$ vs $r$ graph (force-distance graph) gives the work done, which equals $\Delta E_p$.
+- **CN:** $F$ 与 $r$ 关系图（力-距离图）下的面积给出所做的功，等于 $\Delta E_p$。
+
+### Exam Interpretation / 考试解读
+- **EN:** Be able to sketch this graph. Understand that moving from $r_1$ to $r_2$ (where $r_2 > r_1$) results in a less negative $E_p$, so $\Delta E_p$ is positive (work must be done against the field).
+- **CN:** 能够画出此图。理解从 $r_1$ 移动到 $r_2$（其中 $r_2 > r_1$）会导致 $E_p$ 负值减小，因此 $\Delta E_p$ 为正（必须克服场做功）。
+
+---
+
+# 7. Required Diagrams / 必备图表
+
+## 7.1 $E_p$ vs $r$ Graph / $E_p$ 与 $r$ 关系图
+
+### Description / 描述
+- **EN:** A graph showing the variation of gravitational potential energy with distance from the centre of a planet.
+- **CN:** 显示引力势能随距行星中心距离变化的图表。
+
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — DIAGRAM: Ep vs r Graph**
+> A clear, labeled graph. X-axis: "Distance from centre, r / m". Y-axis: "Gravitational potential energy, Ep / J". The curve is a smooth, decreasing function that is steep near the origin and asymptotically approaches the x-axis (Ep=0) as r increases. Mark a point on the curve at r = R (planet surface) and label it "Ep = -GMm/R". Draw a horizontal dashed line at Ep=0 labeled "Ep = 0 at infinity". Use a grid for clarity.
+
+### Labels Required / 需要标注
+- **EN:** Axes, curve, asymptote at $E_p=0$, point at $r=R$ (planet surface).
+- **CN:** 坐标轴、曲线、$E_p=0$ 处的渐近线、$r=R$（行星表面）处的点。
+
+### Exam Importance / 考试重要性
+- **EN:** High. Students are often asked to sketch or interpret this graph.
+- **CN:** 高。学生经常被要求画出或解释此图。
+
+---
+
+# 8. Worked Examples / 典型例题
+
+## Example 1: Calculating $\Delta E_p$ for a Satellite / 计算卫星的 $\Delta E_p$
 
 ### Question / 题目
-
 **English:**
-A satellite of mass $m = 500 \text{ kg}$ is moved from an orbit of radius $r_1 = 7.0 \times 10^6 \text{ m}$ to an orbit of radius $r_2 = 1.0 \times 10^7 \text{ m}$ around Earth. Given $M_{\text{Earth}} = 5.97 \times 10^{24} \text{ kg}$ and $G = 6.67 \times 10^{-11} \text{ N·m}^2\text{/kg}^2$, calculate:
-
-(a) The gravitational potential energy at each orbit.
-(b) The change in gravitational potential energy.
-(c) The work done by the gravitational field during this move.
+A satellite of mass $m = 500 \text{ kg}$ is moved from a circular orbit of radius $r_1 = 7.0 \times 10^6 \text{ m}$ to a higher orbit of radius $r_2 = 1.0 \times 10^7 \text{ m}$ around Earth. Earth's mass $M = 5.97 \times 10^{24} \text{ kg}$ and $G = 6.67 \times 10^{-11} \text{ N m}^2 \text{kg}^{-2}$.
+(a) Calculate the change in gravitational potential energy of the satellite.
+(b) Explain whether this change is positive or negative.
 
 **中文:**
-一颗质量 $m = 500 \text{ kg}$ 的卫星从半径 $r_1 = 7.0 \times 10^6 \text{ m}$ 的轨道移动到半径 $r_2 = 1.0 \times 10^7 \text{ m}$ 的轨道绕地球运行。已知 $M_{\text{地球}} = 5.97 \times 10^{24} \text{ kg}$，$G = 6.67 \times 10^{-11} \text{ N·m}^2\text{/kg}^2$，计算：
-
-(a) 每个轨道的引力势能。
-(b) 引力势能的变化。
-(c) 在此移动过程中引力场做的功。
+一颗质量为 $m = 500 \text{ kg}$ 的卫星从半径 $r_1 = 7.0 \times 10^6 \text{ m}$ 的圆形轨道移动到半径 $r_2 = 1.0 \times 10^7 \text{ m}$ 的更高轨道。地球质量 $M = 5.97 \times 10^{24} \text{ kg}$，$G = 6.67 \times 10^{-11} \text{ N m}^2 \text{kg}^{-2}$。
+(a) 计算卫星引力势能的变化。
+(b) 解释这个变化是正的还是负的。
 
 ### Solution / 解答
 
-**Part (a):**
+**Step 1: Write down the formula for $\Delta E_p$.**
+$$ \Delta E_p = GMm \left( \frac{1}{r_1} - \frac{1}{r_2} \right) $$
 
-$$U_1 = -\frac{GMm}{r_1} = -\frac{(6.67 \times 10^{-11})(5.97 \times 10^{24})(500)}{7.0 \times 10^6}$$
+**Step 2: Substitute the values.**
+$$ \Delta E_p = (6.67 \times 10^{-11})(5.97 \times 10^{24})(500) \left( \frac{1}{7.0 \times 10^6} - \frac{1}{1.0 \times 10^7} \right) $$
 
-$$U_1 = -\frac{1.99 \times 10^{17}}{7.0 \times 10^6} = -2.84 \times 10^{10} \text{ J}$$
+**Step 3: Calculate the bracket.**
+$$ \frac{1}{7.0 \times 10^6} = 1.4286 \times 10^{-7} $$
+$$ \frac{1}{1.0 \times 10^7} = 1.0 \times 10^{-7} $$
+$$ \text{Bracket} = (1.4286 - 1.0) \times 10^{-7} = 0.4286 \times 10^{-7} = 4.286 \times 10^{-8} $$
 
-$$U_2 = -\frac{GMm}{r_2} = -\frac{(6.67 \times 10^{-11})(5.97 \times 10^{24})(500)}{1.0 \times 10^7}$$
+**Step 4: Calculate the product.**
+$$ \Delta E_p = (6.67 \times 10^{-11})(5.97 \times 10^{24})(500)(4.286 \times 10^{-8}) $$
+$$ \Delta E_p = (6.67 \times 5.97 \times 500 \times 4.286) \times 10^{-11+24-8} $$
+$$ \Delta E_p = (6.67 \times 5.97 \times 500 \times 4.286) \times 10^{5} $$
+$$ \Delta E_p \approx (6.67 \times 5.97 \times 500 \times 4.286) \times 10^{5} $$
+$$ \Delta E_p \approx (6.67 \times 5.97 \approx 39.82) \times 500 \approx 19910 \times 4.286 \approx 85300 $$
+$$ \Delta E_p \approx 8.53 \times 10^4 \times 10^{5} = 8.53 \times 10^9 \text{ J} $$
 
-$$U_2 = -\frac{1.99 \times 10^{17}}{1.0 \times 10^7} = -1.99 \times 10^{10} \text{ J}$$
-
-**Part (b):**
-
-$$\Delta U = U_2 - U_1 = (-1.99 \times 10^{10}) - (-2.84 \times 10^{10}) = +8.5 \times 10^9 \text{ J}$$
-
-The positive change means GPE increases (becomes less negative) as the satellite moves to a higher orbit.
-
-**Part (c):**
-
-$$W_{\text{field}} = -\Delta U = -8.5 \times 10^9 \text{ J}$$
-
-The negative work done by the field indicates that the field does negative work (i.e., an external agent must do positive work to raise the satellite).
+**Step 5: Determine the sign.**
+Since $r_2 > r_1$, the satellite is moving to a higher orbit (further from Earth). $E_p$ becomes less negative, so $\Delta E_p$ is **positive**.
 
 ### Final Answer / 最终答案
-
-**Answer:**
-(a) $U_1 = -2.84 \times 10^{10} \text{ J}$, $U_2 = -1.99 \times 10^{10} \text{ J}$
-(b) $\Delta U = +8.5 \times 10^9 \text{ J}$
-(c) $W_{\text{field}} = -8.5 \times 10^9 \text{ J}$
-
-**答案:**
-(a) $U_1 = -2.84 \times 10^{10} \text{ J}$，$U_2 = -1.99 \times 10^{10} \text{ J}$
-(b) $\Delta U = +8.5 \times 10^9 \text{ J}$
-(c) $W_{\text{field}} = -8.5 \times 10^9 \text{ J}$
+**Answer:** (a) $\Delta E_p = +8.53 \times 10^9 \text{ J}$ (b) Positive, because the satellite moves to a higher orbit where $E_p$ is less negative. | **答案：** (a) $\Delta E_p = +8.53 \times 10^9 \text{ J}$ (b) 正的，因为卫星移动到更高轨道，那里 $E_p$ 的负值更小。
 
 ### Quick Tip / 提示
+- **EN:** Always check the sign of $\Delta E_p$. Moving away from the planet requires work input, so $\Delta E_p$ is positive.
+- **CN:** 始终检查 $\Delta E_p$ 的符号。远离行星需要输入功，因此 $\Delta E_p$ 为正。
+
+---
+
+# 9. Past Paper Question Types / 历年真题题型
+
+| Question Type / 题型 | Frequency / 频率 | Difficulty / 难度 | Past Paper References / 真题索引 |
+|----------------------|------------------|------------------|-------------------------------|
+| Derivation of $E_p = -GMm/r$ | Medium | Medium | 📝 *待填入* |
+| Calculation of $\Delta E_p$ for a satellite or rocket | High | Medium | 📝 *待填入* |
+| Sketching $E_p$ vs $r$ graph | Medium | Easy | 📝 *待填入* |
+| Explaining the negative sign | High | Easy | 📝 *待填入* |
+| Combining $E_p$ with kinetic energy for total energy in orbits | High | Hard | 📝 *待填入* |
+
+**Common Command Words / 常见指令词:**
+- **EN:** Define, Derive, Calculate, Sketch, Explain, State
+- **CN:** 定义，推导，计算，画出，解释，陈述
+
+---
+
+# 10. Practical Skills Connections / 实验技能链接
 
 **English:**
-Remember that GPE is always negative in a bound system. When an object moves to a higher orbit (larger $r$), GPE increases (becomes less negative). The work done *by* the field is negative when the object moves away from the central mass.
+While gravitational potential energy in a radial field is not directly measurable in a school lab, the concept is linked to practical skills in several ways:
+- **Graphing and Data Analysis:** Students must be able to plot $E_p$ vs $r$ graphs and interpret gradients.
+- **Uncertainties:** When calculating $\Delta E_p$, uncertainties in $r$ (distance) propagate. Students should be able to estimate the percentage uncertainty in $\Delta E_p$ given uncertainties in $r_1$ and $r_2$.
+- **Experimental Design:** The concept is used in the design of satellite launches and space missions, where energy calculations are critical.
 
 **中文:**
-记住在束缚系统中引力势能始终为负。当物体移动到更高轨道（更大的 $r$）时，引力势能增加（变得更不负面）。当物体远离中心质量时，场*做的功*为负。
+虽然径向场中的引力势能无法在学校实验室中直接测量，但该概念在以下几个方面与实验技能相关：
+- **绘图和数据分析：** 学生必须能够绘制 $E_p$ 与 $r$ 的关系图并解释斜率。
+- **不确定度：** 在计算 $\Delta E_p$ 时，$r$（距离）的不确定度会传播。学生应该能够根据 $r_1$ 和 $r_2$ 的不确定度估算 $\Delta E_p$ 的百分比不确定度。
+- **实验设计：** 该概念用于卫星发射和太空任务的设计，其中能量计算至关重要。
 
 ---
 
-## 7. Flashcards / 闪卡
+# 11. Concept Map / 概念图谱
 
-**Flashcard 1:**
-Q (EN): What is the formula for gravitational potential energy in a radial field?
-Q (CN): 径向场中引力势能的公式是什么？
-A (EN): $U = -\frac{GMm}{r}$, where $G$ is the gravitational constant, $M$ is the central mass, $m$ is the test mass, and $r$ is the distance between their centers.
-A (CN): $U = -\frac{GMm}{r}$，其中 $G$ 是万有引力常数，$M$ 是中心质量，$m$ 是测试质量，$r$ 是它们质心之间的距离。
-
-**Flashcard 2:**
-Q (EN): Why is gravitational potential energy always negative in a bound system?
-Q (CN): 为什么在束缚系统中引力势能始终为负？
-A (EN): Because zero is defined at infinity. Work must be done against the gravitational field to separate the masses, so the system has negative energy when bound.
-A (CN): 因为零点定义在无穷远处。必须克服引力场做功才能分离质量，所以束缚时系统具有负能量。
-
-**Flashcard 3:**
-Q (EN): How does gravitational potential energy change when a satellite moves to a higher orbit?
-Q (CN): 当卫星移动到更高轨道时，引力势能如何变化？
-A (EN): GPE increases (becomes less negative) because $r$ increases, making $-\frac{GMm}{r}$ closer to zero.
-A (CN): 引力势能增加（变得更不负面），因为 $r$ 增加，使 $-\frac{GMm}{r}$ 更接近零。
-
-**Flashcard 4:**
-Q (EN): What is the relationship between gravitational potential energy $U$ and gravitational potential $V$?
-Q (CN): 引力势能 $U$ 和引力势 $V$ 之间有什么关系？
-A (EN): $V = \frac{U}{m} = -\frac{GM}{r}$. Gravitational potential is GPE per unit mass.
-A (CN): $V = \frac{U}{m} = -\frac{GM}{r}$。引力势是单位质量的引力势能。
-
-**Flashcard 5:**
-Q (EN): What is the work done by the gravitational field when a mass moves from $r_i$ to $r_f$?
-Q (CN): 当质量从 $r_i$ 移动到 $r_f$ 时，引力场做的功是多少？
-A (EN): $W_{\text{field}} = GMm\left(\frac{1}{r_f} - \frac{1}{r_i}\right)$. This equals $-\Delta U$.
-A (CN): $W_{\text{field}} = GMm\left(\frac{1}{r_f} - \frac{1}{r_i}\right)$。这等于 $-\Delta U$。
+```mermaid
+graph TD
+    %% Show connections for this leaf node
+    A[Gravitational Potential Energy in a Radial Field] --> B[Definition: Work done from infinity]
+    A --> C[Key Formula: Ep = -GMm/r]
+    A --> D[Change in Ep: ΔEp = GMm(1/r1 - 1/r2)]
+    A --> E[Relationship: Ep = mV]
+    
+    B --> F[Prerequisite: Gravitational Force F = GMm/r²]
+    C --> G[Integration of F dr]
+    C --> H[Negative Sign: Field does work]
+    D --> I[Work Done by/against Field]
+    E --> J[Gravitational Potential V]
+    
+    A --> K[Applications]
+    K --> L[Satellite Orbits]
+    K --> M[Escape Velocity]
+    K --> N[Rocket Launches]
+    
+    F --> O[Parent Hub: Gravitational Potential]
+    J --> O
+    L --> P[Related: Circular Orbits]
+    M --> Q[Related: Escape Velocity]
+    
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style O fill:#bbf,stroke:#333,stroke-width:2px
+    style P fill:#bfb,stroke:#333,stroke-width:2px
+    style Q fill:#bfb,stroke:#333,stroke-width:2px
+```
 
 ---
 
-## 8. Metadata / 元数据
+# 12. Quick Revision Sheet / 速查表
 
-```yaml
-title:
-  en: Gravitational Potential Energy in a Radial Field
-  cn: 径向场中的引力势能
-parent_topic: Gravitational Potential
-parent_hub: "[[Gravitational Potential]]"
-subject: Physics
-syllabus:
-  - CAIE 9702: 15.2 (a-f)
-  - Edexcel IAL: WPH14 U4: 6.6-6.10
-level: A2
-node_type: leaf_concept
-difficulty: advanced
-related_leaf_nodes:
-  - "[[Gravitational Potential (V)]]"
-  - "[[Escape Velocity]]"
-  - "[[Potential Gradients]]"
-prerequisites:
-  - "[[Gravitational Force and Field]]"
-  - "[[Kinetic Energy and Potential Energy]]"
-related_topics:
-  - "[[Circular Orbits]]"
-language: bilingual_en_cn
+| Category / 类别 | Key Points / 要点 |
+|----------------|------------------|
+| **Definition / 定义** | Work done to bring mass from infinity to a point. / 将质量从无穷远处移动到某点所做的功。 |
+| **Key Formula / 核心公式** | $E_p = -\frac{GMm}{r}$ |
+| **Change in Ep / 势能变化** | $\Delta E_p = GMm \left( \frac{1}{r_1} - \frac{1}{r_2} \right)$ |
+| **Sign / 符号** | Always negative; zero at infinity. / 总是负的；在无穷远处为零。 |
+| **Key Graph / 核心图表** | $E_p$ vs $r$: Negative reciprocal curve, asymptote at $E_p=0$. / $E_p$ 与 $r$ 关系图：负倒数曲线，渐近线在 $E_p=0$。 |
+| **Exam Tip / 考试提示** | Always use $E_p = -GMm/r$ for radial fields, not $mgh$. Check sign of $\Delta E_p$. / 对于径向场始终使用 $E_p = -GMm/r$，而不是 $mgh$。检查 $\Delta E_p$ 的符号。 |
+| **Common Mistake / 常见错误** | Confusing $E_p$ with $V$; forgetting the negative sign. / 混淆 $E_p$ 和 $V$；忘记负号。 |

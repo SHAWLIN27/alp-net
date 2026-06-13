@@ -10,8 +10,8 @@ from alpnet.ingest.parser import MarkdownFileParser
 from alpnet.db.graph_store import GraphStore
 from alpnet.models.nodes import KnowledgeNode
 
-VAULT_PATH = Path("/Users/shawlin/Documents/ALP_Net/vault")
-GRAPH_PATH = Path("/Users/shawlin/Documents/ALP_Net/data/knowledge_graph.json")
+VAULT_PATH = Path(__file__).resolve().parent.parent / "vault"
+GRAPH_PATH = Path(__file__).resolve().parent.parent / "data" / "knowledge_graph.json"
 
 def main():
     # Load existing graph

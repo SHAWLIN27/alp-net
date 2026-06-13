@@ -1,282 +1,431 @@
 # 1. Overview / 概述
 
 **English:**
-Angular velocity is a fundamental concept in rotational mechanics, describing how quickly an object rotates or revolves around a fixed axis. This sub-topic introduces the definition, calculation, and physical interpretation of angular velocity ($\omega$), which is the rotational analogue of linear velocity. Understanding angular velocity is essential for analyzing circular motion, from spinning wheels to planetary orbits. It forms the core of the [[Angular Measures]] hub and directly connects to [[Centripetal Acceleration and Force]], where angular velocity determines the required centripetal force for uniform circular motion.
+Angular velocity is a fundamental concept in rotational mechanics that describes how fast an object rotates or revolves around a fixed axis. It is the rotational analogue of linear velocity and is essential for understanding circular motion, rotational dynamics, and periodic motion. This sub-topic introduces the definition, calculation, and physical significance of angular velocity, including its relationship with [[Period and Frequency]] and [[Radians and Angular Displacement]]. Angular velocity forms the foundation for more advanced topics like [[Centripetal Acceleration and Force]] and rotational kinetic energy.
 
 **中文:**
-角速度是旋转力学中的基本概念，描述物体绕固定轴旋转或公转的快慢。本子知识点介绍角速度 ($\omega$) 的定义、计算和物理意义，它是线速度在旋转运动中的对应量。理解角速度对于分析圆周运动至关重要，从旋转的车轮到行星轨道。它是 [[Angular Measures]] 知识枢纽的核心，并直接连接到 [[Centripetal Acceleration and Force]]，其中角速度决定了匀速圆周运动所需的向心力。
+角速度是旋转力学中的一个基本概念，描述物体绕固定轴旋转或公转的快慢。它是线速度的旋转类比，对于理解圆周运动、旋转动力学和周期运动至关重要。本子知识点介绍角速度的定义、计算和物理意义，包括它与[[周期与频率]]和[[弧度与角位移]]的关系。角速度为更高级的主题如[[向心加速度与向心力]]和旋转动能奠定基础。
 
 ---
 
-# 2. Core Definition / 核心定义
+# 2. Syllabus Learning Objectives / 考纲学习目标
 
-| Term (EN/CN) | Definition (EN) | Definition (CN) |
-| ------------ | --------------- | --------------- |
-| **Angular Velocity** / 角速度 | The rate of change of angular displacement with respect to time, measured in radians per second (rad s⁻¹). | 角位移随时间的变化率，单位为弧度每秒 (rad s⁻¹)。 |
-| **Uniform Angular Velocity** / 匀角速度 | Constant angular velocity where equal angular displacements occur in equal time intervals. | 恒定角速度，在相等时间间隔内发生相等的角位移。 |
-| **Instantaneous Angular Velocity** / 瞬时角速度 | The angular velocity at a specific instant, given by the limit of $\Delta\theta/\Delta t$ as $\Delta t \to 0$. | 某一特定时刻的角速度，由 $\Delta\theta/\Delta t$ 在 $\Delta t \to 0$ 时的极限给出。 |
-| **Direction of Angular Velocity** / 角速度方向 | Determined by the right-hand rule: fingers curl in direction of rotation, thumb points along axis of rotation. | 由右手定则确定：手指弯曲方向为旋转方向，拇指指向旋转轴方向。 |
-| **Mean Angular Velocity** / 平均角速度 | Total angular displacement divided by total time taken: $\bar{\omega} = \Delta\theta/\Delta t$. | 总角位移除以总时间：$\bar{\omega} = \Delta\theta/\Delta t$。 |
+| CAIE 9702 | Edexcel IAL |
+|-----------|-------------|
+| 14.1(a) Define radian and understand angular displacement | 5.1 Define angular velocity (ω) as rate of change of angular displacement |
+| 14.1(b) Understand angular velocity (ω) as rate of change of angular displacement | 5.2 Use ω = Δθ/Δt for uniform angular velocity |
+| 14.1(c) Use ω = 2π/T = 2πf | 5.3 Derive and use ω = 2π/T = 2πf |
+| 14.1(d) Understand that angular velocity is a vector quantity (direction along axis) | 5.4 Understand direction of angular velocity vector (right-hand rule) |
+| 14.1(e) Solve problems involving angular velocity in circular motion | — |
+
+**Examiner Expectations / 考官期望:**
+- **CAIE:** Students must be able to define angular velocity, derive ω = 2π/T, and apply it to problems involving uniform circular motion. Understanding that angular velocity is a vector (direction given by right-hand rule) is required.
+- **Edexcel:** Students must define angular velocity, derive relationships with period and frequency, and apply to real-world contexts like rotating machinery and planetary motion.
 
 ---
 
-# 3. Key Concepts / 关键概念
+# 3. Core Definitions / 核心定义
 
+| Term (EN/CN) | Definition (EN) | Definition (CN) | Common Mistakes / 常见错误 |
+|--------------|-----------------|-----------------|---------------------------|
+| **Angular Velocity** / 角速度 | The rate of change of angular displacement with respect to time. A vector quantity directed along the axis of rotation. | 角位移随时间的变化率。矢量，方向沿旋转轴。 | Confusing with angular speed (scalar). Angular velocity has direction. |
+| **Angular Displacement** / 角位移 | The angle through which an object rotates about a fixed axis, measured in radians. | 物体绕固定轴旋转的角度，以弧度为单位。 | Forgetting to use radians instead of degrees. |
+| **Period (T)** / 周期 | The time taken for one complete revolution or cycle. | 完成一次完整旋转或循环所需的时间。 | Confusing period with frequency. |
+| **Frequency (f)** / 频率 | The number of complete revolutions or cycles per unit time. | 单位时间内完成的完整旋转或循环次数。 | Using Hz incorrectly for non-periodic motion. |
+| **Radians** / 弧度 | The SI unit of angular measure, defined as the angle subtended at the center of a circle by an arc equal in length to the radius. | 角度的SI单位，定义为弧长等于半径时在圆心所张的角度。 | Not converting degrees to radians in calculations. |
+
+---
+
+# 4. Key Concepts Explained / 关键概念详解
+
+## 4.1 Definition of Angular Velocity / 角速度的定义
+
+### Explanation / 解释
 **English:**
-Angular velocity ($\omega$) is the rotational counterpart to linear velocity ($v$). While linear velocity describes how fast an object changes its position along a straight line, angular velocity describes how fast an object changes its angular position around a fixed axis.
+Angular velocity (ω) is defined as the rate of change of [[Angular Displacement]] (θ) with respect to time (t). For uniform circular motion, where the angular velocity is constant:
 
-**Definition and Calculation:**
-The fundamental definition is:
-$$\omega = \frac{d\theta}{dt}$$
+$$ \omega = \frac{\Delta \theta}{\Delta t} $$
 
-For uniform circular motion, where angular velocity is constant:
-$$\omega = \frac{\Delta\theta}{\Delta t}$$
+where Δθ is the angular displacement in radians and Δt is the time interval. The SI unit of angular velocity is radians per second (rad s⁻¹).
 
-**Physical Interpretation:**
-- A larger $\omega$ means the object rotates faster
-- $\omega$ is a vector quantity (direction given by right-hand rule)
-- In A-Level physics, we typically consider magnitude only for uniform circular motion
-- Angular velocity is directly related to [[Period and Frequency]]: $\omega = 2\pi f = \frac{2\pi}{T}$
-
-**Common Pitfalls:**
-1. **Confusing angular velocity with linear velocity**: Angular velocity describes rotation rate, not speed along a circular path
-2. **Forgetting units**: Always use radians per second (rad s⁻¹), not degrees per second
-3. **Direction confusion**: For A-Level, focus on magnitude unless specifically asked about vector nature
-4. **Mixing with frequency**: Angular velocity ($\omega$) and frequency ($f$) are related but distinct — $\omega = 2\pi f$
-
-**Connection to Prerequisites:**
-Angular velocity builds on the concept of [[Displacement, Velocity and Acceleration]] from linear motion. The key difference is that angular displacement replaces linear displacement, and the rate of change of angular displacement gives angular velocity instead of linear velocity.
+Angular velocity is a **vector quantity**. Its direction is given by the **right-hand rule**: curl the fingers of your right hand in the direction of rotation; your thumb points in the direction of the angular velocity vector, which is along the axis of rotation.
 
 **中文:**
-角速度 ($\omega$) 是线速度 ($v$) 在旋转运动中的对应量。线速度描述物体沿直线改变位置的速度，而角速度描述物体绕固定轴改变角位置的速度。
+角速度 (ω) 定义为[[角位移]] (θ) 随时间 (t) 的变化率。对于匀速圆周运动，角速度恒定：
 
-**定义与计算:**
-基本定义为：
-$$\omega = \frac{d\theta}{dt}$$
+$$ \omega = \frac{\Delta \theta}{\Delta t} $$
 
-对于匀速圆周运动，角速度恒定：
-$$\omega = \frac{\Delta\theta}{\Delta t}$$
+其中 Δθ 是以弧度表示的角位移，Δt 是时间间隔。角速度的SI单位是弧度每秒 (rad s⁻¹)。
 
-**物理意义:**
-- $\omega$ 越大，物体旋转越快
-- $\omega$ 是矢量（方向由右手定则确定）
-- 在A-Level物理中，对于匀速圆周运动通常只考虑大小
-- 角速度与[[Period and Frequency]]直接相关：$\omega = 2\pi f = \frac{2\pi}{T}$
+角速度是一个**矢量**。其方向由**右手定则**确定：将右手手指弯曲指向旋转方向；拇指指向角速度矢量的方向，即沿旋转轴方向。
 
-**常见错误:**
-1. **混淆角速度与线速度**：角速度描述旋转速率，而非沿圆周路径的速度
-2. **忘记单位**：始终使用弧度每秒 (rad s⁻¹)，而非度每秒
-3. **方向混淆**：除非特别问到矢量性质，A-Level中关注大小
-4. **与频率混淆**：角速度 ($\omega$) 和频率 ($f$) 相关但不同 — $\omega = 2\pi f$
+### Physical Meaning / 物理意义
+**English:**
+Angular velocity tells us how fast an object is rotating. A higher angular velocity means the object completes more radians per second. For example, a spinning top has angular velocity; the Earth's rotation gives it an angular velocity of approximately 7.27 × 10⁻⁵ rad s⁻¹.
 
-**与先修知识的联系:**
-角速度建立在[[Displacement, Velocity and Acceleration]]的线运动概念之上。关键区别在于角位移取代了线位移，角位移的变化率给出角速度而非线速度。
+**中文:**
+角速度告诉我们物体旋转的快慢。角速度越高，物体每秒完成的弧度数越多。例如，旋转的陀螺具有角速度；地球自转的角速度约为 7.27 × 10⁻⁵ rad s⁻¹。
+
+### Common Misconceptions / 常见误区
+- **Mistaking angular speed for angular velocity:** Angular speed is the magnitude of angular velocity. Angular velocity includes direction.
+- **Forgetting units:** Always use rad s⁻¹, not degrees per second.
+- **Assuming constant angular velocity:** In non-uniform circular motion, angular acceleration exists.
+
+### Exam Tips / 考试提示
+- **CAIE:** Always convert degrees to radians before using ω = Δθ/Δt.
+- **Edexcel:** Be prepared to derive ω = 2π/T from the definition.
+
+## 4.2 Relationship with Period and Frequency / 与周期和频率的关系
+
+### Explanation / 解释
+**English:**
+For an object in uniform circular motion, one complete revolution corresponds to an angular displacement of 2π radians. The time for one revolution is the period T. Therefore:
+
+$$ \omega = \frac{2\pi}{T} $$
+
+Since frequency f = 1/T, we also have:
+
+$$ \omega = 2\pi f $$
+
+These relationships are crucial for connecting rotational motion to periodic motion.
+
+**中文:**
+对于匀速圆周运动的物体，一次完整旋转对应 2π 弧度的角位移。一次旋转所需的时间是周期 T。因此：
+
+$$ \omega = \frac{2\pi}{T} $$
+
+由于频率 f = 1/T，我们还有：
+
+$$ \omega = 2\pi f $$
+
+这些关系对于将旋转运动与周期运动联系起来至关重要。
+
+### Physical Meaning / 物理意义
+**English:**
+These equations show that angular velocity is directly proportional to frequency and inversely proportional to period. A higher frequency means more rotations per second, hence higher angular velocity.
+
+**中文:**
+这些方程表明角速度与频率成正比，与周期成反比。频率越高意味着每秒旋转次数越多，因此角速度越大。
+
+### Common Misconceptions / 常见误区
+- **Using degrees instead of radians:** Always use 2π rad for one revolution.
+- **Confusing T and f:** Remember T = 1/f and f = 1/T.
+
+### Exam Tips / 考试提示
+- **CAIE:** Derive ω = 2π/T from first principles in exam answers.
+- **Edexcel:** Use ω = 2πf when frequency is given directly.
 
 ---
 
-# 4. Formulas / 公式
+# 5. Essential Equations / 核心公式
 
-## Primary Formula / 主要公式
+## Equation 1: Definition of Angular Velocity / 角速度定义
 
-$$\omega = \frac{\Delta\theta}{\Delta t}$$
+$$ \omega = \frac{\Delta \theta}{\Delta t} $$
 
 | Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
-| ------------- | ------------ | ------------ | ----------- |
-| $\omega$ | Angular velocity | 角速度 | rad s⁻¹ |
-| $\Delta\theta$ | Angular displacement | 角位移 | rad |
-| $\Delta t$ | Time interval | 时间间隔 | s |
+|--------------|-------------|-------------|------------|
+| ω | Angular velocity | 角速度 | rad s⁻¹ |
+| Δθ | Angular displacement | 角位移 | rad |
+| Δt | Time interval | 时间间隔 | s |
 
-## Relationship with Period and Frequency / 与周期和频率的关系
+**Derivation / 推导:** Direct from definition.
+**Conditions / 适用条件:** Uniform angular velocity (constant ω).
+**Limitations / 局限性:** Does not apply to non-uniform circular motion without modification.
 
-$$\omega = \frac{2\pi}{T} = 2\pi f$$
+## Equation 2: Angular Velocity and Period / 角速度与周期
+
+$$ \omega = \frac{2\pi}{T} $$
 
 | Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
-| ------------- | ------------ | ------------ | ----------- |
-| $T$ | Period | 周期 | s |
-| $f$ | Frequency | 频率 | Hz |
+|--------------|-------------|-------------|------------|
+| ω | Angular velocity | 角速度 | rad s⁻¹ |
+| T | Period | 周期 | s |
 
-## Instantaneous Angular Velocity / 瞬时角速度
+**Derivation / 推导:** For one complete revolution, Δθ = 2π rad and Δt = T. Substituting into ω = Δθ/Δt gives ω = 2π/T.
+**Conditions / 适用条件:** Uniform circular motion.
+**Limitations / 局限性:** Only valid for complete revolutions.
 
-$$\omega = \frac{d\theta}{dt}$$
+## Equation 3: Angular Velocity and Frequency / 角速度与频率
 
-**Derivation / 推导:**
-The instantaneous angular velocity is the limit of the average angular velocity as the time interval approaches zero:
-$$\omega = \lim_{\Delta t \to 0} \frac{\Delta\theta}{\Delta t} = \frac{d\theta}{dt}$$
+$$ \omega = 2\pi f $$
 
-**Conditions / 适用条件:**
-- The formula $\omega = \Delta\theta/\Delta t$ applies for **uniform** angular velocity (constant $\omega$)
-- For non-uniform rotation, use $\omega = d\theta/dt$ for instantaneous values
-- Angular displacement must be measured in **radians**, not degrees
-- The axis of rotation must be fixed
+| Symbol (符号) | Meaning (EN) | Meaning (CN) | Unit (单位) |
+|--------------|-------------|-------------|------------|
+| ω | Angular velocity | 角速度 | rad s⁻¹ |
+| f | Frequency | 频率 | Hz (s⁻¹) |
 
-> 📷 **IMAGE PROMPT — AV01: Angular Velocity Definition Diagram**
->
-> **English Prompt:**
-> A clean textbook-style vector diagram showing a rotating object (a small circle) moving along a circular path of radius r. The center of the circle is marked O. The object at two positions: position 1 at angle θ₁ and position 2 at angle θ₂, with angular displacement Δθ = θ₂ - θ₁ marked clearly. An arc arrow shows the direction of rotation. A clock icon nearby indicates time interval Δt. Labels: "Angular velocity ω = Δθ/Δt" at the bottom. White background, blue and black lines, professional physics textbook style.
->
-> **中文描述:**
-> 一个清晰的教科书风格矢量图，显示一个旋转物体（小圆）沿半径为r的圆周路径运动。圆心标记为O。物体在两个位置：位置1在角度θ₁，位置2在角度θ₂，角位移Δθ = θ₂ - θ₁清晰标注。弧线箭头显示旋转方向。旁边的时钟图标表示时间间隔Δt。底部标签："角速度 ω = Δθ/Δt"。白色背景，蓝色和黑色线条，专业物理教科书风格。
->
-> **Labels Required / 需要标注:**
-> * O (center of circle / 圆心)
-> * θ₁, θ₂ (angular positions / 角位置)
-> * Δθ (angular displacement / 角位移)
-> * r (radius / 半径)
-> * ω = Δθ/Δt (angular velocity / 角速度)
->
-> **Style / 风格:** Textbook vector / 教科书矢量图
->
-> **Exam Relevance / 考试关联:**
-> This diagram is essential for understanding the definition of angular velocity and appears in many exam questions about circular motion.
+**Derivation / 推导:** Since f = 1/T, substitute into ω = 2π/T.
+**Conditions / 适用条件:** Uniform circular motion.
+**Limitations / 局限性:** Only valid for periodic motion.
+
+> 📷 **IMAGE PROMPT — EQ01: Angular Velocity Definition Diagram**
+> A diagram showing a rotating object with angular displacement Δθ marked, a time interval Δt, and the formula ω = Δθ/Δt displayed. Include a circular path with radius r, the object at two positions, and the angle between them labeled.
 
 ---
 
-# 5. Image Prompt / 图片提示
+# 6. Graphs and Relationships / 图表与关系
 
-> 📷 **IMAGE PROMPT — AV02: Right-Hand Rule for Angular Velocity Direction**
->
-> **English Prompt:**
-> A 3D rendered diagram showing a rotating disk (blue) with its axis of rotation (vertical dashed line). A hand illustration (simplified) shows the right-hand rule: fingers curl in the direction of rotation (clockwise or anticlockwise), thumb points upward along the axis. The angular velocity vector ω is shown as a red arrow pointing along the axis. Labels: "ω (angular velocity)", "Axis of rotation", "Direction of rotation". Clean white background, professional 3D render style suitable for physics textbooks.
->
-> **中文描述:**
-> 一个3D渲染图，显示一个旋转圆盘（蓝色）及其旋转轴（垂直虚线）。一个简化手部插图展示右手定则：手指弯曲方向为旋转方向，拇指沿轴向上。角速度矢量ω显示为沿轴的红色箭头。标签："ω (角速度)"、"旋转轴"、"旋转方向"。干净的白色背景，适合物理教科书的专业3D渲染风格。
->
-> **Labels Required / 需要标注:**
-> * ω (angular velocity vector / 角速度矢量)
-> * Axis of rotation / 旋转轴
-> * Direction of rotation / 旋转方向
->
-> **Style / 风格:** 3D render / 3D渲染
->
-> **Exam Relevance / 考试关联:**
-> Understanding the vector nature of angular velocity is important for advanced topics like angular momentum and gyroscopic motion.
+## 6.1 Angular Displacement vs Time / 角位移-时间图
+
+### Axes / 坐标轴
+- **X-axis:** Time (t) / 时间 (t)
+- **Y-axis:** Angular displacement (θ) / 角位移 (θ)
+
+### Shape / 形状
+- **Uniform angular velocity:** Straight line through origin with positive gradient.
+- **Non-uniform:** Curved line (parabolic for constant angular acceleration).
+
+### Gradient Meaning / 斜率含义
+- Gradient = Δθ/Δt = ω (angular velocity)
+
+### Area Meaning / 面积含义
+- Area under graph has no direct physical meaning for this graph.
+
+### Exam Interpretation / 考试解读
+- **CAIE:** Calculate angular velocity from gradient of θ-t graph.
+- **Edexcel:** Use gradient to find ω for uniform motion.
+
+```mermaid
+graph LR
+    A[θ-t Graph] --> B[Gradient = ω]
+    B --> C[Constant ω: Straight line]
+    B --> D[Changing ω: Curved line]
+```
+
+## 6.2 Angular Velocity vs Time / 角速度-时间图
+
+### Axes / 坐标轴
+- **X-axis:** Time (t) / 时间 (t)
+- **Y-axis:** Angular velocity (ω) / 角速度 (ω)
+
+### Shape / 形状
+- **Uniform angular velocity:** Horizontal line (constant ω).
+- **Constant angular acceleration:** Straight line with positive gradient.
+
+### Gradient Meaning / 斜率含义
+- Gradient = Δω/Δt = α (angular acceleration)
+
+### Area Meaning / 面积含义
+- Area under graph = angular displacement (θ)
+
+### Exam Interpretation / 考试解读
+- **CAIE:** Use area to find total angular displacement.
+- **Edexcel:** Calculate angular acceleration from gradient.
 
 ---
 
-# 6. Worked Example / 典型例题
+# 7. Required Diagrams / 必备图表
 
-### Example 1: Calculating Angular Velocity from Period / 从周期计算角速度
+## 7.1 Angular Velocity Direction (Right-Hand Rule) / 角速度方向（右手定则）
+
+### Description / 描述
+**English:** A diagram showing a rotating object (e.g., a wheel or disc) with the axis of rotation. The right-hand rule is illustrated: fingers curl in direction of rotation, thumb points in direction of angular velocity vector.
+
+**中文:** 显示旋转物体（如轮子或圆盘）及旋转轴的示意图。展示右手定则：手指弯曲指向旋转方向，拇指指向角速度矢量方向。
+
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — DIAG01: Right-Hand Rule for Angular Velocity**
+> A 3D diagram of a rotating disc with a central axis. A right hand is shown with fingers curled in the direction of rotation (clockwise or counterclockwise) and thumb pointing upward along the axis. Label "ω" with an arrow pointing along the axis. Use clear colors: blue for rotation direction arrows, red for ω vector. Include labels: "Axis of Rotation", "Direction of Rotation", "Angular Velocity ω".
+
+### Labels Required / 需要标注
+- Axis of rotation / 旋转轴
+- Direction of rotation / 旋转方向
+- Angular velocity vector (ω) / 角速度矢量 (ω)
+- Right hand / 右手
+
+### Exam Importance / 考试重要性
+- **CAIE:** Required for understanding vector nature of angular velocity.
+- **Edexcel:** Essential for applying right-hand rule in problems.
+
+## 7.2 Angular Displacement in Circular Motion / 圆周运动中的角位移
+
+### Description / 描述
+**English:** A diagram showing an object moving in a circular path, with angular displacement θ marked between two positions. The radius r and arc length s are also shown.
+
+**中文:** 显示物体在圆形路径上运动的示意图，标出两个位置之间的角位移 θ，同时显示半径 r 和弧长 s。
+
+### Image Prompt / 图片生成提示
+> 📷 **IMAGE PROMPT — DIAG02: Angular Displacement in Circular Motion**
+> A circle with center O. An object at two positions A and B on the circumference. Draw radii OA and OB. Label the angle between them as θ (in radians). Draw the arc AB and label it s. Include labels: "Center O", "Radius r", "Arc length s", "Angular displacement θ". Use arrows to show direction of motion.
+
+### Labels Required / 需要标注
+- Center O / 圆心 O
+- Radius r / 半径 r
+- Arc length s / 弧长 s
+- Angular displacement θ / 角位移 θ
+- Positions A and B / 位置 A 和 B
+
+### Exam Importance / 考试重要性
+- **CAIE:** Foundation for understanding ω = Δθ/Δt.
+- **Edexcel:** Used in deriving v = rω.
+
+---
+
+# 8. Worked Examples / 典型例题
+
+## Example 1: Calculating Angular Velocity / 计算角速度
 
 ### Question / 题目
 **English:**
-A ceiling fan rotates at a constant speed, completing one full revolution every 0.50 seconds. Calculate the angular velocity of the fan in rad s⁻¹.
+A fan blade rotates through an angle of 120° in 0.50 seconds. Calculate the angular velocity of the fan blade in rad s⁻¹.
 
 **中文:**
-一台吊扇匀速旋转，每0.50秒完成一整圈。计算吊扇的角速度，单位为rad s⁻¹。
+风扇叶片在 0.50 秒内旋转 120°。计算风扇叶片的角速度，单位为 rad s⁻¹。
 
 ### Solution / 解答
+**Step 1:** Convert angle from degrees to radians.
+$$ \theta = 120^\circ \times \frac{\pi}{180^\circ} = \frac{2\pi}{3} \text{ rad} $$
 
-**Step 1:** Identify known quantities
-- Period $T = 0.50$ s
-- One full revolution = $2\pi$ radians
+**Step 2:** Use the definition of angular velocity.
+$$ \omega = \frac{\Delta \theta}{\Delta t} = \frac{2\pi/3}{0.50} = \frac{2\pi}{3 \times 0.50} = \frac{2\pi}{1.5} $$
 
-**Step 2:** Use the relationship between angular velocity and period
-$$\omega = \frac{2\pi}{T}$$
-
-**Step 3:** Substitute values
-$$\omega = \frac{2\pi}{0.50}$$
-
-**Step 4:** Calculate
-$$\omega = 4\pi = 12.57 \text{ rad s}^{-1}$$
+**Step 3:** Calculate numerical value.
+$$ \omega = \frac{2 \times 3.1416}{1.5} = 4.19 \text{ rad s}^{-1} $$
 
 ### Final Answer / 最终答案
-**Answer:** $\omega = 12.6$ rad s⁻¹ (3 s.f.) **答案:** $\omega = 12.6$ rad s⁻¹ (3位有效数字)
+**Answer:** ω = 4.19 rad s⁻¹ | **答案：** ω = 4.19 rad s⁻¹
 
 ### Quick Tip / 提示
-Remember that one complete revolution equals $2\pi$ radians, not 360 degrees. Always convert to radians when using angular velocity formulas.
+**English:** Always convert degrees to radians before using ω = Δθ/Δt. Remember: 180° = π rad.
+**中文:** 在使用 ω = Δθ/Δt 之前，务必先将角度转换为弧度。记住：180° = π rad。
 
----
-
-### Example 2: Finding Angular Displacement / 求角位移
+## Example 2: Angular Velocity from Period / 从周期计算角速度
 
 ### Question / 题目
 **English:**
-A spinning top has an angular velocity of 8.0 rad s⁻¹. Through what angle does it rotate in 2.5 seconds? Give your answer in radians and degrees.
+A satellite orbits the Earth with a period of 90 minutes. Calculate its angular velocity in rad s⁻¹.
 
 **中文:**
-一个旋转陀螺的角速度为8.0 rad s⁻¹。它在2.5秒内旋转了多少角度？以弧度和度为单位给出答案。
+一颗卫星绕地球运行的周期为 90 分钟。计算其角速度，单位为 rad s⁻¹。
 
 ### Solution / 解答
+**Step 1:** Convert period to seconds.
+$$ T = 90 \text{ min} \times 60 \text{ s/min} = 5400 \text{ s} $$
 
-**Step 1:** Identify known quantities
-- $\omega = 8.0$ rad s⁻¹
-- $\Delta t = 2.5$ s
+**Step 2:** Use ω = 2π/T.
+$$ \omega = \frac{2\pi}{T} = \frac{2\pi}{5400} $$
 
-**Step 2:** Use the definition of angular velocity
-$$\omega = \frac{\Delta\theta}{\Delta t}$$
-
-**Step 3:** Rearrange for angular displacement
-$$\Delta\theta = \omega \times \Delta t$$
-
-**Step 4:** Substitute values
-$$\Delta\theta = 8.0 \times 2.5 = 20 \text{ rad}$$
-
-**Step 5:** Convert to degrees
-$$1 \text{ rad} = \frac{180^\circ}{\pi}$$
-$$\Delta\theta = 20 \times \frac{180^\circ}{\pi} = 1146^\circ$$
+**Step 3:** Calculate numerical value.
+$$ \omega = \frac{2 \times 3.1416}{5400} = 1.16 \times 10^{-3} \text{ rad s}^{-1} $$
 
 ### Final Answer / 最终答案
-**Answer:** $\Delta\theta = 20$ rad = $1.15 \times 10^3$ degrees (3 s.f.) **答案:** $\Delta\theta = 20$ rad = $1.15 \times 10^3$ 度 (3位有效数字)
+**Answer:** ω = 1.16 × 10⁻³ rad s⁻¹ | **答案：** ω = 1.16 × 10⁻³ rad s⁻¹
 
 ### Quick Tip / 提示
-When converting between radians and degrees, use $1 \text{ rad} = 180^\circ/\pi \approx 57.3^\circ$. For A-Level, always give final answers in radians unless the question specifically asks for degrees.
+**English:** When using ω = 2π/T, ensure T is in seconds. For frequency, use ω = 2πf.
+**中文:** 使用 ω = 2π/T 时，确保 T 的单位是秒。对于频率，使用 ω = 2πf。
 
 ---
 
-# 7. Flashcards / 闪卡
+# 9. Past Paper Question Types / 历年真题题型
 
-**Flashcard 1:**
-Q (EN): What is angular velocity and what are its SI units?
-Q (CN): 什么是角速度？它的SI单位是什么？
-A (EN): Angular velocity is the rate of change of angular displacement with respect to time. Its SI unit is rad s⁻¹ (radians per second).
-A (CN): 角速度是角位移随时间的变化率。它的SI单位是rad s⁻¹（弧度每秒）。
+| Question Type / 题型 | Frequency / 频率 | Difficulty / 难度 | Past Paper References / 真题索引 |
+|----------------------|------------------|------------------|-------------------------------|
+| Calculate ω from Δθ and Δt | High | Easy | 📝 *待填入* |
+| Derive ω = 2π/T | Medium | Medium | 📝 *待填入* |
+| Convert between ω, T, f | High | Easy | 📝 *待填入* |
+| Right-hand rule direction | Low | Medium | 📝 *待填入* |
+| ω in context of centripetal force | High | Medium-Hard | 📝 *待填入* |
 
-**Flashcard 2:**
-Q (EN): Write the formula relating angular velocity to period and frequency.
-Q (CN): 写出角速度与周期和频率的关系公式。
-A (EN): $\omega = \frac{2\pi}{T} = 2\pi f$
-A (CN): $\omega = \frac{2\pi}{T} = 2\pi f$
-
-**Flashcard 3:**
-Q (EN): How do you determine the direction of angular velocity?
-Q (CN): 如何确定角速度的方向？
-A (EN): Using the right-hand rule: curl fingers in the direction of rotation, thumb points along the axis in the direction of angular velocity.
-A (CN): 使用右手定则：手指弯曲方向为旋转方向，拇指指向轴的方向即为角速度方向。
-
-**Flashcard 4:**
-Q (EN): A wheel rotates through 3π radians in 1.5 seconds. Calculate its angular velocity.
-Q (CN): 一个轮子在1.5秒内旋转了3π弧度。计算其角速度。
-A (EN): $\omega = \Delta\theta/\Delta t = 3\pi/1.5 = 2\pi$ rad s⁻¹
-A (CN): $\omega = \Delta\theta/\Delta t = 3\pi/1.5 = 2\pi$ rad s⁻¹
-
-**Flashcard 5:**
-Q (EN): What is the difference between angular velocity and linear velocity?
-Q (CN): 角速度和线速度有什么区别？
-A (EN): Angular velocity describes the rate of change of angular displacement (rotation rate), while linear velocity describes the rate of change of linear position (speed along a path). They are related by $v = \omega r$.
-A (CN): 角速度描述角位移的变化率（旋转速率），而线速度描述线性位置的变化率（沿路径的速度）。它们通过 $v = \omega r$ 相关联。
+**Common Command Words / 常见指令词:**
+- **Define / 定义:** State the meaning precisely (e.g., "Define angular velocity")
+- **Calculate / 计算:** Use formula to find numerical value
+- **Derive / 推导:** Show step-by-step mathematical derivation
+- **State / 陈述:** Give a brief answer without explanation
+- **Explain / 解释:** Provide reasoning with physics principles
 
 ---
 
-# 8. Metadata / 元数据
+# 10. Practical Skills Connections / 实验技能链接
 
-```yaml
-title:
-  en: Angular Velocity
-  cn: 角速度
-parent_topic: Angular Measures
-parent_hub: "[[Angular Measures]]"
-subject: Physics
-syllabus:
-  - CAIE 9702: 14.1 (a-e)
-  - Edexcel IAL: WPH14 U4: 5.1-5.4
-level: A2
-node_type: leaf_concept
-difficulty: foundation
-related_leaf_nodes:
-  - "[[Radians and Angular Displacement]]"
-  - "[[Period and Frequency]]"
-  - "[[Relationship Between Linear and Angular Quantities]]"
-  - "[[Centripetal Acceleration and Force]]"
-prerequisites:
-  - "[[Displacement, Velocity and Acceleration]]"
-language: bilingual_en_cn
+**English:**
+Angular velocity is measured in practical contexts using:
+- **Stroboscope:** Measure frequency of rotation, then calculate ω = 2πf.
+- **Light gate and data logger:** Measure time for one revolution to find T, then ω = 2π/T.
+- **Video analysis:** Track angular displacement over time using software.
+
+**Uncertainties:**
+- Uncertainty in ω comes from uncertainties in Δθ and Δt.
+- For ω = 2π/T, percentage uncertainty in ω equals percentage uncertainty in T.
+
+**Graph plotting:**
+- Plot θ vs t to find ω from gradient.
+- Plot ω vs t to find angular acceleration from gradient.
+
+**Experimental design:**
+- Use a rotating platform with a marker to measure angular displacement.
+- Use a protractor for angle measurement (uncertainty ±1°).
+
+**中文:**
+角速度在实验中的测量方法包括：
+- **频闪仪：** 测量旋转频率，然后计算 ω = 2πf。
+- **光门和数据记录器：** 测量一次旋转的时间以求得 T，然后 ω = 2π/T。
+- **视频分析：** 使用软件追踪角位移随时间的变化。
+
+**不确定度：**
+- ω 的不确定度来自 Δθ 和 Δt 的不确定度。
+- 对于 ω = 2π/T，ω 的百分比不确定度等于 T 的百分比不确定度。
+
+**图表绘制：**
+- 绘制 θ-t 图，从斜率求 ω。
+- 绘制 ω-t 图，从斜率求角加速度。
+
+**实验设计：**
+- 使用带有标记的旋转平台测量角位移。
+- 使用量角器测量角度（不确定度 ±1°）。
+
+---
+
+# 11. Concept Map / 概念图谱
+
+```mermaid
+graph TD
+    %% Angular Velocity Concept Map
+    AV[Angular Velocity ω] --> DEF[Definition: ω = Δθ/Δt]
+    AV --> REL[Relationships]
+    AV --> DIR[Direction: Right-Hand Rule]
+    
+    REL --> PER[ω = 2π/T]
+    REL --> FREQ[ω = 2πf]
+    
+    DEF --> AD[Angular Displacement θ]
+    DEF --> TIME[Time t]
+    
+    AD --> RAD[Radians]
+    AD --> ARC[Arc Length s = rθ]
+    
+    PER --> T[Period]
+    FREQ --> F[Frequency]
+    
+    DIR --> AXIS[Axis of Rotation]
+    
+    AV --> LIN[Linear Velocity v = rω]
+    LIN --> [[Relationship Between Linear and Angular Quantities]]
+    
+    AV --> CENT[Centripetal Acceleration a = rω²]
+    CENT --> [[Centripetal Acceleration and Force]]
+    
+    AV --> PREREQ[[Displacement, Velocity and Acceleration]]
+    
+    style AV fill:#f9f,stroke:#333,stroke-width:2px
+    style DEF fill:#bbf,stroke:#333,stroke-width:1px
+    style REL fill:#bbf,stroke:#333,stroke-width:1px
+    style DIR fill:#bbf,stroke:#333,stroke-width:1px
+```
+
+---
+
+# 12. Quick Revision Sheet / 速查表
+
+| Category / 类别 | Key Points / 要点 |
+|----------------|------------------|
+| **Definition / 定义** | ω = Δθ/Δt, where Δθ in radians, Δt in seconds. Vector quantity. |
+| **Key Formula / 核心公式** | ω = 2π/T = 2πf |
+| **Key Graph / 核心图表** | θ-t graph: gradient = ω; ω-t graph: gradient = α, area = θ |
+| **Unit / 单位** | rad s⁻¹ (radians per second) |
+| **Direction / 方向** | Right-hand rule: thumb points along axis of rotation |
+| **Common Mistake / 常见错误** | Using degrees instead of radians; confusing ω with linear velocity |
+| **Exam Tip / 考试提示** | Always convert to radians; derive ω = 2π/T from first principles |
+| **Related Topics / 相关主题** | [[Radians and Angular Displacement]], [[Period and Frequency]], [[Relationship Between Linear and Angular Quantities]], [[Centripetal Acceleration and Force]] |
+| **Prerequisites / 前置知识** | [[Displacement, Velocity and Acceleration]] |

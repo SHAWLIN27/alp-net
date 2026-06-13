@@ -52,21 +52,33 @@ export interface DomainStat {
 }
 
 export const DOMAIN_COLORS: Record<string, string> = {
-  "01-Kinematics":     "#38BDF8",
-  "02-Forces":         "#22D3EE",
-  "03-Work-Energy-Power": "#10B981",
-  "04-Circular-Motion":   "#A855F7",
-  "05-Gravitational-Fields": "#F59E0B",
-  "06-Oscillations":   "#EC4899",
+  "01-mechanics":                   "#38BDF8",  // Blue
+  "02-waves":                       "#EC4899",  // Pink
+  "03-electricity":                 "#10B981",  // Green
+  "04-fields":                      "#A855F7",  // Purple
+  "05-thermal-physics":             "#F59E0B",  // Orange
+  "06-nuclear-and-particle-physics":"#EF4444",  // Red
+  "07-quantum-physics":             "#8B5CF6",  // Violet
+  "08-materials":                   "#14B8A6",  // Teal
+  "09-astrophysics":                "#6366F1",  // Indigo
+  "10-medical-physics":             "#F97316",  // Deep Orange
+  "11-mathematical-foundations":    "#06B6D4",  // Cyan
+  "12-practical-skills":            "#84CC16",  // Lime
 };
 
 export const DOMAIN_LABELS: Record<string, string> = {
-  "01-Kinematics":     "Kinematics",
-  "02-Forces":         "Forces",
-  "03-Work-Energy-Power": "Work, Energy & Power",
-  "04-Circular-Motion":   "Circular Motion",
-  "05-Gravitational-Fields": "Gravitational Fields",
-  "06-Oscillations":   "Oscillations",
+  "01-mechanics":                   "Mechanics",
+  "02-waves":                       "Waves",
+  "03-electricity":                 "Electricity",
+  "04-fields":                      "Fields",
+  "05-thermal-physics":             "Thermal Physics",
+  "06-nuclear-and-particle-physics":"Nuclear & Particle Physics",
+  "07-quantum-physics":             "Quantum Physics",
+  "08-materials":                   "Materials",
+  "09-astrophysics":                "Astrophysics",
+  "10-medical-physics":             "Medical Physics",
+  "11-mathematical-foundations":    "Math Foundations",
+  "12-practical-skills":            "Practical Skills",
 };
 
 export function getDomainColor(domain: string): string {
