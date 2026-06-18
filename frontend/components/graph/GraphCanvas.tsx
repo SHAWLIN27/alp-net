@@ -97,7 +97,7 @@ function getGlowTexture(colorHex: string): THREE.Texture {
 }
 
 // ── Sci‑fi node builder ──
-function buildNodeObject(node: GraphNode): THREE.Group {
+function buildNodeObject(node: GraphNode, isSelected: boolean): THREE.Group {
   const group = new THREE.Group();
   const color = new THREE.Color(node.color);
   const isHub = node.nodeType === 'topic_hub';
@@ -108,39 +108,55 @@ function buildNodeObject(node: GraphNode): THREE.Group {
   const sphereMat = new THREE.MeshStandardMaterial({
     color,
     emissive: color,
-    emissiveIntensity: 0.55,
+    emissiveIntensity: isSelected ? 2.0 : 0.55,
     roughness: 0.25,
     metalness: 0.15,
   });
   const sphere = new THREE.Mesh(sphereGeo, sphereMat);
   group.add(sphere);
 
-  // ── Outer glow sprite ──
+  // ── Outer glow sprite - 选中时大幅增强 ──
   const glowTex = getGlowTexture(node.color);
   const spriteMat = new THREE.SpriteMaterial({
     map: glowTex,
     blending: THREE.AdditiveBlending,
     depthWrite: false,
     depthTest: true,
-    opacity: 0.55,
+    opacity: isSelected ? 1.0 : 0.55,
     transparent: true,
   });
   const glowSprite = new THREE.Sprite(spriteMat);
-  const glowScale = radius * 7;
+  const glowScale = radius * (isSelected ? 15 : 7);
   glowSprite.scale.set(glowScale, glowScale, 1);
   group.add(glowSprite);
 
+  // ── 额外荧光光晕层（仅选中时）──
+  if (isSelected) {
+    const innerGlowMat = new THREE.SpriteMaterial({
+      map: glowTex,
+      blending: THREE.AdditiveBlending,
+      depthWrite: false,
+      depthTest: true,
+      opacity: 0.8,
+      transparent: true,
+    });
+    const innerGlow = new THREE.Sprite(innerGlowMat);
+    const innerScale = radius * 10;
+    innerGlow.scale.set(innerScale, innerScale, 1);
+    group.add(innerGlow);
+  }
+
   // ── Ring (topic hubs only) ──
   if (isHub) {
-    const ringGeo = new THREE.TorusGeometry(radius * 1.7, 0.06, 16, 80);
+    const ringGeo = new THREE.TorusGeometry(radius * 1.7, isSelected ? 0.12 : 0.06, 16, 80);
     const ringMat = new THREE.MeshStandardMaterial({
       color,
       emissive: color,
-      emissiveIntensity: 0.9,
+      emissiveIntensity: isSelected ? 2.5 : 0.9,
       roughness: 0.1,
       metalness: 0.4,
       transparent: true,
-      opacity: 0.85,
+      opacity: isSelected ? 1.0 : 0.85,
     });
     const ring = new THREE.Mesh(ringGeo, ringMat);
     ring.rotation.x = Math.PI / 2.4;
@@ -148,15 +164,15 @@ function buildNodeObject(node: GraphNode): THREE.Group {
     group.add(ring);
 
     // Second thinner ring at a different angle
-    const ring2Geo = new THREE.TorusGeometry(radius * 1.9, 0.04, 12, 64);
+    const ring2Geo = new THREE.TorusGeometry(radius * (isSelected ? 2.5 : 1.9), isSelected ? 0.08 : 0.04, 12, 64);
     const ring2Mat = new THREE.MeshStandardMaterial({
       color,
       emissive: color,
-      emissiveIntensity: 0.7,
+      emissiveIntensity: isSelected ? 2.0 : 0.7,
       roughness: 0.15,
       metalness: 0.3,
       transparent: true,
-      opacity: 0.65,
+      opacity: isSelected ? 0.95 : 0.65,
     });
     const ring2 = new THREE.Mesh(ring2Geo, ring2Mat);
     ring2.rotation.x = Math.PI / 1.6;
@@ -174,6 +190,8 @@ export default function GraphCanvas() {
   const graphRef = useRef<any>(null);
   const graphDataRef = useRef<GraphData>({ nodes: [], links: [] });
   const clickTimers = useRef<Map<string, number>>(new Map());
+  // 用于避免闭包捕获问题 - 存储选中的领域
+  const selectedDomainRef = useRef<string | null>(null);
 
   const setGraphData = useGraphStore(s => s.setGraphData);
   const selectNode = useGraphStore(s => s.selectNode);
@@ -224,8 +242,12 @@ export default function GraphCanvas() {
           .backgroundColor('#020617')
 
           // Nodes — custom sci‑fi objects
-          .nodeThreeObject((n: unknown) => buildNodeObject(n as GraphNode))
-          .nodeThreeObjectExtend(true)
+          .nodeThreeObject((n: unknown) => {
+            const node = n as GraphNode;
+            const isSelected = selectedDomainRef.current === node.domain;
+            return buildNodeObject(node, isSelected);
+          })
+          .nodeThreeObjectExtend(false)
 
           // Links — visible but elegant
           .linkColor(() => 'rgba(56, 189, 248, 0.18)')
@@ -336,6 +358,12 @@ export default function GraphCanvas() {
               const last2 = clickTimers.current.get(node.id) || 0;
               // If more than 350ms passed since last click, treat as single
               if (now2 - last2 >= 350) {
+                // 更新选中的领域状态
+                selectedDomainRef.current = node.domain;
+
+                // 强制刷新节点渲染（O(1) 操作，无需重建所有节点）
+                g.nodeThreeObject(g.nodeThreeObject());
+
                 selectNode({
                   id: node.id,
                   label: node.name,
@@ -349,9 +377,11 @@ export default function GraphCanvas() {
                 // Gentle camera focus on node
                 const pos = n as Record<string, number>;
                 if (pos.x !== undefined) {
+                  // 根据节点类型调整观察距离
+                  const distance = node.nodeType === 'topic_hub' ? 80 : 60;
                   g.cameraPosition(
-                    { x: pos.x + 50, y: pos.y + 30, z: pos.z + 100 },
-                    n as object,
+                    { x: pos.x, y: pos.y, z: pos.z + distance }, // 相机在节点正前方
+                    pos, // 看向节点位置，确保在视图中心
                     1200
                   );
                 }
@@ -406,9 +436,11 @@ export default function GraphCanvas() {
       // Node is in current graph data — fly camera to it
       const pos = targetNode as unknown as Record<string, number>;
       if (pos.x !== undefined) {
+        // 根据节点类型调整观察距离
+        const distance = targetNode.nodeType === 'topic_hub' ? 80 : 60;
         g.cameraPosition(
-          { x: pos.x + 50, y: pos.y + 30, z: pos.z + 100 },
-          targetNode as object,
+          { x: pos.x, y: pos.y, z: pos.z + distance }, // 相机在节点正前方
+          pos, // 看向节点位置，确保在视图中心
           1200
         );
       }
@@ -426,6 +458,8 @@ export default function GraphCanvas() {
       case 'reset': {
         // Restore initial full graph data
         if (initialDataRef.current) {
+          // 清除选中状态
+          selectedDomainRef.current = null;
           graphDataRef.current = initialDataRef.current;
           g.graphData(initialDataRef.current);
           // Reheat simulation to re-layout

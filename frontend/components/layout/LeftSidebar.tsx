@@ -182,6 +182,14 @@ function TreeNodeItem({
   const [expanded, setExpanded] = useState(depth < 2); // auto-expand first 2 levels
   const hasChildren = node.children.length > 0;
   const isClickable = node.nodeData !== null;
+  const selectedNode = useGraphStore(s => s.selectedNode);
+  // 选中的单个节点高亮
+  const isSelected = node.nodeData?.id === selectedNode?.id;
+
+  // 自动展开选中节点的父层级
+  if (isSelected && hasChildren && !expanded) {
+    setExpanded(true);
+  }
 
   const handleClick = () => {
     if (hasChildren) {
@@ -207,7 +215,9 @@ function TreeNodeItem({
     <div className="select-none">
       <button
         onClick={handleClick}
-        className="w-full flex items-center gap-1.5 py-1 px-1.5 rounded-md text-left transition-all duration-150 hover:bg-white/[0.04] group"
+        className={`w-full flex items-center gap-1.5 py-1 px-1.5 rounded-md text-left transition-all duration-150 ${
+          isSelected ? 'bg-white/[0.1] border border-white/10' : 'hover:bg-white/[0.04]'
+        } group`}
         style={{ paddingLeft: `${depth * 14 + 6}px` }}
       >
         {/* Expand/collapse chevron */}
@@ -237,7 +247,7 @@ function TreeNodeItem({
         />
 
         {/* Label */}
-        <span className={`${textSize} ${textOpacity} truncate flex-1 leading-tight group-hover:text-white transition-colors`}>
+        <span className={`${textSize} ${textOpacity} truncate flex-1 leading-tight ${isSelected ? 'text-white' : 'group-hover:text-white'} transition-colors`}>
           {node.label}
         </span>
 
